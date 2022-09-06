@@ -11,10 +11,14 @@ os.chdir(f"{dr}/py")
 
 import bandcamp
 bc = bandcamp.nts()
-print('SEARCHING')
-bc.run_search()
-# print('PLAYLISTING')
-# bc.run_playlist()
-# bc.html()
+
+showlist = [i.split('.')[0] for i in os.listdir('./json/')]
+
+for i in showlist:
+    print('SEARCHING')
+    bc.search(i)
+    print('PLAYLISTING')
+    bc.playlist(i)
+    bc.html()
 
 #

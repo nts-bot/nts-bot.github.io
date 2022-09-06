@@ -133,7 +133,7 @@ class nts:
         showlist = [x for x in ipa.showlist if x not in flag]
 
 
-        if len (showlist) > 20:
+        if len (showlist) > 40:
             print('sublist')
             ipa.wait('flg',True)
             with open('./extra/flag.pickle', 'rb') as handle:
@@ -219,16 +219,8 @@ class nts:
             # CREATE PLAYLIST
 
             title, desk = ipa.bio(show)
-            # title, desk = '',''
             desk = desk.replace('\n',' ').replace('\\','').strip()
-            if not title:
-                print('title-failed')
-                title = show
-            if not desk:
-                print('description-failed')
-                desk = '(description-missing)'
-
-            desk = f'{desk} [Bandcamp Archive of (www.nts.live/shows/{show})]'
+            desk = f'[www.nts.live/shows/{show}] {desk}'
 
             # playlist name
             try:
@@ -381,5 +373,7 @@ class nts:
         def html(self):
             ipa.html()
 
+    def html(self):
+        ipa.html()
 
 #
