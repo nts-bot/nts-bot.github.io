@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Gextr';
+  font-weight: bold;
+  font-style: normal;
+  src: url('https://static.tumblr.com/zgke08u/C5yqxx7iz/gutenbergtextura_regular.otf');
+  unicode-range: U+0041-00FF;
+}
+
+@font-face {
+  font-family: 'Bryg';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/brygada1918/v8/pe08MI6eKpdGqlF5LANrM--ACNaeo8mTUIR_y2-fyVwcurG0kbs6Lg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Dfloda';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://static.tumblr.com/zgke08u/NA1r2dwf6/dalaflodaroman.otf');
+}
+
+@font-face {
+  font-family: 'Didot';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://static.tumblr.com/zgke08u/uPXqwss5h/gfsbodoni.otf');
+  unicode-range: U+0370-03FF, U+1F00-1FFF;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+/* FONT */
+
+i, em {
+  font-family: Garamond, 'Didot', 'Bryg', Times;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+b {
+  font-family: 'Gextr', 'Dfloda', 'Didot', 'Bryg', Times;
+  font-weight: bold;
+}
+
+i b {
+  font-family: Garamond, 'Garit', 'Didot', 'Dfloda', 'Bryg', Times;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: Courier;
+  font-weight: normal;
+  text-decoration: underline;
+  font-variant: small-caps;
+  border-bottom: 0.8px solid #000;
+  display: inline-block;
+  font-size: 9px;
+  margin: 1.5em;
+}
+
+body {
+  font-family: serif;
+  font-variant-ligatures: historical-ligatures;
+  font-size: small;
+  text-align: justify;
+}
+
+a {
+  color: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  /* text-decoration: inherit; */
+}
+
+span {
+  font-family: Courier;
+  font-weight: normal;
+  text-indent: 0em;
+  text-align: center;
+}
+
+.title{
+  font-size: medium;
+  font-variant: normal;
+  font-family: Garamond;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  display:block;
+  clear: both;
+  text-align: left;
+  max-width: 50%;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+.subtitle{
+  font-size: medium;
+  font-variant: normal;
+  font-family: Garamond;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  display:block;
+  clear: both;
+  text-align: right;
+  max-width: 50%;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  color: #808080;
+}
+
+.data {
+  font-size: small;
+  position: absolute;
+  margin-top: -1em;
+  right: 5%;
+  text-align: right;
+  color: #808080;
+  font-style: italic;
+}
+.playlist {
+  font-size: small;
+  text-align: justify;
+}
+.none {
+  font-size: xx-small;
+  font-variant: small-caps;
+}
+
+body {
+  max-width: 90%;
+  /* width: 54 auto; */
+  /* width: 100%; */
+  /* min-width: 38em; */
+  border: dashed thin;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: ghostwhite;
+}
+
+li {
+  margin: 0;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  text-align: left;
+  list-style-position: outside;
+  list-style-type: none;
+  color: initial;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  padding-bottom: 0.4em;
+  color: #808080;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 38em) {
+  .data {
+    right:5%;
+  }
+  body {
+    max-width: 95%;
+  }
+  span {
+    line-height: initial;
+  }
+}
