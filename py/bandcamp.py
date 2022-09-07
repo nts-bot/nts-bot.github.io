@@ -106,7 +106,7 @@ class nts:
         c = 0
         for episode in shelf:
             c += 1
-            print(f'. . . . . . . . . . . . . . . . .{c}:{len(list(shelf.keys()))}.',end='\r')
+            print(f'{show[:14]}. . . . . . . . . .{c}:{len(list(shelf.keys()))}.',end='\r')
             try:
                 flags[episode]
             except KeyError:
@@ -127,14 +127,14 @@ class nts:
                         tl = self.camp(quer1,ort,oit)
                         if not tl:
                             if spotify[episode][trdx]['ratio'] >= 3:
-                                print('. . . .t.a.s.',end='\r')
+                                print(f'{show[:6]}.t.a.s.',end='\r')
                                 ort = spotify[episode][trdx]["artist"] # original artist
                                 oit = spotify[episode][trdx]["title"] # original title
                                 track = f'{ort} {oit}'
                                 quer2 = urllib.parse.quote(track)
                                 tl = self.camp(quer2,ort,oit)
                             else:
-                                print('. . . .t.a.o.',end='\r')
+                                print(f'{show[:6]}.t.a.o.',end='\r')
                                 quer2 = urllib.parse.quote(self.refine(unidecode(track)))
                                 tl = self.camp(quer2,ort,oit)
 
@@ -202,7 +202,7 @@ class nts:
             with open('./extra/bait.pickle', 'rb') as handle:
                 pick = pickle.load(handle)
             pick += 1
-            lim = 20
+            lim = 10
             if pick >= lim:
                 pick = 0
             with open('./extra/bait.pickle', 'wb') as handle:

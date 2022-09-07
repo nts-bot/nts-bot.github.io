@@ -325,35 +325,48 @@ class api:
 
         # [1] index
         
-        doc += '<br><h2>index</h2>'
+        doc += '<div><h2>index</h2></div>'
         title = self._j2d('./extra/titles')
 
         for shw in self.showlist:
             ''' CREATE LIST OF SHOW TITLES ALPHABETICALLY (LIST) '''
             try:
                 tit = title[shw]
+                if not tit:
+                    tit = shw
             except KeyError:
                 tit, des = self.bio(shw)
 
-            if shw[0] not in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
-                if 'θ' not in locals():
-                    globals()['θ'] = [tit]
+            V = shw[0].lower()
+
+            # print(shw, V)
+
+            if V not in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
+                if 'Ø' not in locals():
+                    locals()['Ø'] = [tit]
                 else: 
-                    θ += [tit]
+                    locals()['Ø'] += [tit]
             else:
-                if shw[0] not in locals():
-                    locals()[shw[0]] = [tit]
+                if V not in locals():
+                    locals()[V] = [tit]
                 else:
-                    locals()[shw[0]] += [tit]
+                    locals()[V] += [tit]
 
+        for shw in ['Ø','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
+            try:
+                term = eval(shw)
+                doc += f"""<details><summary><h3><div class="title">{shw.upper()} ↫</div></h3></summary><ol>"""
+                for how in term:
+                    try:
+                        name = list(title.keys())[list(title.values()).index(how)]
+                    except ValueError:
+                        name = list(title.keys())[list(title.keys()).index(how)]
+                    doc += f"""<li><a class="show" href="./html/{name}.html">{how}</li>"""
+                doc += f"""</details>"""
+            except NameError as error:
+                print(f'{shw} : {error}')            
 
-        for shw in ['θ','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
-            doc += f"""<blockquote class="index">"""
-            for how in eval(shw)[:-1]:
-                doc += f"""<a href="./html/{self.showlist[title.index(how)]}">{how} || """
-            doc += f"""{eval(shw)[-1]}</blockquote><br>"""
-
-        doc += '''</body></html>'''
+        doc += '''<br><br><br><br></body></html>'''
 
         ''' [03] SOUPIFY AND SAVE '''
 
@@ -384,7 +397,7 @@ class api:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<br><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br><a class="data" href="{pid}">⭕ = Shuffle this Show (Spotify Playlist)</a>' # Show Title
+        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Shuffle this Show (Spotify Playlist)</a></blockquote></div>' # Show Title
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
@@ -394,7 +407,7 @@ class api:
 
         for i in episodes:
 
-            doc += f'<details><summary><h3><div class="title">{i}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}"> - ⚫</a></span></h3></summary>'
+            doc += f'<details><summary><h3><div class="title">{i}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫</a></span></h3></summary>'
             doc += '<ol>'
 
             for j in episodes[i]:
@@ -419,9 +432,9 @@ class api:
 
                 # tub = f"""<a class="goto" href="https://www.youtube.com/results?search_query={urllib.parse.quote(tart + ' ' + ttit)}">⭕tube⭕</a>"""
 
-                doc += f"""<li>{tart} - {ttit}     <span class="data">{spo}{bnd}</span></li>""" #{tub}
+                doc += f"""<li>{tart} - {ttit}   :   <span class="data">{spo}{bnd}</span></li>""" #{tub}
 
-            doc += '</ol></details><br>'
+            doc += '</ol></details>'
 
         doc += '''<br><br><br></body></html>'''
 

@@ -1,4 +1,627 @@
 {
-    "flags": {},
-    "search": {}
+    "flags": {
+        "james-massiah-5th-september-2022": {
+            "00": {
+                "artist": "Ms. Carrie Stacks",
+                "ratio": 6,
+                "title": "All Along",
+                "trackid": "1xeP6WvHn9vHYmB0f2q6u7"
+            },
+            "01": {
+                "artist": "Raheaven",
+                "ratio": 6,
+                "title": "PINK PANAMERA",
+                "trackid": "3rdH4WnbIS2OLxYKQNCa4p"
+            },
+            "02": {
+                "artist": "Don Sinini",
+                "ratio": 6,
+                "title": "Baby Breathe",
+                "trackid": "1XIKlo83EIKc4STIjGXpAk"
+            },
+            "03": {
+                "artist": "Soraya",
+                "ratio": 6,
+                "title": "Evolve",
+                "trackid": "6LdpGbjaavSJEDlCFbHWJe"
+            },
+            "04": {
+                "artist": "Cold",
+                "ratio": 6,
+                "title": "Marching Place",
+                "trackid": "0NjJKMm1Z6PRUICLDI3O9p"
+            },
+            "05": {
+                "artist": "Lord Tusk",
+                "ratio": 6,
+                "title": "For the Taking",
+                "trackid": "4TSUqsoy5aTpn5RNyTQSlL"
+            },
+            "06": {
+                "artist": "Obongjayar",
+                "ratio": 6,
+                "title": "Parasite",
+                "trackid": "3kE76nno8k5pM63hr7B2wi"
+            },
+            "07": {
+                "artist": "Wess Seven",
+                "ratio": 6,
+                "title": "Same Sad Eyes",
+                "trackid": "5PzQRULhRnQuEAbzH0sngr"
+            },
+            "08": {
+                "artist": "Elheist",
+                "ratio": 6,
+                "title": "GOOD OVER EVIL",
+                "trackid": "5Xd24gjRbo01ABASmJ5UeA"
+            },
+            "09": {
+                "artist": "Hasani",
+                "ratio": 6,
+                "title": "devil in da dance",
+                "trackid": "1EJ6LIpJVvwYn2e7kuPTVy"
+            },
+            "10": {
+                "artist": "YSING",
+                "ratio": 6,
+                "title": "Toilet Stall",
+                "trackid": "6vyGrAMuXMgF3RIX2tRQT5"
+            },
+            "11": {
+                "artist": "Warmduscher",
+                "ratio": 6,
+                "title": "Wild Flowers",
+                "trackid": "7BJBgbgAAhN0oSPxQvYE0C"
+            },
+            "12": {
+                "artist": "Denzel Himself",
+                "ratio": 6,
+                "title": "Angel Baby - Instrumental",
+                "trackid": "4XPcibixBeFbHA8IfmjOPY"
+            },
+            "13": {
+                "artist": "Daisy Maybe",
+                "ratio": 5,
+                "title": "Riverbed",
+                "trackid": "2zFkjs4UbTXeAgfxWqm56U"
+            },
+            "14": {
+                "artist": "ELIZA",
+                "ratio": 6,
+                "title": "Heat of the Moon",
+                "trackid": "7GmSvY6pk87MO2GaMnXLLN"
+            },
+            "15": {
+                "artist": "KAM-BU",
+                "ratio": 6,
+                "title": "Call Me Back (feat. Knucks)",
+                "trackid": "1zkO7zjEMW8SL4LU2mIIKF"
+            },
+            "16": {
+                "artist": "George Riley",
+                "ratio": 6,
+                "title": "Jealousy",
+                "trackid": "2hZ81TNFhnuh6CURag4hif"
+            },
+            "17": {
+                "artist": "Klein",
+                "ratio": 6,
+                "title": "Hope Dealers",
+                "trackid": "62KEQi5N8AeC3jZPPFhLPt"
+            },
+            "18": {
+                "artist": "Steven Julien",
+                "ratio": 6,
+                "title": "Hunt - Slowed Down",
+                "trackid": "5Tbxv0MMh65Fzcz3YsVeWY"
+            },
+            "19": {
+                "artist": "LYAM",
+                "ratio": 5,
+                "title": "Origami (feat. John Glacier & Shygirl)",
+                "trackid": "02PyJB7U5AZsFP10TKeWrE"
+            }
+        }
+    },
+    "search": {
+        "james-massiah-5th-september-2022": {
+            "00": {
+                "s0": [
+                    {
+                        "artist": "Ms. Carrie Stacks",
+                        "title": "All Along",
+                        "uri": "1xeP6WvHn9vHYmB0f2q6u7"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Ms. Carrie Stacks",
+                        "title": "All Along",
+                        "uri": "1xeP6WvHn9vHYmB0f2q6u7"
+                    }
+                ]
+            },
+            "01": {
+                "s0": [
+                    {
+                        "artist": "Raheaven",
+                        "title": "PINK PANAMERA",
+                        "uri": "3rdH4WnbIS2OLxYKQNCa4p"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Raheaven",
+                        "title": "PINK PANAMERA",
+                        "uri": "3rdH4WnbIS2OLxYKQNCa4p"
+                    },
+                    {
+                        "artist": "Scene Queen",
+                        "title": "Pink Panther",
+                        "uri": "32ljWqOxw3ckyuaUc882F6"
+                    },
+                    {
+                        "artist": "Ultra Vomit",
+                        "title": "Pink Pantera",
+                        "uri": "6kPMCEjddYhLQF1tYskZvg"
+                    }
+                ]
+            },
+            "02": {
+                "s0": [
+                    {
+                        "artist": "Don Sinini",
+                        "title": "Baby Breathe",
+                        "uri": "1XIKlo83EIKc4STIjGXpAk"
+                    },
+                    {
+                        "artist": "Don Sinini",
+                        "title": "Baby Breathe",
+                        "uri": "4urNzFflD3pfAu1elPXJi4"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Don Sinini",
+                        "title": "Baby Breathe",
+                        "uri": "4urNzFflD3pfAu1elPXJi4"
+                    },
+                    {
+                        "artist": "Don Sinini",
+                        "title": "Baby Breathe",
+                        "uri": "1XIKlo83EIKc4STIjGXpAk"
+                    },
+                    {
+                        "artist": "Tarqs",
+                        "title": "Breath Gone",
+                        "uri": "1eRA4XqUzZmTlhrJwLBTWs"
+                    }
+                ]
+            },
+            "03": {
+                "s0": [
+                    {
+                        "artist": "Soraya",
+                        "title": "Evolve",
+                        "uri": "6LdpGbjaavSJEDlCFbHWJe"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Soraya",
+                        "title": "Evolve",
+                        "uri": "6LdpGbjaavSJEDlCFbHWJe"
+                    },
+                    {
+                        "artist": "IHF",
+                        "title": "Evolve",
+                        "uri": "4TwVyPGpY0domfvgP7JRry"
+                    },
+                    {
+                        "artist": "Smeels",
+                        "title": "Soraya",
+                        "uri": "1NzjqeavTnLHNTf9osDBQK"
+                    }
+                ]
+            },
+            "04": {
+                "s0": [
+                    {
+                        "artist": "Cold",
+                        "title": "Marching Place",
+                        "uri": "0NjJKMm1Z6PRUICLDI3O9p"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Mating Ritual",
+                        "title": "Cold",
+                        "uri": "4xT3B4ZRWAqxj1M3S8naKi"
+                    },
+                    {
+                        "artist": "Cold",
+                        "title": "Marching Place",
+                        "uri": "0NjJKMm1Z6PRUICLDI3O9p"
+                    },
+                    {
+                        "artist": "The Charlottes",
+                        "title": "Cold",
+                        "uri": "36WLZGI2hlYG7XW58dLTWz"
+                    }
+                ]
+            },
+            "05": {
+                "s0": [
+                    {
+                        "artist": "Lord Tusk",
+                        "title": "For the Taking",
+                        "uri": "4TSUqsoy5aTpn5RNyTQSlL"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Lord Tusk",
+                        "title": "For the Taking",
+                        "uri": "4TSUqsoy5aTpn5RNyTQSlL"
+                    },
+                    {
+                        "artist": "Lord Tusk",
+                        "title": "True stories",
+                        "uri": "3soDuHTTD2Q1ZLly5d4DWH"
+                    },
+                    {
+                        "artist": "Lord Tusk",
+                        "title": "Beyond Limitation",
+                        "uri": "2IxUW0sewsPgN4n1r01PPe"
+                    }
+                ]
+            },
+            "06": {
+                "s0": [
+                    {
+                        "artist": "Obongjayar",
+                        "title": "Parasite",
+                        "uri": "3kE76nno8k5pM63hr7B2wi"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Obongjayar",
+                        "title": "Parasite",
+                        "uri": "3kE76nno8k5pM63hr7B2wi"
+                    },
+                    {
+                        "artist": "Neriim",
+                        "title": "Parasite",
+                        "uri": "45vOPCgcS3UB1g5epip9R5"
+                    },
+                    {
+                        "artist": "Zuukou mayzie",
+                        "title": "Parasite",
+                        "uri": "4b1RlsVRXPOI6pncRuTrTm"
+                    }
+                ]
+            },
+            "07": {
+                "s0": [
+                    {
+                        "artist": "Wess Seven",
+                        "title": "Same Sad Eyes",
+                        "uri": "5PzQRULhRnQuEAbzH0sngr"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Wess Seven",
+                        "title": "Same Sad Eyes",
+                        "uri": "5PzQRULhRnQuEAbzH0sngr"
+                    },
+                    {
+                        "artist": "Wess Seven",
+                        "title": "Tightrope",
+                        "uri": "2YWiPC0OrCVIkEMdAdgrQR"
+                    }
+                ]
+            },
+            "08": {
+                "s0": [
+                    {
+                        "artist": "Elheist",
+                        "title": "GOOD OVER EVIL",
+                        "uri": "5Xd24gjRbo01ABASmJ5UeA"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Elheist",
+                        "title": "GOOD OVER EVIL",
+                        "uri": "5Xd24gjRbo01ABASmJ5UeA"
+                    },
+                    {
+                        "artist": "Groundation",
+                        "title": "Good Over Evil",
+                        "uri": "2QJkFCJYOLhyclrXSHvTUO"
+                    },
+                    {
+                        "artist": "Jaz Elise",
+                        "title": "Good Over Evil",
+                        "uri": "3DkzTVZLHifYPaIlBw0x0f"
+                    }
+                ]
+            },
+            "09": {
+                "s0": [
+                    {
+                        "artist": "Hasani",
+                        "title": "devil in da dance",
+                        "uri": "1EJ6LIpJVvwYn2e7kuPTVy"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Hasani",
+                        "title": "devil in da dance",
+                        "uri": "1EJ6LIpJVvwYn2e7kuPTVy"
+                    },
+                    {
+                        "artist": "Hasani",
+                        "title": "Hasani - 2 Cups",
+                        "uri": "2mJMDanamB8WLG9l2Azydk"
+                    },
+                    {
+                        "artist": "Hassani",
+                        "title": "Hajaj",
+                        "uri": "5uWgWURQJzkOnXBIhaB59k"
+                    }
+                ]
+            },
+            "10": {
+                "s0": [
+                    {
+                        "artist": "YSING",
+                        "title": "Toilet Stall",
+                        "uri": "6vyGrAMuXMgF3RIX2tRQT5"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "YS",
+                        "title": "Stop",
+                        "uri": "0pqqbBbSDcTESwa0Zp30sb"
+                    },
+                    {
+                        "artist": "The Toilet Bowl Cleaners",
+                        "title": "Pooping in the Mall",
+                        "uri": "6NWFayMO9RMVtuFSU2XIww"
+                    },
+                    {
+                        "artist": "1504 Mutebaby",
+                        "title": "YSGN",
+                        "uri": "6Zf3WarhAfk5fc5HKOSLzq"
+                    }
+                ]
+            },
+            "11": {
+                "s0": [
+                    {
+                        "artist": "Warmduscher",
+                        "title": "Wild Flowers",
+                        "uri": "7BJBgbgAAhN0oSPxQvYE0C"
+                    },
+                    {
+                        "artist": "Warmduscher",
+                        "title": "Wild Flowers",
+                        "uri": "5rFdd8K5uVJiFUeEX1InEr"
+                    },
+                    {
+                        "artist": "Warmduscher",
+                        "title": "Wild Flowers - Radio Edit",
+                        "uri": "7d07K1WejnfrC9E67Idcyt"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Warmduscher",
+                        "title": "Wild Flowers",
+                        "uri": "7BJBgbgAAhN0oSPxQvYE0C"
+                    },
+                    {
+                        "artist": "Warmduscher",
+                        "title": "Wild Flowers",
+                        "uri": "5rFdd8K5uVJiFUeEX1InEr"
+                    },
+                    {
+                        "artist": "Warmduscher",
+                        "title": "Midnight Dipper",
+                        "uri": "7Egs5GjTciEAzIP8dVLSPC"
+                    }
+                ]
+            },
+            "12": {
+                "s0": [
+                    {
+                        "artist": "Denzel Himself",
+                        "title": "Angel Baby - Instrumental",
+                        "uri": "4XPcibixBeFbHA8IfmjOPY"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Denzel Himself",
+                        "title": "Angel Baby",
+                        "uri": "5VPzToj4hxQZMWZ7rbKdFl"
+                    },
+                    {
+                        "artist": "Denzel Himself",
+                        "title": "Angel Baby - Acapella",
+                        "uri": "5KTn2Akha4bGkVzvd2TT5A"
+                    },
+                    {
+                        "artist": "Denzel Himself",
+                        "title": "Angel Baby - Instrumental",
+                        "uri": "4XPcibixBeFbHA8IfmjOPY"
+                    }
+                ]
+            },
+            "13": {
+                "s0": "",
+                "s1": [
+                    {
+                        "artist": "Daisy Maybe",
+                        "title": "Riverbed",
+                        "uri": "2zFkjs4UbTXeAgfxWqm56U"
+                    }
+                ]
+            },
+            "14": {
+                "s0": [
+                    {
+                        "artist": "ELIZA",
+                        "title": "Heat of the Moon",
+                        "uri": "7GmSvY6pk87MO2GaMnXLLN"
+                    }
+                ],
+                "s1": ""
+            },
+            "15": {
+                "s0": [
+                    {
+                        "artist": "KAM-BU",
+                        "title": "Call Me Back (feat. Knucks)",
+                        "uri": "1zkO7zjEMW8SL4LU2mIIKF"
+                    },
+                    {
+                        "artist": "KAM-BU",
+                        "title": "Call Me Back (feat. Knucks)",
+                        "uri": "1o3vThoOf0wBYG3IEdW09y"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "KAM-BU",
+                        "title": "Call Me Back (feat. Knucks)",
+                        "uri": "1zkO7zjEMW8SL4LU2mIIKF"
+                    },
+                    {
+                        "artist": "KAM-BU",
+                        "title": "Call Me Back (feat. Knucks)",
+                        "uri": "1o3vThoOf0wBYG3IEdW09y"
+                    },
+                    {
+                        "artist": "Emblè",
+                        "title": "Call Me Back",
+                        "uri": "77y7M3j4265oobr1c9tj5Y"
+                    }
+                ]
+            },
+            "16": {
+                "s0": "",
+                "s1": [
+                    {
+                        "artist": "George Riley",
+                        "title": "Jealousy",
+                        "uri": "2hZ81TNFhnuh6CURag4hif"
+                    },
+                    {
+                        "artist": "George Riley",
+                        "title": "Jealousy",
+                        "uri": "5kUlOSFGzPTnDP9LFHiCTo"
+                    },
+                    {
+                        "artist": "George Riley",
+                        "title": "Jealousy",
+                        "uri": "3uoaXPRwQgYplxPFguTCpr"
+                    }
+                ]
+            },
+            "17": {
+                "s0": [
+                    {
+                        "artist": "Klein",
+                        "title": "Hope Dealers",
+                        "uri": "62KEQi5N8AeC3jZPPFhLPt"
+                    },
+                    {
+                        "artist": "Klein",
+                        "title": "Hope Dealers",
+                        "uri": "4V6Y9lCX3xnSoa11nN2S02"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Klein",
+                        "title": "Hope Dealers",
+                        "uri": "62KEQi5N8AeC3jZPPFhLPt"
+                    },
+                    {
+                        "artist": "Klein",
+                        "title": "Hope Dealers",
+                        "uri": "4V6Y9lCX3xnSoa11nN2S02"
+                    },
+                    {
+                        "artist": "abriel G",
+                        "title": "Hopedealer",
+                        "uri": "6fQq5aR55ZiBQPrNENXKbe"
+                    }
+                ]
+            },
+            "18": {
+                "s0": [
+                    {
+                        "artist": "Steven Julien",
+                        "title": "Hunt - Slowed Down",
+                        "uri": "5Tbxv0MMh65Fzcz3YsVeWY"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "Steven Julien",
+                        "title": "Hunt - Slowed Down",
+                        "uri": "5Tbxv0MMh65Fzcz3YsVeWY"
+                    },
+                    {
+                        "artist": "Steven Julien",
+                        "title": "Hunt",
+                        "uri": "7cQIxxjEV3Thav6oeLlieA"
+                    },
+                    {
+                        "artist": "Steve Jablonsky",
+                        "title": "Hunted",
+                        "uri": "6fTryA4lyktMSFkzakl5vY"
+                    }
+                ]
+            },
+            "19": {
+                "s0": [
+                    {
+                        "artist": "LYAM",
+                        "title": "Origami (feat. John Glacier & Shygirl)",
+                        "uri": "02PyJB7U5AZsFP10TKeWrE"
+                    },
+                    {
+                        "artist": "LYAM",
+                        "title": "Origami (feat. John Glacier & Shygirl)",
+                        "uri": "6pSnejvD3efWC49xei2LMC"
+                    }
+                ],
+                "s1": [
+                    {
+                        "artist": "LYAM",
+                        "title": "Origami (feat. John Glacier & Shygirl)",
+                        "uri": "6pSnejvD3efWC49xei2LMC"
+                    },
+                    {
+                        "artist": "LYAM",
+                        "title": "Origami (feat. John Glacier & Shygirl)",
+                        "uri": "02PyJB7U5AZsFP10TKeWrE"
+                    },
+                    {
+                        "artist": "Dynah",
+                        "title": "Origami",
+                        "uri": "1aZYSLMs5gQYqaeGh0t5oN"
+                    }
+                ]
+            }
+        }
+    }
 }

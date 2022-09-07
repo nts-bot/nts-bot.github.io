@@ -1,8 +1,23 @@
+
+
+@font-face {
+  font-family: 'nts1';
+  src:  url("./assets/UniversCom-57Condensed.woff2"),
+        url("../assets/UniversCom-57Condensed.woff2");
+}
+
+@font-face {
+  font-family: 'nts2';
+  src:  url("./assets/UniversLTPro-BoldCond.woff2"),
+        url("../assets/UniversLTPro-BoldCond.woff2");
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 /* FONT */
-
+/* 
 i, em {
   font-family: Garamond;
   font-style: italic;
@@ -13,7 +28,7 @@ i b {
   font-family: Garamond;
   font-style: italic;
   font-weight: bold;
-}
+} */
 
 h1,
 h2,
@@ -27,39 +42,32 @@ h3 {
 h1 {
   text-decoration: underline;
   font-size: 9px;
-  display: inline-block;
+  position: absolute;
   border-bottom: 0.8px solid #000;
 }
 
 h2 {
+  padding-top: 3em;
   text-decoration: underline;
-  font-family: Garamond;
-  /* font-style: italic; */
+  font-family: 'nts2';
   font-weight: bold;
-  font-size: 14px;
   border-bottom: 0.8px solid #000;
   display: inline-block;
   margin-bottom: 2em;
 }
 
-/* h3 {
-  
-} */
-
 body {
   font-family: serif;
   font-variant-ligatures: historical-ligatures;
-  font-size: small;
+  font-size: medium;
   text-align: justify;
 }
 
 blockquote {
+  margin: 0;
   color: #000;
-}
-
-blockquote > a {
-  text-decoration: underline;
-  color: #808080;
+  background-color: #ffffff;
+  padding: 2em;
 }
 
 details > summary {
@@ -71,12 +79,28 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-div {
-  font-style: italic;
-  font-size: 14px;
+details {
+  background-color: #000;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.title {
+  font-family: 'nts2';
+  color:#ffffff;
+  font-size: medium;
   border-bottom: 0.8px solid #000;
   display:inline-block;
   margin-bottom: 0em;
+  background-color: #000;
+}
+
+div{
+  background-color: #ffffff;
+}
+
+h3 {
+  margin-bottom: 0;
 }
 
 a {
@@ -84,36 +108,34 @@ a {
   font-style: inherit;
   font-family: inherit;
   text-decoration: inherit;
+  font-stretch: inherit;
 }
 
 span {
-  text-indent: 0em;
-  text-align: center;
+  background-color: #000;
+}
+
+.show {
+  text-decoration: underline;
 }
 
 .data {
   font-size: small;
   text-decoration: none;
-}
-
-.playlist {
-  font-size: small;
-  text-align: justify;
-}
-.none {
-  font-size: xx-small;
-  font-variant: small-caps;
+  /* color: #000; */
 }
 
 body {
+  font-family:'nts2';
   max-width: 90%;
   border: dashed thin;
+  border-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   left: 0;
   right: 0;
-  background-color: ghostwhite;
+  background-color: #000;
 }
 
 li {
@@ -121,16 +143,15 @@ li {
   padding-left: 0.75em;
   padding-right: 0.75em;
   text-align: left;
-  /* list-style-position: outside;
-  list-style-type: none; */
-  color: initial;
-  /* text-decoration: none; */
 }
 
 ol,
 ul {
-  padding-bottom: 0.4em;
-  color: #808080;
+  font-family: 'nts1';
+  background-color: #000;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #ffffff;
 }
 
 /* MEDIA */
