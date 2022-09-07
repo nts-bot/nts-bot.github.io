@@ -48,19 +48,20 @@ class api:
             time.sleep(1.0)
             return(self._j2d(path))
         
-    def _d2j(self,path,allot):
+    def _d2j(self,path,allot,c=0):
         try:
             if isinstance(allot,dict):
                 with open(f"{path}.json", 'w', encoding='utf-8') as f:
                     json.dump(allot, f, sort_keys=True, ensure_ascii=False, indent=4)
             else:
                 raise ValueError(f'You are trying to dump {type(allot)} instead dict()')
-        except PermissionError as error:
-            print(f'Permission Error : {error}')
+        except:
+            c += 1
+            if c > 10:
+                raise RuntimeError('_d2j Runtime Error')
+            print(f'Error When Storing JSON')
             time.sleep(1.0)
-            self._d2j(path,allot)
-        except OSError as error:
-            raise OSError(f'CWD : {os.getcwd()} ; PATH : {path} ; ERROR : {error}')
+            self._d2j(path,allot,c)
 
     #############################################
 
