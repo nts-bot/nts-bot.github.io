@@ -398,13 +398,14 @@ class api:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Shuffle this Show (Spotify Playlist)</a></blockquote></div>' # Show Title
+        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br>🗃️ = Track Metadata (Discogs)<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Shuffle this Show (Spotify Playlist)</a></blockquote></div>' # Show Title
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
         episodes = self._j2d(f'./json/{show}')
         spotify = self._j2d(f'./spotify/{show}')['flags']
         bandcamp = self._j2d(f'./bandcamp/{show}')
+        discogs = self._j2d(f'./discogs/{show}')
 
         for i in episodes:
 
@@ -421,6 +422,12 @@ class api:
                     bnd = f"""<a class="goto" href="{bc}">💿</a>  """
                 except:
                     bnd = ''
+
+                try:
+                    dc = discogs[i][j]['url']
+                    dis = f"""<a class="goto" href="{dc}">🗃️</a>  """
+                except:
+                    dis = ''
                 
                 try:
                     if spotify[i][j]['ratio'] >= 3:
@@ -431,9 +438,14 @@ class api:
                 except:
                     spo = ''
 
+                if any([bnd,dis,spo]):
+                    colon = ':'
+                else:
+                    colon = ''
+
                 # tub = f"""<a class="goto" href="https://www.youtube.com/results?search_query={urllib.parse.quote(tart + ' ' + ttit)}">⭕tube⭕</a>"""
 
-                doc += f"""<li>{tart} - {ttit}   :   <span class="data">{spo}{bnd}</span></li>""" #{tub}
+                doc += f"""<li>{tart} - {ttit}   {colon}   <span class="data">{spo}{bnd}{dis}</span></li>""" #{tub}
 
             doc += '</ol></details>'
 

@@ -7,15 +7,6 @@ NEXT, WE WILL AUTOMATICALLY CREATE PLAYLISTS VIA THE TOOL https://bndcmpr.co
 # Libraries
 import os, requests, urllib, pickle, time
 from requests.exceptions import ConnectionError
-# Browser (if Javascript)
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support.ui import WebDriverWait
 # Html Parser
 from bs4 import BeautifulSoup as bs
 # String Comparison
@@ -145,49 +136,6 @@ class nts:
 
                         ipa._d2j(f'./bandcamp/{show}',flags)
 
-    ''' [2] IF URL ; CREATE/UPDATE BANDCAMP PLAYLIST '''
-
-    def login(self):
-        print('.login.',end='\r')
-        url = 'https://bndcmpr.co/'
-
-        options = webdriver.ChromeOptions() 
-        options.add_argument("--window-size=1920,1080")
-        options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        options.add_experimental_option('useAutomationExtension', False)
-        options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        options.headless = True
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options) #
-
-        driver.get(url)
-        time.sleep(1.0)
-
-        # LOGIN FORM
-
-        # Username
-        v1 = '//*[@id="app"]/div/div[1]/div[1]/input[1]'
-        driver.find_element(By.XPATH, v1).click()
-        driver.find_element(By.XPATH, v1).send_keys("NTSbot")
-        # Password
-        v2 = '//*[@id="app"]/div/div[1]/div[1]/input[2]'
-        driver.find_element(By.XPATH, v2).click()
-        p = os.getenv("bndcmpr")
-        driver.find_element(By.XPATH, v2).send_keys(p)
-        # Login
-        v3 = '//*[@id="app"]/div/div[1]/div[1]/a[1]'
-        driver.find_element(By.XPATH, v3).click()
-
-        timeout = 10
-        try:
-            element = EC.element_to_be_clickable((By.CLASS_NAME, 'playlist-creator'))
-            WebDriverWait(driver, timeout).until(element)
-        except TimeoutException:
-            raise TimeoutError("Timeout")
-
-        print('.logged in.',end='\r')
-
-        return(driver)
-
     def run(self,shows=[]):
 
         if shows:
@@ -223,3 +171,58 @@ class nts:
                 print(f'skip : {show}')
             ipa.showhtml(show)
         ipa.home()
+
+    #
+
+    # Discogs
+
+    def cogs(self,query):
+        tj = dict()
+        url = f"https://www.discogs.com/search/?q={query}&type=all&type=all"
+        soup = bs(self.req(url).content, "html.parser")
+        tracks = soup.select('.card-release-title')
+        artist = soup.select('.card-artist-name')
+        if tracks:
+            try:
+                tj['artist'] = artist[0].text.replace('\n','')
+                tj['title'] = tracks[0].text.replace('\n','')
+                tj['url'] = f"""https://www.discogs.com{tracks[0].find('a',href=True)['href']}"""
+            except:
+                print(f'Fail : {tracks}')
+        return(tj)
+
+    def dearch(self,show):
+
+        shelf = ipa._j2d(f'./json/{show}')
+        flags = ipa._j2d(f'./discogs/{show}')
+        spotify = ipa._retriv(show,'flags')
+        
+        c = 0
+        for episode in shelf:
+            c += 1
+            print(f'{show[:14]}. . . . . . . . . .{c}:{len(list(shelf.keys()))}.',end='\r')
+            try:
+                flags[episode]
+            except KeyError:
+                flags[episode] = dict()
+
+            if list(set(shelf[episode].keys())-set(flags[episode].keys())):
+                print(f'{episode[:10]}:{episode[-10:]}',end='\r')
+
+                for trdx in shelf[episode]:
+                    if (trdx not in flags[episode]): 
+
+                        ort = shelf[episode][trdx]["artist"] # original artist
+                        oit = shelf[episode][trdx]["title"] # original title
+
+                        track = f'{ort} {oit}'
+                        query = urllib.parse.quote(track)
+
+                        tl = self.cogs(query)
+
+                        if tl:
+                            flags[episode][trdx] = tl
+                        else:
+                            flags[episode][trdx] = dict()
+
+                        ipa._d2j(f'./discogs/{show}',flags)
