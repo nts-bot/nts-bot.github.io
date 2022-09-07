@@ -306,7 +306,7 @@ class api:
 
         # [1] index
         
-        doc += '<br><details><summary><h2>index/h2></summary><blockquote class="index">'
+        doc += '<br><details><summary><h2>index</h2></summary><blockquote class="index">'
 
         for i in self.showlist[:-1]:
             doc += f'<a href="#{i}">{i}</a>||'
