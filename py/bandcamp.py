@@ -219,5 +219,7 @@ class nts:
                 print(f'{show[:8]}. . . . . .S',end='\r')
                 spo.run([show]) # double check
                 self.search(show)
-                ipa.showhtml(show)
-                ipa.home()
+            else:
+                print(f'skip : {show}')
+            ipa.showhtml(show)
+        ipa.home()

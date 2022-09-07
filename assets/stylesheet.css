@@ -16,16 +16,35 @@ i b {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: Courier;
   font-weight: normal;
-  text-decoration: underline;
+  margin: 1.5em;
   font-variant: small-caps;
+}
+
+h1 {
+  text-decoration: underline;
+  font-size: 9px;
+  display: inline-block;
+  border-bottom: 0.8px solid #000;
+}
+
+h2 {
+  text-decoration: underline;
+  font-family: Garamond;
+  /* font-style: italic; */
+  font-weight: bold;
+  font-size: 14px;
   border-bottom: 0.8px solid #000;
   display: inline-block;
-  font-size: 9px;
-  margin: 1.5em;
+  margin-bottom: 2em;
 }
+
+/* h3 {
+  
+} */
 
 body {
   font-family: serif;
@@ -52,60 +71,31 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
+div {
+  font-style: italic;
+  font-size: 14px;
+  border-bottom: 0.8px solid #000;
+  display:inline-block;
+  margin-bottom: 0em;
+}
+
 a {
   color: inherit;
   font-style: inherit;
   font-family: inherit;
-  /* text-decoration: inherit; */
+  text-decoration: inherit;
 }
 
 span {
-  font-family: Courier;
-  font-weight: normal;
   text-indent: 0em;
   text-align: center;
 }
 
-.title{
-  font-size: medium;
-  font-variant: normal;
-  font-family: Garamond;
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: underline;
-  display:block;
-  clear: both;
-  text-align: left;
-  max-width: 50%;
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-}
-
-.subtitle{
-  font-size: medium;
-  font-variant: normal;
-  font-family: Garamond;
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: underline;
-  display:block;
-  clear: both;
-  text-align: right;
-  max-width: 50%;
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-  color: #808080;
-}
-
 .data {
   font-size: small;
-  position: absolute;
-  margin-top: -1em;
-  right: 5%;
-  text-align: right;
-  color: #808080;
-  font-style: italic;
+  text-decoration: none;
 }
+
 .playlist {
   font-size: small;
   text-align: justify;
@@ -117,9 +107,6 @@ span {
 
 body {
   max-width: 90%;
-  /* width: 54 auto; */
-  /* width: 100%; */
-  /* min-width: 38em; */
   border: dashed thin;
   margin-left: auto;
   margin-right: auto;
@@ -134,10 +121,10 @@ li {
   padding-left: 0.75em;
   padding-right: 0.75em;
   text-align: left;
-  list-style-position: outside;
-  list-style-type: none;
+  /* list-style-position: outside;
+  list-style-type: none; */
   color: initial;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 ol,
@@ -149,9 +136,6 @@ ul {
 /* MEDIA */
 
 @media screen and (max-width: 38em) {
-  .data {
-    right:5%;
-  }
   body {
     max-width: 95%;
   }

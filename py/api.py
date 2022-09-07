@@ -288,7 +288,7 @@ class api:
 
         js1 = self._j2d(f'./{d1}/{show}')
         js2 = self._j2d(f'./{d2}/{show}')
-        ok = []
+        ok = [False]
 
         for i in js1: # episodes
             if i not in js2:
@@ -328,30 +328,30 @@ class api:
         doc += '<br><h2>index</h2>'
         title = self._j2d('./extra/titles')
 
-        for i in self.showlist:
+        for shw in self.showlist:
             ''' CREATE LIST OF SHOW TITLES ALPHABETICALLY (LIST) '''
             try:
-                tit = title[i]
+                tit = title[shw]
             except KeyError:
-                tit, des = self.bio(i)
+                tit, des = self.bio(shw)
 
-            if i[0] not in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
-                if '#' not in locals():
-                    locals()['#'] = [tit]
-                else:
-                    locals()['#'] += [tit]
+            if shw[0] not in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
+                if 'θ' not in locals():
+                    globals()['θ'] = [tit]
+                else: 
+                    θ += [tit]
             else:
-                if i[0] not in locals():
-                    locals()[i[0]] = [tit]
+                if shw[0] not in locals():
+                    locals()[shw[0]] = [tit]
                 else:
-                    locals()[i[0]] += [tit]
+                    locals()[shw[0]] += [tit]
 
 
-        for i in ['#','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
-            doc += f"""<blockquote id="{i}" class="index">"""
-            for j in eval(i)[:-1]:
-                doc += f"""<a href="./html/{self.showlist[title.index(j)]}">{j} || """
-            doc += f"""{eval(i)[-1]}</blockquote><br>"""
+        for shw in ['θ','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
+            doc += f"""<blockquote class="index">"""
+            for how in eval(shw)[:-1]:
+                doc += f"""<a href="./html/{self.showlist[title.index(how)]}">{how} || """
+            doc += f"""{eval(shw)[-1]}</blockquote><br>"""
 
         doc += '''</body></html>'''
 
@@ -376,25 +376,25 @@ class api:
             NTS-bot
             </title>
             <meta content="width=device-width,initial-scale=1" name="viewport"/>
-            <link href="./assets/stylesheet.css" rel="stylesheet"/>
-            <link rel="icon" href="./assets/Nts-radio.jpg">
+            <link href="../assets/stylesheet.css" rel="stylesheet"/>
+            <link rel="icon" href="../assets/Nts-radio.jpg">
             </head>
             <body>
                 <h1><a href="https://github.com/nts-bot/nts-bot.github.io">GitHub</a></h1>
             """
-
+        pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<br><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br>' # Show Title
+        doc += f'<br><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br><a class="data" href="{pid}">⭕ = Shuffle this Show (Spotify Playlist)</a>' # Show Title
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
         episodes = self._j2d(f'./json/{show}')
-        spotify = self._j2d(f'./spotify/{show}')
+        spotify = self._j2d(f'./spotify/{show}')['flags']
         bandcamp = self._j2d(f'./bandcamp/{show}')
 
         for i in episodes:
 
-            doc += f'<details><summary><h3>{episodes[i]}</h3> <span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫listen-back⚪</a></span></summary>'
+            doc += f'<details><summary><h3><div class="title">{i}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}"> - ⚫</a></span></h3></summary>'
             doc += '<ol>'
 
             for j in episodes[i]:
@@ -404,23 +404,26 @@ class api:
 
                 try:
                     bc = bandcamp[i][j]['url']
-                    bnd = f"""<a class="goto" href="{bc}">💿bcamp💿</a> | """
+                    bnd = f"""<a class="goto" href="{bc}">💿</a>  """
                 except:
                     bnd = ''
                 
                 try:
-                    sp = f"""https://open.spotify.com/track/{spotify[i][j]['trackid']}"""
-                    spo = f"""<a class="goto" href="{sp}">🟢spot🟢</a> | """
+                    if spotify[i][j]['ratio'] >= 3:
+                        sp = f"""https://open.spotify.com/track/{spotify[i][j]['trackid']}"""
+                        spo = f"""<a class="goto" href="{sp}">🟢</a>  """
+                    else:
+                        spo = ''
                 except:
                     spo = ''
 
                 # tub = f"""<a class="goto" href="https://www.youtube.com/results?search_query={urllib.parse.quote(tart + ' ' + ttit)}">⭕tube⭕</a>"""
 
-                doc += f"""<li>{tart} - {ttit}<span class="data">{spo}{bnd}</span></li>""" #{tub}
+                doc += f"""<li>{tart} - {ttit}     <span class="data">{spo}{bnd}</span></li>""" #{tub}
 
             doc += '</ol></details><br>'
 
-        doc += '''</body></html>'''
+        doc += '''<br><br><br></body></html>'''
 
         ''' [03] SOUPIFY AND SAVE '''
 
