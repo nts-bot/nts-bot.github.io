@@ -302,23 +302,29 @@ class api:
         </head>
         <body>
             <h1><a href="https://github.com/nts-bot/nts-bot.github.io">NTS-bot</a></h1>
-            <ul>
-
         """
 
-        # [1] For each show write : SHOW : [nts] | [spotify] | [bandcamp] : [json1] | [json2] | [json3]
+        # [1] index
+        
+        doc += '<br><blockquote class="index">'
 
-        import api
-        self = api.api()
+        for i in self.showlist[:-1]:
+            doc += f'<a href="#{i}">{i}</a>|'
+        doc += f'<a href="#{self.showlist[-1]}">{self.showlist[-1]}</a></blockquote><br>'
+
+        # [2] For each show write : SHOW : [nts] | [spotify] | [bandcamp] : [json1] | [json2] | [json3]
+
         pid = self._j2d('pid')
         bid = self._j2d('bid')
         title = self._j2d('./extra/titles')
+
+        doc += "<ul>"
 
         for i in self.showlist:
 
             print(i,end='\r')
 
-            item = f"""<li><a class="title" href="www.nts.live/shows/{i}">{title[i]}</a>"""
+            item = f"""<li><a id="{i}" class="title" href="https://www.nts.live/shows/{i}">{title[i]}</a>"""
             son = f'<a href="./json/{i}.json">nts-tracklist</a>'
 
             if i in pid:
@@ -342,8 +348,10 @@ class api:
             doc += f"""{item}
             <span class="data">{son}</span>
             <span class="playlist">{surl}</span>
+            <br>
             <span class="data">{sson}</span>
             <span class="playlist">{burl}</span>
+            <br>
             <span class="data">{bson}</span>"""
 
         doc += '''</ul><br><br><br><br></body></html>'''
