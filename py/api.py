@@ -397,7 +397,7 @@ class api:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Shuffle this Show (Spotify Playlist)</a></blockquote></div>' # Show Title
+        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Shuffle this Show (Spotify Playlist)</a></blockquote></div>' # Show Title
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
@@ -407,7 +407,7 @@ class api:
 
         for i in episodes:
 
-            doc += f'<details><summary><h3><div class="title">{i}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫</a></span></h3></summary>'
+            doc += f'<details><summary><h3><div class="title">{i}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫⚪</a></span></h3></summary>'
             doc += '<ol>'
 
             for j in episodes[i]:
