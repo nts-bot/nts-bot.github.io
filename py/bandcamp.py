@@ -207,13 +207,13 @@ class nts:
 
         # PLAYLIST
 
-        titlepath = '//*[@id="app"]/div/div[2]/div[3]/div[1]/input' #title # //*[@id="app"]/div/div[2]/div[2]/div[1]/input
-        deskpath = '//*[@id="app"]/div/div[2]/div[3]/div[1]/textarea' #description
-        trackpath = '//*[@id="app"]/div/div[2]/div[3]/div[3]/div/input' # track
-        addpath = '//*[@id="app"]/div/div[2]/div[3]/div[3]/div/a' # add track button 
-        makepath = '//*[@id="app"]/div/div[2]/div[3]/div[4]' # create/update playlist
-        editpath = '//*[@id="app"]/div/div[2]/div[3]/div/h2[2]/a[1]' # edit playlist
-        tracklistpath = '//*[@id="app"]/div/div[2]/div[3]/div[2]/div'
+        titlepath = '//*[@id="app"]/div/div[2]/div[2]/div[1]/input' #title # //*[@id="app"]/div/div[2]/div[2]/div[1]/input
+        deskpath = '//*[@id="app"]/div/div[2]/div[2]/div[1]/textarea' #description
+        trackpath = '//*[@id="app"]/div/div[2]/div[2]/div[3]/div/input' # track
+        addpath = '//*[@id="app"]/div/div[2]/div[2]/div[3]/div/a' # add track button 
+        makepath = '//*[@id="app"]/div/div[2]/div[2]/div[4]' # create/update playlist
+        editpath = '//*[@id="app"]/div/div[2]/div[2]/div/h2[2]/a[1]' # edit playlist
+        tracklistpath = '//*[@id="app"]/div/div[2]/div[2]/div[2]/div'
 
         ## Check bid.json
 
@@ -277,15 +277,14 @@ class nts:
                             driver.find_element(By.XPATH, trackpath).send_keys(shelf[episode][trdx]['url'])
                             time.sleep(0.5)
                             driver.find_element(By.XPATH, addpath).click()
-                            time.sleep(0.5)
+                            time.sleep(1.0)
                             newlength = len(driver.find_elements(By.XPATH, tracklistpath))
                             while not (newlength == oldlength + 1):
                                 print(f'. . . . . . .waiting.{newlength}={oldlength}',end='\r')
-                                time.sleep(1.0)
+                                time.sleep(0.1)
                                 newlength = len(driver.find_elements(By.XPATH, tracklistpath))
                             print('. . . . . . .track.added.',end='\r')
                             flags[episode][trdx] = 1
-                            time.sleep(1.0)
                             m += [True]
                         else:
                             flags[episode][trdx] = ''
@@ -318,7 +317,9 @@ class nts:
 
     def run(self):
         bid = ipa._j2d('bid')
-        for show in ipa.showlist[::-1]:
+        galf = ipa._j2d('./extra/galf')
+        sublist = [x for x in ipa.showlist if x in galf]
+        for show in sublist:
             print(show)
             self.search(show)
             if show not in bid:
