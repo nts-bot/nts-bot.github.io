@@ -318,6 +318,11 @@ class api:
         bid = self._j2d('bid')
         title = self._j2d('./extra/titles')
 
+        try:
+            ex = title[i]
+        except KeyError:
+            title, desk = self.bio(i)
+
         doc += "<ul>"
 
         for i in self.showlist:

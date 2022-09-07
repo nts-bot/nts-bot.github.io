@@ -569,10 +569,6 @@ class nts:
 
                 if not flag:
                     yek = [x for x in ipa.showlist if x not in galf]#[::20]
-                else:
-                    yek = list(flag.keys())[::-1]
-
-                if len (yek) > 40:
                     ipa.wait('flg',True)
                     with open('./extra/flag.pickle', 'rb') as handle:
                         pick = pickle.load(handle)
@@ -586,8 +582,7 @@ class nts:
                     print(f'\ncurrent Pickle : {pick}\n')
                     ipa.wait('flg',False)
                 else:
-                    ipa.wait('flg',True)
-                    pass
+                    yek = list(flag.keys())[::-1]
                 
             par = {str(m) : yek[m] for m in range(len(yek))}
             pprint(par)

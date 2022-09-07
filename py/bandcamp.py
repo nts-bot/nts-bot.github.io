@@ -262,6 +262,11 @@ class nts:
                 print(f'{episode[:10]}:{episode[-10:]}',end='\r')
 
                 for trdx in shelf[episode]:
+                    n = [i for i in m if i]
+                    print(f'. . . . . . . . . . . . . . .{len(n)}',end='\r')
+                    if len(n) >= 150:
+                        print('. . . . . . . . . . . . . . .BREAKING DUE TO PLAYLIST SIZE.')
+                        break
                     if (trdx not in flags[episode]): 
 
                         if shelf[episode][trdx]:
@@ -291,6 +296,9 @@ class nts:
                             m += [False]
                     else:
                         print('. . . . . .skipep.',end='\r')
+                else:
+                    continue
+                break
 
         #
 
