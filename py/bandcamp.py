@@ -165,6 +165,7 @@ class nts:
         url = 'https://bndcmpr.co/'
 
         options = webdriver.ChromeOptions() 
+        options.add_argument("--window-size=1920,1080")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option('useAutomationExtension', False)
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -206,6 +207,14 @@ class nts:
 
         # PLAYLIST
 
+        titlepath = '//*[@id="app"]/div/div[2]/div[3]/div[1]/input' #title # //*[@id="app"]/div/div[2]/div[2]/div[1]/input
+        deskpath = '//*[@id="app"]/div/div[2]/div[3]/div[1]/textarea' #description
+        trackpath = '//*[@id="app"]/div/div[2]/div[3]/div[3]/div/input' # track
+        addpath = '//*[@id="app"]/div/div[2]/div[3]/div[3]/div/a' # add track button 
+        makepath = '//*[@id="app"]/div/div[2]/div[3]/div[4]' # create/update playlist
+        editpath = '//*[@id="app"]/div/div[2]/div[3]/div/h2[2]/a[1]' # edit playlist
+        tracklistpath = '//*[@id="app"]/div/div[2]/div[3]/div[2]/div'
+
         ## Check bid.json
 
         pid = ipa._j2d('bid')
@@ -217,39 +226,21 @@ class nts:
         if not bid: # create playlist
 
             # CREATE PLAYLIST
-
             title, desk = ipa.bio(show)
             desk = desk.replace('\n',' ').replace('\\','').strip()
             desk = f'[www.nts.live/shows/{show}] {desk}'
-
-            # playlist name
-            try:
-                v1 = '//*[@id="app"]/div/div[2]/div[2]/div[1]/input' #title
-                v2 = '//*[@id="app"]/div/div[2]/div[2]/div[1]/textarea' #description
-                v3 = '//*[@id="app"]/div/div[2]/div[2]/div[3]/div/input' # track
-                add = '//*[@id="app"]/div/div[2]/div[2]/div[3]/div/a' # add track button 
-                make = '//*[@id="app"]/div/div[2]/div[2]/div[4]' # create/update playlist
-                driver.find_element(By.XPATH, v1).click()
-                driver.find_element(By.XPATH, v1).send_keys(title)
-            except:
-                v1 = '//*[@id="app"]/div/div[2]/div[3]/div[1]/input' #title
-                v2 = '//*[@id="app"]/div/div[2]/div[3]/div[1]/textarea' #description
-                v3 = '//*[@id="app"]/div/div[2]/div[3]/div[3]/div/input' # track
-                add = '//*[@id="app"]/div/div[2]/div[3]/div[3]/div/a' # add track button 
-                make = '//*[@id="app"]/div/div[2]/div[3]/div[4]' # create/update playlist
-                driver.find_element(By.XPATH, v1).click()
-                driver.find_element(By.XPATH, v1).send_keys(title)
-
+            # title
+            driver.find_element(By.XPATH, titlepath).click()
+            driver.find_element(By.XPATH, titlepath).send_keys(title)
             # description
-            driver.find_element(By.XPATH, v2).click()
-            driver.find_element(By.XPATH, v2).send_keys(desk)
+            driver.find_element(By.XPATH, deskpath).click()
+            driver.find_element(By.XPATH, deskpath).send_keys(desk)
             time.sleep(1.0)
             
         else: # update playlist
             driver.get(f'https://bndcmpr.co/{bid}')
             time.sleep(1.0)
-            v1 = '//*[@id="app"]/div/div[2]/div[3]/div/h2[2]/a[1]'
-            driver.find_element(By.XPATH, v1).click()
+            driver.find_element(By.XPATH, editpath).click()
             time.sleep(1.0)
 
         # UPDATE TRACKS
@@ -274,32 +265,40 @@ class nts:
                     if (trdx not in flags[episode]): 
 
                         if shelf[episode][trdx]:
-
+                            print('. . . . . . .adding.tracks.',end='\r')
                             timeout = 10
                             try:
                                 element = EC.element_to_be_clickable((By.CLASS_NAME, 'track-input'))
                                 WebDriverWait(driver, timeout).until(element)
                             except TimeoutException:
                                 raise TimeoutError("Timeout")
-                                
-                            driver.find_element(By.XPATH, v3).click()
-                            driver.find_element(By.XPATH, v3).send_keys(shelf[episode][trdx]['url'])
-                            #
-                            driver.find_element(By.XPATH, add).click()
-                            #
+                            oldlength = len(driver.find_elements(By.XPATH, tracklistpath))
+                            driver.find_element(By.XPATH, trackpath).click()
+                            driver.find_element(By.XPATH, trackpath).send_keys(shelf[episode][trdx]['url'])
+                            time.sleep(0.5)
+                            driver.find_element(By.XPATH, addpath).click()
+                            time.sleep(0.5)
+                            newlength = len(driver.find_elements(By.XPATH, tracklistpath))
+                            while not (newlength == oldlength + 1):
+                                print(f'. . . . . . .waiting.{newlength}={oldlength}',end='\r')
+                                time.sleep(1.0)
+                                newlength = len(driver.find_elements(By.XPATH, tracklistpath))
+                            print('. . . . . . .track.added.',end='\r')
                             flags[episode][trdx] = 1
                             time.sleep(1.0)
                             m += [True]
                         else:
                             flags[episode][trdx] = ''
                             m += [False]
+                    else:
+                        print('. . . . . .skipep.',end='\r')
 
-        driver.find_element(By.XPATH, make).click()
+        driver.find_element(By.XPATH, makepath).click()
         time.sleep(1.0)
         #
         query = driver.current_url.split('/')[-1]
         while not (len(query) in [0,8]):
-            print(f'PLAYLIST ID NOT FOUND : {query}',end='\r')
+            print(f'PLAYLIST ID NOT FOUND (check code) : {query}',end='\r')
             time.sleep(1.0)
             query = driver.current_url.split('/')[-1]
         #
@@ -316,6 +315,16 @@ class nts:
                 print(show)
                 self.playlist(show)
                 ipa.flag(show,True,'galb','bait')
+
+    def run(self):
+        bid = ipa._j2d('bid')
+        for show in ipa.showlist[::-1]:
+            print(show)
+            self.search(show)
+            if show not in bid:
+                self.playlist(show)
+                ipa.flag(show,True,'galb','bait')
+                ipa.html()
 
     def reset(self):
         driver = self.login()
@@ -335,7 +344,7 @@ class nts:
                 except TimeoutException:
                     raise TimeoutError("Timeout")
 
-                v1 = '//*[@id="app"]/div/div[2]/div[3]/div/h2[2]/a[2]' # delete playlist
+                v1 = '//*[@id="app"]/div/div[2]/div[2]/div/h2[2]/a[2]' # delete playlist 
                 driver.find_element(By.XPATH, v1).click()
                 time.sleep(1.0)
 
@@ -370,10 +379,5 @@ class nts:
             del bid[i]
             ipa._d2j('bid',bid)
 
-        def html(self):
-            ipa.html()
-
-    def html(self):
-        ipa.html()
 
 #

@@ -388,7 +388,7 @@ class nts:
             else:
                 return(result)
         except spotipy.SpotifyException as error:
-            print(f'Spotify API Error : {error}')
+            print(f'Spotify API Error')
             return({'tracks':{'items':''}})
 
     def _run(self,query):
@@ -478,13 +478,7 @@ class nts:
             unsure = ''
 
         title, desk = ipa.bio(show)
-        desk = desk.replace('\n',' ').replace('\\','').strip()
-        if not title:
-            print('title-failed')
-            title = show
-        if not desk:
-            print('description-failed')
-            desk = '(description-missing)'
+        desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
         syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure} {mis+len(set(pup))-len(set(tid))} missing. Tracks are grouped by episode]"
         
         z = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
@@ -569,30 +563,30 @@ class nts:
                 yek = shows 
 
             else:
-                # yek = list(galf.keys())
+
                 flag = ipa._j2d('./extra/flag')
 
                 if not flag:
-                    yek = [x for x in ipa.showlist if x not in galf][::20]
+                    yek = [x for x in ipa.showlist if x not in galf]#[::20]
                 else:
                     yek = list(flag.keys())[::-1]
 
-                # if len (yek) > 10:
-                #     ipa.wait('flg',True)
-                #     with open('flag.pickle', 'rb') as handle:
-                #         pick = pickle.load(handle)
-                #     pick += 1
-                #     lim = 10
-                #     if pick >= lim:
-                #         pick = 0
-                #     with open('flag.pickle', 'wb') as handle:
-                #         pickle.dump(pick, handle, protocol=pickle.HIGHEST_PROTOCOL)
-                #     yek = yek[pick::lim]
-                #     print(f'\ncurrent Pickle : {pick}\n')
-                #     ipa.wait('flg',False)
-                # else:
-                #     ipa.wait('flg',True)
-                #     pass
+                if len (yek) > 40:
+                    ipa.wait('flg',True)
+                    with open('./extra/flag.pickle', 'rb') as handle:
+                        pick = pickle.load(handle)
+                    pick += 1
+                    lim = 10
+                    if pick >= lim:
+                        pick = 0
+                    with open('./extra/flag.pickle', 'wb') as handle:
+                        pickle.dump(pick, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                    yek = yek[pick::lim]
+                    print(f'\ncurrent Pickle : {pick}\n')
+                    ipa.wait('flg',False)
+                else:
+                    ipa.wait('flg',True)
+                    pass
                 
             par = {str(m) : yek[m] for m in range(len(yek))}
             pprint(par)

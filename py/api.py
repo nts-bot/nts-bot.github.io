@@ -341,10 +341,8 @@ class api:
 
             doc += f"""{item}
             <span class="data">{son}</span>
-            <br>
             <span class="playlist">{surl}</span>
             <span class="data">{sson}</span>
-            <br>
             <span class="playlist">{burl}</span>
             <span class="data">{bson}</span>"""
 

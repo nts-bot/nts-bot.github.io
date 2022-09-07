@@ -35,9 +35,10 @@ flag = ipa._j2d('./extra/flag')
 
 stn.run()
 
-# print("\n STEP 3")
+print("\n STEP 3")
 
-# for i in flag:
-#     bc.search(i)
-#     bc.playlist(i)
-#     ipa.html()
+for i in flag:
+    bc.search(i)
+    bc.playlist(i)
+    ipa.flag(i,True,'galb','bait')
+    ipa.html()
