@@ -292,16 +292,25 @@ class nts:
                     else:
                         print('. . . . . .skipep.',end='\r')
 
-        driver.find_element(By.XPATH, makepath).click()
-        time.sleep(1.0)
         #
-        query = driver.current_url.split('/')[-1]
-        while not (len(query) in [0,8]):
-            print(f'PLAYLIST ID NOT FOUND (check code) : {query}',end='\r')
+
+        driver.find_element(By.XPATH, makepath).click()
+        # wait until playlist is made
+
+
+        if any(m):
+            print(f'CREATING PLAYLIST',end='\r')
             time.sleep(1.0)
             query = driver.current_url.split('/')[-1]
-        #
-        pid[show] = query
+            while not (len(query) == 8):
+                print(f'WAITING FOR PLAYLIST TO BE CREATED : CURRENT ID = {query}',end='\r')
+                time.sleep(1.0)
+                query = driver.current_url.split('/')[-1]
+            #
+            pid[show] = query
+        else:
+            print(f'NO BANDCAMP TRACKS FOUND for : {show}')
+            pid[show] = ''
         ipa._d2j('bid',pid)
         time.sleep(1.0)
         ipa._d2j(f'./bndcmpr/{show}',flags)

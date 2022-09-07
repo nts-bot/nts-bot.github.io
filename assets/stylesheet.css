@@ -15,7 +15,8 @@ i b {
   font-weight: bold;
 }
 
-h1 {
+h1,
+h2 {
   font-family: Courier;
   font-weight: normal;
   text-decoration: underline;
@@ -31,6 +32,24 @@ body {
   font-variant-ligatures: historical-ligatures;
   font-size: small;
   text-align: justify;
+}
+
+blockquote {
+  color: #000;
+}
+
+blockquote > a {
+  text-decoration: underline;
+  color: #808080;
+}
+
+details > summary {
+  cursor: cell;
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 a {

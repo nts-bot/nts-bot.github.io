@@ -406,6 +406,7 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
+    @timeout(20.0)
     def _add(self,show,threshold=[3,10],remove=False,reset=False,image=True):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         self._unknown(show)

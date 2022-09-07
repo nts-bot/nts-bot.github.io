@@ -306,11 +306,11 @@ class api:
 
         # [1] index
         
-        doc += '<br><blockquote class="index">'
+        doc += '<br><details><summary><h2>index/h2></summary><blockquote class="index">'
 
         for i in self.showlist[:-1]:
-            doc += f'<a href="#{i}">{i}</a>|'
-        doc += f'<a href="#{self.showlist[-1]}">{self.showlist[-1]}</a></blockquote><br>'
+            doc += f'<a href="#{i}">{i}</a>||'
+        doc += f'<a href="#{self.showlist[-1]}">{self.showlist[-1]}</a></blockquote></details><br>'
 
         # [2] For each show write : SHOW : [nts] | [spotify] | [bandcamp] : [json1] | [json2] | [json3]
 
