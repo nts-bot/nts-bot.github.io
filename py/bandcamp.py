@@ -30,6 +30,10 @@ dr = os.getenv("directory")
 os.chdir(f"{dr}/py")
 import api
 ipa = api.api()
+dr = os.getenv("directory")
+os.chdir(f"{dr}/py")
+import spotify
+spo = spotify.nts()
 
 class nts:
 
@@ -40,7 +44,7 @@ class nts:
 
     def ratio(self,a,b):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
-        return(SequenceMatcher(None, self.refine(a), self.refine(b)).ratio())
+        return(SequenceMatcher(None, self.refine(a,True), self.refine(b,True)).ratio())
 
     def req(self,url):
         i=0
@@ -53,16 +57,51 @@ class nts:
                 time.sleep(1.0)
                 i += 1
 
-    def refine(self,text):
-        text = text.replace('・',' ').replace('+',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\n','').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('/',' ').replace(';',' ').replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace('version','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','')
+    def kill(self,text):
+        ''' ELIMINATE DUPLICATES & UNNECESSARY CHARACTERS WITHIN STRING '''
+        cv = text.replace('・',' ').replace('+',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('/',' ').replace(';',' ').replace(':',' ').replace('.',' ').replace(',',' ').split(' ')
+        return(" ".join(dict.fromkeys(cv)))
+
+    def refine(self,text,kill=False):
+        ''' ELIMINATE UNNECCESARY WORDS WITHIN STRING '''
+        if kill:
+            text = self.kill(text)
         for i in list(range(1990,2022)):
-            text = text.replace(str(i),'').replace('  ',' ')
+            text = text.replace(str(i),'')
+        text = text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace('version','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','').replace('  ',' ')
         return(text.strip())
+
+    def camp(self,query,ort,oit):
+        tl = []
+        try:
+            url = f"https://bandcamp.com/search?q={query}&item_type=t"
+            soup = bs(self.req(url).content, "html.parser")
+            tracks = soup.select('.data-search')
+            for i in tracks[:3]:
+                tj = dict()
+                try:
+                    art = i.select('.subhead')[0].text.replace('\n','').split('by')[1]
+                    tit = i.select('.heading')[0].text.replace('\n','').strip()
+
+                    A = max([self.ratio(art,ort), self.ratio(ort,art), self.ratio(art,oit), self.ratio(oit,art)])
+                    T = max([self.ratio(tit,ort), self.ratio(ort,tit), self.ratio(tit,oit), self.ratio(oit,tit)])
+
+                    if (A + T)/2 > 0.7:    
+                        tj['artist'] = art
+                        tj['title'] = tit
+                        tj['url'] = i.select('.itemurl')[0].text.replace('\n','')
+                        tl += [tj]
+                except:
+                    pass
+        except:
+            print(f'. . . . .n.a.{ort[:5]}/{oit[:5]}',end='\r')
+        return(tl)
 
     def search(self,show):
 
         shelf = ipa._j2d(f'./json/{show}')
         flags = ipa._j2d(f'./bandcamp/{show}')
+        spotify = ipa._retriv(show,'flags')
         
         c = 0
         for episode in shelf:
@@ -83,41 +122,21 @@ class nts:
                         oit = shelf[episode][trdx]["title"] # original title
 
                         track = f'{ort} {oit}'
-
                         quer1 = urllib.parse.quote(track)
-                        quer2 = urllib.parse.quote(self.refine(unidecode(track)))
-                        tracks = []
 
-                        try:
-                            url = f"https://bandcamp.com/search?q={quer1}&item_type=t"
-                            soup = bs(self.req(url).content, "html.parser")
-                            tl = []
-                            tracks = soup.select('.data-search')
-                        except:
-                            try:
-                                url = f"https://bandcamp.com/search?q={quer2}&item_type=t"
-                                soup = bs(self.req(url).content, "html.parser")
-                                tl = []
-                                tracks = soup.select('.data-search')
-                            except:
-                                pass
-
-                        for i in tracks[:3]:
-                            tj = dict()
-                            try:
-                                art = i.select('.subhead')[0].text.replace('\n','').split('by')[1]
-                                tit = i.select('.heading')[0].text.replace('\n','').strip()
-
-                                A = max([self.ratio(art,ort), self.ratio(ort,art), self.ratio(art,oit), self.ratio(oit,art)])
-                                T = max([self.ratio(tit,ort), self.ratio(ort,tit), self.ratio(tit,oit), self.ratio(oit,tit)])
-
-                                if (A + T)/2 > 0.7:    
-                                    tj['artist'] = art
-                                    tj['title'] = tit
-                                    tj['url'] = i.select('.itemurl')[0].text.replace('\n','')
-                                    tl += [tj]
-                            except:
-                                pass
+                        tl = self.camp(quer1,ort,oit)
+                        if not tl:
+                            if spotify[episode][trdx]['ratio'] >= 3:
+                                print('. . . .t.a.s.',end='\r')
+                                ort = spotify[episode][trdx]["artist"] # original artist
+                                oit = spotify[episode][trdx]["title"] # original title
+                                track = f'{ort} {oit}'
+                                quer2 = urllib.parse.quote(track)
+                                tl = self.camp(quer2,ort,oit)
+                            else:
+                                print('. . . .t.a.o.',end='\r')
+                                quer2 = urllib.parse.quote(self.refine(unidecode(track)))
+                                tl = self.camp(quer2,ort,oit)
 
                         if tl:
                             flags[episode][trdx] = tl[0]
@@ -169,209 +188,36 @@ class nts:
 
         return(driver)
 
+    def run(self,shows=[]):
 
-    def run(self):
-        bid = ipa._j2d('bid')
-        galf = ipa._j2d('./extra/galf')
-        sublist = [x for x in ipa.showlist if x in galf]
-        for show in sublist:
+        if shows:
+            partition = shows
+
+        else:
+        
+            galf = ipa._j2d('./extra/galf')
+            sublist = [x for x in ipa.showlist if x in galf]
+
+            ipa.wait('flg',True)
+            with open('./extra/bait.pickle', 'rb') as handle:
+                pick = pickle.load(handle)
+            pick += 1
+            lim = 20
+            if pick >= lim:
+                pick = 0
+            with open('./extra/bait.pickle', 'wb') as handle:
+                pickle.dump(pick, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            partition = sublist[pick::lim]
+            print(f'\ncurrent Pickle : {pick}\n')
+            ipa.wait('flg',False)
+
+        par = {str(m) : partition[m] for m in range(len(partition))}
+        print(par)
+
+        for show in partition:
             if ipa.prerun(show,'json','bandcamp'):
                 print(f'{show[:8]}. . . . . .S',end='\r')
+                spo.run([show]) # double check
                 self.search(show)
-            # if ipa.prerun(show,'bandcamp','bndcmpr'):
-            #     print(f'{show[:8]}. . . . . .P',end='\r')
-            #     print(show)
-            #     self.playlist(show)
-            #     ipa.flag(show,True,'galb','bait')
-            #     ipa.html()
-
-    # def playlist(self,show):
-
-    #     driver = self.login()
-
-    #     # PLAYLIST
-
-    #     titlepath = '//*[@id="app"]/div/div[2]/div[2]/div[1]/input' #title # //*[@id="app"]/div/div[2]/div[2]/div[1]/input
-    #     deskpath = '//*[@id="app"]/div/div[2]/div[2]/div[1]/textarea' #description
-    #     trackpath = '//*[@id="app"]/div/div[2]/div[2]/div[3]/div/input' # track
-    #     addpath = '//*[@id="app"]/div/div[2]/div[2]/div[3]/div/a' # add track button 
-    #     makepath = '//*[@id="app"]/div/div[2]/div[2]/div[4]' # create/update playlist
-    #     editpath = '//*[@id="app"]/div/div[2]/div[2]/div/h2[2]/a[1]' # edit playlist
-    #     tracklistpath = '//*[@id="app"]/div/div[2]/div[2]/div[2]/div'
-
-    #     ## Check bid.json
-
-    #     pid = ipa._j2d('bid')
-    #     try:
-    #         bid = pid[show]
-    #     except KeyError:
-    #         bid = ''
-
-    #     if not bid: # create playlist
-
-    #         # CREATE PLAYLIST
-    #         title, desk = ipa.bio(show)
-    #         desk = desk.replace('\n',' ').replace('\\','').strip()
-    #         desk = f'[www.nts.live/shows/{show}] {desk}'
-    #         # title
-    #         driver.find_element(By.XPATH, titlepath).click()
-    #         driver.find_element(By.XPATH, titlepath).send_keys(title)
-    #         # description
-    #         driver.find_element(By.XPATH, deskpath).click()
-    #         driver.find_element(By.XPATH, deskpath).send_keys(desk)
-    #         time.sleep(1.0)
-            
-    #     else: # update playlist
-    #         driver.get(f'https://bndcmpr.co/{bid}')
-    #         time.sleep(1.0)
-    #         driver.find_element(By.XPATH, editpath).click()
-    #         time.sleep(1.0)
-
-    #     # UPDATE TRACKS
-
-    #     shelf = ipa._j2d(f'./bandcamp/{show}')
-    #     flags = ipa._j2d(f'./bndcmpr/{show}')
-
-    #     c = 0
-    #     m = []
-    #     for episode in shelf:
-    #         c += 1
-    #         print(f'. . . . . . . . . . . . . . . . .{c}:{len(list(shelf.keys()))}.',end='\r')
-    #         try:
-    #             flags[episode]
-    #         except KeyError:
-    #             flags[episode] = dict()
-
-    #         if list(set(shelf[episode].keys())-set(flags[episode].keys())):
-    #             print(f'{episode[:10]}:{episode[-10:]}',end='\r')
-
-    #             for trdx in shelf[episode]:
-    #                 n = [i for i in m if i]
-    #                 print(f'. . . . . . . . . . . . . . .{len(n)}',end='\r')
-    #                 if len(n) >= 150:
-    #                     print('. . . . . . . . . . . . . . .BREAKING DUE TO PLAYLIST SIZE.')
-    #                     break
-    #                 if (trdx not in flags[episode]): 
-
-    #                     if shelf[episode][trdx]:
-    #                         print('. . . . . . .adding.tracks.',end='\r')
-    #                         timeout = 10
-    #                         try:
-    #                             element = EC.element_to_be_clickable((By.CLASS_NAME, 'track-input'))
-    #                             WebDriverWait(driver, timeout).until(element)
-    #                         except TimeoutException:
-    #                             raise TimeoutError("Timeout")
-    #                         oldlength = len(driver.find_elements(By.XPATH, tracklistpath))
-    #                         if oldlength >= 150:
-    #                             print('. . . . . . . . . . . . . . .BREAKING DUE TO PLAYLIST SIZE.')
-    #                             break
-    #                         #
-    #                         driver.find_element(By.XPATH, trackpath).click()
-    #                         driver.find_element(By.XPATH, trackpath).send_keys(shelf[episode][trdx]['url'])
-    #                         time.sleep(0.5)
-    #                         driver.find_element(By.XPATH, addpath).click()
-    #                         time.sleep(1.0)
-    #                         newlength = len(driver.find_elements(By.XPATH, tracklistpath))
-    #                         while not (newlength == oldlength + 1):
-    #                             print(f'. . . . . . .waiting.{newlength}={oldlength}',end='\r')
-    #                             time.sleep(0.1)
-    #                             newlength = len(driver.find_elements(By.XPATH, tracklistpath))
-    #                         print('. . . . . . .track.added.',end='\r')
-    #                         flags[episode][trdx] = 1
-    #                         m += [True]
-    #                     else:
-    #                         flags[episode][trdx] = ''
-    #                         m += [False]
-    #                 else:
-    #                     print('. . . . . .skipep.',end='\r')
-    #             else:
-    #                 continue
-    #             break
-
-    #     #
-
-    #     driver.find_element(By.XPATH, makepath).click()
-    #     # wait until playlist is made
-
-    #     try:
-    #         ex = pid[show]
-    #     except KeyError:
-    #         pid[show] = ''
-    #         ex = ''
-
-
-    #     if any(m):
-    #         print(f'CREATING/UPDATING PLAYLIST',end='\r')
-    #         time.sleep(1.0)
-    #         query = driver.current_url.split('/')[-1]
-    #         while not (len(query) == 8):
-    #             print(f'WAITING FOR PLAYLIST : CURRENT ID = {query}',end='\r')
-    #             time.sleep(1.0)
-    #             query = driver.current_url.split('/')[-1]
-    #         #
-    #         pid[show] = query
-    #         ex = ''
-    #     else:
-    #         print(f'NO BANDCAMP TRACKS FOUND for : {show}')
-
-    #     if not ex: # TODO : if ex then we skip because we've yet to figure out how to upload more than 150 tunes onto bndcmpr.co
-    #         ipa._d2j('bid',pid)
-    #         ipa._d2j(f'./bndcmpr/{show}',flags)
-
-    #     driver.quit()
-
-    # def reset(self):
-    #     driver = self.login()
-    #     bid = ipa._j2d('bid')
-        
-    #     for i in list(bid.keys())[::-1]:
-    #         print(i,end='\r')
-
-    #         if bid[i]:
-    #             driver.get(f'https://bndcmpr.co/{bid[i]}')
-    #             time.sleep(1.0)
-
-    #             timeout = 20
-    #             try:
-    #                 element = EC.presence_of_element_located((By.CSS_SELECTOR, ".owner-controls"))
-    #                 WebDriverWait(driver, timeout).until(element)
-    #             except TimeoutException:
-    #                 raise TimeoutError("Timeout")
-
-    #             v1 = '//*[@id="app"]/div/div[2]/div[2]/div/h2[2]/a[2]' # delete playlist 
-    #             driver.find_element(By.XPATH, v1).click()
-    #             time.sleep(1.0)
-
-    #             v2 = '//*[@id="app"]/div/div[2]/div[1]/div/a[1]' #confirm
-
-    #             ext = False
-    #             while not ext:
-    #                 try:
-    #                     print('. . . . . . . . . . . deleting.',end='\r')
-    #                     driver.find_element(By.XPATH, v2).click()
-    #                     ext = True
-    #                 except:
-    #                     pass
-
-    #             ext = False
-    #             while not ext: # wait for redirect to home page
-    #                 try:
-    #                     try:
-    #                         v1 = '//*[@id="app"]/div/div[2]/div[2]/div[1]/input' #title
-    #                         driver.find_element(By.XPATH, v1).click()
-    #                     except:
-    #                         v1 = '//*[@id="app"]/div/div[2]/div[3]/div[1]/input' #title
-    #                         driver.find_element(By.XPATH, v1).click()
-    #                     ext = True
-    #                 except:
-    #                     pass
-
-    #             print('. . . . . . . . . . . deleted.',end='\r')
-    #         else:
-    #             pass
-
-    #         del bid[i]
-    #         ipa._d2j('bid',bid)
-
-
-#
+                ipa.showhtml(show)
+                ipa.home()

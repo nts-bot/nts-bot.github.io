@@ -1,5 +1,5 @@
 # Inbuilt Libraries
-import os, json, time, requests, re, pickle
+import os, json, time, requests, re, pickle, urllib
 # Html Parser
 from bs4 import BeautifulSoup as bs
 # Browser
@@ -302,8 +302,9 @@ class api:
 
         return(any(ok))
 
-    def html(self):
-        # HTML HEAD
+    #
+
+    def home(self): # HTML HOME
         doc = """
         <!DOCTYPE html>
         <html>
@@ -319,65 +320,40 @@ class api:
         <link rel="icon" href="./assets/Nts-radio.jpg">
         </head>
         <body>
-            <h1><a href="https://github.com/nts-bot/nts-bot.github.io">NTS-bot</a></h1>
+            <h1><a href="https://github.com/nts-bot/nts-bot.github.io">GitHub</a></h1>
         """
 
         # [1] index
         
-        doc += '<br><details><summary><h2>index</h2></summary><blockquote class="index">'
-
-        for i in self.showlist[:-1]:
-            doc += f'<a href="#{i}">{i}</a>||'
-        doc += f'<a href="#{self.showlist[-1]}">{self.showlist[-1]}</a></blockquote></details><br>'
-
-        # [2] For each show write : SHOW : [nts] | [spotify] | [bandcamp] : [json1] | [json2] | [json3]
-
-        pid = self._j2d('pid')
-        bid = self._j2d('bid')
+        doc += '<br><h2>index</h2>'
         title = self._j2d('./extra/titles')
 
-        doc += "<ul>"
-
         for i in self.showlist:
-
-            print(i,end='\r')
-
+            ''' CREATE LIST OF SHOW TITLES ALPHABETICALLY (LIST) '''
             try:
                 tit = title[i]
             except KeyError:
-                tit, ex = self.bio(i)
+                tit, des = self.bio(i)
 
-            item = f"""<li><a id="{i}" class="title" href="https://www.nts.live/shows/{i}">{tit}</a>"""
-            son = f'<a href="./json/{i}.json">nts-tracklist</a>'
-
-            if i in pid:
-                surl = f'<a href="https://open.spotify.com/playlist/{pid[i]}">spotify-playlist</a>'
-                sson = f'<a href="./spotify/{i}.json">spotify-tracklist</a>'
-            else:
-                surl=f'<a class="none">(wip)</a>'
-                sson=f'<a class="none">(wip)</a>'
-                
-            if i in bid:
-                if bid[i]:
-                    burl=f'<a href="https://bndcmpr.co/{bid[i]}">bandcamp-playlist</a>'
-                    bson=f'<a href="./bandcamp/{i}.json">bandcamp-tracklist</a>'
+            if i[0] not in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
+                if '#' not in locals():
+                    locals()['#'] = [tit]
                 else:
-                    burl=f'<a class="none">(empty)</a>'
-                    bson=f'<a href="./bandcamp/{i}.json">bandcamp-tracklist</a>'
+                    locals()['#'] += [tit]
             else:
-                burl=f'<a class="none">(wip)</a>'
-                bson=f'<a class="none">(wip)</a>'
+                if i[0] not in locals():
+                    locals()[i[0]] = [tit]
+                else:
+                    locals()[i[0]] += [tit]
 
-            doc += f"""{item}
-            <span class="data">{son}</span>
-            <span class="playlist">{surl}</span>
-            <br>
-            <span class="data">{sson}</span>
-            <span class="playlist">{burl}</span>
-            <br>
-            <span class="data">{bson}</span>"""
 
-        doc += '''</ul><br><br><br><br></body></html>'''
+        for i in ['#','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
+            doc += f"""<blockquote id="{i}" class="index">"""
+            for j in eval(i)[:-1]:
+                doc += f"""<a href="./html/{self.showlist[title.index(j)]}">{j} || """
+            doc += f"""{eval(i)[-1]}</blockquote><br>"""
+
+        doc += '''</body></html>'''
 
         ''' [03] SOUPIFY AND SAVE '''
 
@@ -385,3 +361,72 @@ class api:
         pretty = soup.prettify() 
         with open(f"index.html", 'w', encoding='utf8') as f:
             f.write(pretty)
+
+    #
+
+    def showhtml(self,show):
+        doc = """
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+            <meta content="HTML Tidy for HTML5 for Linux version 5.6.0" name="generator"/>
+            <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+            <title>
+            NTS-bot
+            </title>
+            <meta content="width=device-width,initial-scale=1" name="viewport"/>
+            <link href="./assets/stylesheet.css" rel="stylesheet"/>
+            <link rel="icon" href="./assets/Nts-radio.jpg">
+            </head>
+            <body>
+                <h1><a href="https://github.com/nts-bot/nts-bot.github.io">GitHub</a></h1>
+            """
+
+        title = self._j2d('./extra/titles')
+        doc += f'<br><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br>' # Show Title
+
+        # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
+
+        episodes = self._j2d(f'./json/{show}')
+        spotify = self._j2d(f'./spotify/{show}')
+        bandcamp = self._j2d(f'./bandcamp/{show}')
+
+        for i in episodes:
+
+            doc += f'<details><summary><h3>{episodes[i]}</h3> <span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫listen-back⚪</a></span></summary>'
+            doc += '<ol>'
+
+            for j in episodes[i]:
+
+                tart = episodes[i][j]['artist']
+                ttit = episodes[i][j]['title']
+
+                try:
+                    bc = bandcamp[i][j]['url']
+                    bnd = f"""<a class="goto" href="{bc}">💿bcamp💿</a> | """
+                except:
+                    bnd = ''
+                
+                try:
+                    sp = f"""https://open.spotify.com/track/{spotify[i][j]['trackid']}"""
+                    spo = f"""<a class="goto" href="{sp}">🟢spot🟢</a> | """
+                except:
+                    spo = ''
+
+                # tub = f"""<a class="goto" href="https://www.youtube.com/results?search_query={urllib.parse.quote(tart + ' ' + ttit)}">⭕tube⭕</a>"""
+
+                doc += f"""<li>{tart} - {ttit}<span class="data">{spo}{bnd}</span></li>""" #{tub}
+
+            doc += '</ol></details><br>'
+
+        doc += '''</body></html>'''
+
+        ''' [03] SOUPIFY AND SAVE '''
+
+        soup = bs(doc, "lxml")
+        pretty = soup.prettify() 
+        with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
+            f.write(pretty)
+
+
