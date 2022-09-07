@@ -96,6 +96,7 @@ class nts:
         
         c = 0
         for episode in shelf:
+            go = False
             c += 1
             print(f'{show[:14]}. . . . . . . . . .{c}:{len(list(shelf.keys()))}.',end='\r')
             try:
@@ -108,6 +109,7 @@ class nts:
 
                 for trdx in shelf[episode]:
                     if (trdx not in flags[episode]): 
+                        go = True
 
                         ort = shelf[episode][trdx]["artist"] # original artist
                         oit = shelf[episode][trdx]["title"] # original title
@@ -133,8 +135,8 @@ class nts:
                             flags[episode][trdx] = tl[0]
                         else:
                             flags[episode][trdx] = dict()
-
-                        ipa._d2j(f'./bandcamp/{show}',flags)
+            if go:
+                ipa._d2j(f'./bandcamp/{show}',flags)
 
     def run(self,shows=[]):
 
