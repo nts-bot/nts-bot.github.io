@@ -126,38 +126,6 @@ class nts:
 
                         ipa._d2j(f'./bandcamp/{show}',flags)
 
-    def run_search(self):
-        with open(f'./extra/bait.pickle', 'wb') as handle:
-            pickle.dump(0, handle, protocol=pickle.HIGHEST_PROTOCOL)
-        flag = ipa._j2d('./extra/blag')
-        showlist = [x for x in ipa.showlist if x not in flag]
-
-
-        if len (showlist) > 40:
-            print('sublist')
-            ipa.wait('flg',True)
-            with open('./extra/flag.pickle', 'rb') as handle:
-                pick = pickle.load(handle)
-            pick += 1
-            lim = 20
-            if pick >= lim:
-                pick = 0
-            with open('./extra/flag.pickle', 'wb') as handle:
-                pickle.dump(pick, handle, protocol=pickle.HIGHEST_PROTOCOL)
-            sublist = showlist[pick::lim]
-            print(f'\ncurrent Pickle : {pick}\n')
-            ipa.wait('flg',False)
-        else:
-            sublist = showlist
-
-        par = {str(m) : sublist[m] for m in range(len(sublist))}
-        print(par)
-
-        for show in sublist:
-            print(show)
-            self.search(show)
-            ipa.flag(show,True,'blag','bait')
-
     ''' [2] IF URL ; CREATE/UPDATE BANDCAMP PLAYLIST '''
 
     def login(self):
@@ -324,22 +292,15 @@ class nts:
         ipa._d2j(f'./bndcmpr/{show}',flags)
         driver.quit()
 
-    def run_playlist(self):
-        bid = ipa._j2d('bid')
-        for show in ipa.showlist:
-            if show not in bid:
-                print(show)
-                self.playlist(show)
-                ipa.flag(show,True,'galb','bait')
-
     def run(self):
         bid = ipa._j2d('bid')
         galf = ipa._j2d('./extra/galf')
         sublist = [x for x in ipa.showlist if x in galf]
         for show in sublist:
-            print(show)
-            self.search(show)
-            if show not in bid:
+            if ipa.prerun(show,'json','bandcamp'):
+                self.search(show)
+            if ipa.prerun(show,'bandcamp','bndcmpr'):
+                print(show)
                 self.playlist(show)
                 ipa.flag(show,True,'galb','bait')
                 ipa.html()

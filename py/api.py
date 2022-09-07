@@ -284,6 +284,21 @@ class api:
                 time.sleep(5.0)
                 self.wait(path,op)
 
+    def prerun(self,show,d1,d2): # useful for bandcamp script since we skip opening selenium
+
+        js1 = self._j2d(f'./{d1}/{show}')
+        js2 = self._j2d(f'./{d2}/{show}')
+        ok = []
+
+        for i in js1: # episodes
+            for j in js1[i]: # tracks
+                if j not in js2[i]:
+                    ok += [True]
+                else:
+                    ok += {False}
+
+        return(any(ok))
+
     def html(self):
         # HTML HEAD
         doc = """
