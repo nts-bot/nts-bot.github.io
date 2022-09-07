@@ -291,11 +291,14 @@ class api:
         ok = []
 
         for i in js1: # episodes
-            for j in js1[i]: # tracks
-                if j not in js2[i]:
-                    ok += [True]
-                else:
-                    ok += {False}
+            if i not in js2:
+                ok += [True]
+            else:
+                for j in js1[i]: # tracks
+                    if j not in js2[i]:
+                        ok += [True]
+                    else:
+                        ok += [False]
 
         return(any(ok))
 
@@ -333,18 +336,18 @@ class api:
         bid = self._j2d('bid')
         title = self._j2d('./extra/titles')
 
-        try:
-            ex = title[i]
-        except KeyError:
-            title, desk = self.bio(i)
-
         doc += "<ul>"
 
         for i in self.showlist:
 
             print(i,end='\r')
 
-            item = f"""<li><a id="{i}" class="title" href="https://www.nts.live/shows/{i}">{title[i]}</a>"""
+            try:
+                tit = title[i]
+            except KeyError:
+                tit, ex = self.bio(i)
+
+            item = f"""<li><a id="{i}" class="title" href="https://www.nts.live/shows/{i}">{tit}</a>"""
             son = f'<a href="./json/{i}.json">nts-tracklist</a>'
 
             if i in pid:
