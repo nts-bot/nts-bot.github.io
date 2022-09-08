@@ -63,7 +63,7 @@ class nts:
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
 
     # LOCAL DATABASE
-    @timeout(20.0)
+    @timeout(5.0)
     def _j2d(self,path):
         try:
             with open(f"{path}.json", 'r', encoding='utf-8') as f:
@@ -74,21 +74,21 @@ class nts:
             return(dict())
         except PermissionError as error:
             print(f'Permission Error : {error}')
-            time.sleep(1.0)
+            time.sleep(0.5)
             return(self._j2d(path))
         
-    @timeout(20.0)
+    @timeout(5.0)
     def _d2j(self,path,allot):
-        try:
-            if isinstance(allot,dict):
-                with open(f"{path}.json", 'w', encoding='utf-8') as f:
-                    json.dump(allot, f, sort_keys=True, ensure_ascii=False, indent=4)
-            else:
-                raise ValueError(f'You are trying to dump {type(allot)} instead dict()')
-        except:
-            print(f'Error When Storing JSON')
-            time.sleep(1.0)
-            self._d2j(path,allot)
+        # try:
+        if isinstance(allot,dict):
+            with open(f"{path}.json", 'w', encoding='utf-8') as f:
+                json.dump(allot, f, sort_keys=True, ensure_ascii=False, indent=4)
+        else:
+            raise ValueError(f'You are trying to dump {type(allot)} instead dict()')
+        # except:
+        #     print(f'Error When Storing JSON')
+        #     time.sleep(0.5)
+        #     self._d2j(path,allot)
 
     def prerun(self,json1,json2,meta=''):
         js1 = self._j2d(json1)
@@ -105,7 +105,10 @@ class nts:
                         if j not in js2[i]:
                             ok += [True]
                         else:
-                            ok += [False]
+                            if not js2[i][j]:
+                                ok += [True]
+                            else:
+                                ok += [False]
         return(any(ok))
 
     # RUN SCRIPT
@@ -133,7 +136,7 @@ class nts:
             print('BANDCAMP',end='\r')
             if self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}"):
                 print('BANDCAMP.TRUE.',end='\r')
-                self.searchloop(show,['tracklist','bandcamp','rate'],'bandcamp')
+                self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp')
             # ADD
             print('ADD',end='\r')
             self.spotifyplaylist(show,reset=reset)
@@ -417,7 +420,10 @@ class nts:
             except KeyError:
                 eval(jsonlist[1])[episode] = dict()
                 store = True
-            if list(set(eval(jsonlist[0])[episode].keys())-set(eval(jsonlist[1])[episode].keys())):
+            ok = eval(jsonlist[0])[episode].keys()
+            nk = eval(jsonlist[1])[episode].keys()
+            vl = [i for i in eval(jsonlist[1])[episode].values() if i]
+            if list(set(ok)-set(nk)) or (not vl):
                 subcounter = 0
                 for trdx in eval(jsonlist[0])[episode]:
                     subcounter += 1
@@ -430,9 +436,7 @@ class nts:
                         print(f'{show[:7]}{episode[:7]}. . . . .{subcounter}:{len(list(eval(jsonlist[0])[episode].keys()))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
-                            #
                             self.connect()
-                            #
                             eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
@@ -784,7 +788,7 @@ class nts:
         url = f"https://bandcamp.com/search?q={query}&item_type=t"
         soup = bs(self.req(url).content, "html.parser")
         try:
-            tj['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1]
+            tj['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
             tj['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
             tj['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
         except:
