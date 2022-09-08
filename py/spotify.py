@@ -163,19 +163,21 @@ class nts:
             print(f'. . . . . . . . . . . . . . . . .{c}:{len(list(shelf.keys()))}.',end='\r')
 
             try:
-                flags[episode]
-            except (KeyError,TypeError) as error:
-                try:
-                    flags[episode] = dict()
-                except TypeError as error:
-                    return False
+                x = flags[episode]
+            except KeyError:
+                flags[episode] = dict()
+                coal = True
             
             if list(set(shelf[episode].keys())-set(flags[episode].keys())):
                 print(f'{episode[:10]}:{episode[-10:]}',end='\r')
                 for trdx in shelf[episode]:
-                    if (trdx not in flags[episode]): 
+                    try:
+                        if not flags[episode][trdx]:
+                            coal = True
+                    except KeyError:
                         coal = True
-
+                    cc += 1
+                    if coal:
                         q0= f'artist:{shelf[episode][trdx]["artist"]} track:{shelf[episode][trdx]["title"]}'
                         q1 = f'{shelf[episode][trdx]["artist"]} : {shelf[episode][trdx]["title"]}'
                         s0 = self._run(q0)
@@ -215,20 +217,22 @@ class nts:
             print(f'. . . . . . . . . . . . . . . . .{c}:{len(list(shelf.keys()))}.',end='\r')
             
             try:
-                flags[episode]
-            except (KeyError,TypeError) as error:
-                try:
-                    flags[episode] = dict()
-                except TypeError as error:
-                    return False
+                x = flags[episode]
+            except KeyError:
+                flags[episode] = dict()
+                coal = True
             
             if list(set(shelf[episode].keys())-set(flags[episode].keys())):
                 print(f'{episode[:10]}:{episode[-10:]}',end='\r')
                 for trdx in shelf[episode]:
+                    try:
+                        if not flags[episode][trdx]:
+                            coal = True
+                    except KeyError:
+                        coal = True
                     cc += 1
-                    if (trdx not in flags[episode]):
+                    if coal: #(trdx not in flags[episode])
                         print(f'. . . . . . . . . . . . . .{cc}:{len(list(shelf[episode].keys()))}.',end='\r')
-                        coal = True 
 
                         qa = shelf[episode][trdx]["artist"]
                         qt = shelf[episode][trdx]["title"]
@@ -406,12 +410,13 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    @timeout(60.0)
     def _add(self,show,threshold=[3,10],remove=False,reset=False,image=True):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         self._unknown(show)
         pid = self.pid(show)
         flags = ipa._retriv(show,'flags')
+        meta = ipa._j2d(f'./extra/meta')[show]
+        sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
 
         tid = []
         pup = []
@@ -419,7 +424,9 @@ class nts:
         almost = 0
         unsure = 0
 
-        for episodes in flags:
+        # for episodes in flags:
+        for mt in sortmeta[::-1]:
+            episodes = mt[1]
             for track in flags[episodes]:
                 if threshold[0] <= flags[episodes][track]['ratio'] <= threshold[1]:
                     tid += [flags[episodes][track]['trackid']]
@@ -431,7 +438,7 @@ class nts:
                 if threshold[0]  <= flags[episodes][track]['ratio'] <= 3:
                     unsure += 1
 
-        tid = self.scene(tid[::-1])[::-1]
+        tid = self.scene(tid[::-1])
 
         current = self.sp.user_playlist_tracks(self.user,pid)
         tracks = current['items']
@@ -464,7 +471,7 @@ class nts:
             hund = [add[i:i+100] for i in range(0, len(add), 100)]
             for i in hund:                    
                 print(f'.tracks appended', end='\r')
-                self.sp.user_playlist_add_tracks(self.user, pid, i, position=0)
+                self.sp.user_playlist_add_tracks(self.user, pid, i) #, position=0
         else:
             print('.no tracks appended')
 
@@ -603,7 +610,7 @@ class nts:
                     ipa.N2J(i,100) #100
                     ipa.tracklist(i)
                 else:
-                    res, ims = False, False
+                    res, ims = True, False
 
                 print('. . . . . . . . . . .S.',end='\r')
                 self.search(i)

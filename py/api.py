@@ -106,10 +106,12 @@ class api:
             else:
                 print(f'. . . . . . . .EXISTS.',end='\r')
 
+            self.getmeta(show,soup)
+
     ''' LATEST '''
 
     def latest(self,url="https://www.nts.live/latest"): 
-        soup = self.browse(url)
+        soup = self.browse(url,amount=2)
         episodes = soup.select('a.nts-grid-v2-item__header')
         shelf = self._j2d('./extra/update')
         for i in episodes:
@@ -120,6 +122,8 @@ class api:
             shelf[show] = []
             shelf[show] += [epis]
             shelf[show] = list(set(shelf[show]))
+
+        self.getmeta(show,soup)
 
         self._d2j('./extra/update',shelf)
 
@@ -141,8 +145,8 @@ class api:
         
     ''' NTS 2 JSON '''
 
-    def N2J(self,show,amount=1):
-        soup = self.browse(f"https://www.nts.live/shows/{show}")
+    def N2J(self,show,amount=10):
+        soup = self.browse(f"https://www.nts.live/shows/{show}",amount=amount)
         grid = soup.select(".nts-grid-v2")
         shelf = self._j2d(f'./json/{show}')
 
@@ -159,14 +163,20 @@ class api:
             else:
                 print('href failed')
 
+        self.getmeta(show,soup)
+
         self._d2j(f'./json/{show}',shelf)
 
     def tracklist(self,show):
         
         print(show, end='\r')
         shelf = self._j2d(f'./json/{show}')
+        try:
+            meta = self._j2d(f'./extra/meta')[show]
+        except:
+            meta = shelf
 
-        for i in shelf.keys():
+        for i in meta:
             print('.',end='\r')
             if shelf[i]:
                 pass
@@ -200,6 +210,72 @@ class api:
         self._d2j(f'./json/{show}',shelf)
 
     ''' EXTRA '''
+
+    def req(self,url):
+        i=0
+        while i < 30:
+            try:
+                res = requests.get(url)
+                return(res)
+            except ConnectionError:
+                print('Connection Error')
+                time.sleep(1.0)
+                i += 1
+
+    def getmeta(self,show,soup):
+        grid = soup.select('.nts-grid-v2-item__content')
+        meta = self._j2d(f'./extra/meta')
+        for i in grid:
+            sub = i.select('.nts-grid-v2-item__header')[0]
+            ep = sub['href'].split('/')[-1]
+            date = sub.select('span')[0].text
+            eptitle = sub.select('.nts-grid-v2-item__header__title')[0].text
+            try:
+                store = meta[show]
+            except KeyError:
+                meta[show] = dict()
+                store = meta[show]
+            store[ep] = {'title':eptitle,'date':date}
+        self._d2j(f'./extra/meta',meta)
+
+    def meta(self,shw=''):
+        meta = self._j2d(f'./extra/meta')
+        if shw:
+            sub = [shw]
+            ret = True
+        else:
+            sub = self.showlist
+            ret = False
+        for show in sub:
+            shelf = self._j2d(f'./json/{show}')
+            try:
+                store = meta[show]
+            except KeyError:
+                meta[show] = dict()
+                store = meta[show]
+            ok = [False]
+            for i in shelf: # episodes
+                if i not in store:
+                    ok += [True]
+                else:
+                    pass
+
+            if any(ok):
+                shelf = self._j2d(f'./json/{show}')
+                scroll = round(len(shelf)/12)
+                print(scroll)
+                url = f"https://www.nts.live/shows/{show}"
+                if scroll <= 1:
+                    soup = bs(self.req(url).content, "html.parser")
+                else:
+                    soup = self.browse(url,amount=scroll)
+                self.getmeta(show,soup)
+                if ret:
+                    return(True)
+            else:
+                print('skip')
+                if ret:
+                    return(False)
 
     def images(self,path):
         imlist = [i.split('.')[0] for i in os.listdir('./jpeg/')]
@@ -398,7 +474,7 @@ class api:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back (NTS)<br>🟢 = Hear Track (Spotify)<br>💿 = Buy Track (Bandcamp)<br>🗃️ = Track Metadata (Discogs)<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Shuffle this Show (Spotify Playlist)</a></blockquote></div>' # Show Title
+        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back [NTS]<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.png" class="icon"/> = Bandcamp<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Show Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
@@ -407,9 +483,15 @@ class api:
         bandcamp = self._j2d(f'./bandcamp/{show}')
         discogs = self._j2d(f'./discogs/{show}')
 
-        for i in episodes:
+        meta = self._j2d(f'./extra/meta')[show]
+        sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
 
-            doc += f'<details><summary><h3><div class="title">{i}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫⚪</a></span></h3></summary>'
+        for mt in sortmeta[::-1]:
+
+            i = mt[1]
+            ti = f"{meta[i]['title']} - {meta[i]['date']}"
+
+            doc += f'<details><summary><h3><div class="title">{ti}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫⚪</a></span></h3></summary>'
             doc += '<ol>'
 
             for j in episodes[i]:
@@ -419,7 +501,7 @@ class api:
 
                 try:
                     bc = bandcamp[i][j]['url']
-                    bnd = f"""<a class="goto" href="{bc}">💿</a>  """
+                    bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt.png" class="icon"/></a>  """
                 except:
                     bnd = ''
 
@@ -442,8 +524,6 @@ class api:
                     colon = ':'
                 else:
                     colon = ''
-
-                # tub = f"""<a class="goto" href="https://www.youtube.com/results?search_query={urllib.parse.quote(tart + ' ' + ttit)}">⭕tube⭕</a>"""
 
                 doc += f"""<li>{tart} - {ttit}   {colon}   <span class="data">{spo}{bnd}{dis}</span></li>""" #{tub}
 
