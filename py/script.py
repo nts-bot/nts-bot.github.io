@@ -1,6 +1,7 @@
 
 # Basic Libraries
 import os, json, time, requests, re, pickle, urllib
+from urllib.error import HTTPError
 # Html Parser
 from bs4 import BeautifulSoup as bs
 # Browser
@@ -164,8 +165,8 @@ class nts:
             print(show)
             # SCRAPE
             try:
-                if self.prerun(f"./tracklist/{show}",f"./extra/meta",show):
-                    self.scrape(show,False,round(len(self._j2d(f"./tracklist/{show}"))/12))
+                if self.prerun(f"./tracklist/{show}",f"./meta",show):
+                    self.scrape(show,False,round(len(self._j2d(f"./tracklist/{show}"))/12)+1)
                 else:
                     self.scrape(show,True)
             except:
@@ -239,7 +240,7 @@ class nts:
         # EPISODES META
 
         episodemeta = soup.select('.nts-grid-v2-item__content')
-        meta = self._j2d(f'./extra/meta')
+        meta = self._j2d(f'./meta')
         try:
             x = meta[show]
         except KeyError:
@@ -250,7 +251,7 @@ class nts:
             date = sub.select('span')[0].text
             eptitle = sub.select('.nts-grid-v2-item__header__title')[0].text
             meta[show][ep] = {'title':eptitle,'date':date}
-        self._d2j(f'./extra/meta',meta)
+        self._d2j(f'./meta',meta)
 
         # ARTIST IMAGES
 
@@ -704,7 +705,7 @@ class nts:
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         rate = self._j2d(f'./spotify/{show}')
-        meta = self._j2d(f'./extra/meta')[show]
+        meta = self._j2d(f'./meta')[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
 
         tid = []
@@ -868,11 +869,11 @@ class nts:
     def camp_version2(self,query):
 
         print(f'.{len(query)}.',end='\r')
-        time.sleep(round(len(query)/5))
+        time.sleep(round(len(query)/5)+3.0)
 
         try:
             response = perform_web_requests(list(query.values()), 16)
-        except:
+        except HTTPError:
             print('REQUEST FAILED')
             time.sleep(5.0)
             return(self.camp_version2(query))
@@ -1022,7 +1023,7 @@ class nts:
         episodes = self._j2d(f'./tracklist/{show}')
         spotify = self._j2d(f'./spotify/{show}')
         bandcamp = self._j2d(f'./bandcamp/{show}')
-        meta = self._j2d(f'./extra/meta')[show]
+        meta = self._j2d(f'./meta')[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
 
         for mt in sortmeta[::-1]:
