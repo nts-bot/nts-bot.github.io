@@ -146,20 +146,20 @@ class nts:
         else:
         
             galf = ipa._j2d('./extra/galf')
-            sublist = [x for x in ipa.showlist if x in galf]
+            partition = [x for x in ipa.showlist if x in galf]
 
-            ipa.wait('flg',True)
-            with open('./extra/bait.pickle', 'rb') as handle:
-                pick = pickle.load(handle)
-            pick += 1
-            lim = 10
-            if pick >= lim:
-                pick = 0
-            with open('./extra/bait.pickle', 'wb') as handle:
-                pickle.dump(pick, handle, protocol=pickle.HIGHEST_PROTOCOL)
-            partition = sublist[pick::lim]
-            print(f'\ncurrent Pickle : {pick}\n')
-            ipa.wait('flg',False)
+            # ipa.wait('flg',True)
+            # with open('./extra/bait.pickle', 'rb') as handle:
+            #     pick = pickle.load(handle)
+            # pick += 1
+            # lim = 10
+            # if pick >= lim:
+            #     pick = 0
+            # with open('./extra/bait.pickle', 'wb') as handle:
+            #     pickle.dump(pick, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            # partition = sublist[pick::lim]
+            # print(f'\ncurrent Pickle : {pick}\n')
+            # ipa.wait('flg',False)
 
         par = {str(m) : partition[m] for m in range(len(partition))}
         print(par)
