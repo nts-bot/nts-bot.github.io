@@ -1,1320 +1,254 @@
 {
-    "flags": {
-        "literary-friction-1st-december-2021": {
-            "00": {
-                "artist": "Loma",
-                "ratio": 6,
-                "title": "Going Out",
-                "trackid": "1Fb4bA8ZHQdEM5XKncwnF8"
-            },
-            "01": {
-                "artist": "Leslie Winer",
-                "ratio": 6,
-                "title": "Tree",
-                "trackid": "54yInq4OcB98BGX6Fre7Vp"
-            },
-            "02": {
-                "artist": "Ada Lea",
-                "ratio": 6,
-                "title": "oranges",
-                "trackid": "61v4u9hRnKe8KVQEKNMTWr"
-            }
+    "literary-friction-1st-december-2021": {
+        "00": {
+            "artist": "Loma",
+            "ratio": 6,
+            "title": "Going Out",
+            "trackid": "1Fb4bA8ZHQdEM5XKncwnF8"
         },
-        "literary-friction-24th-june-2022": {
-            "00": {
-                "artist": "Frazey Ford",
-                "ratio": 6,
-                "title": "Done",
-                "trackid": "0SBgqjWlmhPfz5HTl9yHp3"
-            },
-            "01": {
-                "artist": "Bobby Oroza",
-                "ratio": 6,
-                "title": "My Place, My Time",
-                "trackid": "5N9JbYHH2kgvj2nilv8aua"
-            },
-            "02": {
-                "artist": "Alex Low",
-                "ratio": 3,
-                "title": "How It Was Done - Original Mix",
-                "trackid": "36iVZaz7NR6OM8MLCjNtgn"
-            }
+        "01": {
+            "artist": "Leslie Winer",
+            "ratio": 6,
+            "title": "Tree",
+            "trackid": "54yInq4OcB98BGX6Fre7Vp"
         },
-        "literary-friction-29th-april-2022": {
-            "00": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "01": {
-                "artist": "Lakker",
-                "ratio": 3,
-                "title": "A Juggling of Numbers",
-                "trackid": "2Rhpjc5Zb9nywsJmNMOUbl"
-            },
-            "02": {
-                "artist": "Martyn",
-                "ratio": 5,
-                "title": "Reset Walking",
-                "trackid": "2pbZiS73rsRI6mOQErD30c"
-            }
-        },
-        "literary-friction-29th-december-2021": {
-            "00": {
-                "artist": "Pia Fraus",
-                "ratio": 6,
-                "title": "The New Water",
-                "trackid": "7fxd8wv5tWSU5hktwFJn4l"
-            },
-            "01": {
-                "artist": "Sabine Happard",
-                "ratio": 6,
-                "title": "Le désastre des eaux claires",
-                "trackid": "0m6XYAyzEVWZppFCLfCHUq"
-            },
-            "02": {
-                "artist": "muva of Earth",
-                "ratio": 6,
-                "title": "AFFIRMATION",
-                "trackid": "52m3wKFwEF2QMAqxNwm3SX"
-            },
-            "03": {
-                "artist": "Azymuth",
-                "ratio": 6,
-                "title": "Maracana",
-                "trackid": "0pY0k4hwEH2yRrWV8vapgR"
-            }
-        },
-        "literary-friction-3rd-november-2021": {
-            "00": {
-                "artist": "Turning Tides",
-                "ratio": 6,
-                "title": "Lullaby",
-                "trackid": "7desl8H65pH7Qd21mJP57k"
-            },
-            "01": {
-                "artist": "Tirzah",
-                "ratio": 6,
-                "title": "Hive Mind",
-                "trackid": "2GUNtgwIJCquWo1BXR6SWr"
-            },
-            "02": {
-                "artist": "Saint Etienne",
-                "ratio": 6,
-                "title": "Pond House",
-                "trackid": "76H5EAybLAfoooUHGgGxsf"
-            }
-        },
-        "literary-friction-6th-october-2021": {
-            "00": {
-                "artist": "Michael White",
-                "ratio": 6,
-                "title": "The Blessing Song",
-                "trackid": "1tO5IV6beNuuSTAVVZuI0N"
-            },
-            "01": {
-                "artist": "ELWD",
-                "ratio": 6,
-                "title": "A WAY OF LIVING",
-                "trackid": "3mD6CXyMnpOf59EOjFQvxI"
-            },
-            "02": {
-                "artist": "Sungaze",
-                "ratio": 6,
-                "title": "Body in the Mirror",
-                "trackid": "4LnYHhxamGiAgdF50btEwl"
-            }
-        },
-        "literaryfriction-10th-august-2022": {
-            "00": {
-                "artist": "Mode Moderne",
-                "ratio": 6,
-                "title": "Unburden Yourself",
-                "trackid": "5RgYwWi0A2nLQrjpu57AAg"
-            },
-            "01": {
-                "artist": "Sahalé",
-                "ratio": 3,
-                "title": "Sapana",
-                "trackid": "6Lug1sWzQOhfySNlsmDNkI"
-            },
-            "02": {
-                "artist": "Princess Superstar",
-                "ratio": 6,
-                "title": "Bad Babysitter",
-                "trackid": "5DFbzGnuYCCX05fIKXH2tP"
-            },
-            "03": {
-                "artist": "Au Pairs",
-                "ratio": 6,
-                "title": "It's Obvious",
-                "trackid": "1mIkQYebw6J0DxrWTz1PUG"
-            }
-        },
-        "literaryfriction-18th-may-2022": {
-            "00": {
-                "artist": "Arp",
-                "ratio": 6,
-                "title": "New Pleasures",
-                "trackid": "3Z5vH2R1qoTWP7JltZzulN"
-            },
-            "01": {
-                "artist": "Michal Turtle",
-                "ratio": 6,
-                "title": "Astral Decoy",
-                "trackid": "2RVrr45hUBkWxiyB18zYPS"
-            },
-            "02": {
-                "artist": "Alex Ho",
-                "ratio": 6,
-                "title": "Neary",
-                "trackid": "4EO2r5nH2CalNUyutfumPm"
-            }
-        },
-        "literaryfriction-21st-july-2022": {
-            "00": {
-                "artist": "Protassov",
-                "ratio": 6,
-                "title": "I Wonder",
-                "trackid": "5fuJMvVKNeTbIcflFTLqg6"
-            },
-            "01": {
-                "artist": "Kokoroko",
-                "ratio": 6,
-                "title": "Ti-de",
-                "trackid": "4JJEfYFamGRfmz9nG6fx1w"
-            },
-            "02": {
-                "artist": "The Architect",
-                "ratio": 6,
-                "title": "Jacqueline",
-                "trackid": "1nDWNjX7GadwD6mnGoAog5"
-            }
-        },
-        "literaryfriction-23rd-february-2022": {
-            "00": {
-                "artist": "D.K.",
-                "ratio": 6,
-                "title": "Ivory Forest",
-                "trackid": "6j39osv7FnI6mm3AgYKmeU"
-            },
-            "01": {
-                "artist": "Andre Ethier",
-                "ratio": 6,
-                "title": "Nature Compels Me",
-                "trackid": "7hAbAB14U1MUENHXEXp0VH"
-            },
-            "02": {
-                "artist": "Will Van Horn",
-                "ratio": 6,
-                "title": "Alberto Balsalm",
-                "trackid": "3FS3NeItouHHw16cBFnQwS"
-            }
-        },
-        "literaryfriction-23rd-march-2022": {
-            "00": {
-                "artist": "Jenny Hval",
-                "ratio": 6,
-                "title": "Freedom",
-                "trackid": "4nPhLPoZrUxSQHEUwtZ6n9"
-            },
-            "01": {
-                "artist": "Mega Bog",
-                "ratio": 6,
-                "title": "Left Door",
-                "trackid": "2a9MttUuX1DTmAppTlr0W2"
-            },
-            "02": {
-                "artist": "Xenia Rubinos",
-                "ratio": 6,
-                "title": "Si Llego",
-                "trackid": "0sgUWpkHl4FVnUIziI61Vt"
-            }
-        },
-        "literaryfriction-28th-january-2022": {
-            "00": {
-                "artist": "Pierre Cavalli",
-                "ratio": 6,
-                "title": "Possarinhos",
-                "trackid": "3zZ1bfbks1ZGUCbCHARI5o"
-            },
-            "01": {
-                "artist": "Lost Horizons",
-                "ratio": 6,
-                "title": "In Quiet Moments",
-                "trackid": "3nL5jkAjnhFORf2dtp23Kc"
-            },
-            "02": {
-                "artist": "Vanishing Twin",
-                "ratio": 6,
-                "title": "Phase One Million",
-                "trackid": "59q0IcUN0dEPN90TFoTwsH"
-            }
+        "02": {
+            "artist": "Ada Lea",
+            "ratio": 6,
+            "title": "oranges",
+            "trackid": "61v4u9hRnKe8KVQEKNMTWr"
         }
     },
-    "search": {
-        "literary-friction-1st-december-2021": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Loma",
-                        "title": "Going Out",
-                        "uri": "1Fb4bA8ZHQdEM5XKncwnF8"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Loma",
-                        "title": "Going Out",
-                        "uri": "1Fb4bA8ZHQdEM5XKncwnF8"
-                    },
-                    {
-                        "artist": "Lola Brooke",
-                        "title": "Dummy Ummy",
-                        "uri": "3nSWujJAiDBsDK80pagDBV"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Leslie Winer",
-                        "title": "Tree",
-                        "uri": "54yInq4OcB98BGX6Fre7Vp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Leslie Winer",
-                        "title": "Tree",
-                        "uri": "54yInq4OcB98BGX6Fre7Vp"
-                    },
-                    {
-                        "artist": "Leslie Winer",
-                        "title": "Skin",
-                        "uri": "0uqWC6CLGLc1LfgLyNhTox"
-                    },
-                    {
-                        "artist": "Leslie Winer",
-                        "title": "John Says",
-                        "uri": "2VXmRfLW57e4YGG2rfE2KM"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Ada Lea",
-                        "title": "oranges",
-                        "uri": "61v4u9hRnKe8KVQEKNMTWr"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ada Lea",
-                        "title": "oranges",
-                        "uri": "61v4u9hRnKe8KVQEKNMTWr"
-                    }
-                ]
-            }
+    "literary-friction-24th-june-2022": {
+        "00": {
+            "artist": "Frazey Ford",
+            "ratio": 6,
+            "title": "Done",
+            "trackid": "0SBgqjWlmhPfz5HTl9yHp3"
         },
-        "literary-friction-24th-june-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Frazey Ford",
-                        "title": "Done",
-                        "uri": "0SBgqjWlmhPfz5HTl9yHp3"
-                    },
-                    {
-                        "artist": "Frazey Ford",
-                        "title": "If You Gonna Go",
-                        "uri": "583hRFIZlkPCG4aQg1YXQi"
-                    },
-                    {
-                        "artist": "Frazey Ford",
-                        "title": "Azad",
-                        "uri": "0aHxckLq5GYRC6W8ofzzkL"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Bobby Oroza",
-                        "title": "My Place, My Time",
-                        "uri": "5N9JbYHH2kgvj2nilv8aua"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bobby Oroza",
-                        "title": "My Place, My Time",
-                        "uri": "5N9JbYHH2kgvj2nilv8aua"
-                    },
-                    {
-                        "artist": "Bobby Oroza",
-                        "title": "I Got Love",
-                        "uri": "00vfnhLSWHOtbfV2gaCNcQ"
-                    },
-                    {
-                        "artist": "Bobby Oroza",
-                        "title": "Make Me Believe",
-                        "uri": "2e5htKSky0i1xcMhvPFDYk"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Alex Basile",
-                        "title": "Home to Donegal",
-                        "uri": "2aRj8vU1D94bxXCuszChS8"
-                    },
-                    {
-                        "artist": "Alex Low",
-                        "title": "How It Was Done - Original Mix",
-                        "uri": "36iVZaz7NR6OM8MLCjNtgn"
-                    },
-                    {
-                        "artist": "Linsey Alexander",
-                        "title": "How Could You Do Me Like You Done Me",
-                        "uri": "73RGdMFPokkOArshkRvCZM"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "George Frideric Handel",
-                        "title": "Handel: Samson, HWV 57, Act II, Scene 2: Aria. \"Your charms to ruin led the way\" - Recitative. \"Forgive what's done\" (Samson, Dalila)",
-                        "uri": "2PYN18Hl8rLEF5qBrWOlUl"
-                    },
-                    {
-                        "artist": "Alex Hobbs",
-                        "title": "Stole the Show",
-                        "uri": "04SaNxbEN3fysbISrIiYod"
-                    },
-                    {
-                        "artist": "Alex Hobson",
-                        "title": "Satisfy Me",
-                        "uri": "6kNEXB3Dkxi0S5XnK8OGOu"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Bobby Oroza",
+            "ratio": 6,
+            "title": "My Place, My Time",
+            "trackid": "5N9JbYHH2kgvj2nilv8aua"
         },
-        "literary-friction-29th-april-2022": {
-            "00": {
-                "s0": "",
-                "s1": ""
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Lakker",
-                        "title": "A Juggling of Numbers",
-                        "uri": "2Rhpjc5Zb9nywsJmNMOUbl"
-                    },
-                    {
-                        "artist": "Lakker",
-                        "title": "Milch",
-                        "uri": "76nMgm0NQNNOKfkcu5X9bO"
-                    },
-                    {
-                        "artist": "Lakker",
-                        "title": "Maeslantkering Gating",
-                        "uri": "2gWnHZsjwEQ67kdM2YjunB"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Martyn",
-                        "title": "Reset Walking",
-                        "uri": "2pbZiS73rsRI6mOQErD30c"
-                    },
-                    {
-                        "artist": "Martin Campbell",
-                        "title": "Give Me the Money",
-                        "uri": "2sQMnvkzZKsNhUPjUSmYwN"
-                    },
-                    {
-                        "artist": "Martyn",
-                        "title": "U1-U8",
-                        "uri": "0mwMbJUj0djosU92ldsn3s"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Alex Low",
+            "ratio": 3,
+            "title": "How It Was Done - Original Mix",
+            "trackid": "36iVZaz7NR6OM8MLCjNtgn"
+        }
+    },
+    "literary-friction-29th-april-2022": {
+        "00": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
         },
-        "literary-friction-29th-december-2021": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Pia Fraus",
-                        "title": "The New Water",
-                        "uri": "7fxd8wv5tWSU5hktwFJn4l"
-                    },
-                    {
-                        "artist": "Pia Fraus",
-                        "title": "The New Water",
-                        "uri": "0v9FuV1UqMnl8Xkj8ZmVc3"
-                    },
-                    {
-                        "artist": "Pia Fraus",
-                        "title": "The New Water - Instrumental",
-                        "uri": "4crHdOpHhiNVZTj9l6M6py"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Pia Fraus",
-                        "title": "The New Water - John Mcentire Remix",
-                        "uri": "1766QvmBYTqTDekT68oHgS"
-                    },
-                    {
-                        "artist": "Pia Fraus",
-                        "title": "The New Water - Instrumental",
-                        "uri": "4crHdOpHhiNVZTj9l6M6py"
-                    },
-                    {
-                        "artist": "Pia Fraus",
-                        "title": "The New Water",
-                        "uri": "0v9FuV1UqMnl8Xkj8ZmVc3"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Sabine Happard",
-                        "title": "Le désastre des eaux claires",
-                        "uri": "0m6XYAyzEVWZppFCLfCHUq"
-                    },
-                    {
-                        "artist": "Sabine Happard",
-                        "title": "Le désastre des eaux claires",
-                        "uri": "0wbcMad936G02wT5Q5Bj63"
-                    },
-                    {
-                        "artist": "Sabine Happard",
-                        "title": "Le désastre des eaux claires - Démo",
-                        "uri": "363bTXQO6fpYge3Yh1YrbD"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "muva of Earth",
-                        "title": "AFFIRMATION",
-                        "uri": "52m3wKFwEF2QMAqxNwm3SX"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "muva of Earth",
-                        "title": "AFFIRMATION",
-                        "uri": "52m3wKFwEF2QMAqxNwm3SX"
-                    },
-                    {
-                        "artist": "muva of Earth",
-                        "title": "High",
-                        "uri": "1x5hj8iVP3vGOcO1at3hEV"
-                    },
-                    {
-                        "artist": "muva of Earth",
-                        "title": "FEED MY MIND",
-                        "uri": "4rq3rKAQdrWTPiVIEKgFVV"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Azymuth",
-                        "title": "Maracana",
-                        "uri": "0pY0k4hwEH2yRrWV8vapgR"
-                    },
-                    {
-                        "artist": "Azymuth",
-                        "title": "Maracana",
-                        "uri": "3F26AH9Qs90RWTZRmPsiVy"
-                    },
-                    {
-                        "artist": "Azymuth",
-                        "title": "Maracanã",
-                        "uri": "5HLRdPvYX5xAKOk27JdzW2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Azymuth",
-                        "title": "Maracana",
-                        "uri": "3F26AH9Qs90RWTZRmPsiVy"
-                    },
-                    {
-                        "artist": "Azymuth",
-                        "title": "Maracana",
-                        "uri": "0pY0k4hwEH2yRrWV8vapgR"
-                    },
-                    {
-                        "artist": "Azymuth",
-                        "title": "Manhã",
-                        "uri": "6Pr8fOfppj8C6qpkAYDDzE"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Lakker",
+            "ratio": 3,
+            "title": "A Juggling of Numbers",
+            "trackid": "2Rhpjc5Zb9nywsJmNMOUbl"
         },
-        "literary-friction-3rd-november-2021": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Turning Tides",
-                        "title": "Lullaby",
-                        "uri": "7desl8H65pH7Qd21mJP57k"
-                    },
-                    {
-                        "artist": "Turning Tides",
-                        "title": "Lullaby",
-                        "uri": "6OSXFFFW1Ij2aeSXAAe68f"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "D-Charged",
-                        "title": "Lullaby",
-                        "uri": "5W1188nZ7bUCe8oU3FKLot"
-                    },
-                    {
-                        "artist": "SRTW",
-                        "title": "Lullaby",
-                        "uri": "5yzcrmLBt5XqxmLcVvqN14"
-                    },
-                    {
-                        "artist": "Turning Tides",
-                        "title": "Lullaby",
-                        "uri": "6OSXFFFW1Ij2aeSXAAe68f"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Tirzah",
-                        "title": "Hive Mind",
-                        "uri": "2GUNtgwIJCquWo1BXR6SWr"
-                    },
-                    {
-                        "artist": "Tirzah",
-                        "title": "Hive Mind - Speakers Corner Quartet Remix",
-                        "uri": "3vxyBGiZYKFB5Z0pUCl7Fk"
-                    },
-                    {
-                        "artist": "Tirzah",
-                        "title": "Hive Mind",
-                        "uri": "11qlJNC5vSmd0KMeeaRO3D"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tirzah",
-                        "title": "Hive Mind",
-                        "uri": "2GUNtgwIJCquWo1BXR6SWr"
-                    },
-                    {
-                        "artist": "Tirzah",
-                        "title": "Hive Mind - Speakers Corner Quartet Remix",
-                        "uri": "3vxyBGiZYKFB5Z0pUCl7Fk"
-                    },
-                    {
-                        "artist": "Tirzah",
-                        "title": "Hive Mind",
-                        "uri": "11qlJNC5vSmd0KMeeaRO3D"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Saint Etienne",
-                        "title": "Pond House",
-                        "uri": "76H5EAybLAfoooUHGgGxsf"
-                    },
-                    {
-                        "artist": "Saint Etienne",
-                        "title": "Pond House",
-                        "uri": "7vA4qNcP4cgIwtB0GiQx5s"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Saint Etienne",
-                        "title": "Pond House",
-                        "uri": "76H5EAybLAfoooUHGgGxsf"
-                    },
-                    {
-                        "artist": "Saint Etienne",
-                        "title": "Pond House",
-                        "uri": "7vA4qNcP4cgIwtB0GiQx5s"
-                    },
-                    {
-                        "artist": "Saint Etienne",
-                        "title": "Milk Bottle Symphony",
-                        "uri": "1Nn20FHi86UtEy5xOBjM69"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Martyn",
+            "ratio": 5,
+            "title": "Reset Walking",
+            "trackid": "2pbZiS73rsRI6mOQErD30c"
+        }
+    },
+    "literary-friction-29th-december-2021": {
+        "00": {
+            "artist": "Pia Fraus",
+            "ratio": 6,
+            "title": "The New Water",
+            "trackid": "7fxd8wv5tWSU5hktwFJn4l"
         },
-        "literary-friction-6th-october-2021": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Michael White",
-                        "title": "The Blessing Song",
-                        "uri": "1tO5IV6beNuuSTAVVZuI0N"
-                    },
-                    {
-                        "artist": "Michael White",
-                        "title": "The Blessing Song",
-                        "uri": "1TZWcJ8s7iDZj6wg1ZeRbG"
-                    },
-                    {
-                        "artist": "Michael White",
-                        "title": "The Blessing Song",
-                        "uri": "6nRDL4KCPPNrbyZzo1e3SC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Michael White",
-                        "title": "The Blessing Song",
-                        "uri": "1tO5IV6beNuuSTAVVZuI0N"
-                    },
-                    {
-                        "artist": "Michael White",
-                        "title": "The Blessing Song",
-                        "uri": "1TZWcJ8s7iDZj6wg1ZeRbG"
-                    },
-                    {
-                        "artist": "Michael W. Smith",
-                        "title": "The Blessing - Live",
-                        "uri": "5NnOwhlcM3O4a6bw4BRkM7"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "ELWD",
-                        "title": "A WAY OF LIVING",
-                        "uri": "3mD6CXyMnpOf59EOjFQvxI"
-                    },
-                    {
-                        "artist": "ELWD",
-                        "title": "A WAY OF LIVING",
-                        "uri": "17XSbZkGoU4SpbuZ5UME46"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Eldé",
-                        "title": "Goodbye",
-                        "uri": "61SJDnYfztgpJSSE8af2mI"
-                    },
-                    {
-                        "artist": "ELWD",
-                        "title": "A WAY OF LIVING",
-                        "uri": "3mD6CXyMnpOf59EOjFQvxI"
-                    },
-                    {
-                        "artist": "ELWD",
-                        "title": "A WAY OF LIVING",
-                        "uri": "17XSbZkGoU4SpbuZ5UME46"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Sungaze",
-                        "title": "Body in the Mirror",
-                        "uri": "4LnYHhxamGiAgdF50btEwl"
-                    },
-                    {
-                        "artist": "Sungaze",
-                        "title": "Body in the Mirror",
-                        "uri": "7mrGNlo4f7hUP0H2MIQtNA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sungaze",
-                        "title": "Body in the Mirror",
-                        "uri": "4LnYHhxamGiAgdF50btEwl"
-                    },
-                    {
-                        "artist": "Sungaze",
-                        "title": "Body in the Mirror",
-                        "uri": "7mrGNlo4f7hUP0H2MIQtNA"
-                    },
-                    {
-                        "artist": "Sungazer",
-                        "title": "Sequence Start",
-                        "uri": "2Kg42rmivHQggcXxvAoeyX"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Sabine Happard",
+            "ratio": 6,
+            "title": "Le désastre des eaux claires",
+            "trackid": "0m6XYAyzEVWZppFCLfCHUq"
         },
-        "literaryfriction-10th-august-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Mode Moderne",
-                        "title": "Unburden Yourself",
-                        "uri": "5RgYwWi0A2nLQrjpu57AAg"
-                    },
-                    {
-                        "artist": "Mode Moderne",
-                        "title": "Unburden Yourself",
-                        "uri": "4OVB0huQMFvZsB9v2Nh8Kn"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mode Moderne",
-                        "title": "Unburden Yourself",
-                        "uri": "5RgYwWi0A2nLQrjpu57AAg"
-                    },
-                    {
-                        "artist": "Mode Moderne",
-                        "title": "Unburden Yourself",
-                        "uri": "4OVB0huQMFvZsB9v2Nh8Kn"
-                    },
-                    {
-                        "artist": "Moha MMZ",
-                        "title": "MODE",
-                        "uri": "38WVnP6SZYzRTCTj9rcZ9G"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Sahalé",
-                        "title": "Sapana",
-                        "uri": "6Lug1sWzQOhfySNlsmDNkI"
-                    },
-                    {
-                        "artist": "Jugurtha",
-                        "title": "Sophonisbe - Sahale Remix",
-                        "uri": "44288Pd23qyQs0FyCqti8L"
-                    },
-                    {
-                        "artist": "Sahalé",
-                        "title": "Shango",
-                        "uri": "7tYVFeJAAsQ5klfaTRlyor"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Princess Superstar",
-                        "title": "Bad Babysitter Instrumental (20th Anniversary) [Instrumental] [2021 Remastered]",
-                        "uri": "0AV7qzDxai6YSh1XatIEit"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Princess Superstar",
-                        "title": "Bad Babysitter",
-                        "uri": "5DFbzGnuYCCX05fIKXH2tP"
-                    },
-                    {
-                        "artist": "Princess Superstar",
-                        "title": "Dichotomy",
-                        "uri": "4y8Is69UXCjThIn16nEiXu"
-                    },
-                    {
-                        "artist": "Princess Superstar",
-                        "title": "Keith 'n Me",
-                        "uri": "0leomGWRRdau0mqabsMX5X"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Au Pairs",
-                        "title": "It's Obvious - Single A-Side",
-                        "uri": "61taEvx4srt1n6JHBWzfHW"
-                    },
-                    {
-                        "artist": "Au Pairs",
-                        "title": "It's Obvious",
-                        "uri": "1mIkQYebw6J0DxrWTz1PUG"
-                    },
-                    {
-                        "artist": "Au Pairs",
-                        "title": "It's Obvious",
-                        "uri": "6Gcm7BcCZdaXrnBQ9QEXAT"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Au Pairs",
-                        "title": "It's Obvious - Single A-Side",
-                        "uri": "61taEvx4srt1n6JHBWzfHW"
-                    },
-                    {
-                        "artist": "Au Pairs",
-                        "title": "It's Obvious",
-                        "uri": "1mIkQYebw6J0DxrWTz1PUG"
-                    },
-                    {
-                        "artist": "Au Pairs",
-                        "title": "It's Obvious",
-                        "uri": "6Gcm7BcCZdaXrnBQ9QEXAT"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "muva of Earth",
+            "ratio": 6,
+            "title": "AFFIRMATION",
+            "trackid": "52m3wKFwEF2QMAqxNwm3SX"
         },
-        "literaryfriction-18th-may-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Arp",
-                        "title": "New Pleasures",
-                        "uri": "3Z5vH2R1qoTWP7JltZzulN"
-                    },
-                    {
-                        "artist": "Arp",
-                        "title": "New Pleasures",
-                        "uri": "75yT48aU7jKy3WpLCSKtpt"
-                    },
-                    {
-                        "artist": "Arp",
-                        "title": "New Pleasures",
-                        "uri": "7esDkmzU30pun5aCIuFdH0"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jodie Reid",
-                        "title": "Lilies in the Valley",
-                        "uri": "7LO7s7nc6OOtO66qgUqX6o"
-                    },
-                    {
-                        "artist": "Arp",
-                        "title": "New Pleasures",
-                        "uri": "3Z5vH2R1qoTWP7JltZzulN"
-                    },
-                    {
-                        "artist": "Arp",
-                        "title": "i: /o",
-                        "uri": "3mE15bjrkeb9kSiqLsaOED"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Michal Turtle",
-                        "title": "Astral Decoy",
-                        "uri": "2RVrr45hUBkWxiyB18zYPS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Michal Turtle",
-                        "title": "Astral Decoy",
-                        "uri": "2RVrr45hUBkWxiyB18zYPS"
-                    },
-                    {
-                        "artist": "Michal Turtle",
-                        "title": "Loopy Madness II",
-                        "uri": "1dkXljmVp6uFtpE0P3TF9l"
-                    },
-                    {
-                        "artist": "Michal Turtle",
-                        "title": "Uiko's Return To Jeka",
-                        "uri": "1vU19ZPDtqduTndhmn6nPh"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Alex Ho",
-                        "title": "Neary",
-                        "uri": "4EO2r5nH2CalNUyutfumPm"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Alex Ho",
-                        "title": "Neary",
-                        "uri": "4EO2r5nH2CalNUyutfumPm"
-                    },
-                    {
-                        "artist": "Alex Hobbs",
-                        "title": "Stole the Show",
-                        "uri": "04SaNxbEN3fysbISrIiYod"
-                    },
-                    {
-                        "artist": "Alex Ho",
-                        "title": "Idle Eighty",
-                        "uri": "2t703y44U12xrZwPifH32B"
-                    }
-                ]
-            }
+        "03": {
+            "artist": "Azymuth",
+            "ratio": 6,
+            "title": "Maracana",
+            "trackid": "0pY0k4hwEH2yRrWV8vapgR"
+        }
+    },
+    "literary-friction-3rd-november-2021": {
+        "00": {
+            "artist": "Turning Tides",
+            "ratio": 6,
+            "title": "Lullaby",
+            "trackid": "7desl8H65pH7Qd21mJP57k"
         },
-        "literaryfriction-21st-july-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Protassov",
-                        "title": "I Wonder",
-                        "uri": "5fuJMvVKNeTbIcflFTLqg6"
-                    },
-                    {
-                        "artist": "Protassov",
-                        "title": "I Wonder",
-                        "uri": "2iGIavEP4eqqAEEZqEgeqG"
-                    },
-                    {
-                        "artist": "Protassov",
-                        "title": "I Wonder",
-                        "uri": "2sTa5RonhXNbd0NilKO9EI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Protassov",
-                        "title": "I Wonder",
-                        "uri": "5fuJMvVKNeTbIcflFTLqg6"
-                    },
-                    {
-                        "artist": "Sergei Prokofiev",
-                        "title": "Prokofiev: 4 Etudes, Op. 2: No. 1 in D Minor",
-                        "uri": "1X8t0eiJK9aVVuLQCkC9mD"
-                    },
-                    {
-                        "artist": "Protassov",
-                        "title": "I Wonder",
-                        "uri": "2iGIavEP4eqqAEEZqEgeqG"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Kokoroko",
-                        "title": "Ti-de",
-                        "uri": "4JJEfYFamGRfmz9nG6fx1w"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kokoroko",
-                        "title": "Ti-de",
-                        "uri": "4JJEfYFamGRfmz9nG6fx1w"
-                    },
-                    {
-                        "artist": "Kokoroko",
-                        "title": "Dide O",
-                        "uri": "5vZtchByWIjvrrpcpfd6gX"
-                    },
-                    {
-                        "artist": "Kokoroko",
-                        "title": "Abusey Junction",
-                        "uri": "3W4IoNW4011i8qfCwN75Va"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "The Architect",
-                        "title": "Jacqueline",
-                        "uri": "1nDWNjX7GadwD6mnGoAog5"
-                    },
-                    {
-                        "artist": "The Architect",
-                        "title": "Dreader Than Dread",
-                        "uri": "0BW2kb7IHdH2QnWwvXqeqe"
-                    },
-                    {
-                        "artist": "The Architect",
-                        "title": "Les pensées",
-                        "uri": "0fira69E5qwYJNSvzEOCs7"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Tirzah",
+            "ratio": 6,
+            "title": "Hive Mind",
+            "trackid": "2GUNtgwIJCquWo1BXR6SWr"
         },
-        "literaryfriction-23rd-february-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "D.K.",
-                        "title": "Ivory Forest",
-                        "uri": "6j39osv7FnI6mm3AgYKmeU"
-                    },
-                    {
-                        "artist": "Ivory Forest",
-                        "title": "Sonder",
-                        "uri": "6fyLlcGRB7WkQXUxSgiPQS"
-                    },
-                    {
-                        "artist": "Ivory for Elephants",
-                        "title": "Playground",
-                        "uri": "3LHuUjv1GIjxUEmmwAxekd"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Andre Ethier",
-                        "title": "Nature Compels Me",
-                        "uri": "7hAbAB14U1MUENHXEXp0VH"
-                    },
-                    {
-                        "artist": "Andre Ethier",
-                        "title": "Nature Compels Me",
-                        "uri": "1YejhQs07Le9rVoDCnJL0s"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Andre Ethier",
-                        "title": "Wild Goldfish",
-                        "uri": "5Yr3adat8gTxbllm1KoDaP"
-                    },
-                    {
-                        "artist": "Andre Ethier",
-                        "title": "Dream on Pigs",
-                        "uri": "4wR8c1hcjfmVjRMXXyDL4A"
-                    },
-                    {
-                        "artist": "Andre Ethier",
-                        "title": "Doodah Man",
-                        "uri": "4PGOibuq9CMUAIfUXG3bOj"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Will Van Horn",
-                        "title": "Alberto Balsalm",
-                        "uri": "3FS3NeItouHHw16cBFnQwS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Will Van Horn",
-                        "title": "Alberto Balsalm",
-                        "uri": "3FS3NeItouHHw16cBFnQwS"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Saint Etienne",
+            "ratio": 6,
+            "title": "Pond House",
+            "trackid": "76H5EAybLAfoooUHGgGxsf"
+        }
+    },
+    "literary-friction-6th-october-2021": {
+        "00": {
+            "artist": "Michael White",
+            "ratio": 6,
+            "title": "The Blessing Song",
+            "trackid": "1tO5IV6beNuuSTAVVZuI0N"
         },
-        "literaryfriction-23rd-march-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Jenny Hval",
-                        "title": "Freedom",
-                        "uri": "4nPhLPoZrUxSQHEUwtZ6n9"
-                    },
-                    {
-                        "artist": "Jenny Hval",
-                        "title": "Freedom",
-                        "uri": "6HUES5fOM3uTMVMe3Z7agG"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jenny Hval",
-                        "title": "Freedom",
-                        "uri": "4nPhLPoZrUxSQHEUwtZ6n9"
-                    },
-                    {
-                        "artist": "Jenny Hval",
-                        "title": "Freedom",
-                        "uri": "6HUES5fOM3uTMVMe3Z7agG"
-                    },
-                    {
-                        "artist": "Jenny Hval",
-                        "title": "Spells",
-                        "uri": "28UziesmCkeVzkSn02TMxu"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Mega Bog",
-                        "title": "Left Door",
-                        "uri": "2a9MttUuX1DTmAppTlr0W2"
-                    },
-                    {
-                        "artist": "Mega Bog",
-                        "title": "Left Door - Audiotree Live Version",
-                        "uri": "1KCsfICM3uutlTLdqFX2ht"
-                    },
-                    {
-                        "artist": "Mega Bog",
-                        "title": "Left Door - Audiotree Live Version",
-                        "uri": "2SSnegiMneSiwXud3ZvjQv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mega Bog",
-                        "title": "Left Door",
-                        "uri": "2a9MttUuX1DTmAppTlr0W2"
-                    },
-                    {
-                        "artist": "Mega Bog",
-                        "title": "Left Door - Audiotree Live Version",
-                        "uri": "2SSnegiMneSiwXud3ZvjQv"
-                    },
-                    {
-                        "artist": "Mega Bog",
-                        "title": "Left Door - Audiotree Live Version",
-                        "uri": "1KCsfICM3uutlTLdqFX2ht"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Xenia Rubinos",
-                        "title": "Si Llego",
-                        "uri": "0sgUWpkHl4FVnUIziI61Vt"
-                    },
-                    {
-                        "artist": "Omara Portuondo",
-                        "title": "Si llego a besarte",
-                        "uri": "76lYHzozyScbjkiTAQsipq"
-                    },
-                    {
-                        "artist": "Cyndel",
-                        "title": "Si Llego a Fallar",
-                        "uri": "1yqKgotX8JV36cFR97aFwv"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "ELWD",
+            "ratio": 6,
+            "title": "A WAY OF LIVING",
+            "trackid": "3mD6CXyMnpOf59EOjFQvxI"
         },
-        "literaryfriction-28th-january-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Pierre Cavalli",
-                        "title": "Possarinhos",
-                        "uri": "3zZ1bfbks1ZGUCbCHARI5o"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Pierre Cavalli",
-                        "title": "Possarinhos",
-                        "uri": "3zZ1bfbks1ZGUCbCHARI5o"
-                    },
-                    {
-                        "artist": "Pierre Cavalli",
-                        "title": "Chasse à l'homme",
-                        "uri": "30njO8xB8t4gUbocXczybe"
-                    },
-                    {
-                        "artist": "Pierre Cavalli",
-                        "title": "Der Ohrwurm",
-                        "uri": "5etMY2MGP78aV7AkBX0nP9"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Lost Horizons",
-                        "title": "In Quiet Moments",
-                        "uri": "3nL5jkAjnhFORf2dtp23Kc"
-                    },
-                    {
-                        "artist": "Lost Horizons",
-                        "title": "In Quiet Moments",
-                        "uri": "7pnVENKf260cy3Jg4IAL7L"
-                    },
-                    {
-                        "artist": "Lost Horizons",
-                        "title": "Unravelling In Slow Motion",
-                        "uri": "6DSlY1s4IfANFX6yi3BYhV"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lost Horizons",
-                        "title": "In Quiet Moments",
-                        "uri": "3nL5jkAjnhFORf2dtp23Kc"
-                    },
-                    {
-                        "artist": "Joseph William Morgan",
-                        "title": "Lost Horizons",
-                        "uri": "5HM3lTv04jTOdpR4NF51Ec"
-                    },
-                    {
-                        "artist": "Lost Horizons",
-                        "title": "I Woke Up With An Open Heart",
-                        "uri": "534ATfhZFlS0jwJcOWhEpR"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Vanishing Twin",
-                        "title": "Phase One Million",
-                        "uri": "59q0IcUN0dEPN90TFoTwsH"
-                    },
-                    {
-                        "artist": "Vanishing Twin",
-                        "title": "Phase One Million",
-                        "uri": "6fc46grlyqoourLCYKrut5"
-                    },
-                    {
-                        "artist": "Vanishing Twin",
-                        "title": "Phase One Million",
-                        "uri": "7a28b53DRZg5x6cmG6dAsm"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Vanishing Twin",
-                        "title": "Phase One Million",
-                        "uri": "59q0IcUN0dEPN90TFoTwsH"
-                    },
-                    {
-                        "artist": "Vanishing Twin",
-                        "title": "Phase One Million",
-                        "uri": "6fc46grlyqoourLCYKrut5"
-                    },
-                    {
-                        "artist": "Vanishing Twin",
-                        "title": "Magician's Success",
-                        "uri": "3IrBNFSkU4eI4D8SaxVttk"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Sungaze",
+            "ratio": 6,
+            "title": "Body in the Mirror",
+            "trackid": "4LnYHhxamGiAgdF50btEwl"
+        }
+    },
+    "literaryfriction-10th-august-2022": {
+        "00": {
+            "artist": "Mode Moderne",
+            "ratio": 6,
+            "title": "Unburden Yourself",
+            "trackid": "5RgYwWi0A2nLQrjpu57AAg"
+        },
+        "01": {
+            "artist": "Sahalé",
+            "ratio": 3,
+            "title": "Sapana",
+            "trackid": "6Lug1sWzQOhfySNlsmDNkI"
+        },
+        "02": {
+            "artist": "Princess Superstar",
+            "ratio": 6,
+            "title": "Bad Babysitter",
+            "trackid": "5DFbzGnuYCCX05fIKXH2tP"
+        },
+        "03": {
+            "artist": "Au Pairs",
+            "ratio": 6,
+            "title": "It's Obvious",
+            "trackid": "1mIkQYebw6J0DxrWTz1PUG"
+        }
+    },
+    "literaryfriction-18th-may-2022": {
+        "00": {
+            "artist": "Arp",
+            "ratio": 6,
+            "title": "New Pleasures",
+            "trackid": "3Z5vH2R1qoTWP7JltZzulN"
+        },
+        "01": {
+            "artist": "Michal Turtle",
+            "ratio": 6,
+            "title": "Astral Decoy",
+            "trackid": "2RVrr45hUBkWxiyB18zYPS"
+        },
+        "02": {
+            "artist": "Alex Ho",
+            "ratio": 6,
+            "title": "Neary",
+            "trackid": "4EO2r5nH2CalNUyutfumPm"
+        }
+    },
+    "literaryfriction-21st-july-2022": {
+        "00": {
+            "artist": "Protassov",
+            "ratio": 6,
+            "title": "I Wonder",
+            "trackid": "5fuJMvVKNeTbIcflFTLqg6"
+        },
+        "01": {
+            "artist": "Kokoroko",
+            "ratio": 6,
+            "title": "Ti-de",
+            "trackid": "4JJEfYFamGRfmz9nG6fx1w"
+        },
+        "02": {
+            "artist": "The Architect",
+            "ratio": 6,
+            "title": "Jacqueline",
+            "trackid": "1nDWNjX7GadwD6mnGoAog5"
+        }
+    },
+    "literaryfriction-23rd-february-2022": {
+        "00": {
+            "artist": "D.K.",
+            "ratio": 6,
+            "title": "Ivory Forest",
+            "trackid": "6j39osv7FnI6mm3AgYKmeU"
+        },
+        "01": {
+            "artist": "Andre Ethier",
+            "ratio": 6,
+            "title": "Nature Compels Me",
+            "trackid": "7hAbAB14U1MUENHXEXp0VH"
+        },
+        "02": {
+            "artist": "Will Van Horn",
+            "ratio": 6,
+            "title": "Alberto Balsalm",
+            "trackid": "3FS3NeItouHHw16cBFnQwS"
+        }
+    },
+    "literaryfriction-23rd-march-2022": {
+        "00": {
+            "artist": "Jenny Hval",
+            "ratio": 6,
+            "title": "Freedom",
+            "trackid": "4nPhLPoZrUxSQHEUwtZ6n9"
+        },
+        "01": {
+            "artist": "Mega Bog",
+            "ratio": 6,
+            "title": "Left Door",
+            "trackid": "2a9MttUuX1DTmAppTlr0W2"
+        },
+        "02": {
+            "artist": "Xenia Rubinos",
+            "ratio": 6,
+            "title": "Si Llego",
+            "trackid": "0sgUWpkHl4FVnUIziI61Vt"
+        }
+    },
+    "literaryfriction-28th-january-2022": {
+        "00": {
+            "artist": "Pierre Cavalli",
+            "ratio": 6,
+            "title": "Possarinhos",
+            "trackid": "3zZ1bfbks1ZGUCbCHARI5o"
+        },
+        "01": {
+            "artist": "Lost Horizons",
+            "ratio": 6,
+            "title": "In Quiet Moments",
+            "trackid": "3nL5jkAjnhFORf2dtp23Kc"
+        },
+        "02": {
+            "artist": "Vanishing Twin",
+            "ratio": 6,
+            "title": "Phase One Million",
+            "trackid": "59q0IcUN0dEPN90TFoTwsH"
         }
     }
 }

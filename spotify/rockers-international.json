@@ -1,827 +1,148 @@
 {
-    "flags": {
-        "rockers-ldm-3rd-may-2020": {},
-        "rockers-ldm-4th-july-2020": {},
-        "rockers-ldn-11th-september-2021": {},
-        "rockers-ldn-4th-april-2020": {},
-        "rockers-ldn-w-bigs-12th-december-2020": {},
-        "rockers-ldn-w-bigs-17th-october-2020": {},
-        "rockers-ldn-w-bigs-19th-september-2020": {},
-        "rockers-ldn-w-bigs-22nd-august-2020": {},
-        "rockers-ldn-w-bigs-29th-may-2021": {},
-        "rockers-ldn-w-bigs-6th-march-2021": {},
-        "rockers-ldn-w-bigs-7th-march-2020": {
-            "00": {
-                "artist": "Pressure Busspipe",
-                "ratio": 6,
-                "title": "Lion Is A Lion",
-                "trackid": "1EAtM6qlCcLGPRdWccHxLn"
-            },
-            "01": {
-                "artist": "Skrillex",
-                "ratio": 6,
-                "title": "Make It Bun Dem",
-                "trackid": "6AbVJjzv7thIvmMCuhZrmK"
-            },
-            "02": {
-                "artist": "Jo Mersa Marley",
-                "ratio": 5,
-                "title": "Burn It Down (feat. Yohan Marley)",
-                "trackid": "7bvsp5UPZ1jggB67o2Ckqe"
-            },
-            "03": {
-                "artist": "Jo Mersa Marley",
-                "ratio": 6,
-                "title": "Nothing's Gonna Harm You",
-                "trackid": "5s6TKdzfdMSfhvOsYCnzfp"
-            },
-            "04": {
-                "artist": "Skip Marley",
-                "ratio": 6,
-                "title": "Calm Down",
-                "trackid": "1X6ic2T8n1hCMyaFxLMy3i"
-            },
-            "05": {
-                "artist": "Mortimer",
-                "ratio": 6,
-                "title": "Careful",
-                "trackid": "2R9GA9LZNUjRHnm4Yr5T7K"
-            },
-            "06": {
-                "artist": "Yaadcore",
-                "ratio": 6,
-                "title": "Ready Now",
-                "trackid": "0ci37g39JNYLG18AqcZERj"
-            },
-            "07": {
-                "artist": "Third World",
-                "ratio": 6,
-                "title": "Loving You Is Easy",
-                "trackid": "24lWfzMjay8OhzhSrb1C0R"
-            },
-            "08": {
-                "artist": "Stephen Marley",
-                "ratio": 6,
-                "title": "40 Days & 40 Nights (Pt. 2)",
-                "trackid": "1vhfL29bRXSpZcA0rBkiES"
-            },
-            "09": {
-                "artist": "Christopher Ellis",
-                "ratio": 6,
-                "title": "Still Go a Dance",
-                "trackid": "4clUohoKu1S7YGM8SuCMrs"
-            },
-            "10": {
-                "artist": "Chris Else",
-                "ratio": 4,
-                "title": "I Am I Said",
-                "trackid": "0WYXzIpWmu6VjVoIv7b99a"
-            }
+    "rockers-ldm-3rd-may-2020": {},
+    "rockers-ldm-4th-july-2020": {},
+    "rockers-ldn-11th-september-2021": {},
+    "rockers-ldn-4th-april-2020": {},
+    "rockers-ldn-w-bigs-12th-december-2020": {},
+    "rockers-ldn-w-bigs-17th-october-2020": {},
+    "rockers-ldn-w-bigs-19th-september-2020": {},
+    "rockers-ldn-w-bigs-22nd-august-2020": {},
+    "rockers-ldn-w-bigs-29th-may-2021": {},
+    "rockers-ldn-w-bigs-6th-march-2021": {},
+    "rockers-ldn-w-bigs-7th-march-2020": {
+        "00": {
+            "artist": "Pressure Busspipe",
+            "ratio": 6,
+            "title": "Lion Is A Lion",
+            "trackid": "1EAtM6qlCcLGPRdWccHxLn"
         },
-        "rockers-ldn-w-bigs-8th-february-2020": {
-            "00": {
-                "artist": "Lila Iké",
-                "ratio": 6,
-                "title": "Where I'm Coming From",
-                "trackid": "2jQENRPVxXb8TcTAXW6wpQ"
-            },
-            "01": {
-                "artist": "Vybz Kartel",
-                "ratio": 6,
-                "title": "Thank You Jah",
-                "trackid": "1vtqzEJ0zyBnYsySXj6Khm"
-            },
-            "02": {
-                "artist": "Sizzla",
-                "ratio": 6,
-                "title": "Solid As A Rock",
-                "trackid": "6rr0IJtCpW4a0ZFm1FqOI6"
-            },
-            "03": {
-                "artist": "Pressure Busspipe",
-                "ratio": 6,
-                "title": "Lion Is A Lion",
-                "trackid": "1EAtM6qlCcLGPRdWccHxLn"
-            },
-            "04": {
-                "artist": "Althea And Donna",
-                "ratio": 6,
-                "title": "Uptown Top Ranking - Remastered 2001",
-                "trackid": "34zWZOSpU2V1ab0PiZCcv4"
-            },
-            "05": {
-                "artist": "Desmond Dekker & The Aces",
-                "ratio": 6,
-                "title": "Israelites",
-                "trackid": "5U1GMgbXXM5eLvKUDnvqNS"
-            },
-            "06": {
-                "artist": "Max Romeo",
-                "ratio": 3,
-                "title": "Tacko",
-                "trackid": "3HoyatSPz9rKWZH77gZseR"
-            },
-            "07": {
-                "artist": "Harry J Allstars",
-                "ratio": 6,
-                "title": "Liquidator",
-                "trackid": "4tg09sJm1TtgN1e3RuWEn1"
-            },
-            "08": {
-                "artist": "The Pioneers",
-                "ratio": 6,
-                "title": "Long Shot Kick De Bucket",
-                "trackid": "64LEzmN3831SPhxGIBQ4KH"
-            },
-            "09": {
-                "artist": "Marcia Griffiths",
-                "ratio": 6,
-                "title": "Stepping Out of Babylon",
-                "trackid": "2GqdVyG0yXhmcAPOhSletn"
-            },
-            "10": {
-                "artist": "Dandy Livingstone",
-                "ratio": 6,
-                "title": "Rudy, A Message To You",
-                "trackid": "4WKQHFv4KqIehRBb3V3a9p"
-            }
+        "01": {
+            "artist": "Skrillex",
+            "ratio": 6,
+            "title": "Make It Bun Dem",
+            "trackid": "6AbVJjzv7thIvmMCuhZrmK"
+        },
+        "02": {
+            "artist": "Jo Mersa Marley",
+            "ratio": 5,
+            "title": "Burn It Down (feat. Yohan Marley)",
+            "trackid": "7bvsp5UPZ1jggB67o2Ckqe"
+        },
+        "03": {
+            "artist": "Jo Mersa Marley",
+            "ratio": 6,
+            "title": "Nothing's Gonna Harm You",
+            "trackid": "5s6TKdzfdMSfhvOsYCnzfp"
+        },
+        "04": {
+            "artist": "Skip Marley",
+            "ratio": 6,
+            "title": "Calm Down",
+            "trackid": "1X6ic2T8n1hCMyaFxLMy3i"
+        },
+        "05": {
+            "artist": "Mortimer",
+            "ratio": 6,
+            "title": "Careful",
+            "trackid": "2R9GA9LZNUjRHnm4Yr5T7K"
+        },
+        "06": {
+            "artist": "Yaadcore",
+            "ratio": 6,
+            "title": "Ready Now",
+            "trackid": "0ci37g39JNYLG18AqcZERj"
+        },
+        "07": {
+            "artist": "Third World",
+            "ratio": 6,
+            "title": "Loving You Is Easy",
+            "trackid": "24lWfzMjay8OhzhSrb1C0R"
+        },
+        "08": {
+            "artist": "Stephen Marley",
+            "ratio": 6,
+            "title": "40 Days & 40 Nights (Pt. 2)",
+            "trackid": "1vhfL29bRXSpZcA0rBkiES"
+        },
+        "09": {
+            "artist": "Christopher Ellis",
+            "ratio": 6,
+            "title": "Still Go a Dance",
+            "trackid": "4clUohoKu1S7YGM8SuCMrs"
+        },
+        "10": {
+            "artist": "Chris Else",
+            "ratio": 4,
+            "title": "I Am I Said",
+            "trackid": "0WYXzIpWmu6VjVoIv7b99a"
         }
     },
-    "search": {
-        "rockers-ldm-3rd-may-2020": {},
-        "rockers-ldm-4th-july-2020": {},
-        "rockers-ldn-11th-september-2021": {},
-        "rockers-ldn-4th-april-2020": {},
-        "rockers-ldn-w-bigs-12th-december-2020": {},
-        "rockers-ldn-w-bigs-17th-october-2020": {},
-        "rockers-ldn-w-bigs-19th-september-2020": {},
-        "rockers-ldn-w-bigs-22nd-august-2020": {},
-        "rockers-ldn-w-bigs-29th-may-2021": {},
-        "rockers-ldn-w-bigs-6th-march-2021": {},
-        "rockers-ldn-w-bigs-7th-march-2020": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Pressure Busspipe",
-                        "title": "Lion Is A Lion",
-                        "uri": "1EAtM6qlCcLGPRdWccHxLn"
-                    },
-                    {
-                        "artist": "Pressure Busspipe",
-                        "title": "Lion Is a Lion - Remix",
-                        "uri": "5cOo7gWwbvqVzTRo9kFPVg"
-                    },
-                    {
-                        "artist": "Pressure Busspipe",
-                        "title": "Lion Is A Lion (I Grade Dub Mix)",
-                        "uri": "180rK3ADtjQdbPIWhBlDgu"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Skrillex",
-                        "title": "Make It Bun Dem",
-                        "uri": "6AbVJjzv7thIvmMCuhZrmK"
-                    },
-                    {
-                        "artist": "Skrillex",
-                        "title": "Make It Bun Dem",
-                        "uri": "0mlf3yOGzVnIVxjybDQL3h"
-                    },
-                    {
-                        "artist": "Skrillex",
-                        "title": "Make It Bun Dem - Culprate Remix",
-                        "uri": "5bMQdlT0YVcZdBuHSUBuIr"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Skrillex",
-                        "title": "Make It Bun Dem",
-                        "uri": "6AbVJjzv7thIvmMCuhZrmK"
-                    },
-                    {
-                        "artist": "Skrillex",
-                        "title": "Make It Bun Dem",
-                        "uri": "0mlf3yOGzVnIVxjybDQL3h"
-                    },
-                    {
-                        "artist": "Skrillex",
-                        "title": "Make It Bun Dem - Culprate Remix",
-                        "uri": "5bMQdlT0YVcZdBuHSUBuIr"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Burn It Down (feat. Yohan Marley)",
-                        "uri": "7bvsp5UPZ1jggB67o2Ckqe"
-                    },
-                    {
-                        "artist": "Yohan Marley",
-                        "title": "Brickell (When Tears Fall)",
-                        "uri": "6Hl61pMGSGqRAFWGoN3ltc"
-                    },
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Point of View",
-                        "uri": "1x8JE8NZfBv6zNEs1au3xM"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Nothing's Gonna Harm You",
-                        "uri": "5s6TKdzfdMSfhvOsYCnzfp"
-                    },
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Nothing's Gonna Harm You",
-                        "uri": "5jagCLAQuz67m25aDs4Hmb"
-                    },
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Nothing's Gonna Harm You",
-                        "uri": "2trgrjg85fQlXhtfHQNCkg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Nothing's Gonna Harm You",
-                        "uri": "5s6TKdzfdMSfhvOsYCnzfp"
-                    },
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Nothing's Gonna Harm You",
-                        "uri": "5jagCLAQuz67m25aDs4Hmb"
-                    },
-                    {
-                        "artist": "Jo Mersa Marley",
-                        "title": "Burn It Down (feat. Yohan Marley)",
-                        "uri": "7bvsp5UPZ1jggB67o2Ckqe"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Skip Marley",
-                        "title": "Calm Down",
-                        "uri": "1X6ic2T8n1hCMyaFxLMy3i"
-                    },
-                    {
-                        "artist": "Skip Marley",
-                        "title": "Calm Down - Acoustic",
-                        "uri": "1BwCbpMH81STQvsarK57ps"
-                    },
-                    {
-                        "artist": "Skip Marley",
-                        "title": "Calm Down - Bad Royale Remix",
-                        "uri": "3DsuPfINKQKK6JnM8USOJN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Skip Marley",
-                        "title": "Calm Down",
-                        "uri": "1X6ic2T8n1hCMyaFxLMy3i"
-                    },
-                    {
-                        "artist": "Skip Marley",
-                        "title": "That's Not True",
-                        "uri": "4MbHdE6u1WVqqzwbHLkKUL"
-                    },
-                    {
-                        "artist": "Skip Marley",
-                        "title": "Calm Down - Acoustic",
-                        "uri": "1BwCbpMH81STQvsarK57ps"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Mortimer",
-                        "title": "Careful",
-                        "uri": "2R9GA9LZNUjRHnm4Yr5T7K"
-                    },
-                    {
-                        "artist": "Mortimer",
-                        "title": "Careful",
-                        "uri": "7cxN117zS4T6aJDQ2rnz70"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mortimer",
-                        "title": "Careful",
-                        "uri": "2R9GA9LZNUjRHnm4Yr5T7K"
-                    },
-                    {
-                        "artist": "Mortimer",
-                        "title": "Careful",
-                        "uri": "7cxN117zS4T6aJDQ2rnz70"
-                    },
-                    {
-                        "artist": "Mortimer",
-                        "title": "Lightning",
-                        "uri": "6ADOIjJIer0g0ythQ0sZIp"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Yaadcore",
-                        "title": "Ready Now (Remix)",
-                        "uri": "49pgMMidzC9kvNTNSacA03"
-                    },
-                    {
-                        "artist": "Yaadcore",
-                        "title": "Ready Now",
-                        "uri": "0ci37g39JNYLG18AqcZERj"
-                    },
-                    {
-                        "artist": "Yaadcore",
-                        "title": "Ready Now Dub",
-                        "uri": "4pJDrDGWMHjPXNDNUvNN1V"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Yaadcore",
-                        "title": "Ready Now (Remix)",
-                        "uri": "49pgMMidzC9kvNTNSacA03"
-                    },
-                    {
-                        "artist": "Yaadcore",
-                        "title": "Ready Now",
-                        "uri": "0ci37g39JNYLG18AqcZERj"
-                    },
-                    {
-                        "artist": "Yaadcore",
-                        "title": "Ready Now Dub",
-                        "uri": "4pJDrDGWMHjPXNDNUvNN1V"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Third World",
-                        "title": "Loving You Is Easy",
-                        "uri": "24lWfzMjay8OhzhSrb1C0R"
-                    },
-                    {
-                        "artist": "Third World",
-                        "title": "Loving You Is Easy",
-                        "uri": "4ex903EhWe6tBRVkkBXyYm"
-                    },
-                    {
-                        "artist": "Third World",
-                        "title": "Loving You Is Easy (Remix)",
-                        "uri": "33n9THwXLUHAYblWeMIUBB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Third World",
-                        "title": "Loving You Is Easy",
-                        "uri": "24lWfzMjay8OhzhSrb1C0R"
-                    },
-                    {
-                        "artist": "Third World",
-                        "title": "Loving You Is Easy",
-                        "uri": "4ex903EhWe6tBRVkkBXyYm"
-                    },
-                    {
-                        "artist": "Third World Don",
-                        "title": "Blessed",
-                        "uri": "7IwFIRBC0jvzFjmcOdNunU"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Stephen Marley",
-                        "title": "40 Days & 40 Nights (Pt. 2)",
-                        "uri": "1vhfL29bRXSpZcA0rBkiES"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Stephen Marley",
-                        "title": "40 Days & 40 Nights (Pt. 2)",
-                        "uri": "1vhfL29bRXSpZcA0rBkiES"
-                    },
-                    {
-                        "artist": "Salaam Remi",
-                        "title": "40 Days & 40 Nights (PT. 2) (feat. Stephen Marley)",
-                        "uri": "2XsY9mUhVCMWVBVw2E6wUR"
-                    },
-                    {
-                        "artist": "Stephen Marley",
-                        "title": "Break Us Apart",
-                        "uri": "5wgy309XNqFkqj8MMDquvj"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Christopher Ellis",
-                        "title": "Still Go a Dance",
-                        "uri": "4clUohoKu1S7YGM8SuCMrs"
-                    },
-                    {
-                        "artist": "Christopher Ellis",
-                        "title": "Still Go a Dance",
-                        "uri": "0MCwKOYIheN0jTwSnddUCz"
-                    },
-                    {
-                        "artist": "Christopher Ellis",
-                        "title": "Still Go a Dance",
-                        "uri": "2ohnrV4R89VlTKrr6niYIj"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Christopher Ellis",
-                        "title": "Still Go a Dance",
-                        "uri": "4clUohoKu1S7YGM8SuCMrs"
-                    },
-                    {
-                        "artist": "Christopher Ellis",
-                        "title": "Still Go a Dance",
-                        "uri": "2ohnrV4R89VlTKrr6niYIj"
-                    },
-                    {
-                        "artist": "Christopher Ellis",
-                        "title": "Still Go a Dance",
-                        "uri": "0MCwKOYIheN0jTwSnddUCz"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Chris Else",
-                        "title": "I Am I Said",
-                        "uri": "0WYXzIpWmu6VjVoIv7b99a"
-                    },
-                    {
-                        "artist": "Chris Ellys",
-                        "title": "Monita",
-                        "uri": "3zyKY2ag186jctMoesxchR"
-                    },
-                    {
-                        "artist": "Chris Else",
-                        "title": "The Older I Get",
-                        "uri": "1xxSs49l1I9jgRtvQ58Dk0"
-                    }
-                ]
-            }
+    "rockers-ldn-w-bigs-8th-february-2020": {
+        "00": {
+            "artist": "Lila Iké",
+            "ratio": 6,
+            "title": "Where I'm Coming From",
+            "trackid": "2jQENRPVxXb8TcTAXW6wpQ"
         },
-        "rockers-ldn-w-bigs-8th-february-2020": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Lila Iké",
-                        "title": "Where I'm Coming From",
-                        "uri": "2jQENRPVxXb8TcTAXW6wpQ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lila Iké",
-                        "title": "Where I'm Coming From",
-                        "uri": "2jQENRPVxXb8TcTAXW6wpQ"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Vybz Kartel",
-                        "title": "Thank You Jah",
-                        "uri": "1vtqzEJ0zyBnYsySXj6Khm"
-                    },
-                    {
-                        "artist": "Vybz Kartel",
-                        "title": "Tell You Say",
-                        "uri": "1EgvM7qiWJXlV3z8mbRDql"
-                    },
-                    {
-                        "artist": "Vybz Kartel",
-                        "title": "Clarks",
-                        "uri": "6LKeLk5IBQUb9eoXidchGQ"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Sizzla",
-                        "title": "Solid As A Rock",
-                        "uri": "6rr0IJtCpW4a0ZFm1FqOI6"
-                    },
-                    {
-                        "artist": "Sizzla",
-                        "title": "Solid As A Rock",
-                        "uri": "0jgyTx1QHB5dvsylTJhcvK"
-                    },
-                    {
-                        "artist": "Sizzla",
-                        "title": "Solid As A Rock",
-                        "uri": "0Yak8WqpeT3wdJ8f6uC1mE"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sizzla",
-                        "title": "Solid As A Rock",
-                        "uri": "6rr0IJtCpW4a0ZFm1FqOI6"
-                    },
-                    {
-                        "artist": "Sizzla",
-                        "title": "Solid As A Rock",
-                        "uri": "0jgyTx1QHB5dvsylTJhcvK"
-                    },
-                    {
-                        "artist": "Sizzla",
-                        "title": "Solid As A Rock",
-                        "uri": "0Yak8WqpeT3wdJ8f6uC1mE"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Pressure Busspipe",
-                        "title": "Lion Is A Lion",
-                        "uri": "1EAtM6qlCcLGPRdWccHxLn"
-                    },
-                    {
-                        "artist": "Pressure Busspipe",
-                        "title": "Lion Is a Lion - Remix",
-                        "uri": "5cOo7gWwbvqVzTRo9kFPVg"
-                    },
-                    {
-                        "artist": "Pressure Busspipe",
-                        "title": "Lion Is A Lion (I Grade Dub Mix)",
-                        "uri": "180rK3ADtjQdbPIWhBlDgu"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Althea And Donna",
-                        "title": "Uptown Top Ranking - Remastered 2001",
-                        "uri": "34zWZOSpU2V1ab0PiZCcv4"
-                    },
-                    {
-                        "artist": "Althea And Donna",
-                        "title": "Uptown Top Ranking",
-                        "uri": "1k1Esg0K4Yinvhkk86s7YM"
-                    },
-                    {
-                        "artist": "Althea And Donna",
-                        "title": "Uptown Top Ranking - Remastered 2001",
-                        "uri": "23d9yhuGmp2AbAJzFVBwUv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Althea And Donna",
-                        "title": "Uptown Top Ranking - Remastered 2001",
-                        "uri": "34zWZOSpU2V1ab0PiZCcv4"
-                    },
-                    {
-                        "artist": "Althea And Donna",
-                        "title": "Uptown Top Ranking",
-                        "uri": "1k1Esg0K4Yinvhkk86s7YM"
-                    },
-                    {
-                        "artist": "Althea And Donna",
-                        "title": "No More Fighting - 2001 Digital Remaster",
-                        "uri": "2S0sC4tLzRxLVpHMxiaYrU"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Desmond Dekker & The Aces",
-                        "title": "Israelites",
-                        "uri": "5U1GMgbXXM5eLvKUDnvqNS"
-                    },
-                    {
-                        "artist": "Desmond Dekker & The Aces",
-                        "title": "Israelites",
-                        "uri": "1S7xaeNxMQC48KEG1UdwKk"
-                    },
-                    {
-                        "artist": "Desmond Dekker",
-                        "title": "Israelites",
-                        "uri": "535thxkXFh4bXd8XApnAfv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Desmond Dekker",
-                        "title": "Israelites",
-                        "uri": "0di7hMT6o1ogeUN1XDB9Ft"
-                    },
-                    {
-                        "artist": "Desmond Dekker",
-                        "title": "Israelites",
-                        "uri": "18GLelA5vVdzd9X7WGPmJ8"
-                    },
-                    {
-                        "artist": "Desmond Dekker & The Aces",
-                        "title": "Israelites",
-                        "uri": "5U1GMgbXXM5eLvKUDnvqNS"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Max Romeo",
-                        "title": "Tacko",
-                        "uri": "3HoyatSPz9rKWZH77gZseR"
-                    },
-                    {
-                        "artist": "Max Romeo",
-                        "title": "Time Bomb",
-                        "uri": "7FpoGK1xWL7otUtzCn2WLe"
-                    },
-                    {
-                        "artist": "Max Romeo",
-                        "title": "Rome",
-                        "uri": "5lO3EqPuRKRuVMm6ZnafRY"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Harry J Allstars",
-                        "title": "Liquidator",
-                        "uri": "4tg09sJm1TtgN1e3RuWEn1"
-                    },
-                    {
-                        "artist": "Harry J Allstars",
-                        "title": "Liquidator",
-                        "uri": "0qQspNKsu9bkU6SsqE8WlZ"
-                    },
-                    {
-                        "artist": "Harry J Allstars",
-                        "title": "Liquidator",
-                        "uri": "3fIw6tUD2PmiI1RG3fZHft"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Harry J Allstars",
-                        "title": "Liquidator",
-                        "uri": "4tg09sJm1TtgN1e3RuWEn1"
-                    },
-                    {
-                        "artist": "Harry J Allstars",
-                        "title": "Liquidator",
-                        "uri": "0qQspNKsu9bkU6SsqE8WlZ"
-                    },
-                    {
-                        "artist": "Harry J Allstars",
-                        "title": "Liquidator",
-                        "uri": "3fIw6tUD2PmiI1RG3fZHft"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "The Pioneers",
-                        "title": "Long Shot Kick De Bucket",
-                        "uri": "64LEzmN3831SPhxGIBQ4KH"
-                    },
-                    {
-                        "artist": "The Pioneers",
-                        "title": "Long Shot Kick De Bucket",
-                        "uri": "1fsp1ZvQ6F5nf8Ut5TBtAX"
-                    },
-                    {
-                        "artist": "The Pioneers",
-                        "title": "Long Shot Kick De Bucket",
-                        "uri": "47Umqy9PcfvrhkfzlEpvig"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Pioneers",
-                        "title": "Long Shot Kick De Bucket",
-                        "uri": "64LEzmN3831SPhxGIBQ4KH"
-                    },
-                    {
-                        "artist": "The Pioneers",
-                        "title": "Long Shot Kick De Bucket",
-                        "uri": "1fsp1ZvQ6F5nf8Ut5TBtAX"
-                    },
-                    {
-                        "artist": "The Pioneers",
-                        "title": "Long Shot Kick De Bucket",
-                        "uri": "47Umqy9PcfvrhkfzlEpvig"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Marcia Griffiths",
-                        "title": "Stepping Out of Babylon",
-                        "uri": "2GqdVyG0yXhmcAPOhSletn"
-                    },
-                    {
-                        "artist": "Marcia Griffiths",
-                        "title": "Stepping Out of Babylon",
-                        "uri": "6hwKnQvZrRCNIqllKgnk6U"
-                    },
-                    {
-                        "artist": "Marcia Griffiths",
-                        "title": "Stepping Out Of Babylon",
-                        "uri": "48hJRSzUsA6f6lBWMK9Wiy"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Marcia Griffiths",
-                        "title": "Stepping Out of Babylon",
-                        "uri": "2GqdVyG0yXhmcAPOhSletn"
-                    },
-                    {
-                        "artist": "Marcia Griffiths",
-                        "title": "Stepping Out of Babylon",
-                        "uri": "6hwKnQvZrRCNIqllKgnk6U"
-                    },
-                    {
-                        "artist": "Marcia Griffiths",
-                        "title": "Steppin' out of Babylon",
-                        "uri": "0Acz4rAVr6da8ycQe1nxqg"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Dandy Livingstone",
-                        "title": "Rudy, A Message To You",
-                        "uri": "4WKQHFv4KqIehRBb3V3a9p"
-                    },
-                    {
-                        "artist": "Dandy Livingstone",
-                        "title": "Rudy, A Message To You",
-                        "uri": "5DY10jzmrSwTBwHIZOSyEB"
-                    },
-                    {
-                        "artist": "Dandy Livingstone",
-                        "title": "Rudy, A Message To You",
-                        "uri": "315uVAGr9eu8QwX6Hg3HLf"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Dandy Livingstone",
-                        "title": "Rudy, A Message To You",
-                        "uri": "4WKQHFv4KqIehRBb3V3a9p"
-                    },
-                    {
-                        "artist": "Dandy",
-                        "title": "Rudy, a Message to You",
-                        "uri": "2jPPgh86mHf4bpOEImL43D"
-                    },
-                    {
-                        "artist": "Dandy Livingstone",
-                        "title": "Rudy, A Message To You",
-                        "uri": "5DY10jzmrSwTBwHIZOSyEB"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Vybz Kartel",
+            "ratio": 6,
+            "title": "Thank You Jah",
+            "trackid": "1vtqzEJ0zyBnYsySXj6Khm"
+        },
+        "02": {
+            "artist": "Sizzla",
+            "ratio": 6,
+            "title": "Solid As A Rock",
+            "trackid": "6rr0IJtCpW4a0ZFm1FqOI6"
+        },
+        "03": {
+            "artist": "Pressure Busspipe",
+            "ratio": 6,
+            "title": "Lion Is A Lion",
+            "trackid": "1EAtM6qlCcLGPRdWccHxLn"
+        },
+        "04": {
+            "artist": "Althea And Donna",
+            "ratio": 6,
+            "title": "Uptown Top Ranking - Remastered 2001",
+            "trackid": "34zWZOSpU2V1ab0PiZCcv4"
+        },
+        "05": {
+            "artist": "Desmond Dekker & The Aces",
+            "ratio": 6,
+            "title": "Israelites",
+            "trackid": "5U1GMgbXXM5eLvKUDnvqNS"
+        },
+        "06": {
+            "artist": "Max Romeo",
+            "ratio": 3,
+            "title": "Tacko",
+            "trackid": "3HoyatSPz9rKWZH77gZseR"
+        },
+        "07": {
+            "artist": "Harry J Allstars",
+            "ratio": 6,
+            "title": "Liquidator",
+            "trackid": "4tg09sJm1TtgN1e3RuWEn1"
+        },
+        "08": {
+            "artist": "The Pioneers",
+            "ratio": 6,
+            "title": "Long Shot Kick De Bucket",
+            "trackid": "64LEzmN3831SPhxGIBQ4KH"
+        },
+        "09": {
+            "artist": "Marcia Griffiths",
+            "ratio": 6,
+            "title": "Stepping Out of Babylon",
+            "trackid": "2GqdVyG0yXhmcAPOhSletn"
+        },
+        "10": {
+            "artist": "Dandy Livingstone",
+            "ratio": 6,
+            "title": "Rudy, A Message To You",
+            "trackid": "4WKQHFv4KqIehRBb3V3a9p"
         }
     }
 }

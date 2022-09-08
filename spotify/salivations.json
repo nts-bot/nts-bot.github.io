@@ -1,760 +1,140 @@
 {
-    "flags": {
-        "salivations-5th-november-2021": {
-            "00": {
-                "artist": "Giovanni Battista Pergolesi",
-                "ratio": 6,
-                "title": "Pergolesi: Stabat Mater: I. Stabat Mater dolorosa",
-                "trackid": "7LcypCVM2DeybABIv1Ydaa"
-            },
-            "01": {
-                "artist": "Craig Armstrong",
-                "ratio": 6,
-                "title": "This Love",
-                "trackid": "1VYJi7SDb18xtJ6Hou5mm1"
-            },
-            "02": {
-                "artist": "Sting",
-                "ratio": 6,
-                "title": "Shape Of My Heart",
-                "trackid": "6CKoWCWAqEVWVjpeoJXyNH"
-            },
-            "03": {
-                "artist": "Annie Lennox",
-                "ratio": 6,
-                "title": "A Whiter Shade of Pale",
-                "trackid": "11Mkoen07pKwyDqHiFnVU9"
-            },
-            "04": {
-                "artist": "Simply Red",
-                "ratio": 6,
-                "title": "Holding Back the Years",
-                "trackid": "7E5No4xJg4AdbnwXD0CRBe"
-            }
+    "salivations-5th-november-2021": {
+        "00": {
+            "artist": "Giovanni Battista Pergolesi",
+            "ratio": 6,
+            "title": "Pergolesi: Stabat Mater: I. Stabat Mater dolorosa",
+            "trackid": "7LcypCVM2DeybABIv1Ydaa"
         },
-        "salivations-w-angela-12th-november-2021": {
-            "00": {
-                "artist": "Joe Hisaishi",
-                "ratio": 6,
-                "title": "In the Sea of Corruption",
-                "trackid": "58Xk781LOJMj3YCKht5hxZ"
-            },
-            "01": {
-                "artist": "Johann Sebastian Bach",
-                "ratio": 3,
-                "title": "Prelude & Fugue in C Minor (Well-Tempered Clavier, Book I, No. 2), BWV 847: I. Prelude",
-                "trackid": "3tRT6unYEvgBTbAdAWPSVp"
-            },
-            "02": {
-                "artist": "Cibo Matto",
-                "ratio": 6,
-                "title": "The Candy Man",
-                "trackid": "2MAyQUrYeBI1ZSx0e44ctQ"
-            },
-            "03": {
-                "artist": "Primal Scream",
-                "ratio": 6,
-                "title": "Higher Than the Sun - Higher Than the Orb Mix",
-                "trackid": "23UR03W03HWH1HFcF4rz9Z"
-            }
+        "01": {
+            "artist": "Craig Armstrong",
+            "ratio": 6,
+            "title": "This Love",
+            "trackid": "1VYJi7SDb18xtJ6Hou5mm1"
         },
-        "salivations-w-angela-3rd-december-2021": {
-            "00": {
-                "artist": "Martine",
-                "ratio": 3,
-                "title": "Sale",
-                "trackid": "2liktYwWhYBgpFIXNvSALK"
-            },
-            "01": {
-                "artist": "Fatima Al Qadiri",
-                "ratio": 6,
-                "title": "A Certain Concubine",
-                "trackid": "3hyGyJZR0vDisbH8Lf9ske"
-            },
-            "02": {
-                "artist": "Cocoa Tea",
-                "ratio": 5,
-                "title": "How Do You Do",
-                "trackid": "74M5zFyRPs69uplAHFa9s8"
-            },
-            "03": {
-                "artist": "박혜진 Park Hye Jin",
-                "ratio": 6,
-                "title": "i jus wanna be happy",
-                "trackid": "1dviHb6QYYA2quUi9RSnYc"
-            },
-            "04": {
-                "artist": "Samuel Lee Blue",
-                "ratio": 2,
-                "title": "Rebuild",
-                "trackid": "2RaexMtCRLMxXfsexhZOnM"
-            },
-            "05": {
-                "artist": "Mikhail Chekalin",
-                "ratio": 6,
-                "title": "Sentimental Intermezzo",
-                "trackid": "3ljE3aWnfxmBNMWfjZitS4"
-            },
-            "06": {
-                "artist": "Yo-Yo Ma",
-                "ratio": 4,
-                "title": "Doorway",
-                "trackid": "2uUVGSNMcLsPwAoDUw2diO"
-            },
-            "07": {
-                "artist": "Howie Lee",
-                "ratio": 6,
-                "title": "Foreign Flowers - Dengue Dengue Dengue & Prisma Remix",
-                "trackid": "3ipEDZ30eJhJhmrEXnZD1s"
-            },
-            "08": {
-                "artist": "Davia Spain",
-                "ratio": 6,
-                "title": "Dawning",
-                "trackid": "64z98kWI8yVGrJEU0iKF87"
-            },
-            "09": {
-                "artist": "Ana Roxanne",
-                "ratio": 6,
-                "title": "A Study in Vastness",
-                "trackid": "2efXjd2d8PRQPFkoiPwwyS"
-            },
-            "10": {
-                "artist": "Lawrence Lek",
-                "ratio": 6,
-                "title": "Unreal",
-                "trackid": "3liR99bvHUIbDZv1bWKJNd"
-            },
-            "11": {
-                "artist": "Dreamcatcher",
-                "ratio": 4,
-                "title": "Whistle",
-                "trackid": "1L0Cy0zcLydO5AdBjkyK1S"
-            },
-            "12": {
-                "artist": "Davia Spain",
-                "ratio": 6,
-                "title": "Float (Interlude)",
-                "trackid": "5hmS8sZ7bax1VebfLrRXG0"
-            }
+        "02": {
+            "artist": "Sting",
+            "ratio": 6,
+            "title": "Shape Of My Heart",
+            "trackid": "6CKoWCWAqEVWVjpeoJXyNH"
+        },
+        "03": {
+            "artist": "Annie Lennox",
+            "ratio": 6,
+            "title": "A Whiter Shade of Pale",
+            "trackid": "11Mkoen07pKwyDqHiFnVU9"
+        },
+        "04": {
+            "artist": "Simply Red",
+            "ratio": 6,
+            "title": "Holding Back the Years",
+            "trackid": "7E5No4xJg4AdbnwXD0CRBe"
         }
     },
-    "search": {
-        "salivations-5th-november-2021": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Giovanni Battista Pergolesi",
-                        "title": "Pergolesi: Stabat Mater: I. Stabat Mater dolorosa",
-                        "uri": "7LcypCVM2DeybABIv1Ydaa"
-                    },
-                    {
-                        "artist": "Giovanni Battista Pergolesi",
-                        "title": "Pergolesi: Stabat Mater: I. Stabat mater dolorosa",
-                        "uri": "2n03gC6rRet9lHKOcjsSx3"
-                    },
-                    {
-                        "artist": "Giovanni Battista Pergolesi",
-                        "title": "Stabat Mater dolorosa",
-                        "uri": "5OcjYtnhTJpNF5nMqx6U15"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Craig Armstrong",
-                        "title": "This Love",
-                        "uri": "1VYJi7SDb18xtJ6Hou5mm1"
-                    },
-                    {
-                        "artist": "Craig Armstrong",
-                        "title": "This Love",
-                        "uri": "6UJbYwTON5t93k445TwTN5"
-                    },
-                    {
-                        "artist": "Craig Armstrong",
-                        "title": "This Love",
-                        "uri": "3s7fvI6sjYxBZTEVowuqyV"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Craig Armstrong",
-                        "title": "This Love",
-                        "uri": "1VYJi7SDb18xtJ6Hou5mm1"
-                    },
-                    {
-                        "artist": "Craig Armstrong",
-                        "title": "This Love",
-                        "uri": "6UJbYwTON5t93k445TwTN5"
-                    },
-                    {
-                        "artist": "Craig Armstrong",
-                        "title": "Opening",
-                        "uri": "0x1rnXl24iJl8xZFMkoyNv"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Sting",
-                        "title": "Shape Of My Heart",
-                        "uri": "6CKoWCWAqEVWVjpeoJXyNH"
-                    },
-                    {
-                        "artist": "Sting",
-                        "title": "Shape Of My Heart - My Songs Version",
-                        "uri": "6b7oNUj0gjn5GICYZG85TZ"
-                    },
-                    {
-                        "artist": "Sting",
-                        "title": "Shape Of My Heart - FIP Session Live in Paris at the Pantheon",
-                        "uri": "7nDxI7EM5gvwt9ryf3njjB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sting",
-                        "title": "Shape Of My Heart",
-                        "uri": "6CKoWCWAqEVWVjpeoJXyNH"
-                    },
-                    {
-                        "artist": "Sting",
-                        "title": "Desert Rose - Melodic Club Mix Radio Edit",
-                        "uri": "3NePeBJRdIp6H2nengTlBZ"
-                    },
-                    {
-                        "artist": "Sting",
-                        "title": "Shape Of My Heart - My Songs Version",
-                        "uri": "6b7oNUj0gjn5GICYZG85TZ"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Annie Lennox",
-                        "title": "A Whiter Shade of Pale",
-                        "uri": "11Mkoen07pKwyDqHiFnVU9"
-                    },
-                    {
-                        "artist": "Annie Lennox",
-                        "title": "A Whiter Shade of Pale",
-                        "uri": "0hUCj392WKPd47W8mXkJZd"
-                    },
-                    {
-                        "artist": "Annie Lennox",
-                        "title": "A Whiter Shade of Pale",
-                        "uri": "6C5Mo9mA7C4psUEeBPqXZK"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Annie Lennox",
-                        "title": "A Whiter Shade of Pale",
-                        "uri": "11Mkoen07pKwyDqHiFnVU9"
-                    },
-                    {
-                        "artist": "Annie Lennox",
-                        "title": "A Whiter Shade of Pale",
-                        "uri": "0hUCj392WKPd47W8mXkJZd"
-                    },
-                    {
-                        "artist": "Procol Harum",
-                        "title": "A Whiter Shade of Pale - Original Single Version",
-                        "uri": "78ZqE2tjAxbqEGGlvGnQfT"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Simply Red",
-                        "title": "Holding Back the Years - 2008 Remaster",
-                        "uri": "1yg7fwwYmx9DQ2TdXUmfpJ"
-                    },
-                    {
-                        "artist": "Simply Red",
-                        "title": "Holding Back the Years",
-                        "uri": "7E5No4xJg4AdbnwXD0CRBe"
-                    },
-                    {
-                        "artist": "Simply Red",
-                        "title": "Holding Back the Years - Single Version; 2008 Remaster [2008 Remastered Version]",
-                        "uri": "7blHIRcL3J68cOZx1zpGHh"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Simply Red",
-                        "title": "Holding Back the Years - 2008 Remaster",
-                        "uri": "1yg7fwwYmx9DQ2TdXUmfpJ"
-                    },
-                    {
-                        "artist": "Joe Budden",
-                        "title": "Don't Make Me",
-                        "uri": "2pMaWsYp9YXUWx8oxDIAWl"
-                    },
-                    {
-                        "artist": "Simply Red",
-                        "title": "Holding Back the Years",
-                        "uri": "7E5No4xJg4AdbnwXD0CRBe"
-                    }
-                ]
-            }
+    "salivations-w-angela-12th-november-2021": {
+        "00": {
+            "artist": "Joe Hisaishi",
+            "ratio": 6,
+            "title": "In the Sea of Corruption",
+            "trackid": "58Xk781LOJMj3YCKht5hxZ"
         },
-        "salivations-w-angela-12th-november-2021": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Joe Hisaishi",
-                        "title": "In the Sea of Corruption",
-                        "uri": "58Xk781LOJMj3YCKht5hxZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Joe Hisaishi",
-                        "title": "In the Sea of Corruption",
-                        "uri": "58Xk781LOJMj3YCKht5hxZ"
-                    },
-                    {
-                        "artist": "Joe Hisaishi",
-                        "title": "Sea of Corruption",
-                        "uri": "22lMcuDLiYASUVHDPuN7i2"
-                    },
-                    {
-                        "artist": "Joe Hisaishi",
-                        "title": "月夜の集い",
-                        "uri": "03LNKvnFazBK01qeFKpFUc"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Johann Sebastian Bach",
-                        "title": "Prelude & Fugue in C Minor (Well-Tempered Clavier, Book I, No. 2), BWV 847: I. Prelude",
-                        "uri": "3tRT6unYEvgBTbAdAWPSVp"
-                    },
-                    {
-                        "artist": "Johann Sebastian Bach",
-                        "title": "Prelude & Fugue in D Major (Well-Tempered Clavier, Book I, No. 5), BWV 850: II. Fugue",
-                        "uri": "3v1gviJrAtaIoLK41JSy8s"
-                    },
-                    {
-                        "artist": "Johann Sebastian Bach",
-                        "title": "Prelude & Fugue in E Minor (Well-Tempered Clavier, Book I, No. 10), BWV 855: II. Fugue",
-                        "uri": "4vMoadHEtbQcx3WNXAQkO4"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Cibo Matto",
-                        "title": "The Candy Man",
-                        "uri": "2MAyQUrYeBI1ZSx0e44ctQ"
-                    },
-                    {
-                        "artist": "Cibo Matto",
-                        "title": "The Candy Man",
-                        "uri": "0sD6ZJddeEKTuUK1jwCPbF"
-                    },
-                    {
-                        "artist": "Cibo Matto",
-                        "title": "The Candy Man",
-                        "uri": "23I0RVNtP2cShILe4eJf8V"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Cibo Matto",
-                        "title": "The Candy Man",
-                        "uri": "2MAyQUrYeBI1ZSx0e44ctQ"
-                    },
-                    {
-                        "artist": "Cibo Matto",
-                        "title": "Sugar Water",
-                        "uri": "2mQnPuVeoJXwS8p9J4JUIb"
-                    },
-                    {
-                        "artist": "Cibo Matto",
-                        "title": "Spoon",
-                        "uri": "0VTIKvnQeGkMDtvHdlcqb6"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Higher Than the Sun - Higher Than the Orb Mix",
-                        "uri": "23UR03W03HWH1HFcF4rz9Z"
-                    },
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Higher Than the Sun (feat. Jah Wobble) - A Dub Symphony in Two Parts",
-                        "uri": "5zGbnxBXPcw4jfx9WNQcHd"
-                    },
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Higher Than the Sun - Jam Studio Monitor Mix",
-                        "uri": "1ysZ1nu6U3NQyJmtr6CwXs"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Higher Than the Sun - Higher Than the Orb Mix",
-                        "uri": "23UR03W03HWH1HFcF4rz9Z"
-                    },
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Higher Than the Sun (feat. Jah Wobble) - A Dub Symphony in Two Parts",
-                        "uri": "5zGbnxBXPcw4jfx9WNQcHd"
-                    },
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Higher Than the Sun - Jam Studio Monitor Mix",
-                        "uri": "1ysZ1nu6U3NQyJmtr6CwXs"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Johann Sebastian Bach",
+            "ratio": 3,
+            "title": "Prelude & Fugue in C Minor (Well-Tempered Clavier, Book I, No. 2), BWV 847: I. Prelude",
+            "trackid": "3tRT6unYEvgBTbAdAWPSVp"
         },
-        "salivations-w-angela-3rd-december-2021": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Angie Martinez",
-                        "title": "If I Could Go! (feat. Lil' Mo & Sacario)",
-                        "uri": "6scuKWBHQvZFSWTrSPiqyT"
-                    },
-                    {
-                        "artist": "Angie Martinez",
-                        "title": "If I Could Go! (feat. Lil' Mo & Sacario)",
-                        "uri": "5atAnyOv5YTg0AS7ADGaTa"
-                    },
-                    {
-                        "artist": "Angie Martinez",
-                        "title": "If I Could Go",
-                        "uri": "7KvnGpLToXSJu23Gcg5iB1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "MadeInParis",
-                        "title": "Pornstar Martini (feat. Luidji)",
-                        "uri": "4hE8L0VkdiBPLXMYyb6rpj"
-                    },
-                    {
-                        "artist": "Pro Choice Karaoke",
-                        "title": "If I Could Go (Karaoke Version) - Originally Performed By Angie Martinez",
-                        "uri": "6gcNCzST73BGZoR7Dp9WtD"
-                    },
-                    {
-                        "artist": "Martine",
-                        "title": "Sale",
-                        "uri": "2liktYwWhYBgpFIXNvSALK"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Fatima Al Qadiri",
-                        "title": "A Certain Concubine",
-                        "uri": "3hyGyJZR0vDisbH8Lf9ske"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Fatima Al Qadiri",
-                        "title": "A Certain Concubine",
-                        "uri": "3hyGyJZR0vDisbH8Lf9ske"
-                    },
-                    {
-                        "artist": "Fatima Al Qadiri",
-                        "title": "Sheba",
-                        "uri": "7kIJhTbSyyjsYnIbVxv3Zy"
-                    },
-                    {
-                        "artist": "Fatima Al Qadiri",
-                        "title": "Stolen Kiss of a Succubus",
-                        "uri": "3yzNiAfWyhQ1d2344r35M9"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Semitoo",
-                        "title": "How Do You Do - Bodybangers Radio Edit",
-                        "uri": "2l0XJNDuE76MgeE5wAyY9c"
-                    },
-                    {
-                        "artist": "Carlos Rivera",
-                        "title": "Regrésame Mi Corazón",
-                        "uri": "5MoirF0EefLVGjGrrFruRu"
-                    },
-                    {
-                        "artist": "Cocoa Tea",
-                        "title": "How Do You Do",
-                        "uri": "74M5zFyRPs69uplAHFa9s8"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "박혜진 Park Hye Jin",
-                        "title": "i jus wanna be happy",
-                        "uri": "1dviHb6QYYA2quUi9RSnYc"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "박혜진 Park Hye Jin",
-                        "title": "i jus wanna be happy",
-                        "uri": "1dviHb6QYYA2quUi9RSnYc"
-                    },
-                    {
-                        "artist": "박혜진 Park Hye Jin",
-                        "title": "I DON'T CARE",
-                        "uri": "0N9WQE0WCPetQduRvRRu1r"
-                    },
-                    {
-                        "artist": "박혜진 Park Hye Jin",
-                        "title": "Like this",
-                        "uri": "7pY3HE16Ir4ZFTEOmosP57"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Parlor",
-                        "title": "Rebuild",
-                        "uri": "5gR6201qFSlhpzXvaWEtHT"
-                    },
-                    {
-                        "artist": "Samuel Lee Blue",
-                        "title": "Rebuild",
-                        "uri": "2RaexMtCRLMxXfsexhZOnM"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "YANG GUANG ZHAO YAO PA MI ER",
-                        "uri": "6AfIXtaVrKYZc3c6R4J3KJ"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mikhail Chekalin",
-                        "title": "Sentimental Intermezzo",
-                        "uri": "3ljE3aWnfxmBNMWfjZitS4"
-                    },
-                    {
-                        "artist": "Stanislav Kreichi",
-                        "title": "Intermezzo",
-                        "uri": "4J5qwb0gEuSweH6WctKutG"
-                    },
-                    {
-                        "artist": "Ezra Rachlin",
-                        "title": "Intermezzo In Eb Opus 117 No 1",
-                        "uri": "4xrFQd9HTYqyxFUTzzi5Rq"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Yo-Yo Ma",
-                        "title": "Doorway",
-                        "uri": "2uUVGSNMcLsPwAoDUw2diO"
-                    },
-                    {
-                        "artist": "Yo-Yo Ma",
-                        "title": "Doorway - Commentary",
-                        "uri": "71b0jnyGFWOQE3DTfAFUaR"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Yo-Yo Ma",
-                        "title": "Doorway",
-                        "uri": "2uUVGSNMcLsPwAoDUw2diO"
-                    },
-                    {
-                        "artist": "Yo-Yo Ma",
-                        "title": "Doorway - Commentary",
-                        "uri": "71b0jnyGFWOQE3DTfAFUaR"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Foreign Flowers - Dengue Dengue Dengue & Prisma Remix",
-                        "uri": "3ipEDZ30eJhJhmrEXnZD1s"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Foreign Flowers - Dengue Dengue Dengue & Prisma Remix",
-                        "uri": "1el5tzPHqaWOdTqzOU5psZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Foreign Flowers - Dengue Dengue Dengue & Prisma Remix",
-                        "uri": "3ipEDZ30eJhJhmrEXnZD1s"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Foreign Flowers - Dengue Dengue Dengue & Prisma Remix",
-                        "uri": "1el5tzPHqaWOdTqzOU5psZ"
-                    },
-                    {
-                        "artist": "Dengue Dengue Dengue",
-                        "title": "Simiolo",
-                        "uri": "4sMYc0dq5RbY43mlsU63XP"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Davia Spain",
-                        "title": "Dawning",
-                        "uri": "64z98kWI8yVGrJEU0iKF87"
-                    },
-                    {
-                        "artist": "Davia Spain",
-                        "title": "Overture",
-                        "uri": "6HgXPpipr9wpLNb7k8hIxd"
-                    },
-                    {
-                        "artist": "Epifania",
-                        "title": "Dawning (Spa)",
-                        "uri": "23bt7CEANJDsookW6MkP11"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Ana Roxanne",
-                        "title": "A Study in Vastness",
-                        "uri": "2efXjd2d8PRQPFkoiPwwyS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ana Roxanne",
-                        "title": "A Study in Vastness",
-                        "uri": "2efXjd2d8PRQPFkoiPwwyS"
-                    },
-                    {
-                        "artist": "Ana Roxanne",
-                        "title": "- - -",
-                        "uri": "28SO6fgdGt1Z6OR6QlBK17"
-                    },
-                    {
-                        "artist": "Ana Roxanne",
-                        "title": "Immortality",
-                        "uri": "7umwXBtyRHfXl0UnhsWKRZ"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Lawrence Lek",
-                        "title": "Unreal",
-                        "uri": "3liR99bvHUIbDZv1bWKJNd"
-                    },
-                    {
-                        "artist": "Lawrence Lek",
-                        "title": "Unreal",
-                        "uri": "6tAdHUopHDVvA87GX6ykTK"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lawrence Lek",
-                        "title": "Unreal",
-                        "uri": "3liR99bvHUIbDZv1bWKJNd"
-                    },
-                    {
-                        "artist": "RK7",
-                        "title": "Lawrence",
-                        "uri": "6yMwq5tHVPuBsP1XN6jtUC"
-                    },
-                    {
-                        "artist": "RK7",
-                        "title": "Lawrence(IN)",
-                        "uri": "532iSHkWtRC5lNLoWVDGiE"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fredrik Ferrier",
-                        "title": "The Whistle Song",
-                        "uri": "3rPZQh2fgqM5xUPU5v4gKN"
-                    },
-                    {
-                        "artist": "Roger Miller",
-                        "title": "Whistle Stop",
-                        "uri": "6zrgiJFGA620b5GvqCvG1w"
-                    },
-                    {
-                        "artist": "Dreamcatcher",
-                        "title": "Whistle",
-                        "uri": "1L0Cy0zcLydO5AdBjkyK1S"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Davia Spain",
-                        "title": "Float (Interlude)",
-                        "uri": "5hmS8sZ7bax1VebfLrRXG0"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Olivia Dean",
-                        "title": "Float",
-                        "uri": "031T6v4JIcPlkbzOrpzOnv"
-                    },
-                    {
-                        "artist": "Davia Spain",
-                        "title": "Float (Interlude)",
-                        "uri": "5hmS8sZ7bax1VebfLrRXG0"
-                    },
-                    {
-                        "artist": "Call Me Karizma",
-                        "title": "Float",
-                        "uri": "54JbP4PgOMQGowCbCfjCNA"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Cibo Matto",
+            "ratio": 6,
+            "title": "The Candy Man",
+            "trackid": "2MAyQUrYeBI1ZSx0e44ctQ"
+        },
+        "03": {
+            "artist": "Primal Scream",
+            "ratio": 6,
+            "title": "Higher Than the Sun - Higher Than the Orb Mix",
+            "trackid": "23UR03W03HWH1HFcF4rz9Z"
+        }
+    },
+    "salivations-w-angela-3rd-december-2021": {
+        "00": {
+            "artist": "Martine",
+            "ratio": 3,
+            "title": "Sale",
+            "trackid": "2liktYwWhYBgpFIXNvSALK"
+        },
+        "01": {
+            "artist": "Fatima Al Qadiri",
+            "ratio": 6,
+            "title": "A Certain Concubine",
+            "trackid": "3hyGyJZR0vDisbH8Lf9ske"
+        },
+        "02": {
+            "artist": "Cocoa Tea",
+            "ratio": 5,
+            "title": "How Do You Do",
+            "trackid": "74M5zFyRPs69uplAHFa9s8"
+        },
+        "03": {
+            "artist": "박혜진 Park Hye Jin",
+            "ratio": 6,
+            "title": "i jus wanna be happy",
+            "trackid": "1dviHb6QYYA2quUi9RSnYc"
+        },
+        "04": {
+            "artist": "Samuel Lee Blue",
+            "ratio": 2,
+            "title": "Rebuild",
+            "trackid": "2RaexMtCRLMxXfsexhZOnM"
+        },
+        "05": {
+            "artist": "Mikhail Chekalin",
+            "ratio": 6,
+            "title": "Sentimental Intermezzo",
+            "trackid": "3ljE3aWnfxmBNMWfjZitS4"
+        },
+        "06": {
+            "artist": "Yo-Yo Ma",
+            "ratio": 4,
+            "title": "Doorway",
+            "trackid": "2uUVGSNMcLsPwAoDUw2diO"
+        },
+        "07": {
+            "artist": "Howie Lee",
+            "ratio": 6,
+            "title": "Foreign Flowers - Dengue Dengue Dengue & Prisma Remix",
+            "trackid": "3ipEDZ30eJhJhmrEXnZD1s"
+        },
+        "08": {
+            "artist": "Davia Spain",
+            "ratio": 6,
+            "title": "Dawning",
+            "trackid": "64z98kWI8yVGrJEU0iKF87"
+        },
+        "09": {
+            "artist": "Ana Roxanne",
+            "ratio": 6,
+            "title": "A Study in Vastness",
+            "trackid": "2efXjd2d8PRQPFkoiPwwyS"
+        },
+        "10": {
+            "artist": "Lawrence Lek",
+            "ratio": 6,
+            "title": "Unreal",
+            "trackid": "3liR99bvHUIbDZv1bWKJNd"
+        },
+        "11": {
+            "artist": "Dreamcatcher",
+            "ratio": 4,
+            "title": "Whistle",
+            "trackid": "1L0Cy0zcLydO5AdBjkyK1S"
+        },
+        "12": {
+            "artist": "Davia Spain",
+            "ratio": 6,
+            "title": "Float (Interlude)",
+            "trackid": "5hmS8sZ7bax1VebfLrRXG0"
         }
     }
 }

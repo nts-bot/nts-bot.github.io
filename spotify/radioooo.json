@@ -1,4567 +1,819 @@
 {
-    "flags": {
-        "radiooo-1920s-30s-special-30th-november-2016": {
-            "00": {
-                "artist": "Tommy Dorsey",
-                "ratio": 6,
-                "title": "I'll Never Smile Again",
-                "trackid": "2Pi0rY9FcbaecqO0AyhXbu"
-            },
-            "01": {
-                "artist": "Al Bowlly",
-                "ratio": 6,
-                "title": "Midnight, The Stars and You",
-                "trackid": "1YmTsBtaz3K6sazwsXkYWW"
-            },
-            "02": {
-                "artist": "Al Bowlly",
-                "ratio": 6,
-                "title": "Bei Mir Bist Du Schon",
-                "trackid": "5ZpwyYuTu7sFdPtU6Znz7M"
-            },
-            "03": {
-                "artist": "Tino Rossi",
-                "ratio": 6,
-                "title": "Écris-Moi",
-                "trackid": "666ahWdx14nfXJ9AKQuWwh"
-            },
-            "04": {
-                "artist": "Gösta Jonsson",
-                "ratio": 6,
-                "title": "Kaffe Utan Grädde Är Som Kärlek Utan Kyssar",
-                "trackid": "3iewJaS7SZ1FsH0VzJJJ1W"
-            },
-            "05": {
-                "artist": "Leonid Utyosov",
-                "ratio": 6,
-                "title": "Portret",
-                "trackid": "4WwxhmO7Ps5g3n2Blt5DpF"
-            },
-            "06": {
-                "artist": "Nekfeu",
-                "ratio": 2,
-                "title": "A la base",
-                "trackid": "6jsjizOPrKfXCvrvzzXAHb"
-            },
-            "07": {
-                "artist": "Al Bowlly",
-                "ratio": 6,
-                "title": "The Very Thought of You",
-                "trackid": "1vG48KvNnhBevmh0QiU7ku"
-            },
-            "08": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "09": {
-                "artist": "Jessie Matthews",
-                "ratio": 6,
-                "title": "One More Kiss (Then Goodnight)",
-                "trackid": "55kypEZBaH2vvDpFYtLtfN"
-            },
-            "10": {
-                "artist": "Mistinguett",
-                "ratio": 6,
-                "title": "Je Cherche Un Millionnaire",
-                "trackid": "10rUfdNbRZzinLJ0UYiFp5"
-            },
-            "11": {
-                "artist": "Teddy Raph and His Orchestra",
-                "ratio": 6,
-                "title": "Dream a Little Dream of Me",
-                "trackid": "2rBDNwzafeEVIk5mEugQtk"
-            },
-            "12": {
-                "artist": "Helen Kane",
-                "ratio": 6,
-                "title": "I Wanna Be Loved by You",
-                "trackid": "0birwxao4QdkCd8IUPloCR"
-            },
-            "13": {
-                "artist": "B. A. Rolfe & His Lucky Strike Orchestra",
-                "ratio": 6,
-                "title": "Singing in the Rain",
-                "trackid": "5lAHYOiY4ROCuaivMmvGhM"
-            },
-            "14": {
-                "artist": "Joséphine Baker",
-                "ratio": 6,
-                "title": "Partir Sur un Bateau Tout Blanc",
-                "trackid": "6fmoqvIvb28yDlzr5PoXSJ"
-            },
-            "15": {
-                "artist": "Comedian Harmonists",
-                "ratio": 6,
-                "title": "Mein kleiner grüner Kaktus",
-                "trackid": "4tzGDmOcO3oZcVh3BjkIWn"
-            },
-            "16": {
-                "artist": "Anson Weeks & His Orchestra",
-                "ratio": 6,
-                "title": "Give Me Liberty Or Give Me Love",
-                "trackid": "4P3oA2mKH733RtwcsUxu92"
-            },
-            "17": {
-                "artist": "Al Bowlly",
-                "ratio": 6,
-                "title": "Guilty",
-                "trackid": "6nvlZApzLzfZCCPjs8DXcd"
-            },
-            "18": {
-                "artist": "Patrick Saussois",
-                "ratio": 5,
-                "title": "Avant de mourir",
-                "trackid": "2QZ6TtqvWGZ3CmBplTr39e"
-            },
-            "19": {
-                "artist": "Original Memphis Five",
-                "ratio": 6,
-                "title": "Fireworks",
-                "trackid": "7n6Sc0ZP2wCMGIxycVkukW"
-            },
-            "20": {
-                "artist": "Lina Termini",
-                "ratio": 6,
-                "title": "Ma L'Amore No",
-                "trackid": "2yFBfAq96zHam9n6NR0OLt"
-            }
+    "radiooo-1920s-30s-special-30th-november-2016": {
+        "00": {
+            "artist": "Tommy Dorsey",
+            "ratio": 6,
+            "title": "I'll Never Smile Again",
+            "trackid": "2Pi0rY9FcbaecqO0AyhXbu"
         },
-        "radiooo-japanese-80s-special-13th-july-2016": {
-            "00": {
-                "artist": "saikai",
-                "ratio": 4,
-                "title": "daybreak",
-                "trackid": "2WURNU5pMwOgbHrmXUOPRN"
-            },
-            "01": {
-                "artist": "笠井 紀美子",
-                "ratio": 3,
-                "title": "バイブレイション",
-                "trackid": "3pV989KB6C0hAnRFb4Qcsg"
-            },
-            "02": {
-                "artist": "Haruomi Hosono",
-                "ratio": 4,
-                "title": "スポーツマン (2019 Remastering)",
-                "trackid": "7wK3vFraZXIjVxOqObajAL"
-            },
-            "03": {
-                "artist": "Nomura Aki",
-                "ratio": 3,
-                "title": "Rouge no dengon (Guitar)",
-                "trackid": "3gnUXiz1dF61Cwx153O77s"
-            },
-            "04": {
-                "artist": "Gojira",
-                "ratio": 4,
-                "title": "Flying Whales",
-                "trackid": "6SJ2LK3yMdGzC4AEcXJZo4"
-            },
-            "05": {
-                "artist": "Shigeru Suzuki",
-                "ratio": 4,
-                "title": "パッション・フラワー",
-                "trackid": "4yFM6VkpHJcVlLi6BUG7Ea"
-            },
-            "06": {
-                "artist": "EXID",
-                "ratio": 4,
-                "title": "Up & Down",
-                "trackid": "6BKOhvRPY54uvfqWwg7MKi"
-            },
-            "07": {
-                "artist": "Walter",
-                "ratio": 4,
-                "title": "Taxi man",
-                "trackid": "6OL1TbSZuxUndQa8ZlXf39"
-            },
-            "08": {
-                "artist": "Juicy Fruits",
-                "ratio": 6,
-                "title": "Jenie wa Gokigen Naname",
-                "trackid": "7b3QZl9xsV2RRIdD50K1jy"
-            },
-            "09": {
-                "artist": "Meiko Kaji",
-                "ratio": 4,
-                "title": "嫉妬",
-                "trackid": "4LGr2aCUMqBzuyhi4E2U6c"
-            },
-            "10": {
-                "artist": "Belle",
-                "ratio": 4,
-                "title": "歌よ",
-                "trackid": "4DPovSJonVPid3EDSxL9K8"
-            },
-            "11": {
-                "artist": "Haruomi Hosono",
-                "ratio": 5,
-                "title": "スポーツマン (2019 Remastering)",
-                "trackid": "7wK3vFraZXIjVxOqObajAL"
-            },
-            "12": {
-                "artist": "Frank Chickens",
-                "ratio": 5,
-                "title": "We Are Ninja - Yasuharu Konishi Mix",
-                "trackid": "3gBwo9EPOSZXwc4TuBs1C0"
-            },
-            "13": {
-                "artist": "Mtume",
-                "ratio": 3,
-                "title": "Juicy Fruit",
-                "trackid": "223kK8LVBwzkk3Ck7Ua0Sk"
-            },
-            "14": {
-                "artist": "Finger 5",
-                "ratio": 6,
-                "title": "恋のダイヤル6700",
-                "trackid": "6n3qQi0KpK3XHKqzt9V6aB"
-            }
+        "01": {
+            "artist": "Al Bowlly",
+            "ratio": 6,
+            "title": "Midnight, The Stars and You",
+            "trackid": "1YmTsBtaz3K6sazwsXkYWW"
         },
-        "radioooo-18th-may-2016": {
-            "00": {
-                "artist": "Billy Stewart",
-                "ratio": 6,
-                "title": "Summertime",
-                "trackid": "6ysKfFyFkn93xSc1fN8yQx"
-            },
-            "01": {
-                "artist": "Harry Nilsson",
-                "ratio": 6,
-                "title": "Everybody's Talkin'",
-                "trackid": "3c8JemHol1XwFFruXQxjCO"
-            },
-            "02": {
-                "artist": "Peter, Paul and Mary",
-                "ratio": 5,
-                "title": "Don't Think Twice, It's All Right",
-                "trackid": "7IsXXgpowAB48crGjV1oGb"
-            },
-            "03": {
-                "artist": "Lalo Schifrin",
-                "ratio": 6,
-                "title": "The Fox",
-                "trackid": "29ntON41t9jzXi3MKoQRyf"
-            },
-            "04": {
-                "artist": "Trini Lopez",
-                "ratio": 6,
-                "title": "Unchain My Heart",
-                "trackid": "7MW00RJu7D6asOH7u4h2XG"
-            },
-            "05": {
-                "artist": "Aretha Franklin",
-                "ratio": 6,
-                "title": "I Say a Little Prayer",
-                "trackid": "3NfxSdJnVdon1axzloJgba"
-            },
-            "06": {
-                "artist": "Bob Dylan",
-                "ratio": 6,
-                "title": "Don't Think Twice, It's All Right",
-                "trackid": "2WOjLF83vqjit2Zh4B69V3"
-            },
-            "07": {
-                "artist": "Margo Guryan",
-                "ratio": 6,
-                "title": "Under My Umbrella",
-                "trackid": "0Qdbr9IRJRKVZiEnRaxfJd"
-            },
-            "08": {
-                "artist": "Crosby, Stills & Nash",
-                "ratio": 6,
-                "title": "Helplessly Hoping",
-                "trackid": "7ieCy9tubdq5vsDm5MY2d7"
-            },
-            "09": {
-                "artist": "The Velvet Underground",
-                "ratio": 6,
-                "title": "Femme Fatale",
-                "trackid": "3PG7BAJG9WkmNOJOlc4uAo"
-            },
-            "10": {
-                "artist": "Bobby Hebb",
-                "ratio": 6,
-                "title": "Sunny",
-                "trackid": "4vju55Ag7apDL2CfotuE7Q"
-            },
-            "11": {
-                "artist": "Harpers Bizarre",
-                "ratio": 6,
-                "title": "59th Street Bridge Song (Feelin' Groovy) - Remastered Version",
-                "trackid": "5yn2yvIPo4gc0EJgmWAuBi"
-            },
-            "12": {
-                "artist": "Lesley Gore",
-                "ratio": 6,
-                "title": "You Don't Own Me",
-                "trackid": "7ngRS53kqxLcEt9Pythc5d"
-            },
-            "13": {
-                "artist": "Brenton Wood",
-                "ratio": 6,
-                "title": "Gimme Little Sign",
-                "trackid": "1h4XVjt26ZCDKmeEoHxT07"
-            },
-            "14": {
-                "artist": "The Mamas & The Papas",
-                "ratio": 6,
-                "title": "Dancing In The Street",
-                "trackid": "1Vv7ZtyDro81xmznV48gF6"
-            },
-            "15": {
-                "artist": "Stevie Wonder",
-                "ratio": 6,
-                "title": "Frankie & Johnny",
-                "trackid": "6t7sHoEra5ImZYTCGxL8Om"
-            },
-            "16": {
-                "artist": "The Ray Conniff Singers",
-                "ratio": 6,
-                "title": "The Windmills Of Your Mind",
-                "trackid": "2sFNBmXtMnrDeG4g3DwTMi"
-            },
-            "17": {
-                "artist": "Esther Phillips",
-                "ratio": 6,
-                "title": "And I Love Him",
-                "trackid": "1dPUQhlNGEaDm9Qi1vcL7I"
-            },
-            "18": {
-                "artist": "The Left Banke",
-                "ratio": 6,
-                "title": "Pretty Ballerina",
-                "trackid": "2wvr1ITeMHg51JQXT0gltU"
-            },
-            "19": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            }
+        "02": {
+            "artist": "Al Bowlly",
+            "ratio": 6,
+            "title": "Bei Mir Bist Du Schon",
+            "trackid": "5ZpwyYuTu7sFdPtU6Znz7M"
         },
-        "radioooo-20th-april-2016": {
-            "00": {
-                "artist": "Lô Borges",
-                "ratio": 6,
-                "title": "Aos Barões",
-                "trackid": "69jkG8dCZw75fTxwc2IQ86"
-            },
-            "01": {
-                "artist": "Deodato",
-                "ratio": 6,
-                "title": "Bebê",
-                "trackid": "1n6FtDEVKouS0hepaV9xcC"
-            },
-            "02": {
-                "artist": "Arnaldo Baptista",
-                "ratio": 6,
-                "title": "Cê Tá Pensando Que Eu Sou Loki?",
-                "trackid": "4iKPuksJHRy2ZcXrCTDVRK"
-            },
-            "03": {
-                "artist": "Os Originais Do Samba",
-                "ratio": 6,
-                "title": "Falador Passa Mal",
-                "trackid": "2bKOB6DLw8inrQC8UmghQN"
-            },
-            "04": {
-                "artist": "Zelia Barbosa",
-                "ratio": 6,
-                "title": "Pau De Arara (The Parrot Roost)",
-                "trackid": "4RgbPoJQcSOA9YM8ezdsms"
-            },
-            "05": {
-                "artist": "Rogério Duprat",
-                "ratio": 3,
-                "title": "The Rain, The Park And Other Things",
-                "trackid": "5Z08IkjKv2PWfG1ZKXGwZS"
-            },
-            "06": {
-                "artist": "Orlandivo",
-                "ratio": 6,
-                "title": "Tudo Jóia",
-                "trackid": "6Ez4tWkvP4Aj99mRtSz4Gr"
-            },
-            "07": {
-                "artist": "Doris Monteiro",
-                "ratio": 6,
-                "title": "Maita",
-                "trackid": "0rqZWIhGrMaPSDlE31Ret1"
-            },
-            "08": {
-                "artist": "Caetano Veloso",
-                "ratio": 5,
-                "title": "Maria Bethânia",
-                "trackid": "4GldaY02BCVmDp82TU1Cpg"
-            },
-            "09": {
-                "artist": "Os Tincoãs",
-                "ratio": 6,
-                "title": "Cordeiro De Nanã",
-                "trackid": "59HAcR0hVejI7Od0kgibFg"
-            },
-            "10": {
-                "artist": "Cartola",
-                "ratio": 6,
-                "title": "Preciso Me Encontrar",
-                "trackid": "5AKrqJ7RiOCfCaaCuxxGk0"
-            },
-            "11": {
-                "artist": "Juca Chaves",
-                "ratio": 6,
-                "title": "Take Me Back To Piauí",
-                "trackid": "26uzS4AhDPEYbGwcWFWB2O"
-            },
-            "12": {
-                "artist": "Astrud Gilberto",
-                "ratio": 6,
-                "title": "All I’ve Got",
-                "trackid": "6Rd062uMerFeB4SSdvL78A"
-            },
-            "13": {
-                "artist": "Os Mutantes",
-                "ratio": 6,
-                "title": "Portugal De Navio",
-                "trackid": "7ykxSoQm6XjECYgiu5GcPX"
-            },
-            "14": {
-                "artist": "Tim Maia",
-                "ratio": 6,
-                "title": "Acenda o farol",
-                "trackid": "2kXkaplZ6HdXz5XYBtdunj"
-            },
-            "15": {
-                "artist": "Noriel Vilela",
-                "ratio": 6,
-                "title": "16 Toneladas",
-                "trackid": "4eJFgz99l1ppawgesG8RRV"
-            },
-            "16": {
-                "artist": "Chico Buarque",
-                "ratio": 6,
-                "title": "Construção",
-                "trackid": "3FIuBxOxuQ6kYy8JO0gq2a"
-            }
+        "03": {
+            "artist": "Tino Rossi",
+            "ratio": 6,
+            "title": "Écris-Moi",
+            "trackid": "666ahWdx14nfXJ9AKQuWwh"
         },
-        "radioooo-23rd-march": {
-            "00": {
-                "artist": "Space Art",
-                "ratio": 6,
-                "title": "Welcome To Love",
-                "trackid": "1viXTCvrMW87NGipeG95h4"
-            },
-            "01": {
-                "artist": "New Paradise",
-                "ratio": 6,
-                "title": "I Love Video",
-                "trackid": "7yKGeGDjtxmfp4jlMvPUyE"
-            },
-            "02": {
-                "artist": "Nini Raviolette",
-                "ratio": 5,
-                "title": "Je tu nous",
-                "trackid": "2JtGjvY21aHqMiupzVmuiS"
-            },
-            "03": {
-                "artist": "Ruth",
-                "ratio": 6,
-                "title": "Mots",
-                "trackid": "3NmnGTteqJpExXCb1Ggouz"
-            },
-            "04": {
-                "artist": "Jean-Philippe Goude",
-                "ratio": 6,
-                "title": "Energie",
-                "trackid": "7AC6pbFkelcOPxn6FVokIa"
-            }
+        "04": {
+            "artist": "Gösta Jonsson",
+            "ratio": 6,
+            "title": "Kaffe Utan Grädde Är Som Kärlek Utan Kyssar",
+            "trackid": "3iewJaS7SZ1FsH0VzJJJ1W"
         },
-        "radioooo-italy-dolce-vita-55-65-special-15th-june-2016": {
-            "00": {
-                "artist": "Quartetto Cetra",
-                "ratio": 6,
-                "title": "Un Disco Dei Platters",
-                "trackid": "6CG9gow9lLYUTZ14Bq2lZk"
-            },
-            "01": {
-                "artist": "Nino Rota",
-                "ratio": 6,
-                "title": "La Passerella Di Otto E Mezzo",
-                "trackid": "7ILXw84zphdLuIQtvHJLI9"
-            },
-            "02": {
-                "artist": "I Campioni",
-                "ratio": 6,
-                "title": "Come prima",
-                "trackid": "6FRGgmeRJgkT0KSDDUi5EJ"
-            },
-            "03": {
-                "artist": "Rita Pavone",
-                "ratio": 6,
-                "title": "Solo Tu",
-                "trackid": "6F1SOxXJmg3zGCdntJ5PMs"
-            },
-            "04": {
-                "artist": "Mina",
-                "ratio": 6,
-                "title": "Tintarella di luna",
-                "trackid": "6NBLLkUxwVTTNwmDwMYnHC"
-            },
-            "05": {
-                "artist": "Marino Marini",
-                "ratio": 6,
-                "title": "I Ballo O Tango - Remastered",
-                "trackid": "15oiE7ctpUXK0PC4NPLQr4"
-            },
-            "06": {
-                "artist": "Nino Rota",
-                "ratio": 6,
-                "title": "La dolce vita - Finale",
-                "trackid": "3WpohDgnulH0POC8pn3Pgi"
-            },
-            "07": {
-                "artist": "Renato Carosone",
-                "ratio": 6,
-                "title": "'O Sarracino",
-                "trackid": "284k7wMWGGdFEPFXER98ce"
-            },
-            "08": {
-                "artist": "Quartetto Cetra",
-                "ratio": 6,
-                "title": "Aveva un bavero",
-                "trackid": "0GDR8BRo3bxzQAQszFX9m7"
-            },
-            "09": {
-                "artist": "Sophia Loren",
-                "ratio": 6,
-                "title": "De jour en jour",
-                "trackid": "5fX1IjVm9WgJZX2VpQ8lzD"
-            },
-            "10": {
-                "artist": "Domenico Modugno",
-                "ratio": 6,
-                "title": "Volare (Nel Blu Dipinto Di Blu) [Remastered]",
-                "trackid": "5ca1c1EGb3Q1tnXXPRrAhs"
-            },
-            "11": {
-                "artist": "Nico Fidenco",
-                "ratio": 6,
-                "title": "Con Te Sulla Spiaggia",
-                "trackid": "5qL9G387FzVFVgV92WU34K"
-            },
-            "12": {
-                "artist": "Edoardo Vianello",
-                "ratio": 6,
-                "title": "Guarda Come Dondolo",
-                "trackid": "5cnBqPh3jlnKCsYi3BeBsQ"
-            },
-            "13": {
-                "artist": "Caterina Valente",
-                "ratio": 4,
-                "title": "Amo Solo Te",
-                "trackid": "5rSivtrRZGAF3GUGBGcd56"
-            },
-            "14": {
-                "artist": "Fred Buscaglione",
-                "ratio": 6,
-                "title": "Love in Portofino",
-                "trackid": "5BXZJKU4KE7wfqJX4RhnP2"
-            },
-            "15": {
-                "artist": "Gino Paoli",
-                "ratio": 6,
-                "title": "La gatta",
-                "trackid": "1ZMC9pB3e18ac15XWZwvI9"
-            },
-            "16": {
-                "artist": "Marino Marini",
-                "ratio": 3,
-                "title": "Kriminal tango",
-                "trackid": "41ibCfyUANkH75sp7RHRpO"
-            },
-            "17": {
-                "artist": "Renato Rascel",
-                "ratio": 6,
-                "title": "Arrivederci Roma",
-                "trackid": "6EGvcOCqgCVYmcHbq9pBex"
-            },
-            "18": {
-                "artist": "Nilla Pizzi",
-                "ratio": 6,
-                "title": "Grazie dei fiori",
-                "trackid": "7ubjJN1weB9e0K77Bu6kAh"
-            }
+        "05": {
+            "artist": "Leonid Utyosov",
+            "ratio": 6,
+            "title": "Portret",
+            "trackid": "4WwxhmO7Ps5g3n2Blt5DpF"
         },
-        "radioooo-mexico-argentina-columbia-2010-2016-5th-october-2016": {
-            "00": {
-                "artist": "Meridian Brothers",
-                "ratio": 6,
-                "title": "Guaracha U.F.O (No Estamos Solos...)",
-                "trackid": "0DxpffgjnVzFpyldTAskDI"
-            },
-            "01": {
-                "artist": "El Güero Fresa Presenta",
-                "ratio": 6,
-                "title": "Convertible Ride",
-                "trackid": "60fyEM5riGN9wDnEjEzZpw"
-            },
-            "02": {
-                "artist": "Rebolledo",
-                "ratio": 6,
-                "title": "Canivalón",
-                "trackid": "0ghtgmzxL6dx0PqeRAfmb4"
-            },
-            "03": {
-                "artist": "Moderna",
-                "ratio": 6,
-                "title": "Asesino Psicotico",
-                "trackid": "1pUEI2GyAL283w59abFNiB"
-            },
-            "04": {
-                "artist": "Jose Larralde",
-                "ratio": 4,
-                "title": "Quimey Neuquen",
-                "trackid": "3oRaLG3ZDqXNN4BXhBClrY"
-            },
-            "05": {
-                "artist": "Ritmo Rojo",
-                "ratio": 5,
-                "title": "Merecumbé",
-                "trackid": "6Be6XGQ8vPrBWHHOjidYY0"
-            },
-            "06": {
-                "artist": "Eddie Mercury",
-                "ratio": 2,
-                "title": "Chundify",
-                "trackid": "5aW7EJK6np9kXFTA7XVziD"
-            },
-            "07": {
-                "artist": "Daniel Maloso",
-                "ratio": 6,
-                "title": "Ritmo Especial",
-                "trackid": "2bx5hOgYAzsBW2pgDpSh1p"
-            },
-            "08": {
-                "artist": "Zombies In Miami",
-                "ratio": 4,
-                "title": "Clamato",
-                "trackid": "1jNPV5NpnuC2dtgI7lzQX4"
-            },
-            "09": {
-                "artist": "Pachanga Boys",
-                "ratio": 6,
-                "title": "Fiesta Forever",
-                "trackid": "1RVbnlQ91LUREl9prGo8iL"
-            }
+        "06": {
+            "artist": "Nekfeu",
+            "ratio": 2,
+            "title": "A la base",
+            "trackid": "6jsjizOPrKfXCvrvzzXAHb"
         },
-        "radioooo-russia-1965-75-2nd-november-2016": {},
-        "radioooo-turkey-1970s-10th-august-2016": {
-            "00": {
-                "artist": "Neşe Karaböcek",
-                "ratio": 5,
-                "title": "Çayelinden Öteye/Yali Yali",
-                "trackid": "6fcqnQf44Ppvc36jKd4uch"
-            },
-            "01": {
-                "artist": "Belkıs Ünlüses",
-                "ratio": 6,
-                "title": "Lambaya Püf De",
-                "trackid": "6fxzUoXq8MKLeF3DCF2w1t"
-            },
-            "02": {
-                "artist": "Selda Bağcan",
-                "ratio": 6,
-                "title": "Yaylalar",
-                "trackid": "1aVFBfololKZgw5QbBsKSO"
-            },
-            "03": {
-                "artist": "Sevda Karaca",
-                "ratio": 6,
-                "title": "Çık Ortaya Çık",
-                "trackid": "7E4WZaoe6jdjW16A6wAQkj"
-            },
-            "04": {
-                "artist": "Nazan Şoray",
-                "ratio": 6,
-                "title": "Hal Hal",
-                "trackid": "0NWNkaRbk13bseJzI6TkYh"
-            },
-            "05": {
-                "artist": "Kamuran Akkor",
-                "ratio": 6,
-                "title": "İkimiz Bir Fidanız",
-                "trackid": "1rRHrIgrPPHUYD97oYAgli"
-            },
-            "06": {
-                "artist": "Ersen ve Dadaşlar",
-                "ratio": 5,
-                "title": "Derman Bulunmaz",
-                "trackid": "4SlH2qPXihNL82KgtdibZC"
-            },
-            "07": {
-                "artist": "Özdemir Erdoğan",
-                "ratio": 6,
-                "title": "Aç Kapıyı Gir İçeri",
-                "trackid": "2lhs5SQMTzxf4cO7K3yByD"
-            },
-            "08": {
-                "artist": "Mazhar Ve Fuat",
-                "ratio": 4,
-                "title": "Adimiz Miskindir Bizim",
-                "trackid": "4bxSoFQl2ExbgPLSj24UDH"
-            },
-            "09": {
-                "artist": "Erkin Koray",
-                "ratio": 6,
-                "title": "Yalnızlar Rıhtımı",
-                "trackid": "08phlQI1HKmRcwmY3yNOTS"
-            },
-            "10": {
-                "artist": "Senay",
-                "ratio": 6,
-                "title": "Dalkavuk",
-                "trackid": "1H1iCQ05MWM2CUuts2UhA1"
-            },
-            "11": {
-                "artist": "Nazan Şoray",
-                "ratio": 6,
-                "title": "Teselliye Sen Gerek",
-                "trackid": "1qNem6j0NyCIHALpqeJ0Mv"
-            },
-            "12": {
-                "artist": "Barış Manço",
-                "ratio": 6,
-                "title": "Aman Yavaş Aheste",
-                "trackid": "20SZyuV4hJLZDs4FoOfgSa"
-            },
-            "13": {
-                "artist": "Arsivplak",
-                "ratio": 6,
-                "title": "Volga Nehri",
-                "trackid": "1SCyJ4GGTk59e2jK5GwJmq"
-            }
+        "07": {
+            "artist": "Al Bowlly",
+            "ratio": 6,
+            "title": "The Very Thought of You",
+            "trackid": "1vG48KvNnhBevmh0QiU7ku"
         },
-        "radioooo-west-and-east-germany-78-84-8th-september-2016": {
-            "00": {
-                "artist": "Andreas Dorau",
-                "ratio": 6,
-                "title": "Fred vom Jupiter",
-                "trackid": "7HyAIKz7frBvOVtjIUZlzA"
-            },
-            "01": {
-                "artist": "DAF",
-                "ratio": 3,
-                "title": "Kebabträume",
-                "trackid": "73aK7NNareJdp3zAvWrexj"
-            },
-            "02": {
-                "artist": "Gina X Performance",
-                "ratio": 6,
-                "title": "No G.D.M.",
-                "trackid": "6y9JP8k9WGhCfae9jzx2W8"
-            },
-            "03": {
-                "artist": "Joachim Witt",
-                "ratio": 6,
-                "title": "Goldener Reiter",
-                "trackid": "7sgbBeINoJ4TDUDIloK9li"
-            },
-            "04": {
-                "artist": "Nina Hagen",
-                "ratio": 6,
-                "title": "Born In Xixax",
-                "trackid": "3Y2uo29gqttQ9hK8RoffEn"
-            },
-            "05": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "06": {
-                "artist": "Rheingold",
-                "ratio": 6,
-                "title": "Dreiklangsdimensionen - Remastered 2005",
-                "trackid": "6T5M7HGvF8YBh2fxhYDyML"
-            },
-            "07": {
-                "artist": "Saâda Bonaire",
-                "ratio": 6,
-                "title": "You Could Be More As You Are",
-                "trackid": "1z4wF1YNe3FphOqyD2eRqY"
-            },
-            "08": {
-                "artist": "Moebius",
-                "ratio": 4,
-                "title": "Ondulation",
-                "trackid": "3jgdcsGGJOQL0qkqmBQsPC"
-            },
-            "09": {
-                "artist": "FPI Project",
-                "ratio": 4,
-                "title": "For Your Love",
-                "trackid": "0yRa4dFQIoT3h6yvCtALFh"
-            },
-            "10": {
-                "artist": "Silver Convention",
-                "ratio": 6,
-                "title": "Get Up and Boogie - That's Right",
-                "trackid": "66wkmlfx3H0Oqg1frvJjhu"
-            },
-            "11": {
-                "artist": "P.Cock",
-                "ratio": 6,
-                "title": "Telephone Song",
-                "trackid": "6OpCxtOPAOcayTlRW2WOq7"
-            }
+        "08": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "09": {
+            "artist": "Jessie Matthews",
+            "ratio": 6,
+            "title": "One More Kiss (Then Goodnight)",
+            "trackid": "55kypEZBaH2vvDpFYtLtfN"
+        },
+        "10": {
+            "artist": "Mistinguett",
+            "ratio": 6,
+            "title": "Je Cherche Un Millionnaire",
+            "trackid": "10rUfdNbRZzinLJ0UYiFp5"
+        },
+        "11": {
+            "artist": "Teddy Raph and His Orchestra",
+            "ratio": 6,
+            "title": "Dream a Little Dream of Me",
+            "trackid": "2rBDNwzafeEVIk5mEugQtk"
+        },
+        "12": {
+            "artist": "Helen Kane",
+            "ratio": 6,
+            "title": "I Wanna Be Loved by You",
+            "trackid": "0birwxao4QdkCd8IUPloCR"
+        },
+        "13": {
+            "artist": "B. A. Rolfe & His Lucky Strike Orchestra",
+            "ratio": 6,
+            "title": "Singing in the Rain",
+            "trackid": "5lAHYOiY4ROCuaivMmvGhM"
+        },
+        "14": {
+            "artist": "Joséphine Baker",
+            "ratio": 6,
+            "title": "Partir Sur un Bateau Tout Blanc",
+            "trackid": "6fmoqvIvb28yDlzr5PoXSJ"
+        },
+        "15": {
+            "artist": "Comedian Harmonists",
+            "ratio": 6,
+            "title": "Mein kleiner grüner Kaktus",
+            "trackid": "4tzGDmOcO3oZcVh3BjkIWn"
+        },
+        "16": {
+            "artist": "Anson Weeks & His Orchestra",
+            "ratio": 6,
+            "title": "Give Me Liberty Or Give Me Love",
+            "trackid": "4P3oA2mKH733RtwcsUxu92"
+        },
+        "17": {
+            "artist": "Al Bowlly",
+            "ratio": 6,
+            "title": "Guilty",
+            "trackid": "6nvlZApzLzfZCCPjs8DXcd"
+        },
+        "18": {
+            "artist": "Patrick Saussois",
+            "ratio": 5,
+            "title": "Avant de mourir",
+            "trackid": "2QZ6TtqvWGZ3CmBplTr39e"
+        },
+        "19": {
+            "artist": "Original Memphis Five",
+            "ratio": 6,
+            "title": "Fireworks",
+            "trackid": "7n6Sc0ZP2wCMGIxycVkukW"
+        },
+        "20": {
+            "artist": "Lina Termini",
+            "ratio": 6,
+            "title": "Ma L'Amore No",
+            "trackid": "2yFBfAq96zHam9n6NR0OLt"
         }
     },
-    "search": {
-        "radiooo-1920s-30s-special-30th-november-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Tommy Dorsey – Vocal: Frank Sinatra",
-                        "title": "I’ll Never Smile Again",
-                        "uri": "3ocboK70w5NiFqEIsVDaPz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tommy Dorsey",
-                        "title": "I'll Never Smile Again",
-                        "uri": "2Pi0rY9FcbaecqO0AyhXbu"
-                    },
-                    {
-                        "artist": "Frank Sinatra",
-                        "title": "I'll Never Smile Again",
-                        "uri": "6foCVw9BzZrRSc7Dasw7xA"
-                    },
-                    {
-                        "artist": "Frank Sinatra",
-                        "title": "I'll Never Smile Again - 1994 Remastered",
-                        "uri": "3awufJ6r8XIB88Oy46p2wz"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Midnight, The Stars and You",
-                        "uri": "1YmTsBtaz3K6sazwsXkYWW"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Midnight, The Stars and You",
-                        "uri": "58rkNr95YUFEdgqEdfuPy8"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Midnight, the Stars and You",
-                        "uri": "3dDtXviPnTfLUg111MuTic"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Midnight, The Stars and You",
-                        "uri": "1YmTsBtaz3K6sazwsXkYWW"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Midnight, The Stars and You",
-                        "uri": "58rkNr95YUFEdgqEdfuPy8"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Midnight, the Stars and You",
-                        "uri": "3dDtXviPnTfLUg111MuTic"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "The Very Thought of You (with the Ray Noble Orchestra)",
-                        "uri": "5nxWiYFaQiICv07s5jOWLP"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Bei Mir Bist Du Schon",
-                        "uri": "5ZpwyYuTu7sFdPtU6Znz7M"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Bei Mir Bist du Schoen",
-                        "uri": "0NcGFgTyZFDKcPCwb4LS41"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Tino Rossi",
-                        "title": "Écris-Moi",
-                        "uri": "666ahWdx14nfXJ9AKQuWwh"
-                    },
-                    {
-                        "artist": "Tino Rossi",
-                        "title": "Ecris-moi",
-                        "uri": "08UOcLmX5Zn9tC6SixjLjI"
-                    },
-                    {
-                        "artist": "Tino Rossi",
-                        "title": "Écris-Moi",
-                        "uri": "0wcRjPiM3zV8Ru5VwPu7RG"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tino Rossi",
-                        "title": "Ecris-moi (France)",
-                        "uri": "7rXYEYqy3fsgq1Lq9nkFae"
-                    },
-                    {
-                        "artist": "Tino Rossi",
-                        "title": "Les pêcheurs de perles",
-                        "uri": "0oVh9vBAI210Ostk1iDWMP"
-                    },
-                    {
-                        "artist": "Orchestre Marcel Cariven",
-                        "title": "Écris-moi",
-                        "uri": "1aUgfTNUF9aKqtsCuJhvqD"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Gösta Jonsson",
-                        "title": "Kaffe Utan Grädde Är Som Kärlek Utan Kyssar",
-                        "uri": "3iewJaS7SZ1FsH0VzJJJ1W"
-                    },
-                    {
-                        "artist": "Gösta Jonsson",
-                        "title": "Kaffe utan grädde (Arr. for Military Band)",
-                        "uri": "2KuGzkOo8ZLveq5atwmGPM"
-                    },
-                    {
-                        "artist": "Grus i dojjan",
-                        "title": "Kaffe utan Grädde",
-                        "uri": "1gbnR7A40dnGSdKZsVB22H"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Leonid Utyosov",
-                        "title": "Portret",
-                        "uri": "4WwxhmO7Ps5g3n2Blt5DpF"
-                    },
-                    {
-                        "artist": "Daigo Hanada",
-                        "title": "Portrait",
-                        "uri": "6B7389iWjiFmXUcjlwXGoG"
-                    },
-                    {
-                        "artist": "Leonid Utyosov",
-                        "title": "Портрет - Танго",
-                        "uri": "4rieft7kzDBlBx7zCjvjK4"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Nekfeu",
-                        "title": "A la base",
-                        "uri": "6jsjizOPrKfXCvrvzzXAHb"
-                    },
-                    {
-                        "artist": "Georges Moustaki",
-                        "title": "Le métèque",
-                        "uri": "7onHzMTqpys70lmzWd4Nw4"
-                    },
-                    {
-                        "artist": "__unqlf",
-                        "title": "A La Base",
-                        "uri": "32k9OIVElQS4fLSxOWOoTk"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "The Very Thought of You (with the Ray Noble Orchestra)",
-                        "uri": "5nxWiYFaQiICv07s5jOWLP"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Love Is the Sweetest Thing",
-                        "uri": "4rr3AIMKDFuVkMlguDIHRb"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "The Very Thought of You",
-                        "uri": "1vG48KvNnhBevmh0QiU7ku"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "The Very Thought of You (with the Ray Noble Orchestra)",
-                        "uri": "5nxWiYFaQiICv07s5jOWLP"
-                    },
-                    {
-                        "artist": "Richard Thompson",
-                        "title": "Al Bowlly's In Heaven (Live From Honolulu)",
-                        "uri": "2jWcuT2JwZd3V2YHSavugG"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "The Very Thought of You",
-                        "uri": "1vG48KvNnhBevmh0QiU7ku"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": ""
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Jessie Matthews",
-                        "title": "One More Kiss (Then Goodnight)",
-                        "uri": "55kypEZBaH2vvDpFYtLtfN"
-                    },
-                    {
-                        "artist": "Jessie Matthews",
-                        "title": "One More Kiss And Then Goodnight",
-                        "uri": "1W4tnFKde3x2GbLFRm5zt3"
-                    },
-                    {
-                        "artist": "Jessie Matthews",
-                        "title": "One More Kiss",
-                        "uri": "1gpqZCXZltitrwhAArsE09"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mathilde Ollivier",
-                        "title": "Je Cherche Un Millionnaire",
-                        "uri": "0ejPFy5usgnKzKU0MAgRVw"
-                    },
-                    {
-                        "artist": "Mistinguett",
-                        "title": "Je Cherche Un Millionnaire",
-                        "uri": "10rUfdNbRZzinLJ0UYiFp5"
-                    },
-                    {
-                        "artist": "Mistinguett",
-                        "title": "Je cherche un millionnaire",
-                        "uri": "33HAfK1XJhv7zncgZJVL5G"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Teddy Raph and His Orchestra",
-                        "title": "Dream a Little Dream of Me",
-                        "uri": "2rBDNwzafeEVIk5mEugQtk"
-                    },
-                    {
-                        "artist": "Teddy Raph & His Orchestra",
-                        "title": "Dream A Little Dream Of Me",
-                        "uri": "6E8ybjF63Eri08KOJ0o72D"
-                    },
-                    {
-                        "artist": "Teddy Redell",
-                        "title": "Roll In My Sweet Baby´s Arms - Studio",
-                        "uri": "7rsyNC6lzZBUY7nWJL9wjz"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Helen Kane",
-                        "title": "I Wanna Be Loved by You",
-                        "uri": "0birwxao4QdkCd8IUPloCR"
-                    },
-                    {
-                        "artist": "Helen Kane",
-                        "title": "I Wanna Be Loved by You - Remastered",
-                        "uri": "1DgO6z7kP2KT3FTuO9Zx4G"
-                    },
-                    {
-                        "artist": "Helen Kane",
-                        "title": "I Wanna Be Loved by You - Alternate Version",
-                        "uri": "7ib8AFAUJfmfin7kmGbU2o"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Helen Kane",
-                        "title": "I Wanna Be Loved by You",
-                        "uri": "0birwxao4QdkCd8IUPloCR"
-                    },
-                    {
-                        "artist": "Helen Kane",
-                        "title": "I Wanna Be Loved by You - Alternate Version",
-                        "uri": "7ib8AFAUJfmfin7kmGbU2o"
-                    },
-                    {
-                        "artist": "Helen Kane",
-                        "title": "I Wanna Be Loved By You",
-                        "uri": "7epE1zl3On9hWsMtbAzFX1"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "B. A. Rolfe & His Lucky Strike Orchestra",
-                        "title": "Singing in the Rain",
-                        "uri": "5lAHYOiY4ROCuaivMmvGhM"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "B. A. Rolfe & His Lucky Strike Orchestra",
-                        "title": "Singing in the Rain",
-                        "uri": "5lAHYOiY4ROCuaivMmvGhM"
-                    },
-                    {
-                        "artist": "B. A. Rolfe & His Lucky Strike Orchestra",
-                        "title": "Let's Do It (Let's Fall in Love)",
-                        "uri": "429BCmzVk2KhSxsQ6HvYmf"
-                    },
-                    {
-                        "artist": "B.A. Rolfe & His Lucky Strike Orchestra",
-                        "title": "Sorrows",
-                        "uri": "67n855fP1PyzR0Qg4T4W04"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Joséphine Baker",
-                        "title": "Partir Sur un Bateau Tout Blanc",
-                        "uri": "6fmoqvIvb28yDlzr5PoXSJ"
-                    },
-                    {
-                        "artist": "Joséphine Baker",
-                        "title": "Partir sur un bateau tout blanc",
-                        "uri": "7EEBCtJX4En5P9D15eEZTk"
-                    },
-                    {
-                        "artist": "Joséphine Baker",
-                        "title": "Partir Sur Un Bateau Tout Blanc",
-                        "uri": "6e5KQvNtG74Z2PlVpRXSx5"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Joséphine Baker",
-                        "title": "Partir Sur Un Bateau Tout Blanc",
-                        "uri": "5pFpLppYaoA0TCNDVyuNuQ"
-                    },
-                    {
-                        "artist": "Joséphine Baker",
-                        "title": "Partir Sur un Bateau Tout Blanc",
-                        "uri": "6fmoqvIvb28yDlzr5PoXSJ"
-                    },
-                    {
-                        "artist": "Joséphine Baker",
-                        "title": "Partir sur un bateau tout blanc",
-                        "uri": "0VoMtRFpRJpQWNKzUP2MOU"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Comedian Harmonists",
-                        "title": "Mein kleiner grüner Kaktus",
-                        "uri": "4tzGDmOcO3oZcVh3BjkIWn"
-                    },
-                    {
-                        "artist": "Comedian Harmonists",
-                        "title": "Mein kleiner grüner Kaktus",
-                        "uri": "0I3ZunIS5Ch27Bh12rFfgO"
-                    },
-                    {
-                        "artist": "Comedian Harmonists",
-                        "title": "Mein kleiner grüner Kaktus",
-                        "uri": "1MjUykcwXPjKbzCdCQmWBY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Comedian Harmonists",
-                        "title": "Mein kleiner grüner Kaktus",
-                        "uri": "4tzGDmOcO3oZcVh3BjkIWn"
-                    },
-                    {
-                        "artist": "Comedian Harmonists",
-                        "title": "Mein kleiner grüner Kaktus - 1990 Digital Remaster",
-                        "uri": "7Lguc71JiYzaX04DV0vODY"
-                    },
-                    {
-                        "artist": "Comedian Harmonists",
-                        "title": "Mein kleiner grüner Kaktus - 1997 Digital Remaster",
-                        "uri": "2ERhx1yPuRLnOWEdAS15Ip"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Anson Weeks & His Orchestra",
-                        "title": "Give Me Liberty Or Give Me Love",
-                        "uri": "4P3oA2mKH733RtwcsUxu92"
-                    },
-                    {
-                        "artist": "Anson Weeks & His Orchestra",
-                        "title": "Give Me Liberty or Give Me Love",
-                        "uri": "330PsmLNaALJC31d2ZNjOd"
-                    },
-                    {
-                        "artist": "Havok",
-                        "title": "Give Me Liberty…Or Give Me Death",
-                        "uri": "3cmeb2ibplJfSFSQmP9NX2"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Guilty",
-                        "uri": "6nvlZApzLzfZCCPjs8DXcd"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Guilty",
-                        "uri": "0GlvumAvsHZNF4rkRhMUYq"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Guilty",
-                        "uri": "0HXYGfAbTe9DpiIWuySPSH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Guilty",
-                        "uri": "6nvlZApzLzfZCCPjs8DXcd"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Guilty",
-                        "uri": "0GlvumAvsHZNF4rkRhMUYq"
-                    },
-                    {
-                        "artist": "Al Bowlly",
-                        "title": "Guilty",
-                        "uri": "0HXYGfAbTe9DpiIWuySPSH"
-                    }
-                ]
-            },
-            "18": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Patrick Saussois",
-                        "title": "Avant de mourir",
-                        "uri": "2QZ6TtqvWGZ3CmBplTr39e"
-                    },
-                    {
-                        "artist": "Gino Bordin",
-                        "title": "Bain De Minuit",
-                        "uri": "6dF5O2HTdnOqfx0pMDnf1F"
-                    },
-                    {
-                        "artist": "Gino Bordin",
-                        "title": "Tristesse",
-                        "uri": "4HHyrwlOf41ydaSv0kw3Sa"
-                    }
-                ]
-            },
-            "19": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Original Memphis Five",
-                        "title": "Fireworks",
-                        "uri": "7n6Sc0ZP2wCMGIxycVkukW"
-                    },
-                    {
-                        "artist": "Original Memphis Five",
-                        "title": "Fireworks",
-                        "uri": "5tdiHtVdqjoCSMH8fJsmTL"
-                    },
-                    {
-                        "artist": "Original Memphis Five",
-                        "title": "Fireworks",
-                        "uri": "1mM96dvhGj5IxzXfRWBfEk"
-                    }
-                ]
-            },
-            "20": {
-                "s0": [
-                    {
-                        "artist": "Lina Termini",
-                        "title": "Ma L'Amore No",
-                        "uri": "2yFBfAq96zHam9n6NR0OLt"
-                    },
-                    {
-                        "artist": "Lina Termini",
-                        "title": "Ma l'amore no",
-                        "uri": "7kpHofcNqEvdao8gU3aY2n"
-                    },
-                    {
-                        "artist": "Lina Termini",
-                        "title": "Ma l'amore no",
-                        "uri": "3pyRKBb0bzOwvIsYenw7xq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lina Termini",
-                        "title": "Ma L'Amore No",
-                        "uri": "2yFBfAq96zHam9n6NR0OLt"
-                    },
-                    {
-                        "artist": "Lina Termini",
-                        "title": "Ma l'amore no",
-                        "uri": "5QOgRYuFvyK6Sy5rx4um2I"
-                    },
-                    {
-                        "artist": "Lina Termini",
-                        "title": "Ma L'Amore No",
-                        "uri": "64FL62ymkaZG60NgH2NXIC"
-                    }
-                ]
-            }
+    "radiooo-japanese-80s-special-13th-july-2016": {
+        "00": {
+            "artist": "saikai",
+            "ratio": 4,
+            "title": "daybreak",
+            "trackid": "2WURNU5pMwOgbHrmXUOPRN"
         },
-        "radiooo-japanese-80s-special-13th-july-2016": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "MARY",
-                        "title": "DAYBREAK FRONTLINE",
-                        "uri": "5NJKIFLOLa6Oc9auYeJmtx"
-                    },
-                    {
-                        "artist": "saikai",
-                        "title": "daybreak",
-                        "uri": "2WURNU5pMwOgbHrmXUOPRN"
-                    },
-                    {
-                        "artist": "L'Arc-en-Ciel",
-                        "title": "Daybreak's Bell",
-                        "uri": "2x2uMSG6ONTWM66y9BPhKD"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "笠井 紀美子",
-                        "title": "バイブレイション",
-                        "uri": "3pV989KB6C0hAnRFb4Qcsg"
-                    },
-                    {
-                        "artist": "Eve",
-                        "title": "Kiminisekai",
-                        "uri": "3urEGiZYgpZlFxSkffWPOo"
-                    },
-                    {
-                        "artist": "笠井 紀美子",
-                        "title": "やりかけの人生",
-                        "uri": "1bYvvByEKsMC4Z8ElL9pzC"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "最後の楽園",
-                        "uri": "3Q59MwvTzZveZTNunIQY1x"
-                    },
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "スポーツマン (2019 Remastering)",
-                        "uri": "7wK3vFraZXIjVxOqObajAL"
-                    },
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "Beijing Duck (Live at The Mayan Theatre, Los Angeles, July,2019)",
-                        "uri": "1RWveHSxsObnUXjquYYsmC"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Yumi Arai",
-                        "title": "ルージュの伝言",
-                        "uri": "1jw992uwXhqJJ0H42ucTRL"
-                    },
-                    {
-                        "artist": "Yoh kamiyama",
-                        "title": "色香水",
-                        "uri": "7FpABRyv5TaZz0llkhjPgc"
-                    },
-                    {
-                        "artist": "Nomura Aki",
-                        "title": "Rouge no dengon (Guitar)",
-                        "uri": "3gnUXiz1dF61Cwx153O77s"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Gojira",
-                        "title": "Flying Whales",
-                        "uri": "6SJ2LK3yMdGzC4AEcXJZo4"
-                    },
-                    {
-                        "artist": "daigoro789",
-                        "title": "Flying Whale (From \"Dragon Quest XI: Echoes of an Elusive Age\") [For Piano Solo]",
-                        "uri": "0xkhhEsnuaBAHR0HGz1l6X"
-                    },
-                    {
-                        "artist": "Gojira",
-                        "title": "Flying Whales - Live at Brixton Academy, London, UK 3/29/2013",
-                        "uri": "53EcPOqDQMSEaxaKbDxek5"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Shigeru Suzuki",
-                        "title": "パッション・フラワー",
-                        "uri": "4yFM6VkpHJcVlLi6BUG7Ea"
-                    },
-                    {
-                        "artist": "Shigeru Umebayashi",
-                        "title": "Yumeji's Theme by Shigeru Umebayashi - A cappella",
-                        "uri": "6rDcD3ofz5zatfjoEKEoWt"
-                    },
-                    {
-                        "artist": "Tsuji Ayano",
-                        "title": "風になる",
-                        "uri": "1BMYkyKXS6UfnJteWN7nSD"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "EXID",
-                        "title": "Up & Down",
-                        "uri": "6BKOhvRPY54uvfqWwg7MKi"
-                    },
-                    {
-                        "artist": "Timmy Trumpet",
-                        "title": "Up & Down",
-                        "uri": "5FhnPzf4sZ68ZZJ1n5oek1"
-                    },
-                    {
-                        "artist": "Tays2Cents",
-                        "title": "Up and Down",
-                        "uri": "3UPUPV7Ik0ysHRwqn809bv"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Yurie Kokubu",
-                        "title": "とばしてTaxi Man",
-                        "uri": "18EZ4juTjgNzfpftNGd5eJ"
-                    },
-                    {
-                        "artist": "Illuminate",
-                        "title": "Taxi Man",
-                        "uri": "3xm7RSWUoU49BV9AuY9zx4"
-                    },
-                    {
-                        "artist": "Walter",
-                        "title": "Taxi man",
-                        "uri": "6OL1TbSZuxUndQa8ZlXf39"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Juicy Fruits",
-                        "title": "Jenie wa Gokigen Naname",
-                        "uri": "7b3QZl9xsV2RRIdD50K1jy"
-                    },
-                    {
-                        "artist": "ジューシィ・フルーツ",
-                        "title": "Jenie wa Gokigen Naname",
-                        "uri": "0nIkiy76OXe90SlI7h4MzY"
-                    },
-                    {
-                        "artist": "JUNNA",
-                        "title": "赤い果実",
-                        "uri": "5Q3VFvjfUYe6KdNKiWjsAX"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Meiko Kaji",
-                        "title": "嫉妬",
-                        "uri": "4LGr2aCUMqBzuyhi4E2U6c"
-                    },
-                    {
-                        "artist": "Meiko Kaji",
-                        "title": "雨の夜あなたは",
-                        "uri": "2FqG8JdUeBMmMIg3F8plfj"
-                    },
-                    {
-                        "artist": "Meiko Kaji",
-                        "title": "怨み節(東映映画「さそり」シリーズより)",
-                        "uri": "7skPSljZ90yXTNl2SLO4wL"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Belle",
-                        "title": "歌よ",
-                        "uri": "4DPovSJonVPid3EDSxL9K8"
-                    },
-                    {
-                        "artist": "Belle",
-                        "title": "心のそばに",
-                        "uri": "3VXkaNgYFHOxbuOmKejypT"
-                    },
-                    {
-                        "artist": "Belle",
-                        "title": "A Million Miles Away",
-                        "uri": "0WQRbcwmUd1fZ5AJcH5GDT"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "SPORTS MEN (2018 Yoshinori Sunahara Remastering)",
-                        "uri": "6EN8xSFfwNPy3W3BD4hCLH"
-                    },
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "Sports Men (Live at The Mayan Theatre, Los Angeles, July,2019)",
-                        "uri": "0Tlut2v95wAX7QGCXbztoJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "SPORTS MEN (2018 Yoshinori Sunahara Remastering)",
-                        "uri": "6EN8xSFfwNPy3W3BD4hCLH"
-                    },
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "スポーツマン (2019 Remastering)",
-                        "uri": "7wK3vFraZXIjVxOqObajAL"
-                    },
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "Sports Men (Live at The Mayan Theatre, Los Angeles, July,2019)",
-                        "uri": "0Tlut2v95wAX7QGCXbztoJ"
-                    }
-                ]
-            },
-            "12": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Frank Chickens",
-                        "title": "We Are Ninja - Yasuharu Konishi Mix",
-                        "uri": "3gBwo9EPOSZXwc4TuBs1C0"
-                    },
-                    {
-                        "artist": "Fink",
-                        "title": "Ninjah - We Are Ninja",
-                        "uri": "1OYU4JUiLPMoYLDmfuRwrT"
-                    },
-                    {
-                        "artist": "Frank Chickens",
-                        "title": "We Are Ninja - Fink Ninjamix",
-                        "uri": "195K3I7q4L8xencdO9VOs0"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "sleep.mp3",
-                        "title": "Mango Dreamin",
-                        "uri": "3ASQZO8egeJrfoVxDFajlO"
-                    },
-                    {
-                        "artist": "Mtume",
-                        "title": "Juicy Fruit",
-                        "uri": "223kK8LVBwzkk3Ck7Ua0Sk"
-                    },
-                    {
-                        "artist": "Mtume",
-                        "title": "Juicy Fruit",
-                        "uri": "2hn1lerQkPC6fOI0QFjr8r"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Finger 5",
-                        "title": "恋のダイヤル6700",
-                        "uri": "6n3qQi0KpK3XHKqzt9V6aB"
-                    },
-                    {
-                        "artist": "Forwarded crowed",
-                        "title": "Fingers",
-                        "uri": "5qwAcuyj0k37PR34B8d0Nd"
-                    },
-                    {
-                        "artist": "OneRepublic",
-                        "title": "Fingertips",
-                        "uri": "7FQgwxkgClQLTwEilUlscr"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "笠井 紀美子",
+            "ratio": 3,
+            "title": "バイブレイション",
+            "trackid": "3pV989KB6C0hAnRFb4Qcsg"
         },
-        "radioooo-18th-may-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Billy Stewart",
-                        "title": "Summertime",
-                        "uri": "6ysKfFyFkn93xSc1fN8yQx"
-                    },
-                    {
-                        "artist": "Billy Stewart",
-                        "title": "Summertime",
-                        "uri": "5szInfSkmLz5EH38yZ2rhz"
-                    },
-                    {
-                        "artist": "Billy Stewart",
-                        "title": "Summertime",
-                        "uri": "6CUS3Yj6fxt6jrO1a1Fz7L"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Billy Stewart",
-                        "title": "Summertime",
-                        "uri": "6ysKfFyFkn93xSc1fN8yQx"
-                    },
-                    {
-                        "artist": "Billy Stewart",
-                        "title": "Summertime - Long Version",
-                        "uri": "3Ot3ooDLDJeyUvI0CkvGbP"
-                    },
-                    {
-                        "artist": "Billy Stewart",
-                        "title": "Summertime",
-                        "uri": "5szInfSkmLz5EH38yZ2rhz"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Harry Nilsson",
-                        "title": "Everybody's Talkin' - From \"Midnight Cowboy\"",
-                        "uri": "1jcPcDu2YawPfLhwjYnqK2"
-                    },
-                    {
-                        "artist": "Harry Nilsson",
-                        "title": "Everybody's Talkin'",
-                        "uri": "3c8JemHol1XwFFruXQxjCO"
-                    },
-                    {
-                        "artist": "Harry Nilsson",
-                        "title": "Everybody's Talkin' - 1989 Remastered",
-                        "uri": "6RNl62Wsy7j0y4Fa9oXQSC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ariel Pink",
-                        "title": "Oceans of Weep",
-                        "uri": "6c7ivEZpElNXdv2OzNFNzZ"
-                    },
-                    {
-                        "artist": "Harry Nilsson",
-                        "title": "Everybody's Talkin' - From \"Midnight Cowboy\"",
-                        "uri": "1jcPcDu2YawPfLhwjYnqK2"
-                    },
-                    {
-                        "artist": "Ariel Pink",
-                        "title": "Oceans of Weep",
-                        "uri": "23t6Ea7MVCwr86zAIlVCLX"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Peter, Paul and Mary",
-                        "title": "Don't Think Twice, It's All Right",
-                        "uri": "7IsXXgpowAB48crGjV1oGb"
-                    },
-                    {
-                        "artist": "Bob Dylan",
-                        "title": "Don't Think Twice, It's All Right",
-                        "uri": "2WOjLF83vqjit2Zh4B69V3"
-                    },
-                    {
-                        "artist": "Emilie-Claire Barlow",
-                        "title": "Don't Think Twice, It's Alright",
-                        "uri": "6UeCjzfLUBhHOtney81sPn"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Lalo Schifrin",
-                        "title": "Them from \"The Fox\" - Main Title",
-                        "uri": "3cRejRThF5Aalt8AJ0ZglS"
-                    },
-                    {
-                        "artist": "SCHIFRIN, LALO WITH RAY BROWN, GRADY TATE & THE LONDON PHILHARMONIC",
-                        "title": "The Fox",
-                        "uri": "6oNeOWR3ISJwQoZy68ZFKo"
-                    },
-                    {
-                        "artist": "Lalo Schifrin",
-                        "title": "The Fox",
-                        "uri": "29ntON41t9jzXi3MKoQRyf"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lalo Schifrin",
-                        "title": "Them from \"The Fox\" - Main Title",
-                        "uri": "3cRejRThF5Aalt8AJ0ZglS"
-                    },
-                    {
-                        "artist": "Lalo Schifrin",
-                        "title": "The Fox",
-                        "uri": "29ntON41t9jzXi3MKoQRyf"
-                    },
-                    {
-                        "artist": "Lalo Schifrin",
-                        "title": "The Fox (Main Title)",
-                        "uri": "0Ao5nluU2NZp93z3qMNL1A"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Trini Lopez",
-                        "title": "Unchain My Heart",
-                        "uri": "7MW00RJu7D6asOH7u4h2XG"
-                    },
-                    {
-                        "artist": "Trini Lopez",
-                        "title": "Unchain My Heart",
-                        "uri": "1qdUHQnrc68A2BMnlzXiG6"
-                    },
-                    {
-                        "artist": "Trini Lopez",
-                        "title": "Unchain My Heart - Live at PJ's - 1963",
-                        "uri": "4E1tMoFbTn7ZbAvigznXmi"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Trini Lopez",
-                        "title": "Unchain My Heart",
-                        "uri": "7MW00RJu7D6asOH7u4h2XG"
-                    },
-                    {
-                        "artist": "Trini Lopez",
-                        "title": "Unchain My Heart",
-                        "uri": "3vseXCllFxmVZdtglvqw4u"
-                    },
-                    {
-                        "artist": "Trini Lopez",
-                        "title": "Unchain My Heart",
-                        "uri": "1qdUHQnrc68A2BMnlzXiG6"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "I Say a Little Prayer",
-                        "uri": "3NfxSdJnVdon1axzloJgba"
-                    },
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "I Say a Little Prayer",
-                        "uri": "7haFcQaoTBr2qY6G0r4JSH"
-                    },
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "I Say a Little Prayer",
-                        "uri": "0FD8KMG4pHp0O9clTpChjp"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Bob Dylan",
-                        "title": "Don't Think Twice, It's All Right",
-                        "uri": "2WOjLF83vqjit2Zh4B69V3"
-                    },
-                    {
-                        "artist": "Paul Weber",
-                        "title": "Ich lass dich los",
-                        "uri": "2C9Pfbe40aUETjm5oeQpl5"
-                    },
-                    {
-                        "artist": "Bob Dylan",
-                        "title": "Don't Think Twice, It's All Right",
-                        "uri": "2FkV114Mb11BmeofzLh0Bm"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Margo Guryan",
-                        "title": "Under My Umbrella",
-                        "uri": "0Qdbr9IRJRKVZiEnRaxfJd"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Margo Guryan",
-                        "title": "Under My Umbrella",
-                        "uri": "0Qdbr9IRJRKVZiEnRaxfJd"
-                    },
-                    {
-                        "artist": "Margo Guryan",
-                        "title": "Sun",
-                        "uri": "1ioEl7WbpSlyFvu6X08hFJ"
-                    },
-                    {
-                        "artist": "Margo Guryan",
-                        "title": "Love Songs",
-                        "uri": "1dvpYOsm6lIFXvGNN5AKfX"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Crosby, Stills & Nash",
-                        "title": "Helplessly Hoping - 2005 Remaster",
-                        "uri": "1UKobFsdqNXQb8OthimCKe"
-                    },
-                    {
-                        "artist": "Crosby, Stills, Nash & Young",
-                        "title": "Helplessly Hoping",
-                        "uri": "40WeJU3odsbq1fXNbub4nh"
-                    },
-                    {
-                        "artist": "Crosby Stills Nash Young",
-                        "title": "Helplessly Hoping",
-                        "uri": "5Ig3KG6MLi6rXdFYole2pY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Crosby, Stills & Nash",
-                        "title": "Helplessly Hoping - 2005 Remaster",
-                        "uri": "1UKobFsdqNXQb8OthimCKe"
-                    },
-                    {
-                        "artist": "Crosby, Stills, Nash & Young",
-                        "title": "Helplessly Hoping",
-                        "uri": "40WeJU3odsbq1fXNbub4nh"
-                    },
-                    {
-                        "artist": "Crosby, Stills & Nash",
-                        "title": "Helplessly Hoping",
-                        "uri": "7ieCy9tubdq5vsDm5MY2d7"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "The Velvet Underground",
-                        "title": "Femme Fatale",
-                        "uri": "3PG7BAJG9WkmNOJOlc4uAo"
-                    },
-                    {
-                        "artist": "The Velvet Underground",
-                        "title": "Femme Fatale",
-                        "uri": "2zmdUgCBFFMJTjdkuP6JeJ"
-                    },
-                    {
-                        "artist": "The Velvet Underground",
-                        "title": "Femme Fatale",
-                        "uri": "2gwwiPeyKgIdLqqlpt4Qee"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Velvet Underground",
-                        "title": "Femme Fatale",
-                        "uri": "3PG7BAJG9WkmNOJOlc4uAo"
-                    },
-                    {
-                        "artist": "The Velvet Underground",
-                        "title": "Femme Fatale",
-                        "uri": "2zmdUgCBFFMJTjdkuP6JeJ"
-                    },
-                    {
-                        "artist": "The Velvet Underground",
-                        "title": "Femme Fatale - Live at Max's Kansas City; 2015 Remaster",
-                        "uri": "5gVkLPUH6SbkwimLcgV1wW"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Bobby Hebb",
-                        "title": "Sunny",
-                        "uri": "4vju55Ag7apDL2CfotuE7Q"
-                    },
-                    {
-                        "artist": "Bobby Hebb",
-                        "title": "Sunny",
-                        "uri": "7IsRmol5gKdGNQrdvl4hCo"
-                    },
-                    {
-                        "artist": "Bobby Hebb",
-                        "title": "Sunny - Radio Edit",
-                        "uri": "5zNTNfMdPmVIMNNzXa2zPm"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bobby Hebb",
-                        "title": "Sunny",
-                        "uri": "4vju55Ag7apDL2CfotuE7Q"
-                    },
-                    {
-                        "artist": "Dusty Springfield",
-                        "title": "Sunny",
-                        "uri": "3UOvW9TnZiOpMQfxX1KFmF"
-                    },
-                    {
-                        "artist": "Bobby Hebb",
-                        "title": "Sunny",
-                        "uri": "5RVi3IWiEq1GLscmG4yIwO"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Harpers Bizarre",
-                        "title": "59th Street Bridge Song (Feelin' Groovy) - Remastered Version",
-                        "uri": "5yn2yvIPo4gc0EJgmWAuBi"
-                    },
-                    {
-                        "artist": "Harpers Bizarre",
-                        "title": "59th Street Bridge Song (Feelin' Groovy)",
-                        "uri": "6umkEvSI6QJMBfGWjFo2iU"
-                    },
-                    {
-                        "artist": "Harpers Bizarre",
-                        "title": "59th Street Bridge Song (Feelin' Groovy)",
-                        "uri": "5QHinVnuwsIJ3xJFat8GdS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Harpers Bizarre",
-                        "title": "59th Street Bridge Song (Feelin' Groovy) - Remastered Version",
-                        "uri": "5yn2yvIPo4gc0EJgmWAuBi"
-                    },
-                    {
-                        "artist": "Harpers Bizarre",
-                        "title": "59th Street Bridge Song (Feelin' Groovy)",
-                        "uri": "6umkEvSI6QJMBfGWjFo2iU"
-                    },
-                    {
-                        "artist": "Simon & Garfunkel",
-                        "title": "The 59th Street Bridge Song (Feelin' Groovy)",
-                        "uri": "0dzbfio3qTYG9uk40SJNcr"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Lesley Gore",
-                        "title": "You Don't Own Me",
-                        "uri": "7ngRS53kqxLcEt9Pythc5d"
-                    },
-                    {
-                        "artist": "Lesley Gore",
-                        "title": "You Don't Own Me",
-                        "uri": "5lJ82USsgwL4e137fqmj2P"
-                    },
-                    {
-                        "artist": "Lesley Gore",
-                        "title": "You Don't Own Me - Rainier Scott Remix",
-                        "uri": "4M8lqRpQYy20Mma6QCCj7g"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lesley Gore",
-                        "title": "You Don't Own Me",
-                        "uri": "7ngRS53kqxLcEt9Pythc5d"
-                    },
-                    {
-                        "artist": "Lesley Gore",
-                        "title": "You Don't Own Me",
-                        "uri": "5lJ82USsgwL4e137fqmj2P"
-                    },
-                    {
-                        "artist": "Lesley Gore",
-                        "title": "You Don't Own Me - Rainier Scott Remix",
-                        "uri": "4M8lqRpQYy20Mma6QCCj7g"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Brenton Wood",
-                        "title": "Gimme Little Sign",
-                        "uri": "1h4XVjt26ZCDKmeEoHxT07"
-                    },
-                    {
-                        "artist": "Brenton Wood",
-                        "title": "Gimme Little Sign",
-                        "uri": "3yJ37B8pPZwZL2tnzjWy9A"
-                    },
-                    {
-                        "artist": "Brenton Wood",
-                        "title": "Gimme Little Sign",
-                        "uri": "0qRzEpcFrjcrM0WxQSBN1k"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Brenton Wood",
-                        "title": "Gimme Little Sign",
-                        "uri": "1h4XVjt26ZCDKmeEoHxT07"
-                    },
-                    {
-                        "artist": "Pro Choice Karaoke",
-                        "title": "Gimme Little Signs (Karaoke Version) - Originally Performed By Brenton Wood",
-                        "uri": "4XZzqh8Z79i7Cn2B1TcaKq"
-                    },
-                    {
-                        "artist": "Brenton Wood",
-                        "title": "Gimme Little Sign",
-                        "uri": "3yJ37B8pPZwZL2tnzjWy9A"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "The Mamas & The Papas",
-                        "title": "Dancing In The Street",
-                        "uri": "1Vv7ZtyDro81xmznV48gF6"
-                    },
-                    {
-                        "artist": "The Mamas & The Papas",
-                        "title": "Dancing In The Street",
-                        "uri": "4F3CIGjW6Hn5g4ovlLi0No"
-                    },
-                    {
-                        "artist": "The Mamas & The Papas",
-                        "title": "Dancing In The Street",
-                        "uri": "6PZUoqPenUykKQakECnetl"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Mamas & The Papas",
-                        "title": "Dancing In The Street",
-                        "uri": "1Vv7ZtyDro81xmznV48gF6"
-                    },
-                    {
-                        "artist": "The Mamas & The Papas",
-                        "title": "Dancing In The Street",
-                        "uri": "4F3CIGjW6Hn5g4ovlLi0No"
-                    },
-                    {
-                        "artist": "The Mamas & The Papas",
-                        "title": "Dancing In The Street",
-                        "uri": "6PZUoqPenUykKQakECnetl"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Frankie & Johnny",
-                        "uri": "6t7sHoEra5ImZYTCGxL8Om"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Frankie & Johnny",
-                        "uri": "6Rc2HRA7zVrpS70vCjQADl"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Frankie & Johnny",
-                        "uri": "0yZ0ESEj47Z08lililjc0V"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Frankie & Johnny",
-                        "uri": "6t7sHoEra5ImZYTCGxL8Om"
-                    },
-                    {
-                        "artist": "Sam Cooke",
-                        "title": "Frankie And Johnnie",
-                        "uri": "1QFrpZqohf070X0OHmjtt0"
-                    },
-                    {
-                        "artist": "Cory Wong",
-                        "title": "Stevie Wonder Medley",
-                        "uri": "4NCgtdRbOrwIy1HPQ35AX2"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "The Ray Conniff Singers",
-                        "title": "The Windmills Of Your Mind",
-                        "uri": "2sFNBmXtMnrDeG4g3DwTMi"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Ray Conniff Singers",
-                        "title": "The Windmills Of Your Mind",
-                        "uri": "2sFNBmXtMnrDeG4g3DwTMi"
-                    },
-                    {
-                        "artist": "Ray Conniff",
-                        "title": "An Improvisation on \"Liebestraum\"",
-                        "uri": "5mG2q3hiP4BpAWkc7Xj80c"
-                    },
-                    {
-                        "artist": "Ray Conniff",
-                        "title": "The Whiffenpoof Song",
-                        "uri": "2ml8PTqVrapq959TN4t6KO"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Esther Phillips",
-                        "title": "And I Love Him",
-                        "uri": "1dPUQhlNGEaDm9Qi1vcL7I"
-                    },
-                    {
-                        "artist": "Esther Phillips",
-                        "title": "And I Love Him",
-                        "uri": "6aVNGw5kyuSP55SpGAcKee"
-                    },
-                    {
-                        "artist": "Esther Phillips",
-                        "title": "And I Love Him",
-                        "uri": "3evpSpSYJTvQJ6rTDSalVc"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Esther Phillips",
-                        "title": "And I Love Him",
-                        "uri": "1dPUQhlNGEaDm9Qi1vcL7I"
-                    },
-                    {
-                        "artist": "Esther Phillips",
-                        "title": "Try Me",
-                        "uri": "58DBGys2swRUOGDU5OhnfZ"
-                    },
-                    {
-                        "artist": "Esther Phillips",
-                        "title": "I Wish You Love",
-                        "uri": "7iABcsm0lr2xiH3z9cosXN"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "The Left Banke",
-                        "title": "Pretty Ballerina",
-                        "uri": "2wvr1ITeMHg51JQXT0gltU"
-                    },
-                    {
-                        "artist": "The Left Banke",
-                        "title": "Pretty Ballerina",
-                        "uri": "1GFDoBrRlUTgj8McVHplQY"
-                    },
-                    {
-                        "artist": "The Left Banke",
-                        "title": "Pretty Ballerina - Single Version",
-                        "uri": "0AnAMhBwzwp23jPMP05W4x"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Left Banke",
-                        "title": "Pretty Ballerina",
-                        "uri": "2wvr1ITeMHg51JQXT0gltU"
-                    },
-                    {
-                        "artist": "The Left Banke",
-                        "title": "Pretty Ballerina",
-                        "uri": "1GFDoBrRlUTgj8McVHplQY"
-                    },
-                    {
-                        "artist": "The Left Banke",
-                        "title": "Walk Away Renee",
-                        "uri": "6utiXjyN4dWoMNEZa2skxn"
-                    }
-                ]
-            },
-            "19": {
-                "s0": "",
-                "s1": ""
-            }
+        "02": {
+            "artist": "Haruomi Hosono",
+            "ratio": 4,
+            "title": "スポーツマン (2019 Remastering)",
+            "trackid": "7wK3vFraZXIjVxOqObajAL"
         },
-        "radioooo-20th-april-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Lô Borges",
-                        "title": "Aos Barões",
-                        "uri": "69jkG8dCZw75fTxwc2IQ86"
-                    },
-                    {
-                        "artist": "Lô Borges",
-                        "title": "Aos Barões - Ao Vivo",
-                        "uri": "2oLcQZdcVr4iFEgHuNL3aG"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lô Borges",
-                        "title": "Aos Barões",
-                        "uri": "69jkG8dCZw75fTxwc2IQ86"
-                    },
-                    {
-                        "artist": "Lô Borges",
-                        "title": "Aos Barões - Ao Vivo",
-                        "uri": "2oLcQZdcVr4iFEgHuNL3aG"
-                    },
-                    {
-                        "artist": "Lô Borges",
-                        "title": "Calibre",
-                        "uri": "1mQ3ryvTBSWeEMkH0Ul4gK"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Deodato",
-                        "title": "Bebê",
-                        "uri": "1n6FtDEVKouS0hepaV9xcC"
-                    },
-                    {
-                        "artist": "Deodato",
-                        "title": "Bebê",
-                        "uri": "1cb7Gr0eEByTiZCFiaP97o"
-                    },
-                    {
-                        "artist": "Bebe",
-                        "title": "Respirar",
-                        "uri": "6Yf2PUq5aZxrCrkNMMIkHo"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Arnaldo Baptista",
-                        "title": "Cê Tá Pensando Que Eu Sou Loki?",
-                        "uri": "4iKPuksJHRy2ZcXrCTDVRK"
-                    },
-                    {
-                        "artist": "Arnaldo Baptista",
-                        "title": "Balada do Louco",
-                        "uri": "099KxgUV8dXYBqA60tyvkD"
-                    },
-                    {
-                        "artist": "Arnaldo Baptista",
-                        "title": "Honky, Tonky",
-                        "uri": "3jrwRHZSRELXmI8d0GE2OU"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Os Originais Do Samba",
-                        "title": "Falador Passa Mal",
-                        "uri": "2bKOB6DLw8inrQC8UmghQN"
-                    },
-                    {
-                        "artist": "Os Originais Do Samba",
-                        "title": "Falador Passa Mal",
-                        "uri": "0KoRO4U0s4JosuakEbnGkx"
-                    },
-                    {
-                        "artist": "Os Originais Do Samba",
-                        "title": "Falador Passa Mal - Ao Vivo",
-                        "uri": "02HoSehzspHGWF4GGB8Hb7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Os Originais Do Samba",
-                        "title": "Falador Passa Mal",
-                        "uri": "2bKOB6DLw8inrQC8UmghQN"
-                    },
-                    {
-                        "artist": "Os Originais Do Samba",
-                        "title": "Falador Passa Mal",
-                        "uri": "0KoRO4U0s4JosuakEbnGkx"
-                    },
-                    {
-                        "artist": "Os Originais Do Samba",
-                        "title": "Falador Passa Mal - Ao Vivo",
-                        "uri": "02HoSehzspHGWF4GGB8Hb7"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Zelia Barbosa",
-                        "title": "Pau De Arara (The Parrot Roost)",
-                        "uri": "4RgbPoJQcSOA9YM8ezdsms"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Zelia Barbosa",
-                        "title": "Pau De Arara (The Parrot Roost)",
-                        "uri": "4RgbPoJQcSOA9YM8ezdsms"
-                    },
-                    {
-                        "artist": "Zelia Barbosa",
-                        "title": "Funeral Do Lavrador (Funeral of a Worker)",
-                        "uri": "6jk2apxyVNPLikYdIxy5g2"
-                    },
-                    {
-                        "artist": "Elis Regina",
-                        "title": "Águas De Março",
-                        "uri": "15ouqiBsgL12olEwP3COsH"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Rogério Duprat",
-                        "title": "The Rain, The Park And Other Things",
-                        "uri": "5Z08IkjKv2PWfG1ZKXGwZS"
-                    },
-                    {
-                        "artist": "Tropicana del Swing",
-                        "title": "Tropi Mix 1",
-                        "uri": "2FZFHM3bYXkNAifr36yGld"
-                    },
-                    {
-                        "artist": "Rogério Duprat",
-                        "title": "Canção Para Inglês Ver / Chiquita Bacana - Medley",
-                        "uri": "6FjU7S7QNW6fEuC3xg5r6U"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Orlandivo",
-                        "title": "Tudo Jóia",
-                        "uri": "6Ez4tWkvP4Aj99mRtSz4Gr"
-                    },
-                    {
-                        "artist": "Orlandivo",
-                        "title": "Tudo Jóia",
-                        "uri": "0bKLV6uEAJnUUf5RogaBne"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Orlandivo",
-                        "title": "Tudo Jóia",
-                        "uri": "6Ez4tWkvP4Aj99mRtSz4Gr"
-                    },
-                    {
-                        "artist": "Orlandivo",
-                        "title": "Tudo Jóia",
-                        "uri": "0bKLV6uEAJnUUf5RogaBne"
-                    },
-                    {
-                        "artist": "Orlandivo",
-                        "title": "Disse Me Disse",
-                        "uri": "7gInk1pxdaDFI99bKbPFNt"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Doris Monteiro",
-                        "title": "Maita",
-                        "uri": "0rqZWIhGrMaPSDlE31Ret1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Doris Monteiro",
-                        "title": "Maita",
-                        "uri": "0rqZWIhGrMaPSDlE31Ret1"
-                    },
-                    {
-                        "artist": "Doris Monteiro",
-                        "title": "Cafezinho",
-                        "uri": "3dZ4bZPCRSvpRY6aPThaVd"
-                    },
-                    {
-                        "artist": "Doris Monteiro",
-                        "title": "É Isso Ai",
-                        "uri": "0MdcOTxWN7OcBK9RWJVdZh"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Caetano Veloso",
-                        "title": "Maria Bethânia",
-                        "uri": "4GldaY02BCVmDp82TU1Cpg"
-                    },
-                    {
-                        "artist": "Maria Bethânia",
-                        "title": "Maria Bethânia, a Menina Dos Olhos de Oyá",
-                        "uri": "6NGodoKQufh8RvRzLi8QQ4"
-                    },
-                    {
-                        "artist": "Maria Bethânia",
-                        "title": "Reconvexo - Ao Vivo",
-                        "uri": "1ddeP7G76wscmc0RH5sjVA"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Os Tincoãs",
-                        "title": "Cordeiro De Nanã",
-                        "uri": "59HAcR0hVejI7Od0kgibFg"
-                    },
-                    {
-                        "artist": "Os Tincoãs",
-                        "title": "Cordeiro De Nanã",
-                        "uri": "6Mgw4ZTVCbYDyGCu5jCFAg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Os Tincoãs",
-                        "title": "Cordeiro De Nanã",
-                        "uri": "59HAcR0hVejI7Od0kgibFg"
-                    },
-                    {
-                        "artist": "Os Tincoãs",
-                        "title": "Cordeiro De Nanã",
-                        "uri": "6Mgw4ZTVCbYDyGCu5jCFAg"
-                    },
-                    {
-                        "artist": "Os Tincoãs",
-                        "title": "Deixa A Gira Girar",
-                        "uri": "3BD2hlwoExMUXUpxcYxaWx"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Cartola",
-                        "title": "Preciso Me Encontrar",
-                        "uri": "5AKrqJ7RiOCfCaaCuxxGk0"
-                    },
-                    {
-                        "artist": "Cartola",
-                        "title": "Preciso Me Encontrar",
-                        "uri": "1op7nM2R2M6FAU6dSCTRWV"
-                    },
-                    {
-                        "artist": "Cartola",
-                        "title": "Preciso Me Encontrar",
-                        "uri": "4PxmjaZFEnbHORLxqDpyMZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Cartola",
-                        "title": "Preciso Me Encontrar",
-                        "uri": "5AKrqJ7RiOCfCaaCuxxGk0"
-                    },
-                    {
-                        "artist": "Fleezus",
-                        "title": "Ontem",
-                        "uri": "29HKp6qxznuLA9ZRwbJ03J"
-                    },
-                    {
-                        "artist": "Cartola",
-                        "title": "Preciso Me Encontrar",
-                        "uri": "1op7nM2R2M6FAU6dSCTRWV"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Juca Chaves",
-                        "title": "Take Me Back To Piauí",
-                        "uri": "26uzS4AhDPEYbGwcWFWB2O"
-                    },
-                    {
-                        "artist": "Juca Chaves",
-                        "title": "Take Me Back To Piaui",
-                        "uri": "4ZFuIhSgep8bkzeBW8fT94"
-                    },
-                    {
-                        "artist": "Juca Chaves",
-                        "title": "Take Me Back To Piaui",
-                        "uri": "1isVEZxGVgwVya8DDvOZAv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Juca Chaves",
-                        "title": "Take Me Back To Piauí",
-                        "uri": "26uzS4AhDPEYbGwcWFWB2O"
-                    },
-                    {
-                        "artist": "Juca Chaves",
-                        "title": "Take Me Back To Piaui",
-                        "uri": "4ZFuIhSgep8bkzeBW8fT94"
-                    },
-                    {
-                        "artist": "Juca Chaves",
-                        "title": "Take Me Back To Piaui",
-                        "uri": "1isVEZxGVgwVya8DDvOZAv"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Astrud Gilberto",
-                        "title": "All I’ve Got",
-                        "uri": "6Rd062uMerFeB4SSdvL78A"
-                    },
-                    {
-                        "artist": "Astrud Gilberto",
-                        "title": "All I’ve Got",
-                        "uri": "4Ib0xl1bXJ6So88jNedyj8"
-                    },
-                    {
-                        "artist": "Astrud Gilberto",
-                        "title": "All I've Got",
-                        "uri": "4TKGdloDUa0uDvdXnc9Q5C"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Astrud Gilberto",
-                        "title": "Água de Beber",
-                        "uri": "3QKJELWORZZ7rUZDWeMWSA"
-                    },
-                    {
-                        "artist": "Astrud Gilberto",
-                        "title": "All I’ve Got",
-                        "uri": "6Rd062uMerFeB4SSdvL78A"
-                    },
-                    {
-                        "artist": "Astrud Gilberto",
-                        "title": "Dindi",
-                        "uri": "13Nh6UPBy8WgoTc5l7iGR8"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Os Mutantes",
-                        "title": "Portugal De Navio",
-                        "uri": "7ykxSoQm6XjECYgiu5GcPX"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Os Mutantes",
-                        "title": "Portugal De Navio",
-                        "uri": "7ykxSoQm6XjECYgiu5GcPX"
-                    },
-                    {
-                        "artist": "Los Mutantes del Paraná",
-                        "title": "El Entrerriano",
-                        "uri": "5pUdxkuRrgAX9952UWoaLo"
-                    },
-                    {
-                        "artist": "Los Mutantes del Paraná",
-                        "title": "Machimbre",
-                        "uri": "0XQpFYM3FV9CMgOT3tF8gK"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Tim Maia",
-                        "title": "Acenda o farol",
-                        "uri": "2kXkaplZ6HdXz5XYBtdunj"
-                    },
-                    {
-                        "artist": "Tim Maia",
-                        "title": "Acenda o Farol",
-                        "uri": "6epr0KI0LY4wUji4hoeGCP"
-                    },
-                    {
-                        "artist": "Tim Maia",
-                        "title": "Acenda o farol",
-                        "uri": "1sRftbZGROFjnxeoHn4INI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tim Maia",
-                        "title": "Acenda o farol",
-                        "uri": "2kXkaplZ6HdXz5XYBtdunj"
-                    },
-                    {
-                        "artist": "Jack District",
-                        "title": "Acenda o Farol - Jack District Remix",
-                        "uri": "3K1C8y9etzt4pcRqTzOEyF"
-                    },
-                    {
-                        "artist": "Tim Maia",
-                        "title": "Acenda o Farol",
-                        "uri": "6epr0KI0LY4wUji4hoeGCP"
-                    }
-                ]
-            },
-            "15": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Noriel Vilela",
-                        "title": "16 Toneladas",
-                        "uri": "4eJFgz99l1ppawgesG8RRV"
-                    },
-                    {
-                        "artist": "Noriel Vilela",
-                        "title": "16 Toneladas",
-                        "uri": "2XkHAttmz8mBqaCwysrrrI"
-                    },
-                    {
-                        "artist": "Noriel Vilela",
-                        "title": "16 Toneladas",
-                        "uri": "6VO43SxO9f3XdPkN1Lkikk"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Chico Buarque",
-                        "title": "Construção",
-                        "uri": "3FIuBxOxuQ6kYy8JO0gq2a"
-                    },
-                    {
-                        "artist": "Chico Buarque",
-                        "title": "Construcão (Ao Vivo)",
-                        "uri": "1Eg2i3kesdGT8UdmA74RUf"
-                    },
-                    {
-                        "artist": "Chico Buarque",
-                        "title": "Construção",
-                        "uri": "35mHF1ezeUq7Mi8itXZtnU"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Chico Buarque",
-                        "title": "Construção",
-                        "uri": "3FIuBxOxuQ6kYy8JO0gq2a"
-                    },
-                    {
-                        "artist": "Chico Buarque",
-                        "title": "Construcão (Ao Vivo)",
-                        "uri": "1Eg2i3kesdGT8UdmA74RUf"
-                    },
-                    {
-                        "artist": "L_cio",
-                        "title": "Construção - L_cio & K_Ri Version",
-                        "uri": "12fcMx64LD2c13beXT3wv0"
-                    }
-                ]
-            }
+        "03": {
+            "artist": "Nomura Aki",
+            "ratio": 3,
+            "title": "Rouge no dengon (Guitar)",
+            "trackid": "3gnUXiz1dF61Cwx153O77s"
         },
-        "radioooo-23rd-march": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Space Art",
-                        "title": "Welcome To Love",
-                        "uri": "1viXTCvrMW87NGipeG95h4"
-                    },
-                    {
-                        "artist": "Space Art",
-                        "title": "Welcome To Love",
-                        "uri": "10NmAp41pQx3D28Yyrz7b4"
-                    },
-                    {
-                        "artist": "Space Art",
-                        "title": "Welcome To Love",
-                        "uri": "3pcmpdOrXLq4mVlrAYXqsk"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Space Art",
-                        "title": "Welcome To Love",
-                        "uri": "1viXTCvrMW87NGipeG95h4"
-                    },
-                    {
-                        "artist": "Space Art",
-                        "title": "Welcome To Love",
-                        "uri": "10NmAp41pQx3D28Yyrz7b4"
-                    },
-                    {
-                        "artist": "Space Art",
-                        "title": "Onyx",
-                        "uri": "3TdWSFHkuSlm0DrefKvYYu"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "New Paradise",
-                        "title": "I Love Video",
-                        "uri": "7yKGeGDjtxmfp4jlMvPUyE"
-                    },
-                    {
-                        "artist": "New Paradise",
-                        "title": "I Love Video",
-                        "uri": "0vQNpuwS4kJpT0l8MYEzuX"
-                    },
-                    {
-                        "artist": "New Paradise",
-                        "title": "I Love Video",
-                        "uri": "4CC5TzkA0UXl0vVuMRv5Ru"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "New Paradise",
-                        "title": "I Love Video",
-                        "uri": "7yKGeGDjtxmfp4jlMvPUyE"
-                    },
-                    {
-                        "artist": "New Paradise",
-                        "title": "I Love Video",
-                        "uri": "0vQNpuwS4kJpT0l8MYEzuX"
-                    },
-                    {
-                        "artist": "New Paradise",
-                        "title": "I Love Video",
-                        "uri": "4CC5TzkA0UXl0vVuMRv5Ru"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Nini Raviolette",
-                        "title": "Je tu nous",
-                        "uri": "2JtGjvY21aHqMiupzVmuiS"
-                    },
-                    {
-                        "artist": "Cité Zaïre",
-                        "title": "Nini to sali te",
-                        "uri": "6mHK1C2c6uj5OQ5anMR0ij"
-                    },
-                    {
-                        "artist": "Nini Rosso",
-                        "title": "Adagio d'Albinoni",
-                        "uri": "4WWAM0N4b1nGvhytNgxhRV"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Ruth",
-                        "title": "Mots",
-                        "uri": "3NmnGTteqJpExXCb1Ggouz"
-                    },
-                    {
-                        "artist": "Ruth",
-                        "title": "Mots - Soft Edit",
-                        "uri": "4iXOpEyEuwrMXUSkleJA9S"
-                    },
-                    {
-                        "artist": "Ruth",
-                        "title": "Sans Mots - L'Orchestre Inachevé, Remix 2001",
-                        "uri": "6p4tZlKZCxXRCz4zirozck"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ruth",
-                        "title": "Mots",
-                        "uri": "3NmnGTteqJpExXCb1Ggouz"
-                    },
-                    {
-                        "artist": "Ruth",
-                        "title": "Mots - Soft Edit",
-                        "uri": "4iXOpEyEuwrMXUSkleJA9S"
-                    },
-                    {
-                        "artist": "Ruth Misamu",
-                        "title": "Match Esili",
-                        "uri": "4EzYQz29dXDv8afStzf9W5"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Jean-Philippe Goude",
-                        "title": "Energie",
-                        "uri": "7AC6pbFkelcOPxn6FVokIa"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jean-Philippe Goude",
-                        "title": "Energie",
-                        "uri": "7AC6pbFkelcOPxn6FVokIa"
-                    },
-                    {
-                        "artist": "Jean-Philippe Goude",
-                        "title": "Market Diktat song",
-                        "uri": "1gzlkcj8HQdTdcayyX1bLr"
-                    },
-                    {
-                        "artist": "Jean-Philippe Goude",
-                        "title": "Spero Lucem",
-                        "uri": "50eE3k4hZb2XyCbRMp5U3Y"
-                    }
-                ]
-            }
+        "04": {
+            "artist": "Gojira",
+            "ratio": 4,
+            "title": "Flying Whales",
+            "trackid": "6SJ2LK3yMdGzC4AEcXJZo4"
         },
-        "radioooo-italy-dolce-vita-55-65-special-15th-june-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Un Disco Dei Platters",
-                        "uri": "6CG9gow9lLYUTZ14Bq2lZk"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Un Disco Dei Platters",
-                        "uri": "4pDLrCMqadOmTIwo6L39Vd"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Un disco dei Platters",
-                        "uri": "6zOcM3EUaDHIocnXZZKdi3"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Un Disco Dei Platters",
-                        "uri": "4pDLrCMqadOmTIwo6L39Vd"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Un Disco Dei Platters",
-                        "uri": "6CG9gow9lLYUTZ14Bq2lZk"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Un disco dei Platters - 2020 Remaster",
-                        "uri": "6pE638dxIMrBn7B8Az7YPn"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La Passerella Di Otto E Mezzo",
-                        "uri": "7ILXw84zphdLuIQtvHJLI9"
-                    },
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La Passerella d'Addio",
-                        "uri": "7AXEPBVfvaHaFtKd0Y5lqR"
-                    },
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La Passerella Di Otto E Mezzo - Otto E Mezzo 1962",
-                        "uri": "4lAYSeK4cPgHKtmXxBWOmZ"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "I Campioni",
-                        "title": "Come prima",
-                        "uri": "6FRGgmeRJgkT0KSDDUi5EJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tony Dallara",
-                        "title": "Come prima",
-                        "uri": "6m8fzdK14sJldkat1CMUrZ"
-                    },
-                    {
-                        "artist": "Marino Marini",
-                        "title": "Come prima",
-                        "uri": "1PlV6IT8zWLrhJThiIozbv"
-                    },
-                    {
-                        "artist": "Dalida",
-                        "title": "Come Prima",
-                        "uri": "5Woemt7xSXv62svNCALLdS"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Rita Pavone",
-                        "title": "Solo Tu",
-                        "uri": "6F1SOxXJmg3zGCdntJ5PMs"
-                    },
-                    {
-                        "artist": "Rita Pavone",
-                        "title": "Solo tu - Dance",
-                        "uri": "6ukqh2zeCTMxHPgkvk0OgF"
-                    },
-                    {
-                        "artist": "Rita Pavone",
-                        "title": "Solo tu (vers. Catalana)",
-                        "uri": "50aTrfT8xkI8ZDk8SJ4YcI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Rita Pavone",
-                        "title": "Solo tu - Dance",
-                        "uri": "6ukqh2zeCTMxHPgkvk0OgF"
-                    },
-                    {
-                        "artist": "Rita Pavone",
-                        "title": "Solo Tu",
-                        "uri": "6F1SOxXJmg3zGCdntJ5PMs"
-                    },
-                    {
-                        "artist": "Rita Pavone",
-                        "title": "Cuore",
-                        "uri": "4IRpIUaWtSxNn7HM7sORhn"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Mina",
-                        "title": "Tintarella di luna",
-                        "uri": "6NBLLkUxwVTTNwmDwMYnHC"
-                    },
-                    {
-                        "artist": "Mina",
-                        "title": "Tintarella di luna",
-                        "uri": "6Eq8JOhT7dvKUK1lWTG6IM"
-                    },
-                    {
-                        "artist": "Mina",
-                        "title": "Tintarella di Luna - Remastered",
-                        "uri": "2EzfLDVDpVFu5aHL8QFjR8"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mina",
-                        "title": "Tintarella di luna",
-                        "uri": "6NBLLkUxwVTTNwmDwMYnHC"
-                    },
-                    {
-                        "artist": "Basi Karaoke",
-                        "title": "Tintarella di luna - Karaoke Version In the Style of Mina",
-                        "uri": "2xK40M1uuuhO60upma0YSl"
-                    },
-                    {
-                        "artist": "Mina",
-                        "title": "Tintarella di luna",
-                        "uri": "6Eq8JOhT7dvKUK1lWTG6IM"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Marino Marini",
-                        "title": "I Ballo O Tango - Remastered",
-                        "uri": "15oiE7ctpUXK0PC4NPLQr4"
-                    },
-                    {
-                        "artist": "Marino Marini",
-                        "title": "I' ballo 'o tango",
-                        "uri": "5vYVuidFVjOa8SAR964X3q"
-                    },
-                    {
-                        "artist": "Marino Marini",
-                        "title": "I' ballo 'o tango",
-                        "uri": "6WJScP3TWPRgHseUinxTeN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Marino Marini",
-                        "title": "I' ballo 'o tango",
-                        "uri": "5vYVuidFVjOa8SAR964X3q"
-                    },
-                    {
-                        "artist": "Marino Marini",
-                        "title": "I' ballo 'o tango",
-                        "uri": "6WJScP3TWPRgHseUinxTeN"
-                    },
-                    {
-                        "artist": "Marino Marini",
-                        "title": "I Ballo O Tango - Remastered",
-                        "uri": "15oiE7ctpUXK0PC4NPLQr4"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La dolce vita - Finale",
-                        "uri": "3WpohDgnulH0POC8pn3Pgi"
-                    },
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La Dolce Vita - Finale",
-                        "uri": "520QYeMRqNEjXdotpfWSs4"
-                    },
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La Dolce Vita (Finale) - Remastered",
-                        "uri": "27tV7AoAlB4f5XJGWta1XX"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La dolce vita - Finale",
-                        "uri": "3WpohDgnulH0POC8pn3Pgi"
-                    },
-                    {
-                        "artist": "Nino Rota",
-                        "title": "La dolce vita",
-                        "uri": "3Li7Cw9cnF830ijj8iX8H4"
-                    },
-                    {
-                        "artist": "Dino Verde",
-                        "title": "La Dolce Vita - Finale",
-                        "uri": "20HdDr35riyMrhtEB5tAoB"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Renato Carosone",
-                        "title": "'O Sarracino",
-                        "uri": "284k7wMWGGdFEPFXER98ce"
-                    },
-                    {
-                        "artist": "Renato Carosone",
-                        "title": "O Sarracino",
-                        "uri": "6CraPR2ci34VyTVTcYgZ4u"
-                    },
-                    {
-                        "artist": "Renato Carosone",
-                        "title": "'O Sarracino",
-                        "uri": "16TF2kl9Jw4Q7XqpOWL2mA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Renato Carosone",
-                        "title": "'O Sarracino",
-                        "uri": "284k7wMWGGdFEPFXER98ce"
-                    },
-                    {
-                        "artist": "Renato Carosone",
-                        "title": "O Sarracino",
-                        "uri": "6CraPR2ci34VyTVTcYgZ4u"
-                    },
-                    {
-                        "artist": "Renato Carosone",
-                        "title": "Sarracin",
-                        "uri": "0OGWQNltEj4BLEKfyD7GLg"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Aveva un bavero",
-                        "uri": "0GDR8BRo3bxzQAQszFX9m7"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Aveva un bavero",
-                        "uri": "2FD6jA16WKe2mvr4QyWHkC"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Aveva un bavero",
-                        "uri": "1UC9Q0gJofIvzYIzp8R4Xw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Aveva un bavero",
-                        "uri": "0GDR8BRo3bxzQAQszFX9m7"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Aveva un bavero",
-                        "uri": "3sYNpMTqRnCOicTflA0BVF"
-                    },
-                    {
-                        "artist": "Quartetto Cetra",
-                        "title": "Aveva un bavero",
-                        "uri": "3lpm0A5gmSxf5XBT0OJUXu"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Sophia Loren",
-                        "title": "De jour en jour",
-                        "uri": "5fX1IjVm9WgJZX2VpQ8lzD"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sophia Loren",
-                        "title": "De jour en jour",
-                        "uri": "5fX1IjVm9WgJZX2VpQ8lzD"
-                    },
-                    {
-                        "artist": "Sophia Loren",
-                        "title": "Zoo Be Zoo Be Zoo",
-                        "uri": "5hGoEyfWAPuxgmxDIRPVAL"
-                    },
-                    {
-                        "artist": "Sophia Loren",
-                        "title": "Ti Ein Afto Pou to Lene Agapi (Boy on a Dolphin)",
-                        "uri": "63CG43zGqQHZEqCrmqsCM7"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Domenico Modugno",
-                        "title": "Nel blu dipinto di blu' (Volare)",
-                        "uri": "7FGhwWgdgiQpcDahQJ81vX"
-                    },
-                    {
-                        "artist": "Domenico Modugno",
-                        "title": "Nel blu dipinto di blu - Aka: Volare",
-                        "uri": "5FtKXY98OSAU8ekSPbFubu"
-                    },
-                    {
-                        "artist": "Domenico Modugno",
-                        "title": "Nel blu, dipinto di blu (Volare)",
-                        "uri": "7ArIMfhXwUStzOxE24TyNy"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Domenico Modugno",
-                        "title": "Nel blu dipinto di blu (Volare)",
-                        "uri": "3GDVYZtjXOD2Fj0jeoEycc"
-                    },
-                    {
-                        "artist": "Domenico Modugno",
-                        "title": "Volare (Nel Blu Dipinto Di Blu) [Remastered]",
-                        "uri": "5ca1c1EGb3Q1tnXXPRrAhs"
-                    },
-                    {
-                        "artist": "Domenico Modugno",
-                        "title": "Volare (Nel blu dipinto di blu) - Remastered",
-                        "uri": "1aSLWs30nitk2RRoEWjS0i"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Nico Fidenco",
-                        "title": "Con Te Sulla Spiaggia",
-                        "uri": "5qL9G387FzVFVgV92WU34K"
-                    },
-                    {
-                        "artist": "Nico Fidenco",
-                        "title": "Con Te Sulla Spiaggia",
-                        "uri": "6EW1dcG003vFB0QrLIWq4X"
-                    },
-                    {
-                        "artist": "Nico Fidenco",
-                        "title": "Con Te Sulla Spiaggia",
-                        "uri": "6WZ4OuTFNoWLT8uVQuPkpi"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nico Fidenco",
-                        "title": "Con Te Sulla Spiaggia",
-                        "uri": "5qL9G387FzVFVgV92WU34K"
-                    },
-                    {
-                        "artist": "Nico Fidenco",
-                        "title": "Con Te Sulla Spiaggia",
-                        "uri": "6EW1dcG003vFB0QrLIWq4X"
-                    },
-                    {
-                        "artist": "Nico Fidenco",
-                        "title": "Con Te Sulla Spiaggia",
-                        "uri": "17mSekLeXAFIAr38VY4RgO"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Edoardo Vianello",
-                        "title": "Guarda Come Dondolo",
-                        "uri": "5cnBqPh3jlnKCsYi3BeBsQ"
-                    },
-                    {
-                        "artist": "Edoardo Vianello",
-                        "title": "Guarda come dondolo",
-                        "uri": "4Hsz28zAMAHUZ5DdY6DVSX"
-                    },
-                    {
-                        "artist": "Edoardo Vianello",
-                        "title": "Guarda Come Dondolo",
-                        "uri": "2jrc7nMEQhKKT1nE0yNbfO"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Edoardo Vianello",
-                        "title": "Guarda Come Dondolo",
-                        "uri": "5cnBqPh3jlnKCsYi3BeBsQ"
-                    },
-                    {
-                        "artist": "Edoardo Vianello",
-                        "title": "Guarda come dondolo",
-                        "uri": "4Hsz28zAMAHUZ5DdY6DVSX"
-                    },
-                    {
-                        "artist": "Edoardo Vianello",
-                        "title": "Guarda Come Dondolo",
-                        "uri": "2jrc7nMEQhKKT1nE0yNbfO"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Caterina Valente",
-                        "title": "Amo Solo Te",
-                        "uri": "5rSivtrRZGAF3GUGBGcd56"
-                    },
-                    {
-                        "artist": "Caterina Valente",
-                        "title": "Amo Solo Te",
-                        "uri": "5Gezm9A28P3D8fWmoycxFB"
-                    },
-                    {
-                        "artist": "Caterina Valente",
-                        "title": "Amo solo te",
-                        "uri": "0rxqmtTuFpsAhBgTlRfIok"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Fred Buscaglione",
-                        "title": "Love in Portofino",
-                        "uri": "5BXZJKU4KE7wfqJX4RhnP2"
-                    },
-                    {
-                        "artist": "Fred Buscaglione",
-                        "title": "Love in Portofino",
-                        "uri": "3Gb3UUDQunUYfvjP02OiOY"
-                    },
-                    {
-                        "artist": "Fred Buscaglione",
-                        "title": "Love in Portofino - Remastered",
-                        "uri": "3xxCXM7fmlsL1RjqeMqd6Q"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Fred Buscaglione",
-                        "title": "Love in Portofino",
-                        "uri": "5BXZJKU4KE7wfqJX4RhnP2"
-                    },
-                    {
-                        "artist": "Fred Buscaglione",
-                        "title": "Love in Portofino",
-                        "uri": "3Gb3UUDQunUYfvjP02OiOY"
-                    },
-                    {
-                        "artist": "Dalida",
-                        "title": "Love In Portofino",
-                        "uri": "0cgcD73SD4nFdTK2oKofzW"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Gino Paoli",
-                        "title": "La gatta",
-                        "uri": "1ZMC9pB3e18ac15XWZwvI9"
-                    },
-                    {
-                        "artist": "Gino Paoli",
-                        "title": "La gatta",
-                        "uri": "1f08sBI8nFXyQIU6FmOxSn"
-                    },
-                    {
-                        "artist": "Gino Paoli",
-                        "title": "La gatta",
-                        "uri": "0eWu3TpfUa3QfQjYg9eAj7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gino Paoli",
-                        "title": "La gatta",
-                        "uri": "1ZMC9pB3e18ac15XWZwvI9"
-                    },
-                    {
-                        "artist": "Gino Paoli",
-                        "title": "La gatta",
-                        "uri": "1f08sBI8nFXyQIU6FmOxSn"
-                    },
-                    {
-                        "artist": "Gino Paoli",
-                        "title": "La gatta",
-                        "uri": "0eWu3TpfUa3QfQjYg9eAj7"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Marino Marini",
-                        "title": "Kriminal tango",
-                        "uri": "41ibCfyUANkH75sp7RHRpO"
-                    },
-                    {
-                        "artist": "Marino Marini",
-                        "title": "Kriminal tango",
-                        "uri": "50Z9lMvcnkHuPodeL6XY53"
-                    },
-                    {
-                        "artist": "Marino Marini",
-                        "title": "Kriminal Tango - Remastered",
-                        "uri": "5icm5T3yrQnIrUSFMbt3TJ"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Renato Rascel",
-                        "title": "Arrivederci Roma",
-                        "uri": "6EGvcOCqgCVYmcHbq9pBex"
-                    },
-                    {
-                        "artist": "Renato Rascel",
-                        "title": "Arrivederci Roma",
-                        "uri": "1GSFG7BEyWGgG0Y5TFe890"
-                    },
-                    {
-                        "artist": "Renato Rascel",
-                        "title": "Arrivederci Roma",
-                        "uri": "2HucswaX0JaIiWqv7ds7TT"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Renato Rascel",
-                        "title": "Arrivederci Roma",
-                        "uri": "6EGvcOCqgCVYmcHbq9pBex"
-                    },
-                    {
-                        "artist": "Renato Rascel",
-                        "title": "Arrivederci Roma",
-                        "uri": "1GSFG7BEyWGgG0Y5TFe890"
-                    },
-                    {
-                        "artist": "Renato Rascel",
-                        "title": "Arrivederci Roma",
-                        "uri": "49RD8bnciSrqV0efRAwhn3"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "Nilla Pizzi",
-                        "title": "Grazie dei fiori",
-                        "uri": "7ubjJN1weB9e0K77Bu6kAh"
-                    },
-                    {
-                        "artist": "Nilla Pizzi",
-                        "title": "Grazie dei fiori",
-                        "uri": "06vLUEqkJ4AIG3bKKtSi0M"
-                    },
-                    {
-                        "artist": "Nilla Pizzi",
-                        "title": "Grazie dei fiori",
-                        "uri": "5OsLKBTMOFxyN9pGfm3C06"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nilla Pizzi",
-                        "title": "Grazie dei fiori",
-                        "uri": "06vLUEqkJ4AIG3bKKtSi0M"
-                    },
-                    {
-                        "artist": "Beppe Donadio",
-                        "title": "Boyband",
-                        "uri": "5uV07IxQjM3adRqR9x8dws"
-                    },
-                    {
-                        "artist": "Nilla Pizzi",
-                        "title": "Grazie dei fior",
-                        "uri": "5Rl8CAwIYH2YPyz3sr7sgR"
-                    }
-                ]
-            }
+        "05": {
+            "artist": "Shigeru Suzuki",
+            "ratio": 4,
+            "title": "パッション・フラワー",
+            "trackid": "4yFM6VkpHJcVlLi6BUG7Ea"
         },
-        "radioooo-mexico-argentina-columbia-2010-2016-5th-october-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Meridian Brothers",
-                        "title": "Guaracha U.F.O (No Estamos Solos...)",
-                        "uri": "0DxpffgjnVzFpyldTAskDI"
-                    },
-                    {
-                        "artist": "Meridian Brothers",
-                        "title": "Guaracha U.F.O (No Estamos Solos...)",
-                        "uri": "7FQAQtJJKMw1LxqUuFGEXx"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Meridian Brothers",
-                        "title": "Guaracha U.F.O (No Estamos Solos...)",
-                        "uri": "0DxpffgjnVzFpyldTAskDI"
-                    },
-                    {
-                        "artist": "Meridian Brothers",
-                        "title": "Guaracha U.F.O - Versión Rebajada",
-                        "uri": "05UiAmu5t5AYJWVIbtw8ks"
-                    },
-                    {
-                        "artist": "Meridian Brothers",
-                        "title": "¿Dónde Estás María?",
-                        "uri": "6F7nb8f7ty7P4vLQeFL1lq"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "El Güero Fresa Presenta",
-                        "title": "Convertible Ride",
-                        "uri": "60fyEM5riGN9wDnEjEzZpw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "El Güero Fresa Presenta",
-                        "title": "Convertible Ride",
-                        "uri": "60fyEM5riGN9wDnEjEzZpw"
-                    },
-                    {
-                        "artist": "Alfonso Payan y Asociados",
-                        "title": "El güero garrochas",
-                        "uri": "1sN5o1ZP0Fd5RBYTOMoqt3"
-                    },
-                    {
-                        "artist": "Gustavo Hernández Y Su Escuadra Armada",
-                        "title": "El Güero Pesado (En Vivo)",
-                        "uri": "3WpSEC4tmdDBfNDjfQkzyz"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Rebolledo",
-                        "title": "Canivalón",
-                        "uri": "0ghtgmzxL6dx0PqeRAfmb4"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Rebolledo",
-                        "title": "Canivalón",
-                        "uri": "0ghtgmzxL6dx0PqeRAfmb4"
-                    },
-                    {
-                        "artist": "Capitán Tula",
-                        "title": "Reboledo",
-                        "uri": "3SFRb0SnsKJEqdOjTEoyuU"
-                    },
-                    {
-                        "artist": "Beto Y Sus Canarios",
-                        "title": "El Rebozo",
-                        "uri": "3Fo3FZioUIdPKEcg9bsO66"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Moderna",
-                        "title": "Asesino Psicotico",
-                        "uri": "1pUEI2GyAL283w59abFNiB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Moderna",
-                        "title": "Asesino Psicotico",
-                        "uri": "1pUEI2GyAL283w59abFNiB"
-                    },
-                    {
-                        "artist": "Lil Manifest",
-                        "title": "Asesino",
-                        "uri": "7pYH4Lw2m15gn7HbBi71zB"
-                    },
-                    {
-                        "artist": "Thigio",
-                        "title": "Asesinos de la Tinta",
-                        "uri": "6dUdAWYYKJ4RBrhGuBOSl8"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Jose Larralde",
-                        "title": "Quimey Neuquen",
-                        "uri": "3oRaLG3ZDqXNN4BXhBClrY"
-                    },
-                    {
-                        "artist": "Jose Larralde",
-                        "title": "Quimey Neuquen",
-                        "uri": "4w0MywBTfDOg9g22CSuP9T"
-                    },
-                    {
-                        "artist": "Jose Larralde",
-                        "title": "Quimey Neuquen",
-                        "uri": "3cEzrlp1QLpIcbRs1zGN3w"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Johnny Colon",
-                        "title": "Merecumbe",
-                        "uri": "3UIdoF8igmzt7gnolINC97"
-                    },
-                    {
-                        "artist": "Robert Abigail",
-                        "title": "Merengue - Radio Edit",
-                        "uri": "0ABy4HYIus244yahKpHiou"
-                    },
-                    {
-                        "artist": "Ritmo Rojo",
-                        "title": "Merecumbé",
-                        "uri": "6Be6XGQ8vPrBWHHOjidYY0"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mijo",
-                        "title": "Sonido Barsella",
-                        "uri": "06adIXQ3DlbwjTsVmwoAKQ"
-                    },
-                    {
-                        "artist": "Mijo",
-                        "title": "La Alarma - Radio Club Edit",
-                        "uri": "7MxnluHCTdx5SjJpTcSRZj"
-                    },
-                    {
-                        "artist": "Eddie Mercury",
-                        "title": "Chundify",
-                        "uri": "5aW7EJK6np9kXFTA7XVziD"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Daniel Maloso",
-                        "title": "Ritmo Especial",
-                        "uri": "2bx5hOgYAzsBW2pgDpSh1p"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Daniel Maloso",
-                        "title": "Ritmo Especial",
-                        "uri": "2bx5hOgYAzsBW2pgDpSh1p"
-                    },
-                    {
-                        "artist": "Daniel Maloso",
-                        "title": "Body Music",
-                        "uri": "0OsDEplDRzotekxoi2NAz4"
-                    },
-                    {
-                        "artist": "Daniel Maloso",
-                        "title": "Shera",
-                        "uri": "0HTxLHImniX3xjGxe7F2GG"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Benjamin Fröhlich",
-                        "title": "Dream City - Zombies In Miami Remix",
-                        "uri": "2X0TTErpZQBjNJkVctddVK"
-                    },
-                    {
-                        "artist": "Zimmer",
-                        "title": "Mayans - Zombies in Miami Remix",
-                        "uri": "7eaCNJHiAyu7O0UY19QjWa"
-                    },
-                    {
-                        "artist": "Zombies In Miami",
-                        "title": "Clamato",
-                        "uri": "1jNPV5NpnuC2dtgI7lzQX4"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Pachanga Boys",
-                        "title": "Fiesta Forever",
-                        "uri": "1RVbnlQ91LUREl9prGo8iL"
-                    },
-                    {
-                        "artist": "Marimba Chiapas",
-                        "title": "La Pachanga",
-                        "uri": "4d6Mgi3qXXwZyvlxsg1dIb"
-                    },
-                    {
-                        "artist": "Marimba Chiapas",
-                        "title": "Pachanga Charanga",
-                        "uri": "06rcT8cyZniiPUYu4eIsGQ"
-                    }
-                ]
-            }
+        "06": {
+            "artist": "EXID",
+            "ratio": 4,
+            "title": "Up & Down",
+            "trackid": "6BKOhvRPY54uvfqWwg7MKi"
         },
-        "radioooo-russia-1965-75-2nd-november-2016": {},
-        "radioooo-turkey-1970s-10th-august-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Neşe Karaböcek",
-                        "title": "Çayelinden Öteye/Yali Yali",
-                        "uri": "6fcqnQf44Ppvc36jKd4uch"
-                    },
-                    {
-                        "artist": "Neşe Karaböcek",
-                        "title": "Yali Yali / Çayelinden Öteye",
-                        "uri": "790bEPQRpyUmDAwWU6Lrd4"
-                    },
-                    {
-                        "artist": "Neşe Karaböcek",
-                        "title": "Yali Yali | Çayelinden Öteye - [dunkelbunt] Remix",
-                        "uri": "1XbamZis5RvRuArqnDq3AV"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Neşe Karaböcek",
-                        "title": "Yali Yali / Çayelinden Öteye",
-                        "uri": "790bEPQRpyUmDAwWU6Lrd4"
-                    },
-                    {
-                        "artist": "Neşe Karaböcek",
-                        "title": "Yali Yali | Çayelinden Öteye - [dunkelbunt] Remix : Club Edit",
-                        "uri": "2rMI6c1LDNYvFQRxTvYHmJ"
-                    },
-                    {
-                        "artist": "Neşe Karaböcek",
-                        "title": "Yali Yali | Çayelinden Öteye - [dunkelbunt] Remix",
-                        "uri": "1XbamZis5RvRuArqnDq3AV"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Belkıs Ünlüses",
-                        "title": "Lambaya Püf De",
-                        "uri": "6fxzUoXq8MKLeF3DCF2w1t"
-                    },
-                    {
-                        "artist": "Belkıs Ünlüses",
-                        "title": "Lambaya Püf De",
-                        "uri": "0V1vasn6CnVjrZ4HckFjps"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Belkıs Ünlüses",
-                        "title": "Lambaya Püf De",
-                        "uri": "6fxzUoXq8MKLeF3DCF2w1t"
-                    },
-                    {
-                        "artist": "Belkıs Ünlüses",
-                        "title": "Lambaya Püf De",
-                        "uri": "0V1vasn6CnVjrZ4HckFjps"
-                    },
-                    {
-                        "artist": "Allame",
-                        "title": "Lambaya Püf De",
-                        "uri": "2e37GAIF96YXFz0zJhtJ9K"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Selda Bağcan",
-                        "title": "Yaylalar",
-                        "uri": "1aVFBfololKZgw5QbBsKSO"
-                    },
-                    {
-                        "artist": "Selda Bağcan",
-                        "title": "Yaylalar",
-                        "uri": "4AjbQCqPwdOihDNo8OJxEE"
-                    },
-                    {
-                        "artist": "Selda Bağcan",
-                        "title": "Yaylalar",
-                        "uri": "2ebojGU4KLP5p1NX8yFrTu"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Selda Bağcan",
-                        "title": "Yaylalar",
-                        "uri": "1aVFBfololKZgw5QbBsKSO"
-                    },
-                    {
-                        "artist": "Selda Bağcan",
-                        "title": "Yaylalar",
-                        "uri": "4AjbQCqPwdOihDNo8OJxEE"
-                    },
-                    {
-                        "artist": "Selda Bağcan",
-                        "title": "Yaylalar",
-                        "uri": "2ebojGU4KLP5p1NX8yFrTu"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Sevda Karaca",
-                        "title": "Çık Ortaya Çık",
-                        "uri": "7E4WZaoe6jdjW16A6wAQkj"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sevda Karaca",
-                        "title": "Çık Ortaya Çık",
-                        "uri": "7E4WZaoe6jdjW16A6wAQkj"
-                    },
-                    {
-                        "artist": "Nahide Babashlı",
-                        "title": "Sevda Karası",
-                        "uri": "5EAKxTh47kf8gfn2wGw8QE"
-                    },
-                    {
-                        "artist": "Toygar Işıklı",
-                        "title": "Anlatamam",
-                        "uri": "6nGWEuI70w30Rvk2IEBguZ"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Hal Hal",
-                        "uri": "0NWNkaRbk13bseJzI6TkYh"
-                    },
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Hal Hal - Barış K Edit",
-                        "uri": "4tvPFwLlatJAOm6LBArU0Q"
-                    },
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Hal Hal",
-                        "uri": "5xzQzm0jMBrrOPX026FGl1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Hal Hal",
-                        "uri": "0NWNkaRbk13bseJzI6TkYh"
-                    },
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Hal Hal - Barış K Edit",
-                        "uri": "4tvPFwLlatJAOm6LBArU0Q"
-                    },
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Halhal",
-                        "uri": "1x7x841QVgvCUomjxzqQUT"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Kamuran Akkor",
-                        "title": "İkimiz Bir Fidanız",
-                        "uri": "1rRHrIgrPPHUYD97oYAgli"
-                    },
-                    {
-                        "artist": "Kamuran Akkor",
-                        "title": "İkimiz Bir Fidanız - Barış K Edit",
-                        "uri": "0FeyyYLAowEYP1g9yxcipz"
-                    },
-                    {
-                        "artist": "Kamuran Akkor",
-                        "title": "İkimiz Bir Fidanız",
-                        "uri": "18vgAiBbstFhXvLgkhtzoe"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kamuran Akkor",
-                        "title": "İkimiz Bir Fidanız",
-                        "uri": "1rRHrIgrPPHUYD97oYAgli"
-                    },
-                    {
-                        "artist": "Kamuran Akkor",
-                        "title": "İkimiz Bir Fidanız - Barış K Edit",
-                        "uri": "0FeyyYLAowEYP1g9yxcipz"
-                    },
-                    {
-                        "artist": "Kamuran Akkor",
-                        "title": "İkimiz Bir Fidanız",
-                        "uri": "14hNWiNGhYf2KZ4SGPTA2S"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Ersen ve Dadaşlar",
-                        "title": "Derman Bulunmaz - Barış K Edit",
-                        "uri": "6ibq6RQjSydJPohhlnZjEF"
-                    },
-                    {
-                        "artist": "Ersen ve Dadaşlar",
-                        "title": "Derman Bulunmaz",
-                        "uri": "4SlH2qPXihNL82KgtdibZC"
-                    },
-                    {
-                        "artist": "Ersen ve Dadaşlar",
-                        "title": "Derman Bulunmaz",
-                        "uri": "3F3vw4BxB8YH0RHd0pXNzC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ersen ve Dadaşlar",
-                        "title": "Derman Bulunmaz - Barış K Edit",
-                        "uri": "6ibq6RQjSydJPohhlnZjEF"
-                    },
-                    {
-                        "artist": "Ersen ve Dadaşlar",
-                        "title": "Derman Bulunmaz",
-                        "uri": "4SlH2qPXihNL82KgtdibZC"
-                    },
-                    {
-                        "artist": "Ersen ve Dadaşlar",
-                        "title": "Derman Bulunmaz",
-                        "uri": "3F3vw4BxB8YH0RHd0pXNzC"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Özdemir Erdoğan",
-                        "title": "Aç Kapıyı Gir İçeri",
-                        "uri": "2lhs5SQMTzxf4cO7K3yByD"
-                    },
-                    {
-                        "artist": "Özdemir Erdoğan",
-                        "title": "Aç Kapıyı Gir İçeri",
-                        "uri": "0CdYya2v0d99w0QSc5npcK"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Özdemir Erdoğan",
-                        "title": "Aç Kapıyı Gir İçeri",
-                        "uri": "2lhs5SQMTzxf4cO7K3yByD"
-                    },
-                    {
-                        "artist": "Özdemir Erdoğan",
-                        "title": "Aç Kapıyı Gir İçeri",
-                        "uri": "0CdYya2v0d99w0QSc5npcK"
-                    },
-                    {
-                        "artist": "Özdemir Erdoğan",
-                        "title": "Gurbet",
-                        "uri": "2cJhhpxflevAtPFku1kxID"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mazhar Ve Fuat",
-                        "title": "Adimiz Miskindir Bizim",
-                        "uri": "4bxSoFQl2ExbgPLSj24UDH"
-                    },
-                    {
-                        "artist": "Mazhar ve Fuat",
-                        "title": "Hekimoğlu",
-                        "uri": "2Lex3hySxaMTcEdJ5QYVFu"
-                    },
-                    {
-                        "artist": "Replikas",
-                        "title": "Sür Efem Atını",
-                        "uri": "29bMiFMOhCCQJknYVs910H"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Erkin Koray",
-                        "title": "Yalnızlar Rıhtımı",
-                        "uri": "08phlQI1HKmRcwmY3yNOTS"
-                    },
-                    {
-                        "artist": "Erkin Koray",
-                        "title": "Yalnızlar Rıhtımı",
-                        "uri": "1Bdj4GbH1Z98tQ84a3B7S9"
-                    },
-                    {
-                        "artist": "Erkin Koray",
-                        "title": "Yalnızlar Rıhtımı",
-                        "uri": "6nManbTifrIkm4gA75JziN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Erkin Koray",
-                        "title": "Yalnızlar Rıhtımı",
-                        "uri": "08phlQI1HKmRcwmY3yNOTS"
-                    },
-                    {
-                        "artist": "Erkin Koray",
-                        "title": "Yalnızlar Rıhtımı",
-                        "uri": "1Bdj4GbH1Z98tQ84a3B7S9"
-                    },
-                    {
-                        "artist": "Erkin Koray",
-                        "title": "Yalnızlar Rıhtımı",
-                        "uri": "6nManbTifrIkm4gA75JziN"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Şenay",
-                        "title": "Dalkavuk - Barış K Edit",
-                        "uri": "0vNFCqtFXELQ7k9N8xHUUL"
-                    },
-                    {
-                        "artist": "Senay",
-                        "title": "Dalkavuk",
-                        "uri": "1H1iCQ05MWM2CUuts2UhA1"
-                    },
-                    {
-                        "artist": "Şenay",
-                        "title": "Dalkavuk",
-                        "uri": "333zed4EEJHn2k2meRifbD"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Şenay",
-                        "title": "Dalkavuk - Barış K Edit",
-                        "uri": "0vNFCqtFXELQ7k9N8xHUUL"
-                    },
-                    {
-                        "artist": "Senay",
-                        "title": "Dalkavuk",
-                        "uri": "1H1iCQ05MWM2CUuts2UhA1"
-                    },
-                    {
-                        "artist": "Şenay",
-                        "title": "Dalkavuk",
-                        "uri": "333zed4EEJHn2k2meRifbD"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Teselliye Sen Gerek - Barış K Edit",
-                        "uri": "1LYMny3H2iGmRPInGwGFEB"
-                    },
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Teselliye Sen Gerek",
-                        "uri": "1qNem6j0NyCIHALpqeJ0Mv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Teselliye Sen Gerek - Barış K Edit",
-                        "uri": "1LYMny3H2iGmRPInGwGFEB"
-                    },
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Teselliye Sen Gerek",
-                        "uri": "1qNem6j0NyCIHALpqeJ0Mv"
-                    },
-                    {
-                        "artist": "Nazan Şoray",
-                        "title": "Halhal",
-                        "uri": "1x7x841QVgvCUomjxzqQUT"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Barış Manço",
-                        "title": "Aman Yavaş Aheste",
-                        "uri": "20SZyuV4hJLZDs4FoOfgSa"
-                    },
-                    {
-                        "artist": "Barış Manço",
-                        "title": "Aman Yavaş Aheste",
-                        "uri": "41uBaFtHIUmY212PvwqquJ"
-                    },
-                    {
-                        "artist": "Barış Manço",
-                        "title": "Aman Yavaş Aheste",
-                        "uri": "2lxZb6ajE0Jd9nU2nCRCTL"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Barış Manço",
-                        "title": "Aman Yavaş Aheste",
-                        "uri": "20SZyuV4hJLZDs4FoOfgSa"
-                    },
-                    {
-                        "artist": "Barış Manço",
-                        "title": "Aman Yavaş Aheste",
-                        "uri": "41uBaFtHIUmY212PvwqquJ"
-                    },
-                    {
-                        "artist": "Barış Manço",
-                        "title": "Aman Yavaş Aheste",
-                        "uri": "2lxZb6ajE0Jd9nU2nCRCTL"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Arsivplak",
-                        "title": "Volga Nehri (Turkish Disco Folk)",
-                        "uri": "3W88n6kLHdhFIG9LrIiBqA"
-                    },
-                    {
-                        "artist": "Arsivplak",
-                        "title": "Volga Nehri",
-                        "uri": "1SCyJ4GGTk59e2jK5GwJmq"
-                    },
-                    {
-                        "artist": "Arsivplak",
-                        "title": "Volga Nehri - Extended",
-                        "uri": "44Q4pEsEUwvJbWhGzoQDxf"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Arsivplak",
-                        "title": "Volga Nehri (Turkish Disco Folk)",
-                        "uri": "3W88n6kLHdhFIG9LrIiBqA"
-                    },
-                    {
-                        "artist": "Arsivplak",
-                        "title": "Volga Nehri",
-                        "uri": "1SCyJ4GGTk59e2jK5GwJmq"
-                    },
-                    {
-                        "artist": "Arsivplak",
-                        "title": "Volga Nehri - Olgay Neke Edit",
-                        "uri": "1xzoWd2S2qNZjRCRbDolhG"
-                    }
-                ]
-            }
+        "07": {
+            "artist": "Walter",
+            "ratio": 4,
+            "title": "Taxi man",
+            "trackid": "6OL1TbSZuxUndQa8ZlXf39"
         },
-        "radioooo-west-and-east-germany-78-84-8th-september-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Andreas Dorau",
-                        "title": "Fred vom Jupiter",
-                        "uri": "7HyAIKz7frBvOVtjIUZlzA"
-                    },
-                    {
-                        "artist": "Die Doraus & Die Marinas",
-                        "title": "Fred vom Jupiter",
-                        "uri": "0djUUl6Mall0jYmpbN3n2I"
-                    },
-                    {
-                        "artist": "Andreas Dorau",
-                        "title": "Fred Vom Jupiter",
-                        "uri": "1ejyWB4cHFXfYiUJi2FRMb"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Andreas Dorau",
-                        "title": "Fred vom Jupiter",
-                        "uri": "7HyAIKz7frBvOVtjIUZlzA"
-                    },
-                    {
-                        "artist": "Die Doraus & Die Marinas",
-                        "title": "Fred vom Jupiter",
-                        "uri": "0djUUl6Mall0jYmpbN3n2I"
-                    },
-                    {
-                        "artist": "Andreas Dorau",
-                        "title": "Fred Vom Jupiter",
-                        "uri": "1ejyWB4cHFXfYiUJi2FRMb"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "DAF",
-                        "title": "Kebabträume",
-                        "uri": "73aK7NNareJdp3zAvWrexj"
-                    },
-                    {
-                        "artist": "SpongeBob Schwammkopf",
-                        "title": "Freunde und Nachbarn - Teil 4",
-                        "uri": "1Z5J2I6G7v1hSbokaNsq10"
-                    },
-                    {
-                        "artist": "DAF",
-                        "title": "Kebab Träume",
-                        "uri": "0fgJvk3FIu4vmBiM1yNQIX"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Gina X Performance",
-                        "title": "No G.D.M.",
-                        "uri": "6y9JP8k9WGhCfae9jzx2W8"
-                    },
-                    {
-                        "artist": "Gina X Performance",
-                        "title": "No G.D.M. - 7\" edit",
-                        "uri": "0e4aa85cEd9fOAMgqb4L15"
-                    },
-                    {
-                        "artist": "Gina X Performance",
-                        "title": "No G.D.M. - Psychonauts Remix",
-                        "uri": "2UuvOELunhxkYNiYGAi3XG"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gina X Performance",
-                        "title": "No G.D.M.",
-                        "uri": "6y9JP8k9WGhCfae9jzx2W8"
-                    },
-                    {
-                        "artist": "Gina X Performance",
-                        "title": "No G.D.M. - 7\" edit",
-                        "uri": "0e4aa85cEd9fOAMgqb4L15"
-                    },
-                    {
-                        "artist": "Gina X Performance",
-                        "title": "No G.D.M. - Berlin 1992 Mix",
-                        "uri": "2BCVAJkf9hamxMMFci9Mxh"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Joachim Witt",
-                        "title": "Goldener Reiter",
-                        "uri": "7sgbBeINoJ4TDUDIloK9li"
-                    },
-                    {
-                        "artist": "Joachim Witt",
-                        "title": "Goldener Reiter",
-                        "uri": "4tkDYcsZicT8E5EhCj7w5V"
-                    },
-                    {
-                        "artist": "Joachim Witt",
-                        "title": "Goldener Reiter - Refugium Klassik Version - Live",
-                        "uri": "1JkG8bUQ4FqmEAGJ5OQBY9"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Joachim Witt",
-                        "title": "Goldener Reiter",
-                        "uri": "7sgbBeINoJ4TDUDIloK9li"
-                    },
-                    {
-                        "artist": "Joachim Witt",
-                        "title": "Goldener Reiter - Klaus Voormann Single Mix",
-                        "uri": "7u8PpEds5qp9nvN4l2R9Yn"
-                    },
-                    {
-                        "artist": "Joachim Witt",
-                        "title": "Goldener Reiter",
-                        "uri": "4tkDYcsZicT8E5EhCj7w5V"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Nina Hagen",
-                        "title": "Born In Xixax",
-                        "uri": "3Y2uo29gqttQ9hK8RoffEn"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nina Hagen",
-                        "title": "Born In Xixax",
-                        "uri": "3Y2uo29gqttQ9hK8RoffEn"
-                    },
-                    {
-                        "artist": "Nina Hagen",
-                        "title": "Tiatschi - Tarot",
-                        "uri": "3nWKhZau2Mip0HLogb9giv"
-                    },
-                    {
-                        "artist": "Nina Hagen & Karl Rucker",
-                        "title": "Wonderful",
-                        "uri": "4jHmcnTffpmp1arxmDhaIm"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": ""
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Rheingold",
-                        "title": "Dreiklangsdimensionen - Single / Remastered 2005",
-                        "uri": "0l32VLbE21cXN784EgZVYo"
-                    },
-                    {
-                        "artist": "Rheingold",
-                        "title": "Dreiklangsdimensionen - Remastered 2005",
-                        "uri": "6T5M7HGvF8YBh2fxhYDyML"
-                    },
-                    {
-                        "artist": "Rheingold",
-                        "title": "Dreiklangsdimensionen",
-                        "uri": "6ng1rv2P24h2wly30Jbnz7"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "You Could Be More As You Are",
-                        "uri": "1z4wF1YNe3FphOqyD2eRqY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "You Could Be More As You Are",
-                        "uri": "1z4wF1YNe3FphOqyD2eRqY"
-                    },
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "More Women",
-                        "uri": "73R5rWJMt6zzgiwLzOYfWR"
-                    },
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "Shut the Door",
-                        "uri": "4Iow6Xe1mLtzlhMPPTczTF"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Moebius",
-                        "title": "Ondulation",
-                        "uri": "3jgdcsGGJOQL0qkqmBQsPC"
-                    },
-                    {
-                        "artist": "OFFL1NX",
-                        "title": "Moebius",
-                        "uri": "3OFGZwY2IMaLhNMgtOvksh"
-                    },
-                    {
-                        "artist": "Iscion ADP",
-                        "title": "Moebius",
-                        "uri": "3EJGtAc2DSFDH9msV2XFUC"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "FPI Project",
-                        "title": "For Your Love",
-                        "uri": "0yRa4dFQIoT3h6yvCtALFh"
-                    },
-                    {
-                        "artist": "Plastique Knights",
-                        "title": "For Your Love - Musica Electronica Remix",
-                        "uri": "0hTMyQK6zFdEYZEUUfxKA3"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Silver Convention",
-                        "title": "Get Up and Boogie (That's Right) - Radio Mix",
-                        "uri": "6kkHnD5hJK75kHRRR2zUJG"
-                    },
-                    {
-                        "artist": "Silver Convention",
-                        "title": "Get Up and Boogie - That's Right",
-                        "uri": "66wkmlfx3H0Oqg1frvJjhu"
-                    },
-                    {
-                        "artist": "Silver Convention",
-                        "title": "Get Up and Boogie (That's Right)",
-                        "uri": "4hBqB9ggnSW1a68UVaKqua"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Silver Convention",
-                        "title": "Get Up and Boogie (That's Right) - Radio Mix",
-                        "uri": "6kkHnD5hJK75kHRRR2zUJG"
-                    },
-                    {
-                        "artist": "Silver Convention",
-                        "title": "Get Up and Boogie - That's Right",
-                        "uri": "66wkmlfx3H0Oqg1frvJjhu"
-                    },
-                    {
-                        "artist": "Silver Convention",
-                        "title": "Get Up and Boogie (That's Right)",
-                        "uri": "4hBqB9ggnSW1a68UVaKqua"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "P.Cock",
-                        "title": "Telephone Song",
-                        "uri": "6OpCxtOPAOcayTlRW2WOq7"
-                    },
-                    {
-                        "artist": "P.Cock",
-                        "title": "Telephone Song - Andi Hanley Edit",
-                        "uri": "4AJW2Avu0tphTg61SRAZb9"
-                    },
-                    {
-                        "artist": "P.Cock",
-                        "title": "House In TheSstorm",
-                        "uri": "4rw1FmEZIMLHHPapbcKxkf"
-                    }
-                ]
-            }
+        "08": {
+            "artist": "Juicy Fruits",
+            "ratio": 6,
+            "title": "Jenie wa Gokigen Naname",
+            "trackid": "7b3QZl9xsV2RRIdD50K1jy"
+        },
+        "09": {
+            "artist": "Meiko Kaji",
+            "ratio": 4,
+            "title": "嫉妬",
+            "trackid": "4LGr2aCUMqBzuyhi4E2U6c"
+        },
+        "10": {
+            "artist": "Belle",
+            "ratio": 4,
+            "title": "歌よ",
+            "trackid": "4DPovSJonVPid3EDSxL9K8"
+        },
+        "11": {
+            "artist": "Haruomi Hosono",
+            "ratio": 5,
+            "title": "スポーツマン (2019 Remastering)",
+            "trackid": "7wK3vFraZXIjVxOqObajAL"
+        },
+        "12": {
+            "artist": "Frank Chickens",
+            "ratio": 5,
+            "title": "We Are Ninja - Yasuharu Konishi Mix",
+            "trackid": "3gBwo9EPOSZXwc4TuBs1C0"
+        },
+        "13": {
+            "artist": "Mtume",
+            "ratio": 3,
+            "title": "Juicy Fruit",
+            "trackid": "223kK8LVBwzkk3Ck7Ua0Sk"
+        },
+        "14": {
+            "artist": "Finger 5",
+            "ratio": 6,
+            "title": "恋のダイヤル6700",
+            "trackid": "6n3qQi0KpK3XHKqzt9V6aB"
+        }
+    },
+    "radioooo-18th-may-2016": {
+        "00": {
+            "artist": "Billy Stewart",
+            "ratio": 6,
+            "title": "Summertime",
+            "trackid": "6ysKfFyFkn93xSc1fN8yQx"
+        },
+        "01": {
+            "artist": "Harry Nilsson",
+            "ratio": 6,
+            "title": "Everybody's Talkin'",
+            "trackid": "3c8JemHol1XwFFruXQxjCO"
+        },
+        "02": {
+            "artist": "Peter, Paul and Mary",
+            "ratio": 5,
+            "title": "Don't Think Twice, It's All Right",
+            "trackid": "7IsXXgpowAB48crGjV1oGb"
+        },
+        "03": {
+            "artist": "Lalo Schifrin",
+            "ratio": 6,
+            "title": "The Fox",
+            "trackid": "29ntON41t9jzXi3MKoQRyf"
+        },
+        "04": {
+            "artist": "Trini Lopez",
+            "ratio": 6,
+            "title": "Unchain My Heart",
+            "trackid": "7MW00RJu7D6asOH7u4h2XG"
+        },
+        "05": {
+            "artist": "Aretha Franklin",
+            "ratio": 6,
+            "title": "I Say a Little Prayer",
+            "trackid": "3NfxSdJnVdon1axzloJgba"
+        },
+        "06": {
+            "artist": "Bob Dylan",
+            "ratio": 6,
+            "title": "Don't Think Twice, It's All Right",
+            "trackid": "2WOjLF83vqjit2Zh4B69V3"
+        },
+        "07": {
+            "artist": "Margo Guryan",
+            "ratio": 6,
+            "title": "Under My Umbrella",
+            "trackid": "0Qdbr9IRJRKVZiEnRaxfJd"
+        },
+        "08": {
+            "artist": "Crosby, Stills & Nash",
+            "ratio": 6,
+            "title": "Helplessly Hoping",
+            "trackid": "7ieCy9tubdq5vsDm5MY2d7"
+        },
+        "09": {
+            "artist": "The Velvet Underground",
+            "ratio": 6,
+            "title": "Femme Fatale",
+            "trackid": "3PG7BAJG9WkmNOJOlc4uAo"
+        },
+        "10": {
+            "artist": "Bobby Hebb",
+            "ratio": 6,
+            "title": "Sunny",
+            "trackid": "4vju55Ag7apDL2CfotuE7Q"
+        },
+        "11": {
+            "artist": "Harpers Bizarre",
+            "ratio": 6,
+            "title": "59th Street Bridge Song (Feelin' Groovy) - Remastered Version",
+            "trackid": "5yn2yvIPo4gc0EJgmWAuBi"
+        },
+        "12": {
+            "artist": "Lesley Gore",
+            "ratio": 6,
+            "title": "You Don't Own Me",
+            "trackid": "7ngRS53kqxLcEt9Pythc5d"
+        },
+        "13": {
+            "artist": "Brenton Wood",
+            "ratio": 6,
+            "title": "Gimme Little Sign",
+            "trackid": "1h4XVjt26ZCDKmeEoHxT07"
+        },
+        "14": {
+            "artist": "The Mamas & The Papas",
+            "ratio": 6,
+            "title": "Dancing In The Street",
+            "trackid": "1Vv7ZtyDro81xmznV48gF6"
+        },
+        "15": {
+            "artist": "Stevie Wonder",
+            "ratio": 6,
+            "title": "Frankie & Johnny",
+            "trackid": "6t7sHoEra5ImZYTCGxL8Om"
+        },
+        "16": {
+            "artist": "The Ray Conniff Singers",
+            "ratio": 6,
+            "title": "The Windmills Of Your Mind",
+            "trackid": "2sFNBmXtMnrDeG4g3DwTMi"
+        },
+        "17": {
+            "artist": "Esther Phillips",
+            "ratio": 6,
+            "title": "And I Love Him",
+            "trackid": "1dPUQhlNGEaDm9Qi1vcL7I"
+        },
+        "18": {
+            "artist": "The Left Banke",
+            "ratio": 6,
+            "title": "Pretty Ballerina",
+            "trackid": "2wvr1ITeMHg51JQXT0gltU"
+        },
+        "19": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        }
+    },
+    "radioooo-20th-april-2016": {
+        "00": {
+            "artist": "Lô Borges",
+            "ratio": 6,
+            "title": "Aos Barões",
+            "trackid": "69jkG8dCZw75fTxwc2IQ86"
+        },
+        "01": {
+            "artist": "Deodato",
+            "ratio": 6,
+            "title": "Bebê",
+            "trackid": "1n6FtDEVKouS0hepaV9xcC"
+        },
+        "02": {
+            "artist": "Arnaldo Baptista",
+            "ratio": 6,
+            "title": "Cê Tá Pensando Que Eu Sou Loki?",
+            "trackid": "4iKPuksJHRy2ZcXrCTDVRK"
+        },
+        "03": {
+            "artist": "Os Originais Do Samba",
+            "ratio": 6,
+            "title": "Falador Passa Mal",
+            "trackid": "2bKOB6DLw8inrQC8UmghQN"
+        },
+        "04": {
+            "artist": "Zelia Barbosa",
+            "ratio": 6,
+            "title": "Pau De Arara (The Parrot Roost)",
+            "trackid": "4RgbPoJQcSOA9YM8ezdsms"
+        },
+        "05": {
+            "artist": "Rogério Duprat",
+            "ratio": 3,
+            "title": "The Rain, The Park And Other Things",
+            "trackid": "5Z08IkjKv2PWfG1ZKXGwZS"
+        },
+        "06": {
+            "artist": "Orlandivo",
+            "ratio": 6,
+            "title": "Tudo Jóia",
+            "trackid": "6Ez4tWkvP4Aj99mRtSz4Gr"
+        },
+        "07": {
+            "artist": "Doris Monteiro",
+            "ratio": 6,
+            "title": "Maita",
+            "trackid": "0rqZWIhGrMaPSDlE31Ret1"
+        },
+        "08": {
+            "artist": "Caetano Veloso",
+            "ratio": 5,
+            "title": "Maria Bethânia",
+            "trackid": "4GldaY02BCVmDp82TU1Cpg"
+        },
+        "09": {
+            "artist": "Os Tincoãs",
+            "ratio": 6,
+            "title": "Cordeiro De Nanã",
+            "trackid": "59HAcR0hVejI7Od0kgibFg"
+        },
+        "10": {
+            "artist": "Cartola",
+            "ratio": 6,
+            "title": "Preciso Me Encontrar",
+            "trackid": "5AKrqJ7RiOCfCaaCuxxGk0"
+        },
+        "11": {
+            "artist": "Juca Chaves",
+            "ratio": 6,
+            "title": "Take Me Back To Piauí",
+            "trackid": "26uzS4AhDPEYbGwcWFWB2O"
+        },
+        "12": {
+            "artist": "Astrud Gilberto",
+            "ratio": 6,
+            "title": "All I’ve Got",
+            "trackid": "6Rd062uMerFeB4SSdvL78A"
+        },
+        "13": {
+            "artist": "Os Mutantes",
+            "ratio": 6,
+            "title": "Portugal De Navio",
+            "trackid": "7ykxSoQm6XjECYgiu5GcPX"
+        },
+        "14": {
+            "artist": "Tim Maia",
+            "ratio": 6,
+            "title": "Acenda o farol",
+            "trackid": "2kXkaplZ6HdXz5XYBtdunj"
+        },
+        "15": {
+            "artist": "Noriel Vilela",
+            "ratio": 6,
+            "title": "16 Toneladas",
+            "trackid": "4eJFgz99l1ppawgesG8RRV"
+        },
+        "16": {
+            "artist": "Chico Buarque",
+            "ratio": 6,
+            "title": "Construção",
+            "trackid": "3FIuBxOxuQ6kYy8JO0gq2a"
+        }
+    },
+    "radioooo-23rd-march": {
+        "00": {
+            "artist": "Space Art",
+            "ratio": 6,
+            "title": "Welcome To Love",
+            "trackid": "1viXTCvrMW87NGipeG95h4"
+        },
+        "01": {
+            "artist": "New Paradise",
+            "ratio": 6,
+            "title": "I Love Video",
+            "trackid": "7yKGeGDjtxmfp4jlMvPUyE"
+        },
+        "02": {
+            "artist": "Nini Raviolette",
+            "ratio": 5,
+            "title": "Je tu nous",
+            "trackid": "2JtGjvY21aHqMiupzVmuiS"
+        },
+        "03": {
+            "artist": "Ruth",
+            "ratio": 6,
+            "title": "Mots",
+            "trackid": "3NmnGTteqJpExXCb1Ggouz"
+        },
+        "04": {
+            "artist": "Jean-Philippe Goude",
+            "ratio": 6,
+            "title": "Energie",
+            "trackid": "7AC6pbFkelcOPxn6FVokIa"
+        }
+    },
+    "radioooo-italy-dolce-vita-55-65-special-15th-june-2016": {
+        "00": {
+            "artist": "Quartetto Cetra",
+            "ratio": 6,
+            "title": "Un Disco Dei Platters",
+            "trackid": "6CG9gow9lLYUTZ14Bq2lZk"
+        },
+        "01": {
+            "artist": "Nino Rota",
+            "ratio": 6,
+            "title": "La Passerella Di Otto E Mezzo",
+            "trackid": "7ILXw84zphdLuIQtvHJLI9"
+        },
+        "02": {
+            "artist": "I Campioni",
+            "ratio": 6,
+            "title": "Come prima",
+            "trackid": "6FRGgmeRJgkT0KSDDUi5EJ"
+        },
+        "03": {
+            "artist": "Rita Pavone",
+            "ratio": 6,
+            "title": "Solo Tu",
+            "trackid": "6F1SOxXJmg3zGCdntJ5PMs"
+        },
+        "04": {
+            "artist": "Mina",
+            "ratio": 6,
+            "title": "Tintarella di luna",
+            "trackid": "6NBLLkUxwVTTNwmDwMYnHC"
+        },
+        "05": {
+            "artist": "Marino Marini",
+            "ratio": 6,
+            "title": "I Ballo O Tango - Remastered",
+            "trackid": "15oiE7ctpUXK0PC4NPLQr4"
+        },
+        "06": {
+            "artist": "Nino Rota",
+            "ratio": 6,
+            "title": "La dolce vita - Finale",
+            "trackid": "3WpohDgnulH0POC8pn3Pgi"
+        },
+        "07": {
+            "artist": "Renato Carosone",
+            "ratio": 6,
+            "title": "'O Sarracino",
+            "trackid": "284k7wMWGGdFEPFXER98ce"
+        },
+        "08": {
+            "artist": "Quartetto Cetra",
+            "ratio": 6,
+            "title": "Aveva un bavero",
+            "trackid": "0GDR8BRo3bxzQAQszFX9m7"
+        },
+        "09": {
+            "artist": "Sophia Loren",
+            "ratio": 6,
+            "title": "De jour en jour",
+            "trackid": "5fX1IjVm9WgJZX2VpQ8lzD"
+        },
+        "10": {
+            "artist": "Domenico Modugno",
+            "ratio": 6,
+            "title": "Volare (Nel Blu Dipinto Di Blu) [Remastered]",
+            "trackid": "5ca1c1EGb3Q1tnXXPRrAhs"
+        },
+        "11": {
+            "artist": "Nico Fidenco",
+            "ratio": 6,
+            "title": "Con Te Sulla Spiaggia",
+            "trackid": "5qL9G387FzVFVgV92WU34K"
+        },
+        "12": {
+            "artist": "Edoardo Vianello",
+            "ratio": 6,
+            "title": "Guarda Come Dondolo",
+            "trackid": "5cnBqPh3jlnKCsYi3BeBsQ"
+        },
+        "13": {
+            "artist": "Caterina Valente",
+            "ratio": 4,
+            "title": "Amo Solo Te",
+            "trackid": "5rSivtrRZGAF3GUGBGcd56"
+        },
+        "14": {
+            "artist": "Fred Buscaglione",
+            "ratio": 6,
+            "title": "Love in Portofino",
+            "trackid": "5BXZJKU4KE7wfqJX4RhnP2"
+        },
+        "15": {
+            "artist": "Gino Paoli",
+            "ratio": 6,
+            "title": "La gatta",
+            "trackid": "1ZMC9pB3e18ac15XWZwvI9"
+        },
+        "16": {
+            "artist": "Marino Marini",
+            "ratio": 3,
+            "title": "Kriminal tango",
+            "trackid": "41ibCfyUANkH75sp7RHRpO"
+        },
+        "17": {
+            "artist": "Renato Rascel",
+            "ratio": 6,
+            "title": "Arrivederci Roma",
+            "trackid": "6EGvcOCqgCVYmcHbq9pBex"
+        },
+        "18": {
+            "artist": "Nilla Pizzi",
+            "ratio": 6,
+            "title": "Grazie dei fiori",
+            "trackid": "7ubjJN1weB9e0K77Bu6kAh"
+        }
+    },
+    "radioooo-mexico-argentina-columbia-2010-2016-5th-october-2016": {
+        "00": {
+            "artist": "Meridian Brothers",
+            "ratio": 6,
+            "title": "Guaracha U.F.O (No Estamos Solos...)",
+            "trackid": "0DxpffgjnVzFpyldTAskDI"
+        },
+        "01": {
+            "artist": "El Güero Fresa Presenta",
+            "ratio": 6,
+            "title": "Convertible Ride",
+            "trackid": "60fyEM5riGN9wDnEjEzZpw"
+        },
+        "02": {
+            "artist": "Rebolledo",
+            "ratio": 6,
+            "title": "Canivalón",
+            "trackid": "0ghtgmzxL6dx0PqeRAfmb4"
+        },
+        "03": {
+            "artist": "Moderna",
+            "ratio": 6,
+            "title": "Asesino Psicotico",
+            "trackid": "1pUEI2GyAL283w59abFNiB"
+        },
+        "04": {
+            "artist": "Jose Larralde",
+            "ratio": 4,
+            "title": "Quimey Neuquen",
+            "trackid": "3oRaLG3ZDqXNN4BXhBClrY"
+        },
+        "05": {
+            "artist": "Ritmo Rojo",
+            "ratio": 5,
+            "title": "Merecumbé",
+            "trackid": "6Be6XGQ8vPrBWHHOjidYY0"
+        },
+        "06": {
+            "artist": "Eddie Mercury",
+            "ratio": 2,
+            "title": "Chundify",
+            "trackid": "5aW7EJK6np9kXFTA7XVziD"
+        },
+        "07": {
+            "artist": "Daniel Maloso",
+            "ratio": 6,
+            "title": "Ritmo Especial",
+            "trackid": "2bx5hOgYAzsBW2pgDpSh1p"
+        },
+        "08": {
+            "artist": "Zombies In Miami",
+            "ratio": 4,
+            "title": "Clamato",
+            "trackid": "1jNPV5NpnuC2dtgI7lzQX4"
+        },
+        "09": {
+            "artist": "Pachanga Boys",
+            "ratio": 6,
+            "title": "Fiesta Forever",
+            "trackid": "1RVbnlQ91LUREl9prGo8iL"
+        }
+    },
+    "radioooo-russia-1965-75-2nd-november-2016": {},
+    "radioooo-turkey-1970s-10th-august-2016": {
+        "00": {
+            "artist": "Neşe Karaböcek",
+            "ratio": 5,
+            "title": "Çayelinden Öteye/Yali Yali",
+            "trackid": "6fcqnQf44Ppvc36jKd4uch"
+        },
+        "01": {
+            "artist": "Belkıs Ünlüses",
+            "ratio": 6,
+            "title": "Lambaya Püf De",
+            "trackid": "6fxzUoXq8MKLeF3DCF2w1t"
+        },
+        "02": {
+            "artist": "Selda Bağcan",
+            "ratio": 6,
+            "title": "Yaylalar",
+            "trackid": "1aVFBfololKZgw5QbBsKSO"
+        },
+        "03": {
+            "artist": "Sevda Karaca",
+            "ratio": 6,
+            "title": "Çık Ortaya Çık",
+            "trackid": "7E4WZaoe6jdjW16A6wAQkj"
+        },
+        "04": {
+            "artist": "Nazan Şoray",
+            "ratio": 6,
+            "title": "Hal Hal",
+            "trackid": "0NWNkaRbk13bseJzI6TkYh"
+        },
+        "05": {
+            "artist": "Kamuran Akkor",
+            "ratio": 6,
+            "title": "İkimiz Bir Fidanız",
+            "trackid": "1rRHrIgrPPHUYD97oYAgli"
+        },
+        "06": {
+            "artist": "Ersen ve Dadaşlar",
+            "ratio": 5,
+            "title": "Derman Bulunmaz",
+            "trackid": "4SlH2qPXihNL82KgtdibZC"
+        },
+        "07": {
+            "artist": "Özdemir Erdoğan",
+            "ratio": 6,
+            "title": "Aç Kapıyı Gir İçeri",
+            "trackid": "2lhs5SQMTzxf4cO7K3yByD"
+        },
+        "08": {
+            "artist": "Mazhar Ve Fuat",
+            "ratio": 4,
+            "title": "Adimiz Miskindir Bizim",
+            "trackid": "4bxSoFQl2ExbgPLSj24UDH"
+        },
+        "09": {
+            "artist": "Erkin Koray",
+            "ratio": 6,
+            "title": "Yalnızlar Rıhtımı",
+            "trackid": "08phlQI1HKmRcwmY3yNOTS"
+        },
+        "10": {
+            "artist": "Senay",
+            "ratio": 6,
+            "title": "Dalkavuk",
+            "trackid": "1H1iCQ05MWM2CUuts2UhA1"
+        },
+        "11": {
+            "artist": "Nazan Şoray",
+            "ratio": 6,
+            "title": "Teselliye Sen Gerek",
+            "trackid": "1qNem6j0NyCIHALpqeJ0Mv"
+        },
+        "12": {
+            "artist": "Barış Manço",
+            "ratio": 6,
+            "title": "Aman Yavaş Aheste",
+            "trackid": "20SZyuV4hJLZDs4FoOfgSa"
+        },
+        "13": {
+            "artist": "Arsivplak",
+            "ratio": 6,
+            "title": "Volga Nehri",
+            "trackid": "1SCyJ4GGTk59e2jK5GwJmq"
+        }
+    },
+    "radioooo-west-and-east-germany-78-84-8th-september-2016": {
+        "00": {
+            "artist": "Andreas Dorau",
+            "ratio": 6,
+            "title": "Fred vom Jupiter",
+            "trackid": "7HyAIKz7frBvOVtjIUZlzA"
+        },
+        "01": {
+            "artist": "DAF",
+            "ratio": 3,
+            "title": "Kebabträume",
+            "trackid": "73aK7NNareJdp3zAvWrexj"
+        },
+        "02": {
+            "artist": "Gina X Performance",
+            "ratio": 6,
+            "title": "No G.D.M.",
+            "trackid": "6y9JP8k9WGhCfae9jzx2W8"
+        },
+        "03": {
+            "artist": "Joachim Witt",
+            "ratio": 6,
+            "title": "Goldener Reiter",
+            "trackid": "7sgbBeINoJ4TDUDIloK9li"
+        },
+        "04": {
+            "artist": "Nina Hagen",
+            "ratio": 6,
+            "title": "Born In Xixax",
+            "trackid": "3Y2uo29gqttQ9hK8RoffEn"
+        },
+        "05": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "06": {
+            "artist": "Rheingold",
+            "ratio": 6,
+            "title": "Dreiklangsdimensionen - Remastered 2005",
+            "trackid": "6T5M7HGvF8YBh2fxhYDyML"
+        },
+        "07": {
+            "artist": "Saâda Bonaire",
+            "ratio": 6,
+            "title": "You Could Be More As You Are",
+            "trackid": "1z4wF1YNe3FphOqyD2eRqY"
+        },
+        "08": {
+            "artist": "Moebius",
+            "ratio": 4,
+            "title": "Ondulation",
+            "trackid": "3jgdcsGGJOQL0qkqmBQsPC"
+        },
+        "09": {
+            "artist": "FPI Project",
+            "ratio": 4,
+            "title": "For Your Love",
+            "trackid": "0yRa4dFQIoT3h6yvCtALFh"
+        },
+        "10": {
+            "artist": "Silver Convention",
+            "ratio": 6,
+            "title": "Get Up and Boogie - That's Right",
+            "trackid": "66wkmlfx3H0Oqg1frvJjhu"
+        },
+        "11": {
+            "artist": "P.Cock",
+            "ratio": 6,
+            "title": "Telephone Song",
+            "trackid": "6OpCxtOPAOcayTlRW2WOq7"
         }
     }
 }

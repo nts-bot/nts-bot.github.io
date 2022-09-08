@@ -1,3182 +1,694 @@
 {
-    "flags": {
-        "9th-june-2022": {
-            "00": {
-                "artist": "Gontiti",
-                "ratio": 6,
-                "title": "Ensoku",
-                "trackid": "5jWM0fqI5N1iXaVvFMqjPj"
-            },
-            "01": {
-                "artist": "Akatsuki no Team",
-                "ratio": 1,
-                "title": "Miko Kikyou (From \"Inuyasha\")",
-                "trackid": "3GGjnBtFjaneb9OUfcZYoF"
-            },
-            "02": {
-                "artist": "The BabyStars",
-                "ratio": 3,
-                "title": "ヒカリへ",
-                "trackid": "1lZeqR3QZExwywt1Fwh90J"
-            },
-            "03": {
-                "artist": "Idealism",
-                "ratio": 4,
-                "title": "Hibi No Awa",
-                "trackid": "0DVJ0vggDr8bQCVNRudlaf"
-            },
-            "04": {
-                "artist": "Motohiro Hata",
-                "ratio": 2,
-                "title": "透明だった世界",
-                "trackid": "3ILmwMefYZoQh5Cf5jeuUQ"
-            },
-            "05": {
-                "artist": "Shintaro Sakamoto",
-                "ratio": 4,
-                "title": "鬼退治",
-                "trackid": "1pDYbRNVr8HmRpfl9z9x5p"
-            },
-            "06": {
-                "artist": "CAT BOYS",
-                "ratio": 6,
-                "title": "Day Dreaming",
-                "trackid": "1loen5NNiGSXFVxbaP6ZGK"
-            },
-            "07": {
-                "artist": "DOOPEES",
-                "ratio": 6,
-                "title": "NOW THAT YOU'VE GONE",
-                "trackid": "4hrDxEeKPfPvsfvo2IqAkf"
-            },
-            "08": {
-                "artist": "Bread And Butter",
-                "ratio": 6,
-                "title": "THE LAST LETTER",
-                "trackid": "5Di05TVMCLhYJG1IhWxZa2"
-            },
-            "09": {
-                "artist": "Bebe",
-                "ratio": 3,
-                "title": "Respirar",
-                "trackid": "6Yf2PUq5aZxrCrkNMMIkHo"
-            },
-            "10": {
-                "artist": "Awesome City Club",
-                "ratio": 6,
-                "title": "Children",
-                "trackid": "6w1PbDdf8PqhaAFIiPYuOF"
-            },
-            "11": {
-                "artist": "the band apart",
-                "ratio": 6,
-                "title": "Take a shit",
-                "trackid": "0c0iT39BuMxQhFMv6N3wgL"
-            },
-            "12": {
-                "artist": "Yasuharu Takanashi",
-                "ratio": 2,
-                "title": "Kanashiki Kako",
-                "trackid": "0RxhkRMtLg52znOUqlyOWJ"
-            },
-            "13": {
-                "artist": "向田紗栄子(上坂すみれ)",
-                "ratio": 2,
-                "title": "harukaze - Full Spec Edition",
-                "trackid": "1iskvKJFrryDAlOmtk54OI"
-            },
-            "14": {
-                "artist": "yama",
-                "ratio": 1,
-                "title": "Haru wo Tsugeru",
-                "trackid": "5QseXDzPvtjdeaWNhYbm0m"
-            }
+    "9th-june-2022": {
+        "00": {
+            "artist": "Gontiti",
+            "ratio": 6,
+            "title": "Ensoku",
+            "trackid": "5jWM0fqI5N1iXaVvFMqjPj"
         },
-        "foodman-11th-may-2022": {
-            "00": {
-                "artist": "Shakalewa",
-                "ratio": 3,
-                "title": "Rotation",
-                "trackid": "2muxuDPb5f5LGa6UAeK01b"
-            },
-            "01": {
-                "artist": "Aleksi Perälä",
-                "ratio": 6,
-                "title": "FI3AC2262020",
-                "trackid": "4WNUY9XTsp7G2tgoS5ayvg"
-            },
-            "02": {
-                "artist": "Marc Martel",
-                "ratio": 4,
-                "title": "Magnetic",
-                "trackid": "0jnjOOV5ENOT1mR6CapCxc"
-            },
-            "03": {
-                "artist": "Ian William Craig",
-                "ratio": 6,
-                "title": "Far and then Farther",
-                "trackid": "5Lz34wsZyCzgtJMYH7ywHw"
-            },
-            "04": {
-                "artist": "Ashley Paul",
-                "ratio": 5,
-                "title": "A Feeling",
-                "trackid": "7kLNhHYr0SchCs8WmC05GJ"
-            },
-            "05": {
-                "artist": "Patrick Shiroishi",
-                "ratio": 6,
-                "title": "Tule Lake Like Yesterday",
-                "trackid": "1TU5TTFHfVF7IA6RIHlrMa"
-            },
-            "06": {
-                "artist": "Khotin",
-                "ratio": 6,
-                "title": "Something Is Happening To Me",
-                "trackid": "66sgXdzz0Fn497ezwyDvJP"
-            },
-            "07": {
-                "artist": "LI YILEI",
-                "ratio": 6,
-                "title": "CHU / 處",
-                "trackid": "3BISxa1qpfWo6lGzN37Dlu"
-            },
-            "08": {
-                "artist": "Francesco Cavaliere",
-                "ratio": 6,
-                "title": "TESSERA di scale che paiono scomparire",
-                "trackid": "1syGy62AqaMz3MOcFURd0a"
-            },
-            "09": {
-                "artist": "Nicolas Gaunin",
-                "ratio": 6,
-                "title": "Mahiki",
-                "trackid": "7x2S9F6kEJPg9p6xvXiEFs"
-            },
-            "10": {
-                "artist": "Howie Lee",
-                "ratio": 6,
-                "title": "The Reflexed Bamboo",
-                "trackid": "6R0P5F2CowuG2XRlaYciCa"
-            },
-            "11": {
-                "artist": "Psychic Reality",
-                "ratio": 3,
-                "title": "META / Meta-Prayer",
-                "trackid": "27BUshBRtRZbSfO5eqyM1Q"
-            },
-            "12": {
-                "artist": "Beverly Glenn-Copeland",
-                "ratio": 6,
-                "title": "Old Melody",
-                "trackid": "7eGQIaS1fUBxL7WMMLv138"
-            },
-            "13": {
-                "artist": "Binaural Frequencies",
-                "ratio": 2,
-                "title": "741 Hz Throat Chakra Mah",
-                "trackid": "0zr9JDOVdatUkPYmmeFoUz"
-            },
-            "14": {
-                "artist": "Berioska",
-                "ratio": 2,
-                "title": "Netsujou No Spectrum (Nanatsu No Taizai)",
-                "trackid": "6c3yCaY09UIRJj2v5acK2a"
-            }
+        "01": {
+            "artist": "Akatsuki no Team",
+            "ratio": 1,
+            "title": "Miko Kikyou (From \"Inuyasha\")",
+            "trackid": "3GGjnBtFjaneb9OUfcZYoF"
         },
-        "foodman-12th-may-2021": {
-            "00": {
-                "artist": "Sakurakou K-ON Bu",
-                "ratio": 1,
-                "title": "Fuwa Fuwa Time",
-                "trackid": "05XoZNL3OMdegGO0SnrHWD"
-            },
-            "01": {
-                "artist": "Hakase-sun",
-                "ratio": 6,
-                "title": "Song Cycle",
-                "trackid": "2rX6ILdJOIiolSRChmTreL"
-            },
-            "02": {
-                "artist": "Akari Mochizuki",
-                "ratio": 2,
-                "title": "Kiri No London Ai",
-                "trackid": "77hOaDUzhyl2LsRgdRoRyM"
-            },
-            "03": {
-                "artist": "THE BOOM",
-                "ratio": 6,
-                "title": "星のラブレター",
-                "trackid": "3xoDydV1CucgOcVHIsH3m4"
-            },
-            "04": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "05": {
-                "artist": "MJ Kangasniemi",
-                "ratio": 2,
-                "title": "TAM TAM",
-                "trackid": "6ya7wAZymTFUiVC8admL41"
-            },
-            "06": {
-                "artist": "EGO-WRAPPIN’",
-                "ratio": 6,
-                "title": "a love song",
-                "trackid": "2V5UfyeVpXBZgvNajmt3nx"
-            },
-            "07": {
-                "artist": "The eskargot miles",
-                "ratio": 4,
-                "title": "老人と星",
-                "trackid": "4fMzBAsPxnHJwMQaGO2MGp"
-            },
-            "08": {
-                "artist": "Tico & icchie",
-                "ratio": 3,
-                "title": "オリビアを聴きながら feat.チエコ・ビューティー",
-                "trackid": "0UKoSomrbY5n1kzoQolmJ8"
-            },
-            "09": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "10": {
-                "artist": "FUNKIST",
-                "ratio": 2,
-                "title": "Ame no Hi no Aki",
-                "trackid": "7zJ3C0TRhdUpT0TYKtKFJ0"
-            },
-            "11": {
-                "artist": "Fishmans",
-                "ratio": 6,
-                "title": "Ikareta Baby",
-                "trackid": "2iFRkiRwPzIaWfjRB3ZHX6"
-            }
+        "02": {
+            "artist": "The BabyStars",
+            "ratio": 3,
+            "title": "ヒカリへ",
+            "trackid": "1lZeqR3QZExwywt1Fwh90J"
         },
-        "foodman-16th-march-2022": {
-            "00": {
-                "artist": "Himekami",
-                "ratio": 4,
-                "title": "Hitori Shizuka",
-                "trackid": "5QO5Yg4IZqBxt99H13um19"
-            },
-            "01": {
-                "artist": "Haruomi Hosono",
-                "ratio": 5,
-                "title": "MERCURIC DANCE/水銀~躍動の踊り",
-                "trackid": "2fXZxWhqV6YqpKsEoqID6S"
-            },
-            "02": {
-                "artist": "Om Buschman",
-                "ratio": 6,
-                "title": "Klang Fängt An",
-                "trackid": "4KOjfvuPNiMz34n5cQNzt5"
-            },
-            "03": {
-                "artist": "SUGAI KEN",
-                "ratio": 6,
-                "title": "Outousen",
-                "trackid": "3CisE1wtJ5ZlUUVlRIRbvG"
-            },
-            "04": {
-                "artist": "SUGAI KEN",
-                "ratio": 6,
-                "title": "Denden",
-                "trackid": "6yQAC0ou6kYcs5LXFi3VlF"
-            },
-            "05": {
-                "artist": "KWC 92",
-                "ratio": 6,
-                "title": "Tai Tam Tuk",
-                "trackid": "6tC94dyara6ofDAYpbyZIp"
-            },
-            "06": {
-                "artist": "TCP",
-                "ratio": 6,
-                "title": "Desert Rain",
-                "trackid": "6QkKrPO84eGffuba5Vufsk"
-            },
-            "07": {
-                "artist": "Mark Barrott",
-                "ratio": 6,
-                "title": "Cirrus & Cumulus",
-                "trackid": "3CLLThUqGL2SMFNI73X9rh"
-            },
-            "08": {
-                "artist": "DJ Sorama",
-                "ratio": 1,
-                "title": "State Of Mind",
-                "trackid": "7pFtaK9gpvN5aBWUJempp4"
-            },
-            "09": {
-                "artist": "Rüdiger Oppermann's Harp Attack",
-                "ratio": 6,
-                "title": "Troubadix In Afrika",
-                "trackid": "769ahSp4uiQ07ttaKn7L8d"
-            },
-            "10": {
-                "artist": "Bob Moses",
-                "ratio": 6,
-                "title": "Boat Song, Pt. 1",
-                "trackid": "5BdHKNHK5XgchVezEHRO61"
-            },
-            "11": {
-                "artist": "Fernando Falcão",
-                "ratio": 6,
-                "title": "Amanhecer Tabajara (À Alceu Valença)",
-                "trackid": "2j557i7D3n9cCRAvD1IP2p"
-            },
-            "12": {
-                "artist": "Francis Bebey",
-                "ratio": 6,
-                "title": "Sunny Crypt",
-                "trackid": "1RnZ4xOFQhqR7qbIpE3KBw"
-            }
+        "03": {
+            "artist": "Idealism",
+            "ratio": 4,
+            "title": "Hibi No Awa",
+            "trackid": "0DVJ0vggDr8bQCVNRudlaf"
         },
-        "foodman-17th-february-2021": {
-            "00": {
-                "artist": "阿保 剛",
-                "ratio": 1,
-                "title": "GATE OF STEINER -Piano-",
-                "trackid": "1EyeHLX96JGGiF2l4tRvJR"
-            },
-            "01": {
-                "artist": "Mick Gordon",
-                "ratio": 1,
-                "title": "Rip & Tear",
-                "trackid": "5soMJpcVhSrGrB4prvPL6P"
-            },
-            "02": {
-                "artist": "Delldongo",
-                "ratio": 1,
-                "title": "Main Theme (From Xenoblade Chronicles)",
-                "trackid": "14kc7PSDy0leGPpwLSQvJY"
-            },
-            "03": {
-                "artist": "GENTLE LOVE",
-                "ratio": 3,
-                "title": "Main Theme (Genso Suikoden)",
-                "trackid": "37WBsAUvnDAvQUPWBbJ0Cg"
-            },
-            "04": {
-                "artist": "Rich Douglas",
-                "ratio": 3,
-                "title": "Metal Gear Solid Theme",
-                "trackid": "54dwUPIjQBVOgNpEF9OQGD"
-            },
-            "05": {
-                "artist": "Mick Gordon",
-                "ratio": 1,
-                "title": "Rip & Tear",
-                "trackid": "5soMJpcVhSrGrB4prvPL6P"
-            }
+        "04": {
+            "artist": "Motohiro Hata",
+            "ratio": 2,
+            "title": "透明だった世界",
+            "trackid": "3ILmwMefYZoQh5Cf5jeuUQ"
         },
-        "foodman-17th-march-2021": {},
-        "foodman-24th-november-202": {
-            "00": {
-                "artist": "Hubert Zemler",
-                "ratio": 6,
-                "title": "Propolis",
-                "trackid": "1KmSzQOxoO61M5sTomxIbp"
-            },
-            "01": {
-                "artist": "Giuseppe Ielasi",
-                "ratio": 6,
-                "title": "8",
-                "trackid": "3wmUTzzlvAfA644IQSQhBi"
-            },
-            "02": {
-                "artist": "Joanna Duda",
-                "ratio": 6,
-                "title": "Kibo",
-                "trackid": "5gnykxwxZbnAZSBdSE0ImI"
-            },
-            "03": {
-                "artist": "Noah Creshevsky",
-                "ratio": 4,
-                "title": "Memento Mori",
-                "trackid": "6GIfG5xi2n40gK5QZ9RCwD"
-            },
-            "04": {
-                "artist": "Time Wharp",
-                "ratio": 6,
-                "title": "Ingenue",
-                "trackid": "4wDOsKfkIhjDQuKY6m1UmZ"
-            },
-            "05": {
-                "artist": "Savath & Savalas",
-                "ratio": 6,
-                "title": "Paisaje",
-                "trackid": "0x53QqjfrKmHaLndGW53vZ"
-            },
-            "06": {
-                "artist": "Antonio Loureiro",
-                "ratio": 6,
-                "title": "A Partir",
-                "trackid": "4BeeY6NfG2hMVkx0j99oHn"
-            },
-            "07": {
-                "artist": "Causa Sui",
-                "ratio": 5,
-                "title": "Eternal Flow",
-                "trackid": "57UAv9mvAvVhcUy5Fht9Z7"
-            },
-            "08": {
-                "artist": "Soushi Sakiyama",
-                "ratio": 2,
-                "title": "嘘じゃない",
-                "trackid": "0ayjyEFPDtTlWQcSbT407P"
-            },
-            "09": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "10": {
-                "artist": "Tomita Lab.",
-                "ratio": 3,
-                "title": "眠りの森",
-                "trackid": "2CPlY5tdjvl05Uv6XdUugH"
-            },
-            "11": {
-                "artist": "Girls' Generation",
-                "ratio": 4,
-                "title": "Lion Heart",
-                "trackid": "405SQUJdQut02dxtuQ0CZ3"
-            },
-            "12": {
-                "artist": "Imaginary Softwoods",
-                "ratio": 6,
-                "title": "Poisitive Ruin Court Garden",
-                "trackid": "7p1UtxQ6PX2dpchOg0LHqL"
-            },
-            "13": {
-                "artist": "Kate NV",
-                "ratio": 5,
-                "title": "yxo EAR",
-                "trackid": "14q97Aiy5iCKccxXw05j1M"
-            },
-            "14": {
-                "artist": "Sun Araw",
-                "ratio": 6,
-                "title": "Roomboe",
-                "trackid": "3u9dWMVi1hRCCbyyAlsX0p"
-            },
-            "15": {
-                "artist": "Howie Lee",
-                "ratio": 6,
-                "title": "Enter the Tigerwoods",
-                "trackid": "7CYeAbYjmY0fouThH0ZUq5"
-            },
-            "16": {
-                "artist": "Yoshiharu Takeda",
-                "ratio": 6,
-                "title": "Fluffy Asia",
-                "trackid": "5Uyz5JmZOqkVIqNTwk86EO"
-            },
-            "17": {
-                "artist": "Sarah Davachi",
-                "ratio": 6,
-                "title": "Gold Upon White",
-                "trackid": "5c3hnbat8WOXEGetNDjtWA"
-            }
+        "05": {
+            "artist": "Shintaro Sakamoto",
+            "ratio": 4,
+            "title": "鬼退治",
+            "trackid": "1pDYbRNVr8HmRpfl9z9x5p"
         },
-        "foodman-26th-november-2020": {},
-        "foodman-29th-october-2020": {},
-        "foodman-4th-august-2021": {
-            "00": {
-                "artist": "foodman",
-                "ratio": 4,
-                "title": "Kazunoko",
-                "trackid": "0cWwpeW31wwgO6ABbkDYhY"
-            },
-            "01": {
-                "artist": "Kurup",
-                "ratio": 6,
-                "title": "Colar de Concha",
-                "trackid": "33rYnAKfiNJbv2qOgFHH7X"
-            },
-            "02": {
-                "artist": "Uproot Andy",
-                "ratio": 2,
-                "title": "El Botellon",
-                "trackid": "6YNTm3e2PAGsZPDshXRZN3"
-            },
-            "03": {
-                "artist": "Jose Larralde",
-                "ratio": 5,
-                "title": "Quimey Neuquen",
-                "trackid": "3oRaLG3ZDqXNN4BXhBClrY"
-            },
-            "04": {
-                "artist": "Paul Traeumer",
-                "ratio": 6,
-                "title": "Offworld Colonies",
-                "trackid": "1WAnp87TmhSjJ0NadMbXXJ"
-            },
-            "05": {
-                "artist": "Socek",
-                "ratio": 6,
-                "title": "Yákêjan",
-                "trackid": "5b94HVKpoHLZTMyu5NgLAZ"
-            },
-            "06": {
-                "artist": "Barrio Lindo",
-                "ratio": 6,
-                "title": "Paulista",
-                "trackid": "3HsQdzqEMTCZKHcWoqX3wc"
-            },
-            "07": {
-                "artist": "Eek-A-Mouse",
-                "ratio": 6,
-                "title": "Lips",
-                "trackid": "6STQk4TvcjAiNdYCMFDLpl"
-            },
-            "08": {
-                "artist": "Manasseh",
-                "ratio": 6,
-                "title": "When the Dub - Dub Mix",
-                "trackid": "3gg5z9Fc6TfY5iBbTFyoFb"
-            },
-            "09": {
-                "artist": "123Mrk",
-                "ratio": 6,
-                "title": "Invisible Colors - Deft Remix",
-                "trackid": "2K3mCYk2j5SWStBPp2wSST"
-            },
-            "10": {
-                "artist": "Talvin Singh",
-                "ratio": 6,
-                "title": "Butterfly",
-                "trackid": "4DUsclIvDe7sU5KRvTQ6St"
-            },
-            "11": {
-                "artist": "Grupo La Migra",
-                "ratio": 3,
-                "title": "Sea Por Dios",
-                "trackid": "6eGP19ni5NECYk6NPo5vgL"
-            },
-            "12": {
-                "artist": "Ours Samplus",
-                "ratio": 6,
-                "title": "Blue Bird",
-                "trackid": "5Ub65lHOysyiaNEw0l1fkm"
-            },
-            "13": {
-                "artist": "MAUGLI",
-                "ratio": 3,
-                "title": "Trouble",
-                "trackid": "3AallkYiZUVKHFcFX92zL4"
-            },
-            "14": {
-                "artist": "等什么君",
-                "ratio": 4,
-                "title": "赤伶 - DJ名龙 Remix",
-                "trackid": "6Zji7lINhdDJHeWO45oRTd"
-            },
-            "15": {
-                "artist": "Numa Gama",
-                "ratio": 6,
-                "title": "Twig People (Seres De Madeira)",
-                "trackid": "41pD10gA3c419p4HhPYqke"
-            },
-            "16": {
-                "artist": "Furmiga Dub",
-                "ratio": 4,
-                "title": "Caiporas e Armadilhas",
-                "trackid": "53xv1BEQdWF5gLOhhLFwyQ"
-            },
-            "17": {
-                "artist": "O Rappa",
-                "ratio": 6,
-                "title": "Take It Easy My Brother Charles",
-                "trackid": "2vnyPdtP79ne7m6SZ5OCWy"
-            }
+        "06": {
+            "artist": "CAT BOYS",
+            "ratio": 6,
+            "title": "Day Dreaming",
+            "trackid": "1loen5NNiGSXFVxbaP6ZGK"
         },
-        "foodman-6th-august-2020": {},
-        "foodman-9th-july-2020": {
-            "00": {
-                "artist": "Quintette du Hot Club de France",
-                "ratio": 6,
-                "title": "Undecided",
-                "trackid": "18GyrRW13cdGDQMFDpv0wP"
-            },
-            "01": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "02": {
-                "artist": "Samuel Kim",
-                "ratio": 1,
-                "title": "Zankyou Sanka - Epic Version (Demon Slayer Season 2 Opening)",
-                "trackid": "3EbsTJzwwcjAQWppFYrqKk"
-            },
-            "03": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "04": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "05": {
-                "artist": "Kohrogi",
-                "ratio": 6,
-                "title": "Nori Tamago",
-                "trackid": "0QFVhNdCWVbpPiKMcBGa18"
-            },
-            "06": {
-                "artist": "MoppySound",
-                "ratio": 6,
-                "title": "White Violet",
-                "trackid": "4wuvxNkhJtO80m3raeg2A5"
-            },
-            "07": {
-                "artist": "Teho",
-                "ratio": 3,
-                "title": "Kabuki",
-                "trackid": "2ch0UkMq80kJMv8AKU6kV7"
-            },
-            "08": {
-                "artist": "Bonsaye",
-                "ratio": 3,
-                "title": "Kyoto",
-                "trackid": "6Uk70qpuVpIbJYfpgp7FOv"
-            },
-            "09": {
-                "artist": "Kotaro Oshio",
-                "ratio": 5,
-                "title": "Rushin'",
-                "trackid": "7rWi7JFoi1X8Mmz1yJbAUJ"
-            },
-            "10": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "11": {
-                "artist": "Bonsaye",
-                "ratio": 3,
-                "title": "Kyoto",
-                "trackid": "6Uk70qpuVpIbJYfpgp7FOv"
-            },
-            "12": {
-                "artist": "Michael Hedges",
-                "ratio": 6,
-                "title": "Spare Change",
-                "trackid": "2jH0tY7Lh1Ia7d4Hie6Muz"
-            },
-            "13": {
-                "artist": "Noriyuki Makihara",
-                "ratio": 4,
-                "title": "君への愛の唄",
-                "trackid": "0U5BmfzQFCSGcD6fwsGKOH"
-            },
-            "14": {
-                "artist": "Yehudi Menuhin",
-                "ratio": 6,
-                "title": "I Got Rhythm - 1988 - Remaster",
-                "trackid": "6F1VRMsNIVOTrqLhZAZOsF"
-            }
+        "07": {
+            "artist": "DOOPEES",
+            "ratio": 6,
+            "title": "NOW THAT YOU'VE GONE",
+            "trackid": "4hrDxEeKPfPvsfvo2IqAkf"
+        },
+        "08": {
+            "artist": "Bread And Butter",
+            "ratio": 6,
+            "title": "THE LAST LETTER",
+            "trackid": "5Di05TVMCLhYJG1IhWxZa2"
+        },
+        "09": {
+            "artist": "Bebe",
+            "ratio": 3,
+            "title": "Respirar",
+            "trackid": "6Yf2PUq5aZxrCrkNMMIkHo"
+        },
+        "10": {
+            "artist": "Awesome City Club",
+            "ratio": 6,
+            "title": "Children",
+            "trackid": "6w1PbDdf8PqhaAFIiPYuOF"
+        },
+        "11": {
+            "artist": "the band apart",
+            "ratio": 6,
+            "title": "Take a shit",
+            "trackid": "0c0iT39BuMxQhFMv6N3wgL"
+        },
+        "12": {
+            "artist": "Yasuharu Takanashi",
+            "ratio": 2,
+            "title": "Kanashiki Kako",
+            "trackid": "0RxhkRMtLg52znOUqlyOWJ"
+        },
+        "13": {
+            "artist": "向田紗栄子(上坂すみれ)",
+            "ratio": 2,
+            "title": "harukaze - Full Spec Edition",
+            "trackid": "1iskvKJFrryDAlOmtk54OI"
+        },
+        "14": {
+            "artist": "yama",
+            "ratio": 1,
+            "title": "Haru wo Tsugeru",
+            "trackid": "5QseXDzPvtjdeaWNhYbm0m"
         }
     },
-    "search": {
-        "9th-june-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Gontiti",
-                        "title": "Ensoku",
-                        "uri": "5jWM0fqI5N1iXaVvFMqjPj"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gontiti",
-                        "title": "Ensoku",
-                        "uri": "5jWM0fqI5N1iXaVvFMqjPj"
-                    },
-                    {
-                        "artist": "Gontiti",
-                        "title": "Houkago no Ongakushitsu 2006",
-                        "uri": "1YeG0ebsMK3qKEJq4vv049"
-                    },
-                    {
-                        "artist": "Gontiti",
-                        "title": "放課後の音楽室",
-                        "uri": "3n56mOZsaRw6HILof6Nhlb"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Akatsuki no Team",
-                        "title": "Miko Kikyou (From \"Inuyasha\")",
-                        "uri": "3GGjnBtFjaneb9OUfcZYoF"
-                    },
-                    {
-                        "artist": "Umitaro Abe",
-                        "title": "Scene I, Kyoto",
-                        "uri": "0p8gAcPkDYgzcZZwAou12B"
-                    },
-                    {
-                        "artist": "cosMo@Bousou-P",
-                        "title": "初音ミクの消失 -MIKUNOPOLIS in LOS ANGELES Live-",
-                        "uri": "5pgVqrcW9CkzDE0ToQmnI3"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "The BabyStars",
-                        "title": "ヒカリへ",
-                        "uri": "1lZeqR3QZExwywt1Fwh90J"
-                    },
-                    {
-                        "artist": "Muray",
-                        "title": "ヒカリへ (第116-168話 OP)",
-                        "uri": "68LQO4WzR0CLjt2knfsbhQ"
-                    },
-                    {
-                        "artist": "Ichiko Aoba",
-                        "title": "太陽さん",
-                        "uri": "1yycinn2WICj4UKGQ9xPjD"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Idealism",
-                        "title": "Hibi No Awa",
-                        "uri": "0DVJ0vggDr8bQCVNRudlaf"
-                    },
-                    {
-                        "artist": "Laur",
-                        "title": "Haiiro No Mei",
-                        "uri": "10Z9WLoObc1IVhQaY3E8jf"
-                    },
-                    {
-                        "artist": "彩音",
-                        "title": "Nageki no mori",
-                        "uri": "0a049lt5jWdJsjkFiSGfvK"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Motohiro Hata",
-                        "title": "透明だった世界",
-                        "uri": "3ILmwMefYZoQh5Cf5jeuUQ"
-                    },
-                    {
-                        "artist": "Motohiro Hata",
-                        "title": "透明だった世界",
-                        "uri": "6oAtpBk23J0z80G1tYZolL"
-                    },
-                    {
-                        "artist": "hachi",
-                        "title": "マトリョシカ - ORIGINAL",
-                        "uri": "74A5fPLR86U9XWYostkXwS"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ikimonogakari",
-                        "title": "熱情のスペクトラム",
-                        "uri": "1p0WZg4NXoNVGj2AuoLJe7"
-                    },
-                    {
-                        "artist": "Shintaro Sakamoto",
-                        "title": "鬼退治",
-                        "uri": "1pDYbRNVr8HmRpfl9z9x5p"
-                    },
-                    {
-                        "artist": "Shintaro Sakamoto",
-                        "title": "まともがわからない",
-                        "uri": "2iDjKR2fXQyODcDKUMoWHK"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "CAT BOYS",
-                        "title": "Day Dreaming",
-                        "uri": "1loen5NNiGSXFVxbaP6ZGK"
-                    },
-                    {
-                        "artist": "CAT BOYS",
-                        "title": "Day Dreaming feat. asuka ando (DJ snuc Remix)",
-                        "uri": "6Fk5RyP7ogINQ0lRtChQgB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "Day Dreaming",
-                        "uri": "7L4G39PVgMfaeHRyi1ML7y"
-                    },
-                    {
-                        "artist": "Lupe Fiasco",
-                        "title": "Daydreamin' (feat. Jill Scott)",
-                        "uri": "50M2QjfSM82wkJ1d0iV4mh"
-                    },
-                    {
-                        "artist": "Brijean",
-                        "title": "Day Dreaming",
-                        "uri": "2uLo22etHF1lbCBngK0Bim"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "DOOPEES",
-                        "title": "NOW THAT YOU'VE GONE",
-                        "uri": "4hrDxEeKPfPvsfvo2IqAkf"
-                    },
-                    {
-                        "artist": "DOOPEES",
-                        "title": "AUNTIE KIM SINGS \"NOW THAT YOU'VE GONE\"",
-                        "uri": "6jkRNqGQJXfc4VAF8nnOJd"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "DOOPEES",
-                        "title": "NOW THAT YOU'VE GONE",
-                        "uri": "4hrDxEeKPfPvsfvo2IqAkf"
-                    },
-                    {
-                        "artist": "daniel silver",
-                        "title": "Now That You're Gone",
-                        "uri": "4nJ4lM5HLMAkSDZESBNcBU"
-                    },
-                    {
-                        "artist": "Cousin Kula",
-                        "title": "Now That You're Gone",
-                        "uri": "7ilczP2LvSNqgVn8jm64Zw"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Bread And Butter",
-                        "title": "THE LAST LETTER",
-                        "uri": "5Di05TVMCLhYJG1IhWxZa2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bread And Butter",
-                        "title": "THE LAST LETTER",
-                        "uri": "5Di05TVMCLhYJG1IhWxZa2"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Bebe",
-                        "title": "Respirar",
-                        "uri": "6Yf2PUq5aZxrCrkNMMIkHo"
-                    },
-                    {
-                        "artist": "Rei(C)hi",
-                        "title": "UCHIRA",
-                        "uri": "7cqayEsQ3vZ846dSeCEgBk"
-                    },
-                    {
-                        "artist": "Rei(C)hi",
-                        "title": "Odemashi",
-                        "uri": "0h3HKHNN63fSgWWwpd6Fpy"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Awesome City Club",
-                        "title": "Children",
-                        "uri": "6w1PbDdf8PqhaAFIiPYuOF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Awesome City Club",
-                        "title": "Children",
-                        "uri": "6w1PbDdf8PqhaAFIiPYuOF"
-                    },
-                    {
-                        "artist": "Awesome City Club",
-                        "title": "またたき - Acoustic Live from dTV (Live)",
-                        "uri": "0DJFYdbYsecr7EQcxTCtso"
-                    },
-                    {
-                        "artist": "Awesome City Club",
-                        "title": "楽園",
-                        "uri": "1uqY0QGoXd6Lj95Igp3h3W"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "the band apart",
-                        "title": "Take a shit",
-                        "uri": "0c0iT39BuMxQhFMv6N3wgL"
-                    },
-                    {
-                        "artist": "the band apart",
-                        "title": "Take a shit",
-                        "uri": "2XYZ7yGnzXgvzWwE1RQI36"
-                    },
-                    {
-                        "artist": "Naeleck",
-                        "title": "Take A Sip - Tha Boogie Bandit Remix",
-                        "uri": "1hKQtfw99LLivX3vH1adZJ"
-                    }
-                ]
-            },
-            "12": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Yasuharu Takanashi",
-                        "title": "Kanashiki Kako",
-                        "uri": "0RxhkRMtLg52znOUqlyOWJ"
-                    },
-                    {
-                        "artist": "Chihiro Yonekura",
-                        "title": "Fairy Tail ~Yakusoku No Hi~",
-                        "uri": "6hUQcGznld9GAqA59o5guX"
-                    },
-                    {
-                        "artist": "Free Flow Flava",
-                        "title": "Yakuza",
-                        "uri": "1FD6J8TOo2I5s8j4AfoOxW"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "向田紗栄子(上坂すみれ)",
-                        "title": "harukaze - Full Spec Edition",
-                        "uri": "1iskvKJFrryDAlOmtk54OI"
-                    },
-                    {
-                        "artist": "SEGA SOUND TEAM",
-                        "title": "harukaze - Full Spec Edition",
-                        "uri": "0UdESiFm3bzaiShAT88Nd1"
-                    },
-                    {
-                        "artist": "Double Ace",
-                        "title": "HARUKAZE",
-                        "uri": "5QPdEqJBUm9zfgLTF14xGr"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "yama",
-                        "title": "Haru wo Tsugeru",
-                        "uri": "5QseXDzPvtjdeaWNhYbm0m"
-                    },
-                    {
-                        "artist": "YOASOBI",
-                        "title": "あの夢をなぞって",
-                        "uri": "4BE1OloRc9xwjyqA4wFFuN"
-                    },
-                    {
-                        "artist": "Anime Project",
-                        "title": "Hotaruno Hikari - Official Soundtrack - Série TV thème d'ouverture ''Naruto Shippûden''",
-                        "uri": "6Z1LL5NhDTNOZ0ITi3y5Wi"
-                    }
-                ]
-            }
+    "foodman-11th-may-2022": {
+        "00": {
+            "artist": "Shakalewa",
+            "ratio": 3,
+            "title": "Rotation",
+            "trackid": "2muxuDPb5f5LGa6UAeK01b"
         },
-        "foodman-11th-may-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Shakalewa",
-                        "title": "Rotation",
-                        "uri": "2muxuDPb5f5LGa6UAeK01b"
-                    },
-                    {
-                        "artist": "Henrikki",
-                        "title": "Aurinko",
-                        "uri": "27mKC2lHdkye6n8WHMJfsw"
-                    },
-                    {
-                        "artist": "Jämsän Kristillisen Kansanopiston kuoro",
-                        "title": "Aurinko vaipuu mailleen (Virsi 564)",
-                        "uri": "2ooSGR7fZ99OsI1zNOe2QR"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Aleksi Perälä",
-                        "title": "FI3AC2262020",
-                        "uri": "4WNUY9XTsp7G2tgoS5ayvg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Aleksi Perälä",
-                        "title": "FI3AC2272010",
-                        "uri": "4OekMG0VfknAW5uJnxtc5j"
-                    },
-                    {
-                        "artist": "Aleksi Perälä",
-                        "title": "FI3AC2267020",
-                        "uri": "7dwLnVoPfydPVPyMoNOKHZ"
-                    },
-                    {
-                        "artist": "Aleksi Perälä",
-                        "title": "FI3AC2271010",
-                        "uri": "5mORZKVjrA5ZKqxwYBtiu1"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Marc Martel",
-                        "title": "Magnetic",
-                        "uri": "0jnjOOV5ENOT1mR6CapCxc"
-                    },
-                    {
-                        "artist": "Marc Maurer",
-                        "title": "Say No",
-                        "uri": "3YF20TqyfVjlOLCGFdAwc4"
-                    },
-                    {
-                        "artist": "Marc Martel",
-                        "title": "Magnetic (Live)",
-                        "uri": "5psoyjiRtIK3ACmAXmecG7"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Ian William Craig",
-                        "title": "Far and then Farther",
-                        "uri": "5Lz34wsZyCzgtJMYH7ywHw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ian William Craig",
-                        "title": "Far and then Farther",
-                        "uri": "5Lz34wsZyCzgtJMYH7ywHw"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ashley Paul",
-                        "title": "A Feeling",
-                        "uri": "7kLNhHYr0SchCs8WmC05GJ"
-                    },
-                    {
-                        "artist": "Ashley Paul",
-                        "title": "Cage",
-                        "uri": "3hksMkbGyyZn5Wkg4EYQ58"
-                    },
-                    {
-                        "artist": "Ashley Paul",
-                        "title": "Arms",
-                        "uri": "1PEKjuqcNL7MaJwezkxE8W"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Patrick Shiroishi",
-                        "title": "Tule Lake Like Yesterday",
-                        "uri": "1TU5TTFHfVF7IA6RIHlrMa"
-                    },
-                    {
-                        "artist": "Patrick Shiroishi",
-                        "title": "Tule Lake Like Yesterday",
-                        "uri": "46WacuVR8kc8qSAVGTrS5s"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Patrick Shiroishi",
-                        "title": "Tule Lake Like Yesterday",
-                        "uri": "1TU5TTFHfVF7IA6RIHlrMa"
-                    },
-                    {
-                        "artist": "Patrick Shiroishi",
-                        "title": "Tule Lake Like Yesterday",
-                        "uri": "46WacuVR8kc8qSAVGTrS5s"
-                    },
-                    {
-                        "artist": "Patrick Shiroishi",
-                        "title": "Beachside Lonelyhearts",
-                        "uri": "160AFJmEGfc4iye8Vc8bck"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Khotin",
-                        "title": "Something Is Happening To Me",
-                        "uri": "66sgXdzz0Fn497ezwyDvJP"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Khotin",
-                        "title": "Something Is Happening To Me",
-                        "uri": "66sgXdzz0Fn497ezwyDvJP"
-                    },
-                    {
-                        "artist": "Khotin",
-                        "title": "Dwellberry",
-                        "uri": "6924XH4uThVPk4CpFv30gG"
-                    },
-                    {
-                        "artist": "Khotin",
-                        "title": "Groove 32",
-                        "uri": "6658u0EPu6u0x9r5A4qT4h"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "LI YILEI",
-                        "title": "CHU / 處",
-                        "uri": "3BISxa1qpfWo6lGzN37Dlu"
-                    },
-                    {
-                        "artist": "LI YILEI",
-                        "title": "CHU / 處",
-                        "uri": "5D4LseymlE9t3nEZCMtEYN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "LI YILEI",
-                        "title": "CHU / 處",
-                        "uri": "3BISxa1qpfWo6lGzN37Dlu"
-                    },
-                    {
-                        "artist": "LI YILEI",
-                        "title": "CHU / 處",
-                        "uri": "5D4LseymlE9t3nEZCMtEYN"
-                    },
-                    {
-                        "artist": "LI YILEI",
-                        "title": "WEI / 未",
-                        "uri": "3KgPcryUqdP51yIINuc3Hy"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Francesco Cavaliere",
-                        "title": "TESSERA di scale che paiono scomparire",
-                        "uri": "1syGy62AqaMz3MOcFURd0a"
-                    },
-                    {
-                        "artist": "Giuseppe Verdi",
-                        "title": "Il Trovatore / Act 3: \"Di quella pira\"",
-                        "uri": "0rzDX4x0oSI2Gs3mPEvoIl"
-                    },
-                    {
-                        "artist": "Francesco Cavalli",
-                        "title": "Musiche sacre concernenti messa, e salmi concertati con istromenti, imni, antifone et sonate: Canzon a 3",
-                        "uri": "7t7EWUauVFKkZYQT8QopK2"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Nicolas Gaunin",
-                        "title": "Mahiki",
-                        "uri": "7x2S9F6kEJPg9p6xvXiEFs"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nicolas Gaunin",
-                        "title": "Mahiki",
-                        "uri": "7x2S9F6kEJPg9p6xvXiEFs"
-                    },
-                    {
-                        "artist": "Nicolas Godin",
-                        "title": "Quartier Général",
-                        "uri": "5GiQZvOqB4bgS2Zb27OrvB"
-                    },
-                    {
-                        "artist": "Nicholas Gunn",
-                        "title": "New World",
-                        "uri": "34xYtQCWgK1NupwDMyJQsn"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Howie Lee",
-                        "title": "The Reflexed Bamboo",
-                        "uri": "6R0P5F2CowuG2XRlaYciCa"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Birdy Island",
-                        "uri": "0iv4BGKr8nxhztI5NFBNLG"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Birdy Island - Kupla Remix",
-                        "uri": "72cJXN5TaXLLRfvx9w5Hqd"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Psychic Reality",
-                        "title": "META / Meta-Prayer",
-                        "uri": "27BUshBRtRZbSfO5eqyM1Q"
-                    },
-                    {
-                        "artist": "Psychic Reality",
-                        "title": "OMNI / Omni",
-                        "uri": "1qgB1qjtxhpzFIwqFqzZdf"
-                    },
-                    {
-                        "artist": "Psychic Reality",
-                        "title": "Index of First Lines",
-                        "uri": "2ixtBWF21mchmVmU9x5oNP"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Beverly Glenn-Copeland",
-                        "title": "Old Melody",
-                        "uri": "7eGQIaS1fUBxL7WMMLv138"
-                    },
-                    {
-                        "artist": "Beverly Glenn-Copeland",
-                        "title": "Old (New) Melody - Ana Roxanne Remix",
-                        "uri": "6KgihT7YsQoyR2nkBiTFGI"
-                    },
-                    {
-                        "artist": "Beverly Glenn-Copeland",
-                        "title": "Old (New) Melody - Ana Roxanne Remix",
-                        "uri": "28pSyaR0BtICVBrDqW1c9q"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Beverly Glenn-Copeland",
-                        "title": "Old Melody",
-                        "uri": "7eGQIaS1fUBxL7WMMLv138"
-                    },
-                    {
-                        "artist": "Beverly Glenn-Copeland",
-                        "title": "Ever New",
-                        "uri": "6nXk3XcfNmwtig7acQxRbc"
-                    },
-                    {
-                        "artist": "Beverly Glenn-Copeland",
-                        "title": "Old (New) Melody - Ana Roxanne Remix",
-                        "uri": "6KgihT7YsQoyR2nkBiTFGI"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Binaural Frequencies",
-                        "title": "741 Hz Throat Chakra Mah",
-                        "uri": "0zr9JDOVdatUkPYmmeFoUz"
-                    },
-                    {
-                        "artist": "Ambient Stream",
-                        "title": "741Hz Throat Chakra Healing",
-                        "uri": "27Bd4tTlLESsspYuclq2ZO"
-                    },
-                    {
-                        "artist": "Float Waves",
-                        "title": "Throat Chakra - Sound",
-                        "uri": "6DR7ZnxgUPHZbZOWFfP7cp"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Berioska",
-                        "title": "Netsujou No Spectrum (Nanatsu No Taizai)",
-                        "uri": "6c3yCaY09UIRJj2v5acK2a"
-                    },
-                    {
-                        "artist": "あかせあかり",
-                        "title": "恋ノ行方",
-                        "uri": "1ognDP1UWqfcPaOvlzTCXx"
-                    },
-                    {
-                        "artist": "Ryuven",
-                        "title": "Kyoumen no Nami (From \"Houseki no Kuni\") - 鏡面の波",
-                        "uri": "1Xhy1gBPc2441AMBp8ztgY"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Aleksi Perälä",
+            "ratio": 6,
+            "title": "FI3AC2262020",
+            "trackid": "4WNUY9XTsp7G2tgoS5ayvg"
         },
-        "foodman-12th-may-2021": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Sakurakou K-ON Bu",
-                        "title": "Fuwa Fuwa Time",
-                        "uri": "05XoZNL3OMdegGO0SnrHWD"
-                    },
-                    {
-                        "artist": "Toitoitoi",
-                        "title": "Kumamoto San - Live at Nishieifuku JAM,Tokyo,2020",
-                        "uri": "3y4AwT9vkdgBjStAYWsmZ8"
-                    },
-                    {
-                        "artist": "Ho - Kago Tea Time",
-                        "title": "Fuwa Fuwa Time - Ep. 23 \"Ho-Kago!\" Mix",
-                        "uri": "4ODRsGI16zffK1S5xn0Iqb"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Hakase-sun",
-                        "title": "Song Cycle",
-                        "uri": "2rX6ILdJOIiolSRChmTreL"
-                    },
-                    {
-                        "artist": "Hakase-sun",
-                        "title": "Song Cycle (2008 Brand-New Mix)",
-                        "uri": "3SvcZrNZJxnlkRHtHhyn4C"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Hakase-sun",
-                        "title": "Curly Moon Serenade",
-                        "uri": "2jnaXvQ4JRo8cWzc1xd3bX"
-                    },
-                    {
-                        "artist": "SonHisako",
-                        "title": "Hakaishin",
-                        "uri": "4hjjQBBgnE8jZwi69j2WeH"
-                    },
-                    {
-                        "artist": "Hakase-sun",
-                        "title": "Sky Song",
-                        "uri": "0715tLoU7EWa6ABlNekF3p"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ACN Music.",
-                        "title": "Nijyuugo",
-                        "uri": "3j8Zp3id0dCUmWxbg4KXh6"
-                    },
-                    {
-                        "artist": "Luck Ganriki",
-                        "title": "Kiri no Pithos - Acoustic Ver",
-                        "uri": "6YOi0MfsKNzUfT8lINlaf4"
-                    },
-                    {
-                        "artist": "Akari Mochizuki",
-                        "title": "Kiri No London Ai",
-                        "uri": "77hOaDUzhyl2LsRgdRoRyM"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "THE BOOM",
-                        "title": "星のラブレター",
-                        "uri": "3xoDydV1CucgOcVHIsH3m4"
-                    },
-                    {
-                        "artist": "THE BOOM",
-                        "title": "星のラブレター",
-                        "uri": "427sXFw1bfj3Q0mqouglzt"
-                    },
-                    {
-                        "artist": "THE BOOM",
-                        "title": "手紙",
-                        "uri": "1itmaV32q846K6mtEAdtcs"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": ""
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "MJ Kangasniemi",
-                        "title": "TAM TAM",
-                        "uri": "6ya7wAZymTFUiVC8admL41"
-                    },
-                    {
-                        "artist": "DJ Flex",
-                        "title": "Tam Tam",
-                        "uri": "7EhceDNLTOqgTBtuKwpAfp"
-                    },
-                    {
-                        "artist": "3-57",
-                        "title": "Tam Tam",
-                        "uri": "3fMlA9IvlfUvt9nRuJouA0"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "EGO-WRAPPIN’",
-                        "title": "a love song",
-                        "uri": "2V5UfyeVpXBZgvNajmt3nx"
-                    },
-                    {
-                        "artist": "EGO-WRAPPIN' & DETERMINATIONS",
-                        "title": "A Love Song - Featuring DETERMINATIONS",
-                        "uri": "4A3tKyw9wzB77P936NGyaV"
-                    },
-                    {
-                        "artist": "EGO-WRAPPIN’",
-                        "title": "A Love Song",
-                        "uri": "3VDeiH9fpJHRUfzwjtm3OH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "EGO-WRAPPIN’",
-                        "title": "a love song",
-                        "uri": "2V5UfyeVpXBZgvNajmt3nx"
-                    },
-                    {
-                        "artist": "Willy William",
-                        "title": "Ego - Radio Edit",
-                        "uri": "7g3HQ4npoO3Zrp9Zia0J0E"
-                    },
-                    {
-                        "artist": "Rag'n'Bone Man",
-                        "title": "Ego",
-                        "uri": "7negGXQVV3htbu8ylS59Ur"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "The eskargot miles",
-                        "title": "老人と星",
-                        "uri": "4fMzBAsPxnHJwMQaGO2MGp"
-                    },
-                    {
-                        "artist": "The eskargot miles",
-                        "title": "PENINSULA",
-                        "uri": "4KWLZwZTqPnGK1XR4xi5OG"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Tico & icchie",
-                        "title": "オリビアを聴きながら feat.チエコ・ビューティー",
-                        "uri": "0UKoSomrbY5n1kzoQolmJ8"
-                    },
-                    {
-                        "artist": "The Black Market Trust",
-                        "title": "Tico Tico",
-                        "uri": "385JaZTfI5676RUcXfELR3"
-                    },
-                    {
-                        "artist": "Tico & icchie",
-                        "title": "FEELINGS feat.武田カオリ",
-                        "uri": "4H1tTv8T5OsQgi53K40W4R"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": ""
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "majiko",
-                        "title": "Kimi Ni Saigo No Kuchizuke Wo",
-                        "uri": "5thGRKzxnhbB9nE9tE8MNy"
-                    },
-                    {
-                        "artist": "FUNKIST",
-                        "title": "Ame no Hi no Aki",
-                        "uri": "7zJ3C0TRhdUpT0TYKtKFJ0"
-                    },
-                    {
-                        "artist": "Momoko Kikuchi",
-                        "title": "Ame no Realize",
-                        "uri": "4S6klET4P2ekoJb3IHkzSq"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fishmans",
-                        "title": "Ikareta Baby",
-                        "uri": "2iFRkiRwPzIaWfjRB3ZHX6"
-                    },
-                    {
-                        "artist": "Fishmans",
-                        "title": "Ikareta Baby",
-                        "uri": "1Ib4b2lZZTNCRmRAFNUymz"
-                    },
-                    {
-                        "artist": "Fishmans",
-                        "title": "Ikareta Baby",
-                        "uri": "3SBnxV8rkz6ZmbXGeoTiWF"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Marc Martel",
+            "ratio": 4,
+            "title": "Magnetic",
+            "trackid": "0jnjOOV5ENOT1mR6CapCxc"
         },
-        "foodman-16th-march-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Himekami",
-                        "title": "Hitori Shizuka",
-                        "uri": "5QO5Yg4IZqBxt99H13um19"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "MERCURIC DANCE/水銀~躍動の踊り",
-                        "uri": "2fXZxWhqV6YqpKsEoqID6S"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "MERCURIC DANCE/水銀~躍動の踊り",
-                        "uri": "2fXZxWhqV6YqpKsEoqID6S"
-                    },
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "最後の楽園",
-                        "uri": "3Q59MwvTzZveZTNunIQY1x"
-                    },
-                    {
-                        "artist": "Haruomi Hosono",
-                        "title": "スポーツマン (2019 Remastering)",
-                        "uri": "7wK3vFraZXIjVxOqObajAL"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Om Buschman",
-                        "title": "Klang Fängt An",
-                        "uri": "4KOjfvuPNiMz34n5cQNzt5"
-                    },
-                    {
-                        "artist": "Bushman",
-                        "title": "Creatures Of The Night",
-                        "uri": "21nI6wQbMY297WLsZuig3Y"
-                    },
-                    {
-                        "artist": "Anuradha Paudwal",
-                        "title": "Om Bhurbhuwasah",
-                        "uri": "3oj9ZcytkTaovswquxjzo1"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Outousen",
-                        "uri": "3CisE1wtJ5ZlUUVlRIRbvG"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Outousen",
-                        "uri": "3CisE1wtJ5ZlUUVlRIRbvG"
-                    },
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Ongoromochi Souji",
-                        "uri": "1peJy95lggmSY04Nh9LotF"
-                    },
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Denden",
-                        "uri": "6yQAC0ou6kYcs5LXFi3VlF"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Denden",
-                        "uri": "6yQAC0ou6kYcs5LXFi3VlF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Denden",
-                        "uri": "6yQAC0ou6kYcs5LXFi3VlF"
-                    },
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Mukashi",
-                        "uri": "13A3RC8lbrWYoovSvET8ZR"
-                    },
-                    {
-                        "artist": "SUGAI KEN",
-                        "title": "Ongoromochi Souji",
-                        "uri": "1peJy95lggmSY04Nh9LotF"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "KWC 92",
-                        "title": "Tai Tam Tuk",
-                        "uri": "6tC94dyara6ofDAYpbyZIp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "KWC 92",
-                        "title": "Tai Tam Tuk",
-                        "uri": "6tC94dyara6ofDAYpbyZIp"
-                    },
-                    {
-                        "artist": "Tai Tanawut",
-                        "title": "ไม่สมศักดิ์ศรี",
-                        "uri": "6S81L7uHiPJu3HSjT3Lvg1"
-                    },
-                    {
-                        "artist": "Omerta",
-                        "title": "Tai Tikra, Pt. 1",
-                        "uri": "1YixKeYTC37XecrOQ9ryl1"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "TCP",
-                        "title": "Desert Rain",
-                        "uri": "6QkKrPO84eGffuba5Vufsk"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nora Van Elken",
-                        "title": "Desert Rain",
-                        "uri": "5VFqSeVd3wV3f3RJ8VAfd4"
-                    },
-                    {
-                        "artist": "TCP",
-                        "title": "Desert Rain",
-                        "uri": "6QkKrPO84eGffuba5Vufsk"
-                    },
-                    {
-                        "artist": "Milca",
-                        "title": "TCPC - Tout ça pour ça",
-                        "uri": "3QWZiSdmLEOT96HwgHFpaZ"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Mark Barrott",
-                        "title": "Cirrus & Cumulus",
-                        "uri": "3CLLThUqGL2SMFNI73X9rh"
-                    },
-                    {
-                        "artist": "Mark Barrott",
-                        "title": "Cirrus & Cumulus",
-                        "uri": "7JHXBAcvBT51IkNCP5yeJn"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mark Barrott",
-                        "title": "Cirrus & Cumulus",
-                        "uri": "3CLLThUqGL2SMFNI73X9rh"
-                    },
-                    {
-                        "artist": "Mark Barrott",
-                        "title": "Cirrus & Cumulus",
-                        "uri": "7JHXBAcvBT51IkNCP5yeJn"
-                    },
-                    {
-                        "artist": "Bonobo",
-                        "title": "Cirrus",
-                        "uri": "2lJ4d8MCT6ZlDRHKJ1br14"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "DJ Sorama",
-                        "title": "State Of Mind",
-                        "uri": "7pFtaK9gpvN5aBWUJempp4"
-                    },
-                    {
-                        "artist": "Purulia Master",
-                        "title": "01 Purulia Dj 2021",
-                        "uri": "6HKmQLWi1xUCBHHD4j0dU6"
-                    },
-                    {
-                        "artist": "Dj Silvesta",
-                        "title": "Rumble",
-                        "uri": "19aUsDbwV6nsIXvitFmNG8"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Rüdiger Oppermann's Harp Attack",
-                        "title": "Troubadix In Afrika",
-                        "uri": "769ahSp4uiQ07ttaKn7L8d"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Rüdiger Oppermann's Harp Attack",
-                        "title": "Troubadix In Afrika",
-                        "uri": "769ahSp4uiQ07ttaKn7L8d"
-                    },
-                    {
-                        "artist": "Rüdiger Oppermann's Harp Attack",
-                        "title": "Neues aus Harfistan",
-                        "uri": "3RGfOej3wrBCZxMOp3QXqO"
-                    },
-                    {
-                        "artist": "Rüdiger Oppermann's Harp Attack",
-                        "title": "Encore!",
-                        "uri": "5CajMYjX8pUZ2iA0rvAjzL"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elderbrook",
-                        "title": "Inner Light",
-                        "uri": "40tPP3K10yMZxwnT65REKj"
-                    },
-                    {
-                        "artist": "Bob Moses",
-                        "title": "Boat Song, Pt. 1",
-                        "uri": "5BdHKNHK5XgchVezEHRO61"
-                    },
-                    {
-                        "artist": "Woodkid",
-                        "title": "Boat Song",
-                        "uri": "3nowisBpRXgEdp8c899vPo"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Fernando Falcão",
-                        "title": "Amanhecer Tabajara (À Alceu Valença)",
-                        "uri": "2j557i7D3n9cCRAvD1IP2p"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Fernando Falcão",
-                        "title": "Amanhecer Tabajara (À Alceu Valença)",
-                        "uri": "2j557i7D3n9cCRAvD1IP2p"
-                    },
-                    {
-                        "artist": "Fernando Falcão",
-                        "title": "Amanhecer Tabajara",
-                        "uri": "2HoDdVcdXcbcLCOgfAi7kL"
-                    },
-                    {
-                        "artist": "Doce",
-                        "title": "Amanhã De Manhã",
-                        "uri": "31jrZRwWQiIzyginZuMHs2"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Francis Bebey",
-                        "title": "Sunny Crypt",
-                        "uri": "1RnZ4xOFQhqR7qbIpE3KBw"
-                    },
-                    {
-                        "artist": "Francis Bebey",
-                        "title": "Sunny Crypt - Daniel Haaksman Edit",
-                        "uri": "4Hz0oO2KtYlgYKkQVcL8UF"
-                    },
-                    {
-                        "artist": "Francis Bebey",
-                        "title": "Sunny Crypt",
-                        "uri": "4JVg6TjTuKfYeOZuqs48mH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Francis Bebey",
-                        "title": "Sunny Crypt",
-                        "uri": "1RnZ4xOFQhqR7qbIpE3KBw"
-                    },
-                    {
-                        "artist": "Francis Bebey",
-                        "title": "Sunny Crypt - Daniel Haaksman Edit",
-                        "uri": "4Hz0oO2KtYlgYKkQVcL8UF"
-                    },
-                    {
-                        "artist": "Francis Bebey",
-                        "title": "Pygmy Love Song",
-                        "uri": "6K7Y22k1OdF1MwYFvHggqp"
-                    }
-                ]
-            }
+        "03": {
+            "artist": "Ian William Craig",
+            "ratio": 6,
+            "title": "Far and then Farther",
+            "trackid": "5Lz34wsZyCzgtJMYH7ywHw"
         },
-        "foodman-17th-february-2021": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "阿保 剛",
-                        "title": "GATE OF STEINER -Piano-",
-                        "uri": "1EyeHLX96JGGiF2l4tRvJR"
-                    },
-                    {
-                        "artist": "Gareth Coker",
-                        "title": "Kwolok's Hollow",
-                        "uri": "3HpazB7tsON7guTZ33T3Wq"
-                    },
-                    {
-                        "artist": "Kunning Fox",
-                        "title": "Gate",
-                        "uri": "6h7BxJX7TFEDPyO8UphGOs"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mick Gordon",
-                        "title": "Rip & Tear",
-                        "uri": "5soMJpcVhSrGrB4prvPL6P"
-                    },
-                    {
-                        "artist": "Mick Gordon",
-                        "title": "Bfg Division",
-                        "uri": "4COR2ZPEyUn0lsbAouRWxA"
-                    },
-                    {
-                        "artist": "Mick Gordon",
-                        "title": "At Doom's Gate",
-                        "uri": "2UKgx2oba7CltHLACr3xdT"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "TPR",
-                        "title": "Blazing Knights",
-                        "uri": "37GGKZu5ORHMRCnJmYJjWX"
-                    },
-                    {
-                        "artist": "Delldongo",
-                        "title": "Main Theme (From Xenoblade Chronicles)",
-                        "uri": "14kc7PSDy0leGPpwLSQvJY"
-                    },
-                    {
-                        "artist": "TPR",
-                        "title": "Intangible Treasure (from \"Xenogears\")",
-                        "uri": "48Rivg6m6cRJYJ1tvlzDgZ"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "GENTLE LOVE",
-                        "title": "Main Theme (Genso Suikoden)",
-                        "uri": "37WBsAUvnDAvQUPWBbJ0Cg"
-                    },
-                    {
-                        "artist": "GENTLE LOVE",
-                        "title": "Main Theme (from \"Genso Suikoden\")",
-                        "uri": "4ugCH9NxHDzeXdIxWuUB1O"
-                    },
-                    {
-                        "artist": "Friedrich Habetler",
-                        "title": "Genos Theme Version 2",
-                        "uri": "5mjTOBaG77oBerYJ8rDtNI"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Harry Gregson-Williams",
-                        "title": "Metal Gear Solid: Sons of Liberty Theme",
-                        "uri": "2Ft993NAjpq9v3ljhHrJtf"
-                    },
-                    {
-                        "artist": "Rich Douglas",
-                        "title": "Metal Gear Solid Theme",
-                        "uri": "54dwUPIjQBVOgNpEF9OQGD"
-                    },
-                    {
-                        "artist": "Jonas B. Ingebretsen",
-                        "title": "Metal Gear Solid - Epic version",
-                        "uri": "1CQo7wVGBkgevrG5vvw7gi"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mick Gordon",
-                        "title": "Rip & Tear",
-                        "uri": "5soMJpcVhSrGrB4prvPL6P"
-                    },
-                    {
-                        "artist": "Mick Gordon",
-                        "title": "Bfg Division",
-                        "uri": "4COR2ZPEyUn0lsbAouRWxA"
-                    },
-                    {
-                        "artist": "Mick Gordon",
-                        "title": "At Doom's Gate",
-                        "uri": "2UKgx2oba7CltHLACr3xdT"
-                    }
-                ]
-            }
+        "04": {
+            "artist": "Ashley Paul",
+            "ratio": 5,
+            "title": "A Feeling",
+            "trackid": "7kLNhHYr0SchCs8WmC05GJ"
         },
-        "foodman-17th-march-2021": {},
-        "foodman-24th-november-202": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Hubert Zemler",
-                        "title": "Propolis",
-                        "uri": "1KmSzQOxoO61M5sTomxIbp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Hubert Zemler",
-                        "title": "Good Luck for soprano, piano and percussion",
-                        "uri": "0WnT5AprruTVHd05tPNANQ"
-                    },
-                    {
-                        "artist": "Hubert Seipel",
-                        "title": "Prolog.6 & 1 Deutschlands langer Abschied von Amerika.1 - Putins Macht",
-                        "uri": "4wIZKat3d2dVa4qYrL3IJN"
-                    },
-                    {
-                        "artist": "Hubert Seipel",
-                        "title": "Prolog.3 - Putins Macht",
-                        "uri": "7cyUgxDngepyxL3bno2q7Q"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Giuseppe Ielasi",
-                        "title": "8",
-                        "uri": "3wmUTzzlvAfA644IQSQhBi"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Giuseppe Ielasi",
-                        "title": "8",
-                        "uri": "3wmUTzzlvAfA644IQSQhBi"
-                    },
-                    {
-                        "artist": "Giuseppe Ielasi",
-                        "title": "3",
-                        "uri": "23dFiDoAtYuZWPZZ92BcjC"
-                    },
-                    {
-                        "artist": "Giuseppe Ielasi",
-                        "title": "1",
-                        "uri": "455Ckg7jOwfglE0q9wjMWw"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Joanna Duda",
-                        "title": "Kibo",
-                        "uri": "5gnykxwxZbnAZSBdSE0ImI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Dayana",
-                        "title": "Joanna",
-                        "uri": "3aYsoJU6NMjqHfrSM4lGpo"
-                    },
-                    {
-                        "artist": "Joanna Duda",
-                        "title": "Biały czarny hipis",
-                        "uri": "1C47mFFKdjXFpTiRkrOX7C"
-                    },
-                    {
-                        "artist": "Joanna Duda Trio",
-                        "title": "Louis",
-                        "uri": "7G3j14z69y8zh9Pd5sHRdl"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Noah Creshevsky",
-                        "title": "Canto di Malavita",
-                        "uri": "3l389rSeYMawjOm2O3SprW"
-                    },
-                    {
-                        "artist": "Noah Creshevsky",
-                        "title": "Memento Mori",
-                        "uri": "6GIfG5xi2n40gK5QZ9RCwD"
-                    },
-                    {
-                        "artist": "Noah Creshevsky",
-                        "title": "Rounded With a Sleep",
-                        "uri": "0umlNk7hsbMU9zR2QHnW3I"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Time Wharp",
-                        "title": "Ingenue",
-                        "uri": "4wDOsKfkIhjDQuKY6m1UmZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Time Wharp",
-                        "title": "Ingenue",
-                        "uri": "4wDOsKfkIhjDQuKY6m1UmZ"
-                    },
-                    {
-                        "artist": "Little Nell",
-                        "title": "Time Warp",
-                        "uri": "4WFeJTXNHIS2wURtwlAkhu"
-                    },
-                    {
-                        "artist": "Apashe",
-                        "title": "Time Warp - Level Up Remix",
-                        "uri": "08TwV7Ng8Iqb3arlNBVlf1"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Savath & Savalas",
-                        "title": "Paisaje",
-                        "uri": "0x53QqjfrKmHaLndGW53vZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Savath & Savalas",
-                        "title": "Paisaje",
-                        "uri": "0x53QqjfrKmHaLndGW53vZ"
-                    },
-                    {
-                        "artist": "Savath & Savalas",
-                        "title": "Introducción",
-                        "uri": "7eArZubqM5QaGMHgBG9vEW"
-                    },
-                    {
-                        "artist": "Savath & Savalas",
-                        "title": "Pajaros en Cadaques",
-                        "uri": "0oL3GbHYpV4KdgUcJViN71"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Antonio Loureiro",
-                        "title": "A Partir",
-                        "uri": "4BeeY6NfG2hMVkx0j99oHn"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Antonio Loureiro",
-                        "title": "A Partir",
-                        "uri": "4BeeY6NfG2hMVkx0j99oHn"
-                    },
-                    {
-                        "artist": "Leonora Weissmann",
-                        "title": "A Partir",
-                        "uri": "3pupvzS62BLVgEON6oZxx3"
-                    },
-                    {
-                        "artist": "David Bisbal",
-                        "title": "A Partir De Hoy",
-                        "uri": "3Z7JMhKrVBiMvMd0xV1vyI"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Causa Sui",
-                        "title": "Eternal Flow",
-                        "uri": "57UAv9mvAvVhcUy5Fht9Z7"
-                    },
-                    {
-                        "artist": "Free Flow Flava",
-                        "title": "Eternal",
-                        "uri": "0MZjIDSWEfjXHBZFrYbp9S"
-                    },
-                    {
-                        "artist": "John Oeth",
-                        "title": "Main Theme (From “Suikoden”) - Acoustic Guitar",
-                        "uri": "3afdbhWUFCalyJwtHhFye1"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Soushi Sakiyama",
-                        "title": "嘘じゃない",
-                        "uri": "0ayjyEFPDtTlWQcSbT407P"
-                    },
-                    {
-                        "artist": "Sou",
-                        "title": "Shishunki Shounen Shoujo",
-                        "uri": "4Gq5HnEcY2w46SEC7zSg5u"
-                    },
-                    {
-                        "artist": "Nosllyah",
-                        "title": "Hoshi ほし",
-                        "uri": "7MZykygmlpg06IgQuH2UI7"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": ""
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Tomita Lab.",
-                        "title": "パスワード",
-                        "uri": "58Dl8RRRMlXiXJ3pZzjxGY"
-                    },
-                    {
-                        "artist": "Tomita Lab.",
-                        "title": "眠りの森",
-                        "uri": "2CPlY5tdjvl05Uv6XdUugH"
-                    },
-                    {
-                        "artist": "Tomita Lab.",
-                        "title": "OCEAN",
-                        "uri": "1owEyYpcOt2d9v6evEw9HK"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Girls' Generation",
-                        "title": "Lion Heart",
-                        "uri": "405SQUJdQut02dxtuQ0CZ3"
-                    },
-                    {
-                        "artist": "Stephan Moccio",
-                        "title": "Lionheart",
-                        "uri": "65a1ng2xAbaRbYWsq9H2MH"
-                    },
-                    {
-                        "artist": "Lionheart",
-                        "title": "Burn",
-                        "uri": "2cCjbc8VbivVi2b0OqPfFU"
-                    }
-                ]
-            },
-            "12": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Imaginary Softwoods",
-                        "title": "Poisitive Ruin Court Garden",
-                        "uri": "7p1UtxQ6PX2dpchOg0LHqL"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Kate NV",
-                        "title": "двa TWO",
-                        "uri": "0ycbHO4SfIOGKkviEO1GK1"
-                    },
-                    {
-                        "artist": "Kate NV",
-                        "title": "Kata",
-                        "uri": "65Z94VSjcmkV8qFz4GoyFE"
-                    },
-                    {
-                        "artist": "Kate NV",
-                        "title": "yxo EAR",
-                        "uri": "14q97Aiy5iCKccxXw05j1M"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Sun Araw",
-                        "title": "Roomboe",
-                        "uri": "3u9dWMVi1hRCCbyyAlsX0p"
-                    },
-                    {
-                        "artist": "Sun Araw",
-                        "title": "Roomboe - edit",
-                        "uri": "15eimApikaZg5KbfL0gdJv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sun Araw",
-                        "title": "Roomboe",
-                        "uri": "3u9dWMVi1hRCCbyyAlsX0p"
-                    },
-                    {
-                        "artist": "Sun Araw",
-                        "title": "Deep Cover",
-                        "uri": "6rne7RR7YOkAuRYeNP9GQT"
-                    },
-                    {
-                        "artist": "Sun Araw",
-                        "title": "Roomboe - edit",
-                        "uri": "15eimApikaZg5KbfL0gdJv"
-                    }
-                ]
-            },
-            "15": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Enter the Tigerwoods",
-                        "uri": "7CYeAbYjmY0fouThH0ZUq5"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Enter the Tigerwoods",
-                        "uri": "6p5lkplOeUM9t9AsLI7KpK"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Enter the Tigerwoods - Foodman Remix",
-                        "uri": "5loi3Zp8E9ZwIrS6bUHuuX"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Yoshiharu Takeda",
-                        "title": "Fluffy Asia",
-                        "uri": "5Uyz5JmZOqkVIqNTwk86EO"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Yoshiharu Takeda",
-                        "title": "Fluffy Asia",
-                        "uri": "5Uyz5JmZOqkVIqNTwk86EO"
-                    },
-                    {
-                        "artist": "Fluffy Fluff",
-                        "title": "Ripple",
-                        "uri": "3Fyezjj6Nk9JWSkXkFncEZ"
-                    },
-                    {
-                        "artist": "NoCloudSky",
-                        "title": "Fluffy",
-                        "uri": "0s050M5SSv4hLyZ73cg5oh"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Sarah Davachi",
-                        "title": "Gold Upon White",
-                        "uri": "5c3hnbat8WOXEGetNDjtWA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sarah Davachi",
-                        "title": "Magdalena",
-                        "uri": "3gxRNUi2suxMo7QV7maZcu"
-                    },
-                    {
-                        "artist": "Sarah Davachi",
-                        "title": "Border of Mind",
-                        "uri": "30rDtjHJ2dbsTMhsiYk5Kb"
-                    },
-                    {
-                        "artist": "Sarah Davachi",
-                        "title": "Garlands",
-                        "uri": "5SMrvHvUEU8NJohwwcSOO0"
-                    }
-                ]
-            }
+        "05": {
+            "artist": "Patrick Shiroishi",
+            "ratio": 6,
+            "title": "Tule Lake Like Yesterday",
+            "trackid": "1TU5TTFHfVF7IA6RIHlrMa"
         },
-        "foodman-26th-november-2020": {},
-        "foodman-29th-october-2020": {},
-        "foodman-4th-august-2021": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "foodman",
-                        "title": "Hoshikuzu Tenboudai",
-                        "uri": "4KXBdopxHq9KVemwpazP4q"
-                    },
-                    {
-                        "artist": "Hinako Omori",
-                        "title": "Levitation - Foodman Remix",
-                        "uri": "7EisbUAsSTYAJyPuyD2bX3"
-                    },
-                    {
-                        "artist": "foodman",
-                        "title": "Kazunoko",
-                        "uri": "0cWwpeW31wwgO6ABbkDYhY"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Kurup",
-                        "title": "Colar de Concha",
-                        "uri": "33rYnAKfiNJbv2qOgFHH7X"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kurup",
-                        "title": "Colar de Concha",
-                        "uri": "33rYnAKfiNJbv2qOgFHH7X"
-                    },
-                    {
-                        "artist": "Kurup",
-                        "title": "Joeira",
-                        "uri": "5iwPcA04s2ERIN3W5QsFAN"
-                    },
-                    {
-                        "artist": "Kurup",
-                        "title": "Bossa a La Calle",
-                        "uri": "1SGJDMtZZnfWDeODTM6Nba"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Nicola Cruz",
-                        "title": "Cumbia del Olvido",
-                        "uri": "1oCHMNWzKJdwdwjsPMjXf3"
-                    },
-                    {
-                        "artist": "Uproot Andy",
-                        "title": "El Botellon",
-                        "uri": "6YNTm3e2PAGsZPDshXRZN3"
-                    },
-                    {
-                        "artist": "Nicola Cruz",
-                        "title": "El Baile del Nahual - Original",
-                        "uri": "3wgXcLEiut4wHohfdrR0Xa"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Jose Larralde",
-                        "title": "Quimey Neuquen",
-                        "uri": "3oRaLG3ZDqXNN4BXhBClrY"
-                    },
-                    {
-                        "artist": "Jose Larralde",
-                        "title": "Quimey Neuquen",
-                        "uri": "4w0MywBTfDOg9g22CSuP9T"
-                    },
-                    {
-                        "artist": "Jose Larralde",
-                        "title": "Quimey Neuquen",
-                        "uri": "3cEzrlp1QLpIcbRs1zGN3w"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Paul Traeumer",
-                        "title": "Offworld Colonies",
-                        "uri": "1WAnp87TmhSjJ0NadMbXXJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Paul Traeumer",
-                        "title": "Offworld Colonies",
-                        "uri": "1WAnp87TmhSjJ0NadMbXXJ"
-                    },
-                    {
-                        "artist": "Paul Traeumer",
-                        "title": "Lomax Autro",
-                        "uri": "0gUdJPMwxpooOjCLaP3KTM"
-                    },
-                    {
-                        "artist": "Paul Traeumer",
-                        "title": "Panic Now and Avoid the Rush",
-                        "uri": "4Wz7E93uw8IiY6jJcsNQCZ"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Socek",
-                        "title": "Yákêjan",
-                        "uri": "5b94HVKpoHLZTMyu5NgLAZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Socek",
-                        "title": "Yákêjan",
-                        "uri": "5b94HVKpoHLZTMyu5NgLAZ"
-                    },
-                    {
-                        "artist": "Sokos",
-                        "title": "Dół",
-                        "uri": "3W2wtexHscJpRpDk4TkImK"
-                    },
-                    {
-                        "artist": "Dušan Jamrich",
-                        "title": "Finist jasný sokol",
-                        "uri": "5PBod0GoMuZg9RETt2jddm"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Barrio Lindo",
-                        "title": "Paulista",
-                        "uri": "3HsQdzqEMTCZKHcWoqX3wc"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "celina mosalve",
-                        "title": "Barrio Lindo",
-                        "uri": "32uaHErAAC5TGzxAwmFlPp"
-                    },
-                    {
-                        "artist": "Barrio Lindo",
-                        "title": "Capuchino Pecho Blanco",
-                        "uri": "3TJJUnoVRb6mEqIPaNcxzf"
-                    },
-                    {
-                        "artist": "Barrio Lindo",
-                        "title": "Na Rúa",
-                        "uri": "64wjx7XYhEpR6wgax8OvXH"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Eek-A-Mouse",
-                        "title": "Lips",
-                        "uri": "6STQk4TvcjAiNdYCMFDLpl"
-                    },
-                    {
-                        "artist": "Eek-A-Mouse",
-                        "title": "Lips - Weirdest Dream Remix",
-                        "uri": "7N1qA0Jl93SMJ63vJv8XkA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Eek-A-Mouse",
-                        "title": "Noah's Ark",
-                        "uri": "19pACC5tXBPnLSjZLEPXUz"
-                    },
-                    {
-                        "artist": "Eek-A-Mouse",
-                        "title": "Anarexol (12\")",
-                        "uri": "0C8bP2Km8MCdtQb8MJzoPP"
-                    },
-                    {
-                        "artist": "Eek-A-Mouse",
-                        "title": "Operation Eradication",
-                        "uri": "7yoCxe2HUbf5phZNiQf1Mh"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Manasseh",
-                        "title": "When the Dub - Dub Mix",
-                        "uri": "3gg5z9Fc6TfY5iBbTFyoFb"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Manasseh",
-                        "title": "When the Dub - Dub Mix",
-                        "uri": "3gg5z9Fc6TfY5iBbTFyoFb"
-                    },
-                    {
-                        "artist": "Manasseh",
-                        "title": "Natural Roots Orig. 12\" Mix",
-                        "uri": "0T1SND0r2KUJRq0UB33Ojo"
-                    },
-                    {
-                        "artist": "Manasseh",
-                        "title": "Clash Version",
-                        "uri": "4bEUeDOM2i1RRHWupOsID7"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "123Mrk",
-                        "title": "Invisible Colors - Deft Remix",
-                        "uri": "2K3mCYk2j5SWStBPp2wSST"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "123Mrk",
-                        "title": "Invisible Colors - Deft Remix",
-                        "uri": "2K3mCYk2j5SWStBPp2wSST"
-                    },
-                    {
-                        "artist": "123Mrk",
-                        "title": "Invisible Colors",
-                        "uri": "6k0TDy3wJZCFoGClT21ti1"
-                    },
-                    {
-                        "artist": "123Mrk",
-                        "title": "Invisible Colors - Totte Remix",
-                        "uri": "13x3qIxmm2hGs4FLZBxCVK"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Talvin Singh",
-                        "title": "Butterfly",
-                        "uri": "4DUsclIvDe7sU5KRvTQ6St"
-                    },
-                    {
-                        "artist": "Talvin Singh",
-                        "title": "Butterfly",
-                        "uri": "2HpFkymLRYnbwZ7j2coAKQ"
-                    },
-                    {
-                        "artist": "Talvin Singh",
-                        "title": "Butterfly - Bass Flo Remix",
-                        "uri": "0v8ll3s2G2tb1Fu4aEUWiA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Talvin Singh",
-                        "title": "Butterfly",
-                        "uri": "4DUsclIvDe7sU5KRvTQ6St"
-                    },
-                    {
-                        "artist": "Talvin Singh",
-                        "title": "Butterfly",
-                        "uri": "2HpFkymLRYnbwZ7j2coAKQ"
-                    },
-                    {
-                        "artist": "Talvin Singh",
-                        "title": "Butterfly - Bastido Cartel",
-                        "uri": "58AsRNqYk6KKOhhrKtzhF0"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fally Ipupa",
-                        "title": "Migrants des rêves (feat. Youssou N'Dour)",
-                        "uri": "7wMe273uHj4r5mfT5phLFx"
-                    },
-                    {
-                        "artist": "Grupo La Migra",
-                        "title": "Sea Por Dios",
-                        "uri": "6eGP19ni5NECYk6NPo5vgL"
-                    },
-                    {
-                        "artist": "Santana",
-                        "title": "Migra",
-                        "uri": "7ksmIMXBwhNRX04sZYwThO"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Ours Samplus",
-                        "title": "Blue Bird",
-                        "uri": "5Ub65lHOysyiaNEw0l1fkm"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ours Samplus",
-                        "title": "Blue Bird",
-                        "uri": "5Ub65lHOysyiaNEw0l1fkm"
-                    },
-                    {
-                        "artist": "Berioska",
-                        "title": "Blue Bird (Naruto Shippuden) [feat. Animelmack]",
-                        "uri": "2vj8P04EKqI4762sraf4Xz"
-                    },
-                    {
-                        "artist": "AmaLee",
-                        "title": "Blue Bird (From \"Naruto Shippuden\")",
-                        "uri": "2EQ8B3wtsFtczKVlH6OE5J"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "VJ Awax",
-                        "title": "Magali - Edit",
-                        "uri": "3NAPOf3funpcFwr80heQZR"
-                    },
-                    {
-                        "artist": "Zuma Dionys",
-                        "title": "Maugli",
-                        "uri": "1IeQE6cPFJzPcidO3hr2jq"
-                    },
-                    {
-                        "artist": "MAUGLI",
-                        "title": "Trouble",
-                        "uri": "3AallkYiZUVKHFcFX92zL4"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "阿悠悠",
-                        "title": "旧梦一场 - Dj沈念",
-                        "uri": "1y8adJOiGVLR7LGXeNVGsz"
-                    },
-                    {
-                        "artist": "游振强",
-                        "title": "她的激情节奏",
-                        "uri": "6ttYEunw5dOAp2Z5hMiykM"
-                    },
-                    {
-                        "artist": "等什么君",
-                        "title": "赤伶 - DJ名龙 Remix",
-                        "uri": "6Zji7lINhdDJHeWO45oRTd"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Numa Gama",
-                        "title": "Twig People (Seres De Madeira)",
-                        "uri": "41pD10gA3c419p4HhPYqke"
-                    },
-                    {
-                        "artist": "Numa Gama",
-                        "title": "Twig People (Seres De Madeira) - Single Version",
-                        "uri": "6yygc2Q486Y2iTalOLcg9G"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Numa Gama",
-                        "title": "Twig People (Seres De Madeira)",
-                        "uri": "41pD10gA3c419p4HhPYqke"
-                    },
-                    {
-                        "artist": "Numa Gama",
-                        "title": "Twig People (Seres De Madeira) - Single Version",
-                        "uri": "6yygc2Q486Y2iTalOLcg9G"
-                    },
-                    {
-                        "artist": "Numa Gama",
-                        "title": "Escute Aguas",
-                        "uri": "6OXArjy6WWp5x3v965UOxm"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Japãozin",
-                        "title": "Saudade da Danada",
-                        "uri": "4bCoZEsdbcdEgoUoWgplHR"
-                    },
-                    {
-                        "artist": "Furmiga Dub",
-                        "title": "Caiporas e Armadilhas",
-                        "uri": "53xv1BEQdWF5gLOhhLFwyQ"
-                    },
-                    {
-                        "artist": "Rïa Mehta",
-                        "title": "Saudades - Sunrise Mix",
-                        "uri": "3QF4lbRL5uhWgJIPgPgJtu"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "O Rappa",
-                        "title": "Take It Easy My Brother Charles",
-                        "uri": "2vnyPdtP79ne7m6SZ5OCWy"
-                    },
-                    {
-                        "artist": "O Rappa",
-                        "title": "Take It Easy My Brother Charles",
-                        "uri": "1GOOCkzU49Prhly4IwzPGp"
-                    },
-                    {
-                        "artist": "O Rappa",
-                        "title": "Take It Easy My Brother Charles",
-                        "uri": "02lbQQD02TTcD4ggfNKJnN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "O Rappa",
-                        "title": "Take It Easy My Brother Charles",
-                        "uri": "2vnyPdtP79ne7m6SZ5OCWy"
-                    },
-                    {
-                        "artist": "O Rappa",
-                        "title": "Take It Easy My Brother Charles",
-                        "uri": "1dMKLyW2Mk5ACkcikwvzLI"
-                    },
-                    {
-                        "artist": "O Rappa",
-                        "title": "Take It Easy My Brother Charles",
-                        "uri": "5txsaDYKEbhYUDTYqHEWON"
-                    }
-                ]
-            }
+        "06": {
+            "artist": "Khotin",
+            "ratio": 6,
+            "title": "Something Is Happening To Me",
+            "trackid": "66sgXdzz0Fn497ezwyDvJP"
         },
-        "foodman-6th-august-2020": {},
-        "foodman-9th-july-2020": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Quintette du Hot Club de France",
-                        "title": "Undecided",
-                        "uri": "18GyrRW13cdGDQMFDpv0wP"
-                    },
-                    {
-                        "artist": "The Quintet of the Hot Club of San Francisco",
-                        "title": "Armando's Rumba",
-                        "uri": "6LWXuMo5nnA2o5V99Seyfe"
-                    },
-                    {
-                        "artist": "The Quintet of the Hot Club of San Francisco",
-                        "title": "Jitterbug Waltz",
-                        "uri": "1OtZwHeEbAhkHgNQvn2bZx"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": ""
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Samuel Kim",
-                        "title": "Zankyou Sanka - Epic Version (Demon Slayer Season 2 Opening)",
-                        "uri": "3EbsTJzwwcjAQWppFYrqKk"
-                    },
-                    {
-                        "artist": "Miura Jam",
-                        "title": "Zankyou Sanka (From \"Demon Slayer: Kimetsu no Yaiba\")",
-                        "uri": "6vuAd52DiGkV71udjx7bJ5"
-                    },
-                    {
-                        "artist": "dj-Jo",
-                        "title": "Zankyou Sanka - Remix",
-                        "uri": "71ScqZ2cukSUlRNHTftjpi"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": ""
-            },
-            "04": {
-                "s0": "",
-                "s1": ""
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Kohrogi",
-                        "title": "Nori Tamago",
-                        "uri": "0QFVhNdCWVbpPiKMcBGa18"
-                    },
-                    {
-                        "artist": "Aliceliese Lou Nebulis Ⅸ (CV:Sora Amamiya)",
-                        "title": "Koori no Torikago",
-                        "uri": "78iHEbYiVPvlulxA0jsR1P"
-                    },
-                    {
-                        "artist": "ACN Music.",
-                        "title": "Kotori No Etude",
-                        "uri": "0cMARIoPMUEx2adguxNp0e"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "MoppySound",
-                        "title": "White Violet",
-                        "uri": "4wuvxNkhJtO80m3raeg2A5"
-                    },
-                    {
-                        "artist": "MoppySound",
-                        "title": "White Violet",
-                        "uri": "33A75KFvuVfrwWpKKDuwal"
-                    },
-                    {
-                        "artist": "MoppySound",
-                        "title": "White Violet",
-                        "uri": "22BQa8TdTsHWYLojkKqb7m"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "MoppySound",
-                        "title": "White Violet",
-                        "uri": "4wuvxNkhJtO80m3raeg2A5"
-                    },
-                    {
-                        "artist": "MoppySound",
-                        "title": "White Violet",
-                        "uri": "33A75KFvuVfrwWpKKDuwal"
-                    },
-                    {
-                        "artist": "White Violet",
-                        "title": "Everyday Is Listening",
-                        "uri": "2J7NZY6rcFw3KaM1c1tMMr"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Teho",
-                        "title": "Kabuki",
-                        "uri": "2ch0UkMq80kJMv8AKU6kV7"
-                    },
-                    {
-                        "artist": "True Loves",
-                        "title": "Kabuki",
-                        "uri": "4SkVO7JGpsMclUhc8Kcwwf"
-                    },
-                    {
-                        "artist": "WWE",
-                        "title": "Warriors (The Kabuki Warriors)",
-                        "uri": "2Zd7XeNH434Q60suIlrRC2"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Bonsaye",
-                        "title": "Kyoto",
-                        "uri": "6Uk70qpuVpIbJYfpgp7FOv"
-                    },
-                    {
-                        "artist": "Makoto San",
-                        "title": "Kyoto",
-                        "uri": "3lTdhWftWE7jR5mG4zTmeT"
-                    },
-                    {
-                        "artist": "Mujo",
-                        "title": "Fuji",
-                        "uri": "4DVv5PUIR3Gp3wwsdI4GGZ"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Kotaro Oshio",
-                        "title": "Rushin'",
-                        "uri": "7rWi7JFoi1X8Mmz1yJbAUJ"
-                    },
-                    {
-                        "artist": "Kotaro Oshio",
-                        "title": "同級生",
-                        "uri": "010wjhOg2RUgZsWxTgtym8"
-                    },
-                    {
-                        "artist": "Kotaro Oshio",
-                        "title": "黄昏",
-                        "uri": "2mY1TNwqzmjRJ4qzIvhycd"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": ""
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Bonsaye",
-                        "title": "Kyoto",
-                        "uri": "6Uk70qpuVpIbJYfpgp7FOv"
-                    },
-                    {
-                        "artist": "Umitaro Abe",
-                        "title": "Scene I, Kyoto",
-                        "uri": "0p8gAcPkDYgzcZZwAou12B"
-                    },
-                    {
-                        "artist": "Makoto San",
-                        "title": "Kyoto",
-                        "uri": "3lTdhWftWE7jR5mG4zTmeT"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Michael Hedges",
-                        "title": "Spare Change",
-                        "uri": "2jH0tY7Lh1Ia7d4Hie6Muz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Michael Hedges",
-                        "title": "Spare Change",
-                        "uri": "2jH0tY7Lh1Ia7d4Hie6Muz"
-                    },
-                    {
-                        "artist": "Michael Hedges",
-                        "title": "Aerial Boundaries",
-                        "uri": "3dZa4cqfnAOm154H601RbY"
-                    },
-                    {
-                        "artist": "Michael Hedges",
-                        "title": "Rikki's Shuffle",
-                        "uri": "4pvFOmlxza15Kqk1RJPFby"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Noriyuki Makihara",
-                        "title": "君への愛の唄",
-                        "uri": "0U5BmfzQFCSGcD6fwsGKOH"
-                    },
-                    {
-                        "artist": "Noriyuki Makihara",
-                        "title": "君の書く僕の名前",
-                        "uri": "4laugAsGAsX4U78gEFj5fm"
-                    },
-                    {
-                        "artist": "Noriyuki Makihara",
-                        "title": "君に、胸キュン。",
-                        "uri": "7FhElM1qlWsR9kUDOK9Y0z"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Yehudi Menuhin",
-                        "title": "I Got Rhythm - 1988 - Remaster",
-                        "uri": "6F1VRMsNIVOTrqLhZAZOsF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Yehudi Menuhin",
-                        "title": "I Got Rhythm - 1988 - Remaster",
-                        "uri": "6F1VRMsNIVOTrqLhZAZOsF"
-                    },
-                    {
-                        "artist": "Judy Garland",
-                        "title": "I Got Rhythm",
-                        "uri": "6Mn4azKKmCHoQIMSJOucXN"
-                    },
-                    {
-                        "artist": "George Gershwin",
-                        "title": "Gershwin / Arr. Harris: I Got Rhythm",
-                        "uri": "1hQpbzx5kupJ8uEOcGl3sg"
-                    }
-                ]
-            }
+        "07": {
+            "artist": "LI YILEI",
+            "ratio": 6,
+            "title": "CHU / 處",
+            "trackid": "3BISxa1qpfWo6lGzN37Dlu"
+        },
+        "08": {
+            "artist": "Francesco Cavaliere",
+            "ratio": 6,
+            "title": "TESSERA di scale che paiono scomparire",
+            "trackid": "1syGy62AqaMz3MOcFURd0a"
+        },
+        "09": {
+            "artist": "Nicolas Gaunin",
+            "ratio": 6,
+            "title": "Mahiki",
+            "trackid": "7x2S9F6kEJPg9p6xvXiEFs"
+        },
+        "10": {
+            "artist": "Howie Lee",
+            "ratio": 6,
+            "title": "The Reflexed Bamboo",
+            "trackid": "6R0P5F2CowuG2XRlaYciCa"
+        },
+        "11": {
+            "artist": "Psychic Reality",
+            "ratio": 3,
+            "title": "META / Meta-Prayer",
+            "trackid": "27BUshBRtRZbSfO5eqyM1Q"
+        },
+        "12": {
+            "artist": "Beverly Glenn-Copeland",
+            "ratio": 6,
+            "title": "Old Melody",
+            "trackid": "7eGQIaS1fUBxL7WMMLv138"
+        },
+        "13": {
+            "artist": "Binaural Frequencies",
+            "ratio": 2,
+            "title": "741 Hz Throat Chakra Mah",
+            "trackid": "0zr9JDOVdatUkPYmmeFoUz"
+        },
+        "14": {
+            "artist": "Berioska",
+            "ratio": 2,
+            "title": "Netsujou No Spectrum (Nanatsu No Taizai)",
+            "trackid": "6c3yCaY09UIRJj2v5acK2a"
+        }
+    },
+    "foodman-12th-may-2021": {
+        "00": {
+            "artist": "Sakurakou K-ON Bu",
+            "ratio": 1,
+            "title": "Fuwa Fuwa Time",
+            "trackid": "05XoZNL3OMdegGO0SnrHWD"
+        },
+        "01": {
+            "artist": "Hakase-sun",
+            "ratio": 6,
+            "title": "Song Cycle",
+            "trackid": "2rX6ILdJOIiolSRChmTreL"
+        },
+        "02": {
+            "artist": "Akari Mochizuki",
+            "ratio": 2,
+            "title": "Kiri No London Ai",
+            "trackid": "77hOaDUzhyl2LsRgdRoRyM"
+        },
+        "03": {
+            "artist": "THE BOOM",
+            "ratio": 6,
+            "title": "星のラブレター",
+            "trackid": "3xoDydV1CucgOcVHIsH3m4"
+        },
+        "04": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "05": {
+            "artist": "MJ Kangasniemi",
+            "ratio": 2,
+            "title": "TAM TAM",
+            "trackid": "6ya7wAZymTFUiVC8admL41"
+        },
+        "06": {
+            "artist": "EGO-WRAPPIN’",
+            "ratio": 6,
+            "title": "a love song",
+            "trackid": "2V5UfyeVpXBZgvNajmt3nx"
+        },
+        "07": {
+            "artist": "The eskargot miles",
+            "ratio": 4,
+            "title": "老人と星",
+            "trackid": "4fMzBAsPxnHJwMQaGO2MGp"
+        },
+        "08": {
+            "artist": "Tico & icchie",
+            "ratio": 3,
+            "title": "オリビアを聴きながら feat.チエコ・ビューティー",
+            "trackid": "0UKoSomrbY5n1kzoQolmJ8"
+        },
+        "09": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "10": {
+            "artist": "FUNKIST",
+            "ratio": 2,
+            "title": "Ame no Hi no Aki",
+            "trackid": "7zJ3C0TRhdUpT0TYKtKFJ0"
+        },
+        "11": {
+            "artist": "Fishmans",
+            "ratio": 6,
+            "title": "Ikareta Baby",
+            "trackid": "2iFRkiRwPzIaWfjRB3ZHX6"
+        }
+    },
+    "foodman-16th-march-2022": {
+        "00": {
+            "artist": "Himekami",
+            "ratio": 4,
+            "title": "Hitori Shizuka",
+            "trackid": "5QO5Yg4IZqBxt99H13um19"
+        },
+        "01": {
+            "artist": "Haruomi Hosono",
+            "ratio": 5,
+            "title": "MERCURIC DANCE/水銀~躍動の踊り",
+            "trackid": "2fXZxWhqV6YqpKsEoqID6S"
+        },
+        "02": {
+            "artist": "Om Buschman",
+            "ratio": 6,
+            "title": "Klang Fängt An",
+            "trackid": "4KOjfvuPNiMz34n5cQNzt5"
+        },
+        "03": {
+            "artist": "SUGAI KEN",
+            "ratio": 6,
+            "title": "Outousen",
+            "trackid": "3CisE1wtJ5ZlUUVlRIRbvG"
+        },
+        "04": {
+            "artist": "SUGAI KEN",
+            "ratio": 6,
+            "title": "Denden",
+            "trackid": "6yQAC0ou6kYcs5LXFi3VlF"
+        },
+        "05": {
+            "artist": "KWC 92",
+            "ratio": 6,
+            "title": "Tai Tam Tuk",
+            "trackid": "6tC94dyara6ofDAYpbyZIp"
+        },
+        "06": {
+            "artist": "TCP",
+            "ratio": 6,
+            "title": "Desert Rain",
+            "trackid": "6QkKrPO84eGffuba5Vufsk"
+        },
+        "07": {
+            "artist": "Mark Barrott",
+            "ratio": 6,
+            "title": "Cirrus & Cumulus",
+            "trackid": "3CLLThUqGL2SMFNI73X9rh"
+        },
+        "08": {
+            "artist": "DJ Sorama",
+            "ratio": 1,
+            "title": "State Of Mind",
+            "trackid": "7pFtaK9gpvN5aBWUJempp4"
+        },
+        "09": {
+            "artist": "Rüdiger Oppermann's Harp Attack",
+            "ratio": 6,
+            "title": "Troubadix In Afrika",
+            "trackid": "769ahSp4uiQ07ttaKn7L8d"
+        },
+        "10": {
+            "artist": "Bob Moses",
+            "ratio": 6,
+            "title": "Boat Song, Pt. 1",
+            "trackid": "5BdHKNHK5XgchVezEHRO61"
+        },
+        "11": {
+            "artist": "Fernando Falcão",
+            "ratio": 6,
+            "title": "Amanhecer Tabajara (À Alceu Valença)",
+            "trackid": "2j557i7D3n9cCRAvD1IP2p"
+        },
+        "12": {
+            "artist": "Francis Bebey",
+            "ratio": 6,
+            "title": "Sunny Crypt",
+            "trackid": "1RnZ4xOFQhqR7qbIpE3KBw"
+        }
+    },
+    "foodman-17th-february-2021": {
+        "00": {
+            "artist": "阿保 剛",
+            "ratio": 1,
+            "title": "GATE OF STEINER -Piano-",
+            "trackid": "1EyeHLX96JGGiF2l4tRvJR"
+        },
+        "01": {
+            "artist": "Mick Gordon",
+            "ratio": 1,
+            "title": "Rip & Tear",
+            "trackid": "5soMJpcVhSrGrB4prvPL6P"
+        },
+        "02": {
+            "artist": "Delldongo",
+            "ratio": 1,
+            "title": "Main Theme (From Xenoblade Chronicles)",
+            "trackid": "14kc7PSDy0leGPpwLSQvJY"
+        },
+        "03": {
+            "artist": "GENTLE LOVE",
+            "ratio": 3,
+            "title": "Main Theme (Genso Suikoden)",
+            "trackid": "37WBsAUvnDAvQUPWBbJ0Cg"
+        },
+        "04": {
+            "artist": "Rich Douglas",
+            "ratio": 3,
+            "title": "Metal Gear Solid Theme",
+            "trackid": "54dwUPIjQBVOgNpEF9OQGD"
+        },
+        "05": {
+            "artist": "Mick Gordon",
+            "ratio": 1,
+            "title": "Rip & Tear",
+            "trackid": "5soMJpcVhSrGrB4prvPL6P"
+        }
+    },
+    "foodman-17th-march-2021": {},
+    "foodman-24th-november-202": {
+        "00": {
+            "artist": "Hubert Zemler",
+            "ratio": 6,
+            "title": "Propolis",
+            "trackid": "1KmSzQOxoO61M5sTomxIbp"
+        },
+        "01": {
+            "artist": "Giuseppe Ielasi",
+            "ratio": 6,
+            "title": "8",
+            "trackid": "3wmUTzzlvAfA644IQSQhBi"
+        },
+        "02": {
+            "artist": "Joanna Duda",
+            "ratio": 6,
+            "title": "Kibo",
+            "trackid": "5gnykxwxZbnAZSBdSE0ImI"
+        },
+        "03": {
+            "artist": "Noah Creshevsky",
+            "ratio": 4,
+            "title": "Memento Mori",
+            "trackid": "6GIfG5xi2n40gK5QZ9RCwD"
+        },
+        "04": {
+            "artist": "Time Wharp",
+            "ratio": 6,
+            "title": "Ingenue",
+            "trackid": "4wDOsKfkIhjDQuKY6m1UmZ"
+        },
+        "05": {
+            "artist": "Savath & Savalas",
+            "ratio": 6,
+            "title": "Paisaje",
+            "trackid": "0x53QqjfrKmHaLndGW53vZ"
+        },
+        "06": {
+            "artist": "Antonio Loureiro",
+            "ratio": 6,
+            "title": "A Partir",
+            "trackid": "4BeeY6NfG2hMVkx0j99oHn"
+        },
+        "07": {
+            "artist": "Causa Sui",
+            "ratio": 5,
+            "title": "Eternal Flow",
+            "trackid": "57UAv9mvAvVhcUy5Fht9Z7"
+        },
+        "08": {
+            "artist": "Soushi Sakiyama",
+            "ratio": 2,
+            "title": "嘘じゃない",
+            "trackid": "0ayjyEFPDtTlWQcSbT407P"
+        },
+        "09": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "10": {
+            "artist": "Tomita Lab.",
+            "ratio": 3,
+            "title": "眠りの森",
+            "trackid": "2CPlY5tdjvl05Uv6XdUugH"
+        },
+        "11": {
+            "artist": "Girls' Generation",
+            "ratio": 4,
+            "title": "Lion Heart",
+            "trackid": "405SQUJdQut02dxtuQ0CZ3"
+        },
+        "12": {
+            "artist": "Imaginary Softwoods",
+            "ratio": 6,
+            "title": "Poisitive Ruin Court Garden",
+            "trackid": "7p1UtxQ6PX2dpchOg0LHqL"
+        },
+        "13": {
+            "artist": "Kate NV",
+            "ratio": 5,
+            "title": "yxo EAR",
+            "trackid": "14q97Aiy5iCKccxXw05j1M"
+        },
+        "14": {
+            "artist": "Sun Araw",
+            "ratio": 6,
+            "title": "Roomboe",
+            "trackid": "3u9dWMVi1hRCCbyyAlsX0p"
+        },
+        "15": {
+            "artist": "Howie Lee",
+            "ratio": 6,
+            "title": "Enter the Tigerwoods",
+            "trackid": "7CYeAbYjmY0fouThH0ZUq5"
+        },
+        "16": {
+            "artist": "Yoshiharu Takeda",
+            "ratio": 6,
+            "title": "Fluffy Asia",
+            "trackid": "5Uyz5JmZOqkVIqNTwk86EO"
+        },
+        "17": {
+            "artist": "Sarah Davachi",
+            "ratio": 6,
+            "title": "Gold Upon White",
+            "trackid": "5c3hnbat8WOXEGetNDjtWA"
+        }
+    },
+    "foodman-26th-november-2020": {},
+    "foodman-29th-october-2020": {},
+    "foodman-4th-august-2021": {
+        "00": {
+            "artist": "foodman",
+            "ratio": 4,
+            "title": "Kazunoko",
+            "trackid": "0cWwpeW31wwgO6ABbkDYhY"
+        },
+        "01": {
+            "artist": "Kurup",
+            "ratio": 6,
+            "title": "Colar de Concha",
+            "trackid": "33rYnAKfiNJbv2qOgFHH7X"
+        },
+        "02": {
+            "artist": "Uproot Andy",
+            "ratio": 2,
+            "title": "El Botellon",
+            "trackid": "6YNTm3e2PAGsZPDshXRZN3"
+        },
+        "03": {
+            "artist": "Jose Larralde",
+            "ratio": 5,
+            "title": "Quimey Neuquen",
+            "trackid": "3oRaLG3ZDqXNN4BXhBClrY"
+        },
+        "04": {
+            "artist": "Paul Traeumer",
+            "ratio": 6,
+            "title": "Offworld Colonies",
+            "trackid": "1WAnp87TmhSjJ0NadMbXXJ"
+        },
+        "05": {
+            "artist": "Socek",
+            "ratio": 6,
+            "title": "Yákêjan",
+            "trackid": "5b94HVKpoHLZTMyu5NgLAZ"
+        },
+        "06": {
+            "artist": "Barrio Lindo",
+            "ratio": 6,
+            "title": "Paulista",
+            "trackid": "3HsQdzqEMTCZKHcWoqX3wc"
+        },
+        "07": {
+            "artist": "Eek-A-Mouse",
+            "ratio": 6,
+            "title": "Lips",
+            "trackid": "6STQk4TvcjAiNdYCMFDLpl"
+        },
+        "08": {
+            "artist": "Manasseh",
+            "ratio": 6,
+            "title": "When the Dub - Dub Mix",
+            "trackid": "3gg5z9Fc6TfY5iBbTFyoFb"
+        },
+        "09": {
+            "artist": "123Mrk",
+            "ratio": 6,
+            "title": "Invisible Colors - Deft Remix",
+            "trackid": "2K3mCYk2j5SWStBPp2wSST"
+        },
+        "10": {
+            "artist": "Talvin Singh",
+            "ratio": 6,
+            "title": "Butterfly",
+            "trackid": "4DUsclIvDe7sU5KRvTQ6St"
+        },
+        "11": {
+            "artist": "Grupo La Migra",
+            "ratio": 3,
+            "title": "Sea Por Dios",
+            "trackid": "6eGP19ni5NECYk6NPo5vgL"
+        },
+        "12": {
+            "artist": "Ours Samplus",
+            "ratio": 6,
+            "title": "Blue Bird",
+            "trackid": "5Ub65lHOysyiaNEw0l1fkm"
+        },
+        "13": {
+            "artist": "MAUGLI",
+            "ratio": 3,
+            "title": "Trouble",
+            "trackid": "3AallkYiZUVKHFcFX92zL4"
+        },
+        "14": {
+            "artist": "等什么君",
+            "ratio": 4,
+            "title": "赤伶 - DJ名龙 Remix",
+            "trackid": "6Zji7lINhdDJHeWO45oRTd"
+        },
+        "15": {
+            "artist": "Numa Gama",
+            "ratio": 6,
+            "title": "Twig People (Seres De Madeira)",
+            "trackid": "41pD10gA3c419p4HhPYqke"
+        },
+        "16": {
+            "artist": "Furmiga Dub",
+            "ratio": 4,
+            "title": "Caiporas e Armadilhas",
+            "trackid": "53xv1BEQdWF5gLOhhLFwyQ"
+        },
+        "17": {
+            "artist": "O Rappa",
+            "ratio": 6,
+            "title": "Take It Easy My Brother Charles",
+            "trackid": "2vnyPdtP79ne7m6SZ5OCWy"
+        }
+    },
+    "foodman-6th-august-2020": {},
+    "foodman-9th-july-2020": {
+        "00": {
+            "artist": "Quintette du Hot Club de France",
+            "ratio": 6,
+            "title": "Undecided",
+            "trackid": "18GyrRW13cdGDQMFDpv0wP"
+        },
+        "01": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "02": {
+            "artist": "Samuel Kim",
+            "ratio": 1,
+            "title": "Zankyou Sanka - Epic Version (Demon Slayer Season 2 Opening)",
+            "trackid": "3EbsTJzwwcjAQWppFYrqKk"
+        },
+        "03": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "04": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "05": {
+            "artist": "Kohrogi",
+            "ratio": 6,
+            "title": "Nori Tamago",
+            "trackid": "0QFVhNdCWVbpPiKMcBGa18"
+        },
+        "06": {
+            "artist": "MoppySound",
+            "ratio": 6,
+            "title": "White Violet",
+            "trackid": "4wuvxNkhJtO80m3raeg2A5"
+        },
+        "07": {
+            "artist": "Teho",
+            "ratio": 3,
+            "title": "Kabuki",
+            "trackid": "2ch0UkMq80kJMv8AKU6kV7"
+        },
+        "08": {
+            "artist": "Bonsaye",
+            "ratio": 3,
+            "title": "Kyoto",
+            "trackid": "6Uk70qpuVpIbJYfpgp7FOv"
+        },
+        "09": {
+            "artist": "Kotaro Oshio",
+            "ratio": 5,
+            "title": "Rushin'",
+            "trackid": "7rWi7JFoi1X8Mmz1yJbAUJ"
+        },
+        "10": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "11": {
+            "artist": "Bonsaye",
+            "ratio": 3,
+            "title": "Kyoto",
+            "trackid": "6Uk70qpuVpIbJYfpgp7FOv"
+        },
+        "12": {
+            "artist": "Michael Hedges",
+            "ratio": 6,
+            "title": "Spare Change",
+            "trackid": "2jH0tY7Lh1Ia7d4Hie6Muz"
+        },
+        "13": {
+            "artist": "Noriyuki Makihara",
+            "ratio": 4,
+            "title": "君への愛の唄",
+            "trackid": "0U5BmfzQFCSGcD6fwsGKOH"
+        },
+        "14": {
+            "artist": "Yehudi Menuhin",
+            "ratio": 6,
+            "title": "I Got Rhythm - 1988 - Remaster",
+            "trackid": "6F1VRMsNIVOTrqLhZAZOsF"
         }
     }
 }

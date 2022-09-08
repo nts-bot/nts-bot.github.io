@@ -1,4102 +1,651 @@
 {
-    "flags": {
-        "my-seventies-soundtrack-22nd-august-2022": {
-            "00": {
-                "artist": "Todd Rundgren",
-                "ratio": 6,
-                "title": "A Treatise On Cosmic Fire",
-                "trackid": "2vqdnkRtufsulJwhslQsK4"
-            },
-            "01": {
-                "artist": "Sly & The Family Stone",
-                "ratio": 6,
-                "title": "Family Affair - Single Version",
-                "trackid": "4f3u4Oy0JqJRIhMmTqRcxj"
-            },
-            "02": {
-                "artist": "Santana",
-                "ratio": 6,
-                "title": "Oye Como Va",
-                "trackid": "5u6y4u5EgDv0peILf60H5t"
-            },
-            "03": {
-                "artist": "The Rolling Stones",
-                "ratio": 6,
-                "title": "Beast Of Burden",
-                "trackid": "6ttUD7vz01HOy3hm9Kq3t5"
-            },
-            "04": {
-                "artist": "Chris Spedding",
-                "ratio": 6,
-                "title": "Motorbikin'",
-                "trackid": "6oEXKsn9jV3sh4thjIoPE5"
-            },
-            "05": {
-                "artist": "Buzzcocks",
-                "ratio": 6,
-                "title": "Everybody's Happy Nowadays",
-                "trackid": "55N6XPkC4jQ9TAQsAAhvej"
-            },
-            "06": {
-                "artist": "Stevie Wonder",
-                "ratio": 6,
-                "title": "If You Really Love Me",
-                "trackid": "6Axz5VSkc4Bs8eXWQxnynE"
-            },
-            "07": {
-                "artist": "AC/DC",
-                "ratio": 6,
-                "title": "Touch Too Much",
-                "trackid": "2j0zExWFB0PowLOeoZosjK"
-            },
-            "08": {
-                "artist": "Marvin Gaye",
-                "ratio": 6,
-                "title": "What's Going On",
-                "trackid": "3Um9toULmYFGCpvaIPFw7l"
-            },
-            "09": {
-                "artist": "Nils Lofgren",
-                "ratio": 5,
-                "title": "Back It Up - 1976 London",
-                "trackid": "51Tq9Lxv7gWlcOcuZvYmTr"
-            },
-            "10": {
-                "artist": "Todd Rundgren",
-                "ratio": 0,
-                "title": "Healing, Pt. 1 - 2015 Remaster",
-                "trackid": "6Go1ig0mE9P63U57wkyyRn"
-            },
-            "11": {
-                "artist": "Todd Rundgren",
-                "ratio": 6,
-                "title": "It Wouldn't Have Made Any Difference",
-                "trackid": "2Du7u0oKYXdEfD7Gb6vAbb"
-            },
-            "12": {
-                "artist": "XTC",
-                "ratio": 6,
-                "title": "Making Plans For Nigel",
-                "trackid": "1XT5kxg6Tk0ukCO2vBQN4v"
-            },
-            "13": {
-                "artist": "Patti Smith",
-                "ratio": 6,
-                "title": "Gloria",
-                "trackid": "2zAKLfOJLTHK5RGrj9ag0x"
-            },
-            "14": {
-                "artist": "Bruce Springsteen",
-                "ratio": 6,
-                "title": "Hungry Heart",
-                "trackid": "1KsI8NEeAna8ZIdojI3FiT"
-            },
-            "15": {
-                "artist": "Laura Nyro",
-                "ratio": 6,
-                "title": "It's Gonna Take A Miracle",
-                "trackid": "6LmLVvEAnAJTSycmPgV1cs"
-            },
-            "16": {
-                "artist": "Tom Verlaine",
-                "ratio": 6,
-                "title": "Kingdom Come",
-                "trackid": "4dGYbELYL2yBxMgebHVRIP"
-            },
-            "17": {
-                "artist": "Phil Thornalley",
-                "ratio": 6,
-                "title": "Fast Car",
-                "trackid": "5wdTK4mCxasyNTr1LKA0v2"
-            },
-            "18": {
-                "artist": "Big Star",
-                "ratio": 6,
-                "title": "September Gurls",
-                "trackid": "6Atlml4eL2BJcntPqB8Xh4"
-            },
-            "19": {
-                "artist": "The Who",
-                "ratio": 6,
-                "title": "Love Reign O'er Me",
-                "trackid": "0EF4KrU0dJ0lBEkqMyzlIi"
-            },
-            "20": {
-                "artist": "Astral Drive",
-                "ratio": 6,
-                "title": "Walls and Bridges",
-                "trackid": "1HAOMGHhDeGacTujMskwqp"
-            }
+    "my-seventies-soundtrack-22nd-august-2022": {
+        "00": {
+            "artist": "Todd Rundgren",
+            "ratio": 6,
+            "title": "A Treatise On Cosmic Fire",
+            "trackid": "2vqdnkRtufsulJwhslQsK4"
         },
-        "my-seventies-soundtrack-w-phil-thornalley-11th-april-2022": {
-            "00": {
-                "artist": "The Spinners",
-                "ratio": 6,
-                "title": "It's A Shame",
-                "trackid": "1l1YTy9nJ0trwhsCGcimly"
-            },
-            "01": {
-                "artist": "The Rolling Stones",
-                "ratio": 5,
-                "title": "It's Only Rock'n'Roll (But I Like It) - Remastered 2009",
-                "trackid": "668YgsnvdNBHfRscNIBS31"
-            },
-            "02": {
-                "artist": "Phoebe Snow",
-                "ratio": 6,
-                "title": "Every Night",
-                "trackid": "0VuHj3cmwUZqeXaypQ44vA"
-            },
-            "03": {
-                "artist": "Todd Rundgren",
-                "ratio": 2,
-                "title": "Healing, Pt. 1 - 2015 Remaster",
-                "trackid": "6Go1ig0mE9P63U57wkyyRn"
-            },
-            "04": {
-                "artist": "Yes",
-                "ratio": 6,
-                "title": "Time and a Word",
-                "trackid": "7ja6kw9mMLUgHNHsnamQS9"
-            },
-            "05": {
-                "artist": "The Isley Brothers",
-                "ratio": 5,
-                "title": "For the Love of You, Pts. 1 & 2",
-                "trackid": "6k0GXtn49Ga6kfA8ZvLtVX"
-            },
-            "06": {
-                "artist": "Astral Drive",
-                "ratio": 4,
-                "title": "Summer of '76",
-                "trackid": "0STjkh3ydr6cdbCi6lYETE"
-            },
-            "07": {
-                "artist": "Jackson Browne",
-                "ratio": 6,
-                "title": "Doctor My Eyes",
-                "trackid": "3QcuZo6WLcFkqqLmDs0d95"
-            },
-            "08": {
-                "artist": "Talking Heads",
-                "ratio": 6,
-                "title": "Psycho Killer - 2005 Remaster",
-                "trackid": "1i6N76fftMZhijOzFQ5ZtL"
-            },
-            "09": {
-                "artist": "Carly Simon",
-                "ratio": 6,
-                "title": "Haven't Got Time for the Pain",
-                "trackid": "0oAJ0BThYPkafNe8PNLqIq"
-            },
-            "10": {
-                "artist": "Jo Jo Gunne",
-                "ratio": 6,
-                "title": "Run Run Run",
-                "trackid": "3pHx8jI1ZBVYcMG2QCZaKG"
-            },
-            "11": {
-                "artist": "Stevie Wonder",
-                "ratio": 6,
-                "title": "Too High",
-                "trackid": "60TB2Ifv7CCjjyROXXnChC"
-            },
-            "12": {
-                "artist": "Neil Young",
-                "ratio": 1,
-                "title": "Cinnamon Girl (Electric) [Remastered] - Live",
-                "trackid": "5N6NYDtOzfgIJK8t9yPAay"
-            },
-            "13": {
-                "artist": "Nick Lowe",
-                "ratio": 6,
-                "title": "Cruel to Be Kind",
-                "trackid": "7D5ycpIrqwGNTQFKmzhDIg"
-            }
+        "01": {
+            "artist": "Sly & The Family Stone",
+            "ratio": 6,
+            "title": "Family Affair - Single Version",
+            "trackid": "4f3u4Oy0JqJRIhMmTqRcxj"
         },
-        "phil-thornalley-11th-may-2022": {
-            "00": {
-                "artist": "Todd Rundgren",
-                "ratio": 5,
-                "title": "Everybody's Going to Heaven / King Kong Reggae - 2015 Remaster",
-                "trackid": "2RCcU5pD6Xkz1AFEqvXtip"
-            },
-            "01": {
-                "artist": "Lou Reed",
-                "ratio": 6,
-                "title": "Vicious",
-                "trackid": "4A48NL57P16zSRaq3yoYry"
-            },
-            "02": {
-                "artist": "Free",
-                "ratio": 6,
-                "title": "Wishing Well",
-                "trackid": "6TSBIfIbxuPDi1uqMqy1iV"
-            },
-            "03": {
-                "artist": "Aretha Franklin",
-                "ratio": 6,
-                "title": "Spanish Harlem",
-                "trackid": "0sQ594D1EuU66VDdtHBE6j"
-            },
-            "04": {
-                "artist": "Patti Smith",
-                "ratio": 6,
-                "title": "Because the Night",
-                "trackid": "0lIoY4ZQsdn5QzhraM9o9u"
-            },
-            "05": {
-                "artist": "Billy Paul",
-                "ratio": 6,
-                "title": "Let 'Em In",
-                "trackid": "7EIETgqBk63OdvVyIFDNKx"
-            },
-            "06": {
-                "artist": "Paul McCartney",
-                "ratio": 6,
-                "title": "My Love",
-                "trackid": "3oevkC3HQ2sxTwJ394MROY"
-            },
-            "07": {
-                "artist": "10cc",
-                "ratio": 5,
-                "title": "Donna",
-                "trackid": "3wSaVY4rEIAwl5RcHfSUrz"
-            },
-            "08": {
-                "artist": "Jeff Beck",
-                "ratio": 6,
-                "title": "Cause We've Ended as Lovers",
-                "trackid": "4zoQ3EqopTIGmK2c2rPV5t"
-            },
-            "09": {
-                "artist": "Boz Scaggs",
-                "ratio": 6,
-                "title": "Lowdown",
-                "trackid": "0nlZjTPzW6S9JIESuGfImT"
-            },
-            "10": {
-                "artist": "Robert Palmer",
-                "ratio": 6,
-                "title": "You Overwhelm Me",
-                "trackid": "1utKExjdMhkh83m0zoF4jz"
-            },
-            "11": {
-                "artist": "Traffic",
-                "ratio": 6,
-                "title": "Light Up Or Leave Me Alone",
-                "trackid": "6MeSDfZgtjw7k9QgdLxbNI"
-            },
-            "12": {
-                "artist": "Astral Drive",
-                "ratio": 6,
-                "title": "Marvin Flies Thru the Stratosphere",
-                "trackid": "58FbWGPQ2y1vvp2p3bV74R"
-            },
-            "13": {
-                "artist": "Todd Rundgren",
-                "ratio": 6,
-                "title": "Sometimes I Don't Know What to Feel - 2015 Remaster",
-                "trackid": "6jFN5tApB67HERy6QlThwt"
-            },
-            "14": {
-                "artist": "The Cure",
-                "ratio": 6,
-                "title": "Boys Don't Cry",
-                "trackid": "1QFh8OH1e78dGd3VyJZCAC"
-            },
-            "15": {
-                "artist": "Carole King",
-                "ratio": 6,
-                "title": "It's Too Late",
-                "trackid": "12q3V8ShACq2PSWINMc2rC"
-            },
-            "16": {
-                "artist": "Bryan Ferry",
-                "ratio": 6,
-                "title": "A Hard Rain's A-Gonna Fall",
-                "trackid": "2O1FP6A66cqXt4nj7qnmdJ"
-            },
-            "17": {
-                "artist": "Tom Petty and the Heartbreakers",
-                "ratio": 6,
-                "title": "Luna",
-                "trackid": "2l1V1EVqBgdyZ4avBgNj8I"
-            },
-            "18": {
-                "artist": "Rory Gallagher",
-                "ratio": 6,
-                "title": "Laundromat",
-                "trackid": "6UaolbiZgvtNkLfU0qPLvx"
-            }
+        "02": {
+            "artist": "Santana",
+            "ratio": 6,
+            "title": "Oye Como Va",
+            "trackid": "5u6y4u5EgDv0peILf60H5t"
         },
-        "phil-thornalley-17th-july-2022": {
-            "00": {
-                "artist": "Jonathan Richman & The Modern Lovers",
-                "ratio": 5,
-                "title": "Egyptian Reggae - Live",
-                "trackid": "6luyViGYiEnCerudBySTcz"
-            },
-            "01": {
-                "artist": "Todd Rundgren",
-                "ratio": 6,
-                "title": "Breathless - Instrumental Version",
-                "trackid": "6bW762Q7RQ6AdbxOP9yuVa"
-            },
-            "02": {
-                "artist": "The Love Unlimited Orchestra",
-                "ratio": 6,
-                "title": "Love's Theme",
-                "trackid": "5csdrJ0JtFn0qvwlvSh2EI"
-            },
-            "03": {
-                "artist": "Pink Floyd",
-                "ratio": 6,
-                "title": "One Of These Days - 2011 Remastered Version",
-                "trackid": "0Ga3szKsJOeZ0eAfydm1WV"
-            },
-            "04": {
-                "artist": "Santana",
-                "ratio": 6,
-                "title": "Samba Pa Ti",
-                "trackid": "35fC3Wq3slX4OBfyvBVmHm"
-            },
-            "05": {
-                "artist": "Billy Cobham",
-                "ratio": 6,
-                "title": "Red Baron",
-                "trackid": "6ipO2COc25UhJu9tKCkNsd"
-            },
-            "06": {
-                "artist": "Paul McCartney",
-                "ratio": 5,
-                "title": "Singalong Junk - Remastered 2011",
-                "trackid": "4Fr1MF0N2VAh9niAYGf9wE"
-            },
-            "07": {
-                "artist": "Mr. Bloe",
-                "ratio": 6,
-                "title": "Groovin' With Mr. Bloe",
-                "trackid": "1YEMMRyZbIWSt8KHu1gow9"
-            },
-            "08": {
-                "artist": "Fleetwood Mac",
-                "ratio": 6,
-                "title": "Albatross",
-                "trackid": "3iZ5twPwvFeOUQA4Deu8tP"
-            },
-            "09": {
-                "artist": "Focus",
-                "ratio": 6,
-                "title": "Sylvia",
-                "trackid": "6TJa7RJhrlI4PYaBv0Nx8h"
-            },
-            "10": {
-                "artist": "Emerson, Lake & Palmer",
-                "ratio": 6,
-                "title": "Fanfare for the Common Man - 2017 Remastered Version",
-                "trackid": "3i5bc53F2glMZC7GFXZQ7T"
-            },
-            "11": {
-                "artist": "Jaco Pastorius",
-                "ratio": 6,
-                "title": "Portrait of Tracy",
-                "trackid": "5NBAy2oiS9OIWyAZhklsH2"
-            },
-            "12": {
-                "artist": "Todd Rundgren",
-                "ratio": 6,
-                "title": "The Spark of Life",
-                "trackid": "765pgnLdIS7gmjrGwaTqTh"
-            },
-            "13": {
-                "artist": "George Benson",
-                "ratio": 6,
-                "title": "Breezin'",
-                "trackid": "1m3BAsNsQAaSNMD2M6vlKY"
-            },
-            "14": {
-                "artist": "Ry Cooder",
-                "ratio": 6,
-                "title": "I Think Its Going to Work Out Fine",
-                "trackid": "0bLerWMXrGBlQ9kFcxnQQJ"
-            },
-            "15": {
-                "artist": "Pat Metheny",
-                "ratio": 5,
-                "title": "Are You Going with Me?",
-                "trackid": "3UEu7wdJkq8pyEinqCcmwI"
-            }
+        "03": {
+            "artist": "The Rolling Stones",
+            "ratio": 6,
+            "title": "Beast Of Burden",
+            "trackid": "6ttUD7vz01HOy3hm9Kq3t5"
         },
-        "phil-thornalley-26th-june-2022": {
-            "00": {
-                "artist": "Astral Drive",
-                "ratio": 6,
-                "title": "Love Is Real",
-                "trackid": "5L2G6IJLTdxwN781Nxqx4W"
-            },
-            "01": {
-                "artist": "Bobby Womack",
-                "ratio": 6,
-                "title": "Across 110th Street",
-                "trackid": "2zyTP97uGsIc1C4KNNEkyn"
-            },
-            "02": {
-                "artist": "Stevie Wonder",
-                "ratio": 6,
-                "title": "Too High",
-                "trackid": "60TB2Ifv7CCjjyROXXnChC"
-            },
-            "03": {
-                "artist": "Robin Trower",
-                "ratio": 6,
-                "title": "Bridge Of Sighs",
-                "trackid": "1oOV1RcUDk7str6XetXc5J"
-            },
-            "04": {
-                "artist": "Melanie",
-                "ratio": 6,
-                "title": "Brand New Key",
-                "trackid": "7da5B9d2oVV16YSzXVxmrR"
-            },
-            "05": {
-                "artist": "Prince",
-                "ratio": 6,
-                "title": "When You Were Mine",
-                "trackid": "6Kbkge4WbvwWv1jVzSQsr8"
-            },
-            "06": {
-                "artist": "Dr. Hook",
-                "ratio": 4,
-                "title": "I Got Stoned And I Missed It",
-                "trackid": "59MfqOcvBfhDEoVZ244YY5"
-            },
-            "07": {
-                "artist": "Blondie",
-                "ratio": 6,
-                "title": "Dreaming",
-                "trackid": "2Rn7bVL1FVYboc4c55RUdg"
-            },
-            "08": {
-                "artist": "Astral Drive",
-                "ratio": 4,
-                "title": "Summer of '76",
-                "trackid": "0STjkh3ydr6cdbCi6lYETE"
-            },
-            "09": {
-                "artist": "Badfinger",
-                "ratio": 6,
-                "title": "Take It All",
-                "trackid": "5gweRmU1ggUapN9PbKwrCE"
-            },
-            "10": {
-                "artist": "Faces",
-                "ratio": 6,
-                "title": "Ooh La La",
-                "trackid": "4lJ6YVXQ0jUk5ILu0PSrA4"
-            },
-            "11": {
-                "artist": "Bad Company",
-                "ratio": 6,
-                "title": "Feel Like Making Love",
-                "trackid": "6trn2Smoif7ejl3SyEbBJu"
-            },
-            "12": {
-                "artist": "The Isley Brothers",
-                "ratio": 6,
-                "title": "Summer Breeze",
-                "trackid": "2fiMQ44VojtY1IODTpRlnh"
-            },
-            "13": {
-                "artist": "Laura Nyro",
-                "ratio": 6,
-                "title": "Up on the Roof",
-                "trackid": "5dinAEfvTURA3MpH2gDZ7g"
-            },
-            "14": {
-                "artist": "Joe Walsh",
-                "ratio": 6,
-                "title": "Meadows",
-                "trackid": "6Lxn6n4qQawPrjVqM6Lesx"
-            },
-            "15": {
-                "artist": "Paul McCartney",
-                "ratio": 0,
-                "title": "Say Say Say - Remastered 2015",
-                "trackid": "1db0gbTSKdRQum8VlbNkiO"
-            },
-            "16": {
-                "artist": "ELO",
-                "ratio": 2,
-                "title": "Can’t Be Happy",
-                "trackid": "2XmehABLWyeBGu5Q9Nt5vN"
-            },
-            "17": {
-                "artist": "Warren Zevon",
-                "ratio": 6,
-                "title": "Werewolves of London",
-                "trackid": "2nmaEzFZrSm2aMLtfJDzyG"
-            }
+        "04": {
+            "artist": "Chris Spedding",
+            "ratio": 6,
+            "title": "Motorbikin'",
+            "trackid": "6oEXKsn9jV3sh4thjIoPE5"
         },
-        "phil-thornalley-4th-june-2022": {},
-        "phil-thornalley-5th-december2021": {
-            "00": {
-                "artist": "Todd Rundgren",
-                "ratio": 5,
-                "title": "Izzat Love? - 2015 Remaster",
-                "trackid": "5hb92JsDZjB3PuysBhwTAS"
-            },
-            "01": {
-                "artist": "Alice Cooper",
-                "ratio": 6,
-                "title": "Hello Hooray",
-                "trackid": "2zyRVV93ijUwH1SyrPcTRR"
-            },
-            "02": {
-                "artist": "Stevie Wonder",
-                "ratio": 6,
-                "title": "You've Got It Bad Girl",
-                "trackid": "57OXk0inzVWWphdygquXIy"
-            },
-            "03": {
-                "artist": "David Bowie",
-                "ratio": 4,
-                "title": "Aladdin Sane - 2013 Remaster",
-                "trackid": "0iKRf868w4SYEBDILQu8ob"
-            },
-            "04": {
-                "artist": "The Jam",
-                "ratio": 6,
-                "title": "English Rose",
-                "trackid": "2R5zO3Zi0Of0v1DyxusWbk"
-            },
-            "05": {
-                "artist": "Tom Petty and the Heartbreakers",
-                "ratio": 6,
-                "title": "I Need to Know",
-                "trackid": "26TpLkciA8vz3kAvSI5tHG"
-            },
-            "06": {
-                "artist": "Laura Nyro",
-                "ratio": 6,
-                "title": "When I Was A Freeport And You Were The Main Drag",
-                "trackid": "5eejShSgXjV08o7VFjrSDS"
-            },
-            "07": {
-                "artist": "Daryl Hall & John Oates",
-                "ratio": 6,
-                "title": "August Day",
-                "trackid": "2rmhFOOf59Ag8CzsKUk10l"
-            },
-            "08": {
-                "artist": "Hot Chocolate",
-                "ratio": 6,
-                "title": "Brother Louie",
-                "trackid": "2qwm8bWdjxAJR3FEP33VGe"
-            },
-            "09": {
-                "artist": "George Harrison",
-                "ratio": 6,
-                "title": "Beware Of Darkness - Remastered 2014",
-                "trackid": "6TRZDhDxS4PJs3nxh9FBzk"
-            },
-            "10": {
-                "artist": "Paul McCartney",
-                "ratio": 5,
-                "title": "Singalong Junk - Remastered 2011",
-                "trackid": "4Fr1MF0N2VAh9niAYGf9wE"
-            },
-            "11": {
-                "artist": "Colin Blunstone",
-                "ratio": 6,
-                "title": "Say You Don't Mind",
-                "trackid": "20mUVwCxR1x2d5SuBRGW1F"
-            },
-            "12": {
-                "artist": "Marvin Gaye",
-                "ratio": 6,
-                "title": "That's The Way Love Is",
-                "trackid": "2y3zY5ixrH008EzyVqAQYn"
-            },
-            "13": {
-                "artist": "Carly Simon",
-                "ratio": 6,
-                "title": "The Right Thing to Do",
-                "trackid": "6sKwPF9awJx0EwSs55G8BE"
-            },
-            "14": {
-                "artist": "Boz Scaggs",
-                "ratio": 6,
-                "title": "Georgia",
-                "trackid": "428IK8fDAscfRpmavVKJkN"
-            },
-            "15": {
-                "artist": "Little Feat",
-                "ratio": 6,
-                "title": "Long Distance Love",
-                "trackid": "64lIUwQx1vwo4PIrS5jYb1"
-            },
-            "16": {
-                "artist": "Elton John",
-                "ratio": 6,
-                "title": "Philadelphia Freedom",
-                "trackid": "2hl9ONQ7YGgZGYx0OSHvIq"
-            },
-            "17": {
-                "artist": "Todd Rundgren",
-                "ratio": 4,
-                "title": "Don't You Ever Learn - Live",
-                "trackid": "3hPD5kOPedbw0O1qe2PbY7"
-            }
+        "05": {
+            "artist": "Buzzcocks",
+            "ratio": 6,
+            "title": "Everybody's Happy Nowadays",
+            "trackid": "55N6XPkC4jQ9TAQsAAhvej"
+        },
+        "06": {
+            "artist": "Stevie Wonder",
+            "ratio": 6,
+            "title": "If You Really Love Me",
+            "trackid": "6Axz5VSkc4Bs8eXWQxnynE"
+        },
+        "07": {
+            "artist": "AC/DC",
+            "ratio": 6,
+            "title": "Touch Too Much",
+            "trackid": "2j0zExWFB0PowLOeoZosjK"
+        },
+        "08": {
+            "artist": "Marvin Gaye",
+            "ratio": 6,
+            "title": "What's Going On",
+            "trackid": "3Um9toULmYFGCpvaIPFw7l"
+        },
+        "09": {
+            "artist": "Nils Lofgren",
+            "ratio": 5,
+            "title": "Back It Up - 1976 London",
+            "trackid": "51Tq9Lxv7gWlcOcuZvYmTr"
+        },
+        "10": {
+            "artist": "Todd Rundgren",
+            "ratio": 0,
+            "title": "Healing, Pt. 1 - 2015 Remaster",
+            "trackid": "6Go1ig0mE9P63U57wkyyRn"
+        },
+        "11": {
+            "artist": "Todd Rundgren",
+            "ratio": 6,
+            "title": "It Wouldn't Have Made Any Difference",
+            "trackid": "2Du7u0oKYXdEfD7Gb6vAbb"
+        },
+        "12": {
+            "artist": "XTC",
+            "ratio": 6,
+            "title": "Making Plans For Nigel",
+            "trackid": "1XT5kxg6Tk0ukCO2vBQN4v"
+        },
+        "13": {
+            "artist": "Patti Smith",
+            "ratio": 6,
+            "title": "Gloria",
+            "trackid": "2zAKLfOJLTHK5RGrj9ag0x"
+        },
+        "14": {
+            "artist": "Bruce Springsteen",
+            "ratio": 6,
+            "title": "Hungry Heart",
+            "trackid": "1KsI8NEeAna8ZIdojI3FiT"
+        },
+        "15": {
+            "artist": "Laura Nyro",
+            "ratio": 6,
+            "title": "It's Gonna Take A Miracle",
+            "trackid": "6LmLVvEAnAJTSycmPgV1cs"
+        },
+        "16": {
+            "artist": "Tom Verlaine",
+            "ratio": 6,
+            "title": "Kingdom Come",
+            "trackid": "4dGYbELYL2yBxMgebHVRIP"
+        },
+        "17": {
+            "artist": "Phil Thornalley",
+            "ratio": 6,
+            "title": "Fast Car",
+            "trackid": "5wdTK4mCxasyNTr1LKA0v2"
+        },
+        "18": {
+            "artist": "Big Star",
+            "ratio": 6,
+            "title": "September Gurls",
+            "trackid": "6Atlml4eL2BJcntPqB8Xh4"
+        },
+        "19": {
+            "artist": "The Who",
+            "ratio": 6,
+            "title": "Love Reign O'er Me",
+            "trackid": "0EF4KrU0dJ0lBEkqMyzlIi"
+        },
+        "20": {
+            "artist": "Astral Drive",
+            "ratio": 6,
+            "title": "Walls and Bridges",
+            "trackid": "1HAOMGHhDeGacTujMskwqp"
         }
     },
-    "search": {
-        "my-seventies-soundtrack-22nd-august-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "A Treatise on Cosmic Fire (II. The Fire of Mind - or Solar Fire) - II The Fire of Mind or Solar Fire",
-                        "uri": "6MrBXymDreOvIwky2xo9r8"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "A Treatise On Cosmic Fire",
-                        "uri": "2vqdnkRtufsulJwhslQsK4"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "A Treatise on Cosmic Fire - 2015 Remaster",
-                        "uri": "5rYW04gA6sa6ZnBufncvCF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "A Treatise on Cosmic Fire - 2015 Remaster",
-                        "uri": "4Og9r7cKcdX7EMvrO09G0h"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love? - 2015 Remaster",
-                        "uri": "5hb92JsDZjB3PuysBhwTAS"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "A Treatise on Cosmic Fire (I. The Eternal Fire - or Fire by Friction) - 2015 Remaster",
-                        "uri": "0Ca1ZoqkUsYd3fazZMesZ0"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Sly & The Family Stone",
-                        "title": "Family Affair - Single Version",
-                        "uri": "4f3u4Oy0JqJRIhMmTqRcxj"
-                    },
-                    {
-                        "artist": "Sly & The Family Stone",
-                        "title": "Family Affair - Single Version",
-                        "uri": "2GVEs1sn5Q1jB1976vQoAX"
-                    },
-                    {
-                        "artist": "Sly & The Family Stone",
-                        "title": "Family Affair - Studio Rio Version",
-                        "uri": "1SrIKYX640CX3IrHqMBL7e"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sly & The Family Stone",
-                        "title": "Family Affair - Single Version",
-                        "uri": "4f3u4Oy0JqJRIhMmTqRcxj"
-                    },
-                    {
-                        "artist": "Sly & The Family Stone",
-                        "title": "Family Affair - Single Version",
-                        "uri": "2GVEs1sn5Q1jB1976vQoAX"
-                    },
-                    {
-                        "artist": "Sly Stone",
-                        "title": "Family Affair",
-                        "uri": "1XvCs8az0V297Ex0I9VAPu"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Santana",
-                        "title": "Oye Como Va",
-                        "uri": "5u6y4u5EgDv0peILf60H5t"
-                    },
-                    {
-                        "artist": "Santana",
-                        "title": "Oye Como Va",
-                        "uri": "4IFwoDrcZN0wjJnCjuTEx8"
-                    },
-                    {
-                        "artist": "Santana",
-                        "title": "Oye Como Va",
-                        "uri": "1D6lLNdK9FChORg20kZorf"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "Beast Of Burden - Remastered 1994",
-                        "uri": "77oU2rjC5XbjQfNe3bD6so"
-                    },
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "Beast Of Burden - Remastered",
-                        "uri": "6cw7YpWIWz1hCxxbvDSMgq"
-                    },
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "Beast Of Burden",
-                        "uri": "6ttUD7vz01HOy3hm9Kq3t5"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "Beast Of Burden - Remastered 1994",
-                        "uri": "77oU2rjC5XbjQfNe3bD6so"
-                    },
-                    {
-                        "artist": "Instrumental Memories",
-                        "title": "Beast Of Burden",
-                        "uri": "73JJK8MFZXj4HfCPGTqLTd"
-                    },
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "Beast Of Burden - Remastered",
-                        "uri": "6cw7YpWIWz1hCxxbvDSMgq"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Chris Spedding",
-                        "title": "Motorbikin'",
-                        "uri": "6oEXKsn9jV3sh4thjIoPE5"
-                    },
-                    {
-                        "artist": "Chris Spedding",
-                        "title": "Motorbikin' - Live",
-                        "uri": "2LwKo2UhQEffgq2LfREIqv"
-                    },
-                    {
-                        "artist": "Chris Spedding",
-                        "title": "Motorbikin' - Live",
-                        "uri": "4koQMUQw1XFF5o1IF3KYlm"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Chris Spedding",
-                        "title": "Motor Bikin'",
-                        "uri": "3OIOz4OOgGOtz013SdTSpl"
-                    },
-                    {
-                        "artist": "Chris Spedding",
-                        "title": "Motorbikin' - Live",
-                        "uri": "2LwKo2UhQEffgq2LfREIqv"
-                    },
-                    {
-                        "artist": "Chris Spedding",
-                        "title": "Motor Bikin'",
-                        "uri": "6vypen4gEZ63fBdt1HSOpT"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Buzzcocks",
-                        "title": "Everybody's Happy Nowadays - 2001 Remastered Version",
-                        "uri": "7xUEsVEwSSXhjgBgZG57Tl"
-                    },
-                    {
-                        "artist": "Buzzcocks",
-                        "title": "Everybody's Happy Nowadays",
-                        "uri": "55N6XPkC4jQ9TAQsAAhvej"
-                    },
-                    {
-                        "artist": "Buzzcocks",
-                        "title": "Everybody's Happy Nowadays",
-                        "uri": "5PumqzNySoYkR0pBwVHGbf"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Buzzcocks",
-                        "title": "Everybody's Happy Nowadays - 2001 Remastered Version",
-                        "uri": "7xUEsVEwSSXhjgBgZG57Tl"
-                    },
-                    {
-                        "artist": "Buzzcocks",
-                        "title": "Everybody's Happy Nowadays",
-                        "uri": "55N6XPkC4jQ9TAQsAAhvej"
-                    },
-                    {
-                        "artist": "Buzzcocks",
-                        "title": "Everybody's Happy Nowadays",
-                        "uri": "5PumqzNySoYkR0pBwVHGbf"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "If You Really Love Me",
-                        "uri": "6Axz5VSkc4Bs8eXWQxnynE"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "If You Really Love Me",
-                        "uri": "5Lan4wfdP0Gy9iiON0hk2v"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "If You Really Love Me",
-                        "uri": "3U9Xx32w3c1bLp59I1c3eS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "If You Really Love Me",
-                        "uri": "6Axz5VSkc4Bs8eXWQxnynE"
-                    },
-                    {
-                        "artist": "Charttraxx Karaoke",
-                        "title": "If You Really Love Me - Karaoke Version In the Style of Stevie Wonder",
-                        "uri": "3hLTNklBtFOJdgsMB69s4d"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "If You Really Love Me",
-                        "uri": "5Lan4wfdP0Gy9iiON0hk2v"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "AC/DC",
-                        "title": "Touch Too Much",
-                        "uri": "2j0zExWFB0PowLOeoZosjK"
-                    },
-                    {
-                        "artist": "AC/DC",
-                        "title": "Touch Too Much - Demo",
-                        "uri": "4fvaUoWdftUubTo0wKcoYe"
-                    },
-                    {
-                        "artist": "AC/DC's Greatest Tribute Band",
-                        "title": "Touch Too Much",
-                        "uri": "4KJUaDVMXBbstO6GU6ZETP"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "AC/DC",
-                        "title": "Touch Too Much",
-                        "uri": "2j0zExWFB0PowLOeoZosjK"
-                    },
-                    {
-                        "artist": "AC/DC",
-                        "title": "Touch Too Much - Demo",
-                        "uri": "4fvaUoWdftUubTo0wKcoYe"
-                    },
-                    {
-                        "artist": "AC/DC",
-                        "title": "Shoot to Thrill",
-                        "uri": "6GzCkTddOn1vSln1gbSr8y"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "What's Going On",
-                        "uri": "3Um9toULmYFGCpvaIPFw7l"
-                    },
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "What's Going On",
-                        "uri": "3hxCrK6oq4asRcF9x7DOAe"
-                    },
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "What's Going On",
-                        "uri": "1Wbqy3YFSP696ZCJnf9URN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "What's Going On",
-                        "uri": "3Um9toULmYFGCpvaIPFw7l"
-                    },
-                    {
-                        "artist": "The Pasadenas",
-                        "title": "Tribute (Right On)",
-                        "uri": "7E98uFyqUZmTBPGeTz32Ja"
-                    },
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "What's Going On",
-                        "uri": "1Wbqy3YFSP696ZCJnf9URN"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Nils Lofgren",
-                        "title": "Take You To The Movies Tonight / Back It Up - Live",
-                        "uri": "62L36jOVsXjCJ4Rv0KntHG"
-                    },
-                    {
-                        "artist": "Nils Lofgren",
-                        "title": "Back It Up - 1976 London",
-                        "uri": "51Tq9Lxv7gWlcOcuZvYmTr"
-                    },
-                    {
-                        "artist": "Nils Lofgren",
-                        "title": "Back It Up - Live",
-                        "uri": "1edFMFTm9THPh7gcVElHaw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nils Lofgren",
-                        "title": "Take You To The Movies Tonight / Back It Up - Live",
-                        "uri": "62L36jOVsXjCJ4Rv0KntHG"
-                    },
-                    {
-                        "artist": "Nils Lofgren",
-                        "title": "Back It Up - Live",
-                        "uri": "1edFMFTm9THPh7gcVElHaw"
-                    },
-                    {
-                        "artist": "Nils Lofgren",
-                        "title": "Back It Up - 1976 London",
-                        "uri": "51Tq9Lxv7gWlcOcuZvYmTr"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love? - 2015 Remaster",
-                        "uri": "5hb92JsDZjB3PuysBhwTAS"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Hello It's Me",
-                        "uri": "2ckXnzyvgva2oE9FWjb405"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Healing, Pt. 1 - 2015 Remaster",
-                        "uri": "6Go1ig0mE9P63U57wkyyRn"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "It Wouldn't Have Made Any Difference - Live",
-                        "uri": "02KCnDxOuZDgDLuLi1qAY3"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "It Wouldn't Have Made Any Difference - 2015 Remaster",
-                        "uri": "1a2hPbZnpbpmsaVWXDiwQt"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "It Wouldn't Have Made Any Difference",
-                        "uri": "2Du7u0oKYXdEfD7Gb6vAbb"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "It Wouldn't Have Made Any Difference - 2006 Remaster",
-                        "uri": "72EF9xF3UWVT8NWLUaeZW6"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "XTC",
-                        "title": "Making Plans For Nigel",
-                        "uri": "1XT5kxg6Tk0ukCO2vBQN4v"
-                    },
-                    {
-                        "artist": "XTC",
-                        "title": "Making Plans For Nigel",
-                        "uri": "3ey3YMZLdl1tQjbz7EJkKG"
-                    },
-                    {
-                        "artist": "XTC",
-                        "title": "Making Plans For Nigel",
-                        "uri": "7Lv6VeQhNl1yy5QbwdqRBH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "XTC",
-                        "title": "Making Plans For Nigel",
-                        "uri": "1XT5kxg6Tk0ukCO2vBQN4v"
-                    },
-                    {
-                        "artist": "XTC",
-                        "title": "Making Plans For Nigel",
-                        "uri": "3ey3YMZLdl1tQjbz7EJkKG"
-                    },
-                    {
-                        "artist": "XTC",
-                        "title": "Making Plans For Nigel",
-                        "uri": "7Lv6VeQhNl1yy5QbwdqRBH"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Patti Smith",
-                        "title": "Gloria: In Excelsis Deo",
-                        "uri": "272Z4tzaSMMcgrZ0R494S2"
-                    },
-                    {
-                        "artist": "Patti Smith",
-                        "title": "Gloria: In Excelsis Deo",
-                        "uri": "40P5fjk0H3Zo7yBW9zQbBR"
-                    },
-                    {
-                        "artist": "Patti Smith",
-                        "title": "Gloria",
-                        "uri": "2zAKLfOJLTHK5RGrj9ag0x"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Bruce Springsteen",
-                        "title": "Hungry Heart",
-                        "uri": "1KsI8NEeAna8ZIdojI3FiT"
-                    },
-                    {
-                        "artist": "Bruce Springsteen",
-                        "title": "Hungry Heart",
-                        "uri": "3WHor9s3fsLUPLdwgO4ZQz"
-                    },
-                    {
-                        "artist": "Bruce Springsteen",
-                        "title": "Hungry Heart - Live at Nassau Coliseum, Uniondale, NY - December 1980",
-                        "uri": "6fOMAc2LXPILAWUWeh41Ro"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bruce Springsteen",
-                        "title": "Hungry Heart",
-                        "uri": "1KsI8NEeAna8ZIdojI3FiT"
-                    },
-                    {
-                        "artist": "Sunfly Karaoke",
-                        "title": "Hungry Heart in the Style of Bruce Springsteen",
-                        "uri": "45VoRL9bYJXrCKoL4q6ngu"
-                    },
-                    {
-                        "artist": "Bruce Springsteen",
-                        "title": "Hungry Heart",
-                        "uri": "3WHor9s3fsLUPLdwgO4ZQz"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "It's Gonna Take A Miracle",
-                        "uri": "6LmLVvEAnAJTSycmPgV1cs"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "It's Gonna Take A Miracle",
-                        "uri": "2uZ5HQdBXwsfXKFU8tfYUq"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "It's Gonna Take A Miracle",
-                        "uri": "4ScMVMiXacvXdYZXLoG9ye"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "It's Gonna Take A Miracle",
-                        "uri": "6LmLVvEAnAJTSycmPgV1cs"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Jimmy Mack",
-                        "uri": "0Oo7umhghg2tlzJ3si1Q9X"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Desiree",
-                        "uri": "7CePZoRHYj88JQePT3XBMt"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Tom Verlaine",
-                        "title": "Kingdom Come",
-                        "uri": "4dGYbELYL2yBxMgebHVRIP"
-                    },
-                    {
-                        "artist": "Tom Verlaine",
-                        "title": "Kingdom Come",
-                        "uri": "3DtUDiyUr3ydEnGzp5gVPY"
-                    },
-                    {
-                        "artist": "Tom Verlaine",
-                        "title": "Kingdom Come",
-                        "uri": "0D49VJRwJwKvn3wObPNo0L"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tom Verlaine",
-                        "title": "Kingdom Come",
-                        "uri": "4dGYbELYL2yBxMgebHVRIP"
-                    },
-                    {
-                        "artist": "Tom Verlaine",
-                        "title": "Kingdom Come",
-                        "uri": "3DtUDiyUr3ydEnGzp5gVPY"
-                    },
-                    {
-                        "artist": "Tom Verlaine",
-                        "title": "Kingdom Come - Live 1987",
-                        "uri": "2gKHOwyvGfby7oXjBHaKyC"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Phil Thornalley",
-                        "title": "Fast Car",
-                        "uri": "5wdTK4mCxasyNTr1LKA0v2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Phil Thornalley",
-                        "title": "Fast Car",
-                        "uri": "5wdTK4mCxasyNTr1LKA0v2"
-                    },
-                    {
-                        "artist": "Phil Thornton",
-                        "title": "Bay City Shimmy (fat Chance Mix)",
-                        "uri": "0SaszPMneO5hBlcN6ZIIj3"
-                    },
-                    {
-                        "artist": "Phil Thornton",
-                        "title": "Crossing the Celestial River",
-                        "uri": "2DJcOHpgZ3WKoNJmBuVMBj"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "Big Star",
-                        "title": "September Gurls",
-                        "uri": "6Atlml4eL2BJcntPqB8Xh4"
-                    },
-                    {
-                        "artist": "Big Star",
-                        "title": "September Gurls - Single Version",
-                        "uri": "0AI566c17zoeG3u1Esocct"
-                    },
-                    {
-                        "artist": "Big Star",
-                        "title": "September Gurls",
-                        "uri": "13F2Y397iFAZZYOk5PCEeY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Big Star",
-                        "title": "September Gurls",
-                        "uri": "6Atlml4eL2BJcntPqB8Xh4"
-                    },
-                    {
-                        "artist": "Big Star",
-                        "title": "September Gurls - Single Version",
-                        "uri": "0AI566c17zoeG3u1Esocct"
-                    },
-                    {
-                        "artist": "Big Star",
-                        "title": "September Gurls",
-                        "uri": "13F2Y397iFAZZYOk5PCEeY"
-                    }
-                ]
-            },
-            "19": {
-                "s0": [
-                    {
-                        "artist": "The Who",
-                        "title": "Love Reign O'er Me",
-                        "uri": "0EF4KrU0dJ0lBEkqMyzlIi"
-                    },
-                    {
-                        "artist": "The Who",
-                        "title": "Love Reign O'er Me",
-                        "uri": "5u5kxtSrNFmeffcAi5xF9e"
-                    },
-                    {
-                        "artist": "The Who",
-                        "title": "Love Reign O'er Me",
-                        "uri": "78XMYsiN4hh3WxWJiX1Ddq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Who",
-                        "title": "Love Reign O'er Me",
-                        "uri": "0EF4KrU0dJ0lBEkqMyzlIi"
-                    },
-                    {
-                        "artist": "The Who",
-                        "title": "Love Reign O'er Me",
-                        "uri": "5u5kxtSrNFmeffcAi5xF9e"
-                    },
-                    {
-                        "artist": "The Who",
-                        "title": "Love Reign O'er Me",
-                        "uri": "78XMYsiN4hh3WxWJiX1Ddq"
-                    }
-                ]
-            },
-            "20": {
-                "s0": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Walls and Bridges",
-                        "uri": "1HAOMGHhDeGacTujMskwqp"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Walls and Bridges (2020 Vision)",
-                        "uri": "4fzmQ610EDcuA1NcSEO28Y"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Walls and Bridges",
-                        "uri": "1HAOMGHhDeGacTujMskwqp"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Walls and Bridges (2020 Vision)",
-                        "uri": "4fzmQ610EDcuA1NcSEO28Y"
-                    },
-                    {
-                        "artist": "Jfbm",
-                        "title": "Astral Drive",
-                        "uri": "6PFN8ubsU1V4b50FGnOcVs"
-                    }
-                ]
-            }
+    "my-seventies-soundtrack-w-phil-thornalley-11th-april-2022": {
+        "00": {
+            "artist": "The Spinners",
+            "ratio": 6,
+            "title": "It's A Shame",
+            "trackid": "1l1YTy9nJ0trwhsCGcimly"
         },
-        "my-seventies-soundtrack-w-phil-thornalley-11th-april-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "The Spinners",
-                        "title": "It's A Shame",
-                        "uri": "1l1YTy9nJ0trwhsCGcimly"
-                    },
-                    {
-                        "artist": "The Spinners",
-                        "title": "It's A Shame - Remastered",
-                        "uri": "5LuVBkfELaydohNZahwvNN"
-                    },
-                    {
-                        "artist": "The Spinners",
-                        "title": "It's A Shame",
-                        "uri": "6T2XTV68OpzLJieE1TKqL5"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lord Sko",
-                        "title": "Easy",
-                        "uri": "0y76a6n79F9vRyXCnEwN20"
-                    },
-                    {
-                        "artist": "The Spinners",
-                        "title": "It's A Shame",
-                        "uri": "1l1YTy9nJ0trwhsCGcimly"
-                    },
-                    {
-                        "artist": "Lord Sko",
-                        "title": "Easy",
-                        "uri": "2RJJMCYSf4d5xiSG2npGvV"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "It's Only Rock'n'Roll (But I Like It) - Remastered 2009",
-                        "uri": "668YgsnvdNBHfRscNIBS31"
-                    },
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "It’s Only Rock ’N’ Roll (But I Like It) - Live At The El Mocambo 1977",
-                        "uri": "3zLSTP4RvQTni2RtA7cck0"
-                    },
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "It's Only Rock 'N' Roll - Live",
-                        "uri": "1Wkbdv5UDv3slS34WWJOAN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Little Texas",
-                        "title": "Country Crazy",
-                        "uri": "1ET8ifI2CYEPB6Pke8s0aL"
-                    },
-                    {
-                        "artist": "The Rolling Stones",
-                        "title": "It's Only Rock'n'Roll (But I Like It) - Remastered 2009",
-                        "uri": "668YgsnvdNBHfRscNIBS31"
-                    },
-                    {
-                        "artist": "Little Texas",
-                        "title": "Country Crazy",
-                        "uri": "1XRCIi60dO2P1puYk96pFx"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Phoebe Snow",
-                        "title": "Every Night",
-                        "uri": "0VuHj3cmwUZqeXaypQ44vA"
-                    },
-                    {
-                        "artist": "Phoebe Snow",
-                        "title": "Every Night",
-                        "uri": "50bz4Nd1gv6ZPHXZ3ex1ou"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Phoebe Snow",
-                        "title": "Every Night",
-                        "uri": "0VuHj3cmwUZqeXaypQ44vA"
-                    },
-                    {
-                        "artist": "Phoebe Snow",
-                        "title": "Every Night",
-                        "uri": "50bz4Nd1gv6ZPHXZ3ex1ou"
-                    },
-                    {
-                        "artist": "Phoebe Snow",
-                        "title": "Don't Let Me Down",
-                        "uri": "3fnRRGvtXprH70DNvHvcfy"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "I Saw the Light - 2015 Remaster",
-                        "uri": "5uRkew0DtfAQmv0oEYNwFF"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Healing, Pt. 1 - 2015 Remaster",
-                        "uri": "6Go1ig0mE9P63U57wkyyRn"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Hello It's Me",
-                        "uri": "2ckXnzyvgva2oE9FWjb405"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Yes",
-                        "title": "Time and a Word - 2003 Remaster",
-                        "uri": "2BeTdjsTKX95HrrGolFaCJ"
-                    },
-                    {
-                        "artist": "Yes",
-                        "title": "Time and a Word",
-                        "uri": "7ja6kw9mMLUgHNHsnamQS9"
-                    },
-                    {
-                        "artist": "Yes",
-                        "title": "Time And A Word",
-                        "uri": "3yLjiBTypoFXhspWgquph2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Yes",
-                        "title": "Time and a Word - 2003 Remaster",
-                        "uri": "2BeTdjsTKX95HrrGolFaCJ"
-                    },
-                    {
-                        "artist": "Yes",
-                        "title": "Time and a Word",
-                        "uri": "7ja6kw9mMLUgHNHsnamQS9"
-                    },
-                    {
-                        "artist": "Yes",
-                        "title": "Time And A Word",
-                        "uri": "3yLjiBTypoFXhspWgquph2"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "For the Love of You, Pts. 1 & 2",
-                        "uri": "6k0GXtn49Ga6kfA8ZvLtVX"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "For the Love of You, Pts. 1 & 2",
-                        "uri": "7teF2kwC3GL00mQfwtxzo9"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "For the Love of You - Live",
-                        "uri": "0IyPHXV5RwZZcT7KJvy0BP"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "For the Love of You, Pts. 1 & 2",
-                        "uri": "6k0GXtn49Ga6kfA8ZvLtVX"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "For the Love of You, Pts. 1 & 2",
-                        "uri": "7teF2kwC3GL00mQfwtxzo9"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "For the Love of You - Live",
-                        "uri": "0IyPHXV5RwZZcT7KJvy0BP"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Summer of '76",
-                        "uri": "0STjkh3ydr6cdbCi6lYETE"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Summer of 76 (Sunset)",
-                        "uri": "5QA1O0yE6jYaQssOpaWKPF"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Summer of '76",
-                        "uri": "3JreurBbKfMAvppKYiJIiq"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Jackson Browne",
-                        "title": "Doctor My Eyes",
-                        "uri": "3QcuZo6WLcFkqqLmDs0d95"
-                    },
-                    {
-                        "artist": "Jackson Browne",
-                        "title": "Doctor My Eyes",
-                        "uri": "28XOMVk9J2apw3qYbHTCD9"
-                    },
-                    {
-                        "artist": "Jackson Browne",
-                        "title": "Doctor My Eyes - 1997 Remaster",
-                        "uri": "5OuaAMBmGjjJMK7yXpaFAK"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jackson Browne",
-                        "title": "Doctor My Eyes",
-                        "uri": "3QcuZo6WLcFkqqLmDs0d95"
-                    },
-                    {
-                        "artist": "Jackson Browne",
-                        "title": "Doctor My Eyes",
-                        "uri": "28XOMVk9J2apw3qYbHTCD9"
-                    },
-                    {
-                        "artist": "Jackson Browne",
-                        "title": "Doctor My Eyes - 1997 Remaster",
-                        "uri": "5OuaAMBmGjjJMK7yXpaFAK"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Talking Heads",
-                        "title": "Psycho Killer - 2005 Remaster",
-                        "uri": "1i6N76fftMZhijOzFQ5ZtL"
-                    },
-                    {
-                        "artist": "Talking Heads",
-                        "title": "Psycho Killer - 2005 Remaster",
-                        "uri": "01JHISI0cA0alhVzGQ3QeX"
-                    },
-                    {
-                        "artist": "Talking Heads",
-                        "title": "Psycho Killer - 2005 Remaster",
-                        "uri": "1HbnEez5NNZHyPU9jQKfR5"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Talking Heads",
-                        "title": "Psycho Killer - 2005 Remaster",
-                        "uri": "1i6N76fftMZhijOzFQ5ZtL"
-                    },
-                    {
-                        "artist": "Yung Wiss",
-                        "title": "Piedras",
-                        "uri": "6qMXDxafUceTMQzTHUbdzS"
-                    },
-                    {
-                        "artist": "Talking Heads",
-                        "title": "Psycho Killer - 2005 Remaster",
-                        "uri": "1HbnEez5NNZHyPU9jQKfR5"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Carly Simon",
-                        "title": "Haven't Got Time for the Pain",
-                        "uri": "0oAJ0BThYPkafNe8PNLqIq"
-                    },
-                    {
-                        "artist": "Karaoke Diamonds",
-                        "title": "Haven't Got Time for the Pain - Karaoke Version In the Style of Carly Simon",
-                        "uri": "6xBor2tgRQO0fmwXMXUEsI"
-                    },
-                    {
-                        "artist": "Carly Simon",
-                        "title": "Haven't Got Time for the Pain",
-                        "uri": "3m4dGRZLyjctHWKJtwXFKN"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Jo Jo Gunne",
-                        "title": "Run Run Run",
-                        "uri": "3pHx8jI1ZBVYcMG2QCZaKG"
-                    },
-                    {
-                        "artist": "Jo Jo Gunne",
-                        "title": "Run Run Run",
-                        "uri": "7IU8GRsNLJj0S3y3pAJ31A"
-                    },
-                    {
-                        "artist": "Jo Jo Gunne",
-                        "title": "Run Run Run",
-                        "uri": "6EfbJAWFRi7R4tHskK1O7W"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jo Jo Gunne",
-                        "title": "Run Run Run",
-                        "uri": "3pHx8jI1ZBVYcMG2QCZaKG"
-                    },
-                    {
-                        "artist": "Chuck Berry",
-                        "title": "Jo Jo Gunne",
-                        "uri": "253oIOpiktjK5UNfgnbWcP"
-                    },
-                    {
-                        "artist": "Jo Jo Gunne",
-                        "title": "Run Run Run",
-                        "uri": "4TmSbLWcnREIHqQBBnfeCt"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "60TB2Ifv7CCjjyROXXnChC"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "1JIAWuyCxbmrBetcPcElWJ"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "0MQZofdEhY6jlNZgb6R4lv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "60TB2Ifv7CCjjyROXXnChC"
-                    },
-                    {
-                        "artist": "Charttraxx Karaoke",
-                        "title": "Too High - Karaoke Version In the Style of Stevie Wonder",
-                        "uri": "3oSY9MtNu6oFanA1FsUiRM"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Superstition - Single Version",
-                        "uri": "1h2xVEoJORqrg71HocgqXd"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Neil Young",
-                        "title": "Cinnamon Girl (Electric) [Remastered] - Live",
-                        "uri": "5N6NYDtOzfgIJK8t9yPAay"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Crazy Horse",
-                        "title": "Cortez the Killer",
-                        "uri": "6mjHDdj6t9GoDjWIiNjWvx"
-                    },
-                    {
-                        "artist": "Crazy Horse",
-                        "title": "My My Hey Hey",
-                        "uri": "17wuWurxItvUG8vbXuqCEy"
-                    },
-                    {
-                        "artist": "Neil Young",
-                        "title": "Cinnamon Girl (Electric) [Remastered] - Live",
-                        "uri": "5N6NYDtOzfgIJK8t9yPAay"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Nick Lowe",
-                        "title": "Cruel to Be Kind",
-                        "uri": "7D5ycpIrqwGNTQFKmzhDIg"
-                    },
-                    {
-                        "artist": "Nick Lowe",
-                        "title": "Cruel to Be Kind",
-                        "uri": "7izzKonfS7OZIO7NWuAMHJ"
-                    },
-                    {
-                        "artist": "Nick Lowe",
-                        "title": "Cruel to Be Kind",
-                        "uri": "15xSDqiBqal8WCyPXjdEsB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nick Lowe",
-                        "title": "Cruel to Be Kind",
-                        "uri": "7D5ycpIrqwGNTQFKmzhDIg"
-                    },
-                    {
-                        "artist": "Nick Lowe",
-                        "title": "Cruel to Be Kind",
-                        "uri": "7izzKonfS7OZIO7NWuAMHJ"
-                    },
-                    {
-                        "artist": "Nick Lowe",
-                        "title": "Cruel to Be Kind",
-                        "uri": "15xSDqiBqal8WCyPXjdEsB"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "The Rolling Stones",
+            "ratio": 5,
+            "title": "It's Only Rock'n'Roll (But I Like It) - Remastered 2009",
+            "trackid": "668YgsnvdNBHfRscNIBS31"
         },
-        "phil-thornalley-11th-may-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Everybody's Going to Heaven / King Kong Reggae - 2015 Remaster",
-                        "uri": "2RCcU5pD6Xkz1AFEqvXtip"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Everybody's Going to Heaven / King Kong Reggae - 2015 Remaster",
-                        "uri": "328uAFpupgUotxSBWeYk90"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Everybody's Going to Heaven / King Kong Reggae - 2015 Remaster",
-                        "uri": "2RCcU5pD6Xkz1AFEqvXtip"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Onomatopoeia - 2015 Remaster",
-                        "uri": "2R1aY7STaLRU3iTN9MxEj7"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Hammer in Your Heart - Live Clearwater 2003",
-                        "uri": "2pDJSzrccs6ZNRw6nCHCYe"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Lou Reed",
-                        "title": "Vicious",
-                        "uri": "4A48NL57P16zSRaq3yoYry"
-                    },
-                    {
-                        "artist": "Lou Reed",
-                        "title": "Vicious",
-                        "uri": "3ueB9cIcUf518ztqtSmT2S"
-                    },
-                    {
-                        "artist": "Lou Reed",
-                        "title": "Vicious",
-                        "uri": "7Kd0AUbT336HNZcuzhGy69"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lou Reed",
-                        "title": "Vicious",
-                        "uri": "4A48NL57P16zSRaq3yoYry"
-                    },
-                    {
-                        "artist": "Lou Reed",
-                        "title": "Vicious",
-                        "uri": "3ueB9cIcUf518ztqtSmT2S"
-                    },
-                    {
-                        "artist": "Lou Reed",
-                        "title": "Vicious - Live 1986",
-                        "uri": "0VcXMDZP4w7iCh8hKs0xCd"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Free",
-                        "title": "Wishing Well",
-                        "uri": "6TSBIfIbxuPDi1uqMqy1iV"
-                    },
-                    {
-                        "artist": "Free",
-                        "title": "Wishing Well",
-                        "uri": "166lcoYBUJLARCqyfVPno1"
-                    },
-                    {
-                        "artist": "Free",
-                        "title": "Wishing Well",
-                        "uri": "3h9UMW4m6r2odSGFJoUq9a"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Free",
-                        "title": "Wishing Well",
-                        "uri": "6TSBIfIbxuPDi1uqMqy1iV"
-                    },
-                    {
-                        "artist": "Jamie Landsborough",
-                        "title": "Wishin' Well",
-                        "uri": "28FcPqSexFbSKUXvGV9SYT"
-                    },
-                    {
-                        "artist": "Free",
-                        "title": "Wishing Well",
-                        "uri": "166lcoYBUJLARCqyfVPno1"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "Spanish Harlem",
-                        "uri": "0sQ594D1EuU66VDdtHBE6j"
-                    },
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "Spanish Harlem",
-                        "uri": "3jg3ECrVJM63ylcqhWF7xE"
-                    },
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "Spanish Harlem",
-                        "uri": "3hi6hxVmh4QJuoHzL5Nrmp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "Spanish Harlem",
-                        "uri": "0sQ594D1EuU66VDdtHBE6j"
-                    },
-                    {
-                        "artist": "Aretha Franklin",
-                        "title": "Spanish Harlem",
-                        "uri": "3jg3ECrVJM63ylcqhWF7xE"
-                    },
-                    {
-                        "artist": "Instrumental Pop Players",
-                        "title": "Spanish Harlem",
-                        "uri": "2e6lzSdVIhqaPTgfRR4gfZ"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Patti Smith",
-                        "title": "Because the Night",
-                        "uri": "0lIoY4ZQsdn5QzhraM9o9u"
-                    },
-                    {
-                        "artist": "Patti Smith",
-                        "title": "Because the Night",
-                        "uri": "77XlfkvXtMwppbEU5sku97"
-                    },
-                    {
-                        "artist": "Patti Smith",
-                        "title": "Because the Night",
-                        "uri": "1A3OA6zON5HHueFm4ejrRF"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Billy Paul",
-                        "title": "Let 'Em In",
-                        "uri": "7EIETgqBk63OdvVyIFDNKx"
-                    },
-                    {
-                        "artist": "Billy Paul",
-                        "title": "Let 'Em In",
-                        "uri": "6SbGBhu3LKpZCF5xtxtX4H"
-                    },
-                    {
-                        "artist": "Billy Paul",
-                        "title": "Let Em In",
-                        "uri": "6iNJxDTAF9axAdicwRW9sV"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Billy Paul",
-                        "title": "Let 'Em In",
-                        "uri": "7EIETgqBk63OdvVyIFDNKx"
-                    },
-                    {
-                        "artist": "Billy Paul",
-                        "title": "Let 'Em In",
-                        "uri": "6SbGBhu3LKpZCF5xtxtX4H"
-                    },
-                    {
-                        "artist": "Billy Paul",
-                        "title": "Let Em In",
-                        "uri": "6iNJxDTAF9axAdicwRW9sV"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "My Love",
-                        "uri": "3oevkC3HQ2sxTwJ394MROY"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "My Love",
-                        "uri": "6W5B2atlbrHdC8vy8c3df8"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "My Love",
-                        "uri": "2rBXlEHLGfb6bZgMCay4am"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Wings",
-                        "title": "My Love - 2018 Remaster",
-                        "uri": "0Oj0TT23GBH2XuHAaSsloH"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "My Love",
-                        "uri": "3oevkC3HQ2sxTwJ394MROY"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "My Love",
-                        "uri": "6W5B2atlbrHdC8vy8c3df8"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "10cc",
-                        "title": "Donna",
-                        "uri": "3wSaVY4rEIAwl5RcHfSUrz"
-                    },
-                    {
-                        "artist": "Giuseppe Verdi",
-                        "title": "Rigoletto / Act 3: Giuseppe VERDI : Rigoletto « La donna e mobile »",
-                        "uri": "3bnYy69B8THXk4gTx7bOTA"
-                    },
-                    {
-                        "artist": "10cc",
-                        "title": "Dreadlock Holiday",
-                        "uri": "1LOZMYF5s8qhW7Rv4w2gun"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Jeff Beck",
-                        "title": "Cause We've Ended as Lovers",
-                        "uri": "4zoQ3EqopTIGmK2c2rPV5t"
-                    },
-                    {
-                        "artist": "Jeff Beck",
-                        "title": "Cause We’ve Ended As Lovers - Live",
-                        "uri": "2BOGZh3QC5rKj5s20zCVSv"
-                    },
-                    {
-                        "artist": "Jeff Beck",
-                        "title": "Cause We've Ended As Lovers",
-                        "uri": "6PfDPX8Hg0XlLaMSsvD7kE"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jeff Beck",
-                        "title": "Cause We've Ended as Lovers",
-                        "uri": "4zoQ3EqopTIGmK2c2rPV5t"
-                    },
-                    {
-                        "artist": "Jeff Beck",
-                        "title": "Cause We’ve Ended As Lovers - Live",
-                        "uri": "2BOGZh3QC5rKj5s20zCVSv"
-                    },
-                    {
-                        "artist": "Jeff Beck",
-                        "title": "Cause We've Ended As Lovers",
-                        "uri": "6PfDPX8Hg0XlLaMSsvD7kE"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Lowdown",
-                        "uri": "0nlZjTPzW6S9JIESuGfImT"
-                    },
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Lowdown",
-                        "uri": "20MxJN12WEqU5eWsuCrwM5"
-                    },
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Lowdown",
-                        "uri": "4w7NUfTxgGXqA0fBrNX5cT"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Lowdown",
-                        "uri": "0nlZjTPzW6S9JIESuGfImT"
-                    },
-                    {
-                        "artist": "Karaoke Diamonds",
-                        "title": "Lowdown (Karaoke Version) (Originally Performed By Boz Scaggs)",
-                        "uri": "2mpRd2EZ8rDYEHjTJAGKB0"
-                    },
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Lowdown",
-                        "uri": "20MxJN12WEqU5eWsuCrwM5"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "You Overwhelm Me",
-                        "uri": "1utKExjdMhkh83m0zoF4jz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "You Overwhelm Me",
-                        "uri": "1utKExjdMhkh83m0zoF4jz"
-                    },
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Know by Now",
-                        "uri": "1ldyRI77NGx7PZdPdVZjd2"
-                    },
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Through It All There's You",
-                        "uri": "6m07dRkBD1vW77whBXLbjO"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Traffic",
-                        "title": "Light Up Or Leave Me Alone",
-                        "uri": "6MeSDfZgtjw7k9QgdLxbNI"
-                    },
-                    {
-                        "artist": "Traffic",
-                        "title": "Light Up Or Leave Me Alone",
-                        "uri": "4UKwOV4ShcqphusLzrQtyp"
-                    },
-                    {
-                        "artist": "Traffic",
-                        "title": "Light up or Leave Me Alone",
-                        "uri": "2GdzpiH5MSY2JA7rxt3vX1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Traffic",
-                        "title": "Light Up Or Leave Me Alone",
-                        "uri": "6MeSDfZgtjw7k9QgdLxbNI"
-                    },
-                    {
-                        "artist": "Traffic",
-                        "title": "Light Up Or Leave Me Alone",
-                        "uri": "4UKwOV4ShcqphusLzrQtyp"
-                    },
-                    {
-                        "artist": "Traffic",
-                        "title": "Light up or Leave Me Alone",
-                        "uri": "2GdzpiH5MSY2JA7rxt3vX1"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Marvin Flies Thru the Stratosphere",
-                        "uri": "58FbWGPQ2y1vvp2p3bV74R"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Marvin Flies Thru the Stratosphere",
-                        "uri": "58FbWGPQ2y1vvp2p3bV74R"
-                    },
-                    {
-                        "artist": "Chillout Jazz",
-                        "title": "Astral Drive",
-                        "uri": "1tPqTVkEVvUybpQU7gJsvm"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Love Is Real",
-                        "uri": "5L2G6IJLTdxwN781Nxqx4W"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Sometimes I Don't Know What to Feel - 2015 Remaster",
-                        "uri": "6jFN5tApB67HERy6QlThwt"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Sometimes I Don't Know What to Feel - Live; 2015 Remaster",
-                        "uri": "4zM86R1A1BMzwDNxDah6Mq"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Sometimes I Don't Know What to Feel - 2006 Remaster",
-                        "uri": "5lzBdIWUxKpVXIqD8GoT2t"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Sometimes I Don't Know What to Feel - 2015 Remaster",
-                        "uri": "6jFN5tApB67HERy6QlThwt"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love? - 2015 Remaster",
-                        "uri": "5hb92JsDZjB3PuysBhwTAS"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Healing, Pt. 1 - 2015 Remaster",
-                        "uri": "6Go1ig0mE9P63U57wkyyRn"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "The Cure",
-                        "title": "Boys Don't Cry",
-                        "uri": "1QFh8OH1e78dGd3VyJZCAC"
-                    },
-                    {
-                        "artist": "The Cure",
-                        "title": "Boys Don't Cry",
-                        "uri": "1YQCRXscu8xE74BVVMUCRr"
-                    },
-                    {
-                        "artist": "The Cure",
-                        "title": "Boys Don't Cry",
-                        "uri": "0C2eEsMBj78CLkHNJPjohc"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Cure",
-                        "title": "Boys Don't Cry",
-                        "uri": "1QFh8OH1e78dGd3VyJZCAC"
-                    },
-                    {
-                        "artist": "Jebediah",
-                        "title": "It's Over",
-                        "uri": "2u6ThR0uMkKooiegK09jCB"
-                    },
-                    {
-                        "artist": "The Cure",
-                        "title": "Boys Don't Cry",
-                        "uri": "1YQCRXscu8xE74BVVMUCRr"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Carole King",
-                        "title": "It's Too Late",
-                        "uri": "12q3V8ShACq2PSWINMc2rC"
-                    },
-                    {
-                        "artist": "Carole King",
-                        "title": "It’s Too Late - Live At The Troubadour / 2007",
-                        "uri": "7uBy4PJfPKAOQlwHQPCtrp"
-                    },
-                    {
-                        "artist": "Carole King",
-                        "title": "It's Too Late",
-                        "uri": "41QW3LkLVXBazVQ2xVsFoa"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Carole King",
-                        "title": "It's Too Late",
-                        "uri": "12q3V8ShACq2PSWINMc2rC"
-                    },
-                    {
-                        "artist": "Karaoke Diamonds",
-                        "title": "It's Too Late - Karaoke Version In the Style of Carole King",
-                        "uri": "66SmmHj1oy5VymiM7VrjMl"
-                    },
-                    {
-                        "artist": "Carole King",
-                        "title": "It's Too Late",
-                        "uri": "41QW3LkLVXBazVQ2xVsFoa"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Bryan Ferry",
-                        "title": "A Hard Rain's A-Gonna Fall",
-                        "uri": "2O1FP6A66cqXt4nj7qnmdJ"
-                    },
-                    {
-                        "artist": "Bryan Ferry",
-                        "title": "A Hard Rain's A-Gonna Fall",
-                        "uri": "3Z5E0vrgMOi2rgl3zjPZ4I"
-                    },
-                    {
-                        "artist": "Bryan Ferry",
-                        "title": "A Hard Rain's A-Gonna Fall",
-                        "uri": "1mXeSRqOvnuchtoeA9b8c8"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bryan Ferry",
-                        "title": "A Hard Rain's A-Gonna Fall",
-                        "uri": "2O1FP6A66cqXt4nj7qnmdJ"
-                    },
-                    {
-                        "artist": "Bryan Ferry",
-                        "title": "A Hard Rain's A-Gonna Fall",
-                        "uri": "3Z5E0vrgMOi2rgl3zjPZ4I"
-                    },
-                    {
-                        "artist": "Bryan Ferry",
-                        "title": "A Hard Rain's A-Gonna Fall",
-                        "uri": "1mXeSRqOvnuchtoeA9b8c8"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "Luna",
-                        "uri": "2l1V1EVqBgdyZ4avBgNj8I"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "Luna",
-                        "uri": "2l1V1EVqBgdyZ4avBgNj8I"
-                    },
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "Breakdown",
-                        "uri": "5x53pbGk6sbl1BGom19QQ5"
-                    },
-                    {
-                        "artist": "Tom Petty",
-                        "title": "Luna - Live",
-                        "uri": "6o0lgIpVDSuPyeAxjJeQmV"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "Rory Gallagher",
-                        "title": "Laundromat",
-                        "uri": "6UaolbiZgvtNkLfU0qPLvx"
-                    },
-                    {
-                        "artist": "Rory Gallagher",
-                        "title": "Laundromat - Live",
-                        "uri": "6T7AvKaP5EWod4uo7QsA5R"
-                    },
-                    {
-                        "artist": "Rory Gallagher",
-                        "title": "Laundromat - 50th Anniversary Edition Mix",
-                        "uri": "2h8HVCyYLjar90XQZfggZo"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Rory Gallagher",
-                        "title": "Laundromat",
-                        "uri": "6UaolbiZgvtNkLfU0qPLvx"
-                    },
-                    {
-                        "artist": "Rory Gallagher",
-                        "title": "Laundromat - Live",
-                        "uri": "6T7AvKaP5EWod4uo7QsA5R"
-                    },
-                    {
-                        "artist": "Rory Gallagher",
-                        "title": "Laundromat - 50th Anniversary Edition Mix",
-                        "uri": "2h8HVCyYLjar90XQZfggZo"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Phoebe Snow",
+            "ratio": 6,
+            "title": "Every Night",
+            "trackid": "0VuHj3cmwUZqeXaypQ44vA"
         },
-        "phil-thornalley-17th-july-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Jonathan Richman & The Modern Lovers",
-                        "title": "Egyptian Reggae - Live",
-                        "uri": "6luyViGYiEnCerudBySTcz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jonathan Richman & The Modern Lovers",
-                        "title": "Egyptian Reggae - Live",
-                        "uri": "6luyViGYiEnCerudBySTcz"
-                    },
-                    {
-                        "artist": "Jonathan Richman & The Modern Lovers",
-                        "title": "Egyptian Reggae - Live",
-                        "uri": "3FtqoENKDN0nq5bWNxHPYR"
-                    },
-                    {
-                        "artist": "Jonathan Richman & The Modern Lovers",
-                        "title": "Egyptian Reggae - Live",
-                        "uri": "0o8HlHgs8KqwZGk3UhVrvW"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Breathless - Instrumental; 2015 Remaster",
-                        "uri": "65ZnLrglCjqTi5fu2QWZeq"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Breathless - Instrumental Version",
-                        "uri": "6bW762Q7RQ6AdbxOP9yuVa"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Breathless - Instrumental; 2015 Remaster",
-                        "uri": "7oKQyd2HoGvsxyCgpCZk6F"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Breathless - Instrumental; 2015 Remaster",
-                        "uri": "65ZnLrglCjqTi5fu2QWZeq"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "I Saw the Light - 2015 Remaster",
-                        "uri": "5uRkew0DtfAQmv0oEYNwFF"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Hello It's Me",
-                        "uri": "2ckXnzyvgva2oE9FWjb405"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "The Love Unlimited Orchestra",
-                        "title": "Love's Theme",
-                        "uri": "5csdrJ0JtFn0qvwlvSh2EI"
-                    },
-                    {
-                        "artist": "The Love Unlimited Orchestra",
-                        "title": "Love's Theme - Alternate Version",
-                        "uri": "58pGIdk20zfAhZmhkt1asp"
-                    },
-                    {
-                        "artist": "The Love Unlimited Orchestra",
-                        "title": "Love's Theme",
-                        "uri": "6AdhpSUxgBIr93S28fRrGx"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Love Unlimited Orchestra",
-                        "title": "Love's Theme",
-                        "uri": "5csdrJ0JtFn0qvwlvSh2EI"
-                    },
-                    {
-                        "artist": "The Love Unlimited Orchestra",
-                        "title": "Love's Theme - Alternate Version",
-                        "uri": "58pGIdk20zfAhZmhkt1asp"
-                    },
-                    {
-                        "artist": "Love Unlimited Orchestra",
-                        "title": "Love's Theme",
-                        "uri": "0L7NGwkZdJ0m5iHousSlIT"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Pink Floyd",
-                        "title": "One Of These Days - 2011 Remastered Version",
-                        "uri": "0Ga3szKsJOeZ0eAfydm1WV"
-                    },
-                    {
-                        "artist": "Pink Floyd",
-                        "title": "One Of These Days - Live",
-                        "uri": "4lCi0YhxRShi5dDPADCxZA"
-                    },
-                    {
-                        "artist": "Pink Floyd",
-                        "title": "One Of These Days - Live, 2018 Remaster",
-                        "uri": "3QArdCJvwnsiUHHsi10zWg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Pink Floyd",
-                        "title": "One Of These Days - 2011 Remastered Version",
-                        "uri": "0Ga3szKsJOeZ0eAfydm1WV"
-                    },
-                    {
-                        "artist": "Pink Floyd",
-                        "title": "One Of These Days - Live",
-                        "uri": "4lCi0YhxRShi5dDPADCxZA"
-                    },
-                    {
-                        "artist": "Pink Floyd",
-                        "title": "One Of These Days - Live, 2018 Remaster",
-                        "uri": "3QArdCJvwnsiUHHsi10zWg"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Santana",
-                        "title": "Samba Pa Ti",
-                        "uri": "35fC3Wq3slX4OBfyvBVmHm"
-                    },
-                    {
-                        "artist": "Santana",
-                        "title": "Samba Pa Ti",
-                        "uri": "5e0I1c38TYRjilm22OiWDo"
-                    },
-                    {
-                        "artist": "Santana",
-                        "title": "Samba Pa Ti",
-                        "uri": "5dMXqZfyUOB1XlAYBivRQd"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Santana",
-                        "title": "Samba Pa Ti",
-                        "uri": "35fC3Wq3slX4OBfyvBVmHm"
-                    },
-                    {
-                        "artist": "Santana",
-                        "title": "Samba Pa Ti",
-                        "uri": "5e0I1c38TYRjilm22OiWDo"
-                    },
-                    {
-                        "artist": "Santana",
-                        "title": "Samba Pa Ti",
-                        "uri": "5LPS7ayTd7AKAHBh3qlVz0"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Billy Cobham",
-                        "title": "Red Baron",
-                        "uri": "6ipO2COc25UhJu9tKCkNsd"
-                    },
-                    {
-                        "artist": "Billy Cobham",
-                        "title": "Red Baron",
-                        "uri": "7CrNVp7ily5rWm0Era3aw4"
-                    },
-                    {
-                        "artist": "Billy Cobham",
-                        "title": "Red Baron",
-                        "uri": "0NExBi01EXlwG4p25vMaKL"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Billy Cobham",
-                        "title": "Red Baron",
-                        "uri": "6ipO2COc25UhJu9tKCkNsd"
-                    },
-                    {
-                        "artist": "Billy Cobham",
-                        "title": "Red Baron",
-                        "uri": "7CrNVp7ily5rWm0Era3aw4"
-                    },
-                    {
-                        "artist": "Billy Cobham",
-                        "title": "Red Baron - Live 1987",
-                        "uri": "2TfPCfhVzpNAT8Pr0UOr1N"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "4Fr1MF0N2VAh9niAYGf9wE"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "7jBZqr4aWd4o321KaI8mCq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "4Fr1MF0N2VAh9niAYGf9wE"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "7jBZqr4aWd4o321KaI8mCq"
-                    },
-                    {
-                        "artist": "The Fab One",
-                        "title": "Singalong Junk",
-                        "uri": "54hzl9ulG6krmS9q1sXi14"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Mr. Bloe",
-                        "title": "Groovin' With Mr. Bloe",
-                        "uri": "1YEMMRyZbIWSt8KHu1gow9"
-                    },
-                    {
-                        "artist": "Mr Bloe",
-                        "title": "Groovin' With Mr. Bloe",
-                        "uri": "7z07BQ41OEAKaaJQy5zOMS"
-                    },
-                    {
-                        "artist": "Mr. Bloe",
-                        "title": "Groovin' With Mr. Bloe",
-                        "uri": "72pHmQAwzF1SPRKtpbRM4F"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mr. Bloe",
-                        "title": "Groovin' With Mr. Bloe",
-                        "uri": "1YEMMRyZbIWSt8KHu1gow9"
-                    },
-                    {
-                        "artist": "Wind",
-                        "title": "Groovin’ With Mr. Bloe (Mixed)",
-                        "uri": "6k8XVomOVCzZKnQKRrgAl6"
-                    },
-                    {
-                        "artist": "Mr Bloe",
-                        "title": "Groovin' With Mr. Bloe",
-                        "uri": "7z07BQ41OEAKaaJQy5zOMS"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Fleetwood Mac",
-                        "title": "Albatross",
-                        "uri": "3iZ5twPwvFeOUQA4Deu8tP"
-                    },
-                    {
-                        "artist": "Mick Fleetwood and Friends",
-                        "title": "Albatross (with David Gilmour) - Live from The London Palladium",
-                        "uri": "4IjxSTdvUVP1lD5X64PNrL"
-                    },
-                    {
-                        "artist": "Fleetwood Mac",
-                        "title": "Albatross",
-                        "uri": "7dwjD9FPK0bFh3TqTWFV8U"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Fleetwood Mac",
-                        "title": "Albatross",
-                        "uri": "3iZ5twPwvFeOUQA4Deu8tP"
-                    },
-                    {
-                        "artist": "Fleetwood Mac",
-                        "title": "Albatross (Live) [Remastered]",
-                        "uri": "4ir5hZS5DXK3W7sbq1v9b6"
-                    },
-                    {
-                        "artist": "Fleetwood Mac",
-                        "title": "Albatross",
-                        "uri": "7dwjD9FPK0bFh3TqTWFV8U"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Focus",
-                        "title": "Sylvia",
-                        "uri": "6TJa7RJhrlI4PYaBv0Nx8h"
-                    },
-                    {
-                        "artist": "Focus",
-                        "title": "Sylvia",
-                        "uri": "7nKra3y52HtHXXiuPEPgAd"
-                    },
-                    {
-                        "artist": "Focus",
-                        "title": "Sylvia",
-                        "uri": "5hguHQAfrsP9jDgad6I4S6"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Focus",
-                        "title": "Sylvia",
-                        "uri": "6TJa7RJhrlI4PYaBv0Nx8h"
-                    },
-                    {
-                        "artist": "Focus",
-                        "title": "Sylvia",
-                        "uri": "7nKra3y52HtHXXiuPEPgAd"
-                    },
-                    {
-                        "artist": "Focus",
-                        "title": "Sylvia",
-                        "uri": "5hguHQAfrsP9jDgad6I4S6"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Emerson, Lake & Palmer",
-                        "title": "Fanfare for the Common Man - Single Edit",
-                        "uri": "0dkL8m14x0wecbq04QfBKs"
-                    },
-                    {
-                        "artist": "Emerson, Lake & Palmer",
-                        "title": "Fanfare for the Common Man - 2017 Remastered Version",
-                        "uri": "3i5bc53F2glMZC7GFXZQ7T"
-                    },
-                    {
-                        "artist": "Emerson, Lake & Palmer",
-                        "title": "Fanfare for the Common Man - Live at Olympic Stadium, Montreal, 1977",
-                        "uri": "4d8cLm6dF2lzzI9YRBCyIf"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Emerson, Lake & Palmer",
-                        "title": "Fanfare for the Common Man - Single Edit",
-                        "uri": "0dkL8m14x0wecbq04QfBKs"
-                    },
-                    {
-                        "artist": "Emerson, Lake & Palmer",
-                        "title": "Fanfare for the Common Man - 2017 Remastered Version",
-                        "uri": "3i5bc53F2glMZC7GFXZQ7T"
-                    },
-                    {
-                        "artist": "Emerson, Lake & Palmer",
-                        "title": "Fanfare for the Common Man - Live at Olympic Stadium, Montreal, 1977",
-                        "uri": "4d8cLm6dF2lzzI9YRBCyIf"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Jaco Pastorius",
-                        "title": "Portrait of Tracy",
-                        "uri": "5NBAy2oiS9OIWyAZhklsH2"
-                    },
-                    {
-                        "artist": "Jaco Pastorius",
-                        "title": "Portrait of Tracy",
-                        "uri": "4r3YyyTgGO4keogWcCoeFb"
-                    },
-                    {
-                        "artist": "Jaco Pastorius",
-                        "title": "Portrait of Tracy",
-                        "uri": "7ffQA5eldggkdkjtHIKNAW"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "The Spark of Life - 2015 Remaster",
-                        "uri": "4D8qFrJTrWe6bzLHjOv6Yg"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "The Spark of Life",
-                        "uri": "765pgnLdIS7gmjrGwaTqTh"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "The Spark of Life - Live",
-                        "uri": "1R4Nl96gNh6FtSfCDtEuGV"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "The Spark of Life - 2015 Remaster",
-                        "uri": "4D8qFrJTrWe6bzLHjOv6Yg"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love? - 2015 Remaster",
-                        "uri": "5hb92JsDZjB3PuysBhwTAS"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Healing, Pt. 1 - 2015 Remaster",
-                        "uri": "6Go1ig0mE9P63U57wkyyRn"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "George Benson",
-                        "title": "Breezin'",
-                        "uri": "1m3BAsNsQAaSNMD2M6vlKY"
-                    },
-                    {
-                        "artist": "George Benson",
-                        "title": "Breezin'",
-                        "uri": "2Nig8bXuFLwG3tv6gk4jXL"
-                    },
-                    {
-                        "artist": "George Benson",
-                        "title": "Breezin'",
-                        "uri": "5uPLhXXqYAGjxz55wXJNA2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "George Benson",
-                        "title": "Breezin'",
-                        "uri": "1m3BAsNsQAaSNMD2M6vlKY"
-                    },
-                    {
-                        "artist": "Apollo Springs",
-                        "title": "Bear Hunter Eagle Fox",
-                        "uri": "4yg6fPdImZNkkRrX2VLRj0"
-                    },
-                    {
-                        "artist": "George Benson",
-                        "title": "Breezin'",
-                        "uri": "2Nig8bXuFLwG3tv6gk4jXL"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Ry Cooder",
-                        "title": "I Think Its Going to Work Out Fine",
-                        "uri": "0bLerWMXrGBlQ9kFcxnQQJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ry Cooder",
-                        "title": "I Think Its Going to Work Out Fine",
-                        "uri": "0bLerWMXrGBlQ9kFcxnQQJ"
-                    },
-                    {
-                        "artist": "Ry Cooder",
-                        "title": "Crossroads - 2008 Remaster",
-                        "uri": "6mGy6bzPJ6hrgPnVJZCEd4"
-                    },
-                    {
-                        "artist": "Ry Cooder",
-                        "title": "Walkin' Away Blues - 2008 Remaster",
-                        "uri": "1RiDxu74ELuRmNXNarJMIU"
-                    }
-                ]
-            },
-            "15": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Pat Metheny Group",
-                        "title": "Are You Going With Me?",
-                        "uri": "4gGbnyw4jztAZSIPYuabs5"
-                    },
-                    {
-                        "artist": "Pat Metheny Group",
-                        "title": "Are You Going With Me? - Live",
-                        "uri": "3jKCwz2s4wm3djg7Mb2dMI"
-                    },
-                    {
-                        "artist": "Pat Metheny",
-                        "title": "Are You Going with Me?",
-                        "uri": "3UEu7wdJkq8pyEinqCcmwI"
-                    }
-                ]
-            }
+        "03": {
+            "artist": "Todd Rundgren",
+            "ratio": 2,
+            "title": "Healing, Pt. 1 - 2015 Remaster",
+            "trackid": "6Go1ig0mE9P63U57wkyyRn"
         },
-        "phil-thornalley-26th-june-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Love Is Real",
-                        "uri": "5L2G6IJLTdxwN781Nxqx4W"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Love is Real (Scott Free)",
-                        "uri": "0XQNbzhIwGdJrr6WDUE1Ff"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Love is Real - Dave Bascombe Radio Edit",
-                        "uri": "629dWIMYLj6e0Nd1zznQND"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Love Is Real",
-                        "uri": "5L2G6IJLTdxwN781Nxqx4W"
-                    },
-                    {
-                        "artist": "Jfbm",
-                        "title": "Astral Drive",
-                        "uri": "6PFN8ubsU1V4b50FGnOcVs"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Love is Real (Light from a Different Sun)",
-                        "uri": "52sxfEqbbnOBEwzFQYQRVo"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Bobby Womack",
-                        "title": "Across 110th Street",
-                        "uri": "2zyTP97uGsIc1C4KNNEkyn"
-                    },
-                    {
-                        "artist": "Bobby Womack",
-                        "title": "Across 110th Street",
-                        "uri": "47FQPdmy0Ks8D1nTCV3nQm"
-                    },
-                    {
-                        "artist": "Bobby Womack",
-                        "title": "Across 110th Street",
-                        "uri": "3E0dHzJ1WIkm58RhJAe13n"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bobby Womack",
-                        "title": "Across 110th Street",
-                        "uri": "2zyTP97uGsIc1C4KNNEkyn"
-                    },
-                    {
-                        "artist": "Bobby Womack",
-                        "title": "Across 110th Street",
-                        "uri": "47FQPdmy0Ks8D1nTCV3nQm"
-                    },
-                    {
-                        "artist": "Bobby Womack",
-                        "title": "Across 110th Street",
-                        "uri": "3E0dHzJ1WIkm58RhJAe13n"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "60TB2Ifv7CCjjyROXXnChC"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "1JIAWuyCxbmrBetcPcElWJ"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "0MQZofdEhY6jlNZgb6R4lv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Too High",
-                        "uri": "60TB2Ifv7CCjjyROXXnChC"
-                    },
-                    {
-                        "artist": "Charttraxx Karaoke",
-                        "title": "Too High - Karaoke Version In the Style of Stevie Wonder",
-                        "uri": "3oSY9MtNu6oFanA1FsUiRM"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "Superstition - Single Version",
-                        "uri": "1h2xVEoJORqrg71HocgqXd"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Robin Trower",
-                        "title": "Bridge of Sighs - 2007 Remaster",
-                        "uri": "1t9vbqIIHzQ3zKChXhybvY"
-                    },
-                    {
-                        "artist": "Robin Trower",
-                        "title": "Bridge Of Sighs",
-                        "uri": "1oOV1RcUDk7str6XetXc5J"
-                    },
-                    {
-                        "artist": "Robin Trower",
-                        "title": "Bridge Of Sighs",
-                        "uri": "2WG2p0zl09pUTs0RVfuaPy"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Robin Trower",
-                        "title": "Bridge of Sighs - 2007 Remaster",
-                        "uri": "1t9vbqIIHzQ3zKChXhybvY"
-                    },
-                    {
-                        "artist": "Robin Trower",
-                        "title": "Too Rolling Stoned - 2007 Remaster",
-                        "uri": "0aveCMNj686kG1oX4n80P6"
-                    },
-                    {
-                        "artist": "Robin Trower",
-                        "title": "Bridge of Sighs - 2007 Remaster",
-                        "uri": "70c2vdWMhKU4Ki3McnPgo0"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Melanie",
-                        "title": "Brand New Key",
-                        "uri": "7da5B9d2oVV16YSzXVxmrR"
-                    },
-                    {
-                        "artist": "Melanie",
-                        "title": "Brand New Key",
-                        "uri": "3tm6LVXZJg0lG4hQm5ytrT"
-                    },
-                    {
-                        "artist": "Melanie",
-                        "title": "Brand New Key",
-                        "uri": "5Mhsv93WAipv1KGMkIH3RB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Melanie",
-                        "title": "Brand New Key",
-                        "uri": "7da5B9d2oVV16YSzXVxmrR"
-                    },
-                    {
-                        "artist": "Melanie",
-                        "title": "Brand New Key",
-                        "uri": "3tm6LVXZJg0lG4hQm5ytrT"
-                    },
-                    {
-                        "artist": "Melanie",
-                        "title": "Brand New Key",
-                        "uri": "5Mhsv93WAipv1KGMkIH3RB"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Prince",
-                        "title": "When You Were Mine",
-                        "uri": "6Kbkge4WbvwWv1jVzSQsr8"
-                    },
-                    {
-                        "artist": "Prince",
-                        "title": "When You Were Mine",
-                        "uri": "46wKrvbIRQXVbJQoGj7Aso"
-                    },
-                    {
-                        "artist": "Prince",
-                        "title": "When You Were Mine",
-                        "uri": "0eqxo6kMjFp7Ts3Y2v75Hg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Prince",
-                        "title": "When You Were Mine",
-                        "uri": "6Kbkge4WbvwWv1jVzSQsr8"
-                    },
-                    {
-                        "artist": "Prince",
-                        "title": "When You Were Mine",
-                        "uri": "46wKrvbIRQXVbJQoGj7Aso"
-                    },
-                    {
-                        "artist": "Prince",
-                        "title": "When U Were Mine - Live from One Nite Alone Tour 2002",
-                        "uri": "51HCHyyfyotg8toFsLm1wz"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Dr. Hook",
-                        "title": "I Got Stoned And I Missed It",
-                        "uri": "59MfqOcvBfhDEoVZ244YY5"
-                    },
-                    {
-                        "artist": "Dr. Hook",
-                        "title": "I Got Stoned And I Missed It - Remastered",
-                        "uri": "43igCOEwdDrhB98ix9F4ny"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Blondie",
-                        "title": "Dreaming",
-                        "uri": "2Rn7bVL1FVYboc4c55RUdg"
-                    },
-                    {
-                        "artist": "Blondie",
-                        "title": "Dreaming",
-                        "uri": "5WHY6S6FO0bdRNd8xYxyAG"
-                    },
-                    {
-                        "artist": "Blondie",
-                        "title": "Dreaming - Remastered",
-                        "uri": "3W0xbvrZqaao3ZZEDhVQ0r"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Blondie",
-                        "title": "Dreaming",
-                        "uri": "2Rn7bVL1FVYboc4c55RUdg"
-                    },
-                    {
-                        "artist": "Blondie",
-                        "title": "Dreaming",
-                        "uri": "5WHY6S6FO0bdRNd8xYxyAG"
-                    },
-                    {
-                        "artist": "Blondie",
-                        "title": "Dreaming - Remastered",
-                        "uri": "3W0xbvrZqaao3ZZEDhVQ0r"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Summer of '76",
-                        "uri": "0STjkh3ydr6cdbCi6lYETE"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Summer of 76 (Sunset)",
-                        "uri": "5QA1O0yE6jYaQssOpaWKPF"
-                    },
-                    {
-                        "artist": "Astral Drive",
-                        "title": "Summer of '76",
-                        "uri": "3JreurBbKfMAvppKYiJIiq"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Badfinger",
-                        "title": "Take It All - Remastered 2010",
-                        "uri": "0y6mhgH8GPKn7cb2xYFuE3"
-                    },
-                    {
-                        "artist": "Badfinger",
-                        "title": "Take It All",
-                        "uri": "5gweRmU1ggUapN9PbKwrCE"
-                    },
-                    {
-                        "artist": "Badfinger",
-                        "title": "Take It All - Remastered 2010",
-                        "uri": "5oZS3Aa8km8QxWRu1oIFzF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Badfinger",
-                        "title": "Take It All - Remastered 2010",
-                        "uri": "0y6mhgH8GPKn7cb2xYFuE3"
-                    },
-                    {
-                        "artist": "Badfinger",
-                        "title": "Perfection - Remastered 2010",
-                        "uri": "3ccHstKEStIOANQsaw078p"
-                    },
-                    {
-                        "artist": "Badfinger",
-                        "title": "I Can't Take It - Remastered 2010",
-                        "uri": "3GkO6sD7RXaBSZ3C5WrDAm"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Faces",
-                        "title": "Ooh La La",
-                        "uri": "4lJ6YVXQ0jUk5ILu0PSrA4"
-                    },
-                    {
-                        "artist": "Faces",
-                        "title": "Ooh La La",
-                        "uri": "1J5DGye5RJAhNZuT61ASWp"
-                    },
-                    {
-                        "artist": "Faces",
-                        "title": "Ooh La La - 2004 Remaster",
-                        "uri": "6TNNMVpOgn8K5NoDC7alG6"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Faces",
-                        "title": "Ooh La La",
-                        "uri": "4lJ6YVXQ0jUk5ILu0PSrA4"
-                    },
-                    {
-                        "artist": "Faces",
-                        "title": "Ooh La La",
-                        "uri": "1J5DGye5RJAhNZuT61ASWp"
-                    },
-                    {
-                        "artist": "Faces",
-                        "title": "Ooh La La - 2004 Remaster",
-                        "uri": "6TNNMVpOgn8K5NoDC7alG6"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Bad Company",
-                        "title": "Feel Like Making Love",
-                        "uri": "6trn2Smoif7ejl3SyEbBJu"
-                    },
-                    {
-                        "artist": "Bad Company",
-                        "title": "Feel Like Making Love",
-                        "uri": "4pDqObjLIJoYLE34vIqqVi"
-                    },
-                    {
-                        "artist": "Bad Company (Karaoke)",
-                        "title": "Karaoke - Feel like making Love",
-                        "uri": "4zStQKUKpfRiPKukoIdoS0"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bad Company",
-                        "title": "Feel Like Making Love",
-                        "uri": "6trn2Smoif7ejl3SyEbBJu"
-                    },
-                    {
-                        "artist": "Bad Company",
-                        "title": "Feel like Makin' Love - 2015 Remaster",
-                        "uri": "3KPwt1LBpt1jVSHz8GXERo"
-                    },
-                    {
-                        "artist": "Bad Company",
-                        "title": "Feel like Makin' Love - 2009 Remaster",
-                        "uri": "48g0JAGj3vmKL6JfEL7y63"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "Summer Breeze, Pts. 1 & 2",
-                        "uri": "7wcP2Aa2SliFhwi4SyfvfV"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "Summer Breeze",
-                        "uri": "2fiMQ44VojtY1IODTpRlnh"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "Summer Breeze - Live",
-                        "uri": "6vsIZiooOVARa5jvyKypOw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "Summer Breeze, Pts. 1 & 2",
-                        "uri": "7wcP2Aa2SliFhwi4SyfvfV"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "Summer Breeze",
-                        "uri": "2fiMQ44VojtY1IODTpRlnh"
-                    },
-                    {
-                        "artist": "The Isley Brothers",
-                        "title": "Footsteps in the Dark, Pts. 1 & 2",
-                        "uri": "1tL5a9jowsWMtn3wkFYsG9"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Up on the Roof",
-                        "uri": "5dinAEfvTURA3MpH2gDZ7g"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Up on the Roof",
-                        "uri": "0u3rQ6rRYTBYzNThYIXghj"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Up On the Roof - Live",
-                        "uri": "3zjODC2HvN9AccnEvtppfC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Up on the Roof",
-                        "uri": "5dinAEfvTURA3MpH2gDZ7g"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Up On the Roof - Live",
-                        "uri": "3zjODC2HvN9AccnEvtppfC"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "Up on the Roof",
-                        "uri": "0u3rQ6rRYTBYzNThYIXghj"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Joe Walsh",
-                        "title": "Meadows",
-                        "uri": "6Lxn6n4qQawPrjVqM6Lesx"
-                    },
-                    {
-                        "artist": "Joe Walsh",
-                        "title": "Meadows",
-                        "uri": "38UHihAqMyROnjPDlMVMkM"
-                    },
-                    {
-                        "artist": "Joe Walsh",
-                        "title": "Meadows",
-                        "uri": "2KK0wRBHwIoBHaJ70T1CyV"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Joe Walsh",
-                        "title": "Meadows",
-                        "uri": "6Lxn6n4qQawPrjVqM6Lesx"
-                    },
-                    {
-                        "artist": "Joe Walsh",
-                        "title": "Meadows",
-                        "uri": "3lLv7L2plP1KSVj2fDdukk"
-                    },
-                    {
-                        "artist": "Joe Walsh",
-                        "title": "Meadows (Live 1981 FM Broadcast)",
-                        "uri": "1oR9N4SiQSaBErC0yqYb28"
-                    }
-                ]
-            },
-            "15": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Say Say Say - Remastered 2015",
-                        "uri": "1db0gbTSKdRQum8VlbNkiO"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Live And Let Die - Main Title",
-                        "uri": "2cHbN7OosXb4pA20G9Jcyg"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Say Say Say",
-                        "uri": "2iwhqrveOYC8XLB7GZm63G"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Electric Light Orchestra",
-                        "title": "Can't Get It out of My Head",
-                        "uri": "1f94GhohgeVq9SNwyFI691"
-                    },
-                    {
-                        "artist": "Electric Light Orchestra",
-                        "title": "Can't Get It Out of My Head - 2012 Version",
-                        "uri": "7Czw4DPEsnk18LgT2YZsAv"
-                    },
-                    {
-                        "artist": "ELO",
-                        "title": "Can’t Be Happy",
-                        "uri": "2XmehABLWyeBGu5Q9Nt5vN"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Warren Zevon",
-                        "title": "Werewolves of London - 2007 Remaster",
-                        "uri": "6kotXaSQaGYxE62hVpdHWu"
-                    },
-                    {
-                        "artist": "Warren Zevon",
-                        "title": "Werewolves of London - 2007 Remaster",
-                        "uri": "5JcVSeGu5k2OPBWByagZpO"
-                    },
-                    {
-                        "artist": "Warren Zevon",
-                        "title": "Werewolves of London - 2007 Remaster",
-                        "uri": "7HpabAwSGWtEPMP3VTN85y"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Warren Zevon",
-                        "title": "Werewolves of London - 2007 Remaster",
-                        "uri": "6kotXaSQaGYxE62hVpdHWu"
-                    },
-                    {
-                        "artist": "Warren Zevon",
-                        "title": "Werewolves of London - 2007 Remaster",
-                        "uri": "5JcVSeGu5k2OPBWByagZpO"
-                    },
-                    {
-                        "artist": "Warren Zevon",
-                        "title": "Werewolves of London",
-                        "uri": "2nmaEzFZrSm2aMLtfJDzyG"
-                    }
-                ]
-            }
+        "04": {
+            "artist": "Yes",
+            "ratio": 6,
+            "title": "Time and a Word",
+            "trackid": "7ja6kw9mMLUgHNHsnamQS9"
         },
-        "phil-thornalley-4th-june-2022": {},
-        "phil-thornalley-5th-december2021": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love? - 2015 Remaster",
-                        "uri": "5hb92JsDZjB3PuysBhwTAS"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love? - 2015 Remaster",
-                        "uri": "0M0KTNcmKwIKcJVCTO6gEJ"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love - Live",
-                        "uri": "1szR6uzdm10Ka5qMW0PLBB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Izzat Love? - 2015 Remaster",
-                        "uri": "5hb92JsDZjB3PuysBhwTAS"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "I Saw the Light - 2015 Remaster",
-                        "uri": "5uRkew0DtfAQmv0oEYNwFF"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Healing, Pt. 1 - 2015 Remaster",
-                        "uri": "6Go1ig0mE9P63U57wkyyRn"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Alice Cooper",
-                        "title": "Hello Hooray",
-                        "uri": "2zyRVV93ijUwH1SyrPcTRR"
-                    },
-                    {
-                        "artist": "Alice Cooper",
-                        "title": "Hello Hooray",
-                        "uri": "69yLvoepwaaD6xtVJPPOLx"
-                    },
-                    {
-                        "artist": "Alice Cooper",
-                        "title": "Hello Hooray - Live",
-                        "uri": "6vi9y5fAwHjq6lBEK6pRem"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Alice Cooper",
-                        "title": "Hello Hooray",
-                        "uri": "2zyRVV93ijUwH1SyrPcTRR"
-                    },
-                    {
-                        "artist": "Alice Cooper",
-                        "title": "Hello Hooray",
-                        "uri": "69yLvoepwaaD6xtVJPPOLx"
-                    },
-                    {
-                        "artist": "Alice Cooper",
-                        "title": "Poison",
-                        "uri": "5XcZRgJv3zMhTqCyESjQrF"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "You've Got It Bad Girl",
-                        "uri": "57OXk0inzVWWphdygquXIy"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "You've Got It Bad Girl",
-                        "uri": "7AtLscfFh7tQtB4DaC8lyh"
-                    },
-                    {
-                        "artist": "Stevie Wonder",
-                        "title": "You've Got It Bad Girl",
-                        "uri": "65pK2Evsne6msvAWJoNp6C"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Serge Parys",
-                        "title": "Fascination",
-                        "uri": "7wb6sgMZJhuO3h8nSz6AoE"
-                    },
-                    {
-                        "artist": "David Bowie",
-                        "title": "Aladdin Sane - ChangesNowBowie Version",
-                        "uri": "2vphQ7xz0V3CQosp2oDwfs"
-                    },
-                    {
-                        "artist": "David Bowie",
-                        "title": "Aladdin Sane - 2013 Remaster",
-                        "uri": "0iKRf868w4SYEBDILQu8ob"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "The Jam",
-                        "title": "English Rose",
-                        "uri": "2R5zO3Zi0Of0v1DyxusWbk"
-                    },
-                    {
-                        "artist": "The Jam",
-                        "title": "English Rose",
-                        "uri": "4QbksLhJdZRRgB8yliPakt"
-                    },
-                    {
-                        "artist": "The Jam",
-                        "title": "English Rose",
-                        "uri": "5yMNZpIGxY9Doewo5zpSUi"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Jam",
-                        "title": "English Rose",
-                        "uri": "2R5zO3Zi0Of0v1DyxusWbk"
-                    },
-                    {
-                        "artist": "Antonio Vivaldi",
-                        "title": "Concerto For Violin And Strings In E, Op. 8, No. 1, RV.269 \"La Primavera\": Antonio VIVALDI : Les Quatre saisons. Concerto op.8 n° 1 « Le Printemps » : Allegro - Live",
-                        "uri": "6NzWn9eOul7dVch0FGJwBP"
-                    },
-                    {
-                        "artist": "The Jam",
-                        "title": "English Rose",
-                        "uri": "4QbksLhJdZRRgB8yliPakt"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "I Need to Know",
-                        "uri": "26TpLkciA8vz3kAvSI5tHG"
-                    },
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "I Need To Know",
-                        "uri": "085I8E5w4vB70EOW2L8XgY"
-                    },
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "I Need To Know",
-                        "uri": "3YfVX3z2ZnVmvVe5WoGAH1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "I Need to Know",
-                        "uri": "26TpLkciA8vz3kAvSI5tHG"
-                    },
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "I Need To Know",
-                        "uri": "085I8E5w4vB70EOW2L8XgY"
-                    },
-                    {
-                        "artist": "Tom Petty and the Heartbreakers",
-                        "title": "Breakdown",
-                        "uri": "5x53pbGk6sbl1BGom19QQ5"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "When I Was A Freeport And You Were The Main Drag",
-                        "uri": "5eejShSgXjV08o7VFjrSDS"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "When I Was A Freeport And You Were The Main Drag",
-                        "uri": "3nHHtYlS9JH51OmFmLsRhJ"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "When I Was A Freeport And You Were The Main Drag",
-                        "uri": "7oAAfe91pO8EKXW0n6QdOx"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "When I Was A Freeport And You Were The Main Drag",
-                        "uri": "0zSjCcsNFRZJCMJhlRyyon"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "When I Was A Freeport And You Were The Main Drag",
-                        "uri": "3nHHtYlS9JH51OmFmLsRhJ"
-                    },
-                    {
-                        "artist": "Laura Nyro",
-                        "title": "When I Was A Freeport And You Were The Main Drag",
-                        "uri": "5eejShSgXjV08o7VFjrSDS"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Daryl Hall & John Oates",
-                        "title": "August Day",
-                        "uri": "2rmhFOOf59Ag8CzsKUk10l"
-                    },
-                    {
-                        "artist": "Daryl Hall & John Oates",
-                        "title": "August Day",
-                        "uri": "0J6SPEhAqn0EvbSqVeyqEL"
-                    },
-                    {
-                        "artist": "Daryl Hall & John Oates",
-                        "title": "August Day",
-                        "uri": "3AqrgOP48cf9CIUbMKh3LR"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Daryl Hall & John Oates",
-                        "title": "August Day",
-                        "uri": "2rmhFOOf59Ag8CzsKUk10l"
-                    },
-                    {
-                        "artist": "Hall & Oates",
-                        "title": "Do What You Want, Be What You Are - Live",
-                        "uri": "52LG6CBDzRtM3NosEc6FcX"
-                    },
-                    {
-                        "artist": "Daryl Hall & John Oates",
-                        "title": "August Day (Live) - Remastered",
-                        "uri": "4CKR7Psk9zaoniS8QiXi1O"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Hot Chocolate",
-                        "title": "Brother Louie",
-                        "uri": "2qwm8bWdjxAJR3FEP33VGe"
-                    },
-                    {
-                        "artist": "Hot Chocolate",
-                        "title": "Brother Louie",
-                        "uri": "1xxjzCIE9j5yFbe1OnKToH"
-                    },
-                    {
-                        "artist": "Hot Chocolate",
-                        "title": "Brother Louie",
-                        "uri": "5rXTEUwb7ZcTlC7YzPZMr4"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Hot Chocolate",
-                        "title": "Brother Louie",
-                        "uri": "2qwm8bWdjxAJR3FEP33VGe"
-                    },
-                    {
-                        "artist": "Hot Chocolate",
-                        "title": "Brother Louie",
-                        "uri": "1xxjzCIE9j5yFbe1OnKToH"
-                    },
-                    {
-                        "artist": "Hot Chocolate",
-                        "title": "Every 1's a Winner - Single Version",
-                        "uri": "5MXXbGYNmRHR7ULMvZYo5R"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "George Harrison",
-                        "title": "Beware Of Darkness - Remastered 2014",
-                        "uri": "6TRZDhDxS4PJs3nxh9FBzk"
-                    },
-                    {
-                        "artist": "George Harrison",
-                        "title": "Beware Of Darkness - 1st Version Recorded At Abbey Road / Remastered 2014",
-                        "uri": "4z8TANeWtmi0u4GEvtKU7t"
-                    },
-                    {
-                        "artist": "George Harrison",
-                        "title": "Beware Of Darkness - 2020 Mix",
-                        "uri": "3i5o5H6kD9DVt53pcyWxre"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "George Harrison",
-                        "title": "Beware Of Darkness - Remastered 2014",
-                        "uri": "6TRZDhDxS4PJs3nxh9FBzk"
-                    },
-                    {
-                        "artist": "George Harrison",
-                        "title": "Beware Of Darkness - 1st Version Recorded At Abbey Road / Remastered 2014",
-                        "uri": "4z8TANeWtmi0u4GEvtKU7t"
-                    },
-                    {
-                        "artist": "George Harrison",
-                        "title": "Beware Of Darkness - 2020 Mix",
-                        "uri": "3i5o5H6kD9DVt53pcyWxre"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "4Fr1MF0N2VAh9niAYGf9wE"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "7jBZqr4aWd4o321KaI8mCq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "4Fr1MF0N2VAh9niAYGf9wE"
-                    },
-                    {
-                        "artist": "Paul McCartney",
-                        "title": "Singalong Junk - Remastered 2011",
-                        "uri": "7jBZqr4aWd4o321KaI8mCq"
-                    },
-                    {
-                        "artist": "The Fab One",
-                        "title": "Singalong Junk",
-                        "uri": "54hzl9ulG6krmS9q1sXi14"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Colin Blunstone",
-                        "title": "Say You Don't Mind",
-                        "uri": "20mUVwCxR1x2d5SuBRGW1F"
-                    },
-                    {
-                        "artist": "Colin Blunstone",
-                        "title": "Say You Don't Mind",
-                        "uri": "2wx9fQYZVt6iodO42h2tvm"
-                    },
-                    {
-                        "artist": "Colin Blunstone",
-                        "title": "Say You Don't Mind",
-                        "uri": "4WtiGE6UbeuJ0ldSBsFtWi"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Colin Blunstone",
-                        "title": "Say You Don't Mind",
-                        "uri": "20mUVwCxR1x2d5SuBRGW1F"
-                    },
-                    {
-                        "artist": "Colin Blunstone",
-                        "title": "Say You Don't Mind",
-                        "uri": "2wx9fQYZVt6iodO42h2tvm"
-                    },
-                    {
-                        "artist": "Colin Blunstone",
-                        "title": "Say You Don't Mind",
-                        "uri": "4t82hpsLeyTONLwKvgZ6ce"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "That's The Way Love Is - Stereo Version",
-                        "uri": "51ePCpO1xUeHYhvgT67YPX"
-                    },
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "That's The Way Love Is",
-                        "uri": "2y3zY5ixrH008EzyVqAQYn"
-                    },
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "That's The Way Love Is - Stereo Version",
-                        "uri": "5XSYKY9YxuEGozuOomMKSO"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "That's The Way Love Is - Stereo Version",
-                        "uri": "51ePCpO1xUeHYhvgT67YPX"
-                    },
-                    {
-                        "artist": "Marvin Gaye",
-                        "title": "That's The Way Love Is",
-                        "uri": "2y3zY5ixrH008EzyVqAQYn"
-                    },
-                    {
-                        "artist": "Janet Jackson",
-                        "title": "That's The Way Love Goes",
-                        "uri": "29rQJydAlO0uMyWvRIZxQg"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Carly Simon",
-                        "title": "The Right Thing to Do",
-                        "uri": "6sKwPF9awJx0EwSs55G8BE"
-                    },
-                    {
-                        "artist": "Carly Simon",
-                        "title": "The Right Thing to Do",
-                        "uri": "4VymjyPORY2IwTA2IQzHBl"
-                    },
-                    {
-                        "artist": "Carly Simon",
-                        "title": "The Right Thing to Do",
-                        "uri": "2QfD2xbn5HDsqDjEXhyA2k"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Carly Simon",
-                        "title": "The Right Thing to Do",
-                        "uri": "6sKwPF9awJx0EwSs55G8BE"
-                    },
-                    {
-                        "artist": "Karaoke Diamonds",
-                        "title": "The Right Thing to Do - Karaoke Version In the Style of Carly Simon",
-                        "uri": "14JUkZVJvQVoG4UueAlW4G"
-                    },
-                    {
-                        "artist": "Carly Simon",
-                        "title": "The Right Thing to Do",
-                        "uri": "4VymjyPORY2IwTA2IQzHBl"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Georgia",
-                        "uri": "428IK8fDAscfRpmavVKJkN"
-                    },
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Rainy Night In Georgia",
-                        "uri": "3damMMYW1cBuf2Fc1gjIdj"
-                    },
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Georgia",
-                        "uri": "5khCYRc6Dm2RONMv7D8rm7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Georgia",
-                        "uri": "428IK8fDAscfRpmavVKJkN"
-                    },
-                    {
-                        "artist": "Karaoke Diamonds",
-                        "title": "Georgia (Karaoke Version) (Originally Performed By Boz Scaggs)",
-                        "uri": "2CNOA5FT48u2YM9F1HC9X2"
-                    },
-                    {
-                        "artist": "Boz Scaggs",
-                        "title": "Rainy Night In Georgia",
-                        "uri": "3damMMYW1cBuf2Fc1gjIdj"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Little Feat",
-                        "title": "Long Distance Love",
-                        "uri": "64lIUwQx1vwo4PIrS5jYb1"
-                    },
-                    {
-                        "artist": "Little Feat",
-                        "title": "Long Distance Love",
-                        "uri": "0ZoRk2qxiF4JehkfOhMUDp"
-                    },
-                    {
-                        "artist": "Little Feat",
-                        "title": "Long Distance Love",
-                        "uri": "2t7DiTh3TyXQipXunEDl9G"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Little Feat",
-                        "title": "Long Distance Love",
-                        "uri": "64lIUwQx1vwo4PIrS5jYb1"
-                    },
-                    {
-                        "artist": "Little Feat",
-                        "title": "Long Distance Love - Live",
-                        "uri": "4RySCdf2kEjS4IKILStx7T"
-                    },
-                    {
-                        "artist": "Little Feat",
-                        "title": "Willin'",
-                        "uri": "0jMyU6bO52IYhAEoWbT4K9"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Elton John",
-                        "title": "Philadelphia Freedom",
-                        "uri": "2hl9ONQ7YGgZGYx0OSHvIq"
-                    },
-                    {
-                        "artist": "Elton John",
-                        "title": "Philadelphia Freedom - Remastered",
-                        "uri": "6sYZrqTUr5py0ZxLdP3q1t"
-                    },
-                    {
-                        "artist": "Elton John",
-                        "title": "Philadelphia Freedom",
-                        "uri": "6kLGxJA0QCVDTIbZDbXgL3"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Elton John",
-                        "title": "Philadelphia Freedom",
-                        "uri": "2hl9ONQ7YGgZGYx0OSHvIq"
-                    },
-                    {
-                        "artist": "Karaoke Diamonds",
-                        "title": "Philadelphia Freedom (Karaoke Version) - Originally Performed By Elton John",
-                        "uri": "71lieWg3OFagqlEkAmdC1o"
-                    },
-                    {
-                        "artist": "Elton John",
-                        "title": "Philadelphia Freedom - Remastered",
-                        "uri": "6sYZrqTUr5py0ZxLdP3q1t"
-                    }
-                ]
-            },
-            "17": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Puzzle",
-                        "uri": "1kRkhOuxLxHQ7y3xw2VAQk"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Tiny Demons - 2015 Remaster",
-                        "uri": "1AA9dzitQQMtaq51yJh3FI"
-                    },
-                    {
-                        "artist": "Todd Rundgren",
-                        "title": "Don't You Ever Learn - Live",
-                        "uri": "3hPD5kOPedbw0O1qe2PbY7"
-                    }
-                ]
-            }
+        "05": {
+            "artist": "The Isley Brothers",
+            "ratio": 5,
+            "title": "For the Love of You, Pts. 1 & 2",
+            "trackid": "6k0GXtn49Ga6kfA8ZvLtVX"
+        },
+        "06": {
+            "artist": "Astral Drive",
+            "ratio": 4,
+            "title": "Summer of '76",
+            "trackid": "0STjkh3ydr6cdbCi6lYETE"
+        },
+        "07": {
+            "artist": "Jackson Browne",
+            "ratio": 6,
+            "title": "Doctor My Eyes",
+            "trackid": "3QcuZo6WLcFkqqLmDs0d95"
+        },
+        "08": {
+            "artist": "Talking Heads",
+            "ratio": 6,
+            "title": "Psycho Killer - 2005 Remaster",
+            "trackid": "1i6N76fftMZhijOzFQ5ZtL"
+        },
+        "09": {
+            "artist": "Carly Simon",
+            "ratio": 6,
+            "title": "Haven't Got Time for the Pain",
+            "trackid": "0oAJ0BThYPkafNe8PNLqIq"
+        },
+        "10": {
+            "artist": "Jo Jo Gunne",
+            "ratio": 6,
+            "title": "Run Run Run",
+            "trackid": "3pHx8jI1ZBVYcMG2QCZaKG"
+        },
+        "11": {
+            "artist": "Stevie Wonder",
+            "ratio": 6,
+            "title": "Too High",
+            "trackid": "60TB2Ifv7CCjjyROXXnChC"
+        },
+        "12": {
+            "artist": "Neil Young",
+            "ratio": 1,
+            "title": "Cinnamon Girl (Electric) [Remastered] - Live",
+            "trackid": "5N6NYDtOzfgIJK8t9yPAay"
+        },
+        "13": {
+            "artist": "Nick Lowe",
+            "ratio": 6,
+            "title": "Cruel to Be Kind",
+            "trackid": "7D5ycpIrqwGNTQFKmzhDIg"
+        }
+    },
+    "phil-thornalley-11th-may-2022": {
+        "00": {
+            "artist": "Todd Rundgren",
+            "ratio": 5,
+            "title": "Everybody's Going to Heaven / King Kong Reggae - 2015 Remaster",
+            "trackid": "2RCcU5pD6Xkz1AFEqvXtip"
+        },
+        "01": {
+            "artist": "Lou Reed",
+            "ratio": 6,
+            "title": "Vicious",
+            "trackid": "4A48NL57P16zSRaq3yoYry"
+        },
+        "02": {
+            "artist": "Free",
+            "ratio": 6,
+            "title": "Wishing Well",
+            "trackid": "6TSBIfIbxuPDi1uqMqy1iV"
+        },
+        "03": {
+            "artist": "Aretha Franklin",
+            "ratio": 6,
+            "title": "Spanish Harlem",
+            "trackid": "0sQ594D1EuU66VDdtHBE6j"
+        },
+        "04": {
+            "artist": "Patti Smith",
+            "ratio": 6,
+            "title": "Because the Night",
+            "trackid": "0lIoY4ZQsdn5QzhraM9o9u"
+        },
+        "05": {
+            "artist": "Billy Paul",
+            "ratio": 6,
+            "title": "Let 'Em In",
+            "trackid": "7EIETgqBk63OdvVyIFDNKx"
+        },
+        "06": {
+            "artist": "Paul McCartney",
+            "ratio": 6,
+            "title": "My Love",
+            "trackid": "3oevkC3HQ2sxTwJ394MROY"
+        },
+        "07": {
+            "artist": "10cc",
+            "ratio": 5,
+            "title": "Donna",
+            "trackid": "3wSaVY4rEIAwl5RcHfSUrz"
+        },
+        "08": {
+            "artist": "Jeff Beck",
+            "ratio": 6,
+            "title": "Cause We've Ended as Lovers",
+            "trackid": "4zoQ3EqopTIGmK2c2rPV5t"
+        },
+        "09": {
+            "artist": "Boz Scaggs",
+            "ratio": 6,
+            "title": "Lowdown",
+            "trackid": "0nlZjTPzW6S9JIESuGfImT"
+        },
+        "10": {
+            "artist": "Robert Palmer",
+            "ratio": 6,
+            "title": "You Overwhelm Me",
+            "trackid": "1utKExjdMhkh83m0zoF4jz"
+        },
+        "11": {
+            "artist": "Traffic",
+            "ratio": 6,
+            "title": "Light Up Or Leave Me Alone",
+            "trackid": "6MeSDfZgtjw7k9QgdLxbNI"
+        },
+        "12": {
+            "artist": "Astral Drive",
+            "ratio": 6,
+            "title": "Marvin Flies Thru the Stratosphere",
+            "trackid": "58FbWGPQ2y1vvp2p3bV74R"
+        },
+        "13": {
+            "artist": "Todd Rundgren",
+            "ratio": 6,
+            "title": "Sometimes I Don't Know What to Feel - 2015 Remaster",
+            "trackid": "6jFN5tApB67HERy6QlThwt"
+        },
+        "14": {
+            "artist": "The Cure",
+            "ratio": 6,
+            "title": "Boys Don't Cry",
+            "trackid": "1QFh8OH1e78dGd3VyJZCAC"
+        },
+        "15": {
+            "artist": "Carole King",
+            "ratio": 6,
+            "title": "It's Too Late",
+            "trackid": "12q3V8ShACq2PSWINMc2rC"
+        },
+        "16": {
+            "artist": "Bryan Ferry",
+            "ratio": 6,
+            "title": "A Hard Rain's A-Gonna Fall",
+            "trackid": "2O1FP6A66cqXt4nj7qnmdJ"
+        },
+        "17": {
+            "artist": "Tom Petty and the Heartbreakers",
+            "ratio": 6,
+            "title": "Luna",
+            "trackid": "2l1V1EVqBgdyZ4avBgNj8I"
+        },
+        "18": {
+            "artist": "Rory Gallagher",
+            "ratio": 6,
+            "title": "Laundromat",
+            "trackid": "6UaolbiZgvtNkLfU0qPLvx"
+        }
+    },
+    "phil-thornalley-17th-july-2022": {
+        "00": {
+            "artist": "Jonathan Richman & The Modern Lovers",
+            "ratio": 5,
+            "title": "Egyptian Reggae - Live",
+            "trackid": "6luyViGYiEnCerudBySTcz"
+        },
+        "01": {
+            "artist": "Todd Rundgren",
+            "ratio": 6,
+            "title": "Breathless - Instrumental Version",
+            "trackid": "6bW762Q7RQ6AdbxOP9yuVa"
+        },
+        "02": {
+            "artist": "The Love Unlimited Orchestra",
+            "ratio": 6,
+            "title": "Love's Theme",
+            "trackid": "5csdrJ0JtFn0qvwlvSh2EI"
+        },
+        "03": {
+            "artist": "Pink Floyd",
+            "ratio": 6,
+            "title": "One Of These Days - 2011 Remastered Version",
+            "trackid": "0Ga3szKsJOeZ0eAfydm1WV"
+        },
+        "04": {
+            "artist": "Santana",
+            "ratio": 6,
+            "title": "Samba Pa Ti",
+            "trackid": "35fC3Wq3slX4OBfyvBVmHm"
+        },
+        "05": {
+            "artist": "Billy Cobham",
+            "ratio": 6,
+            "title": "Red Baron",
+            "trackid": "6ipO2COc25UhJu9tKCkNsd"
+        },
+        "06": {
+            "artist": "Paul McCartney",
+            "ratio": 5,
+            "title": "Singalong Junk - Remastered 2011",
+            "trackid": "4Fr1MF0N2VAh9niAYGf9wE"
+        },
+        "07": {
+            "artist": "Mr. Bloe",
+            "ratio": 6,
+            "title": "Groovin' With Mr. Bloe",
+            "trackid": "1YEMMRyZbIWSt8KHu1gow9"
+        },
+        "08": {
+            "artist": "Fleetwood Mac",
+            "ratio": 6,
+            "title": "Albatross",
+            "trackid": "3iZ5twPwvFeOUQA4Deu8tP"
+        },
+        "09": {
+            "artist": "Focus",
+            "ratio": 6,
+            "title": "Sylvia",
+            "trackid": "6TJa7RJhrlI4PYaBv0Nx8h"
+        },
+        "10": {
+            "artist": "Emerson, Lake & Palmer",
+            "ratio": 6,
+            "title": "Fanfare for the Common Man - 2017 Remastered Version",
+            "trackid": "3i5bc53F2glMZC7GFXZQ7T"
+        },
+        "11": {
+            "artist": "Jaco Pastorius",
+            "ratio": 6,
+            "title": "Portrait of Tracy",
+            "trackid": "5NBAy2oiS9OIWyAZhklsH2"
+        },
+        "12": {
+            "artist": "Todd Rundgren",
+            "ratio": 6,
+            "title": "The Spark of Life",
+            "trackid": "765pgnLdIS7gmjrGwaTqTh"
+        },
+        "13": {
+            "artist": "George Benson",
+            "ratio": 6,
+            "title": "Breezin'",
+            "trackid": "1m3BAsNsQAaSNMD2M6vlKY"
+        },
+        "14": {
+            "artist": "Ry Cooder",
+            "ratio": 6,
+            "title": "I Think Its Going to Work Out Fine",
+            "trackid": "0bLerWMXrGBlQ9kFcxnQQJ"
+        },
+        "15": {
+            "artist": "Pat Metheny",
+            "ratio": 5,
+            "title": "Are You Going with Me?",
+            "trackid": "3UEu7wdJkq8pyEinqCcmwI"
+        }
+    },
+    "phil-thornalley-26th-june-2022": {
+        "00": {
+            "artist": "Astral Drive",
+            "ratio": 6,
+            "title": "Love Is Real",
+            "trackid": "5L2G6IJLTdxwN781Nxqx4W"
+        },
+        "01": {
+            "artist": "Bobby Womack",
+            "ratio": 6,
+            "title": "Across 110th Street",
+            "trackid": "2zyTP97uGsIc1C4KNNEkyn"
+        },
+        "02": {
+            "artist": "Stevie Wonder",
+            "ratio": 6,
+            "title": "Too High",
+            "trackid": "60TB2Ifv7CCjjyROXXnChC"
+        },
+        "03": {
+            "artist": "Robin Trower",
+            "ratio": 6,
+            "title": "Bridge Of Sighs",
+            "trackid": "1oOV1RcUDk7str6XetXc5J"
+        },
+        "04": {
+            "artist": "Melanie",
+            "ratio": 6,
+            "title": "Brand New Key",
+            "trackid": "7da5B9d2oVV16YSzXVxmrR"
+        },
+        "05": {
+            "artist": "Prince",
+            "ratio": 6,
+            "title": "When You Were Mine",
+            "trackid": "6Kbkge4WbvwWv1jVzSQsr8"
+        },
+        "06": {
+            "artist": "Dr. Hook",
+            "ratio": 4,
+            "title": "I Got Stoned And I Missed It",
+            "trackid": "59MfqOcvBfhDEoVZ244YY5"
+        },
+        "07": {
+            "artist": "Blondie",
+            "ratio": 6,
+            "title": "Dreaming",
+            "trackid": "2Rn7bVL1FVYboc4c55RUdg"
+        },
+        "08": {
+            "artist": "Astral Drive",
+            "ratio": 4,
+            "title": "Summer of '76",
+            "trackid": "0STjkh3ydr6cdbCi6lYETE"
+        },
+        "09": {
+            "artist": "Badfinger",
+            "ratio": 6,
+            "title": "Take It All",
+            "trackid": "5gweRmU1ggUapN9PbKwrCE"
+        },
+        "10": {
+            "artist": "Faces",
+            "ratio": 6,
+            "title": "Ooh La La",
+            "trackid": "4lJ6YVXQ0jUk5ILu0PSrA4"
+        },
+        "11": {
+            "artist": "Bad Company",
+            "ratio": 6,
+            "title": "Feel Like Making Love",
+            "trackid": "6trn2Smoif7ejl3SyEbBJu"
+        },
+        "12": {
+            "artist": "The Isley Brothers",
+            "ratio": 6,
+            "title": "Summer Breeze",
+            "trackid": "2fiMQ44VojtY1IODTpRlnh"
+        },
+        "13": {
+            "artist": "Laura Nyro",
+            "ratio": 6,
+            "title": "Up on the Roof",
+            "trackid": "5dinAEfvTURA3MpH2gDZ7g"
+        },
+        "14": {
+            "artist": "Joe Walsh",
+            "ratio": 6,
+            "title": "Meadows",
+            "trackid": "6Lxn6n4qQawPrjVqM6Lesx"
+        },
+        "15": {
+            "artist": "Paul McCartney",
+            "ratio": 0,
+            "title": "Say Say Say - Remastered 2015",
+            "trackid": "1db0gbTSKdRQum8VlbNkiO"
+        },
+        "16": {
+            "artist": "ELO",
+            "ratio": 2,
+            "title": "Can’t Be Happy",
+            "trackid": "2XmehABLWyeBGu5Q9Nt5vN"
+        },
+        "17": {
+            "artist": "Warren Zevon",
+            "ratio": 6,
+            "title": "Werewolves of London",
+            "trackid": "2nmaEzFZrSm2aMLtfJDzyG"
+        }
+    },
+    "phil-thornalley-4th-june-2022": {},
+    "phil-thornalley-5th-december2021": {
+        "00": {
+            "artist": "Todd Rundgren",
+            "ratio": 5,
+            "title": "Izzat Love? - 2015 Remaster",
+            "trackid": "5hb92JsDZjB3PuysBhwTAS"
+        },
+        "01": {
+            "artist": "Alice Cooper",
+            "ratio": 6,
+            "title": "Hello Hooray",
+            "trackid": "2zyRVV93ijUwH1SyrPcTRR"
+        },
+        "02": {
+            "artist": "Stevie Wonder",
+            "ratio": 6,
+            "title": "You've Got It Bad Girl",
+            "trackid": "57OXk0inzVWWphdygquXIy"
+        },
+        "03": {
+            "artist": "David Bowie",
+            "ratio": 4,
+            "title": "Aladdin Sane - 2013 Remaster",
+            "trackid": "0iKRf868w4SYEBDILQu8ob"
+        },
+        "04": {
+            "artist": "The Jam",
+            "ratio": 6,
+            "title": "English Rose",
+            "trackid": "2R5zO3Zi0Of0v1DyxusWbk"
+        },
+        "05": {
+            "artist": "Tom Petty and the Heartbreakers",
+            "ratio": 6,
+            "title": "I Need to Know",
+            "trackid": "26TpLkciA8vz3kAvSI5tHG"
+        },
+        "06": {
+            "artist": "Laura Nyro",
+            "ratio": 6,
+            "title": "When I Was A Freeport And You Were The Main Drag",
+            "trackid": "5eejShSgXjV08o7VFjrSDS"
+        },
+        "07": {
+            "artist": "Daryl Hall & John Oates",
+            "ratio": 6,
+            "title": "August Day",
+            "trackid": "2rmhFOOf59Ag8CzsKUk10l"
+        },
+        "08": {
+            "artist": "Hot Chocolate",
+            "ratio": 6,
+            "title": "Brother Louie",
+            "trackid": "2qwm8bWdjxAJR3FEP33VGe"
+        },
+        "09": {
+            "artist": "George Harrison",
+            "ratio": 6,
+            "title": "Beware Of Darkness - Remastered 2014",
+            "trackid": "6TRZDhDxS4PJs3nxh9FBzk"
+        },
+        "10": {
+            "artist": "Paul McCartney",
+            "ratio": 5,
+            "title": "Singalong Junk - Remastered 2011",
+            "trackid": "4Fr1MF0N2VAh9niAYGf9wE"
+        },
+        "11": {
+            "artist": "Colin Blunstone",
+            "ratio": 6,
+            "title": "Say You Don't Mind",
+            "trackid": "20mUVwCxR1x2d5SuBRGW1F"
+        },
+        "12": {
+            "artist": "Marvin Gaye",
+            "ratio": 6,
+            "title": "That's The Way Love Is",
+            "trackid": "2y3zY5ixrH008EzyVqAQYn"
+        },
+        "13": {
+            "artist": "Carly Simon",
+            "ratio": 6,
+            "title": "The Right Thing to Do",
+            "trackid": "6sKwPF9awJx0EwSs55G8BE"
+        },
+        "14": {
+            "artist": "Boz Scaggs",
+            "ratio": 6,
+            "title": "Georgia",
+            "trackid": "428IK8fDAscfRpmavVKJkN"
+        },
+        "15": {
+            "artist": "Little Feat",
+            "ratio": 6,
+            "title": "Long Distance Love",
+            "trackid": "64lIUwQx1vwo4PIrS5jYb1"
+        },
+        "16": {
+            "artist": "Elton John",
+            "ratio": 6,
+            "title": "Philadelphia Freedom",
+            "trackid": "2hl9ONQ7YGgZGYx0OSHvIq"
+        },
+        "17": {
+            "artist": "Todd Rundgren",
+            "ratio": 4,
+            "title": "Don't You Ever Learn - Live",
+            "trackid": "3hPD5kOPedbw0O1qe2PbY7"
         }
     }
 }

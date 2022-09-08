@@ -1,1574 +1,290 @@
 {
-    "flags": {
-        "leon-vynehall-15th-june-2018": {
-            "00": {
-                "artist": "Alton Ellis",
-                "ratio": 6,
-                "title": "Son of Man",
-                "trackid": "6cR9PazF02l9OvBbXe97c7"
-            },
-            "01": {
-                "artist": "Sag War Fare",
-                "ratio": 6,
-                "title": "Don't Be so Jive",
-                "trackid": "6utqjIrm35kdtbMApsn7Ly"
-            },
-            "02": {
-                "artist": "Madvillain",
-                "ratio": 6,
-                "title": "Money Folder",
-                "trackid": "7N1Z5IAGMEWXZcxfpFt87k"
-            },
-            "03": {
-                "artist": "Sade",
-                "ratio": 6,
-                "title": "When Am I Going to Make a Living",
-                "trackid": "5DYD5pUUnf3MT6LafqPqOt"
-            },
-            "04": {
-                "artist": "Soul II Soul",
-                "ratio": 6,
-                "title": "Keep On Movin'",
-                "trackid": "7upgDi9C0pQn9HZzGfksJq"
-            },
-            "05": {
-                "artist": "Erykah Badu",
-                "ratio": 6,
-                "title": "Certainly",
-                "trackid": "3WgutPPpDfVHYgwPGXKFY1"
-            },
-            "06": {
-                "artist": "Boris Gardiner",
-                "ratio": 3,
-                "title": "I Wanna Wake Up With You",
-                "trackid": "3TmlSVQoVtkVD0e4Z05lsn"
-            },
-            "07": {
-                "artist": "Fatima",
-                "ratio": 6,
-                "title": "Mind",
-                "trackid": "5sfTya6OQoW2rDLKSVT2Qk"
-            },
-            "08": {
-                "artist": "Melba Moore",
-                "ratio": 6,
-                "title": "Never Say Never",
-                "trackid": "6NQ98AgRdkAJ23tvuB4IhU"
-            },
-            "09": {
-                "artist": "Odyssey",
-                "ratio": 6,
-                "title": "Don't Tell Me, Tell Her",
-                "trackid": "6CXyDDc9Dr5E1cFjAWkoHt"
-            },
-            "10": {
-                "artist": "Fabiolous Barker",
-                "ratio": 2,
-                "title": "Love Talkin' (Honey It's You) - FabioLous Remix New Master",
-                "trackid": "0gEJqXBhpUHFw6leMvhMJq"
-            },
-            "11": {
-                "artist": "Ebo Taylor",
-                "ratio": 6,
-                "title": "Love and Death",
-                "trackid": "2EdcEOJf2V8xMOTO7q2gCN"
-            },
-            "12": {
-                "artist": "Leon Vynehall",
-                "ratio": 6,
-                "title": "Drinking It In Again (Chapter IV)",
-                "trackid": "2PFpbLMTUkHfW2cBIkthMw"
-            },
-            "13": {
-                "artist": "King Tubby",
-                "ratio": 6,
-                "title": "Roots Of Dub",
-                "trackid": "2V6QHg4PkwdWq9Y23ZzOK6"
-            },
-            "14": {
-                "artist": "Claudia",
-                "ratio": 6,
-                "title": "Deixa Eu Dizer",
-                "trackid": "1KYoghMhzM6ixvMQlqIfdY"
-            },
-            "15": {
-                "artist": "Arthur Verocai",
-                "ratio": 6,
-                "title": "Sylvia",
-                "trackid": "7gd7BDwZWjGXD6CfX7KQcF"
-            }
+    "leon-vynehall-15th-june-2018": {
+        "00": {
+            "artist": "Alton Ellis",
+            "ratio": 6,
+            "title": "Son of Man",
+            "trackid": "6cR9PazF02l9OvBbXe97c7"
         },
-        "leon-vynehall-25th-may-2018": {
-            "00": {
-                "artist": "Kamaal Williams",
-                "ratio": 6,
-                "title": "High Roller",
-                "trackid": "57uRA5isHilVCpK9Zxq7YO"
-            },
-            "01": {
-                "artist": "Tradition",
-                "ratio": 6,
-                "title": "Morning on Mars",
-                "trackid": "153wDuJqTq9a4TuLTApvBa"
-            },
-            "02": {
-                "artist": "Jeanette",
-                "ratio": 6,
-                "title": "In the Morning",
-                "trackid": "6v0BTMpyAW5VE90ERYN79U"
-            },
-            "03": {
-                "artist": "Budgie",
-                "ratio": 5,
-                "title": "Want 2 Love U",
-                "trackid": "0C2KXF45WZ8SNpZE1j5Iau"
-            },
-            "04": {
-                "artist": "Black Taffy",
-                "ratio": 6,
-                "title": "Geraldine",
-                "trackid": "6gKvl9To5WpCeH4gqDWKzU"
-            },
-            "05": {
-                "artist": "Lou Blic",
-                "ratio": 6,
-                "title": "Minéralité",
-                "trackid": "6cjMbDlQnqb8vDTxJfLkdL"
-            },
-            "06": {
-                "artist": "Róisín Murphy",
-                "ratio": 6,
-                "title": "All My Dreams",
-                "trackid": "4sL9zF71OyDJn1YCIMaMmX"
-            },
-            "07": {
-                "artist": "Medlar",
-                "ratio": 6,
-                "title": "Tripped",
-                "trackid": "4ZNqEXIZq2kYzslpHfOv2o"
-            },
-            "08": {
-                "artist": "Syclops",
-                "ratio": 6,
-                "title": "Sarah's E Is Back",
-                "trackid": "5SlS5CkXRnfNQtZY6Kv2x7"
-            },
-            "09": {
-                "artist": "Talking Heads",
-                "ratio": 6,
-                "title": "I Zimbra",
-                "trackid": "5EafbHIsDLIDHYrxvOQtnY"
-            },
-            "10": {
-                "artist": "Glenn Branca",
-                "ratio": 5,
-                "title": "Sym. No. 1, Movement 1",
-                "trackid": "45MSa5Y03M24ID5ch38R63"
-            },
-            "11": {
-                "artist": "Object Blue",
-                "ratio": 2,
-                "title": "Exorcism of a Self-Help Book",
-                "trackid": "3iHThekmT7blCYAjRT4zhQ"
-            },
-            "12": {
-                "artist": "Loidis",
-                "ratio": 6,
-                "title": "A Parade",
-                "trackid": "420f09vvRpnTwRGZxdg4ZO"
-            },
-            "13": {
-                "artist": "Panoram",
-                "ratio": 6,
-                "title": "Bad Request",
-                "trackid": "5vz96vzASEqj3DtD14tYGZ"
-            },
-            "14": {
-                "artist": "тпсб",
-                "ratio": 6,
-                "title": "Are You Still Hurt",
-                "trackid": "7I44RBV6GTVRtf5vTVqI8R"
-            },
-            "15": {
-                "artist": "Eleven Pond",
-                "ratio": 6,
-                "title": "Watching Trees",
-                "trackid": "7D3fC8PsR6ztpXo9rZuNWp"
-            }
+        "01": {
+            "artist": "Sag War Fare",
+            "ratio": 6,
+            "title": "Don't Be so Jive",
+            "trackid": "6utqjIrm35kdtbMApsn7Ly"
         },
-        "leon-vynehall-4th-may-2018": {
-            "00": {
-                "artist": "Don Carlos",
-                "ratio": 6,
-                "title": "Laser Beam",
-                "trackid": "0dM29kZyE0p5omKNAVbU6o"
-            },
-            "01": {
-                "artist": "Rex Ilusivii",
-                "ratio": 6,
-                "title": "Facedance",
-                "trackid": "0kpsbum2PWQcJflO5IYD9A"
-            },
-            "02": {
-                "artist": "Feater",
-                "ratio": 5,
-                "title": "Time Million - Pangaea Dub",
-                "trackid": "5CAFIUgqloio6nICl1Ba7q"
-            },
-            "03": {
-                "artist": "Lush",
-                "ratio": 3,
-                "title": "De-Luxe",
-                "trackid": "5m2ylParCpWyYRRinlDUiX"
-            },
-            "04": {
-                "artist": "MJ Lallo",
-                "ratio": 6,
-                "title": "Gabriel's Horn",
-                "trackid": "0yb2SbFBp63zIPYF3NOo6q"
-            },
-            "05": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "06": {
-                "artist": "Faith Global",
-                "ratio": 6,
-                "title": "Earth Report",
-                "trackid": "266NTqu5iOMLlGUcLTuiZl"
-            },
-            "07": {
-                "artist": "Vex Ruffin",
-                "ratio": 6,
-                "title": "The Balance (vocal)",
-                "trackid": "16fD86MefBwJVDh3a4qLCg"
-            },
-            "08": {
-                "artist": "Jonny Greenwood",
-                "ratio": 6,
-                "title": "Sandy's Necklace",
-                "trackid": "7DssYkJmGjMTxEvLugjAa2"
-            },
-            "09": {
-                "artist": "Ploy",
-                "ratio": 6,
-                "title": "=0",
-                "trackid": "2R9kIvzVCEAmv1yNSKr7Kg"
-            },
-            "10": {
-                "artist": "Martyn",
-                "ratio": 6,
-                "title": "Mind Rain",
-                "trackid": "0T8MbOuwfHDzYtsLNhFDuI"
-            },
-            "11": {
-                "artist": "Freaks",
-                "ratio": 6,
-                "title": "Methods In Madness",
-                "trackid": "4vKaVg78YdhYPEWO7e4bTv"
-            },
-            "12": {
-                "artist": "Kelly Lee Owens",
-                "ratio": 6,
-                "title": "S.O",
-                "trackid": "1rPVwDsOQngRvmfkFgXLjn"
-            },
-            "13": {
-                "artist": "Leon Vynehall",
-                "ratio": 6,
-                "title": "Movements (Chapter III)",
-                "trackid": "1OD2YXIOmfYmBAYfV1maRV"
-            },
-            "14": {
-                "artist": "Playgroup",
-                "ratio": 6,
-                "title": "Come Together Dub",
-                "trackid": "2dPvh3AbmusK3Ckbuvmj64"
-            }
+        "02": {
+            "artist": "Madvillain",
+            "ratio": 6,
+            "title": "Money Folder",
+            "trackid": "7N1Z5IAGMEWXZcxfpFt87k"
+        },
+        "03": {
+            "artist": "Sade",
+            "ratio": 6,
+            "title": "When Am I Going to Make a Living",
+            "trackid": "5DYD5pUUnf3MT6LafqPqOt"
+        },
+        "04": {
+            "artist": "Soul II Soul",
+            "ratio": 6,
+            "title": "Keep On Movin'",
+            "trackid": "7upgDi9C0pQn9HZzGfksJq"
+        },
+        "05": {
+            "artist": "Erykah Badu",
+            "ratio": 6,
+            "title": "Certainly",
+            "trackid": "3WgutPPpDfVHYgwPGXKFY1"
+        },
+        "06": {
+            "artist": "Boris Gardiner",
+            "ratio": 3,
+            "title": "I Wanna Wake Up With You",
+            "trackid": "3TmlSVQoVtkVD0e4Z05lsn"
+        },
+        "07": {
+            "artist": "Fatima",
+            "ratio": 6,
+            "title": "Mind",
+            "trackid": "5sfTya6OQoW2rDLKSVT2Qk"
+        },
+        "08": {
+            "artist": "Melba Moore",
+            "ratio": 6,
+            "title": "Never Say Never",
+            "trackid": "6NQ98AgRdkAJ23tvuB4IhU"
+        },
+        "09": {
+            "artist": "Odyssey",
+            "ratio": 6,
+            "title": "Don't Tell Me, Tell Her",
+            "trackid": "6CXyDDc9Dr5E1cFjAWkoHt"
+        },
+        "10": {
+            "artist": "Fabiolous Barker",
+            "ratio": 2,
+            "title": "Love Talkin' (Honey It's You) - FabioLous Remix New Master",
+            "trackid": "0gEJqXBhpUHFw6leMvhMJq"
+        },
+        "11": {
+            "artist": "Ebo Taylor",
+            "ratio": 6,
+            "title": "Love and Death",
+            "trackid": "2EdcEOJf2V8xMOTO7q2gCN"
+        },
+        "12": {
+            "artist": "Leon Vynehall",
+            "ratio": 6,
+            "title": "Drinking It In Again (Chapter IV)",
+            "trackid": "2PFpbLMTUkHfW2cBIkthMw"
+        },
+        "13": {
+            "artist": "King Tubby",
+            "ratio": 6,
+            "title": "Roots Of Dub",
+            "trackid": "2V6QHg4PkwdWq9Y23ZzOK6"
+        },
+        "14": {
+            "artist": "Claudia",
+            "ratio": 6,
+            "title": "Deixa Eu Dizer",
+            "trackid": "1KYoghMhzM6ixvMQlqIfdY"
+        },
+        "15": {
+            "artist": "Arthur Verocai",
+            "ratio": 6,
+            "title": "Sylvia",
+            "trackid": "7gd7BDwZWjGXD6CfX7KQcF"
         }
     },
-    "search": {
-        "leon-vynehall-15th-june-2018": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Alton Ellis",
-                        "title": "Son of Man",
-                        "uri": "6cR9PazF02l9OvBbXe97c7"
-                    },
-                    {
-                        "artist": "Alton Ellis",
-                        "title": "Son Of Man",
-                        "uri": "22olJiBi9RIz1RdfYNxi9B"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Alton Ellis",
-                        "title": "Son of Man",
-                        "uri": "6cR9PazF02l9OvBbXe97c7"
-                    },
-                    {
-                        "artist": "Alton Ellis",
-                        "title": "I'm Still in Love",
-                        "uri": "3bOVMf0QlfxX736BbANe8W"
-                    },
-                    {
-                        "artist": "Alton Ellis",
-                        "title": "Make Me Happy",
-                        "uri": "3zvfIDB88lhqfSAjrdwDjp"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Sag War Fare",
-                        "title": "Don't Be so Jive",
-                        "uri": "6utqjIrm35kdtbMApsn7Ly"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Madvillain",
-                        "title": "Money Folder",
-                        "uri": "7N1Z5IAGMEWXZcxfpFt87k"
-                    },
-                    {
-                        "artist": "Madvillain",
-                        "title": "Money Folder (Four Tet Remix)",
-                        "uri": "60LGouC2h5SjZwsVLtIUOZ"
-                    },
-                    {
-                        "artist": "Madvillain",
-                        "title": "Money Folder (Four Tet Remix - Instrumental)",
-                        "uri": "3TXkMGl9h2pfzkeXKTvoqi"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Sade",
-                        "title": "When Am I Going to Make a Living",
-                        "uri": "5DYD5pUUnf3MT6LafqPqOt"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sade",
-                        "title": "When Am I Going to Make a Living",
-                        "uri": "5DYD5pUUnf3MT6LafqPqOt"
-                    },
-                    {
-                        "artist": "Sade",
-                        "title": "Skin - Live 2011",
-                        "uri": "4EH4Uxe9BGccV4lugSvRRZ"
-                    },
-                    {
-                        "artist": "Sade",
-                        "title": "Paradise / Nothing Can Come Between Us - Live 2011",
-                        "uri": "5sSrhbjKD0u1uqyU0gMW0R"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Soul II Soul",
-                        "title": "Keep On Movin' - M Beat Bonus Mix",
-                        "uri": "6mANBsYQqOckTQ10HZrwdN"
-                    },
-                    {
-                        "artist": "Soul II Soul",
-                        "title": "Keep On Movin'",
-                        "uri": "1Xp1zaeSAGCrlHhk4VOkKq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Soul II Soul",
-                        "title": "Keep On Movin'",
-                        "uri": "7upgDi9C0pQn9HZzGfksJq"
-                    },
-                    {
-                        "artist": "Soul II Soul",
-                        "title": "Keep on Moving - Live from Metropolis",
-                        "uri": "6DzpsiDNw8az6iFPyhlelH"
-                    },
-                    {
-                        "artist": "Soul II Soul",
-                        "title": "Keep On Movin'",
-                        "uri": "4NMtuxWfOPR6yNjAX0AWrR"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Erykah Badu",
-                        "title": "Certainly",
-                        "uri": "3WgutPPpDfVHYgwPGXKFY1"
-                    },
-                    {
-                        "artist": "Erykah Badu",
-                        "title": "Certainly - Flipped It",
-                        "uri": "5hRYLrELCDHJ7a0oRYsSP8"
-                    },
-                    {
-                        "artist": "Erykah Badu",
-                        "title": "Certainly - Live Version",
-                        "uri": "24sptFgjiaWwgTWMFf411p"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Erykah Badu",
-                        "title": "Certainly",
-                        "uri": "3WgutPPpDfVHYgwPGXKFY1"
-                    },
-                    {
-                        "artist": "Erykah Badu",
-                        "title": "Certainly - Flipped It",
-                        "uri": "5hRYLrELCDHJ7a0oRYsSP8"
-                    },
-                    {
-                        "artist": "Erykah Badu",
-                        "title": "Certainly - Live Version",
-                        "uri": "24sptFgjiaWwgTWMFf411p"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Boris Garbiner Happening",
-                        "title": "Breezin",
-                        "uri": "1jo6zavGHbrqlvts6xp8AX"
-                    },
-                    {
-                        "artist": "Boris Gardiner",
-                        "title": "I Wanna Wake Up With You",
-                        "uri": "3TmlSVQoVtkVD0e4Z05lsn"
-                    },
-                    {
-                        "artist": "Booker T. & the M.G.'s",
-                        "title": "Melting Pot",
-                        "uri": "6EjWezCHHgaqxpQYhLSlP7"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Fatima",
-                        "title": "Mind",
-                        "uri": "5sfTya6OQoW2rDLKSVT2Qk"
-                    },
-                    {
-                        "artist": "Fatima Hajji",
-                        "title": "Your Mind",
-                        "uri": "2U3Z2Due91aD1i70NVbi23"
-                    },
-                    {
-                        "artist": "Fatima",
-                        "title": "Mind",
-                        "uri": "36t2MIJwdkSaW8rowyEydy"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Fatima",
-                        "title": "Mind",
-                        "uri": "5sfTya6OQoW2rDLKSVT2Qk"
-                    },
-                    {
-                        "artist": "Fatima Hajji",
-                        "title": "Your Mind",
-                        "uri": "2U3Z2Due91aD1i70NVbi23"
-                    },
-                    {
-                        "artist": "Fatima",
-                        "title": "Mind",
-                        "uri": "36t2MIJwdkSaW8rowyEydy"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Melba Moore",
-                        "title": "Never Say Never",
-                        "uri": "6NQ98AgRdkAJ23tvuB4IhU"
-                    },
-                    {
-                        "artist": "Melba Moore",
-                        "title": "Standing Right Here",
-                        "uri": "6KsCG32cHSGr8HWott2Lwo"
-                    },
-                    {
-                        "artist": "Melba Moore",
-                        "title": "Love Me Right",
-                        "uri": "3FtX2zJDZHDCKbYkP3aEAy"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Odyssey",
-                        "title": "Don't Tell Me, Tell Her",
-                        "uri": "6CXyDDc9Dr5E1cFjAWkoHt"
-                    },
-                    {
-                        "artist": "Odyssey",
-                        "title": "Quiero Saber",
-                        "uri": "2I2r37JC7shAHXmgzm4sUE"
-                    },
-                    {
-                        "artist": "The Flight",
-                        "title": "Odyssey - Greek version",
-                        "uri": "45NoLEWcDzE2DKvZoTRgJQ"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fabiolous Barker",
-                        "title": "Love Talkin' (Honey It's You) - FabioLous Remix New Master",
-                        "uri": "0gEJqXBhpUHFw6leMvhMJq"
-                    },
-                    {
-                        "artist": "WayV",
-                        "title": "Love Talk - English Version",
-                        "uri": "2e3cJdJ8xWwydl8JIYlCqB"
-                    },
-                    {
-                        "artist": "WayV",
-                        "title": "Love Talk",
-                        "uri": "6bc8VmlNt5S9WJlyw8bBdd"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Ebo Taylor",
-                        "title": "Love and Death",
-                        "uri": "2EdcEOJf2V8xMOTO7q2gCN"
-                    },
-                    {
-                        "artist": "Ebo Taylor",
-                        "title": "Love And Death",
-                        "uri": "3BOdGLbcBTSy1Hy376Zvzd"
-                    },
-                    {
-                        "artist": "Ebo Taylor",
-                        "title": "Love and Death",
-                        "uri": "6cLtKtakegCY6n7iepcLYJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ebo Taylor",
-                        "title": "Love and Death",
-                        "uri": "2EdcEOJf2V8xMOTO7q2gCN"
-                    },
-                    {
-                        "artist": "Ebo Taylor",
-                        "title": "Love And Death",
-                        "uri": "3BOdGLbcBTSy1Hy376Zvzd"
-                    },
-                    {
-                        "artist": "Ebo Taylor",
-                        "title": "Love and Death",
-                        "uri": "6cLtKtakegCY6n7iepcLYJ"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Drinking It In Again (Chapter IV)",
-                        "uri": "2PFpbLMTUkHfW2cBIkthMw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Drinking It In Again (Chapter IV)",
-                        "uri": "2PFpbLMTUkHfW2cBIkthMw"
-                    },
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Movements (Chapter III)",
-                        "uri": "1OD2YXIOmfYmBAYfV1maRV"
-                    },
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Butterflies",
-                        "uri": "5vWy90WX1eyfFUxnKcKSY9"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "King Tubby",
-                        "title": "Roots Of Dub",
-                        "uri": "2V6QHg4PkwdWq9Y23ZzOK6"
-                    },
-                    {
-                        "artist": "Sly & Robbie Meet King Tubby",
-                        "title": "Roots Of Africa Dub",
-                        "uri": "5GgUWb9o5ga3F7o6MYyDHO"
-                    },
-                    {
-                        "artist": "King Tubby",
-                        "title": "Raw Roots",
-                        "uri": "5mPazHeCTCNicvAeEZgkXV"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "King Tubby",
-                        "title": "Roots Of Dub",
-                        "uri": "2V6QHg4PkwdWq9Y23ZzOK6"
-                    },
-                    {
-                        "artist": "King Tubby",
-                        "title": "Take Five",
-                        "uri": "4gcRTIXP8nHwl0hFdJikia"
-                    },
-                    {
-                        "artist": "King Tubby",
-                        "title": "Inna Mi Yard",
-                        "uri": "2JrbA3gMvQEhVG9HbTI02w"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Claudia",
-                        "title": "Deixa Eu Dizer",
-                        "uri": "1KYoghMhzM6ixvMQlqIfdY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Claudia",
-                        "title": "Deixa Eu Dizer",
-                        "uri": "1KYoghMhzM6ixvMQlqIfdY"
-                    },
-                    {
-                        "artist": "Marcelo D2",
-                        "title": "Desabafo / Deixa Eu Dizer",
-                        "uri": "5GCz9BOkt17aI6ZOR3EiUl"
-                    },
-                    {
-                        "artist": "Marcelo D2",
-                        "title": "Desabafo / Deixa Eu Dizer",
-                        "uri": "3l9y0qxIuH7qvvWNuG9IC3"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Arthur Verocai",
-                        "title": "Sylvia",
-                        "uri": "7gd7BDwZWjGXD6CfX7KQcF"
-                    },
-                    {
-                        "artist": "Arthur Verocai",
-                        "title": "Sylvia",
-                        "uri": "1zqbbWAdqfRvbl8HCt8xph"
-                    },
-                    {
-                        "artist": "Arthur Verocai",
-                        "title": "Sylvia",
-                        "uri": "7LUhOcGzxey9pLSedZrZZp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Arthur Verocai",
-                        "title": "Sylvia",
-                        "uri": "7gd7BDwZWjGXD6CfX7KQcF"
-                    },
-                    {
-                        "artist": "Arthur Verocai",
-                        "title": "Sylvia",
-                        "uri": "1zqbbWAdqfRvbl8HCt8xph"
-                    },
-                    {
-                        "artist": "Arthur Verocai",
-                        "title": "Abertura",
-                        "uri": "76KYGgMnhRHik7moyA17jj"
-                    }
-                ]
-            }
+    "leon-vynehall-25th-may-2018": {
+        "00": {
+            "artist": "Kamaal Williams",
+            "ratio": 6,
+            "title": "High Roller",
+            "trackid": "57uRA5isHilVCpK9Zxq7YO"
         },
-        "leon-vynehall-25th-may-2018": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Kamaal Williams",
-                        "title": "High Roller",
-                        "uri": "57uRA5isHilVCpK9Zxq7YO"
-                    },
-                    {
-                        "artist": "Kamaal Williams",
-                        "title": "High Roller - Mixed",
-                        "uri": "7tOSQdPriYMMsB9srpZqpF"
-                    },
-                    {
-                        "artist": "Kamaal Williams",
-                        "title": "High Roller",
-                        "uri": "5NdC509jGa5T4KMtpN2rrG"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kamaal Williams",
-                        "title": "High Roller",
-                        "uri": "57uRA5isHilVCpK9Zxq7YO"
-                    },
-                    {
-                        "artist": "Kamaal Williams",
-                        "title": "High Roller",
-                        "uri": "2X61gfm86kZWgJn7TYFhHe"
-                    },
-                    {
-                        "artist": "Kamaal Williams",
-                        "title": "High Roller",
-                        "uri": "5NdC509jGa5T4KMtpN2rrG"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Tradition",
-                        "title": "Morning on Mars",
-                        "uri": "153wDuJqTq9a4TuLTApvBa"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tradition",
-                        "title": "Morning on Mars",
-                        "uri": "153wDuJqTq9a4TuLTApvBa"
-                    },
-                    {
-                        "artist": "Tarik Koray",
-                        "title": "Morning on Mars (MOM)",
-                        "uri": "2slbAoX0zyE5S7Tyo5SaJw"
-                    },
-                    {
-                        "artist": "Tarik Koray",
-                        "title": "Morning on Mars (First Sight)",
-                        "uri": "7FagvJanGJLPbNB4cLqWpn"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Jeanette",
-                        "title": "In the Morning",
-                        "uri": "6v0BTMpyAW5VE90ERYN79U"
-                    },
-                    {
-                        "artist": "Jeanette",
-                        "title": "In The Morning",
-                        "uri": "2IEKK4n88jvN9rqUH24sI4"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "29hunnid_bud",
-                        "title": "Jeanette - Freestyle",
-                        "uri": "40xfwBFNU3q7yMn9MhP2Ng"
-                    },
-                    {
-                        "artist": "Gus Viseur",
-                        "title": "Jeanette - 1961",
-                        "uri": "5wFURGavUtJCgN8prKJjEH"
-                    },
-                    {
-                        "artist": "Jeanette",
-                        "title": "In The Morning",
-                        "uri": "2IEKK4n88jvN9rqUH24sI4"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Budgie",
-                        "title": "Want 2 Love U",
-                        "uri": "0C2KXF45WZ8SNpZE1j5Iau"
-                    },
-                    {
-                        "artist": "Budgie",
-                        "title": "Breadfan",
-                        "uri": "2oXzhMnWAeSHbkCQVgvkqg"
-                    },
-                    {
-                        "artist": "Budgie",
-                        "title": "Crash Course In Brain Surgery",
-                        "uri": "5y8aD8CDZUv8C605X3J6ha"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Black Taffy",
-                        "title": "Geraldine",
-                        "uri": "6gKvl9To5WpCeH4gqDWKzU"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Black Taffy",
-                        "title": "Geraldine",
-                        "uri": "6gKvl9To5WpCeH4gqDWKzU"
-                    },
-                    {
-                        "artist": "Tape Five",
-                        "title": "Geraldines Routine",
-                        "uri": "0q3BZl7XqLKf6N2AgtgH08"
-                    },
-                    {
-                        "artist": "Black Taffy",
-                        "title": "Lantern Flies in Mist",
-                        "uri": "5cWWpxe62UGkxpjwDnxEXh"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Lou Blic",
-                        "title": "Minéralité",
-                        "uri": "6cjMbDlQnqb8vDTxJfLkdL"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lou Blic",
-                        "title": "Minéralité",
-                        "uri": "6cjMbDlQnqb8vDTxJfLkdL"
-                    },
-                    {
-                        "artist": "Lou",
-                        "title": "Miraculous - Générique de la série TV",
-                        "uri": "08aC14ZGZUQ5pGkN8SzL3d"
-                    },
-                    {
-                        "artist": "Lou",
-                        "title": "Besoin d'air",
-                        "uri": "0BoDFNzTbDoNpr43QG1P4Q"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Róisín Murphy",
-                        "title": "All My Dreams",
-                        "uri": "4sL9zF71OyDJn1YCIMaMmX"
-                    },
-                    {
-                        "artist": "Róisín Murphy",
-                        "title": "All My Dreams - Radio Edit",
-                        "uri": "7pksI8X4WvsKoTmM0DZs32"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Róisín Murphy",
-                        "title": "All My Dreams",
-                        "uri": "4sL9zF71OyDJn1YCIMaMmX"
-                    },
-                    {
-                        "artist": "Róisín Murphy",
-                        "title": "Murphy's Law",
-                        "uri": "54q4IFViWddsAqU57cuDmW"
-                    },
-                    {
-                        "artist": "Róisín Murphy",
-                        "title": "Overpowered",
-                        "uri": "7di4QTqNCZjX4JUFKhWQsr"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Medlar",
-                        "title": "Tripped",
-                        "uri": "4ZNqEXIZq2kYzslpHfOv2o"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Medlar",
-                        "title": "Tripped",
-                        "uri": "4ZNqEXIZq2kYzslpHfOv2o"
-                    },
-                    {
-                        "artist": "Trippped",
-                        "title": "Dapper Man",
-                        "uri": "25rY7QnWQklMUFF2OAsh0j"
-                    },
-                    {
-                        "artist": "Trippped",
-                        "title": "Triple P",
-                        "uri": "6faps1HKJNQ8FvkQSIdLBl"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Syclops",
-                        "title": "Sarah's E Is Back",
-                        "uri": "5SlS5CkXRnfNQtZY6Kv2x7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Syclops",
-                        "title": "Sarah's E Is Back",
-                        "uri": "5SlS5CkXRnfNQtZY6Kv2x7"
-                    },
-                    {
-                        "artist": "Syclops",
-                        "title": "Sarah's E With Extra P",
-                        "uri": "3znPt6IL5UXAFx8zgBLzvt"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Talking Heads",
-                        "title": "I Zimbra - 2005 Remaster",
-                        "uri": "2zdlkG9g5Mt0alUdqn7s3D"
-                    },
-                    {
-                        "artist": "Talking Heads",
-                        "title": "I Zimbra",
-                        "uri": "5EafbHIsDLIDHYrxvOQtnY"
-                    },
-                    {
-                        "artist": "Talking Heads",
-                        "title": "I Zimbra - 2005 Remaster",
-                        "uri": "1ZF0hxJkXyWqKeC4lxasZR"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Talking Heads",
-                        "title": "I Zimbra - 2005 Remaster",
-                        "uri": "2zdlkG9g5Mt0alUdqn7s3D"
-                    },
-                    {
-                        "artist": "Talking Heads",
-                        "title": "I Zimbra - Live",
-                        "uri": "4qNoNQAXfCF05G6HDltPdB"
-                    },
-                    {
-                        "artist": "Talking Heads",
-                        "title": "I Zimbra",
-                        "uri": "5EafbHIsDLIDHYrxvOQtnY"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Glenn Branca",
-                        "title": "Sym. No. 1, Movement 1",
-                        "uri": "45MSa5Y03M24ID5ch38R63"
-                    },
-                    {
-                        "artist": "Glenn Branca",
-                        "title": "Lesson No. 4",
-                        "uri": "74Kz3KmKQuvoJroaT1xbKO"
-                    },
-                    {
-                        "artist": "Glenn Branca",
-                        "title": "Lesson No. 3 (Tribute to Steve Reich)",
-                        "uri": "1Orr8ReEg4vsUmG5BMAUEM"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Object Blue",
-                        "title": "Exorcism of a Self-Help Book",
-                        "uri": "3iHThekmT7blCYAjRT4zhQ"
-                    },
-                    {
-                        "artist": "Object Blue",
-                        "title": "Procession of Healers",
-                        "uri": "4pAyfMSRdtIHmpejDSEvGg"
-                    },
-                    {
-                        "artist": "Object Blue",
-                        "title": "Fugitive's Flourish",
-                        "uri": "4aGq0kIxP75vd5S2Hq3g9j"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Loidis",
-                        "title": "A Parade",
-                        "uri": "420f09vvRpnTwRGZxdg4ZO"
-                    },
-                    {
-                        "artist": "Loidis",
-                        "title": "The Floating World (& All Its Pleasures)",
-                        "uri": "1AD9r65lfchCZ8TlI3unU0"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Loidis",
-                        "title": "In The Place I Sit",
-                        "uri": "3rHA3k8bjCVuesnXVjjLNf"
-                    },
-                    {
-                        "artist": "Gildas Arzel",
-                        "title": "Lodi",
-                        "uri": "2EQbL2f3htfJ7ZysyefSty"
-                    },
-                    {
-                        "artist": "LODIE",
-                        "title": "Ilya",
-                        "uri": "4QzCIveRTphj4Z4MZbEA7l"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Panoram",
-                        "title": "Bad Request",
-                        "uri": "5vz96vzASEqj3DtD14tYGZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Panoram",
-                        "title": "Bad Request",
-                        "uri": "5vz96vzASEqj3DtD14tYGZ"
-                    },
-                    {
-                        "artist": "Cool Cool",
-                        "title": "Panorama",
-                        "uri": "0wChf9IY4ImYo1WE0mQGIX"
-                    },
-                    {
-                        "artist": "Panorama Panama Town",
-                        "title": "Rapture",
-                        "uri": "0wNMDxmSmYy5SWdeZxLv5e"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "тпсб",
-                        "title": "Are You Still Hurt",
-                        "uri": "7I44RBV6GTVRtf5vTVqI8R"
-                    },
-                    {
-                        "artist": "тпсб",
-                        "title": "Are You Still Hurt",
-                        "uri": "1d6wTNbhIyZDbc0zrHVELF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "тпсб",
-                        "title": "Are You Still Hurt",
-                        "uri": "1d6wTNbhIyZDbc0zrHVELF"
-                    },
-                    {
-                        "artist": "тпсб",
-                        "title": "Are You Still Hurt",
-                        "uri": "7I44RBV6GTVRtf5vTVqI8R"
-                    },
-                    {
-                        "artist": "Pathetic",
-                        "title": "dreamcore//",
-                        "uri": "2cfFwuqPLUre5laXoyiRme"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Eleven Pond",
-                        "title": "Watching Trees",
-                        "uri": "7D3fC8PsR6ztpXo9rZuNWp"
-                    },
-                    {
-                        "artist": "Eleven Pond",
-                        "title": "Watching Trees",
-                        "uri": "6vQFJXDXvAuNypK91AR0OJ"
-                    },
-                    {
-                        "artist": "Eleven Pond",
-                        "title": "Watching Trees - Bedroom Mix",
-                        "uri": "2GdDXAEkToeUNOanTH2w2i"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Eleven Pond",
-                        "title": "Watching Trees",
-                        "uri": "7D3fC8PsR6ztpXo9rZuNWp"
-                    },
-                    {
-                        "artist": "Eleven Pond",
-                        "title": "Watching Trees",
-                        "uri": "6vQFJXDXvAuNypK91AR0OJ"
-                    },
-                    {
-                        "artist": "Eleven Pond",
-                        "title": "Portugal",
-                        "uri": "2OLLdR8ouTI3eQFzpYXUTj"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Tradition",
+            "ratio": 6,
+            "title": "Morning on Mars",
+            "trackid": "153wDuJqTq9a4TuLTApvBa"
         },
-        "leon-vynehall-4th-may-2018": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Don Carlos In Dub",
-                        "title": "Laser Beam - Dub Mix",
-                        "uri": "2x3RnhbVTCJk8mdymwuqiJ"
-                    },
-                    {
-                        "artist": "Don Carlos",
-                        "title": "Laser Beam",
-                        "uri": "0dM29kZyE0p5omKNAVbU6o"
-                    },
-                    {
-                        "artist": "Don Carlos",
-                        "title": "Laser Beam",
-                        "uri": "4P3ArPlszaXhGmZXsuBUvW"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Don Carlos",
-                        "title": "Lazer Beam",
-                        "uri": "69mrEbrs52WMqV2u9LUW1v"
-                    },
-                    {
-                        "artist": "Don Carlos In Dub",
-                        "title": "Laser Beam - Dub Mix",
-                        "uri": "2x3RnhbVTCJk8mdymwuqiJ"
-                    },
-                    {
-                        "artist": "Don Carlos",
-                        "title": "Lazer Beam",
-                        "uri": "6CoucCDE3Y1T2yUnumx2M4"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Rex Ilusivii",
-                        "title": "Facedance",
-                        "uri": "0kpsbum2PWQcJflO5IYD9A"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Rex Ilusivii",
-                        "title": "Facedance",
-                        "uri": "0kpsbum2PWQcJflO5IYD9A"
-                    },
-                    {
-                        "artist": "Rex Ilusivii",
-                        "title": "Fortirer et Recte",
-                        "uri": "7m2DquP6hPKUy7tgnNHQe1"
-                    },
-                    {
-                        "artist": "Rex Ilusivii",
-                        "title": "Nijagara / Spomenici",
-                        "uri": "61VOpTgOm9hUMqkrgkmvy2"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Feater",
-                        "title": "Time Million",
-                        "uri": "6qMhpDgWAubisGyfTmLEUO"
-                    },
-                    {
-                        "artist": "Feater",
-                        "title": "Time Million - Villalobos Remix",
-                        "uri": "4Y85EEFMtcEaFqY80fJKLq"
-                    },
-                    {
-                        "artist": "Feater",
-                        "title": "Time Million - Pangaea Dub",
-                        "uri": "5CAFIUgqloio6nICl1Ba7q"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Lush",
-                        "title": "De-Luxe",
-                        "uri": "5m2ylParCpWyYRRinlDUiX"
-                    },
-                    {
-                        "artist": "De Lux",
-                        "title": "New Summers",
-                        "uri": "0lPVneQkIoUVvzqYbLQbSA"
-                    },
-                    {
-                        "artist": "Liste de Lecture Relaxante",
-                        "title": "De Luxe",
-                        "uri": "2zjaC6gF7apE3Z6n3xDyQT"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "MJ Lallo",
-                        "title": "Gabriel's Horn",
-                        "uri": "0yb2SbFBp63zIPYF3NOo6q"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "MJ Lallo",
-                        "title": "Gabriel's Horn",
-                        "uri": "0yb2SbFBp63zIPYF3NOo6q"
-                    },
-                    {
-                        "artist": "MJ LABOY",
-                        "title": "Happy Hour",
-                        "uri": "5c6SJhbEg3x0aYodRWA59d"
-                    },
-                    {
-                        "artist": "MJ Lallo",
-                        "title": "Aquarius Blue",
-                        "uri": "4wMkDQPkzKKDizMDta8TvQ"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": ""
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Faith Global",
-                        "title": "Earth Report",
-                        "uri": "266NTqu5iOMLlGUcLTuiZl"
-                    },
-                    {
-                        "artist": "Faith Global",
-                        "title": "Earth Report",
-                        "uri": "6ebYVgphGIdFo21AtDMG8X"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Faith Global",
-                        "title": "Earth Report",
-                        "uri": "6ebYVgphGIdFo21AtDMG8X"
-                    },
-                    {
-                        "artist": "Faith Global",
-                        "title": "Earth Report",
-                        "uri": "266NTqu5iOMLlGUcLTuiZl"
-                    },
-                    {
-                        "artist": "Faith Global",
-                        "title": "Love Seems Lost",
-                        "uri": "3iivD9q1jhLVAGN7CKSYz2"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Vex Ruffin",
-                        "title": "The Balance (vocal)",
-                        "uri": "16fD86MefBwJVDh3a4qLCg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Vex Ruffin",
-                        "title": "The Balance",
-                        "uri": "0RiFGS2KxoGV12eaGPkRoi"
-                    },
-                    {
-                        "artist": "Vex Ruffin & Fab 5 Freddy",
-                        "title": "The Balance",
-                        "uri": "26hA70RaIybIXCdGWZjs1e"
-                    },
-                    {
-                        "artist": "Vex Ruffin",
-                        "title": "The Balance (vocal)",
-                        "uri": "16fD86MefBwJVDh3a4qLCg"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Jonny Greenwood",
-                        "title": "Sandy's Necklace",
-                        "uri": "7DssYkJmGjMTxEvLugjAa2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jonny Greenwood",
-                        "title": "Sandy's Necklace",
-                        "uri": "7DssYkJmGjMTxEvLugjAa2"
-                    },
-                    {
-                        "artist": "Jonny Greenwood",
-                        "title": "Spencer",
-                        "uri": "5A2VY74odRFW9gVnFo1CRE"
-                    },
-                    {
-                        "artist": "Jonny Greenwood",
-                        "title": "Sandalwood I",
-                        "uri": "1YbKoZ8fso316rzCy7VuQh"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Ploy",
-                        "title": "=0",
-                        "uri": "2R9kIvzVCEAmv1yNSKr7Kg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "PLAYAMANE",
-                        "title": "0800",
-                        "uri": "58V5qd80donPjE0H64JQXz"
-                    },
-                    {
-                        "artist": "Ploy",
-                        "title": "Ninety One",
-                        "uri": "1PC6RngECKtDEiAloflhSW"
-                    },
-                    {
-                        "artist": "Ploy",
-                        "title": "=0",
-                        "uri": "2R9kIvzVCEAmv1yNSKr7Kg"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Martyn",
-                        "title": "Mind Rain",
-                        "uri": "0T8MbOuwfHDzYtsLNhFDuI"
-                    },
-                    {
-                        "artist": "Martyn",
-                        "title": "Mind Rain",
-                        "uri": "2fIYdZapOmDImDdehYxAMT"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Martyn",
-                        "title": "Mind Rain",
-                        "uri": "0T8MbOuwfHDzYtsLNhFDuI"
-                    },
-                    {
-                        "artist": "Martyn",
-                        "title": "Mind Rain",
-                        "uri": "2fIYdZapOmDImDdehYxAMT"
-                    },
-                    {
-                        "artist": "Carsten",
-                        "title": "Mind Rain",
-                        "uri": "4WEfB3lPx9uJuU6wWjgGP9"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Freaks",
-                        "title": "Methods In Madness",
-                        "uri": "4vKaVg78YdhYPEWO7e4bTv"
-                    },
-                    {
-                        "artist": "Freaks",
-                        "title": "Methods In Madness",
-                        "uri": "3jchyO92VzcGWdkUjyo3Fp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mehak",
-                        "title": "Freaks",
-                        "uri": "1CfDgq62vLQ5g2PsPuhwcP"
-                    },
-                    {
-                        "artist": "Spitnoise",
-                        "title": "Freaks",
-                        "uri": "5ar09Jwqg3MwPpAip6WaBk"
-                    },
-                    {
-                        "artist": "but are you ok?",
-                        "title": "Freaks (Muffled & Slowed) - Instrumental",
-                        "uri": "107NU6RIaCvZJIUBNqxOwW"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Kelly Lee Owens",
-                        "title": "S.O",
-                        "uri": "1rPVwDsOQngRvmfkFgXLjn"
-                    },
-                    {
-                        "artist": "Kelly Lee Owens",
-                        "title": "S.O (2)",
-                        "uri": "2CjEZKDw3TmD1kAtdLYfsb"
-                    },
-                    {
-                        "artist": "Kelly Lee Owens",
-                        "title": "S.O",
-                        "uri": "4EJXhBMVHuHdigkg2QTZOd"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kelly Lee Owens",
-                        "title": "S.O",
-                        "uri": "1rPVwDsOQngRvmfkFgXLjn"
-                    },
-                    {
-                        "artist": "Kelly Lee Owens",
-                        "title": "S.O (2)",
-                        "uri": "2CjEZKDw3TmD1kAtdLYfsb"
-                    },
-                    {
-                        "artist": "Kelly Lee Owens",
-                        "title": "Bird",
-                        "uri": "2278Bt6LM1PRIrHdJAwRII"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Movements (Chapter III)",
-                        "uri": "1OD2YXIOmfYmBAYfV1maRV"
-                    },
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Movements (Chapter III) - Edit",
-                        "uri": "16HsMUMtMSmkpR2ybn8cT3"
-                    },
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Movements (Chapter III)",
-                        "uri": "0WMqkHwBzziIrVWKloZL8i"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Movements (Chapter III)",
-                        "uri": "1OD2YXIOmfYmBAYfV1maRV"
-                    },
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Movements (Chapter III) - Edit",
-                        "uri": "16HsMUMtMSmkpR2ybn8cT3"
-                    },
-                    {
-                        "artist": "Leon Vynehall",
-                        "title": "Movements (Chapter III)",
-                        "uri": "0WMqkHwBzziIrVWKloZL8i"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Playgroup",
-                        "title": "Come Together Dub",
-                        "uri": "2dPvh3AbmusK3Ckbuvmj64"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gary Clark Jr.",
-                        "title": "Come Together",
-                        "uri": "45HAjqRWiNv6mMPw4NvZrU"
-                    },
-                    {
-                        "artist": "Urbandawn",
-                        "title": "Come Together",
-                        "uri": "4pd8nt4rexiPsqLzo3daFv"
-                    },
-                    {
-                        "artist": "Michael Jackson",
-                        "title": "Come Together",
-                        "uri": "3tE5OfatEheU3L5nSpW9FD"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Jeanette",
+            "ratio": 6,
+            "title": "In the Morning",
+            "trackid": "6v0BTMpyAW5VE90ERYN79U"
+        },
+        "03": {
+            "artist": "Budgie",
+            "ratio": 5,
+            "title": "Want 2 Love U",
+            "trackid": "0C2KXF45WZ8SNpZE1j5Iau"
+        },
+        "04": {
+            "artist": "Black Taffy",
+            "ratio": 6,
+            "title": "Geraldine",
+            "trackid": "6gKvl9To5WpCeH4gqDWKzU"
+        },
+        "05": {
+            "artist": "Lou Blic",
+            "ratio": 6,
+            "title": "Minéralité",
+            "trackid": "6cjMbDlQnqb8vDTxJfLkdL"
+        },
+        "06": {
+            "artist": "Róisín Murphy",
+            "ratio": 6,
+            "title": "All My Dreams",
+            "trackid": "4sL9zF71OyDJn1YCIMaMmX"
+        },
+        "07": {
+            "artist": "Medlar",
+            "ratio": 6,
+            "title": "Tripped",
+            "trackid": "4ZNqEXIZq2kYzslpHfOv2o"
+        },
+        "08": {
+            "artist": "Syclops",
+            "ratio": 6,
+            "title": "Sarah's E Is Back",
+            "trackid": "5SlS5CkXRnfNQtZY6Kv2x7"
+        },
+        "09": {
+            "artist": "Talking Heads",
+            "ratio": 6,
+            "title": "I Zimbra",
+            "trackid": "5EafbHIsDLIDHYrxvOQtnY"
+        },
+        "10": {
+            "artist": "Glenn Branca",
+            "ratio": 5,
+            "title": "Sym. No. 1, Movement 1",
+            "trackid": "45MSa5Y03M24ID5ch38R63"
+        },
+        "11": {
+            "artist": "Object Blue",
+            "ratio": 2,
+            "title": "Exorcism of a Self-Help Book",
+            "trackid": "3iHThekmT7blCYAjRT4zhQ"
+        },
+        "12": {
+            "artist": "Loidis",
+            "ratio": 6,
+            "title": "A Parade",
+            "trackid": "420f09vvRpnTwRGZxdg4ZO"
+        },
+        "13": {
+            "artist": "Panoram",
+            "ratio": 6,
+            "title": "Bad Request",
+            "trackid": "5vz96vzASEqj3DtD14tYGZ"
+        },
+        "14": {
+            "artist": "тпсб",
+            "ratio": 6,
+            "title": "Are You Still Hurt",
+            "trackid": "7I44RBV6GTVRtf5vTVqI8R"
+        },
+        "15": {
+            "artist": "Eleven Pond",
+            "ratio": 6,
+            "title": "Watching Trees",
+            "trackid": "7D3fC8PsR6ztpXo9rZuNWp"
+        }
+    },
+    "leon-vynehall-4th-may-2018": {
+        "00": {
+            "artist": "Don Carlos",
+            "ratio": 6,
+            "title": "Laser Beam",
+            "trackid": "0dM29kZyE0p5omKNAVbU6o"
+        },
+        "01": {
+            "artist": "Rex Ilusivii",
+            "ratio": 6,
+            "title": "Facedance",
+            "trackid": "0kpsbum2PWQcJflO5IYD9A"
+        },
+        "02": {
+            "artist": "Feater",
+            "ratio": 5,
+            "title": "Time Million - Pangaea Dub",
+            "trackid": "5CAFIUgqloio6nICl1Ba7q"
+        },
+        "03": {
+            "artist": "Lush",
+            "ratio": 3,
+            "title": "De-Luxe",
+            "trackid": "5m2ylParCpWyYRRinlDUiX"
+        },
+        "04": {
+            "artist": "MJ Lallo",
+            "ratio": 6,
+            "title": "Gabriel's Horn",
+            "trackid": "0yb2SbFBp63zIPYF3NOo6q"
+        },
+        "05": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "06": {
+            "artist": "Faith Global",
+            "ratio": 6,
+            "title": "Earth Report",
+            "trackid": "266NTqu5iOMLlGUcLTuiZl"
+        },
+        "07": {
+            "artist": "Vex Ruffin",
+            "ratio": 6,
+            "title": "The Balance (vocal)",
+            "trackid": "16fD86MefBwJVDh3a4qLCg"
+        },
+        "08": {
+            "artist": "Jonny Greenwood",
+            "ratio": 6,
+            "title": "Sandy's Necklace",
+            "trackid": "7DssYkJmGjMTxEvLugjAa2"
+        },
+        "09": {
+            "artist": "Ploy",
+            "ratio": 6,
+            "title": "=0",
+            "trackid": "2R9kIvzVCEAmv1yNSKr7Kg"
+        },
+        "10": {
+            "artist": "Martyn",
+            "ratio": 6,
+            "title": "Mind Rain",
+            "trackid": "0T8MbOuwfHDzYtsLNhFDuI"
+        },
+        "11": {
+            "artist": "Freaks",
+            "ratio": 6,
+            "title": "Methods In Madness",
+            "trackid": "4vKaVg78YdhYPEWO7e4bTv"
+        },
+        "12": {
+            "artist": "Kelly Lee Owens",
+            "ratio": 6,
+            "title": "S.O",
+            "trackid": "1rPVwDsOQngRvmfkFgXLjn"
+        },
+        "13": {
+            "artist": "Leon Vynehall",
+            "ratio": 6,
+            "title": "Movements (Chapter III)",
+            "trackid": "1OD2YXIOmfYmBAYfV1maRV"
+        },
+        "14": {
+            "artist": "Playgroup",
+            "ratio": 6,
+            "title": "Come Together Dub",
+            "trackid": "2dPvh3AbmusK3Ckbuvmj64"
         }
     }
 }

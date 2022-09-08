@@ -1,4071 +1,852 @@
 {
-    "flags": {
-        "gene-s-liquor-12th-march-2018": {
-            "00": {
-                "artist": "The Lloyd McNeill Quartet",
-                "ratio": 6,
-                "title": "Just 71% Moor",
-                "trackid": "5sOQvxXLEgY7vVEuZmxW8u"
-            },
-            "01": {
-                "artist": "Joe Henderson",
-                "ratio": 3,
-                "title": "Earth",
-                "trackid": "5tR80sypNbMyWIbDfiBBXh"
-            },
-            "02": {
-                "artist": "Demon Fuzz",
-                "ratio": 6,
-                "title": "Hymn To Mother Earth",
-                "trackid": "588GcLrsF0fAUhTXVCmFQ9"
-            },
-            "03": {
-                "artist": "Kurt Vile",
-                "ratio": 6,
-                "title": "Trumpets In Summer",
-                "trackid": "5LG6vmAkv5ArDoLBoRZQ7I"
-            },
-            "04": {
-                "artist": "Huey Briss",
-                "ratio": 6,
-                "title": "Concealed",
-                "trackid": "4zREUOdgmlI7MZuVXv5s0a"
-            },
-            "05": {
-                "artist": "Steve Kuhn",
-                "ratio": 6,
-                "title": "Trance",
-                "trackid": "33GhLH1cBZd5Jjpn3XlAum"
-            },
-            "06": {
-                "artist": "Mikhail Krug",
-                "ratio": 2,
-                "title": "Мадам",
-                "trackid": "7bG4qxexdyIdssOh2qUfcZ"
-            },
-            "07": {
-                "artist": "Hip Global",
-                "ratio": 5,
-                "title": "Everybody Anyone",
-                "trackid": "48PsbKPLIVg9nW5qfaDBk5"
-            },
-            "08": {
-                "artist": "The Mystic Jungle Tribe",
-                "ratio": 4,
-                "title": "Plenilunio",
-                "trackid": "1pdj8GkqHRhZBKb5ppqWU9"
-            },
-            "09": {
-                "artist": "Marcus King",
-                "ratio": 6,
-                "title": "Love Song",
-                "trackid": "0nBHtZO60Pc3fzRjrCE5mW"
-            },
-            "10": {
-                "artist": "The Blackbyrds",
-                "ratio": 6,
-                "title": "A Hot Day Today",
-                "trackid": "3RfYapoHyGhy5s8wvOBnCP"
-            },
-            "11": {
-                "artist": "Hubert Laws",
-                "ratio": 6,
-                "title": "No More",
-                "trackid": "4LCHPRyXvjPBjld9jCVsmP"
-            },
-            "12": {
-                "artist": "Nu Genea",
-                "ratio": 6,
-                "title": "Howls",
-                "trackid": "0h51tz4qtVPvygXm291ceN"
-            },
-            "13": {
-                "artist": "SiR",
-                "ratio": 6,
-                "title": "I Know",
-                "trackid": "0vP0RXP4RTkjTXiHa2mvZ3"
-            },
-            "14": {
-                "artist": "Os Mulheres Negras",
-                "ratio": 6,
-                "title": "Mãoscolorida",
-                "trackid": "2I1Ni77XqbCBovfJPR1H95"
-            },
-            "15": {
-                "artist": "Ghostface",
-                "ratio": 6,
-                "title": "Holla",
-                "trackid": "1YN1uee5kIRLQQ6QFMchfR"
-            }
+    "gene-s-liquor-12th-march-2018": {
+        "00": {
+            "artist": "The Lloyd McNeill Quartet",
+            "ratio": 6,
+            "title": "Just 71% Moor",
+            "trackid": "5sOQvxXLEgY7vVEuZmxW8u"
         },
-        "genes-liquor-11th-february-2019": {
-            "00": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "01": {
-                "artist": "KV4TON",
-                "ratio": 4,
-                "title": "Crushed",
-                "trackid": "4XpKSZ3Q9Kn4ZEgpxA2dQr"
-            },
-            "02": {
-                "artist": "MGUN",
-                "ratio": 6,
-                "title": "Wide Eye",
-                "trackid": "6n7Z9Tde8VW9NZH5fODUVl"
-            },
-            "03": {
-                "artist": "Larry Heard",
-                "ratio": 6,
-                "title": "The Sun Can't Compare - Long Version",
-                "trackid": "50TVKYY0LRQAqKI8EfBqzC"
-            },
-            "04": {
-                "artist": "Omar S",
-                "ratio": 4,
-                "title": "The Shit Baby",
-                "trackid": "77u4D7eaO0T6zVby7kybyP"
-            },
-            "05": {
-                "artist": "Blue Iverson",
-                "ratio": 6,
-                "title": "Fake Loathe",
-                "trackid": "3ZhCGCNT9ZYlXwVkTqN6Ji"
-            },
-            "06": {
-                "artist": "A Certain Ratio",
-                "ratio": 5,
-                "title": "Felch",
-                "trackid": "2ahIEevJ3JKJxNwQjPKOWz"
-            },
-            "07": {
-                "artist": "KIDS SEE GHOSTS",
-                "ratio": 6,
-                "title": "Freeee (Ghost Town Pt. 2)",
-                "trackid": "7GRTrWsP3yo2Fx8umJfA1X"
-            },
-            "08": {
-                "artist": "Primal Scream",
-                "ratio": 6,
-                "title": "Blood Money",
-                "trackid": "7amFwVcfgqqkECfv0kU3Zy"
-            },
-            "09": {
-                "artist": "American Wrestlers",
-                "ratio": 6,
-                "title": "I Can Do No Wrong",
-                "trackid": "7Eyoo88St8MXIb57SkLkCg"
-            }
+        "01": {
+            "artist": "Joe Henderson",
+            "ratio": 3,
+            "title": "Earth",
+            "trackid": "5tR80sypNbMyWIbDfiBBXh"
         },
-        "genes-liquor-14th-january-2019": {
-            "00": {
-                "artist": "Truong Thi Quynh Hanh",
-                "ratio": 1,
-                "title": "Binh ban va'n",
-                "trackid": "1gyY4WlJGvbZvUVsALyJVe"
-            },
-            "01": {
-                "artist": "Delroy Edwards",
-                "ratio": 6,
-                "title": "Bad II The Bone",
-                "trackid": "52Zmg0NXrHPVzYmsnqHPWz"
-            },
-            "02": {
-                "artist": "Rock Candy Funk Party",
-                "ratio": 2,
-                "title": "In the Groove",
-                "trackid": "5YPvJO7U1HhwuJBLrD1f0q"
-            },
-            "03": {
-                "artist": "Robert Palmer",
-                "ratio": 6,
-                "title": "Woke Up Laughing",
-                "trackid": "26hhPkZhjIK4sJn8thekxD"
-            },
-            "04": {
-                "artist": "Ralph Tresvant",
-                "ratio": 6,
-                "title": "Sensitivity",
-                "trackid": "3wY9vnTmLC4XVHHbbFmgj0"
-            },
-            "05": {
-                "artist": "Moodymann",
-                "ratio": 6,
-                "title": "Sunday Hotel",
-                "trackid": "3c4d1Ui2AoZIR6SF9MOF7m"
-            },
-            "06": {
-                "artist": "Lakeside",
-                "ratio": 6,
-                "title": "Your Love Is On the One",
-                "trackid": "4BtlVer3IAoPsnM4opCLjI"
-            },
-            "07": {
-                "artist": "The B-52's",
-                "ratio": 6,
-                "title": "Mesopotamia",
-                "trackid": "2Bx5UlqJkrEaOKhZa2RrfC"
-            },
-            "08": {
-                "artist": "Pi’erre Bourne",
-                "ratio": 6,
-                "title": "Marie Curie",
-                "trackid": "4Rs00gcMnDVfivMHXdiHHc"
-            },
-            "09": {
-                "artist": "DaBaby",
-                "ratio": 6,
-                "title": "Walker Texas Ranger",
-                "trackid": "0eBOVXdnrVQ0rITgKXBAA7"
-            },
-            "10": {
-                "artist": "K$upreme",
-                "ratio": 6,
-                "title": "Hang Up the Phone",
-                "trackid": "40Duf6hCElUKCpstTT7RNg"
-            },
-            "11": {
-                "artist": "Yann Muller",
-                "ratio": 3,
-                "title": "Dreams",
-                "trackid": "5YkU6HriANEpKjLEpBGq6K"
-            },
-            "12": {
-                "artist": "Book Of Love",
-                "ratio": 6,
-                "title": "Book of Love",
-                "trackid": "2i7bNNAu1ZXuVyUBYWRAyz"
-            },
-            "13": {
-                "artist": "Chemise",
-                "ratio": 6,
-                "title": "She Can't Love You",
-                "trackid": "3CX1FiiXSbvKjsXRYwApAP"
-            },
-            "14": {
-                "artist": "Theo Parrish",
-                "ratio": 6,
-                "title": "Feel Loved",
-                "trackid": "7bRjKjaONVwUPjWgt8Illt"
-            },
-            "15": {
-                "artist": "Wiz Khalifa",
-                "ratio": 6,
-                "title": "Late Night Messages",
-                "trackid": "3T6Wt1QsnkiRXgTSKSCHPs"
-            },
-            "16": {
-                "artist": "Future",
-                "ratio": 6,
-                "title": "Crushed Up",
-                "trackid": "7wcyO1rrH3Ru4t659IjG41"
-            }
+        "02": {
+            "artist": "Demon Fuzz",
+            "ratio": 6,
+            "title": "Hymn To Mother Earth",
+            "trackid": "588GcLrsF0fAUhTXVCmFQ9"
         },
-        "genes-liquor-16th-january-2017": {
-            "00": {
-                "artist": "Knxwledge",
-                "ratio": 6,
-                "title": "Relintlessli",
-                "trackid": "5ukxw7ElBoUejLg87KaY9J"
-            },
-            "01": {
-                "artist": "Quality Control",
-                "ratio": 6,
-                "title": "South Africa",
-                "trackid": "2vw2nopHWeQ0EUJPKNy8yS"
-            },
-            "02": {
-                "artist": "Quality Control",
-                "ratio": 6,
-                "title": "The Load (Quality Control, Gucci Mane & Lil Baby feat. Marlo)",
-                "trackid": "2eodyKXNJqpHRzI61ScbTl"
-            }
+        "03": {
+            "artist": "Kurt Vile",
+            "ratio": 6,
+            "title": "Trumpets In Summer",
+            "trackid": "5LG6vmAkv5ArDoLBoRZQ7I"
         },
-        "genes-liquor-23rd-october-2017": {
-            "00": {
-                "artist": "Frankie Lymon & The Teenagers",
-                "ratio": 6,
-                "title": "I'm Not a Juvenile Delinquent 'Rock, Rock, Rock'",
-                "trackid": "5wgHjqawAGbee1Kgo8zuKc"
-            },
-            "01": {
-                "artist": "Al Dobson Jr.",
-                "ratio": 6,
-                "title": "Vibrations",
-                "trackid": "0V9xqjOSTk6G8BJ3uUfgeP"
-            },
-            "02": {
-                "artist": "Bone Thugs-N-Harmony",
-                "ratio": 4,
-                "title": "Bone Thugs-N-Harmony",
-                "trackid": "5GlSR9oD6009VrsauxTdez"
-            },
-            "03": {
-                "artist": "Falcko",
-                "ratio": 3,
-                "title": "Ghetto Blues",
-                "trackid": "6WsaYout0yStJ8VNnJcW4a"
-            },
-            "04": {
-                "artist": "YoungBoy Never Broke Again",
-                "ratio": 6,
-                "title": "No Smoke",
-                "trackid": "57IRaiAB4hBZu3gnNVZC0v"
-            },
-            "05": {
-                "artist": "Flox",
-                "ratio": 4,
-                "title": "Slow Down",
-                "trackid": "3lloXPyu3BPdCljL11pjx2"
-            },
-            "06": {
-                "artist": "Aaliyah",
-                "ratio": 5,
-                "title": "Are You That Somebody",
-                "trackid": "3PqAnW2bB5TQnMoBivyFOb"
-            },
-            "07": {
-                "artist": "Devante",
-                "ratio": 4,
-                "title": "Gin & Juice",
-                "trackid": "7d5aCzzHTAdD2ayj5HUjjZ"
-            },
-            "08": {
-                "artist": "The Grand",
-                "ratio": 4,
-                "title": "Keep It Coming",
-                "trackid": "04aFRyu994EIDJ0XcJCdcu"
-            },
-            "09": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "10": {
-                "artist": "Arnaud Rebotini",
-                "ratio": 4,
-                "title": "What You Want Me to Do",
-                "trackid": "68KpJu3A67JaCbVRseL6S7"
-            },
-            "11": {
-                "artist": "Elkie Brooks",
-                "ratio": 6,
-                "title": "Just An Excuse",
-                "trackid": "3C0uCo0eergfTGw7FkhcDi"
-            },
-            "12": {
-                "artist": "Joanna Brouk",
-                "ratio": 6,
-                "title": "The Space Between",
-                "trackid": "7pes8uQmsmsHtFiG1eFsJM"
-            },
-            "13": {
-                "artist": "Hil St. Soul",
-                "ratio": 6,
-                "title": "Baby Come Over",
-                "trackid": "2bPGpTHTKbDvV21uRg8iCH"
-            }
+        "04": {
+            "artist": "Huey Briss",
+            "ratio": 6,
+            "title": "Concealed",
+            "trackid": "4zREUOdgmlI7MZuVXv5s0a"
         },
-        "genes-liquor-28th-august-2017": {
-            "00": {
-                "artist": "Wlad Marhulets",
-                "ratio": 1,
-                "title": "Credits",
-                "trackid": "7ytFaePUHsVvbxqBcPSa26"
-            },
-            "01": {
-                "artist": "Big Mello",
-                "ratio": 6,
-                "title": "Love Don't Love Nobody",
-                "trackid": "76DvyaovcdPfkw82vc7l45"
-            },
-            "02": {
-                "artist": "Jett Brwn",
-                "ratio": 4,
-                "title": "SAME OL' SONG",
-                "trackid": "3fwFjym9FXO9VUcWhmnEmR"
-            },
-            "03": {
-                "artist": "Soulja Slim",
-                "ratio": 6,
-                "title": "At The Same Time",
-                "trackid": "4jkEkAD9ofKaade3eIEGvg"
-            },
-            "04": {
-                "artist": "Shawty Pimp",
-                "ratio": 4,
-                "title": "KICKIN’ PIMPIN’ (feat. Reddog)",
-                "trackid": "1WWpfqfXuEvWkSTvL41OxH"
-            },
-            "05": {
-                "artist": "Twelve A.M.",
-                "ratio": 6,
-                "title": "I Wanna Understand You",
-                "trackid": "1BWAzWLRbPCgKI3fTSr4sN"
-            },
-            "06": {
-                "artist": "Adventurer",
-                "ratio": 4,
-                "title": "Reality",
-                "trackid": "4HuocOuSBJ78RlsFYwTyr5"
-            },
-            "07": {
-                "artist": "Ruthless Juveniles",
-                "ratio": 6,
-                "title": "Gangster Tale",
-                "trackid": "37vz0Xq2FQj0qNjj7D6f6h"
-            },
-            "08": {
-                "artist": "Smokepurpp",
-                "ratio": 6,
-                "title": "To the Moon",
-                "trackid": "7w3qmzKuh4cBn0D0hmmRPQ"
-            },
-            "09": {
-                "artist": "Unknown",
-                "ratio": -1,
-                "title": "Maboroshi",
-                "trackid": "4noPpg3jcwOxTfcZWCNHFE",
-                "uri": ""
-            },
-            "10": {
-                "artist": "Budgie",
-                "ratio": 6,
-                "title": "Best Believe",
-                "trackid": "3cYVMeqyAXFIEAbXB2ukiS"
-            },
-            "11": {
-                "artist": "Blue Iverson",
-                "ratio": 6,
-                "title": "Soulseek",
-                "trackid": "4y3milmiHjMEX3XwOSirB2"
-            },
-            "12": {
-                "artist": "Delegation",
-                "ratio": 6,
-                "title": "Oh Honey",
-                "trackid": "3TiCuJiisBOB9HzKAM6FDG"
-            },
-            "13": {
-                "artist": "Masayoshi Takanaka",
-                "ratio": 6,
-                "title": "SEXY DANCE",
-                "trackid": "4ZxtydSHCl0eZ9a9CWtOIF"
-            },
-            "14": {
-                "artist": "Love",
-                "ratio": 6,
-                "title": "Emotions - Stereo Version",
-                "trackid": "0piyqcJp70zIhTYyhI2ZrP"
-            },
-            "15": {
-                "artist": "Gary Wilson",
-                "ratio": 6,
-                "title": "I Wanna Lose Control",
-                "trackid": "54TarlY0OX9mljN13m2nZ2"
-            },
-            "16": {
-                "artist": "Mamman Sani",
-                "ratio": 6,
-                "title": "Tunan",
-                "trackid": "1s0O1tVHd0a45Dh3HUcKt5"
-            },
-            "17": {
-                "artist": "A$AP Twelvyy",
-                "ratio": 6,
-                "title": "Strapped",
-                "trackid": "3U0xbYGTtYZAUv3lEwPebJ"
-            },
-            "18": {
-                "artist": "8Ball",
-                "ratio": 6,
-                "title": "My Homeboy's Girlfriend",
-                "trackid": "0hHR7DwdbnMHPzfWRIOhny"
-            }
+        "05": {
+            "artist": "Steve Kuhn",
+            "ratio": 6,
+            "title": "Trance",
+            "trackid": "33GhLH1cBZd5Jjpn3XlAum"
         },
-        "genes-liquor-2nd-july-2018": {},
-        "genes-liquor-3rd-july-2017": {
-            "00": {
-                "artist": "Vivien Goldman",
-                "ratio": 6,
-                "title": "P. A. Dub",
-                "trackid": "4b1G5MGgsJDoer7MI1BTSm"
-            },
-            "01": {
-                "artist": "Buckshot LeFonque",
-                "ratio": 3,
-                "title": "Music Evolution",
-                "trackid": "40VpMYDhTMvr4XXSVXmVvl"
-            },
-            "02": {
-                "artist": "Idris Muhammad",
-                "ratio": 6,
-                "title": "Piece of Mind",
-                "trackid": "72wP2qnBz48qHEutvvnpfY"
-            },
-            "03": {
-                "artist": "Darrow Fletcher",
-                "ratio": 6,
-                "title": "Now Is the Time for Love - Pt. 2",
-                "trackid": "52ZSzfkiQQp5cE1M0wuLea"
-            },
-            "04": {
-                "artist": "Tom Scott",
-                "ratio": 6,
-                "title": "Today",
-                "trackid": "5R09NTQtV257kCHrMEGvAe"
-            },
-            "05": {
-                "artist": "MIKE",
-                "ratio": 4,
-                "title": "GREEDY",
-                "trackid": "6XLTeRWyIxj6XqLR6LJn2r"
-            },
-            "06": {
-                "artist": "Ethel Beatty",
-                "ratio": 6,
-                "title": "It's Your Love",
-                "trackid": "7LRrz9pMF4c0U4goiZjZrJ"
-            },
-            "07": {
-                "artist": "Gábor Szabó",
-                "ratio": 6,
-                "title": "Somewhere I Belong",
-                "trackid": "5ViM2bwFjNqx6K7w1iFlOE"
-            },
-            "08": {
-                "artist": "The Trash Company",
-                "ratio": 6,
-                "title": "I Don't Mind",
-                "trackid": "0RFrgM4lRXcQ6En18QJ7rY"
-            },
-            "09": {
-                "artist": "Claas",
-                "ratio": 4,
-                "title": "Sick",
-                "trackid": "4TA9GbccWjoOiy0x5wSX3G"
-            },
-            "10": {
-                "artist": "Ike Yard",
-                "ratio": 4,
-                "title": "M. Kurtz",
-                "trackid": "6WRIGVvMGfQFzZU2CHZUzT"
-            },
-            "11": {
-                "artist": "Joanne Robertson",
-                "ratio": 6,
-                "title": "HAD MY GUARD UP 2 U (SINCE '92)",
-                "trackid": "5QTvjrXexfyUSFz4PcLMVq"
-            },
-            "12": {
-                "artist": "Scott Gilmore",
-                "ratio": 6,
-                "title": "Pieced Together",
-                "trackid": "4HC7u25XVifS5R9oMb41vz"
-            },
-            "13": {
-                "artist": "Saâda Bonaire",
-                "ratio": 6,
-                "title": "The Facts",
-                "trackid": "0UVb3lCVXCztOZUNCg4IUQ"
-            },
-            "14": {
-                "artist": "Robert Wyatt",
-                "ratio": 6,
-                "title": "The Age Of Self",
-                "trackid": "0p48pOhJyjCOkfZIdNWe9Z"
-            },
-            "15": {
-                "artist": "2Pac",
-                "ratio": 6,
-                "title": "Str8 Ballin'",
-                "trackid": "0bzLeU6MipJvb9Iq15CCVZ"
-            },
-            "16": {
-                "artist": "Lennie Tristano",
-                "ratio": 5,
-                "title": "Love Lines",
-                "trackid": "0mF34yHUPIP647Q5N4EIs8"
-            }
+        "06": {
+            "artist": "Mikhail Krug",
+            "ratio": 2,
+            "title": "Мадам",
+            "trackid": "7bG4qxexdyIdssOh2qUfcZ"
         },
-        "genes-liquor-5th-june-2017": {
-            "00": {
-                "artist": "Vincent Gallo",
-                "ratio": 4,
-                "title": "Was",
-                "trackid": "4A1ZZGi4e3UNwA5a0uPo5U"
-            },
-            "01": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "02": {
-                "artist": "Lovesliescrushing",
-                "ratio": 6,
-                "title": "glimmer",
-                "trackid": "0LuYnocf8k20r1Dpt9aokj"
-            },
-            "03": {
-                "artist": "Surf Curse",
-                "ratio": 6,
-                "title": "Doom Generation",
-                "trackid": "1kYeSrhC31XWoqj8WIZty1"
-            },
-            "04": {
-                "artist": "Modern Art",
-                "ratio": 6,
-                "title": "Oriental Towers",
-                "trackid": "1C0fPfGr0vOr5SiIOlDqHt"
-            },
-            "05": {
-                "artist": "Jonny Trunk",
-                "ratio": 6,
-                "title": "Busy Busy",
-                "trackid": "3VE0LyC59wGGZu5ukg75sq"
-            },
-            "06": {
-                "artist": "Chris Hardwick",
-                "ratio": 3,
-                "title": "I'll Tell You What to Eat",
-                "trackid": "5mdEu4VffP3jjPM1ctnMbO"
-            },
-            "07": {
-                "artist": "Bettye Crutcher",
-                "ratio": 6,
-                "title": "Sleepy People",
-                "trackid": "567qfszjnKBv5e7OlBxoX9"
-            },
-            "08": {
-                "artist": "The Solid Gold Orchestra",
-                "ratio": 6,
-                "title": "Tracks Of Love",
-                "trackid": "2LESvxlz80HAPnQmzluY4C"
-            },
-            "09": {
-                "artist": "Solence",
-                "ratio": 4,
-                "title": "Rain Down",
-                "trackid": "6gknArQPiG8GyMXKTI30vZ"
-            },
-            "10": {
-                "artist": "Barney Kessel",
-                "ratio": 6,
-                "title": "Walking In Space",
-                "trackid": "4TQ1USHUb30F56t69RbJ9S"
-            },
-            "11": {
-                "artist": "The Bizarros",
-                "ratio": 6,
-                "title": "Ice Age",
-                "trackid": "5dVokrWkbfFW3ic0ukbN7I"
-            },
-            "12": {
-                "artist": "Gangs",
-                "ratio": 6,
-                "title": "The Real Thing",
-                "trackid": "58F83IVdn0ICsLtPXL8auo"
-            },
-            "13": {
-                "artist": "SIN",
-                "ratio": 1,
-                "title": "Carbon",
-                "trackid": "09QwnH3fU4RUFSAAodqFKq"
-            },
-            "14": {
-                "artist": "El Gusano",
-                "ratio": 6,
-                "title": "Melancolia",
-                "trackid": "0WLfVKHfOUp3EXl7a2gi4z"
-            },
-            "15": {
-                "artist": "Minami Deutsch",
-                "ratio": 4,
-                "title": "Israeli Blues",
-                "trackid": "22dwU4HG9UxeCHhrNfV3dm"
-            },
-            "16": {
-                "artist": "Johnnie Frierson",
-                "ratio": 6,
-                "title": "Have You Been Good to Yourself",
-                "trackid": "2DHylyLFfzaKOBnC0HfDjU"
-            },
-            "17": {
-                "artist": "Wendy & Bonnie",
-                "ratio": 6,
-                "title": "You Keep Hanging up on My Mind",
-                "trackid": "4dVR2AK8wrlNRZgvf44fhd"
-            },
-            "18": {
-                "artist": "Shirley Nanette",
-                "ratio": 4,
-                "title": "People Are Thinking",
-                "trackid": "7EB2Fg8neFFqfekVVUJJ6o"
-            }
+        "07": {
+            "artist": "Hip Global",
+            "ratio": 5,
+            "title": "Everybody Anyone",
+            "trackid": "48PsbKPLIVg9nW5qfaDBk5"
         },
-        "genes-liquor-9th-april-2018": {
-            "00": {
-                "artist": "Delroy Edwards",
-                "ratio": 6,
-                "title": "Smooth Street",
-                "trackid": "7HwV5zPEFaHbuRFfCJk9lH"
-            },
-            "01": {
-                "artist": "Delroy Edwards",
-                "ratio": 6,
-                "title": "Sugar Shack",
-                "trackid": "4h0ZTyQelAG47QsbI9mANI"
-            }
+        "08": {
+            "artist": "The Mystic Jungle Tribe",
+            "ratio": 4,
+            "title": "Plenilunio",
+            "trackid": "1pdj8GkqHRhZBKb5ppqWU9"
         },
-        "genes-liquor-w-delroy-edwards-25th-september-2017": {
-            "00": {
-                "artist": "Delroy Edwards",
-                "ratio": 6,
-                "title": "Buckeye Beats",
-                "trackid": "2lkuP848JTovByJXq7jKJA"
-            },
-            "01": {
-                "artist": "Mike Dunn",
-                "ratio": 3,
-                "title": "When The Dust Clears (feat. LOA.) - MD MixX",
-                "trackid": "4fBKEDSwtIua3z916hr7bO"
-            },
-            "02": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "03": {
-                "artist": "DJ Rush",
-                "ratio": 4,
-                "title": "Get On Up - Dave Simon Edit",
-                "trackid": "67NGpIKHQv3qTgidnz3a91"
-            },
-            "04": {
-                "artist": "Delroy Edwards",
-                "ratio": 6,
-                "title": "Getting' Tail (Backwards Mix)",
-                "trackid": "4h2gVfTzLXcQUQs4E82JxZ"
-            },
-            "05": {
-                "artist": "Delroy Edwards",
-                "ratio": 5,
-                "title": "Untitled",
-                "trackid": "7itfKrqnoQPjzC4gQai5BJ"
-            },
-            "06": {
-                "artist": "Burger Bytes",
-                "ratio": 3,
-                "title": "Track Star",
-                "trackid": "4NNU2rchFDfYmkcC1x3j9i"
-            },
-            "07": {
-                "artist": "Delroy Edwards",
-                "ratio": 6,
-                "title": "Rumba",
-                "trackid": "5ZDQaavutTgDJTOY2FebCu"
-            },
-            "08": {
-                "artist": "Delroy Wilson",
-                "ratio": 3,
-                "title": "Till I Die",
-                "trackid": "6ey3hjD6iYKvJO36cxHbMA"
-            },
-            "09": {
-                "artist": "Phil Lynott",
-                "ratio": 4,
-                "title": "Solo In Soho",
-                "trackid": "7DnpchxdXEtliafHUPR2A3"
-            },
-            "10": {
-                "artist": "Moha La Squale",
-                "ratio": 3,
-                "title": "Basta",
-                "trackid": "6aBKJmtHMYdBMZnjp4fb8O"
-            },
-            "11": {
-                "artist": "Steve \"Silk\" Hurley",
-                "ratio": 3,
-                "title": "The Word Is Love (feat. Sharon Pass) - Silk's Anthem Of Life [Mixed]",
-                "trackid": "0KDuzqV10T6yb24f0iEhOk"
-            },
-            "12": {
-                "artist": "Gene Hunt",
-                "ratio": 6,
-                "title": "Bong",
-                "trackid": "7HI7XZhr0slYJw8CGVf6hA"
-            },
-            "13": {
-                "artist": "Xxtarlit⚸",
-                "ratio": 3,
-                "title": "untitled",
-                "trackid": "3BGyOqYcAWJrqUR6OtgEXN"
-            },
-            "14": {
-                "artist": "Coastdream",
-                "ratio": 3,
-                "title": "Untitled",
-                "trackid": "74HDsZMflVIGiLD1RSdVC9"
-            },
-            "15": {
-                "artist": "Nicodemus",
-                "ratio": 6,
-                "title": "Untitled",
-                "trackid": "4AN8zqLLPMkftIprVfSELz"
-            },
-            "16": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "17": {
-                "artist": "The Telstars",
-                "ratio": 6,
-                "title": "Fia",
-                "trackid": "6ooq46YiIkhpe2T8ydiqLl"
-            },
-            "18": {
-                "artist": "Dwight Sykes",
-                "ratio": 6,
-                "title": "The Good Times",
-                "trackid": "4n4zXiSyIdzQNBzBpm99mw"
-            },
-            "19": {
-                "artist": "The Last River Bottomed Fig Plucker",
-                "ratio": 2,
-                "title": "Tomcat",
-                "trackid": "3OBacuQIndpWVjRsMSle5T"
-            },
-            "20": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            }
+        "09": {
+            "artist": "Marcus King",
+            "ratio": 6,
+            "title": "Love Song",
+            "trackid": "0nBHtZO60Pc3fzRjrCE5mW"
+        },
+        "10": {
+            "artist": "The Blackbyrds",
+            "ratio": 6,
+            "title": "A Hot Day Today",
+            "trackid": "3RfYapoHyGhy5s8wvOBnCP"
+        },
+        "11": {
+            "artist": "Hubert Laws",
+            "ratio": 6,
+            "title": "No More",
+            "trackid": "4LCHPRyXvjPBjld9jCVsmP"
+        },
+        "12": {
+            "artist": "Nu Genea",
+            "ratio": 6,
+            "title": "Howls",
+            "trackid": "0h51tz4qtVPvygXm291ceN"
+        },
+        "13": {
+            "artist": "SiR",
+            "ratio": 6,
+            "title": "I Know",
+            "trackid": "0vP0RXP4RTkjTXiHa2mvZ3"
+        },
+        "14": {
+            "artist": "Os Mulheres Negras",
+            "ratio": 6,
+            "title": "Mãoscolorida",
+            "trackid": "2I1Ni77XqbCBovfJPR1H95"
+        },
+        "15": {
+            "artist": "Ghostface",
+            "ratio": 6,
+            "title": "Holla",
+            "trackid": "1YN1uee5kIRLQQ6QFMchfR"
         }
     },
-    "search": {
-        "gene-s-liquor-12th-march-2018": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "The Lloyd McNeill Quartet",
-                        "title": "Just 71% Moor",
-                        "uri": "5sOQvxXLEgY7vVEuZmxW8u"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Lloyd McNeill Quartet",
-                        "title": "Just 71% Moor",
-                        "uri": "5sOQvxXLEgY7vVEuZmxW8u"
-                    },
-                    {
-                        "artist": "The Lloyd McNeill Quartet",
-                        "title": "Home Rule",
-                        "uri": "6nwtdFUbRvYz1nbZqJuV2F"
-                    },
-                    {
-                        "artist": "The Lloyd McNeill Quartet",
-                        "title": "Asha",
-                        "uri": "0GuPZLzSHRx1iaE5FsApCl"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Joe Henderson",
-                        "title": "Earth",
-                        "uri": "5tR80sypNbMyWIbDfiBBXh"
-                    },
-                    {
-                        "artist": "Joe Henderson",
-                        "title": "Fire",
-                        "uri": "2VlAc2SvWKnDDNYjiEzcSb"
-                    },
-                    {
-                        "artist": "Joe Henderson",
-                        "title": "Water",
-                        "uri": "1ZAWGAGWz6XGQduTKzEJbP"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Demon Fuzz",
-                        "title": "Hymn To Mother Earth",
-                        "uri": "588GcLrsF0fAUhTXVCmFQ9"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Demon Fuzz",
-                        "title": "Hymn To Mother Earth",
-                        "uri": "588GcLrsF0fAUhTXVCmFQ9"
-                    },
-                    {
-                        "artist": "Demon Fuzz",
-                        "title": "Disillusioned Man",
-                        "uri": "0y0K4feqtaOE5AXyB3YStD"
-                    },
-                    {
-                        "artist": "Demon Fuzz",
-                        "title": "Message to Mankind",
-                        "uri": "2WFmDqA7vBqBue2x6IPDis"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Kurt Vile",
-                        "title": "Trumpets In Summer",
-                        "uri": "5LG6vmAkv5ArDoLBoRZQ7I"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kurt Vile",
-                        "title": "Trumpets In Summer",
-                        "uri": "5LG6vmAkv5ArDoLBoRZQ7I"
-                    },
-                    {
-                        "artist": "Kurt Vile",
-                        "title": "Red Apples for Tom Scharpling",
-                        "uri": "3PflrvbOZvMQXNh08efeYV"
-                    },
-                    {
-                        "artist": "Kurt Vile",
-                        "title": "Damn You",
-                        "uri": "5CO0cfP3RlhCsIJUdMeFQv"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Huey Briss",
-                        "title": "Concealed",
-                        "uri": "4zREUOdgmlI7MZuVXv5s0a"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Huey Briss",
-                        "title": "Concealed",
-                        "uri": "4zREUOdgmlI7MZuVXv5s0a"
-                    },
-                    {
-                        "artist": "Huey Briss",
-                        "title": "Grace Park Legend (Norfside)",
-                        "uri": "1Xmy2ve5x8CRGnGbEkvq4g"
-                    },
-                    {
-                        "artist": "Huey Buzo",
-                        "title": "Visibility",
-                        "uri": "5xeS0zpugALJFrGvq8lQco"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Steve Kuhn",
-                        "title": "Trance",
-                        "uri": "33GhLH1cBZd5Jjpn3XlAum"
-                    },
-                    {
-                        "artist": "Steve Kuhn",
-                        "title": "Trance",
-                        "uri": "1EBmohWlzRlxKims2cF90t"
-                    },
-                    {
-                        "artist": "Steve Kuhn",
-                        "title": "Trance",
-                        "uri": "5UATpwg9ZTUbXfWyupkQMs"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Steve Kuhn",
-                        "title": "A Change Of Face",
-                        "uri": "628vNuYYz8z1zzGE7aJzZ5"
-                    },
-                    {
-                        "artist": "Steve Kuhn",
-                        "title": "Trance",
-                        "uri": "33GhLH1cBZd5Jjpn3XlAum"
-                    },
-                    {
-                        "artist": "Steve Kuhn",
-                        "title": "Trance",
-                        "uri": "14zNLSfTEI8Y9kzVBbYPhY"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mikhail Krug",
-                        "title": "Мадам",
-                        "uri": "7bG4qxexdyIdssOh2qUfcZ"
-                    },
-                    {
-                        "artist": "Mikhail Krug",
-                        "title": "Мадам",
-                        "uri": "6fJ1zVlCIhYYXLbOTSsf9s"
-                    },
-                    {
-                        "artist": "Mikhail Krug",
-                        "title": "Электричка",
-                        "uri": "2LdAo0iRjKJcJDd7LaSL7e"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Hip Global",
-                        "title": "Everybody Anyone",
-                        "uri": "48PsbKPLIVg9nW5qfaDBk5"
-                    },
-                    {
-                        "artist": "La Dega",
-                        "title": "Everybody Anyone",
-                        "uri": "2yMH5EJ8RGKnJCnyWKGqbh"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mystic Jungle",
-                        "title": "Jurakan",
-                        "uri": "6sL8cK01Fzb1ryfg9Ty9lT"
-                    },
-                    {
-                        "artist": "The Mystic Jungle Tribe",
-                        "title": "Plenilunio",
-                        "uri": "1pdj8GkqHRhZBKb5ppqWU9"
-                    },
-                    {
-                        "artist": "Mystic Jungle",
-                        "title": "Keep Alive This Fire",
-                        "uri": "5UlZBNsfei8Uu6CRYSx7f3"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Marcus King",
-                        "title": "Love Song",
-                        "uri": "0nBHtZO60Pc3fzRjrCE5mW"
-                    },
-                    {
-                        "artist": "Nat King Cole",
-                        "title": "When I Fall In Love - Remastered",
-                        "uri": "0JlHhicC1HetuYgujLD9hO"
-                    },
-                    {
-                        "artist": "Denise King",
-                        "title": "And I Love Her",
-                        "uri": "5HkJAeV5R2cQq797ZlQEjw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "AWA",
-                        "title": "F**kin' Love Songs (feat. Ebenezer)",
-                        "uri": "6numGpv2oh722LZIWsK5Br"
-                    },
-                    {
-                        "artist": "Kacey Musgraves",
-                        "title": "Velvet Elvis",
-                        "uri": "65krgqLiZqW12PZAUQ9l2x"
-                    },
-                    {
-                        "artist": "Sloucky",
-                        "title": "King",
-                        "uri": "0nftBmDoiBNK819hw9Zv6n"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "The Blackbyrds",
-                        "title": "A Hot Day Today",
-                        "uri": "3RfYapoHyGhy5s8wvOBnCP"
-                    },
-                    {
-                        "artist": "The Blackbyrds",
-                        "title": "A Hot Day Today",
-                        "uri": "0NN2oEHaLJctjVCEkXXXKR"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Blackbyrds",
-                        "title": "A Hot Day Today",
-                        "uri": "3RfYapoHyGhy5s8wvOBnCP"
-                    },
-                    {
-                        "artist": "The Blackbyrds",
-                        "title": "Dreaming About You",
-                        "uri": "5voWjUklIhjnNQU5aZCIm4"
-                    },
-                    {
-                        "artist": "The Blackbyrds",
-                        "title": "Walking In Rhythm",
-                        "uri": "6lBOzYGkoPJz4tte6J4g0N"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Hubert Laws",
-                        "title": "No More",
-                        "uri": "4LCHPRyXvjPBjld9jCVsmP"
-                    },
-                    {
-                        "artist": "Hubert Laws",
-                        "title": "No More",
-                        "uri": "52Ds2nFv6uWUC69cGBEJQw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Hubert Laws",
-                        "title": "No More",
-                        "uri": "4LCHPRyXvjPBjld9jCVsmP"
-                    },
-                    {
-                        "artist": "Talib Kweli",
-                        "title": "Demonology",
-                        "uri": "0d2TueRztCUEDlAd4Xdg3o"
-                    },
-                    {
-                        "artist": "Hubert Laws",
-                        "title": "Family - Stereo Version",
-                        "uri": "4i9pSye2fyhC6y2k7FyENX"
-                    }
-                ]
-            },
-            "12": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Nu Genea",
-                        "title": "Howls",
-                        "uri": "0h51tz4qtVPvygXm291ceN"
-                    },
-                    {
-                        "artist": "Nu Genea",
-                        "title": "Tienaté",
-                        "uri": "1SIXMGcsAeA6sNxaY1EG3O"
-                    },
-                    {
-                        "artist": "Nu Genea",
-                        "title": "Howls",
-                        "uri": "2fLPyToxL5WDwIgRrj7KoK"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Sleeping With Sirens",
-                        "title": "I Need to Know",
-                        "uri": "6gCPwhhn9vmlVHxo6JGmQO"
-                    },
-                    {
-                        "artist": "SiR",
-                        "title": "I Know",
-                        "uri": "0vP0RXP4RTkjTXiHa2mvZ3"
-                    },
-                    {
-                        "artist": "Sirens Of Lesbos",
-                        "title": "(I Don't Know, I Don't Know, I Don't Know)",
-                        "uri": "7mgstMcSzKKnczIchJ52L7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "SiR",
-                        "title": "I Know",
-                        "uri": "0vP0RXP4RTkjTXiHa2mvZ3"
-                    },
-                    {
-                        "artist": "Y.V.E. 48",
-                        "title": "You've Got The Love",
-                        "uri": "2W0otyOuO6PixES66V4SgR"
-                    },
-                    {
-                        "artist": "SiR",
-                        "title": "D'Evils",
-                        "uri": "0wY9rA9fJkuESyYm9uzVK5"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Os Mulheres Negras",
-                        "title": "Mãoscolorida",
-                        "uri": "2I1Ni77XqbCBovfJPR1H95"
-                    },
-                    {
-                        "artist": "Os Mulheres Negras",
-                        "title": "Mãoscoloridas",
-                        "uri": "3qTci0SvmGZE6GwUqDveHt"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Os Mulheres Negras",
-                        "title": "Mãoscolorida",
-                        "uri": "2I1Ni77XqbCBovfJPR1H95"
-                    },
-                    {
-                        "artist": "Os Mulheres Negras",
-                        "title": "Mãoscoloridas",
-                        "uri": "3qTci0SvmGZE6GwUqDveHt"
-                    },
-                    {
-                        "artist": "Xutos & Pontapés",
-                        "title": "Negras Como a Noite",
-                        "uri": "302pihLUQlPwsPjeLgRvIF"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Ghostface Killah",
-                        "title": "Watch 'Em Holla",
-                        "uri": "3AlN7rR0SaeCQepkR2C8KN"
-                    },
-                    {
-                        "artist": "Ghostface Killah",
-                        "title": "Holla",
-                        "uri": "4uo76c26Rw8W50JlsF5fSl"
-                    },
-                    {
-                        "artist": "Ghostface",
-                        "title": "Holla",
-                        "uri": "1YN1uee5kIRLQQ6QFMchfR"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ghostface Killah",
-                        "title": "Holla",
-                        "uri": "4uo76c26Rw8W50JlsF5fSl"
-                    },
-                    {
-                        "artist": "Ghostface Playa",
-                        "title": "Why Not",
-                        "uri": "4oMyggIzClkOcCTvotFLkP"
-                    },
-                    {
-                        "artist": "Ghostface Killah",
-                        "title": "Watch 'Em Holla",
-                        "uri": "3AlN7rR0SaeCQepkR2C8KN"
-                    }
-                ]
-            }
+    "genes-liquor-11th-february-2019": {
+        "00": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
         },
-        "genes-liquor-11th-february-2019": {
-            "00": {
-                "s0": "",
-                "s1": ""
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "KV4TON",
-                        "title": "Crushed",
-                        "uri": "4XpKSZ3Q9Kn4ZEgpxA2dQr"
-                    },
-                    {
-                        "artist": "Invoke",
-                        "title": "Crushed",
-                        "uri": "0sEd6Spr5SJR8j3mpm83bG"
-                    },
-                    {
-                        "artist": "KMFDM",
-                        "title": "Brute",
-                        "uri": "1uNMEC4cYRzSQJAfoStgsi"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "MGUN",
-                        "title": "Wide Eye",
-                        "uri": "6n7Z9Tde8VW9NZH5fODUVl"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Billy Lockett",
-                        "title": "Wide Eyed",
-                        "uri": "6Nl8gY9HumJMQrC3qwtc3r"
-                    },
-                    {
-                        "artist": "The Big Moon",
-                        "title": "Wide Eyes",
-                        "uri": "0cguXUW2GmwBkM89xidIEI"
-                    },
-                    {
-                        "artist": "Mansun",
-                        "title": "Wide Open Space",
-                        "uri": "25BbuSP5iUs16O6Lxbb4rS"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Larry Heard",
-                        "title": "The Sun Can't Compare - Long Version",
-                        "uri": "50TVKYY0LRQAqKI8EfBqzC"
-                    },
-                    {
-                        "artist": "Larry Heard",
-                        "title": "The Sun Can't Compare (Long Version) - Mix Cut",
-                        "uri": "6bz95TTVTh00EpsSC9aNRV"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Omar S",
-                        "title": "The Shit Baby",
-                        "uri": "77u4D7eaO0T6zVby7kybyP"
-                    },
-                    {
-                        "artist": "Omar Syco",
-                        "title": "Mina",
-                        "uri": "6uI1LfvYELiQEJEGwrMTv4"
-                    },
-                    {
-                        "artist": "Omar S",
-                        "title": "Second Life",
-                        "uri": "6rAnjfvnJs5tNzE8kjZJWI"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Blue Iverson",
-                        "title": "Fake Loathe",
-                        "uri": "3ZhCGCNT9ZYlXwVkTqN6Ji"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Blue Iverson",
-                        "title": "Fake Loathe",
-                        "uri": "3ZhCGCNT9ZYlXwVkTqN6Ji"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "A Certain Ratio",
-                        "title": "Felch",
-                        "uri": "2ahIEevJ3JKJxNwQjPKOWz"
-                    },
-                    {
-                        "artist": "A Certain Ratio",
-                        "title": "Rialto",
-                        "uri": "2TeR8pf33Ne5eyWm1aD7e3"
-                    },
-                    {
-                        "artist": "Taube",
-                        "title": "7inch Under My Nail",
-                        "uri": "7wT1YlPNNXoFcwqsNPARjD"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "KIDS SEE GHOSTS",
-                        "title": "Freeee (Ghost Town Pt. 2)",
-                        "uri": "7GRTrWsP3yo2Fx8umJfA1X"
-                    },
-                    {
-                        "artist": "KIDS SEE GHOSTS",
-                        "title": "Kids See Ghosts",
-                        "uri": "2I3dW2dCBZAJGj5X21E53k"
-                    },
-                    {
-                        "artist": "KIDS SEE GHOSTS",
-                        "title": "Feel The Love",
-                        "uri": "3aUFrxO1B8EW63QchEl3wX"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Blood Money",
-                        "uri": "7amFwVcfgqqkECfv0kU3Zy"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Movin' on Up",
-                        "uri": "67ncFJWaIbJdqZl1bpEppz"
-                    },
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Blood Money",
-                        "uri": "7amFwVcfgqqkECfv0kU3Zy"
-                    },
-                    {
-                        "artist": "Primal Scream",
-                        "title": "Loaded - Remastered",
-                        "uri": "5nD0JrqbevsWiih4GnXRLm"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "American Wrestlers",
-                        "title": "I Can Do No Wrong",
-                        "uri": "7Eyoo88St8MXIb57SkLkCg"
-                    },
-                    {
-                        "artist": "American Wrestlers",
-                        "title": "I Can Do No Wrong",
-                        "uri": "1dflZWKJd2r0zhJfBs8Ia4"
-                    },
-                    {
-                        "artist": "American Wrestlers",
-                        "title": "I Can Do No Wrong - Audiotree Live Version",
-                        "uri": "3FwVE8X7ilcINpMWq14iNr"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "American Wrestlers",
-                        "title": "I Can Do No Wrong",
-                        "uri": "7Eyoo88St8MXIb57SkLkCg"
-                    },
-                    {
-                        "artist": "American Wrestlers",
-                        "title": "I Can Do No Wrong",
-                        "uri": "1dflZWKJd2r0zhJfBs8Ia4"
-                    },
-                    {
-                        "artist": "American Wrestlers",
-                        "title": "I Can Do No Wrong - Audiotree Live Version",
-                        "uri": "3FwVE8X7ilcINpMWq14iNr"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "KV4TON",
+            "ratio": 4,
+            "title": "Crushed",
+            "trackid": "4XpKSZ3Q9Kn4ZEgpxA2dQr"
         },
-        "genes-liquor-14th-january-2019": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Truong Thi Quynh Hanh",
-                        "title": "Binh ban va'n",
-                        "uri": "1gyY4WlJGvbZvUVsALyJVe"
-                    },
-                    {
-                        "artist": "WOLFGANG",
-                        "title": "pak vong wong fyp rian a",
-                        "uri": "2ahbklTmO6SoWvGdStNoNv"
-                    },
-                    {
-                        "artist": "Satiya",
-                        "title": "Bopha Chiang Mai",
-                        "uri": "0460fJfWVkhJMW2XoOFN8Q"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Bad II The Bone",
-                        "uri": "52Zmg0NXrHPVzYmsnqHPWz"
-                    }
-                ],
-                "s1": ""
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Kaelin Ellis",
-                        "title": "PREVAIL",
-                        "uri": "1KEEsMHjGYa1Y3Jq80ZIqP"
-                    },
-                    {
-                        "artist": "Snacking",
-                        "title": "Funk Vibrations - Extended Mix",
-                        "uri": "5EHmodkmku6gETxb33M8Mw"
-                    },
-                    {
-                        "artist": "Rock Candy Funk Party",
-                        "title": "In the Groove",
-                        "uri": "5YPvJO7U1HhwuJBLrD1f0q"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Woke Up Laughing",
-                        "uri": "26hhPkZhjIK4sJn8thekxD"
-                    },
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Woke Up Laughing - From \"Sweet Lies\" Soundtrack",
-                        "uri": "1qpmIGDAUU5fISHemMYs7O"
-                    },
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Woke Up Laughing - Remix; 1998 Remastered Version",
-                        "uri": "3uxKmZR9ZFrDONPH9acf8b"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Woke Up Laughing",
-                        "uri": "26hhPkZhjIK4sJn8thekxD"
-                    },
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Woke Up Laughing - From \"Sweet Lies\" Soundtrack",
-                        "uri": "1qpmIGDAUU5fISHemMYs7O"
-                    },
-                    {
-                        "artist": "Robert Palmer",
-                        "title": "Nova",
-                        "uri": "0mtlklg1R9VU6XWTT9Mosi"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Ralph Tresvant",
-                        "title": "Sensitivity",
-                        "uri": "3wY9vnTmLC4XVHHbbFmgj0"
-                    },
-                    {
-                        "artist": "Ralph Tresvant",
-                        "title": "Sensitivity",
-                        "uri": "42j8MUqLMWw2DkzqyDa4GP"
-                    },
-                    {
-                        "artist": "Ralph Tresvant",
-                        "title": "Sensitivity",
-                        "uri": "3KxpSWqEojVzLdQb7sBA0z"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ralph Tresvant",
-                        "title": "Sensitivity",
-                        "uri": "3wY9vnTmLC4XVHHbbFmgj0"
-                    },
-                    {
-                        "artist": "Thelonious Monk",
-                        "title": "Ruby, My Dear",
-                        "uri": "1BMirA3vwj2NLamWkJsVYq"
-                    },
-                    {
-                        "artist": "Ralph Tresvant",
-                        "title": "Sensitivity",
-                        "uri": "42j8MUqLMWw2DkzqyDa4GP"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Moodymann",
-                        "title": "Sunday Hotel",
-                        "uri": "3c4d1Ui2AoZIR6SF9MOF7m"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Moodymann",
-                        "title": "Sunday Hotel",
-                        "uri": "3c4d1Ui2AoZIR6SF9MOF7m"
-                    },
-                    {
-                        "artist": "Moodymann",
-                        "title": "I Can't Kick This Feeling When It Hits",
-                        "uri": "2PmT3D5xmvVzZCf11L2ifX"
-                    },
-                    {
-                        "artist": "Moodymann",
-                        "title": "Lyk U Use 2 (feat. Andres)",
-                        "uri": "4ncFRft2xEs4kanULQjaOz"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Lakeside",
-                        "title": "Your Love Is On the One",
-                        "uri": "4BtlVer3IAoPsnM4opCLjI"
-                    },
-                    {
-                        "artist": "Lakeside",
-                        "title": "Your Love Is On the One",
-                        "uri": "5erZFi39psWPryln3ECfMO"
-                    },
-                    {
-                        "artist": "Lakeside",
-                        "title": "Your Love Is On the One",
-                        "uri": "0HadltpftxnZj6eoXVVoZA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lakeside",
-                        "title": "Your Love Is On the One",
-                        "uri": "4BtlVer3IAoPsnM4opCLjI"
-                    },
-                    {
-                        "artist": "Lakeside",
-                        "title": "Your Love Is On the One",
-                        "uri": "5erZFi39psWPryln3ECfMO"
-                    },
-                    {
-                        "artist": "Lakeside",
-                        "title": "Your Love Is On the One - Single Version",
-                        "uri": "4lLYFGJgl4JPHeKAzjARPT"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "The B-52's",
-                        "title": "Mesopotamia",
-                        "uri": "2Bx5UlqJkrEaOKhZa2RrfC"
-                    },
-                    {
-                        "artist": "The B-52's",
-                        "title": "Mesopotamia - Live",
-                        "uri": "2KIvWbtdxohAQTf1nAdEXX"
-                    },
-                    {
-                        "artist": "The B-52's",
-                        "title": "Mesopotamia - Live",
-                        "uri": "4zvsL36AVOwyJMxeZ7I3xy"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The B-52's",
-                        "title": "Mesopotamia",
-                        "uri": "2Bx5UlqJkrEaOKhZa2RrfC"
-                    },
-                    {
-                        "artist": "The B-52's",
-                        "title": "Mesopotamia - Live",
-                        "uri": "4zvsL36AVOwyJMxeZ7I3xy"
-                    },
-                    {
-                        "artist": "The B-52's",
-                        "title": "Mesopotamia - Live",
-                        "uri": "40MWiUZAk773ttdR8mpzua"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Pi’erre Bourne",
-                        "title": "Marie Curie",
-                        "uri": "4Rs00gcMnDVfivMHXdiHHc"
-                    },
-                    {
-                        "artist": "Pi’erre Bourne",
-                        "title": "Marie Curie",
-                        "uri": "6uZoDvtxNviMUgV14mPUj3"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Pi’erre Bourne",
-                        "title": "Marie Curie",
-                        "uri": "4Rs00gcMnDVfivMHXdiHHc"
-                    },
-                    {
-                        "artist": "MDU",
-                        "title": "Frenemies",
-                        "uri": "2hl1QzCSq0rVdvc07rKmeG"
-                    },
-                    {
-                        "artist": "Pi’erre Bourne",
-                        "title": "Poof",
-                        "uri": "4k95J448xydiVtD4PXMvpY"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "DaBaby",
-                        "title": "Walker Texas Ranger",
-                        "uri": "0eBOVXdnrVQ0rITgKXBAA7"
-                    },
-                    {
-                        "artist": "DaBaby",
-                        "title": "Walker Texas Ranger",
-                        "uri": "6aYi4lYcAohNhlNWsbWfy0"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "DaBaby",
-                        "title": "Walker Texas Ranger",
-                        "uri": "0eBOVXdnrVQ0rITgKXBAA7"
-                    },
-                    {
-                        "artist": "DaBaby",
-                        "title": "Walker Texas Ranger",
-                        "uri": "6aYi4lYcAohNhlNWsbWfy0"
-                    },
-                    {
-                        "artist": "DaBaby",
-                        "title": "ROCKSTAR (feat. Roddy Ricch) - BLM REMIX",
-                        "uri": "4Aykm3xrOFSHrAnv80KUhh"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "K$upreme",
-                        "title": "Hang Up the Phone",
-                        "uri": "40Duf6hCElUKCpstTT7RNg"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "K$upreme",
-                        "title": "Hang Up the Phone",
-                        "uri": "40Duf6hCElUKCpstTT7RNg"
-                    },
-                    {
-                        "artist": "Kiiara",
-                        "title": "Hang up tha phone",
-                        "uri": "3Y6edSmA3oflGDEKyTnOpu"
-                    },
-                    {
-                        "artist": "NCP",
-                        "title": "Hang up the phone",
-                        "uri": "7zkFAPZ9ly178yZ2WqimDI"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fauve",
-                        "title": "Voyous (feat. Georgio)",
-                        "uri": "30lgFZhpBhTiFZdhMQbdmm"
-                    },
-                    {
-                        "artist": "Yann Muller",
-                        "title": "Dreams",
-                        "uri": "5YkU6HriANEpKjLEpBGq6K"
-                    },
-                    {
-                        "artist": "Beck",
-                        "title": "Dreams",
-                        "uri": "14zhqtMI5xHrfCFCLhFcsn"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Book Of Love",
-                        "title": "Book of Love",
-                        "uri": "2i7bNNAu1ZXuVyUBYWRAyz"
-                    },
-                    {
-                        "artist": "Book Of Love",
-                        "title": "Book of Love - 2016 Remaster",
-                        "uri": "7eY17GD2XzgbzXFU6nOQaP"
-                    },
-                    {
-                        "artist": "Bookie Glockz",
-                        "title": "Bookie Love",
-                        "uri": "5oLYHE9TU59GlkRW9OEcKC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Book Of Love",
-                        "title": "Book of Love",
-                        "uri": "2i7bNNAu1ZXuVyUBYWRAyz"
-                    },
-                    {
-                        "artist": "DAY6",
-                        "title": "Love me or Leave me",
-                        "uri": "7F9HWeJf4BTUzpj3B0CQKT"
-                    },
-                    {
-                        "artist": "Felix Jaehn",
-                        "title": "Book Of Love (feat. Polina)",
-                        "uri": "2erg7Xduc8OHhkLepV4eER"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Chemise",
-                        "title": "She Can't Love You",
-                        "uri": "3CX1FiiXSbvKjsXRYwApAP"
-                    },
-                    {
-                        "artist": "Chemise",
-                        "title": "She Can't Love You - Radio Version",
-                        "uri": "2bKnde98hWBt1stJPyZdA7"
-                    },
-                    {
-                        "artist": "Chemise",
-                        "title": "She Can't Love You",
-                        "uri": "1wPuzroWKHgRcilvHUZNen"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Theo Parrish",
-                        "title": "Feel Loved",
-                        "uri": "7bRjKjaONVwUPjWgt8Illt"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Theo Parrish",
-                        "title": "Lost Angel",
-                        "uri": "5aEZnpiTgTji3UMxQNkxeF"
-                    },
-                    {
-                        "artist": "Theo Parrish",
-                        "title": "What You Gonna Ask For - Theo's Mix",
-                        "uri": "2EX1t1HZBzSCs4wZkh9slZ"
-                    },
-                    {
-                        "artist": "Theo Parrish",
-                        "title": "Sweet Sticky",
-                        "uri": "7wAPKByejF2gAMm9PoWkXN"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Wiz Khalifa",
-                        "title": "Late Night Messages",
-                        "uri": "3T6Wt1QsnkiRXgTSKSCHPs"
-                    },
-                    {
-                        "artist": "Wiz Khalifa",
-                        "title": "Late Night Messages",
-                        "uri": "1Xw1axFGGfbPzLqopWTX5z"
-                    },
-                    {
-                        "artist": "Wiz Khalifa",
-                        "title": "Late Night Messages",
-                        "uri": "1n7FsXrAoypgPKuERkW5wS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Wiz Khalifa",
-                        "title": "Late Night Messages",
-                        "uri": "3T6Wt1QsnkiRXgTSKSCHPs"
-                    },
-                    {
-                        "artist": "Wiz Khalifa",
-                        "title": "Late Night Messages",
-                        "uri": "1n7FsXrAoypgPKuERkW5wS"
-                    },
-                    {
-                        "artist": "Wiz Khalifa",
-                        "title": "Late Night Messages",
-                        "uri": "1Xw1axFGGfbPzLqopWTX5z"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Future",
-                        "title": "Crushed Up",
-                        "uri": "7wcyO1rrH3Ru4t659IjG41"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Future",
-                        "title": "Crushed Up",
-                        "uri": "7wcyO1rrH3Ru4t659IjG41"
-                    },
-                    {
-                        "artist": "Odd Squad Family",
-                        "title": "Crushed up 420 Remix",
-                        "uri": "3LEmVYGH3ecGnnW2tcoCzO"
-                    },
-                    {
-                        "artist": "Jethro Beats",
-                        "title": "Crushed Up",
-                        "uri": "19zcQf1eNma8NxYPC41ZFo"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "MGUN",
+            "ratio": 6,
+            "title": "Wide Eye",
+            "trackid": "6n7Z9Tde8VW9NZH5fODUVl"
         },
-        "genes-liquor-16th-january-2017": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Knxwledge",
-                        "title": "Relintlessli",
-                        "uri": "5ukxw7ElBoUejLg87KaY9J"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Knxwledge",
-                        "title": "Relintlessli",
-                        "uri": "5ukxw7ElBoUejLg87KaY9J"
-                    },
-                    {
-                        "artist": "Warface",
-                        "title": "Relentless",
-                        "uri": "09PTaE4ddVLmsplENzNdbj"
-                    },
-                    {
-                        "artist": "Inclyne",
-                        "title": "Relentless - 2022 Remix",
-                        "uri": "3PcjZcTKHjvuhXcdxQfH13"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Quality Control",
-                        "title": "South Africa",
-                        "uri": "2vw2nopHWeQ0EUJPKNy8yS"
-                    },
-                    {
-                        "artist": "Quality Control",
-                        "title": "South Africa (Quality Control & Quavo )",
-                        "uri": "7GMa02sPQv6zE5hIkxmMeQ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Quality Control",
-                        "title": "South Africa",
-                        "uri": "2vw2nopHWeQ0EUJPKNy8yS"
-                    },
-                    {
-                        "artist": "Quality Control",
-                        "title": "South Africa (Quality Control & Quavo )",
-                        "uri": "7GMa02sPQv6zE5hIkxmMeQ"
-                    },
-                    {
-                        "artist": "Jurassic 5",
-                        "title": "Quality Control",
-                        "uri": "3vqqYJXlrJiKSzh79d4DV9"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Quality Control",
-                        "title": "The Load (Quality Control, Gucci Mane & Lil Baby feat. Marlo)",
-                        "uri": "2eodyKXNJqpHRzI61ScbTl"
-                    }
-                ],
-                "s1": ""
-            }
+        "03": {
+            "artist": "Larry Heard",
+            "ratio": 6,
+            "title": "The Sun Can't Compare - Long Version",
+            "trackid": "50TVKYY0LRQAqKI8EfBqzC"
         },
-        "genes-liquor-23rd-october-2017": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Frankie Lymon & The Teenagers",
-                        "title": "I'm Not a Juvenile Delinquent 'Rock, Rock, Rock'",
-                        "uri": "5wgHjqawAGbee1Kgo8zuKc"
-                    },
-                    {
-                        "artist": "Frankie Lymon",
-                        "title": "I'm Not a Juvenile Delinquent",
-                        "uri": "655xQsRok5x3X7RHxlFHgp"
-                    },
-                    {
-                        "artist": "Frankie Lymon & The Teenagers",
-                        "title": "I'm Not a Juvenile Delinquent",
-                        "uri": "6BBtMJMEEw4vvtVjYCSyd6"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Al Dobson Jr.",
-                        "title": "Vibrations",
-                        "uri": "0V9xqjOSTk6G8BJ3uUfgeP"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Al Dobson Jr.",
-                        "title": "Vibrations",
-                        "uri": "0V9xqjOSTk6G8BJ3uUfgeP"
-                    },
-                    {
-                        "artist": "Al Dobson Jr.",
-                        "title": "Who U Think U Are, Pt. 2",
-                        "uri": "0A6ExIwDvSnTWY1YSdPo8J"
-                    },
-                    {
-                        "artist": "Al Dobson Jr.",
-                        "title": "Nankoo on Keys",
-                        "uri": "4VImgRabUMMuNYftIVN3Go"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Bone Thugs-N-Harmony",
-                        "title": "B.O.n.E. T.H.U.G.",
-                        "uri": "2bLIjv3Q5dilLPjplyGXfU"
-                    },
-                    {
-                        "artist": "Bone Thugs-N-Harmony",
-                        "title": "Bone Thugs-N-Harmony",
-                        "uri": "5GlSR9oD6009VrsauxTdez"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Falcko",
-                        "title": "Ghetto Blues",
-                        "uri": "6WsaYout0yStJ8VNnJcW4a"
-                    },
-                    {
-                        "artist": "Falcko",
-                        "title": "Ghetto blues - 2011",
-                        "uri": "43e5csExpQAcFILLI7rSr5"
-                    },
-                    {
-                        "artist": "Romeo Gold",
-                        "title": "Ghetto Blues",
-                        "uri": "02y6cOnaxcTPyWG5mp2ezS"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "YoungBoy Never Broke Again",
-                        "title": "No Smoke - Benzi & Blush Remix",
-                        "uri": "5Vm7Hbv49C7W6kBZZb7Ned"
-                    },
-                    {
-                        "artist": "YoungBoy Never Broke Again",
-                        "title": "No Smoke",
-                        "uri": "57IRaiAB4hBZu3gnNVZC0v"
-                    },
-                    {
-                        "artist": "YoungBoy Never Broke Again",
-                        "title": "No Smoke - Benzi & Blush Remix",
-                        "uri": "1K9QXJtypYRMVrfHixmHh3"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "YoungBoy Never Broke Again",
-                        "title": "No Smoke - Benzi & Blush Remix",
-                        "uri": "5Vm7Hbv49C7W6kBZZb7Ned"
-                    },
-                    {
-                        "artist": "YoungBoy Never Broke Again",
-                        "title": "No Smoke",
-                        "uri": "57IRaiAB4hBZu3gnNVZC0v"
-                    },
-                    {
-                        "artist": "YoungBoy Never Broke Again",
-                        "title": "No Smoke - Benzi & Blush Remix",
-                        "uri": "1K9QXJtypYRMVrfHixmHh3"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Zachary Knowles",
-                        "title": "slow down my thoughts",
-                        "uri": "6NU3w0CtU7g9boAarIAkO4"
-                    },
-                    {
-                        "artist": "Flox",
-                        "title": "Slow Down",
-                        "uri": "3lloXPyu3BPdCljL11pjx2"
-                    },
-                    {
-                        "artist": "Darkoo",
-                        "title": "Slow Down (feat. Tion Wayne)",
-                        "uri": "3meBnCKN8qYEbOdNTEykUa"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Aaliyah",
-                        "title": "Try Again",
-                        "uri": "6Wnlq1Pu3I0BajLvxn05Vr"
-                    },
-                    {
-                        "artist": "Aaliyah",
-                        "title": "Are You That Somebody",
-                        "uri": "3PqAnW2bB5TQnMoBivyFOb"
-                    },
-                    {
-                        "artist": "JzudemB",
-                        "title": "Aaliyah",
-                        "uri": "2Tz3CjPeABXzDH42SRiBvH"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Devante",
-                        "title": "Gin & Juice",
-                        "uri": "7d5aCzzHTAdD2ayj5HUjjZ"
-                    },
-                    {
-                        "artist": "Air GP",
-                        "title": "Devante Swing",
-                        "uri": "0DpgY4PFngElUUWcjnxBa0"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "The Grand",
-                        "title": "Keep It Coming",
-                        "uri": "04aFRyu994EIDJ0XcJCdcu"
-                    },
-                    {
-                        "artist": "Bigg Legend",
-                        "title": "Keep It Comin",
-                        "uri": "0sNys1CCizl1Nrb59d4sYd"
-                    },
-                    {
-                        "artist": "Alpinestars",
-                        "title": "Keep It Coming",
-                        "uri": "77niUadwhwtzmmtrqsWZY5"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": ""
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Arnaud Rebotini",
-                        "title": "What You Want Me to Do",
-                        "uri": "68KpJu3A67JaCbVRseL6S7"
-                    },
-                    {
-                        "artist": "Shake Some Action!",
-                        "title": "What You Want Me To Do",
-                        "uri": "5GCGHNBzvdn7YyzO9dPnUL"
-                    },
-                    {
-                        "artist": "Mighty Sam McClain",
-                        "title": "What You Want Me to Do",
-                        "uri": "0EBb2zwuUHPFYZ4vjCoICT"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Elkie Brooks",
-                        "title": "Just An Excuse",
-                        "uri": "3C0uCo0eergfTGw7FkhcDi"
-                    },
-                    {
-                        "artist": "Elkie Brooks",
-                        "title": "Just An Excuse",
-                        "uri": "5maHWXZFhViLjJrEhAr7jj"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Elkie Brooks",
-                        "title": "Just An Excuse",
-                        "uri": "3C0uCo0eergfTGw7FkhcDi"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Joanna Brouk",
-                        "title": "The Space Between",
-                        "uri": "7pes8uQmsmsHtFiG1eFsJM"
-                    },
-                    {
-                        "artist": "Joanna Brouk",
-                        "title": "The Space Between",
-                        "uri": "5o9LOaR4hUViEryLuBSKB5"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Joanna Brouk",
-                        "title": "The Space Between",
-                        "uri": "7pes8uQmsmsHtFiG1eFsJM"
-                    },
-                    {
-                        "artist": "Joanna Brouk",
-                        "title": "Golden Cloud Layers",
-                        "uri": "426vkEldQjsWIMCEx26Wee"
-                    },
-                    {
-                        "artist": "Joanna Brouk",
-                        "title": "The Space Between",
-                        "uri": "5o9LOaR4hUViEryLuBSKB5"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Hil St. Soul",
-                        "title": "Baby Come Over",
-                        "uri": "2bPGpTHTKbDvV21uRg8iCH"
-                    },
-                    {
-                        "artist": "Hil St. Soul",
-                        "title": "Baby Come Over",
-                        "uri": "7n81U5fZ39h3ptIdILJHRq"
-                    },
-                    {
-                        "artist": "Hil St. Soul",
-                        "title": "It's OK",
-                        "uri": "2YvGH49pHO0lyzDRZSIqtR"
-                    }
-                ]
-            }
+        "04": {
+            "artist": "Omar S",
+            "ratio": 4,
+            "title": "The Shit Baby",
+            "trackid": "77u4D7eaO0T6zVby7kybyP"
         },
-        "genes-liquor-28th-august-2017": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Wlad Marhulets",
-                        "title": "Credits",
-                        "uri": "7ytFaePUHsVvbxqBcPSa26"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Big Mello",
-                        "title": "Love Don't Love Nobody",
-                        "uri": "76DvyaovcdPfkw82vc7l45"
-                    },
-                    {
-                        "artist": "Big Mello",
-                        "title": "Love Don't Love Nobody",
-                        "uri": "1yjIhr0XyiNwtZg4HWVViN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Big Mello",
-                        "title": "Love Don't Love Nobody",
-                        "uri": "76DvyaovcdPfkw82vc7l45"
-                    },
-                    {
-                        "artist": "Big Mello",
-                        "title": "Love Don't Love Nobody",
-                        "uri": "1yjIhr0XyiNwtZg4HWVViN"
-                    },
-                    {
-                        "artist": "The Love-In",
-                        "title": "Love Don't Love Nobody",
-                        "uri": "746F6kJSx3yPc6nLpm4C1K"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "P. Lo Jetson",
-                        "title": "Same Ole Same Ole (feat. MC Jin)",
-                        "uri": "4ohuXBQ6pQnCWy3PkM23cE"
-                    },
-                    {
-                        "artist": "Jett Brwn",
-                        "title": "SAME OL' SONG",
-                        "uri": "3fwFjym9FXO9VUcWhmnEmR"
-                    },
-                    {
-                        "artist": "Bonnie & The Jets",
-                        "title": "Same Old Game",
-                        "uri": "3vZCR0b3g6iqC5d6ZLTznR"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Thalia Falcon",
-                        "title": "Show Me",
-                        "uri": "3rfoz9wC7yVLyrmXHkIpS3"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Soulja Slim",
-                        "title": "At The Same Time",
-                        "uri": "4jkEkAD9ofKaade3eIEGvg"
-                    },
-                    {
-                        "artist": "BigSmokeChapo",
-                        "title": "Soulja Slim",
-                        "uri": "1YnrIrpP2WpRQ07oxuxumm"
-                    },
-                    {
-                        "artist": "Thirty6kealo",
-                        "title": "Soulja Slim",
-                        "uri": "4qzQyKwLSWTd3rnNKEvskM"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Shawty Pimp",
-                        "title": "KICKIN’ PIMPIN’ (feat. Reddog)",
-                        "uri": "1WWpfqfXuEvWkSTvL41OxH"
-                    },
-                    {
-                        "artist": "Shawty Pimp",
-                        "title": "ONE MEAN STAIN (feat. Reddog)",
-                        "uri": "6qgBeT2LGHQ99BhRq0t8pM"
-                    },
-                    {
-                        "artist": "Dieck",
-                        "title": "Shawty",
-                        "uri": "1ldky4oRmif467k9gWA2KV"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Twelve A.M.",
-                        "title": "I Wanna Understand You",
-                        "uri": "1BWAzWLRbPCgKI3fTSr4sN"
-                    }
-                ],
-                "s1": ""
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Adventurer",
-                        "title": "Reality",
-                        "uri": "4HuocOuSBJ78RlsFYwTyr5"
-                    },
-                    {
-                        "artist": "Adriana Evans",
-                        "title": "All For Love",
-                        "uri": "6vU8If1zpZDzYQdTa2Rvgp"
-                    },
-                    {
-                        "artist": "Adriana Evans",
-                        "title": "Remember Love",
-                        "uri": "7ewC58yIwBc4RtaMxmVxD8"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Ruthless Juveniles",
-                        "title": "Gangster Tale",
-                        "uri": "37vz0Xq2FQj0qNjj7D6f6h"
-                    },
-                    {
-                        "artist": "Ruthless Juveniles",
-                        "title": "Gangster Tale",
-                        "uri": "67ZhFqe5IyxRCSmKRygyKH"
-                    },
-                    {
-                        "artist": "Ruthless Juveniles",
-                        "title": "Gangsta Tales",
-                        "uri": "3JHCawENicf0NwZ9ALPQc8"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ruthless Juveniles",
-                        "title": "Gangsta Tales",
-                        "uri": "3JHCawENicf0NwZ9ALPQc8"
-                    },
-                    {
-                        "artist": "Ruthless Juveniles",
-                        "title": "Gangster Tale",
-                        "uri": "37vz0Xq2FQj0qNjj7D6f6h"
-                    },
-                    {
-                        "artist": "YOUNGTONES",
-                        "title": "Ruthless",
-                        "uri": "1obcIZHLcmTxNJGTM1FtY6"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Smokepurpp",
-                        "title": "To the Moon",
-                        "uri": "7w3qmzKuh4cBn0D0hmmRPQ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Smokepurpp",
-                        "title": "To the Moon",
-                        "uri": "7w3qmzKuh4cBn0D0hmmRPQ"
-                    },
-                    {
-                        "artist": "Smokepurpp",
-                        "title": "Audi.",
-                        "uri": "4Iy73U3ZqfhF1cxPDRSMKp"
-                    },
-                    {
-                        "artist": "Jnr Choi",
-                        "title": "TO THE MOON - Gunna Remix",
-                        "uri": "2Ku7Iz5iUtukULZ229KUYx"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Michosteel",
-                        "title": "Unknown",
-                        "uri": "6n6QDPlhc7uQwQtQjRZdrr"
-                    },
-                    {
-                        "artist": "RSN",
-                        "title": "Unknown",
-                        "uri": "5NLz8aMV3GckK7fPev2GMR"
-                    },
-                    {
-                        "artist": "Unknown",
-                        "title": "Maboroshi",
-                        "uri": "4noPpg3jcwOxTfcZWCNHFE"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Budgie",
-                        "title": "Best Believe",
-                        "uri": "3cYVMeqyAXFIEAbXB2ukiS"
-                    },
-                    {
-                        "artist": "Budgie",
-                        "title": "Someone to Understand",
-                        "uri": "7eIX6RtosPiRNda97uW984"
-                    },
-                    {
-                        "artist": "Budgie",
-                        "title": "Can't Get Out Of Bed In The Morning - Live",
-                        "uri": "0YK2SCV9X3Epcq61bd4U2L"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Blue Iverson",
-                        "title": "Soulseek",
-                        "uri": "4y3milmiHjMEX3XwOSirB2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Blue Iverson",
-                        "title": "Soulseek",
-                        "uri": "4y3milmiHjMEX3XwOSirB2"
-                    },
-                    {
-                        "artist": "Blue Iverson",
-                        "title": "Nappytex",
-                        "uri": "5vSIhFSidScfzVOXI17jHG"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Delegation",
-                        "title": "Oh Honey",
-                        "uri": "3TiCuJiisBOB9HzKAM6FDG"
-                    },
-                    {
-                        "artist": "Delegation",
-                        "title": "Oh Honey",
-                        "uri": "3eaGANw2FELxe4HjJdV7CS"
-                    },
-                    {
-                        "artist": "Delegation",
-                        "title": "Oh Honey",
-                        "uri": "0aX0jduJ9QS4X8BGDugkhI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Delegation",
-                        "title": "Oh Honey",
-                        "uri": "3TiCuJiisBOB9HzKAM6FDG"
-                    },
-                    {
-                        "artist": "Delegation",
-                        "title": "Oh Honey",
-                        "uri": "3eaGANw2FELxe4HjJdV7CS"
-                    },
-                    {
-                        "artist": "Delegation",
-                        "title": "Put a Little Love On Me",
-                        "uri": "6EOAOGls9pIdUJsrqytcXK"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Masayoshi Takanaka",
-                        "title": "SEXY DANCE",
-                        "uri": "4ZxtydSHCl0eZ9a9CWtOIF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Masayoshi Takanaka",
-                        "title": "SEXY DANCE",
-                        "uri": "4ZxtydSHCl0eZ9a9CWtOIF"
-                    },
-                    {
-                        "artist": "Masayoshi Takanaka",
-                        "title": "憧れのセーシェル諸島",
-                        "uri": "7e3BbVSFHrB6aa96DI51B3"
-                    },
-                    {
-                        "artist": "Masayoshi Takanaka",
-                        "title": "BRASILIAN SKIES",
-                        "uri": "3bMc9oRaUWnojCrYTUXXcQ"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Love",
-                        "title": "Emotions - Stereo Version",
-                        "uri": "0piyqcJp70zIhTYyhI2ZrP"
-                    },
-                    {
-                        "artist": "GENTLE LOVE",
-                        "title": "Singing Emotions (Chrono Cross)",
-                        "uri": "6CuokgAYY89D1IIekUCtXm"
-                    },
-                    {
-                        "artist": "LOVERKID",
-                        "title": "Emotions",
-                        "uri": "2b6ZbyX5R5EppBhGatxTg4"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Residentes Balearicos",
-                        "title": "Love Emotions",
-                        "uri": "5PbpvYCZFbVPGlkhc5sH1q"
-                    },
-                    {
-                        "artist": "chizzyy",
-                        "title": "mixed emotions",
-                        "uri": "2S8yd8beZ3xnEXHvkOWRe2"
-                    },
-                    {
-                        "artist": "SAVAGE-44",
-                        "title": "Love emotion - Radio Edit",
-                        "uri": "0vo2C6ylXal2tJcFisDntN"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Gary Wilson",
-                        "title": "I Wanna Lose Control",
-                        "uri": "54TarlY0OX9mljN13m2nZ2"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gary Wilson",
-                        "title": "I Wanna Lose Control",
-                        "uri": "54TarlY0OX9mljN13m2nZ2"
-                    },
-                    {
-                        "artist": "Gary Wilson",
-                        "title": "Debbie Debbie",
-                        "uri": "0nP4qRjE1z3749VrkxDfX2"
-                    },
-                    {
-                        "artist": "Gary Wilson",
-                        "title": "When You Walk Into My Dreams",
-                        "uri": "6RZcFcRuZKrtirks3ny1Us"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mamman Sani",
-                        "title": "Tunan",
-                        "uri": "1s0O1tVHd0a45Dh3HUcKt5"
-                    },
-                    {
-                        "artist": "Mamman Sani",
-                        "title": "Samari Da Yan Matan",
-                        "uri": "2sasXRMBxHthOtkSt23ee8"
-                    },
-                    {
-                        "artist": "Mamman Sani",
-                        "title": "Ya Bismillah",
-                        "uri": "1WYZN7h2By4JKSN3GVQ1J0"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "A$AP Twelvyy",
-                        "title": "Strapped",
-                        "uri": "3U0xbYGTtYZAUv3lEwPebJ"
-                    },
-                    {
-                        "artist": "A$AP Twelvyy",
-                        "title": "Strapped",
-                        "uri": "0dCErTpx9TAd9EYlHRE8SN"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "A$AP Twelvyy",
-                        "title": "Strapped",
-                        "uri": "3U0xbYGTtYZAUv3lEwPebJ"
-                    },
-                    {
-                        "artist": "A$AP Twelvyy",
-                        "title": "Strapped",
-                        "uri": "0dCErTpx9TAd9EYlHRE8SN"
-                    },
-                    {
-                        "artist": "Gazo",
-                        "title": "A$AP",
-                        "uri": "10nCB4Iq9BI3aW2iEldiR9"
-                    }
-                ]
-            },
-            "18": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "8Ball",
-                        "title": "My Homeboy's Girlfriend",
-                        "uri": "0hHR7DwdbnMHPzfWRIOhny"
-                    },
-                    {
-                        "artist": "8Ball & MJG",
-                        "title": "My Homeboy's Girlfriend (Live)",
-                        "uri": "1yV4EPEzekvPMBT1jJRY03"
-                    },
-                    {
-                        "artist": "Antima Caerw",
-                        "title": "Eight Balls - Original mix",
-                        "uri": "56aOWDJfWiPAx9JOMvYDUT"
-                    }
-                ]
-            }
+        "05": {
+            "artist": "Blue Iverson",
+            "ratio": 6,
+            "title": "Fake Loathe",
+            "trackid": "3ZhCGCNT9ZYlXwVkTqN6Ji"
         },
-        "genes-liquor-2nd-july-2018": {},
-        "genes-liquor-3rd-july-2017": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Vivien Goldman",
-                        "title": "P. A. Dub",
-                        "uri": "4b1G5MGgsJDoer7MI1BTSm"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Buckshot LeFonque",
-                        "title": "Music Evolution",
-                        "uri": "40VpMYDhTMvr4XXSVXmVvl"
-                    },
-                    {
-                        "artist": "Buckshot LeFonque",
-                        "title": "I Know Why The Caged Bird Sings",
-                        "uri": "0PofQx5wRPOwk7fEgVax2x"
-                    },
-                    {
-                        "artist": "Buckshot LeFonque",
-                        "title": "James Brown (Part 1 & 2)",
-                        "uri": "6iw1VpCXjpVaAIdb4e161Y"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Idris Muhammad",
-                        "title": "Piece of Mind",
-                        "uri": "72wP2qnBz48qHEutvvnpfY"
-                    },
-                    {
-                        "artist": "Idris Muhammad",
-                        "title": "Could Heaven Ever Be Like This",
-                        "uri": "1xkOg49ZxldiM1ioIudwUS"
-                    },
-                    {
-                        "artist": "Idris Muhammad",
-                        "title": "House of the Rising Sun",
-                        "uri": "0ggo2PQvf6xG7RWF5z1pHN"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Darrow Fletcher",
-                        "title": "Now Is the Time for Love - Pt. 2",
-                        "uri": "52ZSzfkiQQp5cE1M0wuLea"
-                    },
-                    {
-                        "artist": "Darrow Fletcher",
-                        "title": "Now Is the Time for Love, Pt. 1",
-                        "uri": "0kxSn6SQfmDZX2hJuc8kRW"
-                    },
-                    {
-                        "artist": "Darrow Fletcher",
-                        "title": "Now Is the Time for Love - Pt. 1",
-                        "uri": "6Ez4Zmfxzm6rFHS3Q5pugF"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Tom Scott",
-                        "title": "Today",
-                        "uri": "5R09NTQtV257kCHrMEGvAe"
-                    },
-                    {
-                        "artist": "Tom Scott",
-                        "title": "Today",
-                        "uri": "4i5hLY7mNIp70YhZveeItm"
-                    },
-                    {
-                        "artist": "Tommy Scott",
-                        "title": "It's My Mother's Birthday Today",
-                        "uri": "6DmJe2KM7OS5XS50kPiuB8"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tom Scott",
-                        "title": "Today",
-                        "uri": "5R09NTQtV257kCHrMEGvAe"
-                    },
-                    {
-                        "artist": "Tom Scott",
-                        "title": "Today",
-                        "uri": "4i5hLY7mNIp70YhZveeItm"
-                    },
-                    {
-                        "artist": "Tom Scott And The L.A. Express",
-                        "title": "Sneakin' In The Back",
-                        "uri": "0cxNcdAljE5IgUE2ONdlTk"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "MIKE",
-                        "title": "GREEDY",
-                        "uri": "6XLTeRWyIxj6XqLR6LJn2r"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Ethel Beatty",
-                        "title": "It's Your Love",
-                        "uri": "7LRrz9pMF4c0U4goiZjZrJ"
-                    },
-                    {
-                        "artist": "Ethel Beatty",
-                        "title": "It's Your Love",
-                        "uri": "04e0moMw5LnBAQpOMDh5GC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Ethel Beatty",
-                        "title": "It's Your Love",
-                        "uri": "7LRrz9pMF4c0U4goiZjZrJ"
-                    },
-                    {
-                        "artist": "Ethel Beatty",
-                        "title": "It's Your Love",
-                        "uri": "04e0moMw5LnBAQpOMDh5GC"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Gábor Szabó",
-                        "title": "Somewhere I Belong",
-                        "uri": "5ViM2bwFjNqx6K7w1iFlOE"
-                    },
-                    {
-                        "artist": "Gábor Szabó",
-                        "title": "Somewhere I Belong",
-                        "uri": "25rZJWu8C8gtoY4iC2ogkc"
-                    },
-                    {
-                        "artist": "Gábor Szabó",
-                        "title": "Somewhere I Belong",
-                        "uri": "16KamasVedkS2URCL9u0PY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gábor Szabó",
-                        "title": "Somewhere I Belong",
-                        "uri": "5ViM2bwFjNqx6K7w1iFlOE"
-                    },
-                    {
-                        "artist": "Gábor Szabó",
-                        "title": "Somewhere I Belong",
-                        "uri": "16KamasVedkS2URCL9u0PY"
-                    },
-                    {
-                        "artist": "Gábor Szabó",
-                        "title": "Somewhere I Belong",
-                        "uri": "25rZJWu8C8gtoY4iC2ogkc"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "The Trash Company",
-                        "title": "I Don't Mind",
-                        "uri": "0RFrgM4lRXcQ6En18QJ7rY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tobias Dray",
-                        "title": "I Don't Mind",
-                        "uri": "6OSRS4mNwTCE92ujmXgUhc"
-                    },
-                    {
-                        "artist": "Midnight Purple",
-                        "title": "I Don't Mind",
-                        "uri": "4JumHyVZqFpe41L9jXsVx2"
-                    },
-                    {
-                        "artist": "The Trash Company",
-                        "title": "I Don't Mind",
-                        "uri": "0RFrgM4lRXcQ6En18QJ7rY"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Claas",
-                        "title": "Sick",
-                        "uri": "4TA9GbccWjoOiy0x5wSX3G"
-                    },
-                    {
-                        "artist": "Black Nile",
-                        "title": "Miss Ann",
-                        "uri": "6qn3lXIrf1rm9iDpw8psUm"
-                    },
-                    {
-                        "artist": "Joachim Schoenecker",
-                        "title": "Black Nile",
-                        "uri": "3Ef7Xqr64vjTdKD1TZhL0L"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ike Yard",
-                        "title": "M. Kurtz",
-                        "uri": "6WRIGVvMGfQFzZU2CHZUzT"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Joanne Robertson",
-                        "title": "HAD MY GUARD UP 2 U (SINCE '92)",
-                        "uri": "5QTvjrXexfyUSFz4PcLMVq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Joanne Robertson",
-                        "title": "HAD MY GUARD UP 2 U (SINCE '92)",
-                        "uri": "5QTvjrXexfyUSFz4PcLMVq"
-                    },
-                    {
-                        "artist": "Joanne Robertson",
-                        "title": "hit",
-                        "uri": "7LcC3qw4ZR0bgLDdELlQnZ"
-                    },
-                    {
-                        "artist": "Joanne Robertson",
-                        "title": "am i grief",
-                        "uri": "7fU495ujpfAHNo5UAsQaLg"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Scott Gilmore",
-                        "title": "Pieced Together",
-                        "uri": "4HC7u25XVifS5R9oMb41vz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Scott Gilmore",
-                        "title": "Pieced Together",
-                        "uri": "4HC7u25XVifS5R9oMb41vz"
-                    },
-                    {
-                        "artist": "Scott Gilmore",
-                        "title": "E70 No. 01",
-                        "uri": "01iglyLhCYZYlCqAxY8Vfz"
-                    },
-                    {
-                        "artist": "Scott Gilmore",
-                        "title": "Two Roomed Motel",
-                        "uri": "3v4HabWl7K3I0x8hYq1TIS"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "The Facts",
-                        "uri": "0UVb3lCVXCztOZUNCg4IUQ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "The Facts",
-                        "uri": "0UVb3lCVXCztOZUNCg4IUQ"
-                    },
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "More Women",
-                        "uri": "73R5rWJMt6zzgiwLzOYfWR"
-                    },
-                    {
-                        "artist": "Saâda Bonaire",
-                        "title": "Shut the Door",
-                        "uri": "4Iow6Xe1mLtzlhMPPTczTF"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Robert Wyatt",
-                        "title": "The Age Of Self",
-                        "uri": "0p48pOhJyjCOkfZIdNWe9Z"
-                    },
-                    {
-                        "artist": "Robert Wyatt",
-                        "title": "The Age Of Self",
-                        "uri": "6VMgFtjpIKDnVlGabqYy8T"
-                    },
-                    {
-                        "artist": "Robert Wyatt",
-                        "title": "The Age Of Self",
-                        "uri": "5aQd49TTcmVXTRrLKE6y2f"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Robert Wyatt",
-                        "title": "The Age Of Self",
-                        "uri": "0p48pOhJyjCOkfZIdNWe9Z"
-                    },
-                    {
-                        "artist": "Robert Wyatt",
-                        "title": "The Age Of Self",
-                        "uri": "5aQd49TTcmVXTRrLKE6y2f"
-                    },
-                    {
-                        "artist": "Robert Wyatt",
-                        "title": "The Age Of Self",
-                        "uri": "6VMgFtjpIKDnVlGabqYy8T"
-                    }
-                ]
-            },
-            "15": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "2Pac",
-                        "title": "Str8 Ballin'",
-                        "uri": "0bzLeU6MipJvb9Iq15CCVZ"
-                    },
-                    {
-                        "artist": "2Pac",
-                        "title": "Str8 Ballin'",
-                        "uri": "5AapXlFNNwQBScUm4HzRW6"
-                    },
-                    {
-                        "artist": "2Pac",
-                        "title": "Still Ballin' - Nitty Remix",
-                        "uri": "6CMidyjegRGsM2NyEmbuoT"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Lennie Tristano",
-                        "title": "Love Lines",
-                        "uri": "0mF34yHUPIP647Q5N4EIs8"
-                    },
-                    {
-                        "artist": "Im Karan",
-                        "title": "Love Lines",
-                        "uri": "6fQ443AQAmD9bTgITUv4kx"
-                    },
-                    {
-                        "artist": "Noa Azazel",
-                        "title": "Love Lines",
-                        "uri": "7fGPFiuJH9XXoUBw2aUGIG"
-                    }
-                ]
-            }
+        "06": {
+            "artist": "A Certain Ratio",
+            "ratio": 5,
+            "title": "Felch",
+            "trackid": "2ahIEevJ3JKJxNwQjPKOWz"
         },
-        "genes-liquor-5th-june-2017": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Vincent Gallo",
-                        "title": "Was",
-                        "uri": "4A1ZZGi4e3UNwA5a0uPo5U"
-                    },
-                    {
-                        "artist": "Vincent Gallo",
-                        "title": "So Sad",
-                        "uri": "1ynYeqIJCktT1XIXv8UGMn"
-                    },
-                    {
-                        "artist": "Vincent Gallo",
-                        "title": "I Wrote This Song For The Girl Paris Hilton",
-                        "uri": "0dIYLb0o7VhHLzmorCznO7"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": ""
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Lovesliescrushing",
-                        "title": "glimmer",
-                        "uri": "0LuYnocf8k20r1Dpt9aokj"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lovesliescrushing",
-                        "title": "glimmer",
-                        "uri": "0LuYnocf8k20r1Dpt9aokj"
-                    },
-                    {
-                        "artist": "Lovesliescrushing",
-                        "title": "babysbreath",
-                        "uri": "7Cwt68khwNZg4yc9enbjsY"
-                    },
-                    {
-                        "artist": "AERO GROS M",
-                        "title": "lovesliescrushing",
-                        "uri": "33WoBNV0gdrLzPYNgZGiBn"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Surf Curse",
-                        "title": "Doom Generation",
-                        "uri": "1kYeSrhC31XWoqj8WIZty1"
-                    },
-                    {
-                        "artist": "Surf Curse",
-                        "title": "Doom Generation - Audiotree Live Version",
-                        "uri": "4zBWGRPd8DPkl4LAI0ZjKq"
-                    },
-                    {
-                        "artist": "FamilyJules",
-                        "title": "The Only Thing They Fear is You (From \"Doom: Eternal\")",
-                        "uri": "5sxyNRAlsVwxOOQrXgs5kF"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Modern Art",
-                        "title": "Oriental Towers",
-                        "uri": "1C0fPfGr0vOr5SiIOlDqHt"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Modern Art",
-                        "title": "Dreaming Again",
-                        "uri": "7FpILAbpg8RlG0BfQGy2KN"
-                    },
-                    {
-                        "artist": "Modern Art",
-                        "title": "Saturday 11th June 1983",
-                        "uri": "5vP3XoY7OPvVJsoAedXWQK"
-                    },
-                    {
-                        "artist": "Modern Art",
-                        "title": "Stars",
-                        "uri": "0kZoEgKfduXbgzZMMOeTFT"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Jonny Trunk",
-                        "title": "Busy Busy",
-                        "uri": "3VE0LyC59wGGZu5ukg75sq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jonny Trunk",
-                        "title": "Busy Busy",
-                        "uri": "3VE0LyC59wGGZu5ukg75sq"
-                    },
-                    {
-                        "artist": "Jonny Trunk",
-                        "title": "The Horn",
-                        "uri": "3N4IYRniJ8elgEtN33jYCD"
-                    },
-                    {
-                        "artist": "Jonny Trunk",
-                        "title": "Winspit",
-                        "uri": "0Fb62cktmyuPqE8Gq9qfhU"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Chris Harford",
-                        "title": "Lonesome",
-                        "uri": "5MktR5pVQM8cJ1k2xpamgS"
-                    },
-                    {
-                        "artist": "Chris Hardwick",
-                        "title": "I'll Tell You What to Eat",
-                        "uri": "5mdEu4VffP3jjPM1ctnMbO"
-                    },
-                    {
-                        "artist": "Chris Hardwick",
-                        "title": "Intro",
-                        "uri": "6lk7OTf0ig2axbTeDsj867"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Bettye Crutcher",
-                        "title": "Sleepy People",
-                        "uri": "567qfszjnKBv5e7OlBxoX9"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bettye Crutcher",
-                        "title": "Sleepy People",
-                        "uri": "567qfszjnKBv5e7OlBxoX9"
-                    },
-                    {
-                        "artist": "Baxter Dury",
-                        "title": "Sleep People",
-                        "uri": "5OnKElCVgBjFaNQQh5a9Du"
-                    },
-                    {
-                        "artist": "Bettye Crutcher",
-                        "title": "A Little Bit More Won't Hurt",
-                        "uri": "1bIEXHhqlic2wMM4AClJHe"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "The Solid Gold Orchestra",
-                        "title": "Tracks Of Love",
-                        "uri": "2LESvxlz80HAPnQmzluY4C"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Solid Gold Orchestra",
-                        "title": "Tracks Of Love",
-                        "uri": "2LESvxlz80HAPnQmzluY4C"
-                    },
-                    {
-                        "artist": "Disciples",
-                        "title": "Solid Gold (feat. bshp)",
-                        "uri": "0IDU2CjK6ayag6xjarO3kh"
-                    },
-                    {
-                        "artist": "Sultan + Shepard",
-                        "title": "Solid Gold Love",
-                        "uri": "6YzXlsjXVZTwUoKSwHZsuF"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Robin Loxley",
-                        "title": "Rain Down",
-                        "uri": "2aKYCxVLeSC4nrUgoqsx62"
-                    },
-                    {
-                        "artist": "Solence",
-                        "title": "Rain Down",
-                        "uri": "6gknArQPiG8GyMXKTI30vZ"
-                    },
-                    {
-                        "artist": "Freemasons",
-                        "title": "Rain Down Love (feat. Siedah Garrett)",
-                        "uri": "42LXus5z5h0VcMD73Q1XeL"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Barney Kessel",
-                        "title": "Walking In Space",
-                        "uri": "4TQ1USHUb30F56t69RbJ9S"
-                    },
-                    {
-                        "artist": "Barney Kessel",
-                        "title": "Walking in Space",
-                        "uri": "2dCFneYzchgf97TqLMPwJb"
-                    },
-                    {
-                        "artist": "Barney Kessel",
-                        "title": "Walking In Space",
-                        "uri": "2yplzKNnguiOe3mf9mLSyY"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Barney Kessel",
-                        "title": "Walking in Space",
-                        "uri": "2dCFneYzchgf97TqLMPwJb"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "The Bizarros",
-                        "title": "Ice Age",
-                        "uri": "5dVokrWkbfFW3ic0ukbN7I"
-                    },
-                    {
-                        "artist": "The Bizarros",
-                        "title": "Ice Age",
-                        "uri": "3z0zcJvo9FaZL7sgqs8W07"
-                    },
-                    {
-                        "artist": "The Bizarros",
-                        "title": "Ice Age",
-                        "uri": "5Mnx0O2q3RyBCM4CCcizXw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "The Bizarros",
-                        "title": "Ice Age",
-                        "uri": "5dVokrWkbfFW3ic0ukbN7I"
-                    },
-                    {
-                        "artist": "MCND",
-                        "title": "ICE AGE",
-                        "uri": "1q2bu7PaEUUiFJYFsAiHiz"
-                    },
-                    {
-                        "artist": "John Powell",
-                        "title": "Ellie Remembers",
-                        "uri": "5PsSrsGHC5MrQiEpfzDGGg"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Gangs",
-                        "title": "The Real Thing",
-                        "uri": "58F83IVdn0ICsLtPXL8auo"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gangs",
-                        "title": "The Real Thing",
-                        "uri": "58F83IVdn0ICsLtPXL8auo"
-                    },
-                    {
-                        "artist": "South Central Cartel",
-                        "title": "Gang Stories",
-                        "uri": "03QuxLpUj1QBD79afioZoP"
-                    },
-                    {
-                        "artist": "Umah O'Brien",
-                        "title": "Gangs",
-                        "uri": "62uLQ5j7ELcXDbIp0SVgyt"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "SIN",
-                        "title": "Carbon",
-                        "uri": "09QwnH3fU4RUFSAAodqFKq"
-                    },
-                    {
-                        "artist": "Carbon Based Lifeforms",
-                        "title": "Derelicts",
-                        "uri": "7th3hRsdnyeHvDTXukM2c3"
-                    },
-                    {
-                        "artist": "Carbon Killer",
-                        "title": "Carbon Inc, Pt. 1",
-                        "uri": "4QuHBQbERbiAwP5wDaETfN"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "El Gusano",
-                        "title": "Melancolia",
-                        "uri": "0WLfVKHfOUp3EXl7a2gi4z"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Eladio Zuñiga y su Grupo Alegres Estrella|",
-                        "title": "El gusano",
-                        "uri": "7fTHfvH7gIuxG0eTnAKmxI"
-                    },
-                    {
-                        "artist": "El gusano triste",
-                        "title": "Bugambilias",
-                        "uri": "1kXxp5tJExalBZy3Lj0SSw"
-                    },
-                    {
-                        "artist": "Camino Norte",
-                        "title": "El Gusano",
-                        "uri": "6tA2ZulW1xnKtXIA4uRWhc"
-                    }
-                ]
-            },
-            "15": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Aelaria Bejus",
-                        "title": "Index Bass Groove - Extended Mix",
-                        "uri": "1NUe39SBZXdj09uY2J0NOU"
-                    },
-                    {
-                        "artist": "Minami Deutsch",
-                        "title": "Israeli Blues",
-                        "uri": "22dwU4HG9UxeCHhrNfV3dm"
-                    },
-                    {
-                        "artist": "Index",
-                        "title": "Ghoffrane",
-                        "uri": "3H0PSNiWqF6KxKIgfpyRLq"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Johnnie Frierson",
-                        "title": "Have You Been Good to Yourself",
-                        "uri": "2DHylyLFfzaKOBnC0HfDjU"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Johnnie Frierson",
-                        "title": "Have You Been Good to Yourself",
-                        "uri": "2DHylyLFfzaKOBnC0HfDjU"
-                    },
-                    {
-                        "artist": "Johnnie Frierson",
-                        "title": "Heavenly Father, You've Been Good",
-                        "uri": "4MjdcMEzBDbjzrZd9nBoFT"
-                    },
-                    {
-                        "artist": "Johnnie Frierson",
-                        "title": "Miracles",
-                        "uri": "6ALhfcRmoycQOfUylcTEC4"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Wendy & Bonnie",
-                        "title": "You Keep Hanging up on My Mind",
-                        "uri": "4dVR2AK8wrlNRZgvf44fhd"
-                    },
-                    {
-                        "artist": "Wendy & Bonnie",
-                        "title": "You Keep Hanging Up On My Mind",
-                        "uri": "6CGFXhLnAcfYRcHgaKuwh9"
-                    },
-                    {
-                        "artist": "Wendy & Bonnie",
-                        "title": "By the Sea (You Keep Hanging Up On My Mind)",
-                        "uri": "25or3UkhlC34UtKFYMAk8W"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Wendy & Bonnie",
-                        "title": "You Keep Hanging up on My Mind",
-                        "uri": "4dVR2AK8wrlNRZgvf44fhd"
-                    },
-                    {
-                        "artist": "Wendy & Bonnie",
-                        "title": "You Keep Hanging Up On My Mind",
-                        "uri": "6CGFXhLnAcfYRcHgaKuwh9"
-                    },
-                    {
-                        "artist": "Wendy & Bonnie",
-                        "title": "By the Sea (You Keep Hanging Up On My Mind)",
-                        "uri": "25or3UkhlC34UtKFYMAk8W"
-                    }
-                ]
-            },
-            "18": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Shirley Nanette",
-                        "title": "People Are Thinking",
-                        "uri": "7EB2Fg8neFFqfekVVUJJ6o"
-                    },
-                    {
-                        "artist": "Shirley Nanette",
-                        "title": "All Of Your Life",
-                        "uri": "07tIAxhmT8WEuMoQfqx0ey"
-                    }
-                ]
-            }
+        "07": {
+            "artist": "KIDS SEE GHOSTS",
+            "ratio": 6,
+            "title": "Freeee (Ghost Town Pt. 2)",
+            "trackid": "7GRTrWsP3yo2Fx8umJfA1X"
         },
-        "genes-liquor-9th-april-2018": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Smooth Street",
-                        "uri": "7HwV5zPEFaHbuRFfCJk9lH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Smooth Street",
-                        "uri": "7HwV5zPEFaHbuRFfCJk9lH"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Sugar Shack",
-                        "uri": "4h0ZTyQelAG47QsbI9mANI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Sugar Shack",
-                        "uri": "4h0ZTyQelAG47QsbI9mANI"
-                    },
-                    {
-                        "artist": "Damon Fowler",
-                        "title": "Sugar Shack",
-                        "uri": "2Y1xIxUIYbBuVyZocsShr8"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "H.A.T.B.",
-                        "uri": "0aoLgmiqtkQbiHVXBqIltU"
-                    }
-                ]
-            }
+        "08": {
+            "artist": "Primal Scream",
+            "ratio": 6,
+            "title": "Blood Money",
+            "trackid": "7amFwVcfgqqkECfv0kU3Zy"
         },
-        "genes-liquor-w-delroy-edwards-25th-september-2017": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Buckeye Beats",
-                        "uri": "2lkuP848JTovByJXq7jKJA"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Numbnuts Hymn",
-                        "uri": "1xEXc0L4ZveZb7p1B9rWbw"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "H.A.T.B.",
-                        "uri": "0aoLgmiqtkQbiHVXBqIltU"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mike Dunn",
-                        "title": "When The Dust Clears (feat. LOA.) - MD MixX",
-                        "uri": "4fBKEDSwtIua3z916hr7bO"
-                    },
-                    {
-                        "artist": "Mike Dunn",
-                        "title": "It's A Groove Thang - Black Glitter LB MixX",
-                        "uri": "45mcLiUJLINOmCG3CjNgQE"
-                    },
-                    {
-                        "artist": "Mike Dunn",
-                        "title": "It's A Groove Thang - Saison Remix",
-                        "uri": "76MwiAjrkHKsWiqSps7KHw"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": ""
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "DJ Rush",
-                        "title": "Talkers",
-                        "uri": "0stNlww6wGu8m2GQmQjJBv"
-                    },
-                    {
-                        "artist": "DJ Rush",
-                        "title": "Truant",
-                        "uri": "5gtxF7gLUw1Rfuo5GmDlXv"
-                    },
-                    {
-                        "artist": "DJ Rush",
-                        "title": "Get On Up - Dave Simon Edit",
-                        "uri": "67NGpIKHQv3qTgidnz3a91"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Getting' Tail (Backwards Mix)",
-                        "uri": "4h2gVfTzLXcQUQs4E82JxZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Getting' Tail (Backwards Mix)",
-                        "uri": "4h2gVfTzLXcQUQs4E82JxZ"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Untitled",
-                        "uri": "7itfKrqnoQPjzC4gQai5BJ"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Untitled",
-                        "uri": "4zdTfJcZIW5agiON6EwT0z"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Untitled 2",
-                        "uri": "1ghplHAgk78mYuyfHdoU6Y"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Burger Bytes",
-                        "title": "Track Star",
-                        "uri": "4NNU2rchFDfYmkcC1x3j9i"
-                    },
-                    {
-                        "artist": "Maniacx",
-                        "title": "Trackstar",
-                        "uri": "2vcQUkIvqpbtwqBkhRsw8u"
-                    },
-                    {
-                        "artist": "Kitty Noir",
-                        "title": "Track Star",
-                        "uri": "5aHRcz92zQ8PxZg818PhzG"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Rumba",
-                        "uri": "5ZDQaavutTgDJTOY2FebCu"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Rumba (Beat Track)",
-                        "uri": "7DlBhvvNk2d8Vmv9agpUVw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Rumba (Beat Track)",
-                        "uri": "7DlBhvvNk2d8Vmv9agpUVw"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Rumba",
-                        "uri": "5ZDQaavutTgDJTOY2FebCu"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "H.A.T.B.",
-                        "uri": "0aoLgmiqtkQbiHVXBqIltU"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Delroy Wilson",
-                        "title": "Till I Die",
-                        "uri": "6ey3hjD6iYKvJO36cxHbMA"
-                    },
-                    {
-                        "artist": "Delroy Wilson",
-                        "title": "Till I Die",
-                        "uri": "32JePLBG3FfZyySr6G3Gjl"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Phil Lynott",
-                        "title": "King's Call",
-                        "uri": "3x3oEFoQzTwqrMLj6Zufgf"
-                    },
-                    {
-                        "artist": "Phil Lynott",
-                        "title": "Solo In Soho",
-                        "uri": "7DnpchxdXEtliafHUPR2A3"
-                    },
-                    {
-                        "artist": "Phil Lynott",
-                        "title": "Yellow Pearl",
-                        "uri": "26zI2b5eGPRITLKJnNOeQd"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Moha La Squale",
-                        "title": "Basta",
-                        "uri": "6aBKJmtHMYdBMZnjp4fb8O"
-                    },
-                    {
-                        "artist": "Rounhaa",
-                        "title": "Basta",
-                        "uri": "4HoTFme8klbgZhvMl5ka4k"
-                    },
-                    {
-                        "artist": "Basta",
-                        "title": "Урбан",
-                        "uri": "40FJaSjTBdsIJ0upyx4Vjn"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Steve \"Silk\" Hurley",
-                        "title": "The Word Is Love (feat. Sharon Pass) - Silk's Anthem Of Life [Mixed]",
-                        "uri": "0KDuzqV10T6yb24f0iEhOk"
-                    },
-                    {
-                        "artist": "Paul Varney",
-                        "title": "Home - Steve Silk Hurley's Way Back Mix",
-                        "uri": "0bvSvcAaRhm8hrN4xp8Q3s"
-                    },
-                    {
-                        "artist": "BT",
-                        "title": "Windows - Steve “Silk” Hurley S&S Reprise Mix",
-                        "uri": "4AY2yN9ydM8BfCNVn279KY"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Gene Hunt",
-                        "title": "Bong",
-                        "uri": "7HI7XZhr0slYJw8CGVf6hA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gene Hunt",
-                        "title": "Tazz",
-                        "uri": "3Sxk7JqheaqztDCA7PExOp"
-                    },
-                    {
-                        "artist": "Mr. Barth",
-                        "title": "Jazzie - 2019 Remastered",
-                        "uri": "3B6t2ric8RZVKA8CGAnfcY"
-                    },
-                    {
-                        "artist": "Gene Hunt",
-                        "title": "Living In A Land",
-                        "uri": "44GJmvbynQ9dGJkYDAKyT5"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "TakumaDemonReborn",
-                        "title": "Untitled - Acoustic",
-                        "uri": "35N98SDDpbc2e90A1OyrxU"
-                    },
-                    {
-                        "artist": "Delroy Edwards",
-                        "title": "Audio Track 06",
-                        "uri": "7pHnTp4WP3zP0LOEsiV8WB"
-                    },
-                    {
-                        "artist": "Xxtarlit⚸",
-                        "title": "untitled",
-                        "uri": "3BGyOqYcAWJrqUR6OtgEXN"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Schleigho",
-                        "title": "Trash Compactor Phobia",
-                        "uri": "2SPLQVqN5Nkd5CKVvQAe6E"
-                    },
-                    {
-                        "artist": "Coastdream",
-                        "title": "Untitled",
-                        "uri": "74HDsZMflVIGiLD1RSdVC9"
-                    },
-                    {
-                        "artist": "Transvision Vamp",
-                        "title": "Trash City",
-                        "uri": "1VQ60TihKzhd8nXwjGEmTx"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Nicodemus",
-                        "title": "Untitled",
-                        "uri": "4AN8zqLLPMkftIprVfSELz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nicodemus",
-                        "title": "Untitled",
-                        "uri": "4AN8zqLLPMkftIprVfSELz"
-                    },
-                    {
-                        "artist": "Nickodemus",
-                        "title": "N'Dini (Tal M. Klein Remix)",
-                        "uri": "2szcB30FanoVjkFoJoD4lB"
-                    },
-                    {
-                        "artist": "Dek The Raw",
-                        "title": "Nicodemus, MARS UND STI, Dek The Raw - Untitled",
-                        "uri": "2ZTWRzEQYwrWFOm0kaRiOL"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": ""
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "The Telstars",
-                        "title": "Fia",
-                        "uri": "6ooq46YiIkhpe2T8ydiqLl"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Gavin Russom",
-                        "title": "The Telstar File",
-                        "uri": "2XnAWwxnZLjeJdjmlnN3yB"
-                    },
-                    {
-                        "artist": "The Telstars",
-                        "title": "Telstar",
-                        "uri": "2wf4e6c9v8JGg9lcOixwBH"
-                    },
-                    {
-                        "artist": "The Spotnicks",
-                        "title": "Telstar",
-                        "uri": "3PA0OmQZ790yfyaXLkpZyv"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "Dwight Sykes",
-                        "title": "The Good Times",
-                        "uri": "4n4zXiSyIdzQNBzBpm99mw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Dwight Sykes",
-                        "title": "In the Life Zone",
-                        "uri": "7m3Ub3poLx9sT3xDCWHlML"
-                    },
-                    {
-                        "artist": "Dwight Sykes",
-                        "title": "The Good Times",
-                        "uri": "4n4zXiSyIdzQNBzBpm99mw"
-                    },
-                    {
-                        "artist": "Dwight Sykes",
-                        "title": "Hypnotized",
-                        "uri": "7BxjfpaaNxl2lZQ9bNH09k"
-                    }
-                ]
-            },
-            "19": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "The Last River Bottomed Fig Plucker",
-                        "title": "Tomcat",
-                        "uri": "3OBacuQIndpWVjRsMSle5T"
-                    },
-                    {
-                        "artist": "Will Wood",
-                        "title": "Tomcat Disposables",
-                        "uri": "3Co6zjPlUCDgm8jDOhG5EE"
-                    },
-                    {
-                        "artist": "Will Wood",
-                        "title": "Tomcat Disposables",
-                        "uri": "4olYjU2Yv1w66wOUaxb4vo"
-                    }
-                ]
-            },
-            "20": {
-                "s0": "",
-                "s1": ""
-            }
+        "09": {
+            "artist": "American Wrestlers",
+            "ratio": 6,
+            "title": "I Can Do No Wrong",
+            "trackid": "7Eyoo88St8MXIb57SkLkCg"
+        }
+    },
+    "genes-liquor-14th-january-2019": {
+        "00": {
+            "artist": "Truong Thi Quynh Hanh",
+            "ratio": 1,
+            "title": "Binh ban va'n",
+            "trackid": "1gyY4WlJGvbZvUVsALyJVe"
+        },
+        "01": {
+            "artist": "Delroy Edwards",
+            "ratio": 6,
+            "title": "Bad II The Bone",
+            "trackid": "52Zmg0NXrHPVzYmsnqHPWz"
+        },
+        "02": {
+            "artist": "Rock Candy Funk Party",
+            "ratio": 2,
+            "title": "In the Groove",
+            "trackid": "5YPvJO7U1HhwuJBLrD1f0q"
+        },
+        "03": {
+            "artist": "Robert Palmer",
+            "ratio": 6,
+            "title": "Woke Up Laughing",
+            "trackid": "26hhPkZhjIK4sJn8thekxD"
+        },
+        "04": {
+            "artist": "Ralph Tresvant",
+            "ratio": 6,
+            "title": "Sensitivity",
+            "trackid": "3wY9vnTmLC4XVHHbbFmgj0"
+        },
+        "05": {
+            "artist": "Moodymann",
+            "ratio": 6,
+            "title": "Sunday Hotel",
+            "trackid": "3c4d1Ui2AoZIR6SF9MOF7m"
+        },
+        "06": {
+            "artist": "Lakeside",
+            "ratio": 6,
+            "title": "Your Love Is On the One",
+            "trackid": "4BtlVer3IAoPsnM4opCLjI"
+        },
+        "07": {
+            "artist": "The B-52's",
+            "ratio": 6,
+            "title": "Mesopotamia",
+            "trackid": "2Bx5UlqJkrEaOKhZa2RrfC"
+        },
+        "08": {
+            "artist": "Pi’erre Bourne",
+            "ratio": 6,
+            "title": "Marie Curie",
+            "trackid": "4Rs00gcMnDVfivMHXdiHHc"
+        },
+        "09": {
+            "artist": "DaBaby",
+            "ratio": 6,
+            "title": "Walker Texas Ranger",
+            "trackid": "0eBOVXdnrVQ0rITgKXBAA7"
+        },
+        "10": {
+            "artist": "K$upreme",
+            "ratio": 6,
+            "title": "Hang Up the Phone",
+            "trackid": "40Duf6hCElUKCpstTT7RNg"
+        },
+        "11": {
+            "artist": "Yann Muller",
+            "ratio": 3,
+            "title": "Dreams",
+            "trackid": "5YkU6HriANEpKjLEpBGq6K"
+        },
+        "12": {
+            "artist": "Book Of Love",
+            "ratio": 6,
+            "title": "Book of Love",
+            "trackid": "2i7bNNAu1ZXuVyUBYWRAyz"
+        },
+        "13": {
+            "artist": "Chemise",
+            "ratio": 6,
+            "title": "She Can't Love You",
+            "trackid": "3CX1FiiXSbvKjsXRYwApAP"
+        },
+        "14": {
+            "artist": "Theo Parrish",
+            "ratio": 6,
+            "title": "Feel Loved",
+            "trackid": "7bRjKjaONVwUPjWgt8Illt"
+        },
+        "15": {
+            "artist": "Wiz Khalifa",
+            "ratio": 6,
+            "title": "Late Night Messages",
+            "trackid": "3T6Wt1QsnkiRXgTSKSCHPs"
+        },
+        "16": {
+            "artist": "Future",
+            "ratio": 6,
+            "title": "Crushed Up",
+            "trackid": "7wcyO1rrH3Ru4t659IjG41"
+        }
+    },
+    "genes-liquor-16th-january-2017": {
+        "00": {
+            "artist": "Knxwledge",
+            "ratio": 6,
+            "title": "Relintlessli",
+            "trackid": "5ukxw7ElBoUejLg87KaY9J"
+        },
+        "01": {
+            "artist": "Quality Control",
+            "ratio": 6,
+            "title": "South Africa",
+            "trackid": "2vw2nopHWeQ0EUJPKNy8yS"
+        },
+        "02": {
+            "artist": "Quality Control",
+            "ratio": 6,
+            "title": "The Load (Quality Control, Gucci Mane & Lil Baby feat. Marlo)",
+            "trackid": "2eodyKXNJqpHRzI61ScbTl"
+        }
+    },
+    "genes-liquor-23rd-october-2017": {
+        "00": {
+            "artist": "Frankie Lymon & The Teenagers",
+            "ratio": 6,
+            "title": "I'm Not a Juvenile Delinquent 'Rock, Rock, Rock'",
+            "trackid": "5wgHjqawAGbee1Kgo8zuKc"
+        },
+        "01": {
+            "artist": "Al Dobson Jr.",
+            "ratio": 6,
+            "title": "Vibrations",
+            "trackid": "0V9xqjOSTk6G8BJ3uUfgeP"
+        },
+        "02": {
+            "artist": "Bone Thugs-N-Harmony",
+            "ratio": 4,
+            "title": "Bone Thugs-N-Harmony",
+            "trackid": "5GlSR9oD6009VrsauxTdez"
+        },
+        "03": {
+            "artist": "Falcko",
+            "ratio": 3,
+            "title": "Ghetto Blues",
+            "trackid": "6WsaYout0yStJ8VNnJcW4a"
+        },
+        "04": {
+            "artist": "YoungBoy Never Broke Again",
+            "ratio": 6,
+            "title": "No Smoke",
+            "trackid": "57IRaiAB4hBZu3gnNVZC0v"
+        },
+        "05": {
+            "artist": "Flox",
+            "ratio": 4,
+            "title": "Slow Down",
+            "trackid": "3lloXPyu3BPdCljL11pjx2"
+        },
+        "06": {
+            "artist": "Aaliyah",
+            "ratio": 5,
+            "title": "Are You That Somebody",
+            "trackid": "3PqAnW2bB5TQnMoBivyFOb"
+        },
+        "07": {
+            "artist": "Devante",
+            "ratio": 4,
+            "title": "Gin & Juice",
+            "trackid": "7d5aCzzHTAdD2ayj5HUjjZ"
+        },
+        "08": {
+            "artist": "The Grand",
+            "ratio": 4,
+            "title": "Keep It Coming",
+            "trackid": "04aFRyu994EIDJ0XcJCdcu"
+        },
+        "09": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "10": {
+            "artist": "Arnaud Rebotini",
+            "ratio": 4,
+            "title": "What You Want Me to Do",
+            "trackid": "68KpJu3A67JaCbVRseL6S7"
+        },
+        "11": {
+            "artist": "Elkie Brooks",
+            "ratio": 6,
+            "title": "Just An Excuse",
+            "trackid": "3C0uCo0eergfTGw7FkhcDi"
+        },
+        "12": {
+            "artist": "Joanna Brouk",
+            "ratio": 6,
+            "title": "The Space Between",
+            "trackid": "7pes8uQmsmsHtFiG1eFsJM"
+        },
+        "13": {
+            "artist": "Hil St. Soul",
+            "ratio": 6,
+            "title": "Baby Come Over",
+            "trackid": "2bPGpTHTKbDvV21uRg8iCH"
+        }
+    },
+    "genes-liquor-28th-august-2017": {
+        "00": {
+            "artist": "Wlad Marhulets",
+            "ratio": 1,
+            "title": "Credits",
+            "trackid": "7ytFaePUHsVvbxqBcPSa26"
+        },
+        "01": {
+            "artist": "Big Mello",
+            "ratio": 6,
+            "title": "Love Don't Love Nobody",
+            "trackid": "76DvyaovcdPfkw82vc7l45"
+        },
+        "02": {
+            "artist": "Jett Brwn",
+            "ratio": 4,
+            "title": "SAME OL' SONG",
+            "trackid": "3fwFjym9FXO9VUcWhmnEmR"
+        },
+        "03": {
+            "artist": "Soulja Slim",
+            "ratio": 6,
+            "title": "At The Same Time",
+            "trackid": "4jkEkAD9ofKaade3eIEGvg"
+        },
+        "04": {
+            "artist": "Shawty Pimp",
+            "ratio": 4,
+            "title": "KICKIN’ PIMPIN’ (feat. Reddog)",
+            "trackid": "1WWpfqfXuEvWkSTvL41OxH"
+        },
+        "05": {
+            "artist": "Twelve A.M.",
+            "ratio": 6,
+            "title": "I Wanna Understand You",
+            "trackid": "1BWAzWLRbPCgKI3fTSr4sN"
+        },
+        "06": {
+            "artist": "Adventurer",
+            "ratio": 4,
+            "title": "Reality",
+            "trackid": "4HuocOuSBJ78RlsFYwTyr5"
+        },
+        "07": {
+            "artist": "Ruthless Juveniles",
+            "ratio": 6,
+            "title": "Gangster Tale",
+            "trackid": "37vz0Xq2FQj0qNjj7D6f6h"
+        },
+        "08": {
+            "artist": "Smokepurpp",
+            "ratio": 6,
+            "title": "To the Moon",
+            "trackid": "7w3qmzKuh4cBn0D0hmmRPQ"
+        },
+        "09": {
+            "artist": "Unknown",
+            "ratio": -1,
+            "title": "Maboroshi",
+            "trackid": "4noPpg3jcwOxTfcZWCNHFE",
+            "uri": ""
+        },
+        "10": {
+            "artist": "Budgie",
+            "ratio": 6,
+            "title": "Best Believe",
+            "trackid": "3cYVMeqyAXFIEAbXB2ukiS"
+        },
+        "11": {
+            "artist": "Blue Iverson",
+            "ratio": 6,
+            "title": "Soulseek",
+            "trackid": "4y3milmiHjMEX3XwOSirB2"
+        },
+        "12": {
+            "artist": "Delegation",
+            "ratio": 6,
+            "title": "Oh Honey",
+            "trackid": "3TiCuJiisBOB9HzKAM6FDG"
+        },
+        "13": {
+            "artist": "Masayoshi Takanaka",
+            "ratio": 6,
+            "title": "SEXY DANCE",
+            "trackid": "4ZxtydSHCl0eZ9a9CWtOIF"
+        },
+        "14": {
+            "artist": "Love",
+            "ratio": 6,
+            "title": "Emotions - Stereo Version",
+            "trackid": "0piyqcJp70zIhTYyhI2ZrP"
+        },
+        "15": {
+            "artist": "Gary Wilson",
+            "ratio": 6,
+            "title": "I Wanna Lose Control",
+            "trackid": "54TarlY0OX9mljN13m2nZ2"
+        },
+        "16": {
+            "artist": "Mamman Sani",
+            "ratio": 6,
+            "title": "Tunan",
+            "trackid": "1s0O1tVHd0a45Dh3HUcKt5"
+        },
+        "17": {
+            "artist": "A$AP Twelvyy",
+            "ratio": 6,
+            "title": "Strapped",
+            "trackid": "3U0xbYGTtYZAUv3lEwPebJ"
+        },
+        "18": {
+            "artist": "8Ball",
+            "ratio": 6,
+            "title": "My Homeboy's Girlfriend",
+            "trackid": "0hHR7DwdbnMHPzfWRIOhny"
+        }
+    },
+    "genes-liquor-2nd-july-2018": {},
+    "genes-liquor-3rd-july-2017": {
+        "00": {
+            "artist": "Vivien Goldman",
+            "ratio": 6,
+            "title": "P. A. Dub",
+            "trackid": "4b1G5MGgsJDoer7MI1BTSm"
+        },
+        "01": {
+            "artist": "Buckshot LeFonque",
+            "ratio": 3,
+            "title": "Music Evolution",
+            "trackid": "40VpMYDhTMvr4XXSVXmVvl"
+        },
+        "02": {
+            "artist": "Idris Muhammad",
+            "ratio": 6,
+            "title": "Piece of Mind",
+            "trackid": "72wP2qnBz48qHEutvvnpfY"
+        },
+        "03": {
+            "artist": "Darrow Fletcher",
+            "ratio": 6,
+            "title": "Now Is the Time for Love - Pt. 2",
+            "trackid": "52ZSzfkiQQp5cE1M0wuLea"
+        },
+        "04": {
+            "artist": "Tom Scott",
+            "ratio": 6,
+            "title": "Today",
+            "trackid": "5R09NTQtV257kCHrMEGvAe"
+        },
+        "05": {
+            "artist": "MIKE",
+            "ratio": 4,
+            "title": "GREEDY",
+            "trackid": "6XLTeRWyIxj6XqLR6LJn2r"
+        },
+        "06": {
+            "artist": "Ethel Beatty",
+            "ratio": 6,
+            "title": "It's Your Love",
+            "trackid": "7LRrz9pMF4c0U4goiZjZrJ"
+        },
+        "07": {
+            "artist": "Gábor Szabó",
+            "ratio": 6,
+            "title": "Somewhere I Belong",
+            "trackid": "5ViM2bwFjNqx6K7w1iFlOE"
+        },
+        "08": {
+            "artist": "The Trash Company",
+            "ratio": 6,
+            "title": "I Don't Mind",
+            "trackid": "0RFrgM4lRXcQ6En18QJ7rY"
+        },
+        "09": {
+            "artist": "Claas",
+            "ratio": 4,
+            "title": "Sick",
+            "trackid": "4TA9GbccWjoOiy0x5wSX3G"
+        },
+        "10": {
+            "artist": "Ike Yard",
+            "ratio": 4,
+            "title": "M. Kurtz",
+            "trackid": "6WRIGVvMGfQFzZU2CHZUzT"
+        },
+        "11": {
+            "artist": "Joanne Robertson",
+            "ratio": 6,
+            "title": "HAD MY GUARD UP 2 U (SINCE '92)",
+            "trackid": "5QTvjrXexfyUSFz4PcLMVq"
+        },
+        "12": {
+            "artist": "Scott Gilmore",
+            "ratio": 6,
+            "title": "Pieced Together",
+            "trackid": "4HC7u25XVifS5R9oMb41vz"
+        },
+        "13": {
+            "artist": "Saâda Bonaire",
+            "ratio": 6,
+            "title": "The Facts",
+            "trackid": "0UVb3lCVXCztOZUNCg4IUQ"
+        },
+        "14": {
+            "artist": "Robert Wyatt",
+            "ratio": 6,
+            "title": "The Age Of Self",
+            "trackid": "0p48pOhJyjCOkfZIdNWe9Z"
+        },
+        "15": {
+            "artist": "2Pac",
+            "ratio": 6,
+            "title": "Str8 Ballin'",
+            "trackid": "0bzLeU6MipJvb9Iq15CCVZ"
+        },
+        "16": {
+            "artist": "Lennie Tristano",
+            "ratio": 5,
+            "title": "Love Lines",
+            "trackid": "0mF34yHUPIP647Q5N4EIs8"
+        }
+    },
+    "genes-liquor-5th-june-2017": {
+        "00": {
+            "artist": "Vincent Gallo",
+            "ratio": 4,
+            "title": "Was",
+            "trackid": "4A1ZZGi4e3UNwA5a0uPo5U"
+        },
+        "01": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "02": {
+            "artist": "Lovesliescrushing",
+            "ratio": 6,
+            "title": "glimmer",
+            "trackid": "0LuYnocf8k20r1Dpt9aokj"
+        },
+        "03": {
+            "artist": "Surf Curse",
+            "ratio": 6,
+            "title": "Doom Generation",
+            "trackid": "1kYeSrhC31XWoqj8WIZty1"
+        },
+        "04": {
+            "artist": "Modern Art",
+            "ratio": 6,
+            "title": "Oriental Towers",
+            "trackid": "1C0fPfGr0vOr5SiIOlDqHt"
+        },
+        "05": {
+            "artist": "Jonny Trunk",
+            "ratio": 6,
+            "title": "Busy Busy",
+            "trackid": "3VE0LyC59wGGZu5ukg75sq"
+        },
+        "06": {
+            "artist": "Chris Hardwick",
+            "ratio": 3,
+            "title": "I'll Tell You What to Eat",
+            "trackid": "5mdEu4VffP3jjPM1ctnMbO"
+        },
+        "07": {
+            "artist": "Bettye Crutcher",
+            "ratio": 6,
+            "title": "Sleepy People",
+            "trackid": "567qfszjnKBv5e7OlBxoX9"
+        },
+        "08": {
+            "artist": "The Solid Gold Orchestra",
+            "ratio": 6,
+            "title": "Tracks Of Love",
+            "trackid": "2LESvxlz80HAPnQmzluY4C"
+        },
+        "09": {
+            "artist": "Solence",
+            "ratio": 4,
+            "title": "Rain Down",
+            "trackid": "6gknArQPiG8GyMXKTI30vZ"
+        },
+        "10": {
+            "artist": "Barney Kessel",
+            "ratio": 6,
+            "title": "Walking In Space",
+            "trackid": "4TQ1USHUb30F56t69RbJ9S"
+        },
+        "11": {
+            "artist": "The Bizarros",
+            "ratio": 6,
+            "title": "Ice Age",
+            "trackid": "5dVokrWkbfFW3ic0ukbN7I"
+        },
+        "12": {
+            "artist": "Gangs",
+            "ratio": 6,
+            "title": "The Real Thing",
+            "trackid": "58F83IVdn0ICsLtPXL8auo"
+        },
+        "13": {
+            "artist": "SIN",
+            "ratio": 1,
+            "title": "Carbon",
+            "trackid": "09QwnH3fU4RUFSAAodqFKq"
+        },
+        "14": {
+            "artist": "El Gusano",
+            "ratio": 6,
+            "title": "Melancolia",
+            "trackid": "0WLfVKHfOUp3EXl7a2gi4z"
+        },
+        "15": {
+            "artist": "Minami Deutsch",
+            "ratio": 4,
+            "title": "Israeli Blues",
+            "trackid": "22dwU4HG9UxeCHhrNfV3dm"
+        },
+        "16": {
+            "artist": "Johnnie Frierson",
+            "ratio": 6,
+            "title": "Have You Been Good to Yourself",
+            "trackid": "2DHylyLFfzaKOBnC0HfDjU"
+        },
+        "17": {
+            "artist": "Wendy & Bonnie",
+            "ratio": 6,
+            "title": "You Keep Hanging up on My Mind",
+            "trackid": "4dVR2AK8wrlNRZgvf44fhd"
+        },
+        "18": {
+            "artist": "Shirley Nanette",
+            "ratio": 4,
+            "title": "People Are Thinking",
+            "trackid": "7EB2Fg8neFFqfekVVUJJ6o"
+        }
+    },
+    "genes-liquor-9th-april-2018": {
+        "00": {
+            "artist": "Delroy Edwards",
+            "ratio": 6,
+            "title": "Smooth Street",
+            "trackid": "7HwV5zPEFaHbuRFfCJk9lH"
+        },
+        "01": {
+            "artist": "Delroy Edwards",
+            "ratio": 6,
+            "title": "Sugar Shack",
+            "trackid": "4h0ZTyQelAG47QsbI9mANI"
+        }
+    },
+    "genes-liquor-w-delroy-edwards-25th-september-2017": {
+        "00": {
+            "artist": "Delroy Edwards",
+            "ratio": 6,
+            "title": "Buckeye Beats",
+            "trackid": "2lkuP848JTovByJXq7jKJA"
+        },
+        "01": {
+            "artist": "Mike Dunn",
+            "ratio": 3,
+            "title": "When The Dust Clears (feat. LOA.) - MD MixX",
+            "trackid": "4fBKEDSwtIua3z916hr7bO"
+        },
+        "02": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "03": {
+            "artist": "DJ Rush",
+            "ratio": 4,
+            "title": "Get On Up - Dave Simon Edit",
+            "trackid": "67NGpIKHQv3qTgidnz3a91"
+        },
+        "04": {
+            "artist": "Delroy Edwards",
+            "ratio": 6,
+            "title": "Getting' Tail (Backwards Mix)",
+            "trackid": "4h2gVfTzLXcQUQs4E82JxZ"
+        },
+        "05": {
+            "artist": "Delroy Edwards",
+            "ratio": 5,
+            "title": "Untitled",
+            "trackid": "7itfKrqnoQPjzC4gQai5BJ"
+        },
+        "06": {
+            "artist": "Burger Bytes",
+            "ratio": 3,
+            "title": "Track Star",
+            "trackid": "4NNU2rchFDfYmkcC1x3j9i"
+        },
+        "07": {
+            "artist": "Delroy Edwards",
+            "ratio": 6,
+            "title": "Rumba",
+            "trackid": "5ZDQaavutTgDJTOY2FebCu"
+        },
+        "08": {
+            "artist": "Delroy Wilson",
+            "ratio": 3,
+            "title": "Till I Die",
+            "trackid": "6ey3hjD6iYKvJO36cxHbMA"
+        },
+        "09": {
+            "artist": "Phil Lynott",
+            "ratio": 4,
+            "title": "Solo In Soho",
+            "trackid": "7DnpchxdXEtliafHUPR2A3"
+        },
+        "10": {
+            "artist": "Moha La Squale",
+            "ratio": 3,
+            "title": "Basta",
+            "trackid": "6aBKJmtHMYdBMZnjp4fb8O"
+        },
+        "11": {
+            "artist": "Steve \"Silk\" Hurley",
+            "ratio": 3,
+            "title": "The Word Is Love (feat. Sharon Pass) - Silk's Anthem Of Life [Mixed]",
+            "trackid": "0KDuzqV10T6yb24f0iEhOk"
+        },
+        "12": {
+            "artist": "Gene Hunt",
+            "ratio": 6,
+            "title": "Bong",
+            "trackid": "7HI7XZhr0slYJw8CGVf6hA"
+        },
+        "13": {
+            "artist": "Xxtarlit⚸",
+            "ratio": 3,
+            "title": "untitled",
+            "trackid": "3BGyOqYcAWJrqUR6OtgEXN"
+        },
+        "14": {
+            "artist": "Coastdream",
+            "ratio": 3,
+            "title": "Untitled",
+            "trackid": "74HDsZMflVIGiLD1RSdVC9"
+        },
+        "15": {
+            "artist": "Nicodemus",
+            "ratio": 6,
+            "title": "Untitled",
+            "trackid": "4AN8zqLLPMkftIprVfSELz"
+        },
+        "16": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "17": {
+            "artist": "The Telstars",
+            "ratio": 6,
+            "title": "Fia",
+            "trackid": "6ooq46YiIkhpe2T8ydiqLl"
+        },
+        "18": {
+            "artist": "Dwight Sykes",
+            "ratio": 6,
+            "title": "The Good Times",
+            "trackid": "4n4zXiSyIdzQNBzBpm99mw"
+        },
+        "19": {
+            "artist": "The Last River Bottomed Fig Plucker",
+            "ratio": 2,
+            "title": "Tomcat",
+            "trackid": "3OBacuQIndpWVjRsMSle5T"
+        },
+        "20": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
         }
     }
 }

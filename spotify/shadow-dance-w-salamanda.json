@@ -1,2591 +1,526 @@
 {
-    "flags": {
-        "salamanda-24th-february-2022": {
-            "00": {
-                "artist": "General Magic",
-                "ratio": 6,
-                "title": "Take The Bus",
-                "trackid": "3aFtRlgJ1HhwakirEotu6A"
-            },
-            "01": {
-                "artist": "dweebonthebeat",
-                "ratio": 6,
-                "title": "Púchica",
-                "trackid": "3jrLPHKxe4XjuSURn6o8vv"
-            },
-            "02": {
-                "artist": "Datassette",
-                "ratio": 6,
-                "title": "The Grey Goo Scenario",
-                "trackid": "4joxPkKBTqHnYPkNakSD6c"
-            },
-            "03": {
-                "artist": "Caldera",
-                "ratio": 6,
-                "title": "Leafs",
-                "trackid": "3WSx2tC3a4Fqvfx3ZVkivG"
-            },
-            "04": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "05": {
-                "artist": "Hassan Abou Alam",
-                "ratio": 6,
-                "title": "Mawkif",
-                "trackid": "2btMHeQYp73dJK4XAeIf4u"
-            },
-            "06": {
-                "artist": "EXCPT",
-                "ratio": 6,
-                "title": "Nine Ball",
-                "trackid": "1gC2yA38Y43QjhqBelwhxE"
-            },
-            "07": {
-                "artist": "Notte Infinita",
-                "ratio": 6,
-                "title": "Slippery Tuff",
-                "trackid": "1YCEIOBDLzd4ulWAY17JNe"
-            },
-            "08": {
-                "artist": "Konduku",
-                "ratio": 6,
-                "title": "Ayva",
-                "trackid": "5oGQTG4pRlnPyQgfIcIRrM"
-            },
-            "09": {
-                "artist": "Nikki Nair",
-                "ratio": 6,
-                "title": "I Can't Stop",
-                "trackid": "0eP8WDjCWSQns1OFkQMLNz"
-            },
-            "10": {
-                "artist": "An Avrin",
-                "ratio": 6,
-                "title": "Slalom",
-                "trackid": "15EojaxtwJgLP3qZgvVsuJ"
-            },
-            "11": {
-                "artist": "Will Hofbauer",
-                "ratio": 6,
-                "title": "Where Did All The Hay Go?",
-                "trackid": "5Fn3WyaZrdyTUhwZPd8lz6"
-            },
-            "12": {
-                "artist": "Tom VR",
-                "ratio": 6,
-                "title": "Petrichor",
-                "trackid": "5VUJ4DR9KSNVvVRKiig2y1"
-            },
-            "13": {
-                "artist": "Knopha",
-                "ratio": 6,
-                "title": "Off-Peak Season Tourists",
-                "trackid": "1ygZQ4BLRdOekMvGWR8VPh"
-            },
-            "14": {
-                "artist": "Kams",
-                "ratio": 6,
-                "title": "No Lynn",
-                "trackid": "3foiqt58BfZLsMDOrzVhuC"
-            },
-            "15": {
-                "artist": "Fiesta Soundsystem",
-                "ratio": 6,
-                "title": "Acid Tool",
-                "trackid": "67jFDh2SPvLUqPqo7hWr6z"
-            },
-            "16": {
-                "artist": "Teon",
-                "ratio": 2,
-                "title": "Ruff",
-                "trackid": "6iLMVLqf8ID9tOKGSxk0Pd"
-            },
-            "17": {
-                "artist": "Syz",
-                "ratio": 6,
-                "title": "Circulate",
-                "trackid": "6Tred6ASJY94GMMOYw8suI"
-            },
-            "18": {
-                "artist": "Cartin",
-                "ratio": 6,
-                "title": "Lost My Watch Again",
-                "trackid": "7E0o69nQqljQUKrddNpQ1H"
-            },
-            "19": {
-                "artist": "Lowplay",
-                "ratio": 6,
-                "title": "Pulser",
-                "trackid": "0juMS3C0QxaQtrMo3QSysz"
-            }
+    "salamanda-24th-february-2022": {
+        "00": {
+            "artist": "General Magic",
+            "ratio": 6,
+            "title": "Take The Bus",
+            "trackid": "3aFtRlgJ1HhwakirEotu6A"
         },
-        "shadow-dance-w-salamanda-11th-august-2022": {
-            "00": {
-                "artist": "aspidistrafly",
-                "ratio": 6,
-                "title": "Silk and Satins",
-                "trackid": "5u26bnCdvp90Ltc9SRYTDN"
-            },
-            "01": {
-                "artist": "Insólito UniVerso",
-                "ratio": 6,
-                "title": "Jota - Awkward Corners 45 Edit",
-                "trackid": "6a1qszDe8nVg1YkUFABs3w"
-            },
-            "02": {
-                "artist": "Parris",
-                "ratio": 6,
-                "title": "springtime flows in three ways",
-                "trackid": "6Rg8UH2Ua7c4m7G6EMQndw"
-            },
-            "03": {
-                "artist": "Kode9",
-                "ratio": 6,
-                "title": "Cross The Gap",
-                "trackid": "29GCreZWy5AeHxD90UFK5m"
-            },
-            "04": {
-                "artist": "Vina Konda",
-                "ratio": 6,
-                "title": "Talaf Zoubaka",
-                "trackid": "4zAwWR59HbszIQXcdvaNaW"
-            },
-            "05": {
-                "artist": "Simkin",
-                "ratio": 6,
-                "title": "Entity",
-                "trackid": "5mQTXdGwDp6USig9vgCtm0"
-            },
-            "06": {
-                "artist": "pq",
-                "ratio": 6,
-                "title": "sidescroller",
-                "trackid": "3uXXkX1NPpnztBIahe4lk9"
-            },
-            "07": {
-                "artist": "Dayzero",
-                "ratio": 6,
-                "title": "Viper",
-                "trackid": "7nrWFHdhGvdjqrr0ECNX6Q"
-            },
-            "08": {
-                "artist": "Tribeleader",
-                "ratio": 4,
-                "title": "Alien Drop",
-                "trackid": "3KgxE30vcvYoVHgj2DfeAJ"
-            },
-            "09": {
-                "artist": "Angelos",
-                "ratio": 4,
-                "title": "Surrender",
-                "trackid": "1o5ZPbk5NxzAODTs698XTz"
-            },
-            "10": {
-                "artist": "Sound Virus",
-                "ratio": 6,
-                "title": "Continuum",
-                "trackid": "6fc3Li1haXKdSCVotiacRe"
-            },
-            "11": {
-                "artist": "Dayzero",
-                "ratio": 6,
-                "title": "Viper",
-                "trackid": "7nrWFHdhGvdjqrr0ECNX6Q"
-            },
-            "12": {
-                "artist": "DJ Failure",
-                "ratio": 6,
-                "title": "Want 2",
-                "trackid": "6cZSWomjBPIIKFJpTPSQFI"
-            },
-            "13": {
-                "artist": "Ronan",
-                "ratio": 6,
-                "title": "Morning Glory",
-                "trackid": "1RmgbDDwXCdhB67Y70DflN"
-            },
-            "14": {
-                "artist": "Mina",
-                "ratio": 5,
-                "title": "One Leg",
-                "trackid": "3p31DNfllUknjtp9uREn3x"
-            },
-            "15": {
-                "artist": "Kaval",
-                "ratio": 6,
-                "title": "Ifrita",
-                "trackid": "59VwA2OsjMaQTta6o7lsVs"
-            },
-            "16": {
-                "artist": "INVT",
-                "ratio": 6,
-                "title": "KOMODO",
-                "trackid": "56M3x40s1W5XrxukuIPZ89"
-            },
-            "17": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "18": {
-                "artist": "2ChaseB",
-                "ratio": 6,
-                "title": "Where Is The Rave",
-                "trackid": "2miSBvCMUZavRVWFAIDDBJ"
-            },
-            "19": {
-                "artist": "Amnesia Scanner",
-                "ratio": 6,
-                "title": "Lexachast IX",
-                "trackid": "7DLiU05FxR57u8XBNuCbBK"
-            },
-            "20": {
-                "artist": "Deena Abdelwahed",
-                "ratio": 6,
-                "title": "Insaniyti",
-                "trackid": "7ET3HybpV0IJmNdHlkcHet"
-            }
+        "01": {
+            "artist": "dweebonthebeat",
+            "ratio": 6,
+            "title": "Púchica",
+            "trackid": "3jrLPHKxe4XjuSURn6o8vv"
         },
-        "shadow-dance-w-salamanda-16th-june-2022": {
-            "00": {
-                "artist": "Lucrecia Dalt",
-                "ratio": 6,
-                "title": "Di",
-                "trackid": "4RTgTxlHM3caBrpfm6JWV9"
-            },
-            "01": {
-                "artist": "Roméo Poirier",
-                "ratio": 6,
-                "title": "Hotel Nota",
-                "trackid": "0aBoMhb7VlK0n4xCTDSzFt"
-            },
-            "02": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "03": {
-                "artist": "BEA1991",
-                "ratio": 6,
-                "title": "Modern Comforts",
-                "trackid": "7nwvbb8no4j2K7nlYiEsGl"
-            },
-            "04": {
-                "artist": "Fantastic Man",
-                "ratio": 6,
-                "title": "Body Hurt - Methane Bass",
-                "trackid": "3xdWqnA9b2TEnDWIL5BXSv"
-            },
-            "05": {
-                "artist": "Roza Terenzi",
-                "ratio": 6,
-                "title": "Spiral",
-                "trackid": "0b3hNKpoPrWBFZ9WKo7SyP"
-            },
-            "06": {
-                "artist": "PZ Specialist",
-                "ratio": 3,
-                "title": "Found Drama",
-                "trackid": "5hn1nEnM28HJKbQXLeJe4q"
-            },
-            "07": {
-                "artist": "Two Shell",
-                "ratio": 6,
-                "title": "Blobject",
-                "trackid": "2fo83TJRtbirzVwANgZvTo"
-            },
-            "08": {
-                "artist": "Salamanda",
-                "ratio": 6,
-                "title": "Hard Luck Story",
-                "trackid": "10xSbuKDUbR4mmFUzgHoox"
-            },
-            "09": {
-                "artist": "Yetsuby",
-                "ratio": 2,
-                "title": "136",
-                "trackid": "3bQPLqFXe7QXpXMWH3XE7F"
-            },
-            "10": {
-                "artist": "Bitter Babe",
-                "ratio": 6,
-                "title": "Delirio",
-                "trackid": "6s3dcu8YI2WXvNIbxNvhsI"
-            },
-            "11": {
-                "artist": "Hermetica",
-                "ratio": 2,
-                "title": "Atravesando Todo Limite - En Vivo",
-                "trackid": "1wPC6iQkDUTXpaxAk28m3I"
-            },
-            "12": {
-                "artist": "BILL",
-                "ratio": 4,
-                "title": "LAZY FLOW",
-                "trackid": "11T32OQNPU1thVx49diAqt"
-            },
-            "13": {
-                "artist": "Hania Rani",
-                "ratio": 4,
-                "title": "Rurka",
-                "trackid": "7h8plcW3CsOlHuPXr02bOJ"
-            },
-            "14": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "15": {
-                "artist": "Wordcolour",
-                "ratio": 6,
-                "title": "Bluster",
-                "trackid": "5qntf00Ci6SDL7GVScNiyG"
-            },
-            "16": {
-                "artist": "Camy",
-                "ratio": 4,
-                "title": "Conexión",
-                "trackid": "0CEAqQzkM0Jm7XaBkftGcY"
-            },
-            "17": {
-                "artist": "Toma Kami",
-                "ratio": 6,
-                "title": "Amapicante",
-                "trackid": "6eJg3oA9jf0m2eBmoEZX0t"
-            },
-            "18": {
-                "artist": "Fibre Optixxx",
-                "ratio": 6,
-                "title": "Brain Fuzz",
-                "trackid": "4B32RpCQ38gY1f7bZcV8t4"
-            },
-            "19": {
-                "artist": "Keplrr",
-                "ratio": 6,
-                "title": "Full Contact",
-                "trackid": "3AE6jCLDjIjEL9aWXaPVjC"
-            },
-            "20": {
-                "artist": "N3Xnvme",
-                "ratio": 3,
-                "title": "Rise Up",
-                "trackid": "1zArlryaCqgNd08HKzq2NS"
-            },
-            "21": {
-                "artist": "Sam Link",
-                "ratio": 6,
-                "title": "Glass Cat",
-                "trackid": "6DbSaRg0iDl6FhuDaB7QxH"
-            },
-            "22": {
-                "artist": "Ghostwhip",
-                "ratio": 5,
-                "title": "Lie Sum Mo",
-                "trackid": "6AtbUYFfyyOGdZIqE8Tv7h"
-            }
+        "02": {
+            "artist": "Datassette",
+            "ratio": 6,
+            "title": "The Grey Goo Scenario",
+            "trackid": "4joxPkKBTqHnYPkNakSD6c"
         },
-        "shadow-dance-w-salamanda-21st-april-2022": {
-            "00": {
-                "artist": "More Eaze",
-                "ratio": 6,
-                "title": "repurposed fumes",
-                "trackid": "10sJUoEXKIthgtm6qxXhLL"
-            },
-            "01": {
-                "artist": "Shakalak",
-                "ratio": 3,
-                "title": "Chalice",
-                "trackid": "3LdgM2PjLMlxEn6Kq5E2fB"
-            },
-            "02": {
-                "artist": "Howie Lee",
-                "ratio": 6,
-                "title": "Enter the Tigerwoods",
-                "trackid": "7CYeAbYjmY0fouThH0ZUq5"
-            },
-            "03": {
-                "artist": "Dadras",
-                "ratio": 6,
-                "title": "Labyrinth",
-                "trackid": "59fm6m4xBCsOuYp5Ms3eX4"
-            },
-            "04": {
-                "artist": "Kincaid",
-                "ratio": 6,
-                "title": "Cairn",
-                "trackid": "04xLM1LrZP4SakK5CEgE4I"
-            },
-            "05": {
-                "artist": "Chill Beets",
-                "ratio": 4,
-                "title": "Surge Protector",
-                "trackid": "7H7QJoVokl1ASu8xVHY4fr"
-            },
-            "06": {
-                "artist": "Pop Style",
-                "ratio": 3,
-                "title": "Dancehall",
-                "trackid": "2sCG5Iwv9GdYNViAs5b7Gy"
-            },
-            "07": {
-                "artist": "Galtier",
-                "ratio": 6,
-                "title": "XX-101 (Process)",
-                "trackid": "5fyyzFad6z3Qq3pHZMkgfz"
-            },
-            "08": {
-                "artist": "Huerco S.",
-                "ratio": 6,
-                "title": "Plonk III",
-                "trackid": "3kilgBTpr97Ef1v3x6rTeJ"
-            },
-            "09": {
-                "artist": "Luis",
-                "ratio": 6,
-                "title": "Frutto",
-                "trackid": "7cko5S9xdVxAIY8QoKEiRj"
-            },
-            "10": {
-                "artist": "Enayet",
-                "ratio": 6,
-                "title": "Khali",
-                "trackid": "4NE3Zf1u0XtA6nFXY3B4Ud"
-            },
-            "11": {
-                "artist": "Meat Beat Manifesto",
-                "ratio": 6,
-                "title": "010130",
-                "trackid": "7b6j3WZCeGnPx9DpoInUeZ"
-            },
-            "12": {
-                "artist": "DJ JM",
-                "ratio": 6,
-                "title": "Owned",
-                "trackid": "3Gn1qHRMA4nHxz8MCYdV8U"
-            },
-            "13": {
-                "artist": "Interpol",
-                "ratio": 3,
-                "title": "The Heinrich Maneuver",
-                "trackid": "4fvm91N3APgHw0V2Vm0k4Y"
-            },
-            "14": {
-                "artist": "Design Default",
-                "ratio": 4,
-                "title": "Univers iles",
-                "trackid": "1FdQPzqRvhEtMzAERdOVCy"
-            },
-            "15": {
-                "artist": "Nicola Cruz",
-                "ratio": 6,
-                "title": "Aima - Breaks Mix",
-                "trackid": "2a6Jdtvl35ShFK1ojiO27N"
-            },
-            "16": {
-                "artist": "Kevin Murf",
-                "ratio": 6,
-                "title": "Bagombo",
-                "trackid": "2QiznIfLqKfI2cASBVWkRi"
-            },
-            "17": {
-                "artist": "Mafou",
-                "ratio": 6,
-                "title": "Khezu",
-                "trackid": "2kE5tcYlKexzELN7996JpF"
-            },
-            "18": {
-                "artist": "Geo Rip",
-                "ratio": 6,
-                "title": "Underwater Bodycam",
-                "trackid": "0Ode6NaXVyTdaRwoMyLC8a"
-            },
-            "19": {
-                "artist": "Octoptic",
-                "ratio": 6,
-                "title": "Omni",
-                "trackid": "3XTUD9ut7IrHW2LRnhjXLo"
-            },
-            "20": {
-                "artist": "Private Agenda",
-                "ratio": 6,
-                "title": "Malanai Ascending - Seahawks Remix",
-                "trackid": "284c09XJOw9p4Q7z2nS2ZV"
-            },
-            "21": {
-                "artist": "Tristan Arp",
-                "ratio": 6,
-                "title": "Unfurling",
-                "trackid": "7K7fNAqSWYa4QUVsK8QqmS"
-            }
+        "03": {
+            "artist": "Caldera",
+            "ratio": 6,
+            "title": "Leafs",
+            "trackid": "3WSx2tC3a4Fqvfx3ZVkivG"
+        },
+        "04": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "05": {
+            "artist": "Hassan Abou Alam",
+            "ratio": 6,
+            "title": "Mawkif",
+            "trackid": "2btMHeQYp73dJK4XAeIf4u"
+        },
+        "06": {
+            "artist": "EXCPT",
+            "ratio": 6,
+            "title": "Nine Ball",
+            "trackid": "1gC2yA38Y43QjhqBelwhxE"
+        },
+        "07": {
+            "artist": "Notte Infinita",
+            "ratio": 6,
+            "title": "Slippery Tuff",
+            "trackid": "1YCEIOBDLzd4ulWAY17JNe"
+        },
+        "08": {
+            "artist": "Konduku",
+            "ratio": 6,
+            "title": "Ayva",
+            "trackid": "5oGQTG4pRlnPyQgfIcIRrM"
+        },
+        "09": {
+            "artist": "Nikki Nair",
+            "ratio": 6,
+            "title": "I Can't Stop",
+            "trackid": "0eP8WDjCWSQns1OFkQMLNz"
+        },
+        "10": {
+            "artist": "An Avrin",
+            "ratio": 6,
+            "title": "Slalom",
+            "trackid": "15EojaxtwJgLP3qZgvVsuJ"
+        },
+        "11": {
+            "artist": "Will Hofbauer",
+            "ratio": 6,
+            "title": "Where Did All The Hay Go?",
+            "trackid": "5Fn3WyaZrdyTUhwZPd8lz6"
+        },
+        "12": {
+            "artist": "Tom VR",
+            "ratio": 6,
+            "title": "Petrichor",
+            "trackid": "5VUJ4DR9KSNVvVRKiig2y1"
+        },
+        "13": {
+            "artist": "Knopha",
+            "ratio": 6,
+            "title": "Off-Peak Season Tourists",
+            "trackid": "1ygZQ4BLRdOekMvGWR8VPh"
+        },
+        "14": {
+            "artist": "Kams",
+            "ratio": 6,
+            "title": "No Lynn",
+            "trackid": "3foiqt58BfZLsMDOrzVhuC"
+        },
+        "15": {
+            "artist": "Fiesta Soundsystem",
+            "ratio": 6,
+            "title": "Acid Tool",
+            "trackid": "67jFDh2SPvLUqPqo7hWr6z"
+        },
+        "16": {
+            "artist": "Teon",
+            "ratio": 2,
+            "title": "Ruff",
+            "trackid": "6iLMVLqf8ID9tOKGSxk0Pd"
+        },
+        "17": {
+            "artist": "Syz",
+            "ratio": 6,
+            "title": "Circulate",
+            "trackid": "6Tred6ASJY94GMMOYw8suI"
+        },
+        "18": {
+            "artist": "Cartin",
+            "ratio": 6,
+            "title": "Lost My Watch Again",
+            "trackid": "7E0o69nQqljQUKrddNpQ1H"
+        },
+        "19": {
+            "artist": "Lowplay",
+            "ratio": 6,
+            "title": "Pulser",
+            "trackid": "0juMS3C0QxaQtrMo3QSysz"
         }
     },
-    "search": {
-        "salamanda-24th-february-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "General Magic",
-                        "title": "Take The Bus",
-                        "uri": "3aFtRlgJ1HhwakirEotu6A"
-                    },
-                    {
-                        "artist": "General Magic",
-                        "title": "Take the Bus - 2021 Remaster",
-                        "uri": "7jyOAlXD3kIbmMJSIPhP6q"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "General Magic",
-                        "title": "Take The Bus",
-                        "uri": "3aFtRlgJ1HhwakirEotu6A"
-                    },
-                    {
-                        "artist": "General Magic",
-                        "title": "Take the Bus - 2021 Remaster",
-                        "uri": "7jyOAlXD3kIbmMJSIPhP6q"
-                    },
-                    {
-                        "artist": "Benji Merrison",
-                        "title": "Ancient Technology",
-                        "uri": "3dIuP1WixxbVfmoyTIN64I"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "dweebonthebeat",
-                        "title": "Púchica",
-                        "uri": "3jrLPHKxe4XjuSURn6o8vv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Owidju",
-                        "title": "Pisica - Instrumental",
-                        "uri": "4ba7qB8kEz8l2ZdPB5DkSv"
-                    },
-                    {
-                        "artist": "Cooli Ooli",
-                        "title": "Dweeb",
-                        "uri": "1BWHX0uauz4OpOeODIqSjg"
-                    },
-                    {
-                        "artist": "Bwchadanas",
-                        "title": "Dewin",
-                        "uri": "0q95UHdriPO9gPPpJlhF9J"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Datassette",
-                        "title": "The Grey Goo Scenario",
-                        "uri": "4joxPkKBTqHnYPkNakSD6c"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Datassette",
-                        "title": "The Grey Goo Scenario",
-                        "uri": "4joxPkKBTqHnYPkNakSD6c"
-                    },
-                    {
-                        "artist": "psycho'n'odds",
-                        "title": "Grey Goose",
-                        "uri": "5yB2aZZNrIkZAAYzFOuuuo"
-                    },
-                    {
-                        "artist": "Jazon Dion Fletcher",
-                        "title": "Grey Goo - Nekro Edition Remastered",
-                        "uri": "5RcWCcRcPgRxlrEoynPMOn"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Caldera",
-                        "title": "Leafs",
-                        "uri": "3WSx2tC3a4Fqvfx3ZVkivG"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Caldera",
-                        "title": "Leafs",
-                        "uri": "3WSx2tC3a4Fqvfx3ZVkivG"
-                    },
-                    {
-                        "artist": "Caldera",
-                        "title": "Red RC",
-                        "uri": "6SOgSYiJ7kxXmQCFSxpu4F"
-                    },
-                    {
-                        "artist": "Caldera",
-                        "title": "Infinite Beginnings",
-                        "uri": "41Hg6MudZxv4oUS8vDzbEc"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": ""
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Hassan Abou Alam",
-                        "title": "Mawkif",
-                        "uri": "2btMHeQYp73dJK4XAeIf4u"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Hassan Abou Alam",
-                        "title": "Mawkif",
-                        "uri": "2btMHeQYp73dJK4XAeIf4u"
-                    },
-                    {
-                        "artist": "Hassan Abou Alam",
-                        "title": "Hanshoof",
-                        "uri": "3qPRgYzH2DK0twKyNjHAUD"
-                    },
-                    {
-                        "artist": "Hassan Abou Alam",
-                        "title": "Kesibt",
-                        "uri": "1MUQz4HYdDjdOjvJ8SmXbB"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "EXCPT",
-                        "title": "Nine Ball",
-                        "uri": "1gC2yA38Y43QjhqBelwhxE"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "諸星和己",
-                        "title": "Nine Ball",
-                        "uri": "3my3hjEfsgYcyiJiI56lC8"
-                    },
-                    {
-                        "artist": "Daniel Pemberton",
-                        "title": "Nine-Ball",
-                        "uri": "1zhSQtUVlscp787azVTMYN"
-                    },
-                    {
-                        "artist": "Nine Below Zero",
-                        "title": "Three Times Enough",
-                        "uri": "24L1hwbbqaCHRG9OIlByfA"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Notte Infinita",
-                        "title": "Slippery Tuff",
-                        "uri": "1YCEIOBDLzd4ulWAY17JNe"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Andrea D'Amato",
-                        "title": "Notte Infinita - Original mix",
-                        "uri": "3M3IHuXUFogIM3SjcIbfsc"
-                    },
-                    {
-                        "artist": "Fran&co",
-                        "title": "Notte Infinita",
-                        "uri": "4FWTzk2pkhU76QFytISkmf"
-                    },
-                    {
-                        "artist": "Tony Demana",
-                        "title": "Notte infinita",
-                        "uri": "7iL7T2LXEA8WxB50E6NTwI"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Konduku",
-                        "title": "Ayva",
-                        "uri": "5oGQTG4pRlnPyQgfIcIRrM"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Konduku",
-                        "title": "Ayva",
-                        "uri": "5oGQTG4pRlnPyQgfIcIRrM"
-                    },
-                    {
-                        "artist": "MARY",
-                        "title": "KokodeIkiteru",
-                        "uri": "0UmhrrNEJfAihJnmJqCGxc"
-                    },
-                    {
-                        "artist": "Jamu Naraan",
-                        "title": "Kundakunda",
-                        "uri": "3TGFeoWExq1QASk95ig6vP"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Nikki Nair",
-                        "title": "I Can't Stop",
-                        "uri": "0eP8WDjCWSQns1OFkQMLNz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nikki Nair",
-                        "title": "I Can't Stop",
-                        "uri": "0eP8WDjCWSQns1OFkQMLNz"
-                    },
-                    {
-                        "artist": "Nikki Nair",
-                        "title": "Startrack",
-                        "uri": "7gMwTtOLh618Q8lzuYtkKo"
-                    },
-                    {
-                        "artist": "Nikki Nair",
-                        "title": "The Analyst",
-                        "uri": "1GTSl9xToMP5UhC9SnLhsd"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "An Avrin",
-                        "title": "Slalom",
-                        "uri": "15EojaxtwJgLP3qZgvVsuJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "An Avrin",
-                        "title": "Slalom",
-                        "uri": "15EojaxtwJgLP3qZgvVsuJ"
-                    },
-                    {
-                        "artist": "Sayag Jazz Machine",
-                        "title": "Slalom",
-                        "uri": "7zMcOg2W7YggaHD8oikJbH"
-                    },
-                    {
-                        "artist": "Simon Slomma",
-                        "title": "An eben diesen Abenden",
-                        "uri": "3a4xYHSI8Odo6G2QCpJ9FB"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Will Hofbauer",
-                        "title": "Where Did All The Hay Go?",
-                        "uri": "5Fn3WyaZrdyTUhwZPd8lz6"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Will Hofbauer",
-                        "title": "Where Did All The Hay Go?",
-                        "uri": "5Fn3WyaZrdyTUhwZPd8lz6"
-                    },
-                    {
-                        "artist": "Will Hofbauer",
-                        "title": "Count Me In",
-                        "uri": "5zgFc3vxUxCpQIztvOphtK"
-                    },
-                    {
-                        "artist": "Kyau & Albert",
-                        "title": "Where Did All the Years Go?",
-                        "uri": "0IiDDYDEMqfv8k3p0XsMFY"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Tom VR",
-                        "title": "Petrichor",
-                        "uri": "5VUJ4DR9KSNVvVRKiig2y1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tom VR",
-                        "title": "Petrichor",
-                        "uri": "5VUJ4DR9KSNVvVRKiig2y1"
-                    },
-                    {
-                        "artist": "Cecelya",
-                        "title": "Petrichor",
-                        "uri": "22KKy6ftT0i4nyGNCbwc1B"
-                    },
-                    {
-                        "artist": "Maelstrom",
-                        "title": "Petrichor",
-                        "uri": "5x9lHf7tOGELFHRtMhVzrN"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Knopha",
-                        "title": "Off-Peak Season Tourists",
-                        "uri": "1ygZQ4BLRdOekMvGWR8VPh"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Reynolds",
-                        "title": "Off-Peak Day Return",
-                        "uri": "0FJi6NY0oFIZCE0PlXxZ3i"
-                    },
-                    {
-                        "artist": "NPHS",
-                        "title": "Off-Peak Hours",
-                        "uri": "3W9R54xYTT5bLgE8vGdzVc"
-                    },
-                    {
-                        "artist": "Formally Unknown",
-                        "title": "Off Peak - Mella Dee Remix",
-                        "uri": "3EOUsrUk3o0Knod9P3tQOu"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Kams",
-                        "title": "No Lynn",
-                        "uri": "3foiqt58BfZLsMDOrzVhuC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kamas Skuh",
-                        "title": "Freestyle #TPJ 2",
-                        "uri": "0s3C4DJOZNabDL7FW9tlCo"
-                    },
-                    {
-                        "artist": "Kams",
-                        "title": "OTPLH - Freestyle",
-                        "uri": "1Un006qFrILWd5tUENjqbz"
-                    },
-                    {
-                        "artist": "Kamas Skuh",
-                        "title": "Freestyle SPONGE",
-                        "uri": "4ILt699DAoa492VYzVpTfu"
-                    }
-                ]
-            },
-            "15": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fiesta Soundsystem",
-                        "title": "Acid Tool",
-                        "uri": "67jFDh2SPvLUqPqo7hWr6z"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Watermät",
-                        "title": "Ruff Like This",
-                        "uri": "72g8jjzGvHvmB0wASh4mLW"
-                    },
-                    {
-                        "artist": "Teon",
-                        "title": "Ruff",
-                        "uri": "6iLMVLqf8ID9tOKGSxk0Pd"
-                    },
-                    {
-                        "artist": "Ruff",
-                        "title": "Raccroche",
-                        "uri": "7fxWGj3OlwfIcpo3SxXYOy"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Syz",
-                        "title": "Circulate",
-                        "uri": "6Tred6ASJY94GMMOYw8suI"
-                    },
-                    {
-                        "artist": "Syz",
-                        "title": "Circulate",
-                        "uri": "1Yd7Puw9lkuVQTj3opLXlu"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Syz",
-                        "title": "Circulate",
-                        "uri": "1Yd7Puw9lkuVQTj3opLXlu"
-                    },
-                    {
-                        "artist": "Syz",
-                        "title": "Circulate",
-                        "uri": "6Tred6ASJY94GMMOYw8suI"
-                    },
-                    {
-                        "artist": "Madeye",
-                        "title": "Circulate",
-                        "uri": "0n3W8oIhvHbaV1xHEPB5Wf"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "Cartin",
-                        "title": "Lost My Watch Again",
-                        "uri": "7E0o69nQqljQUKrddNpQ1H"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Cartin",
-                        "title": "Lost My Watch Again",
-                        "uri": "7E0o69nQqljQUKrddNpQ1H"
-                    },
-                    {
-                        "artist": "Mutilator",
-                        "title": "Lost My Way",
-                        "uri": "5EfQpNOWgn4a04I97dg1Qy"
-                    },
-                    {
-                        "artist": "Egoless",
-                        "title": "Lost My Way",
-                        "uri": "24u81yTYNJcyFD12fqMAsk"
-                    }
-                ]
-            },
-            "19": {
-                "s0": [
-                    {
-                        "artist": "Lowplay",
-                        "title": "Pulser",
-                        "uri": "0juMS3C0QxaQtrMo3QSysz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Hypercomet",
-                        "title": "Pulser",
-                        "uri": "0OqFCGJ44VXrP6U2jNbvCv"
-                    },
-                    {
-                        "artist": "Lowplay",
-                        "title": "Pulser",
-                        "uri": "0juMS3C0QxaQtrMo3QSysz"
-                    },
-                    {
-                        "artist": "Waveland",
-                        "title": "Pulse",
-                        "uri": "2lSaXKmhoGb8p65pO7inlo"
-                    }
-                ]
-            }
+    "shadow-dance-w-salamanda-11th-august-2022": {
+        "00": {
+            "artist": "aspidistrafly",
+            "ratio": 6,
+            "title": "Silk and Satins",
+            "trackid": "5u26bnCdvp90Ltc9SRYTDN"
         },
-        "shadow-dance-w-salamanda-11th-august-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "aspidistrafly",
-                        "title": "Silk and Satins",
-                        "uri": "5u26bnCdvp90Ltc9SRYTDN"
-                    },
-                    {
-                        "artist": "Spyro Gyra",
-                        "title": "Silk & Satin",
-                        "uri": "6uf3Y0Yct42DdRKOYECNze"
-                    },
-                    {
-                        "artist": "Stand Atlantic",
-                        "title": "Silk & Satin",
-                        "uri": "3XUjpEhx482s7lX9kjeVkc"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Insólito UniVerso",
-                        "title": "Jota - Awkward Corners 45 Edit",
-                        "uri": "6a1qszDe8nVg1YkUFABs3w"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Insólito UniVerso",
-                        "title": "Jota - Awkward Corners 45 Edit",
-                        "uri": "6a1qszDe8nVg1YkUFABs3w"
-                    },
-                    {
-                        "artist": "Insólito UniVerso",
-                        "title": "Jota - Awkward Corners Remix",
-                        "uri": "7dp1kPPwdsOrDvDaFvbXFo"
-                    },
-                    {
-                        "artist": "Insólito UniVerso",
-                        "title": "Jota",
-                        "uri": "79anNg6hMAhr7pW0NJuC6C"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Parris",
-                        "title": "springtime flows in three ways",
-                        "uri": "6Rg8UH2Ua7c4m7G6EMQndw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Parris",
-                        "title": "springtime flows in three ways",
-                        "uri": "6Rg8UH2Ua7c4m7G6EMQndw"
-                    },
-                    {
-                        "artist": "Parris",
-                        "title": "Da kids",
-                        "uri": "6O6AvqbKl7z4edr6J4nEQA"
-                    },
-                    {
-                        "artist": "Piers Faccini",
-                        "title": "A Storm Is Going to Come",
-                        "uri": "158KoOAcKGJVENdr5wkjm4"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Kode9",
-                        "title": "Cross The Gap",
-                        "uri": "29GCreZWy5AeHxD90UFK5m"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kode9",
-                        "title": "Cross The Gap",
-                        "uri": "29GCreZWy5AeHxD90UFK5m"
-                    },
-                    {
-                        "artist": "Kode9",
-                        "title": "9 Samurai",
-                        "uri": "1vCxcujPNqejejW5xz0NrE"
-                    },
-                    {
-                        "artist": "Kode9",
-                        "title": "The Break Up",
-                        "uri": "15DMuC0sEIrE0Y9sryMYtq"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Vina Konda",
-                        "title": "Talaf Zoubaka",
-                        "uri": "4zAwWR59HbszIQXcdvaNaW"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Madalitso Band",
-                        "title": "Vina Vina Malawi",
-                        "uri": "5jkTYJegIYfMto0RezX02W"
-                    },
-                    {
-                        "artist": "Zahouania",
-                        "title": "Taleb",
-                        "uri": "0pRdQDylyQtIzSlcXZPhaA"
-                    },
-                    {
-                        "artist": "Didine Canon 16",
-                        "title": "Talef Rai",
-                        "uri": "3VWjkX6TY7MWf6cbeZMckG"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Simkin",
-                        "title": "Entity",
-                        "uri": "5mQTXdGwDp6USig9vgCtm0"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Simkin",
-                        "title": "Entity",
-                        "uri": "5mQTXdGwDp6USig9vgCtm0"
-                    },
-                    {
-                        "artist": "Simkin",
-                        "title": "Sinks In",
-                        "uri": "2SXYq0LfRwvVw2vM7IXO5A"
-                    },
-                    {
-                        "artist": "Tora",
-                        "title": "Entity",
-                        "uri": "1mF0pKdfycgvJ6LafqnGD2"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "pq",
-                        "title": "sidescroller",
-                        "uri": "3uXXkX1NPpnztBIahe4lk9"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "pq",
-                        "title": "sidescroller",
-                        "uri": "3uXXkX1NPpnztBIahe4lk9"
-                    },
-                    {
-                        "artist": "Jacky Vincent",
-                        "title": "Sidescroller",
-                        "uri": "5IY4KqU2BDWwA8ToXkoVkl"
-                    },
-                    {
-                        "artist": "10.4 Rog",
-                        "title": "Side-Scroll Demo Disc",
-                        "uri": "3QjirMg04ywA51zE8d1kvi"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Dayzero",
-                        "title": "Viper",
-                        "uri": "7nrWFHdhGvdjqrr0ECNX6Q"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Dayzero",
-                        "title": "Viper",
-                        "uri": "7nrWFHdhGvdjqrr0ECNX6Q"
-                    },
-                    {
-                        "artist": "205.Ghee",
-                        "title": "Viper",
-                        "uri": "4cImfxUned75cyQuOWIuVP"
-                    },
-                    {
-                        "artist": "Dayzero",
-                        "title": "Stardust",
-                        "uri": "1JQAAHYcoeVsUDIhqa4FxV"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Tribeleader",
-                        "title": "Alien Drop",
-                        "uri": "3KgxE30vcvYoVHgj2DfeAJ"
-                    },
-                    {
-                        "artist": "Sirius Beat",
-                        "title": "Alien Empire (Super Alien Drill Type Beat)",
-                        "uri": "7pvUK7TZPCRKsLDUuXneX1"
-                    },
-                    {
-                        "artist": "Superstar Runner",
-                        "title": "Alien (DORMEE Remix)",
-                        "uri": "2fP0odLzyBLv9Mjrod4Vco"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Suicide",
-                        "title": "Surrender - 2022 - Remaster",
-                        "uri": "21DRFiBq9G12EAq9RoW6iw"
-                    },
-                    {
-                        "artist": "Dilloplein",
-                        "title": "Surrender",
-                        "uri": "4XjS33MjiZunxQCrcCGMi9"
-                    },
-                    {
-                        "artist": "Angelos",
-                        "title": "Surrender",
-                        "uri": "1o5ZPbk5NxzAODTs698XTz"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Sound Virus",
-                        "title": "Continuum",
-                        "uri": "6fc3Li1haXKdSCVotiacRe"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sound Virus",
-                        "title": "Continuum",
-                        "uri": "6fc3Li1haXKdSCVotiacRe"
-                    },
-                    {
-                        "artist": "Jaime Jacobs",
-                        "title": "Continuum",
-                        "uri": "47SCFkfGQMmdewkOywWxqC"
-                    },
-                    {
-                        "artist": "Sound Virus",
-                        "title": "Matte (#7 mix)",
-                        "uri": "3XXNlfP54VvpPJcnhlnRQr"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Dayzero",
-                        "title": "Viper",
-                        "uri": "7nrWFHdhGvdjqrr0ECNX6Q"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Dayzero",
-                        "title": "Viper",
-                        "uri": "7nrWFHdhGvdjqrr0ECNX6Q"
-                    },
-                    {
-                        "artist": "205.Ghee",
-                        "title": "Viper",
-                        "uri": "4cImfxUned75cyQuOWIuVP"
-                    },
-                    {
-                        "artist": "Dayzero",
-                        "title": "Stardust",
-                        "uri": "1JQAAHYcoeVsUDIhqa4FxV"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "DJ Failure",
-                        "title": "Want 2",
-                        "uri": "6cZSWomjBPIIKFJpTPSQFI"
-                    },
-                    {
-                        "artist": "DJ Failure",
-                        "title": "Want 2",
-                        "uri": "3hNmuPiWD6EyVJvqtL6oLB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "DJ Failure",
-                        "title": "Want 2",
-                        "uri": "6cZSWomjBPIIKFJpTPSQFI"
-                    },
-                    {
-                        "artist": "DJ Failure",
-                        "title": "Want 2",
-                        "uri": "3hNmuPiWD6EyVJvqtL6oLB"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ronan",
-                        "title": "Morning Glory",
-                        "uri": "1RmgbDDwXCdhB67Y70DflN"
-                    },
-                    {
-                        "artist": "Oasis",
-                        "title": "Morning Glory (Live at Knebworth, 11 August '96)",
-                        "uri": "0LIOjnuMG3C6qJPiwYjCYb"
-                    },
-                    {
-                        "artist": "Ron Dahlgreen",
-                        "title": "Morning Glory",
-                        "uri": "6b7IbDwrebRecI6ODzX6z4"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Mina",
-                        "title": "One Leg",
-                        "uri": "3p31DNfllUknjtp9uREn3x"
-                    },
-                    {
-                        "artist": "Mina",
-                        "title": "One Leg",
-                        "uri": "0EpnbG3Ych9c1KTCcO6Efi"
-                    },
-                    {
-                        "artist": "Mina",
-                        "title": "One Leg",
-                        "uri": "0DOtzvWR0atYXRw71RRiii"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Kaval",
-                        "title": "Ifrita",
-                        "uri": "59VwA2OsjMaQTta6o7lsVs"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kaval",
-                        "title": "Ifrita",
-                        "uri": "59VwA2OsjMaQTta6o7lsVs"
-                    },
-                    {
-                        "artist": "Kassav'",
-                        "title": "Kavalié o Dam",
-                        "uri": "0a5vl5Ef9OO2YJJOtkd6Fg"
-                    },
-                    {
-                        "artist": "Ensemble Trakia",
-                        "title": "Kaval Sviri - A Kaval Is Playing",
-                        "uri": "04qFAC848dJB4dO7RFfmnS"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "INVT",
-                        "title": "KOMODO",
-                        "uri": "56M3x40s1W5XrxukuIPZ89"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "INVT",
-                        "title": "KOMODO",
-                        "uri": "56M3x40s1W5XrxukuIPZ89"
-                    },
-                    {
-                        "artist": "H Magnum",
-                        "title": "Komodo",
-                        "uri": "1pAXdXxtUn7pJRa7FyFnG6"
-                    },
-                    {
-                        "artist": "INVT",
-                        "title": "P'ALANTE",
-                        "uri": "51QjOLfG8TZNAxJFNjMHvC"
-                    }
-                ]
-            },
-            "17": {
-                "s0": "",
-                "s1": ""
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "2ChaseB",
-                        "title": "Where Is The Rave",
-                        "uri": "2miSBvCMUZavRVWFAIDDBJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "2ChaseB",
-                        "title": "Where Is The Rave",
-                        "uri": "2miSBvCMUZavRVWFAIDDBJ"
-                    },
-                    {
-                        "artist": "2ChaseB",
-                        "title": "MOTA",
-                        "uri": "7ym8Lfis3EoTAywKH2rIWQ"
-                    }
-                ]
-            },
-            "19": {
-                "s0": [
-                    {
-                        "artist": "Amnesia Scanner",
-                        "title": "Lexachast IX",
-                        "uri": "7DLiU05FxR57u8XBNuCbBK"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Amnesia Scanner",
-                        "title": "Lexachast IV",
-                        "uri": "1INjtVF9hjnDYgdwm2h4zz"
-                    },
-                    {
-                        "artist": "Amnesia Scanner",
-                        "title": "Lexachast IX",
-                        "uri": "7DLiU05FxR57u8XBNuCbBK"
-                    },
-                    {
-                        "artist": "LXST CXNTURY",
-                        "title": "Amnesia",
-                        "uri": "6LhCQJQtieE7KUtvyofLFO"
-                    }
-                ]
-            },
-            "20": {
-                "s0": [
-                    {
-                        "artist": "Deena Abdelwahed",
-                        "title": "Insaniyti",
-                        "uri": "7ET3HybpV0IJmNdHlkcHet"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tinariwen",
-                        "title": "Arawan - Deena Abdelwahed Remix",
-                        "uri": "6by9HbiKTr4eI47iDYrsx4"
-                    },
-                    {
-                        "artist": "Deena Abdelwahed",
-                        "title": "Ababab",
-                        "uri": "39Y41fi83X7tPDXvOB9ASA"
-                    },
-                    {
-                        "artist": "Deena Abdelwahed",
-                        "title": "Tawa",
-                        "uri": "1MWRv3RY4BYG1BkNpMzDeu"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Insólito UniVerso",
+            "ratio": 6,
+            "title": "Jota - Awkward Corners 45 Edit",
+            "trackid": "6a1qszDe8nVg1YkUFABs3w"
         },
-        "shadow-dance-w-salamanda-16th-june-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Lucrecia Dalt",
-                        "title": "Dicen",
-                        "uri": "6Fp99MU2pE8RILQnqAL8iT"
-                    },
-                    {
-                        "artist": "Lucrecia Dalt",
-                        "title": "Disuelta",
-                        "uri": "5hVYVwbP1a5VPbclGeRcm3"
-                    },
-                    {
-                        "artist": "Lucrecia Dalt",
-                        "title": "Di",
-                        "uri": "4RTgTxlHM3caBrpfm6JWV9"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Lucrecia Dalt",
-                        "title": "Dicen",
-                        "uri": "6Fp99MU2pE8RILQnqAL8iT"
-                    },
-                    {
-                        "artist": "Lucrecia Dalt",
-                        "title": "Disuelta",
-                        "uri": "5hVYVwbP1a5VPbclGeRcm3"
-                    },
-                    {
-                        "artist": "Lucrecia Dalt",
-                        "title": "Atemporal",
-                        "uri": "40eoo3wMz09lX6kuEBoqeo"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Roméo Poirier",
-                        "title": "Hotel Nota",
-                        "uri": "0aBoMhb7VlK0n4xCTDSzFt"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Roméo Poirier",
-                        "title": "Hotel Nota",
-                        "uri": "0aBoMhb7VlK0n4xCTDSzFt"
-                    },
-                    {
-                        "artist": "Roméo Poirier",
-                        "title": "Thalassocratie",
-                        "uri": "6D5FTWiKSAayZOqZe2nkOd"
-                    },
-                    {
-                        "artist": "Roméo Poirier",
-                        "title": "Pénombre",
-                        "uri": "5ZS7Hz5ZF9rUNQMSrZ2rEY"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": ""
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "BEA1991",
-                        "title": "Modern Comforts",
-                        "uri": "7nwvbb8no4j2K7nlYiEsGl"
-                    },
-                    {
-                        "artist": "BEA1991",
-                        "title": "modern comforts",
-                        "uri": "6LMncwxodIa4BdqrZonLuX"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "BEA1991",
-                        "title": "Modern Comforts",
-                        "uri": "7nwvbb8no4j2K7nlYiEsGl"
-                    },
-                    {
-                        "artist": "BEA1991",
-                        "title": "modern comforts",
-                        "uri": "6LMncwxodIa4BdqrZonLuX"
-                    },
-                    {
-                        "artist": "Adventure Time",
-                        "title": "Modern Comforts",
-                        "uri": "010eqhUQ9X0U1HGEnGcmQL"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Fantastic Man",
-                        "title": "Body Hurt - Methane Bass",
-                        "uri": "3xdWqnA9b2TEnDWIL5BXSv"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Fantastic Man",
-                        "title": "Body Hurt - Methane Bass",
-                        "uri": "3xdWqnA9b2TEnDWIL5BXSv"
-                    },
-                    {
-                        "artist": "Fantastic Man",
-                        "title": "Body Hurt - Tension Mix",
-                        "uri": "1gfSZ7Vh6rXfpgpP1iSG4r"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Roza Terenzi",
-                        "title": "Spiral",
-                        "uri": "0b3hNKpoPrWBFZ9WKo7SyP"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Roza Terenzi",
-                        "title": "Spiral",
-                        "uri": "0b3hNKpoPrWBFZ9WKo7SyP"
-                    },
-                    {
-                        "artist": "Roza Terenzi",
-                        "title": "Cosmology",
-                        "uri": "1M2R7cAdnwWO08JinxumOU"
-                    },
-                    {
-                        "artist": "MYKI",
-                        "title": "Vertigo - Roza Terenzi Remix",
-                        "uri": "4zQz5S5SDXO9eVb6noHQuj"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Children Mindfulness Universe",
-                        "title": "Belly Breathing",
-                        "uri": "7y5zZePpl3ztTxK5uoUZm9"
-                    },
-                    {
-                        "artist": "PZ Specialist",
-                        "title": "Found Drama",
-                        "uri": "5hn1nEnM28HJKbQXLeJe4q"
-                    },
-                    {
-                        "artist": "Belly Dance Rhythms",
-                        "title": "Belly Dance Shimmy Medley",
-                        "uri": "7fathHGeue4Gv07hhaaKtd"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Two Shell",
-                        "title": "Blobject",
-                        "uri": "2fo83TJRtbirzVwANgZvTo"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Two Shell",
-                        "title": "Blobject",
-                        "uri": "2fo83TJRtbirzVwANgZvTo"
-                    },
-                    {
-                        "artist": "Two Shell",
-                        "title": "home",
-                        "uri": "0fAuuR5hoWZtTMpuqqxAGy"
-                    },
-                    {
-                        "artist": "Two Shell",
-                        "title": "Ghosts",
-                        "uri": "045EJUy4tNHrB3lgvpSdND"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Salamanda",
-                        "title": "Hard Luck Story",
-                        "uri": "10xSbuKDUbR4mmFUzgHoox"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Salamanda",
-                        "title": "Hard Luck Story",
-                        "uri": "10xSbuKDUbR4mmFUzgHoox"
-                    },
-                    {
-                        "artist": "Salamanda",
-                        "title": "Overdose",
-                        "uri": "4Jt2Ij5OlSmkcRY7EQ1oim"
-                    },
-                    {
-                        "artist": "Salamanda",
-                        "title": "Knowledge",
-                        "uri": "2LEqtjDn1k4ZI7xwgheNI7"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Yetsuby",
-                        "title": "Dophin Song - From the Depths of Lazers Dub",
-                        "uri": "72FBkvsayWBRhiC7dEAsNt"
-                    },
-                    {
-                        "artist": "Yetsuby",
-                        "title": "Sunrisemagic",
-                        "uri": "0YOC3wmtcQFFyVvCVUfgTd"
-                    },
-                    {
-                        "artist": "Yetsuby",
-                        "title": "136",
-                        "uri": "3bQPLqFXe7QXpXMWH3XE7F"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Huey Daze",
-                        "title": "Yotsuba",
-                        "uri": "3wPvUVnaUhdfc397xKCeVV"
-                    },
-                    {
-                        "artist": "Eight",
-                        "title": "Yotsuya-San Ni Yoroshiku",
-                        "uri": "0ZDpqpiAUsORMiQJxYoAPZ"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Bitter Babe",
-                        "title": "Delirio",
-                        "uri": "6s3dcu8YI2WXvNIbxNvhsI"
-                    },
-                    {
-                        "artist": "Bitter Babe",
-                        "title": "Delirio (DJ Python Remix)",
-                        "uri": "1NXfZIXpI5KDltYYuATfRc"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bitter Babe",
-                        "title": "Delirio",
-                        "uri": "6s3dcu8YI2WXvNIbxNvhsI"
-                    },
-                    {
-                        "artist": "Bitter Babe",
-                        "title": "Tranki",
-                        "uri": "0mAtoUpFgo6JHBH5KumKVY"
-                    },
-                    {
-                        "artist": "Bitter Babe",
-                        "title": "Gøce",
-                        "uri": "7drztwa1BwniPbdveK1vBf"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "The Hermetic Electric",
-                        "title": "True Blood",
-                        "uri": "2JbmwspKWZSQFrxtyFKrRt"
-                    },
-                    {
-                        "artist": "Hermetica",
-                        "title": "Atravesando Todo Limite - En Vivo",
-                        "uri": "1wPC6iQkDUTXpaxAk28m3I"
-                    },
-                    {
-                        "artist": "Zeke Saadiq",
-                        "title": "Hermetic Heretic",
-                        "uri": "0gVa5r1aNuMLytPS4qiWF1"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "Lazy Bre",
-                        "title": "Honululu Flow (By Lazy Bre)",
-                        "uri": "2pQ7K3hoB40bV8BwQ19vRa"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Jaewynn",
-                        "title": "Spice Girl - Lazy Flow Remix",
-                        "uri": "6kBasffiKJ4S6naRtpyVeb"
-                    },
-                    {
-                        "artist": "Psycho Kid The Kids Them God",
-                        "title": "Lazy Flow",
-                        "uri": "1pm51d31KdthJsBIoy9wbe"
-                    },
-                    {
-                        "artist": "BILL",
-                        "title": "LAZY FLOW",
-                        "uri": "11T32OQNPU1thVx49diAqt"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Akane Amaya",
-                        "title": "Haruka - Ruka Cut",
-                        "uri": "5GKQbw5uMpFOowUUFavMjz"
-                    },
-                    {
-                        "artist": "Hania Rani",
-                        "title": "Rurka",
-                        "uri": "7h8plcW3CsOlHuPXr02bOJ"
-                    },
-                    {
-                        "artist": "Losophy",
-                        "title": "Ruka, You don't wanna be alone...",
-                        "uri": "1NvJeAI8lYtVgGoaS5E5RW"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": ""
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Wordcolour",
-                        "title": "Bluster - Djrum Remix",
-                        "uri": "2lYDKYNpIfb9nH8ict8uc6"
-                    },
-                    {
-                        "artist": "Wordcolour",
-                        "title": "Bluster",
-                        "uri": "5qntf00Ci6SDL7GVScNiyG"
-                    },
-                    {
-                        "artist": "Wordcolour",
-                        "title": "Bluster",
-                        "uri": "0RexcgGq5Zhq50TSFVk7Lr"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ANDY MCKIL",
-                        "title": "Bluster roses",
-                        "uri": "4kaPXP9Mm8zkOy7kvkTM2d"
-                    },
-                    {
-                        "artist": "Wordcolour",
-                        "title": "Bluster",
-                        "uri": "0RexcgGq5Zhq50TSFVk7Lr"
-                    },
-                    {
-                        "artist": "Wordcolour",
-                        "title": "Bluster",
-                        "uri": "1hYVu1CDu6delqoi09d266"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Camy",
-                        "title": "Conexión",
-                        "uri": "0CEAqQzkM0Jm7XaBkftGcY"
-                    },
-                    {
-                        "artist": "J2KL",
-                        "title": "CAMMY",
-                        "uri": "2OgVV21fCoqaBK6rRORQj8"
-                    },
-                    {
-                        "artist": "Torcha",
-                        "title": "Cammy Riddem",
-                        "uri": "2IdT1hnqAF1IkwALri1tB2"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Toma Kami",
-                        "title": "Amapicante",
-                        "uri": "6eJg3oA9jf0m2eBmoEZX0t"
-                    },
-                    {
-                        "artist": "Toma Kami",
-                        "title": "Amapicante",
-                        "uri": "107RA6z9yqvsXjh42pgMYb"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Toma Kami",
-                        "title": "Amapicante",
-                        "uri": "6eJg3oA9jf0m2eBmoEZX0t"
-                    },
-                    {
-                        "artist": "Toma Kami",
-                        "title": "Amapicante",
-                        "uri": "107RA6z9yqvsXjh42pgMYb"
-                    },
-                    {
-                        "artist": "Toma Kami",
-                        "title": "Later to the Bone",
-                        "uri": "4m5vk3cac0JiXqLedVo9pY"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "Fibre Optixxx",
-                        "title": "Brain Fuzz",
-                        "uri": "4B32RpCQ38gY1f7bZcV8t4"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Fibre Optixxx",
-                        "title": "Brain Fuzz",
-                        "uri": "4B32RpCQ38gY1f7bZcV8t4"
-                    },
-                    {
-                        "artist": "GRiZ",
-                        "title": "Brain Fuzz",
-                        "uri": "7xNKD8ipUY4qwR6EpDcTjp"
-                    },
-                    {
-                        "artist": "Slipstream Splashback",
-                        "title": "Brain Fuzz",
-                        "uri": "4CWAu6ids6tdM5iax99GSv"
-                    }
-                ]
-            },
-            "19": {
-                "s0": [
-                    {
-                        "artist": "Keplrr",
-                        "title": "Full Contact",
-                        "uri": "3AE6jCLDjIjEL9aWXaPVjC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Keplrr",
-                        "title": "Full Contact",
-                        "uri": "3AE6jCLDjIjEL9aWXaPVjC"
-                    },
-                    {
-                        "artist": "Kepler",
-                        "title": "Rondo Numba Nine (feat. Larry)",
-                        "uri": "5TIf5Qlvfx9rrFOjI9WLRN"
-                    },
-                    {
-                        "artist": "Kepler",
-                        "title": "Gang Shit 8",
-                        "uri": "3sy8W40IN4vlOyY3aV761D"
-                    }
-                ]
-            },
-            "20": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "League of Legends",
-                        "title": "Raise Up The Lights (2018 All-Star Event)",
-                        "uri": "7ouVXhXNlAuTgvG8DwSXC5"
-                    },
-                    {
-                        "artist": "N3Xnvme",
-                        "title": "Rise Up",
-                        "uri": "1zArlryaCqgNd08HKzq2NS"
-                    },
-                    {
-                        "artist": "Chill Bump",
-                        "title": "Raise Up",
-                        "uri": "0r3NXM6K2cs2hJTrpgpYr3"
-                    }
-                ]
-            },
-            "21": {
-                "s0": [
-                    {
-                        "artist": "Sam Link",
-                        "title": "Glass Cat",
-                        "uri": "6DbSaRg0iDl6FhuDaB7QxH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sam Link",
-                        "title": "Glass Cat",
-                        "uri": "6DbSaRg0iDl6FhuDaB7QxH"
-                    },
-                    {
-                        "artist": "Sam Link",
-                        "title": "Keep",
-                        "uri": "4jCIJiBgDR33dxnFZEf2QJ"
-                    },
-                    {
-                        "artist": "Sam Link",
-                        "title": "Hesitate",
-                        "uri": "6ouGsWSRgHXe8uuXOHatU8"
-                    }
-                ]
-            },
-            "22": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ghostwhip",
-                        "title": "Lie Sum Mo",
-                        "uri": "6AtbUYFfyyOGdZIqE8Tv7h"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "Parris",
+            "ratio": 6,
+            "title": "springtime flows in three ways",
+            "trackid": "6Rg8UH2Ua7c4m7G6EMQndw"
         },
-        "shadow-dance-w-salamanda-21st-april-2022": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "More Eaze",
-                        "title": "repurposed fumes",
-                        "uri": "10sJUoEXKIthgtm6qxXhLL"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "More Eaze",
-                        "title": "repurposed fumes",
-                        "uri": "10sJUoEXKIthgtm6qxXhLL"
-                    },
-                    {
-                        "artist": "Usher",
-                        "title": "More - RedOne Jimmy Joker Remix",
-                        "uri": "0aBKFfdyOD1Ttvgv0cfjjJ"
-                    },
-                    {
-                        "artist": "Moderat",
-                        "title": "FAST LAND",
-                        "uri": "4qCkd8jOHbz7t59nRTlGr5"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Shakalak",
-                        "title": "Chalice",
-                        "uri": "3LdgM2PjLMlxEn6Kq5E2fB"
-                    },
-                    {
-                        "artist": "Sacral Chakra Universe",
-                        "title": "Finding Yourself",
-                        "uri": "0am5MUkNemEW7Qg2rHHUgL"
-                    },
-                    {
-                        "artist": "Jeet Gannguli",
-                        "title": "Shakale Uthiya",
-                        "uri": "3HjgyVAn9yV7Y0leLPvVk5"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Enter the Tigerwoods",
-                        "uri": "7CYeAbYjmY0fouThH0ZUq5"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Enter the Tigerwoods",
-                        "uri": "6p5lkplOeUM9t9AsLI7KpK"
-                    },
-                    {
-                        "artist": "Howie Lee",
-                        "title": "Enter the Tigerwoods - Foodman Remix",
-                        "uri": "5loi3Zp8E9ZwIrS6bUHuuX"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Dadras",
-                        "title": "Labyrinth",
-                        "uri": "59fm6m4xBCsOuYp5Ms3eX4"
-                    },
-                    {
-                        "artist": "Dadras",
-                        "title": "Labyrinth",
-                        "uri": "1vZO7lw7ndWGrYMlsfJU4l"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Sheef",
-                        "title": "Labyrinth",
-                        "uri": "0VUsQjWTDhvmeayznnDc6z"
-                    },
-                    {
-                        "artist": "竹田 隼大",
-                        "title": "Labyrinth of Darkness",
-                        "uri": "0U8PMmLhRdSnOYLvwWI9R6"
-                    },
-                    {
-                        "artist": "Devilish Trio",
-                        "title": "Labyrinth",
-                        "uri": "0WUkVb4Sz7Zau5ulWuFjAB"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Kincaid",
-                        "title": "Cairn",
-                        "uri": "04xLM1LrZP4SakK5CEgE4I"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kincaid",
-                        "title": "Cairn",
-                        "uri": "04xLM1LrZP4SakK5CEgE4I"
-                    },
-                    {
-                        "artist": "Mairi Macinnes",
-                        "title": "Kin (Càirdeas)",
-                        "uri": "1FcA3a44b2nDlE4SFItLNl"
-                    },
-                    {
-                        "artist": "Caine",
-                        "title": "Teil 1 - Folge 1: Das Amulett von Kyan'Kor",
-                        "uri": "6hCXCugs4MeR64DblynabU"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Chill Beets",
-                        "title": "Surge Protector",
-                        "uri": "7H7QJoVokl1ASu8xVHY4fr"
-                    },
-                    {
-                        "artist": "Daniel Suarez",
-                        "title": "Kapitel 58 - Control",
-                        "uri": "66KCL34f6qe15G5pBplvGE"
-                    },
-                    {
-                        "artist": "Markus Heitz",
-                        "title": "Teil 58 - Judastöchter",
-                        "uri": "4tW0ETG9YcbNAf9stVE5Gn"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "DJ Halan",
-                        "title": "Dancehall Clash",
-                        "uri": "1N6yQ93swEPBi9diKFFxnL"
-                    },
-                    {
-                        "artist": "Pop Style",
-                        "title": "Dancehall",
-                        "uri": "2sCG5Iwv9GdYNViAs5b7Gy"
-                    },
-                    {
-                        "artist": "He3b",
-                        "title": "#Connected",
-                        "uri": "35uIIxN8pO52rh7UoZodZf"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Galtier",
-                        "title": "XX-101 (Process)",
-                        "uri": "5fyyzFad6z3Qq3pHZMkgfz"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Galtier",
-                        "title": "XX-101 (Process)",
-                        "uri": "5fyyzFad6z3Qq3pHZMkgfz"
-                    },
-                    {
-                        "artist": "Difficult Conundrum",
-                        "title": "The Process of Living",
-                        "uri": "3ttuxbrAn2TxprZ3GJnQy1"
-                    },
-                    {
-                        "artist": "Shook",
-                        "title": "Process",
-                        "uri": "2XPyj9vmRWDXaTDhM8VLRY"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Huerco S.",
-                        "title": "Plonk III",
-                        "uri": "3kilgBTpr97Ef1v3x6rTeJ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Huerco S.",
-                        "title": "Plonk III",
-                        "uri": "3kilgBTpr97Ef1v3x6rTeJ"
-                    },
-                    {
-                        "artist": "Huerco S.",
-                        "title": "Plonk I",
-                        "uri": "6BUAvjH5FEHj16NjererDc"
-                    },
-                    {
-                        "artist": "Huerco S.",
-                        "title": "Plonk IV",
-                        "uri": "1sMYcsXIMDt6hZOc5b6HEn"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Luis",
-                        "title": "Frutto",
-                        "uri": "7cko5S9xdVxAIY8QoKEiRj"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Luis",
-                        "title": "Frutto",
-                        "uri": "7cko5S9xdVxAIY8QoKEiRj"
-                    },
-                    {
-                        "artist": "Taramindo",
-                        "title": "El Fruto Seco",
-                        "uri": "61hS3fYhDgkmbW2UqBoE3W"
-                    },
-                    {
-                        "artist": "Musica Regional",
-                        "title": "Luis",
-                        "uri": "1NwlwZuuDNJckkQX5HpSgy"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Enayet",
-                        "title": "Khali",
-                        "uri": "4NE3Zf1u0XtA6nFXY3B4Ud"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Enayet",
-                        "title": "Khali",
-                        "uri": "4NE3Zf1u0XtA6nFXY3B4Ud"
-                    },
-                    {
-                        "artist": "Khali",
-                        "title": "YEAH YEAH",
-                        "uri": "4Qmob4AOp9UAonD14BLF2P"
-                    },
-                    {
-                        "artist": "Carole Samaha",
-                        "title": "Khallik Behalak",
-                        "uri": "0vqDE70RC6LYh7pIYNYuY1"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Meat Beat Manifesto",
-                        "title": "010130",
-                        "uri": "7b6j3WZCeGnPx9DpoInUeZ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Meat Beat Manifesto",
-                        "title": "010130",
-                        "uri": "7b6j3WZCeGnPx9DpoInUeZ"
-                    },
-                    {
-                        "artist": "Meat Beat Manifesto",
-                        "title": "God O.D., Pt.1",
-                        "uri": "3T54MfbFdRHrOOkXIPQjr7"
-                    },
-                    {
-                        "artist": "Meat Beat Manifesto",
-                        "title": "10130",
-                        "uri": "7amrjqVk9djMn2XpKjCFWn"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "DJ JM",
-                        "title": "Owned",
-                        "uri": "3Gn1qHRMA4nHxz8MCYdV8U"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "DJ JM",
-                        "title": "Owned",
-                        "uri": "3Gn1qHRMA4nHxz8MCYdV8U"
-                    },
-                    {
-                        "artist": "DJ JM",
-                        "title": "Funicular",
-                        "uri": "4dnKmY7ZMmOvWc7YPD9nGk"
-                    },
-                    {
-                        "artist": "DJ JM",
-                        "title": "Ray Mound",
-                        "uri": "1DVCyezea1clGJUktlqEAq"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Interpol",
-                        "title": "The Heinrich Maneuver",
-                        "uri": "4fvm91N3APgHw0V2Vm0k4Y"
-                    },
-                    {
-                        "artist": "Das Heinrich Manöver",
-                        "title": "Eiszeit Jetzt - Studio Session",
-                        "uri": "5l85vtT9WJS4AD9yod5Wt5"
-                    },
-                    {
-                        "artist": "Heinrich Mann",
-                        "title": "Kapitel 4 - Professor Unrat",
-                        "uri": "3BfXb2wso5nTOJUh0YpCKf"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Marco Repetto",
-                        "title": "Eta Aquaridiis - Original Mix",
-                        "uri": "1I8m5OK9rndg2yxUSFWddy"
-                    },
-                    {
-                        "artist": "Design Default",
-                        "title": "Univers iles",
-                        "uri": "1FdQPzqRvhEtMzAERdOVCy"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Nicola Cruz",
-                        "title": "Aima - Breaks Mix",
-                        "uri": "2a6Jdtvl35ShFK1ojiO27N"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Nicola Cruz",
-                        "title": "Aima",
-                        "uri": "2ZLSvb7IJl7k9FDDuO0P3q"
-                    },
-                    {
-                        "artist": "Nicola Cruz",
-                        "title": "Aima - Breaks Mix",
-                        "uri": "2a6Jdtvl35ShFK1ojiO27N"
-                    },
-                    {
-                        "artist": "Nicola Cruz",
-                        "title": "Aima - Auntie Flo Remix",
-                        "uri": "7juUZapVj59ts2uLLPCPf6"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Kevin Murf",
-                        "title": "Bagombo",
-                        "uri": "2QiznIfLqKfI2cASBVWkRi"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kevin Morby",
-                        "title": "This Is A Photograph",
-                        "uri": "1hj8os1Xxiuo95atpJzfCp"
-                    },
-                    {
-                        "artist": "Kevin Morby",
-                        "title": "I Have Been to the Mountain",
-                        "uri": "2umTklGNx0IiiTFFVNZNlC"
-                    },
-                    {
-                        "artist": "Kevin Morby",
-                        "title": "Disappearing",
-                        "uri": "6ZNpPS7hFsrySPNEiiOoR1"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Mafou",
-                        "title": "Khezu",
-                        "uri": "2kE5tcYlKexzELN7996JpF"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Mafou",
-                        "title": "Blind",
-                        "uri": "4Po7crJkOERw5uIkNrsAeK"
-                    },
-                    {
-                        "artist": "Mafou",
-                        "title": "Vodou",
-                        "uri": "1FWGNoA4PKWZjzMrw0nqzq"
-                    },
-                    {
-                        "artist": "Mafou",
-                        "title": "Khezu",
-                        "uri": "2kE5tcYlKexzELN7996JpF"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "Geo Rip",
-                        "title": "Underwater Bodycam",
-                        "uri": "0Ode6NaXVyTdaRwoMyLC8a"
-                    },
-                    {
-                        "artist": "Geo Rip",
-                        "title": "Underwater Bodycam",
-                        "uri": "2loOEdx0ajUQ11u3oli7Ge"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Geo Rip",
-                        "title": "Underwater Bodycam",
-                        "uri": "0Ode6NaXVyTdaRwoMyLC8a"
-                    },
-                    {
-                        "artist": "Bearcubs",
-                        "title": "Underwaterfall",
-                        "uri": "4X9JAGRyJnnHN3KUjq1r9C"
-                    },
-                    {
-                        "artist": "Helynt",
-                        "title": "Underwater",
-                        "uri": "71bO0AaHHsS9e5E2V4pxqa"
-                    }
-                ]
-            },
-            "19": {
-                "s0": [
-                    {
-                        "artist": "Octoptic",
-                        "title": "Omni",
-                        "uri": "3XTUD9ut7IrHW2LRnhjXLo"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Yasunori Nishiki",
-                        "title": "Octopath Traveler -Main Theme-",
-                        "uri": "0LmbmsBNz2rMyP0rpECbwD"
-                    },
-                    {
-                        "artist": "Octo Octa",
-                        "title": "Loops For Healing",
-                        "uri": "1RL9gghbn6lqDyCTPteNfB"
-                    },
-                    {
-                        "artist": "Ferus Melek",
-                        "title": "Octoparis",
-                        "uri": "0HwJD3dO2vB7hXNORdmJc3"
-                    }
-                ]
-            },
-            "20": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Private Agenda",
-                        "title": "Malanai Ascending - Seahawks Remix",
-                        "uri": "284c09XJOw9p4Q7z2nS2ZV"
-                    },
-                    {
-                        "artist": "Private Agenda",
-                        "title": "Malanai",
-                        "uri": "54lwcgrqcMm0cJw02uHvB6"
-                    },
-                    {
-                        "artist": "Private Agenda",
-                        "title": "Sienna - Seahawks Open Wide Mix",
-                        "uri": "6vYC7L5Fxg3kfbDd0iayB0"
-                    }
-                ]
-            },
-            "21": {
-                "s0": [
-                    {
-                        "artist": "Tristan Arp",
-                        "title": "Unfurling",
-                        "uri": "7K7fNAqSWYa4QUVsK8QqmS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Tristan Arp",
-                        "title": "From The Seams",
-                        "uri": "1JnBldJPPq06C2OPpapjPz"
-                    },
-                    {
-                        "artist": "Tristan Arp",
-                        "title": "Suspension of Disbelief",
-                        "uri": "3RckNf2VwvXjT3ZPnrixXz"
-                    },
-                    {
-                        "artist": "Tristan Arp",
-                        "title": "Unfurling",
-                        "uri": "7K7fNAqSWYa4QUVsK8QqmS"
-                    }
-                ]
-            }
+        "03": {
+            "artist": "Kode9",
+            "ratio": 6,
+            "title": "Cross The Gap",
+            "trackid": "29GCreZWy5AeHxD90UFK5m"
+        },
+        "04": {
+            "artist": "Vina Konda",
+            "ratio": 6,
+            "title": "Talaf Zoubaka",
+            "trackid": "4zAwWR59HbszIQXcdvaNaW"
+        },
+        "05": {
+            "artist": "Simkin",
+            "ratio": 6,
+            "title": "Entity",
+            "trackid": "5mQTXdGwDp6USig9vgCtm0"
+        },
+        "06": {
+            "artist": "pq",
+            "ratio": 6,
+            "title": "sidescroller",
+            "trackid": "3uXXkX1NPpnztBIahe4lk9"
+        },
+        "07": {
+            "artist": "Dayzero",
+            "ratio": 6,
+            "title": "Viper",
+            "trackid": "7nrWFHdhGvdjqrr0ECNX6Q"
+        },
+        "08": {
+            "artist": "Tribeleader",
+            "ratio": 4,
+            "title": "Alien Drop",
+            "trackid": "3KgxE30vcvYoVHgj2DfeAJ"
+        },
+        "09": {
+            "artist": "Angelos",
+            "ratio": 4,
+            "title": "Surrender",
+            "trackid": "1o5ZPbk5NxzAODTs698XTz"
+        },
+        "10": {
+            "artist": "Sound Virus",
+            "ratio": 6,
+            "title": "Continuum",
+            "trackid": "6fc3Li1haXKdSCVotiacRe"
+        },
+        "11": {
+            "artist": "Dayzero",
+            "ratio": 6,
+            "title": "Viper",
+            "trackid": "7nrWFHdhGvdjqrr0ECNX6Q"
+        },
+        "12": {
+            "artist": "DJ Failure",
+            "ratio": 6,
+            "title": "Want 2",
+            "trackid": "6cZSWomjBPIIKFJpTPSQFI"
+        },
+        "13": {
+            "artist": "Ronan",
+            "ratio": 6,
+            "title": "Morning Glory",
+            "trackid": "1RmgbDDwXCdhB67Y70DflN"
+        },
+        "14": {
+            "artist": "Mina",
+            "ratio": 5,
+            "title": "One Leg",
+            "trackid": "3p31DNfllUknjtp9uREn3x"
+        },
+        "15": {
+            "artist": "Kaval",
+            "ratio": 6,
+            "title": "Ifrita",
+            "trackid": "59VwA2OsjMaQTta6o7lsVs"
+        },
+        "16": {
+            "artist": "INVT",
+            "ratio": 6,
+            "title": "KOMODO",
+            "trackid": "56M3x40s1W5XrxukuIPZ89"
+        },
+        "17": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "18": {
+            "artist": "2ChaseB",
+            "ratio": 6,
+            "title": "Where Is The Rave",
+            "trackid": "2miSBvCMUZavRVWFAIDDBJ"
+        },
+        "19": {
+            "artist": "Amnesia Scanner",
+            "ratio": 6,
+            "title": "Lexachast IX",
+            "trackid": "7DLiU05FxR57u8XBNuCbBK"
+        },
+        "20": {
+            "artist": "Deena Abdelwahed",
+            "ratio": 6,
+            "title": "Insaniyti",
+            "trackid": "7ET3HybpV0IJmNdHlkcHet"
+        }
+    },
+    "shadow-dance-w-salamanda-16th-june-2022": {
+        "00": {
+            "artist": "Lucrecia Dalt",
+            "ratio": 6,
+            "title": "Di",
+            "trackid": "4RTgTxlHM3caBrpfm6JWV9"
+        },
+        "01": {
+            "artist": "Roméo Poirier",
+            "ratio": 6,
+            "title": "Hotel Nota",
+            "trackid": "0aBoMhb7VlK0n4xCTDSzFt"
+        },
+        "02": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "03": {
+            "artist": "BEA1991",
+            "ratio": 6,
+            "title": "Modern Comforts",
+            "trackid": "7nwvbb8no4j2K7nlYiEsGl"
+        },
+        "04": {
+            "artist": "Fantastic Man",
+            "ratio": 6,
+            "title": "Body Hurt - Methane Bass",
+            "trackid": "3xdWqnA9b2TEnDWIL5BXSv"
+        },
+        "05": {
+            "artist": "Roza Terenzi",
+            "ratio": 6,
+            "title": "Spiral",
+            "trackid": "0b3hNKpoPrWBFZ9WKo7SyP"
+        },
+        "06": {
+            "artist": "PZ Specialist",
+            "ratio": 3,
+            "title": "Found Drama",
+            "trackid": "5hn1nEnM28HJKbQXLeJe4q"
+        },
+        "07": {
+            "artist": "Two Shell",
+            "ratio": 6,
+            "title": "Blobject",
+            "trackid": "2fo83TJRtbirzVwANgZvTo"
+        },
+        "08": {
+            "artist": "Salamanda",
+            "ratio": 6,
+            "title": "Hard Luck Story",
+            "trackid": "10xSbuKDUbR4mmFUzgHoox"
+        },
+        "09": {
+            "artist": "Yetsuby",
+            "ratio": 2,
+            "title": "136",
+            "trackid": "3bQPLqFXe7QXpXMWH3XE7F"
+        },
+        "10": {
+            "artist": "Bitter Babe",
+            "ratio": 6,
+            "title": "Delirio",
+            "trackid": "6s3dcu8YI2WXvNIbxNvhsI"
+        },
+        "11": {
+            "artist": "Hermetica",
+            "ratio": 2,
+            "title": "Atravesando Todo Limite - En Vivo",
+            "trackid": "1wPC6iQkDUTXpaxAk28m3I"
+        },
+        "12": {
+            "artist": "BILL",
+            "ratio": 4,
+            "title": "LAZY FLOW",
+            "trackid": "11T32OQNPU1thVx49diAqt"
+        },
+        "13": {
+            "artist": "Hania Rani",
+            "ratio": 4,
+            "title": "Rurka",
+            "trackid": "7h8plcW3CsOlHuPXr02bOJ"
+        },
+        "14": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "15": {
+            "artist": "Wordcolour",
+            "ratio": 6,
+            "title": "Bluster",
+            "trackid": "5qntf00Ci6SDL7GVScNiyG"
+        },
+        "16": {
+            "artist": "Camy",
+            "ratio": 4,
+            "title": "Conexión",
+            "trackid": "0CEAqQzkM0Jm7XaBkftGcY"
+        },
+        "17": {
+            "artist": "Toma Kami",
+            "ratio": 6,
+            "title": "Amapicante",
+            "trackid": "6eJg3oA9jf0m2eBmoEZX0t"
+        },
+        "18": {
+            "artist": "Fibre Optixxx",
+            "ratio": 6,
+            "title": "Brain Fuzz",
+            "trackid": "4B32RpCQ38gY1f7bZcV8t4"
+        },
+        "19": {
+            "artist": "Keplrr",
+            "ratio": 6,
+            "title": "Full Contact",
+            "trackid": "3AE6jCLDjIjEL9aWXaPVjC"
+        },
+        "20": {
+            "artist": "N3Xnvme",
+            "ratio": 3,
+            "title": "Rise Up",
+            "trackid": "1zArlryaCqgNd08HKzq2NS"
+        },
+        "21": {
+            "artist": "Sam Link",
+            "ratio": 6,
+            "title": "Glass Cat",
+            "trackid": "6DbSaRg0iDl6FhuDaB7QxH"
+        },
+        "22": {
+            "artist": "Ghostwhip",
+            "ratio": 5,
+            "title": "Lie Sum Mo",
+            "trackid": "6AtbUYFfyyOGdZIqE8Tv7h"
+        }
+    },
+    "shadow-dance-w-salamanda-21st-april-2022": {
+        "00": {
+            "artist": "More Eaze",
+            "ratio": 6,
+            "title": "repurposed fumes",
+            "trackid": "10sJUoEXKIthgtm6qxXhLL"
+        },
+        "01": {
+            "artist": "Shakalak",
+            "ratio": 3,
+            "title": "Chalice",
+            "trackid": "3LdgM2PjLMlxEn6Kq5E2fB"
+        },
+        "02": {
+            "artist": "Howie Lee",
+            "ratio": 6,
+            "title": "Enter the Tigerwoods",
+            "trackid": "7CYeAbYjmY0fouThH0ZUq5"
+        },
+        "03": {
+            "artist": "Dadras",
+            "ratio": 6,
+            "title": "Labyrinth",
+            "trackid": "59fm6m4xBCsOuYp5Ms3eX4"
+        },
+        "04": {
+            "artist": "Kincaid",
+            "ratio": 6,
+            "title": "Cairn",
+            "trackid": "04xLM1LrZP4SakK5CEgE4I"
+        },
+        "05": {
+            "artist": "Chill Beets",
+            "ratio": 4,
+            "title": "Surge Protector",
+            "trackid": "7H7QJoVokl1ASu8xVHY4fr"
+        },
+        "06": {
+            "artist": "Pop Style",
+            "ratio": 3,
+            "title": "Dancehall",
+            "trackid": "2sCG5Iwv9GdYNViAs5b7Gy"
+        },
+        "07": {
+            "artist": "Galtier",
+            "ratio": 6,
+            "title": "XX-101 (Process)",
+            "trackid": "5fyyzFad6z3Qq3pHZMkgfz"
+        },
+        "08": {
+            "artist": "Huerco S.",
+            "ratio": 6,
+            "title": "Plonk III",
+            "trackid": "3kilgBTpr97Ef1v3x6rTeJ"
+        },
+        "09": {
+            "artist": "Luis",
+            "ratio": 6,
+            "title": "Frutto",
+            "trackid": "7cko5S9xdVxAIY8QoKEiRj"
+        },
+        "10": {
+            "artist": "Enayet",
+            "ratio": 6,
+            "title": "Khali",
+            "trackid": "4NE3Zf1u0XtA6nFXY3B4Ud"
+        },
+        "11": {
+            "artist": "Meat Beat Manifesto",
+            "ratio": 6,
+            "title": "010130",
+            "trackid": "7b6j3WZCeGnPx9DpoInUeZ"
+        },
+        "12": {
+            "artist": "DJ JM",
+            "ratio": 6,
+            "title": "Owned",
+            "trackid": "3Gn1qHRMA4nHxz8MCYdV8U"
+        },
+        "13": {
+            "artist": "Interpol",
+            "ratio": 3,
+            "title": "The Heinrich Maneuver",
+            "trackid": "4fvm91N3APgHw0V2Vm0k4Y"
+        },
+        "14": {
+            "artist": "Design Default",
+            "ratio": 4,
+            "title": "Univers iles",
+            "trackid": "1FdQPzqRvhEtMzAERdOVCy"
+        },
+        "15": {
+            "artist": "Nicola Cruz",
+            "ratio": 6,
+            "title": "Aima - Breaks Mix",
+            "trackid": "2a6Jdtvl35ShFK1ojiO27N"
+        },
+        "16": {
+            "artist": "Kevin Murf",
+            "ratio": 6,
+            "title": "Bagombo",
+            "trackid": "2QiznIfLqKfI2cASBVWkRi"
+        },
+        "17": {
+            "artist": "Mafou",
+            "ratio": 6,
+            "title": "Khezu",
+            "trackid": "2kE5tcYlKexzELN7996JpF"
+        },
+        "18": {
+            "artist": "Geo Rip",
+            "ratio": 6,
+            "title": "Underwater Bodycam",
+            "trackid": "0Ode6NaXVyTdaRwoMyLC8a"
+        },
+        "19": {
+            "artist": "Octoptic",
+            "ratio": 6,
+            "title": "Omni",
+            "trackid": "3XTUD9ut7IrHW2LRnhjXLo"
+        },
+        "20": {
+            "artist": "Private Agenda",
+            "ratio": 6,
+            "title": "Malanai Ascending - Seahawks Remix",
+            "trackid": "284c09XJOw9p4Q7z2nS2ZV"
+        },
+        "21": {
+            "artist": "Tristan Arp",
+            "ratio": 6,
+            "title": "Unfurling",
+            "trackid": "7K7fNAqSWYa4QUVsK8QqmS"
         }
     }
 }

@@ -1,765 +1,168 @@
 {
-    "flags": {
-        "bloodz-boi-31st-august-2022": {
-            "00": {
-                "artist": "Bloody Boy",
-                "ratio": 0,
-                "title": "Run Away",
-                "trackid": "46yEOnHmANlGGjv9X2vXWO"
-            },
-            "01": {
-                "artist": "Bingoboys",
-                "ratio": 1,
-                "title": "No Communication",
-                "trackid": "1epkWiIVzOJSPlc8RojBTm"
-            },
-            "02": {
-                "artist": "Klein",
-                "ratio": 2,
-                "title": "Cross Road Blues",
-                "trackid": "5VdrmDi6cY8UJ9iKxBaTup"
-            },
-            "03": {
-                "artist": "Sigurd Barrett",
-                "ratio": 0,
-                "title": "Solen Er Så Rød, Mor",
-                "trackid": "6nyJhCz48PfBXqch9nGzk4"
-            },
-            "04": {
-                "artist": "Silvia Kastel",
-                "ratio": 6,
-                "title": "Mantide",
-                "trackid": "3jWrZMN6gZjpFDp26c38QX"
-            },
-            "05": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "06": {
-                "artist": "Tadaki只木",
-                "ratio": 0,
-                "title": "Seishin",
-                "trackid": "6NTLedLPMG71ZJYRk1oqu6"
-            },
-            "07": {
-                "artist": "Houston & Dorsey",
-                "ratio": 6,
-                "title": "Ebb Tide",
-                "trackid": "1QNy4rjihkYVBOJbBdsXnr"
-            },
-            "08": {
-                "artist": "vowl.",
-                "ratio": 0,
-                "title": "six feet under",
-                "trackid": "73YiJZLj2CORaiPrQTyWjN"
-            },
-            "09": {
-                "artist": "Slow Meadow",
-                "ratio": 6,
-                "title": "Adorned in Ribbons",
-                "trackid": "3lK9HanK8KguFWs0rT9kb4"
-            },
-            "10": {
-                "artist": "Celer",
-                "ratio": 6,
-                "title": "In the Middle Of the Moving Field",
-                "trackid": "1P0MDCsUHkBc0v5hWzZpXI"
-            },
-            "11": {
-                "artist": "Warmth",
-                "ratio": 6,
-                "title": "Burning Moon",
-                "trackid": "4ZN8wLd1bSe2AA8eRJhJCQ"
-            },
-            "12": {
-                "artist": "JAB",
-                "ratio": 6,
-                "title": "Chanterai Por Mon Coraige",
-                "trackid": "0eq7xmIEaVYF592L7uDGf1"
-            },
-            "13": {
-                "artist": "Kaho Matsui",
-                "ratio": 6,
-                "title": "dream of me",
-                "trackid": "11rIhoXPqoGwoGINLmeURQ"
-            }
+    "bloodz-boi-31st-august-2022": {
+        "00": {
+            "artist": "Bloody Boy",
+            "ratio": 0,
+            "title": "Run Away",
+            "trackid": "46yEOnHmANlGGjv9X2vXWO"
         },
-        "bloodz-boi-6th-july-2022": {
-            "00": {
-                "artist": "陈建江",
-                "ratio": 4,
-                "title": "我愿意",
-                "trackid": "0BEIOrv5QZGytx6gKQQVQe"
-            },
-            "01": {
-                "artist": "Jacky Cheung",
-                "ratio": 0,
-                "title": "李香蘭",
-                "trackid": "57BDkiOeMRJTQbgtER5e4T"
-            },
-            "02": {
-                "artist": "Faye Wong",
-                "ratio": 6,
-                "title": "但願人長久",
-                "trackid": "12yVeepFYqv2z9UHHR2Rly"
-            },
-            "03": {
-                "artist": "王弦依",
-                "ratio": 0,
-                "title": "眼泪不会忘记一切 - Cover",
-                "trackid": "5LrMaYZqLiYvTR1pctJmhl"
-            },
-            "04": {
-                "artist": "罗大佑",
-                "ratio": 6,
-                "title": "爱的箴言",
-                "trackid": "6vpXhQGZbx6w8OOn4aZepK"
-            },
-            "05": {
-                "artist": "马虎",
-                "ratio": 0,
-                "title": "老态龙钟",
-                "trackid": "1r7kwIWYunqwhGE2oqcMsq"
-            },
-            "06": {
-                "artist": "陳小春",
-                "ratio": 2,
-                "title": "我愛你",
-                "trackid": "0KYlVZQZsPAyojhQA714gb"
-            },
-            "07": {
-                "artist": "Tiger Hu",
-                "ratio": 2,
-                "title": "男人KTV",
-                "trackid": "010TvPu6fgBJL4usanmgAU"
-            },
-            "08": {
-                "artist": "Ronald Cheng",
-                "ratio": 2,
-                "title": "愛是最大權利",
-                "trackid": "0eBi77EhV2AQJbt5aTz8EI"
-            },
-            "09": {
-                "artist": "Edmond Leung",
-                "ratio": 2,
-                "title": "衣櫃裡的男人",
-                "trackid": "7LsXbK8KkEPznTwIXFrtOh"
-            },
-            "10": {
-                "artist": "康康",
-                "ratio": 6,
-                "title": "你不愛我",
-                "trackid": "6exMgmvwMCnR4VVxJqqjV8"
-            },
-            "11": {
-                "artist": "Liyu Ding",
-                "ratio": 2,
-                "title": "如果云知道",
-                "trackid": "0fTJnFXFa9NVvRrDBjWAOd"
-            },
-            "12": {
-                "artist": "Cass Phang",
-                "ratio": 2,
-                "title": "完全因你",
-                "trackid": "3PgpQkrlaLIL6DPkRtASlC"
-            }
+        "01": {
+            "artist": "Bingoboys",
+            "ratio": 1,
+            "title": "No Communication",
+            "trackid": "1epkWiIVzOJSPlc8RojBTm"
+        },
+        "02": {
+            "artist": "Klein",
+            "ratio": 2,
+            "title": "Cross Road Blues",
+            "trackid": "5VdrmDi6cY8UJ9iKxBaTup"
+        },
+        "03": {
+            "artist": "Sigurd Barrett",
+            "ratio": 0,
+            "title": "Solen Er Så Rød, Mor",
+            "trackid": "6nyJhCz48PfBXqch9nGzk4"
+        },
+        "04": {
+            "artist": "Silvia Kastel",
+            "ratio": 6,
+            "title": "Mantide",
+            "trackid": "3jWrZMN6gZjpFDp26c38QX"
+        },
+        "05": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "06": {
+            "artist": "Tadaki只木",
+            "ratio": 0,
+            "title": "Seishin",
+            "trackid": "6NTLedLPMG71ZJYRk1oqu6"
+        },
+        "07": {
+            "artist": "Houston & Dorsey",
+            "ratio": 6,
+            "title": "Ebb Tide",
+            "trackid": "1QNy4rjihkYVBOJbBdsXnr"
+        },
+        "08": {
+            "artist": "vowl.",
+            "ratio": 0,
+            "title": "six feet under",
+            "trackid": "73YiJZLj2CORaiPrQTyWjN"
+        },
+        "09": {
+            "artist": "Slow Meadow",
+            "ratio": 6,
+            "title": "Adorned in Ribbons",
+            "trackid": "3lK9HanK8KguFWs0rT9kb4"
+        },
+        "10": {
+            "artist": "Celer",
+            "ratio": 6,
+            "title": "In the Middle Of the Moving Field",
+            "trackid": "1P0MDCsUHkBc0v5hWzZpXI"
+        },
+        "11": {
+            "artist": "Warmth",
+            "ratio": 6,
+            "title": "Burning Moon",
+            "trackid": "4ZN8wLd1bSe2AA8eRJhJCQ"
+        },
+        "12": {
+            "artist": "JAB",
+            "ratio": 6,
+            "title": "Chanterai Por Mon Coraige",
+            "trackid": "0eq7xmIEaVYF592L7uDGf1"
+        },
+        "13": {
+            "artist": "Kaho Matsui",
+            "ratio": 6,
+            "title": "dream of me",
+            "trackid": "11rIhoXPqoGwoGINLmeURQ"
         }
     },
-    "search": {
-        "bloodz-boi-31st-august-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "KLOUD",
-                        "title": "BLOOD (Fabian Mazur Remix)",
-                        "uri": "7DvdT3OFNvVLVGfOk5HN0a"
-                    },
-                    {
-                        "artist": "KLOUD",
-                        "title": "BLOOD",
-                        "uri": "2odJRoZ0Bx3aHvNa8hpNrD"
-                    },
-                    {
-                        "artist": "Bloody Boy",
-                        "title": "Run Away",
-                        "uri": "46yEOnHmANlGGjv9X2vXWO"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Bingo Players",
-                        "title": "Devotion (feat. Tony Scott)",
-                        "uri": "0e50jLFPxxryCEIdsiCt54"
-                    },
-                    {
-                        "artist": "Danny Tanners",
-                        "title": "Bingo",
-                        "uri": "19Kog8Crt0hvrdyOOZeclK"
-                    },
-                    {
-                        "artist": "Bingoboys",
-                        "title": "No Communication",
-                        "uri": "1epkWiIVzOJSPlc8RojBTm"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Mozart Eine Kleine Nachtmusik Ensemble-Wolfgang Amedeus Mozart",
-                        "title": "Sonata No. 10 C major, KV 330 (1783) mov 3 allegretto - Using the Power of Music",
-                        "uri": "4OplN4aEFSWGoxlNOFXqMo"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Klein",
-                        "title": "No More Shubz",
-                        "uri": "3DC95txBrvxeEzX1YY923w"
-                    },
-                    {
-                        "artist": "Klein",
-                        "title": "Cross Road Blues",
-                        "uri": "5VdrmDi6cY8UJ9iKxBaTup"
-                    },
-                    {
-                        "artist": "Klein",
-                        "title": "Pines",
-                        "uri": "0CIXxZNBuRBmmYv7drwmgV"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Bcalm",
-                        "title": "Astrid",
-                        "uri": "5c1KHA5Lt3JePgn3L3vXYr"
-                    },
-                    {
-                        "artist": "Sigurd Barrett",
-                        "title": "Solen Er Så Rød, Mor",
-                        "uri": "6nyJhCz48PfBXqch9nGzk4"
-                    },
-                    {
-                        "artist": "Astrid Engberg",
-                        "title": "Lush Life",
-                        "uri": "4fwY7pqPHN6RWfhqA4hODj"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Silvia Kastel",
-                        "title": "Mantide",
-                        "uri": "3jWrZMN6gZjpFDp26c38QX"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Silvia Kastel",
-                        "title": "Mantide",
-                        "uri": "3jWrZMN6gZjpFDp26c38QX"
-                    },
-                    {
-                        "artist": "Silvia Kastel",
-                        "title": "Spoons",
-                        "uri": "0yOScaPMmyEX6gZX2c5Ron"
-                    },
-                    {
-                        "artist": "Silvia Kastel",
-                        "title": "Xantharmony",
-                        "uri": "7l9g0OOQi6Ap0mLGXuxVIC"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": ""
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Seiko Matsuda",
-                        "title": "未来へのDistance",
-                        "uri": "3GOnHKtsCWwwu1rLZ0jD1y"
-                    },
-                    {
-                        "artist": "Tadaki只木",
-                        "title": "Seishin",
-                        "uri": "6NTLedLPMG71ZJYRk1oqu6"
-                    },
-                    {
-                        "artist": "Kitsune Metaru",
-                        "title": "Gambatte - Live",
-                        "uri": "0jGSkcpCMGTugvtNvFUJ6p"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "Houston & Dorsey",
-                        "title": "Ebb Tide",
-                        "uri": "1QNy4rjihkYVBOJbBdsXnr"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Houston & Dorsey",
-                        "title": "Ebb Tide",
-                        "uri": "1QNy4rjihkYVBOJbBdsXnr"
-                    },
-                    {
-                        "artist": "George Miles",
-                        "title": "Ebb Tide",
-                        "uri": "1SqSE4UtnnyqpjWi46YmUs"
-                    },
-                    {
-                        "artist": "Ernesto Cortazar",
-                        "title": "Ebb Tide",
-                        "uri": "0aCbtro6SllpNLl7xCGBHB"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "vowl.",
-                        "title": "six feet under",
-                        "uri": "73YiJZLj2CORaiPrQTyWjN"
-                    },
-                    {
-                        "artist": "Billie Eilish",
-                        "title": "Six Feet Under - BLU J Remix",
-                        "uri": "4D5sitThGoz0RnMsFdFUuz"
-                    },
-                    {
-                        "artist": "Uli K",
-                        "title": "Itami",
-                        "uri": "3AbkICtztKAxZbKyn65Dcd"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "Slow Meadow",
-                        "title": "Adorned in Ribbons",
-                        "uri": "3lK9HanK8KguFWs0rT9kb4"
-                    },
-                    {
-                        "artist": "Slow Meadow",
-                        "title": "Adorned in Ribbons",
-                        "uri": "4wYWix7DlR2REjt9XZgzyr"
-                    },
-                    {
-                        "artist": "Slow Meadow",
-                        "title": "Adorned in Ribbons",
-                        "uri": "44B4masVyVpNwN88R37W8c"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Slow Meadow",
-                        "title": "Adorned in Ribbons",
-                        "uri": "3lK9HanK8KguFWs0rT9kb4"
-                    },
-                    {
-                        "artist": "Slow Meadow",
-                        "title": "Adorned in Ribbons",
-                        "uri": "4wYWix7DlR2REjt9XZgzyr"
-                    },
-                    {
-                        "artist": "zgo",
-                        "title": "Slow Meadow",
-                        "uri": "1CGuZB4kz2WNex5ulp5Peu"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Celer",
-                        "title": "In the Middle Of the Moving Field",
-                        "uri": "1P0MDCsUHkBc0v5hWzZpXI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Celer",
-                        "title": "In the Middle Of the Moving Field",
-                        "uri": "1P0MDCsUHkBc0v5hWzZpXI"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Warmth",
-                        "title": "Burning Moon - Addendum",
-                        "uri": "78pIuws7H1NgM67r0X0Pfb"
-                    },
-                    {
-                        "artist": "Warmth",
-                        "title": "Burning Moon",
-                        "uri": "4ZN8wLd1bSe2AA8eRJhJCQ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Warmth",
-                        "title": "Burning Moon - Addendum",
-                        "uri": "78pIuws7H1NgM67r0X0Pfb"
-                    },
-                    {
-                        "artist": "Warmth",
-                        "title": "Burning Moon",
-                        "uri": "4ZN8wLd1bSe2AA8eRJhJCQ"
-                    },
-                    {
-                        "artist": "Rikshaw",
-                        "title": "Into the burning moon",
-                        "uri": "18omya4OlylLstBEdazWFW"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "JAB",
-                        "title": "Chanterai Por Mon Coraige",
-                        "uri": "0eq7xmIEaVYF592L7uDGf1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "CPTRECORDS",
-                        "title": "JAB",
-                        "uri": "1CAqZKN0mOhjXovVSsnhLK"
-                    }
-                ]
-            },
-            "13": {
-                "s0": [
-                    {
-                        "artist": "Kaho Matsui",
-                        "title": "dream of me",
-                        "uri": "11rIhoXPqoGwoGINLmeURQ"
-                    },
-                    {
-                        "artist": "Kaho Matsui",
-                        "title": "and i'll dream of you",
-                        "uri": "3L50JivzcjyJgmSzjCI41y"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kaho Matsui",
-                        "title": "and i'll dream of you",
-                        "uri": "3L50JivzcjyJgmSzjCI41y"
-                    },
-                    {
-                        "artist": "Kaho Matsui",
-                        "title": "dream of me",
-                        "uri": "11rIhoXPqoGwoGINLmeURQ"
-                    },
-                    {
-                        "artist": "Orchestral Manoeuvres In The Dark",
-                        "title": "Dream Of Me (Based On Love's Theme)",
-                        "uri": "6968eg6hORoSy8UNc0BUYZ"
-                    }
-                ]
-            }
+    "bloodz-boi-6th-july-2022": {
+        "00": {
+            "artist": "陈建江",
+            "ratio": 4,
+            "title": "我愿意",
+            "trackid": "0BEIOrv5QZGytx6gKQQVQe"
         },
-        "bloodz-boi-6th-july-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "陈建江",
-                        "title": "我愿意",
-                        "uri": "0BEIOrv5QZGytx6gKQQVQe"
-                    },
-                    {
-                        "artist": "陳怡婷",
-                        "title": "我願意",
-                        "uri": "7zoAAnSEJq5RbDC2haKfnS"
-                    },
-                    {
-                        "artist": "Daniel Chan",
-                        "title": "我願意",
-                        "uri": "0jtI0TjBjnpSXS20TGbtpG"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Jacky Cheung",
-                        "title": "李香蘭",
-                        "uri": "57BDkiOeMRJTQbgtER5e4T"
-                    },
-                    {
-                        "artist": "Jacky Cheung",
-                        "title": "李香蘭",
-                        "uri": "0ibgR6tnYcRX4UVABZTzMS"
-                    },
-                    {
-                        "artist": "Jacky Cheung",
-                        "title": "李香蘭",
-                        "uri": "2R9xmV37xD9isdQ7Gcmg8A"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "純音樂",
-                        "title": "但願人長久",
-                        "uri": "00yFU8pBVSlPx96ukyW5GU"
-                    },
-                    {
-                        "artist": "Faye Wong",
-                        "title": "但願人長久",
-                        "uri": "12yVeepFYqv2z9UHHR2Rly"
-                    },
-                    {
-                        "artist": "Faye Wong",
-                        "title": "悶",
-                        "uri": "1ZDsdv7QHsSltM24N7xNsj"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "SQbaby",
-                        "title": "眼泪Tears(钢琴曲)",
-                        "uri": "6olYxQmaWbT6cfTW3kpoAj"
-                    },
-                    {
-                        "artist": "Silence Wang",
-                        "title": "眼泪落下之前(《暗恋·橘生淮南》电影插曲)",
-                        "uri": "1Z8uGJZzdrsAsuYssa8flY"
-                    },
-                    {
-                        "artist": "王弦依",
-                        "title": "眼泪不会忘记一切 - Cover",
-                        "uri": "5LrMaYZqLiYvTR1pctJmhl"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "罗大佑",
-                        "title": "爱的箴言",
-                        "uri": "6vpXhQGZbx6w8OOn4aZepK"
-                    },
-                    {
-                        "artist": "罗大佑",
-                        "title": "爱的箴言",
-                        "uri": "0ZXJ6Tct7sXENgNpPvFVki"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "羅大佑",
-                        "title": "愛的箴言",
-                        "uri": "0jzo6QAQGT0T8Dixij4qoO"
-                    },
-                    {
-                        "artist": "罗大佑",
-                        "title": "爱的箴言",
-                        "uri": "6vpXhQGZbx6w8OOn4aZepK"
-                    },
-                    {
-                        "artist": "羅大佑",
-                        "title": "愛的箴言",
-                        "uri": "5g4LC4dZQrYoa851iaeyMw"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "马虎",
-                        "title": "老态龙钟",
-                        "uri": "1r7kwIWYunqwhGE2oqcMsq"
-                    },
-                    {
-                        "artist": "Noble Music Project",
-                        "title": "兩隻老虎 (獨唱版)",
-                        "uri": "6JzByj8RQzN4Y12mOkZv7b"
-                    },
-                    {
-                        "artist": "兒童音樂精選",
-                        "title": "兩隻老虎",
-                        "uri": "17TuOWWFO9gZUItSVNbMqr"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "钱奇桂",
-                        "title": "陈小满",
-                        "uri": "2kaBEKq47jwvTjoezxSRZi"
-                    },
-                    {
-                        "artist": "陳小春",
-                        "title": "我愛你",
-                        "uri": "0KYlVZQZsPAyojhQA714gb"
-                    },
-                    {
-                        "artist": "陈壹千",
-                        "title": "追",
-                        "uri": "7MRqvupyU3RBtM4WC5Acus"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Justin Lo",
-                        "title": "男人 KTV",
-                        "uri": "3glLe4oGPsfDhT30GC3auM"
-                    },
-                    {
-                        "artist": "Justin Lo",
-                        "title": "男人 KTV",
-                        "uri": "3fiw1lkZ18un8SaUVeW9LN"
-                    },
-                    {
-                        "artist": "Tiger Hu",
-                        "title": "男人KTV",
-                        "uri": "010TvPu6fgBJL4usanmgAU"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ronald Cheng",
-                        "title": "愛是最大權利",
-                        "uri": "0eBi77EhV2AQJbt5aTz8EI"
-                    },
-                    {
-                        "artist": "何辰",
-                        "title": "爱很强烈",
-                        "uri": "3JHTbhq3TbbZBhomZSJZsH"
-                    },
-                    {
-                        "artist": "Ronald Cheng",
-                        "title": "愛是最大權利",
-                        "uri": "4DuAlnjNKrqmTSgWvWS4i1"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Edmond Leung",
-                        "title": "衣櫃裡的男人",
-                        "uri": "7LsXbK8KkEPznTwIXFrtOh"
-                    },
-                    {
-                        "artist": "梁文福",
-                        "title": "新衣哪有旧衣好",
-                        "uri": "3dmo5Zx0Fk1sPqS4RPmvMj"
-                    },
-                    {
-                        "artist": "梁博",
-                        "title": "男孩(Live)",
-                        "uri": "5NM4aVLkZyuVuhcGNjq1IO"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "赵安康",
-                        "title": "你爱的不止我一个",
-                        "uri": "1S67JYhiub8SaFB5d9UHr6"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "康康",
-                        "title": "離開你不得已",
-                        "uri": "709fLmS5QmzRm8bjrjL5Ze"
-                    },
-                    {
-                        "artist": "康康",
-                        "title": "暗淡的月",
-                        "uri": "6NUFaA1HEWRC9ICbq8HLw3"
-                    },
-                    {
-                        "artist": "康康",
-                        "title": "你不愛我",
-                        "uri": "6exMgmvwMCnR4VVxJqqjV8"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Liyu Ding",
-                        "title": "如果云知道",
-                        "uri": "0fTJnFXFa9NVvRrDBjWAOd"
-                    },
-                    {
-                        "artist": "Crystal Ye",
-                        "title": "如果云知道",
-                        "uri": "1HhBo62rsI4mkrodMjP3os"
-                    },
-                    {
-                        "artist": "曹芙嘉",
-                        "title": "如果云知道",
-                        "uri": "22Y0vHZJEZsaX1WC6R5Zut"
-                    }
-                ]
-            },
-            "12": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Cass Phang",
-                        "title": "完全因你 - 電影《和平飯店》主題曲/ 第十五屆香港電影金像獎-最佳電影金曲",
-                        "uri": "0KS8H8KsHmwYKMB9WdE5rg"
-                    },
-                    {
-                        "artist": "Cass Phang",
-                        "title": "完全因你",
-                        "uri": "3PgpQkrlaLIL6DPkRtASlC"
-                    },
-                    {
-                        "artist": "Cass Phang",
-                        "title": "完全因你",
-                        "uri": "3ToVPsKxOmJNmH0IQxF3bf"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Jacky Cheung",
+            "ratio": 0,
+            "title": "李香蘭",
+            "trackid": "57BDkiOeMRJTQbgtER5e4T"
+        },
+        "02": {
+            "artist": "Faye Wong",
+            "ratio": 6,
+            "title": "但願人長久",
+            "trackid": "12yVeepFYqv2z9UHHR2Rly"
+        },
+        "03": {
+            "artist": "王弦依",
+            "ratio": 0,
+            "title": "眼泪不会忘记一切 - Cover",
+            "trackid": "5LrMaYZqLiYvTR1pctJmhl"
+        },
+        "04": {
+            "artist": "罗大佑",
+            "ratio": 6,
+            "title": "爱的箴言",
+            "trackid": "6vpXhQGZbx6w8OOn4aZepK"
+        },
+        "05": {
+            "artist": "马虎",
+            "ratio": 0,
+            "title": "老态龙钟",
+            "trackid": "1r7kwIWYunqwhGE2oqcMsq"
+        },
+        "06": {
+            "artist": "陳小春",
+            "ratio": 2,
+            "title": "我愛你",
+            "trackid": "0KYlVZQZsPAyojhQA714gb"
+        },
+        "07": {
+            "artist": "Tiger Hu",
+            "ratio": 2,
+            "title": "男人KTV",
+            "trackid": "010TvPu6fgBJL4usanmgAU"
+        },
+        "08": {
+            "artist": "Ronald Cheng",
+            "ratio": 2,
+            "title": "愛是最大權利",
+            "trackid": "0eBi77EhV2AQJbt5aTz8EI"
+        },
+        "09": {
+            "artist": "Edmond Leung",
+            "ratio": 2,
+            "title": "衣櫃裡的男人",
+            "trackid": "7LsXbK8KkEPznTwIXFrtOh"
+        },
+        "10": {
+            "artist": "康康",
+            "ratio": 6,
+            "title": "你不愛我",
+            "trackid": "6exMgmvwMCnR4VVxJqqjV8"
+        },
+        "11": {
+            "artist": "Liyu Ding",
+            "ratio": 2,
+            "title": "如果云知道",
+            "trackid": "0fTJnFXFa9NVvRrDBjWAOd"
+        },
+        "12": {
+            "artist": "Cass Phang",
+            "ratio": 2,
+            "title": "完全因你",
+            "trackid": "3PgpQkrlaLIL6DPkRtASlC"
         }
     }
 }

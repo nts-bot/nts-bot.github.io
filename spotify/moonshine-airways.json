@@ -1,483 +1,103 @@
 {
-    "flags": {
-        "moonshine-airways-12th-january-2022": {},
-        "moonshine-airways-24th-june-2022": {
-            "00": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "01": {
-                "artist": "J.B. Mpiana",
-                "ratio": 5,
-                "title": "48 Heures gecoco",
-                "trackid": "72WLkzQFqaRyuNCeUEU2Fo"
-            },
-            "02": {
-                "artist": "Barbara Kanam",
-                "ratio": 6,
-                "title": "Amour invincible",
-                "trackid": "3Z5VrRP1vCr0RmRF6kOp5y"
-            },
-            "03": {
-                "artist": "Koffi Olomide",
-                "ratio": 6,
-                "title": "Phaseur",
-                "trackid": "5Ojql2qJWHhCjylQJ6KtQ2"
-            },
-            "04": {
-                "artist": "Koffi Olomide",
-                "ratio": 6,
-                "title": "Nyataquance",
-                "trackid": "4GkfUXoqNzaf7SrbDc7666"
-            },
-            "05": {
-                "artist": "DJ Patcheli",
-                "ratio": 6,
-                "title": "Libolongo",
-                "trackid": "0OdhXa7q6YKIvoAoSZ5Oei"
-            },
-            "06": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "07": {
-                "artist": "Djanny B.Boy",
-                "ratio": 6,
-                "title": "Lentement",
-                "trackid": "1ZE5xVXDzMEYVVj8YuM0kd"
-            },
-            "08": {
-                "artist": "Pierre Kwenders",
-                "ratio": 6,
-                "title": "Kilimanjaro",
-                "trackid": "1zTh5qI5VuWF86ESoGd0cj"
-            }
+    "moonshine-airways-12th-january-2022": {},
+    "moonshine-airways-24th-june-2022": {
+        "00": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
         },
-        "moonshine-airways-3rd-may-2022": {
-            "00": {
-                "artist": "Major League Djz",
-                "ratio": 5,
-                "title": "BAKWA LAH",
-                "trackid": "5fSBPtedqX65IaJlyGHbK0"
-            },
-            "01": {
-                "artist": "DBN Gogo",
-                "ratio": 6,
-                "title": "Possible",
-                "trackid": "6ARmMd93cqRGYDP0XC6JH7"
-            },
-            "02": {
-                "artist": "Blaq Pages",
-                "ratio": 6,
-                "title": "Tribute to the Ancestors",
-                "trackid": "4gCQJHYTZrXXw82UOxFrU7"
-            },
-            "03": {
-                "artist": "Young Stunna",
-                "ratio": 6,
-                "title": "Adiwele - Mixed",
-                "trackid": "5OXa5YFHmfNsVYG1T5HMcq"
-            },
-            "04": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "05": {
-                "artist": "Moonshine",
-                "ratio": 6,
-                "title": "Lelo - Instrumental",
-                "trackid": "3yvCGgznAZ0RMrPddhcFVS"
-            },
-            "06": {
-                "artist": "Moonshine",
-                "ratio": 6,
-                "title": "Obomi Nga",
-                "trackid": "1YthsroKCm3ebScYHHjoEo"
-            }
+        "01": {
+            "artist": "J.B. Mpiana",
+            "ratio": 5,
+            "title": "48 Heures gecoco",
+            "trackid": "72WLkzQFqaRyuNCeUEU2Fo"
+        },
+        "02": {
+            "artist": "Barbara Kanam",
+            "ratio": 6,
+            "title": "Amour invincible",
+            "trackid": "3Z5VrRP1vCr0RmRF6kOp5y"
+        },
+        "03": {
+            "artist": "Koffi Olomide",
+            "ratio": 6,
+            "title": "Phaseur",
+            "trackid": "5Ojql2qJWHhCjylQJ6KtQ2"
+        },
+        "04": {
+            "artist": "Koffi Olomide",
+            "ratio": 6,
+            "title": "Nyataquance",
+            "trackid": "4GkfUXoqNzaf7SrbDc7666"
+        },
+        "05": {
+            "artist": "DJ Patcheli",
+            "ratio": 6,
+            "title": "Libolongo",
+            "trackid": "0OdhXa7q6YKIvoAoSZ5Oei"
+        },
+        "06": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "07": {
+            "artist": "Djanny B.Boy",
+            "ratio": 6,
+            "title": "Lentement",
+            "trackid": "1ZE5xVXDzMEYVVj8YuM0kd"
+        },
+        "08": {
+            "artist": "Pierre Kwenders",
+            "ratio": 6,
+            "title": "Kilimanjaro",
+            "trackid": "1zTh5qI5VuWF86ESoGd0cj"
         }
     },
-    "search": {
-        "moonshine-airways-12th-january-2022": {},
-        "moonshine-airways-24th-june-2022": {
-            "00": {
-                "s0": "",
-                "s1": ""
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "J.B. Mpiana",
-                        "title": "48 Heures gecoco",
-                        "uri": "72WLkzQFqaRyuNCeUEU2Fo"
-                    },
-                    {
-                        "artist": "JB Mpiana",
-                        "title": "Mpunda",
-                        "uri": "5WVhsXPvVI2iFzYZFhjUeS"
-                    },
-                    {
-                        "artist": "JB Mpiana",
-                        "title": "Tetuka",
-                        "uri": "5JyqBiYI5zXBafe2EMLREM"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Barbara Kanam",
-                        "title": "Amour invincible",
-                        "uri": "3Z5VrRP1vCr0RmRF6kOp5y"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Barbara Kanam",
-                        "title": "Amour invincible",
-                        "uri": "3Z5VrRP1vCr0RmRF6kOp5y"
-                    },
-                    {
-                        "artist": "Barbara Kanam",
-                        "title": "Djarabi",
-                        "uri": "66JT7NAbV5LlTF0e7hvgs3"
-                    },
-                    {
-                        "artist": "Barbara Kanam",
-                        "title": "Reste",
-                        "uri": "00RCRFCkZGHBhvmDwNCKkp"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Phaseur",
-                        "uri": "5Ojql2qJWHhCjylQJ6KtQ2"
-                    },
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Phaseur - Live",
-                        "uri": "2BgwXl5GvrmWXTnNrLVap2"
-                    },
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Phaseur - Live",
-                        "uri": "1w1gfeWpYU4eTPhmXIxc28"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Phaseur",
-                        "uri": "5Ojql2qJWHhCjylQJ6KtQ2"
-                    },
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Phaseur - Live",
-                        "uri": "2BgwXl5GvrmWXTnNrLVap2"
-                    },
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Phaseur (Live)",
-                        "uri": "4zTCXSas0T4bX3m2l2YQY5"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Nyataquance",
-                        "uri": "4GkfUXoqNzaf7SrbDc7666"
-                    },
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Nyataquance",
-                        "uri": "0w2BNR85UlwpwzMb3xctRb"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Nyataquance",
-                        "uri": "4GkfUXoqNzaf7SrbDc7666"
-                    },
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Loi",
-                        "uri": "3ERMjh3EfOWWoLJjcxtpvt"
-                    },
-                    {
-                        "artist": "Koffi Olomide",
-                        "title": "Alidor",
-                        "uri": "7EBh3tlfizMDbMsjU8vWfs"
-                    }
-                ]
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "DJ Patcheli",
-                        "title": "Libolongo",
-                        "uri": "0OdhXa7q6YKIvoAoSZ5Oei"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "DJ Patcheli",
-                        "title": "Libolongo",
-                        "uri": "0OdhXa7q6YKIvoAoSZ5Oei"
-                    },
-                    {
-                        "artist": "Lowsheen",
-                        "title": "Uthando Lwakho",
-                        "uri": "6UrCdosrSwYJAXAb9UQeW6"
-                    },
-                    {
-                        "artist": "AmaSiblings",
-                        "title": "Uthando Lwami",
-                        "uri": "4va1DJfcQelri4b11uvefM"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": ""
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Djanny B.Boy",
-                        "title": "Lentement",
-                        "uri": "1ZE5xVXDzMEYVVj8YuM0kd"
-                    },
-                    {
-                        "artist": "DJ Bboy",
-                        "title": "Rebenta",
-                        "uri": "2n4QvRfYduwa89Ozl3PSdW"
-                    },
-                    {
-                        "artist": "DJ Bboy",
-                        "title": "Stamina",
-                        "uri": "3ZoFYlrCJcIAZ36x1VmCIL"
-                    }
-                ]
-            },
-            "08": {
-                "s0": [
-                    {
-                        "artist": "Pierre Kwenders",
-                        "title": "Kilimanjaro",
-                        "uri": "1zTh5qI5VuWF86ESoGd0cj"
-                    },
-                    {
-                        "artist": "Pierre Kwenders",
-                        "title": "Kilimanjaro",
-                        "uri": "6uAjco2VicGZDJqdNLYywt"
-                    },
-                    {
-                        "artist": "Pierre Kwenders",
-                        "title": "Kilimanjaro",
-                        "uri": "53JR4zpXV5guxaKJXjh6AO"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Pierre Kwenders",
-                        "title": "Kilimanjaro",
-                        "uri": "1zTh5qI5VuWF86ESoGd0cj"
-                    },
-                    {
-                        "artist": "Pierre Kwenders",
-                        "title": "Kilimanjaro",
-                        "uri": "6uAjco2VicGZDJqdNLYywt"
-                    },
-                    {
-                        "artist": "Pierre Kwenders",
-                        "title": "Heartbeat",
-                        "uri": "6rPTmVhYu4irY9GB1RCYKR"
-                    }
-                ]
-            }
+    "moonshine-airways-3rd-may-2022": {
+        "00": {
+            "artist": "Major League Djz",
+            "ratio": 5,
+            "title": "BAKWA LAH",
+            "trackid": "5fSBPtedqX65IaJlyGHbK0"
         },
-        "moonshine-airways-3rd-may-2022": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Aymos",
-                        "title": "Ababuyanga",
-                        "uri": "61fo1fYkvovgboDvh96ypB"
-                    },
-                    {
-                        "artist": "Major League Djz",
-                        "title": "BAKWA LAH",
-                        "uri": "5fSBPtedqX65IaJlyGHbK0"
-                    },
-                    {
-                        "artist": "Aymos",
-                        "title": "Ababuyanga",
-                        "uri": "520p7wOoGrqlkHakYiTiom"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "DBN Gogo",
-                        "title": "Possible",
-                        "uri": "6ARmMd93cqRGYDP0XC6JH7"
-                    },
-                    {
-                        "artist": "DBN Gogo",
-                        "title": "Possible (Mixed)",
-                        "uri": "745daXSupkxKwrA2ZMqrMG"
-                    },
-                    {
-                        "artist": "DBN Gogo",
-                        "title": "Possible",
-                        "uri": "3vKOQQfhc9EjADoKKuuJhy"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "DBN Gogo",
-                        "title": "Possible",
-                        "uri": "6ARmMd93cqRGYDP0XC6JH7"
-                    },
-                    {
-                        "artist": "DBN Gogo",
-                        "title": "Possible (Mixed)",
-                        "uri": "745daXSupkxKwrA2ZMqrMG"
-                    },
-                    {
-                        "artist": "DBN Gogo",
-                        "title": "Bells",
-                        "uri": "7c5rKCDYYbyBsLlJ00NgCD"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Blaq Pages",
-                        "title": "Tribute to the Ancestors",
-                        "uri": "4gCQJHYTZrXXw82UOxFrU7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Blaq Pages",
-                        "title": "Tribute to the Ancestors",
-                        "uri": "4gCQJHYTZrXXw82UOxFrU7"
-                    },
-                    {
-                        "artist": "Black Pages",
-                        "title": "Transfixed",
-                        "uri": "2Ut7WG3fGSJxsU9jZZO0mr"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Young Stunna",
-                        "title": "Adiwele (feat. Kabza De Small & DJ Maphorisa)",
-                        "uri": "2dTQe0W5KXs6TNVV7yi2oS"
-                    },
-                    {
-                        "artist": "Young Stunna",
-                        "title": "Adiwele - Mixed",
-                        "uri": "5OXa5YFHmfNsVYG1T5HMcq"
-                    },
-                    {
-                        "artist": "Young Stunna",
-                        "title": "Adiwele (Mixed)",
-                        "uri": "2HUNiaNBxfTsRAhJYjFbeT"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Young Stunna",
-                        "title": "Adiwele (feat. Kabza De Small & DJ Maphorisa)",
-                        "uri": "2dTQe0W5KXs6TNVV7yi2oS"
-                    },
-                    {
-                        "artist": "Young Stunna",
-                        "title": "Adiwele - Mixed",
-                        "uri": "5OXa5YFHmfNsVYG1T5HMcq"
-                    },
-                    {
-                        "artist": "YoungBoy Never Broke Again",
-                        "title": "Young Stunna",
-                        "uri": "6wS2qpDF5iX9jlfOJN4OPg"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": ""
-            },
-            "05": {
-                "s0": [
-                    {
-                        "artist": "Moonshine",
-                        "title": "Lelo - Instrumental",
-                        "uri": "3yvCGgznAZ0RMrPddhcFVS"
-                    },
-                    {
-                        "artist": "Moonshine",
-                        "title": "Lelo - Instrumental",
-                        "uri": "7drDPNLDlRnoxqZ95RIt36"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Moonshine",
-                        "title": "Lelo - Instrumental",
-                        "uri": "7drDPNLDlRnoxqZ95RIt36"
-                    },
-                    {
-                        "artist": "Moonshine",
-                        "title": "Lelo - Instrumental",
-                        "uri": "3yvCGgznAZ0RMrPddhcFVS"
-                    },
-                    {
-                        "artist": "Caravan Palace",
-                        "title": "Moonshine",
-                        "uri": "76un8rSorOzY8nEidERTdi"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Moonshine",
-                        "title": "Obomi Nga",
-                        "uri": "1YthsroKCm3ebScYHHjoEo"
-                    },
-                    {
-                        "artist": "Utope",
-                        "title": "Moonshine",
-                        "uri": "5fzlhzeJawZqZADhPjsO87"
-                    },
-                    {
-                        "artist": "Kobe Zuis",
-                        "title": "Moonshine",
-                        "uri": "5lyGGLPbRBc3j1Vks4sIYW"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "DBN Gogo",
+            "ratio": 6,
+            "title": "Possible",
+            "trackid": "6ARmMd93cqRGYDP0XC6JH7"
+        },
+        "02": {
+            "artist": "Blaq Pages",
+            "ratio": 6,
+            "title": "Tribute to the Ancestors",
+            "trackid": "4gCQJHYTZrXXw82UOxFrU7"
+        },
+        "03": {
+            "artist": "Young Stunna",
+            "ratio": 6,
+            "title": "Adiwele - Mixed",
+            "trackid": "5OXa5YFHmfNsVYG1T5HMcq"
+        },
+        "04": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "05": {
+            "artist": "Moonshine",
+            "ratio": 6,
+            "title": "Lelo - Instrumental",
+            "trackid": "3yvCGgznAZ0RMrPddhcFVS"
+        },
+        "06": {
+            "artist": "Moonshine",
+            "ratio": 6,
+            "title": "Obomi Nga",
+            "trackid": "1YthsroKCm3ebScYHHjoEo"
         }
     }
 }

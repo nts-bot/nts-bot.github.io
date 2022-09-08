@@ -1,3277 +1,688 @@
 {
-    "flags": {
-        "omelet-11th-november-2016": {
-            "00": {
-                "artist": "Jeff Macks",
-                "ratio": 2,
-                "title": "GroovyPimpin",
-                "trackid": "61e30lGILeNzx96N1O9ixE"
-            },
-            "01": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "02": {
-                "artist": "Elk",
-                "ratio": 2,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "03": {
-                "artist": "slowthai",
-                "ratio": 6,
-                "title": "Jiggle",
-                "trackid": "6DysQT0UnyVOHTNnBjaNXH"
-            },
-            "04": {
-                "artist": "Ray Fuego",
-                "ratio": 2,
-                "title": "Ik Leen Niet",
-                "trackid": "2kfqxLwKFLxzXysJ1CwkDX"
-            },
-            "05": {
-                "artist": "A$AP Rocky",
-                "ratio": 1,
-                "title": "Brand New Guy (feat. ScHoolboy Q)",
-                "trackid": "6haTrice1PU59Kd7esp3w1"
-            },
-            "06": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Ride Out",
-                "trackid": "2glfyBSK3wqoumtEVN1F07"
-            },
-            "07": {
-                "artist": "Daniel OG",
-                "ratio": 1,
-                "title": "Only One",
-                "trackid": "1FbnMoOVIVkLqVkPdv96Xo"
-            },
-            "08": {
-                "artist": "Ocelote Rojo",
-                "ratio": 2,
-                "title": "Untitled 1",
-                "trackid": "0xsWoUGThGgTdfiFdhn4Dt"
-            },
-            "09": {
-                "artist": "Fredwave",
-                "ratio": 4,
-                "title": "Pray",
-                "trackid": "1W0Mc39Hxm8oW4Ucy6JPZ0"
-            },
-            "10": {
-                "artist": "Kelela",
-                "ratio": 6,
-                "title": "Guns & Synths (Prod. Bok Bok)",
-                "trackid": "0NsQUK5mbHJhglgveP8b6W"
-            },
-            "11": {
-                "artist": "Elk",
-                "ratio": 1,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "12": {
-                "artist": "Ocelote Rojo",
-                "ratio": 3,
-                "title": "Untitled 1",
-                "trackid": "0xsWoUGThGgTdfiFdhn4Dt"
-            },
-            "13": {
-                "artist": "Elk",
-                "ratio": 1,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "14": {
-                "artist": "Flatbush Zombies",
-                "ratio": 2,
-                "title": "Headstone",
-                "trackid": "0PWP4LIOI5xjVkaWqES7ek"
-            },
-            "15": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Str8 Ballin",
-                "trackid": "3FzmWEUMpn2j2M5NCQK0WP"
-            },
-            "16": {
-                "artist": "Elk",
-                "ratio": 0,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "17": {
-                "artist": "World composer",
-                "ratio": 1,
-                "title": "Omelett",
-                "trackid": "6UvQdSgvSFs6c4FLH27x8a"
-            },
-            "18": {
-                "artist": "omelet",
-                "ratio": 3,
-                "title": "R34",
-                "trackid": "3GPSXcZnCPfasNKGPUWrMf"
-            },
-            "19": {
-                "artist": "Daniel OG",
-                "ratio": 2,
-                "title": "Fade (Animal Kingdom)",
-                "trackid": "5MyJJTyU8xfWHFqhCdYWss"
-            },
-            "20": {
-                "artist": "Six Ft Ditch",
-                "ratio": 0,
-                "title": "Six Feet Deep",
-                "trackid": "0Cmr4SxJMmfr9hXVt6EQUh"
-            },
-            "21": {
-                "artist": "Elk",
-                "ratio": 0,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "22": {
-                "artist": "Elleot",
-                "ratio": 5,
-                "title": "Follow Me",
-                "trackid": "0x6D6jQZYL1bx76oZFEhMY"
-            },
-            "23": {
-                "artist": "Internet Money",
-                "ratio": 0,
-                "title": "Giddy Up - Instrumental",
-                "trackid": "3MVDvl2svU4hjZGJ3OfILo"
-            },
-            "24": {
-                "artist": "Katy B",
-                "ratio": 6,
-                "title": "Honey",
-                "trackid": "5q83kstyzBZWeoVbEBmrMD"
-            },
-            "25": {
-                "artist": "A$AP Rocky",
-                "ratio": 6,
-                "title": "West Side Highway",
-                "trackid": "3RySVukMPe4R7lAP8oGI17"
-            },
-            "26": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "I'm Good",
-                "trackid": "307f48OjM79zfose1RR1ej"
-            },
-            "27": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Kno Ya Wrong",
-                "trackid": "3yg7fx2DVjbQRLoROq3wA8"
-            }
+    "omelet-11th-november-2016": {
+        "00": {
+            "artist": "Jeff Macks",
+            "ratio": 2,
+            "title": "GroovyPimpin",
+            "trackid": "61e30lGILeNzx96N1O9ixE"
         },
-        "omelet-19th-august-2016": {
-            "00": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "01": {
-                "artist": "Clipse",
-                "ratio": 6,
-                "title": "Intro",
-                "trackid": "07H9mwJYoTQdOoaOKxBH5z"
-            },
-            "02": {
-                "artist": "MC Lyte",
-                "ratio": 6,
-                "title": "Closer (feat. Space Nine)",
-                "trackid": "4xMExBV1gkHThPByOGHBMg"
-            },
-            "03": {
-                "artist": "Thundercat",
-                "ratio": 6,
-                "title": "Them Changes",
-                "trackid": "7CH99b2i1TXS5P8UUyWtnM"
-            },
-            "04": {
-                "artist": "N.E.R.D",
-                "ratio": 2,
-                "title": "Spaz",
-                "trackid": "51DOzyPzT5cDii6iGSXRN2"
-            },
-            "05": {
-                "artist": "Ray Fuego",
-                "ratio": 3,
-                "title": "Ik Leen Niet",
-                "trackid": "2kfqxLwKFLxzXysJ1CwkDX"
-            },
-            "06": {
-                "artist": "Slum Village",
-                "ratio": 6,
-                "title": "Climax (Girl Shit)",
-                "trackid": "6V5L99nGuMyJ1XlPCVNOcd"
-            },
-            "07": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "JoHn Muir",
-                "trackid": "7sr74Bz3GBTNMQe1m4F5Ut"
-            },
-            "08": {
-                "artist": "808INK",
-                "ratio": 6,
-                "title": "Billy",
-                "trackid": "0bwvwrxJWYxWPhdTo2OoB3"
-            },
-            "09": {
-                "artist": "GoldLink",
-                "ratio": 6,
-                "title": "Spectrum",
-                "trackid": "2LvpVkv0z8oFMcc048FfJd"
-            },
-            "10": {
-                "artist": "Katy B",
-                "ratio": 4,
-                "title": "Honey",
-                "trackid": "5q83kstyzBZWeoVbEBmrMD"
-            },
-            "11": {
-                "artist": "Travis Scott",
-                "ratio": 6,
-                "title": "I Can Tell",
-                "trackid": "2hiuiI3ac0I5kJWtkeGHEL"
-            },
-            "12": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Tookie Knows II",
-                "trackid": "3mViCAKDSnEoGijjbmcQYA"
-            },
-            "13": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "14": {
-                "artist": "Bankroll Fresh",
-                "ratio": 6,
-                "title": "Trap",
-                "trackid": "2ska41uZlmVLpQDmCBhCJN"
-            },
-            "15": {
-                "artist": "Kodak Black",
-                "ratio": 6,
-                "title": "No Flockin",
-                "trackid": "0ORJ7Yx45MjkTZXtcc99R3"
-            },
-            "16": {
-                "artist": "slowthai",
-                "ratio": 6,
-                "title": "Jiggle",
-                "trackid": "6DysQT0UnyVOHTNnBjaNXH"
-            },
-            "17": {
-                "artist": "Earl Sweatshirt",
-                "ratio": 6,
-                "title": "Chum",
-                "trackid": "6plT7nFGiXKSBP9HFSI4ef"
-            },
-            "18": {
-                "artist": "A$AP Rocky",
-                "ratio": 5,
-                "title": "Roll One Up",
-                "trackid": "2mUyRUNLHEPFflumWGuHyA"
-            },
-            "19": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Str8 Ballin",
-                "trackid": "3FzmWEUMpn2j2M5NCQK0WP"
-            },
-            "20": {
-                "artist": "808INK",
-                "ratio": 6,
-                "title": "Dssy",
-                "trackid": "0pf3QcnIQ1mswAN5Z8NsiC"
-            },
-            "21": {
-                "artist": "Daniel OG",
-                "ratio": 2,
-                "title": "When I (Dumpy)",
-                "trackid": "0ZSH6jKoLYojhdXaC6adbU"
-            },
-            "22": {
-                "artist": "Denzel Himself",
-                "ratio": 2,
-                "title": "Melty",
-                "trackid": "22sl5UcSw51isA42jb0LWG"
-            },
-            "23": {
-                "artist": "Elk",
-                "ratio": 1,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "24": {
-                "artist": "One Time Weekend",
-                "ratio": 1,
-                "title": "Omelet",
-                "trackid": "0D1fr5kzOQ8hEsxFdntmDt"
-            },
-            "25": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "26": {
-                "artist": "One Time Weekend",
-                "ratio": 2,
-                "title": "Omelet",
-                "trackid": "0D1fr5kzOQ8hEsxFdntmDt"
-            },
-            "27": {
-                "artist": "CloZee",
-                "ratio": 2,
-                "title": "Lonely Island",
-                "trackid": "7MMPY3nzT16svsMYFsOpDV"
-            },
-            "28": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "29": {
-                "artist": "One Time Weekend",
-                "ratio": 1,
-                "title": "Omelet",
-                "trackid": "0D1fr5kzOQ8hEsxFdntmDt"
-            },
-            "30": {
-                "artist": "Elk",
-                "ratio": 2,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "31": {
-                "artist": "Elk",
-                "ratio": 1,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "32": {
-                "artist": "ScHoolboy Q",
-                "ratio": 2,
-                "title": "Kno Ya Wrong",
-                "trackid": "3yg7fx2DVjbQRLoROq3wA8"
-            },
-            "33": {
-                "artist": "Elk",
-                "ratio": 2,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "34": {
-                "artist": "St1fu",
-                "ratio": 0,
-                "title": "KINGPINPIN",
-                "trackid": "2FXoFq9DBHcqde1O9i3BA1"
-            },
-            "35": {
-                "artist": "Gudrun Gut",
-                "ratio": 0,
-                "title": "Goofy",
-                "trackid": "59rYsxWw57CU715LRIQg0G"
-            },
-            "36": {
-                "artist": "Noname",
-                "ratio": 4,
-                "title": "Diddy Bop (feat. Cam O'bi & Raury)",
-                "trackid": "6JvfBzqZmSiEG5MjM7OcSY"
-            },
-            "37": {
-                "artist": "Kendrick Lamar",
-                "ratio": 6,
-                "title": "Rigamortus",
-                "trackid": "2lD6AoA8qf2t4Dkf2TcmNK"
-            },
-            "38": {
-                "artist": "Thundercat",
-                "ratio": 6,
-                "title": "Them Changes",
-                "trackid": "7CH99b2i1TXS5P8UUyWtnM"
-            }
+        "01": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
         },
-        "omelet-22nd-july-2016": {
-            "00": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Kno Ya Wrong",
-                "trackid": "3yg7fx2DVjbQRLoROq3wA8"
-            },
-            "01": {
-                "artist": "808INK",
-                "ratio": 1,
-                "title": "Suede Jaw",
-                "trackid": "6imaoKkU3JVj5TsJMZiD4G"
-            },
-            "02": {
-                "artist": "PBGR",
-                "ratio": 5,
-                "title": "March",
-                "trackid": "61GVW8T7BsH6P5zhJcwobr"
-            },
-            "03": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Dope Dealer",
-                "trackid": "7pda6TLAbVGxUjIUtbiNt0"
-            },
-            "04": {
-                "artist": "A$Ton Matthews",
-                "ratio": 6,
-                "title": "Like This",
-                "trackid": "77wF6QTxPcNmTJuaTD9JOX"
-            },
-            "05": {
-                "artist": "A$AP Rocky",
-                "ratio": 1,
-                "title": "Brand New Guy (feat. ScHoolboy Q)",
-                "trackid": "6haTrice1PU59Kd7esp3w1"
-            },
-            "06": {
-                "artist": "Nellie McKay",
-                "ratio": 1,
-                "title": "I Wanna Get Married",
-                "trackid": "0s6D23Hx6thladQfEuIXyw"
-            },
-            "07": {
-                "artist": "Flatbush Zombies",
-                "ratio": 2,
-                "title": "Headstone",
-                "trackid": "0PWP4LIOI5xjVkaWqES7ek"
-            },
-            "08": {
-                "artist": "",
-                "ratio": -1,
-                "title": "",
-                "trackid": ""
-            },
-            "09": {
-                "artist": "ScHoolboy Q",
-                "ratio": 3,
-                "title": "Neva CHange",
-                "trackid": "6tPDalwocS7zgeFpYi3xtr"
-            },
-            "10": {
-                "artist": "Joey Bada$$",
-                "ratio": 6,
-                "title": "Big Dusty",
-                "trackid": "3wnAMgb3pkn4O3gYYLP5db"
-            },
-            "11": {
-                "artist": "808INK",
-                "ratio": 6,
-                "title": "Chubby",
-                "trackid": "7KB5YLxNMy26cyTAytVeLC"
-            },
-            "12": {
-                "artist": "Urmo",
-                "ratio": 2,
-                "title": "What's My Name",
-                "trackid": "2uTwweC6Sx4adv8BEXpoDZ"
-            },
-            "13": {
-                "artist": "Noam Bass",
-                "ratio": 1,
-                "title": "Break Into Your Head",
-                "trackid": "2ahYfnsbGZAJZopgcfMoOx"
-            },
-            "14": {
-                "artist": "Skepta",
-                "ratio": 6,
-                "title": "Crime Riddim",
-                "trackid": "5NucMmR6MVuWsBfW4322yw"
-            },
-            "15": {
-                "artist": "Pharrell",
-                "ratio": 6,
-                "title": "Stay With Me",
-                "trackid": "5YghVvq4DLMdSDKwufxZHr"
-            },
-            "16": {
-                "artist": "Skepta",
-                "ratio": 6,
-                "title": "Ladies Hit Squad",
-                "trackid": "5DddJVNEGBfUxy9Dtr45gI"
-            },
-            "17": {
-                "artist": "ScHoolboy Q",
-                "ratio": 1,
-                "title": "I'm Good",
-                "trackid": "307f48OjM79zfose1RR1ej"
-            },
-            "18": {
-                "artist": "Elk",
-                "ratio": 2,
-                "title": "Omelet",
-                "trackid": "7lt7hfiqE4vapLOLQPYIhb"
-            },
-            "19": {
-                "artist": "A$AP Rocky",
-                "ratio": 1,
-                "title": "Get Lit (feat. Fat Tony)",
-                "trackid": "4nzmPINOWf5sdKNrTjcM3z"
-            },
-            "20": {
-                "artist": "Two-9",
-                "ratio": 0,
-                "title": "World Go Crazy",
-                "trackid": "4gCREr6YIJJcvhpsM91OMS"
-            },
-            "21": {
-                "artist": "808INK",
-                "ratio": 6,
-                "title": "Q'd Up",
-                "trackid": "6jgDrVYg0O5LyLpyAFl1nn"
-            },
-            "22": {
-                "artist": "Ray Fuego",
-                "ratio": 4,
-                "title": "YUNG BUM",
-                "trackid": "6ZgAm99HOltvIDvaxXzBPp"
-            },
-            "23": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Tookie Knows II",
-                "trackid": "3mViCAKDSnEoGijjbmcQYA"
-            },
-            "24": {
-                "artist": "Thundercat",
-                "ratio": 6,
-                "title": "Them Changes",
-                "trackid": "7CH99b2i1TXS5P8UUyWtnM"
-            },
-            "25": {
-                "artist": "DanielGóes",
-                "ratio": 1,
-                "title": "Lá",
-                "trackid": "4J3Wac9sB7fcolxnGjDEKr"
-            },
-            "26": {
-                "artist": "Solange",
-                "ratio": 2,
-                "title": "Almeda",
-                "trackid": "6IAgarq2wDeYzpsY2Kx0Hw"
-            },
-            "27": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Man Of The Year",
-                "trackid": "5SsR3wtCOafDmZgvIdRhSm"
-            },
-            "28": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "Groovy Tony / Eddie Kane",
-                "trackid": "1MY4HVXfBkUg1mUjmCjznI"
-            },
-            "29": {
-                "artist": "Kendrick Lamar",
-                "ratio": 6,
-                "title": "Tammy's Song (Her Evils)",
-                "trackid": "22gXA7HlEd0z13zdc3hju7"
-            },
-            "30": {
-                "artist": "Kanye West",
-                "ratio": 6,
-                "title": "I'm In It",
-                "trackid": "52NmkyHsGsHGb1UX8fTkMg"
-            },
-            "31": {
-                "artist": "Giggs",
-                "ratio": 6,
-                "title": "Talkin the Hardest",
-                "trackid": "0JmKkvlDtgPIYwLdxPNtyx"
-            },
-            "32": {
-                "artist": "Big L",
-                "ratio": 6,
-                "title": "Da Graveyard",
-                "trackid": "04Rz403IY7QUqgfrTWX6OU"
-            },
-            "33": {
-                "artist": "Slum Village",
-                "ratio": 6,
-                "title": "Climax (Girl Shit)",
-                "trackid": "6V5L99nGuMyJ1XlPCVNOcd"
-            },
-            "34": {
-                "artist": "Dr. Dre",
-                "ratio": 6,
-                "title": "Still D.R.E.",
-                "trackid": "503OTo2dSqe7qk76rgsbep"
-            },
-            "35": {
-                "artist": "Earl Sweatshirt",
-                "ratio": 5,
-                "title": "Knight (feat. Domo Genesis)",
-                "trackid": "2LbL1HaoZrXrCR538uxUjl"
-            },
-            "36": {
-                "artist": "Three 6 Mafia",
-                "ratio": 5,
-                "title": "Playa Hataz",
-                "trackid": "0TfHub9Xd5kr6lwpiWOxO7"
-            },
-            "37": {
-                "artist": "A$AP Rocky",
-                "ratio": 5,
-                "title": "Bass",
-                "trackid": "3tynJ5xl3ZjRj2fPQF0kNi"
-            },
-            "38": {
-                "artist": "ScHoolboy Q",
-                "ratio": 6,
-                "title": "THat Part",
-                "trackid": "2yJ9GVCLMmzBBfQAnfzlwr"
-            }
+        "02": {
+            "artist": "Elk",
+            "ratio": 2,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
         },
-        "omelet-24th-june-2016": {
-            "00": {
-                "artist": "Earl Sweatshirt",
-                "ratio": 4,
-                "title": "Sunday (feat. Frank Ocean)",
-                "trackid": "0fAehaneUJdlSlWXYe1KZp"
-            },
-            "01": {
-                "artist": "Slum Village",
-                "ratio": 6,
-                "title": "Climax",
-                "trackid": "0ql1SFxq7xKtXCPU0huup3"
-            },
-            "02": {
-                "artist": "Earl Sweatshirt",
-                "ratio": 3,
-                "title": "Pre (feat. SK La' Flare)",
-                "trackid": "4B31QOL13iBeuIsaGD20BS"
-            },
-            "03": {
-                "artist": "James Blake",
-                "ratio": 6,
-                "title": "Digital Lion",
-                "trackid": "0BQV07dSwLltMlLDo47ckp"
-            },
-            "04": {
-                "artist": "Kanye West",
-                "ratio": 6,
-                "title": "I'm In It",
-                "trackid": "52NmkyHsGsHGb1UX8fTkMg"
-            },
-            "05": {
-                "artist": "Kendrick Lamar",
-                "ratio": 4,
-                "title": "Real",
-                "trackid": "73eGiraiU7JkIsmFyQyJAv"
-            },
-            "06": {
-                "artist": "Kendrick Lamar",
-                "ratio": 6,
-                "title": "Sherane a.k.a Master Splinter’s Daughter",
-                "trackid": "5FF6Pyuh5jW6ybKHiaiGMy"
-            }
+        "03": {
+            "artist": "slowthai",
+            "ratio": 6,
+            "title": "Jiggle",
+            "trackid": "6DysQT0UnyVOHTNnBjaNXH"
+        },
+        "04": {
+            "artist": "Ray Fuego",
+            "ratio": 2,
+            "title": "Ik Leen Niet",
+            "trackid": "2kfqxLwKFLxzXysJ1CwkDX"
+        },
+        "05": {
+            "artist": "A$AP Rocky",
+            "ratio": 1,
+            "title": "Brand New Guy (feat. ScHoolboy Q)",
+            "trackid": "6haTrice1PU59Kd7esp3w1"
+        },
+        "06": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Ride Out",
+            "trackid": "2glfyBSK3wqoumtEVN1F07"
+        },
+        "07": {
+            "artist": "Daniel OG",
+            "ratio": 1,
+            "title": "Only One",
+            "trackid": "1FbnMoOVIVkLqVkPdv96Xo"
+        },
+        "08": {
+            "artist": "Ocelote Rojo",
+            "ratio": 2,
+            "title": "Untitled 1",
+            "trackid": "0xsWoUGThGgTdfiFdhn4Dt"
+        },
+        "09": {
+            "artist": "Fredwave",
+            "ratio": 4,
+            "title": "Pray",
+            "trackid": "1W0Mc39Hxm8oW4Ucy6JPZ0"
+        },
+        "10": {
+            "artist": "Kelela",
+            "ratio": 6,
+            "title": "Guns & Synths (Prod. Bok Bok)",
+            "trackid": "0NsQUK5mbHJhglgveP8b6W"
+        },
+        "11": {
+            "artist": "Elk",
+            "ratio": 1,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "12": {
+            "artist": "Ocelote Rojo",
+            "ratio": 3,
+            "title": "Untitled 1",
+            "trackid": "0xsWoUGThGgTdfiFdhn4Dt"
+        },
+        "13": {
+            "artist": "Elk",
+            "ratio": 1,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "14": {
+            "artist": "Flatbush Zombies",
+            "ratio": 2,
+            "title": "Headstone",
+            "trackid": "0PWP4LIOI5xjVkaWqES7ek"
+        },
+        "15": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Str8 Ballin",
+            "trackid": "3FzmWEUMpn2j2M5NCQK0WP"
+        },
+        "16": {
+            "artist": "Elk",
+            "ratio": 0,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "17": {
+            "artist": "World composer",
+            "ratio": 1,
+            "title": "Omelett",
+            "trackid": "6UvQdSgvSFs6c4FLH27x8a"
+        },
+        "18": {
+            "artist": "omelet",
+            "ratio": 3,
+            "title": "R34",
+            "trackid": "3GPSXcZnCPfasNKGPUWrMf"
+        },
+        "19": {
+            "artist": "Daniel OG",
+            "ratio": 2,
+            "title": "Fade (Animal Kingdom)",
+            "trackid": "5MyJJTyU8xfWHFqhCdYWss"
+        },
+        "20": {
+            "artist": "Six Ft Ditch",
+            "ratio": 0,
+            "title": "Six Feet Deep",
+            "trackid": "0Cmr4SxJMmfr9hXVt6EQUh"
+        },
+        "21": {
+            "artist": "Elk",
+            "ratio": 0,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "22": {
+            "artist": "Elleot",
+            "ratio": 5,
+            "title": "Follow Me",
+            "trackid": "0x6D6jQZYL1bx76oZFEhMY"
+        },
+        "23": {
+            "artist": "Internet Money",
+            "ratio": 0,
+            "title": "Giddy Up - Instrumental",
+            "trackid": "3MVDvl2svU4hjZGJ3OfILo"
+        },
+        "24": {
+            "artist": "Katy B",
+            "ratio": 6,
+            "title": "Honey",
+            "trackid": "5q83kstyzBZWeoVbEBmrMD"
+        },
+        "25": {
+            "artist": "A$AP Rocky",
+            "ratio": 6,
+            "title": "West Side Highway",
+            "trackid": "3RySVukMPe4R7lAP8oGI17"
+        },
+        "26": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "I'm Good",
+            "trackid": "307f48OjM79zfose1RR1ej"
+        },
+        "27": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Kno Ya Wrong",
+            "trackid": "3yg7fx2DVjbQRLoROq3wA8"
         }
     },
-    "search": {
-        "omelet-11th-november-2016": {
-            "00": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Jeff Macks",
-                        "title": "GroovyPimpin",
-                        "uri": "61e30lGILeNzx96N1O9ixE"
-                    },
-                    {
-                        "artist": "Jeff Macks",
-                        "title": "3rd Coastin'",
-                        "uri": "454ruwDaoNNz34SLNfkeAY"
-                    },
-                    {
-                        "artist": "Jeff MacKinnon",
-                        "title": "Badvertisements",
-                        "uri": "4s0Fnjnuov5Gy1OmbCcGvw"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": ""
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "Löchil",
-                        "title": "omelette",
-                        "uri": "4yIMvqmEtI74lp62U1Of57"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "slowthai",
-                        "title": "Jiggle",
-                        "uri": "6DysQT0UnyVOHTNnBjaNXH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "slowthai",
-                        "title": "Jiggle",
-                        "uri": "6DysQT0UnyVOHTNnBjaNXH"
-                    },
-                    {
-                        "artist": "Duke & Jones",
-                        "title": "Jiggle Jiggle",
-                        "uri": "1I4lCSP69P74nU3a6Su5L2"
-                    },
-                    {
-                        "artist": "slowthai",
-                        "title": "adhd",
-                        "uri": "0LggcOLwIBQ50Ju9JWjhA9"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "Doekoedoekoe",
-                        "uri": "4RimBbKrvdLMFeaYNYBh6T"
-                    },
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "Ik Leen Niet",
-                        "uri": "2kfqxLwKFLxzXysJ1CwkDX"
-                    },
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "Studiosessie 283 - 101Barz - Pt. 2",
-                        "uri": "3L17bdchyA0HnxWqvOKN9y"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Brand New Guy (feat. ScHoolboy Q)",
-                        "uri": "6haTrice1PU59Kd7esp3w1"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Goldie",
-                        "uri": "31G9RaSaDOI2NWcpnIp734"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Distorted Records",
-                        "uri": "57q6BgYP4gN6hPQViCB3um"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Ride Out",
-                        "uri": "2glfyBSK3wqoumtEVN1F07"
-                    },
-                    {
-                        "artist": "Kid Ink",
-                        "title": "Ride Out",
-                        "uri": "59PL9AwYjIrIpP04n9gmMR"
-                    },
-                    {
-                        "artist": "Kid Ink",
-                        "title": "Ride Out",
-                        "uri": "5geGLxg6YpZjE3ZQg7PQi2"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Da Beatfreakz",
-                        "title": "808 (feat. dutchavelli, DigDat & B Young)",
-                        "uri": "4MrXtliOu0PA3pWVdkA94h"
-                    },
-                    {
-                        "artist": "Daniel OG",
-                        "title": "Only One",
-                        "uri": "1FbnMoOVIVkLqVkPdv96Xo"
-                    },
-                    {
-                        "artist": "NUMA A TFIVE",
-                        "title": "808 - Original Mix",
-                        "uri": "52l5KLsfyVLyohfNur3KjA"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ocelote Rojo",
-                        "title": "Untitled 1",
-                        "uri": "0xsWoUGThGgTdfiFdhn4Dt"
-                    },
-                    {
-                        "artist": "One Eye Open",
-                        "title": "Untitled 1",
-                        "uri": "4gVk5GurSZDsmmKhAGSFqy"
-                    },
-                    {
-                        "artist": "Skeletal Family",
-                        "title": "Untitled",
-                        "uri": "7jeeEB0yuP3ddy6EjLEy74"
-                    }
-                ]
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Liars Dance",
-                        "title": "Into the Exit",
-                        "uri": "4mmF4GqsZq7sjBi20hOMDl"
-                    },
-                    {
-                        "artist": "Fredwave",
-                        "title": "Pray",
-                        "uri": "1W0Mc39Hxm8oW4Ucy6JPZ0"
-                    },
-                    {
-                        "artist": "Erwin Proost",
-                        "title": "Pray",
-                        "uri": "0cuMFT4hPjbFaGY8ybN1wL"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Kelela",
-                        "title": "Guns & Synths (Prod. Bok Bok)",
-                        "uri": "0NsQUK5mbHJhglgveP8b6W"
-                    },
-                    {
-                        "artist": "Kelela",
-                        "title": "Guns & Synths (Prod. Bok Bok)",
-                        "uri": "0TmA5WiLbOxMwOdIs1ilgw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kelela",
-                        "title": "Guns & Synths (Prod. Bok Bok)",
-                        "uri": "0NsQUK5mbHJhglgveP8b6W"
-                    },
-                    {
-                        "artist": "Kelela",
-                        "title": "LMK",
-                        "uri": "1D7NJhUyFsFpjIwXMiVO1R"
-                    },
-                    {
-                        "artist": "Kelela",
-                        "title": "Guns & Synths (Prod. Bok Bok)",
-                        "uri": "0TmA5WiLbOxMwOdIs1ilgw"
-                    }
-                ]
-            },
-            "11": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    },
-                    {
-                        "artist": "Daddyphatsnaps",
-                        "title": "Daredevil Season 3 (Kingpin Rap)",
-                        "uri": "1yIZlkm5h0a8vUBFBDCIKL"
-                    }
-                ]
-            },
-            "12": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ocelote Rojo",
-                        "title": "Untitled 1",
-                        "uri": "0xsWoUGThGgTdfiFdhn4Dt"
-                    },
-                    {
-                        "artist": "Skeletal Family",
-                        "title": "Untitled",
-                        "uri": "7jeeEB0yuP3ddy6EjLEy74"
-                    },
-                    {
-                        "artist": "Gremlinz",
-                        "title": "Untitled Bleeps",
-                        "uri": "3mn0yPS6zt3AOxyuaBfoVY"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "Orlene Lereau",
-                        "title": "Anatomy of the Body",
-                        "uri": "318ViYjxCMWlR5YaHGHhLI"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    }
-                ]
-            },
-            "14": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Flatbush Zombies",
-                        "title": "Headstone",
-                        "uri": "0PWP4LIOI5xjVkaWqES7ek"
-                    },
-                    {
-                        "artist": "Flatbush Zombies",
-                        "title": "Palm Trees - LIVE",
-                        "uri": "6dCv4TGigsIVoLrkAj1hQt"
-                    },
-                    {
-                        "artist": "Deep Blue Something",
-                        "title": "Breakfast At Tiffany's",
-                        "uri": "1uzWOoJdADfstQuFtQFTUn"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Str8 Ballin",
-                        "uri": "3FzmWEUMpn2j2M5NCQK0WP"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Str8 Ballin",
-                        "uri": "3FzmWEUMpn2j2M5NCQK0WP"
-                    },
-                    {
-                        "artist": "2Pac",
-                        "title": "Str8 Ballin'",
-                        "uri": "0bzLeU6MipJvb9Iq15CCVZ"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    }
-                ]
-            },
-            "16": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    }
-                ]
-            },
-            "17": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    },
-                    {
-                        "artist": "World composer",
-                        "title": "Omelett",
-                        "uri": "6UvQdSgvSFs6c4FLH27x8a"
-                    }
-                ]
-            },
-            "18": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Omelette",
-                        "title": "Pertama",
-                        "uri": "2pnRRMjMthUNl2noDQGr0r"
-                    },
-                    {
-                        "artist": "omelet",
-                        "title": "R34",
-                        "uri": "3GPSXcZnCPfasNKGPUWrMf"
-                    },
-                    {
-                        "artist": "TNH Nebula",
-                        "title": "Omelette's Theme",
-                        "uri": "21IGKGO2KjWmJxtT8TT1Ga"
-                    }
-                ]
-            },
-            "19": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Daniel OG",
-                        "title": "Only One",
-                        "uri": "1FbnMoOVIVkLqVkPdv96Xo"
-                    },
-                    {
-                        "artist": "Daniel OG",
-                        "title": "Fade (Animal Kingdom)",
-                        "uri": "5MyJJTyU8xfWHFqhCdYWss"
-                    },
-                    {
-                        "artist": "Daniel OG",
-                        "title": "Cali pack interlude",
-                        "uri": "4niymrRC7jIAnux5WBRuZW"
-                    }
-                ]
-            },
-            "20": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Billie Eilish",
-                        "title": "Six Feet Under",
-                        "uri": "2VlLbhGLVJgdOW7kKdWWFc"
-                    },
-                    {
-                        "artist": "Kina",
-                        "title": "6 ft deep (feat. Galvanic & Silent Child)",
-                        "uri": "52ZWNeOEBXdrVb2Im3Anht"
-                    },
-                    {
-                        "artist": "Six Ft Ditch",
-                        "title": "Six Feet Deep",
-                        "uri": "0Cmr4SxJMmfr9hXVt6EQUh"
-                    }
-                ]
-            },
-            "21": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "Löchil",
-                        "title": "omelette",
-                        "uri": "4yIMvqmEtI74lp62U1Of57"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet (Live at Telefunken Studios)",
-                        "uri": "5EAnLjkuw77xQnnY4YzvR3"
-                    }
-                ]
-            },
-            "22": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ozel",
-                        "title": "Follow Me",
-                        "uri": "3oH49VhBtfkJSSS2hqMPIQ"
-                    },
-                    {
-                        "artist": "Elleot",
-                        "title": "Follow Me",
-                        "uri": "0x6D6jQZYL1bx76oZFEhMY"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet (Live at Telefunken Studios)",
-                        "uri": "5EAnLjkuw77xQnnY4YzvR3"
-                    }
-                ]
-            },
-            "23": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Internet Money",
-                        "title": "Giddy Up - Instrumental",
-                        "uri": "3MVDvl2svU4hjZGJ3OfILo"
-                    },
-                    {
-                        "artist": "Inez Carlson",
-                        "title": "Giddy Excrement",
-                        "uri": "2zesgaEgpoXOultpsHCgBe"
-                    },
-                    {
-                        "artist": "Giddy",
-                        "title": "Giddy's Skit",
-                        "uri": "0i43LFlZCPAkORXF1JM5F2"
-                    }
-                ]
-            },
-            "24": {
-                "s0": [
-                    {
-                        "artist": "Katy B",
-                        "title": "Honey",
-                        "uri": "5q83kstyzBZWeoVbEBmrMD"
-                    },
-                    {
-                        "artist": "Bich Nguyen Katye",
-                        "title": "Honey Let's Be Lazy",
-                        "uri": "4AoxZzUtahqXUuP5xyqzhA"
-                    },
-                    {
-                        "artist": "Katy B",
-                        "title": "Honey",
-                        "uri": "1tHPylRrLAl1q78fC1dw5N"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Katy B",
-                        "title": "Honey",
-                        "uri": "5q83kstyzBZWeoVbEBmrMD"
-                    },
-                    {
-                        "artist": "Katy B",
-                        "title": "Katy on a Mission",
-                        "uri": "1xRra7ngUd2bzt4V7Hz7Dt"
-                    },
-                    {
-                        "artist": "Katy B",
-                        "title": "untitled",
-                        "uri": "785VkijtrtUDe9aSoLuCff"
-                    }
-                ]
-            },
-            "25": {
-                "s0": [
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "West Side Highway",
-                        "uri": "3RySVukMPe4R7lAP8oGI17"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "West Side Highway",
-                        "uri": "3RySVukMPe4R7lAP8oGI17"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Wassup",
-                        "uri": "1bjTEsJdDdbuA5JsdRRxhP"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Houston Old Head",
-                        "uri": "6lmMjq57ysbPyknJZjKuWI"
-                    }
-                ]
-            },
-            "26": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "I'm Good",
-                        "uri": "307f48OjM79zfose1RR1ej"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    },
-                    {
-                        "artist": "The Mowgli's",
-                        "title": "I'm Good",
-                        "uri": "5KQDGl3vAkNGyfvSbaW89E"
-                    }
-                ]
-            },
-            "27": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "3yg7fx2DVjbQRLoROq3wA8"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Hands on the Wheel (feat. Asap Rocky)",
-                        "uri": "78JKJfKsqgeBDBF58gv1SF"
-                    }
-                ]
-            }
+    "omelet-19th-august-2016": {
+        "00": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
         },
-        "omelet-19th-august-2016": {
-            "00": {
-                "s0": "",
-                "s1": ""
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Clipse",
-                        "title": "Intro",
-                        "uri": "07H9mwJYoTQdOoaOKxBH5z"
-                    },
-                    {
-                        "artist": "Clipse",
-                        "title": "We Got It For Cheap (Intro)",
-                        "uri": "3YKR7Wglf9JvWg5O7xdA5g"
-                    },
-                    {
-                        "artist": "Clipse",
-                        "title": "Re-Up Intro",
-                        "uri": "2ECefx6zaEZA5wMEyBRyhS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Clipse",
-                        "title": "Intro",
-                        "uri": "07H9mwJYoTQdOoaOKxBH5z"
-                    },
-                    {
-                        "artist": "Clipse",
-                        "title": "Grindin'",
-                        "uri": "3XrvEifl0hIzgBGUa5jBLS"
-                    },
-                    {
-                        "artist": "Clipse",
-                        "title": "Re-Up Intro",
-                        "uri": "2ECefx6zaEZA5wMEyBRyhS"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "MC Lyte",
-                        "title": "Closer (feat. Space Nine)",
-                        "uri": "4xMExBV1gkHThPByOGHBMg"
-                    },
-                    {
-                        "artist": "MC Lyte",
-                        "title": "Closer (feat. Space Nine)",
-                        "uri": "0xqgznZsm4gY5nqU679ofq"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "MC Lyte",
-                        "title": "Keep On, Keepin' On (feat. Xscape)",
-                        "uri": "42aZFX1bcCDj75ue0KoNSd"
-                    },
-                    {
-                        "artist": "MC Lyte",
-                        "title": "Cold Rock a Party (feat. Missy Misdemeanor Elliott) - Bad Boy Remix",
-                        "uri": "0hfNQm7gmjbIFlKiHoiACx"
-                    },
-                    {
-                        "artist": "MC Lyte",
-                        "title": "Cold Rock a Party",
-                        "uri": "29kUVoExWxGbn7syy6FP7d"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "7CH99b2i1TXS5P8UUyWtnM"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "4u8031pTkTODbRaDCbx8Yv"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes - Chopnotslop Remix",
-                        "uri": "2WRmxGFCK8b8oujhfK80TI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "7CH99b2i1TXS5P8UUyWtnM"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "4u8031pTkTODbRaDCbx8Yv"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes - Chopnotslop Remix",
-                        "uri": "2WRmxGFCK8b8oujhfK80TI"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "N.E.R.D",
-                        "title": "Spaz",
-                        "uri": "51DOzyPzT5cDii6iGSXRN2"
-                    },
-                    {
-                        "artist": "Umberto Giordano",
-                        "title": "Giordano : Andrea Chénier : Act 1 \"Un dì, all'azzurro spazio\" [Andrea Chénier]",
-                        "uri": "6srzoggSr8JrkSDhtUYmFD"
-                    },
-                    {
-                        "artist": "Lovro Von Matacic",
-                        "title": "Colpito qui m'avete Un dì all'azzurro spazio",
-                        "uri": "0qQ8VXkQfSLnAcbR8edLiV"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "Doekoedoekoe",
-                        "uri": "4RimBbKrvdLMFeaYNYBh6T"
-                    },
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "Ik Leen Niet",
-                        "uri": "2kfqxLwKFLxzXysJ1CwkDX"
-                    },
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "HEMELLICHT",
-                        "uri": "0aisJuPU7amvFiXgJHtHJ1"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit)",
-                        "uri": "6V5L99nGuMyJ1XlPCVNOcd"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit) - Instrumental",
-                        "uri": "2u4lshVSSbKo9067N8IQkx"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit) - Instrumental",
-                        "uri": "57GkfFGr5YpwVFd6NBpmex"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit)",
-                        "uri": "6V5L99nGuMyJ1XlPCVNOcd"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "0ql1SFxq7xKtXCPU0huup3"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit) - Instrumental",
-                        "uri": "2u4lshVSSbKo9067N8IQkx"
-                    }
-                ]
-            },
-            "07": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "JoHn Muir",
-                        "uri": "7sr74Bz3GBTNMQe1m4F5Ut"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "JoHn Muir",
-                        "uri": "7sr74Bz3GBTNMQe1m4F5Ut"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    },
-                    {
-                        "artist": "Schoolboy",
-                        "title": "Holes in the Sky",
-                        "uri": "2ruy9kFSKYF0MN9RuQ945h"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "So La Lune",
-                        "title": "Billy",
-                        "uri": "5wJpd1X2yvcSKlxvQ4cGqZ"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Billy",
-                        "uri": "0bwvwrxJWYxWPhdTo2OoB3"
-                    },
-                    {
-                        "artist": "Fred again..",
-                        "title": "Billie (loving arms)",
-                        "uri": "46E2xeKBLrxS8hJ37Gq35G"
-                    }
-                ]
-            },
-            "09": {
-                "s0": [
-                    {
-                        "artist": "GoldLink",
-                        "title": "Spectrum",
-                        "uri": "2LvpVkv0z8oFMcc048FfJd"
-                    },
-                    {
-                        "artist": "GoldLink",
-                        "title": "Spectrum",
-                        "uri": "0LmMlHabzcZ65OBZ37fbpW"
-                    },
-                    {
-                        "artist": "GoldLink",
-                        "title": "Spectrum - GEOTHEORY Remix",
-                        "uri": "4sv8shEvVY9iDo3cmJRWwU"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "GoldLink",
-                        "title": "Spectrum",
-                        "uri": "2LvpVkv0z8oFMcc048FfJd"
-                    },
-                    {
-                        "artist": "GoldLink",
-                        "title": "Spectrum",
-                        "uri": "0LmMlHabzcZ65OBZ37fbpW"
-                    },
-                    {
-                        "artist": "GoldLink",
-                        "title": "Spectrum - GEOTHEORY Remix",
-                        "uri": "4sv8shEvVY9iDo3cmJRWwU"
-                    }
-                ]
-            },
-            "10": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Katy B",
-                        "title": "Honey",
-                        "uri": "5q83kstyzBZWeoVbEBmrMD"
-                    },
-                    {
-                        "artist": "Katy B",
-                        "title": "Honey",
-                        "uri": "1tHPylRrLAl1q78fC1dw5N"
-                    },
-                    {
-                        "artist": "Katy B",
-                        "title": "Honey - Outro",
-                        "uri": "7spAzliJDIXXBi416YOfQv"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "Travis Scott",
-                        "title": "I Can Tell",
-                        "uri": "2hiuiI3ac0I5kJWtkeGHEL"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Travis Scott",
-                        "title": "I Can Tell",
-                        "uri": "2hiuiI3ac0I5kJWtkeGHEL"
-                    },
-                    {
-                        "artist": "YNS",
-                        "title": "Chaos",
-                        "uri": "0aKBbiTf0c4i5qeT7qhNDM"
-                    },
-                    {
-                        "artist": "Travis Scott",
-                        "title": "goosebumps",
-                        "uri": "6gBFPUFcJLzWGx4lenP6h2"
-                    }
-                ]
-            },
-            "12": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Tookie Knows II",
-                        "uri": "3mViCAKDSnEoGijjbmcQYA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Tookie Knows II",
-                        "uri": "3mViCAKDSnEoGijjbmcQYA"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "3yg7fx2DVjbQRLoROq3wA8"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": ""
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Bankroll Fresh",
-                        "title": "Trap",
-                        "uri": "2ska41uZlmVLpQDmCBhCJN"
-                    },
-                    {
-                        "artist": "Bankroll Fresh",
-                        "title": "Real Trapper",
-                        "uri": "0hf1hKjQ3POPVRisignqx1"
-                    },
-                    {
-                        "artist": "Bankroll Fresh",
-                        "title": "Take Over Your Trap",
-                        "uri": "2lnDPLznozYx3HqiNQrisQ"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Bankroll Fresh",
-                        "title": "Trap",
-                        "uri": "2ska41uZlmVLpQDmCBhCJN"
-                    },
-                    {
-                        "artist": "Bankroll Fresh",
-                        "title": "Walked In",
-                        "uri": "252gJUec2oDsGBPcxZs4nX"
-                    },
-                    {
-                        "artist": "Bankroll Fresh",
-                        "title": "Real Trapper",
-                        "uri": "0hf1hKjQ3POPVRisignqx1"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Kodak Black",
-                        "title": "No Flockin'",
-                        "uri": "34oWbFBfGEElvgO0a5c9V4"
-                    },
-                    {
-                        "artist": "Kodak Black",
-                        "title": "No Flockin",
-                        "uri": "0ORJ7Yx45MjkTZXtcc99R3"
-                    },
-                    {
-                        "artist": "Kodak Black",
-                        "title": "No Flockin'",
-                        "uri": "1OEIllVyFnGDA1jDocTbyA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kodak Black",
-                        "title": "No Flockin'",
-                        "uri": "34oWbFBfGEElvgO0a5c9V4"
-                    },
-                    {
-                        "artist": "atlaswxrld",
-                        "title": "2004 Freestyle",
-                        "uri": "1N7jZwn1BG9An4icqIV0hj"
-                    },
-                    {
-                        "artist": "Kodak Black",
-                        "title": "No Flockin'",
-                        "uri": "1OEIllVyFnGDA1jDocTbyA"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "slowthai",
-                        "title": "Jiggle",
-                        "uri": "6DysQT0UnyVOHTNnBjaNXH"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "slowthai",
-                        "title": "Jiggle",
-                        "uri": "6DysQT0UnyVOHTNnBjaNXH"
-                    },
-                    {
-                        "artist": "Duke & Jones",
-                        "title": "Jiggle Jiggle",
-                        "uri": "1I4lCSP69P74nU3a6Su5L2"
-                    },
-                    {
-                        "artist": "slowthai",
-                        "title": "adhd",
-                        "uri": "0LggcOLwIBQ50Ju9JWjhA9"
-                    }
-                ]
-            },
-            "17": {
-                "s0": [
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Chum",
-                        "uri": "6plT7nFGiXKSBP9HFSI4ef"
-                    },
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Chum",
-                        "uri": "5VgTzt1u4AUp0MTeCybVHE"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Chum",
-                        "uri": "6plT7nFGiXKSBP9HFSI4ef"
-                    },
-                    {
-                        "artist": "Daoutlet",
-                        "title": "Earl",
-                        "uri": "1vVrlT60HspfwjhcAz6NNh"
-                    },
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Chum",
-                        "uri": "5VgTzt1u4AUp0MTeCybVHE"
-                    }
-                ]
-            },
-            "18": {
-                "s0": [
-                    {
-                        "artist": "ASAP",
-                        "title": "Roll One Up",
-                        "uri": "6FSmI31AO0XnPm866XNUMI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Roll One Up",
-                        "uri": "2mUyRUNLHEPFflumWGuHyA"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Trilla (feat. A$AP Nast & A$AP Twelvyy)",
-                        "uri": "3DtOW3gzNTy5SgLWhwOdFW"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "M'$ (feat. Lil Wayne)",
-                        "uri": "29ZSk6XmWPx3DX69xBb7Yi"
-                    }
-                ]
-            },
-            "19": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Str8 Ballin",
-                        "uri": "3FzmWEUMpn2j2M5NCQK0WP"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Str8 Ballin",
-                        "uri": "3FzmWEUMpn2j2M5NCQK0WP"
-                    },
-                    {
-                        "artist": "2Pac",
-                        "title": "Str8 Ballin'",
-                        "uri": "0bzLeU6MipJvb9Iq15CCVZ"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    }
-                ]
-            },
-            "20": {
-                "s0": [
-                    {
-                        "artist": "808INK",
-                        "title": "Dssy",
-                        "uri": "0pf3QcnIQ1mswAN5Z8NsiC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "808INK",
-                        "title": "Dssy",
-                        "uri": "0pf3QcnIQ1mswAN5Z8NsiC"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Suede Jaw",
-                        "uri": "6imaoKkU3JVj5TsJMZiD4G"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Flexing (Side A)",
-                        "uri": "35eTRjsCyCIASS7UmurJUc"
-                    }
-                ]
-            },
-            "21": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Daniel OG",
-                        "title": "Only One",
-                        "uri": "1FbnMoOVIVkLqVkPdv96Xo"
-                    },
-                    {
-                        "artist": "Daniel OG",
-                        "title": "When I (Dumpy)",
-                        "uri": "0ZSH6jKoLYojhdXaC6adbU"
-                    },
-                    {
-                        "artist": "Daniel Ögren",
-                        "title": "Idag",
-                        "uri": "3gIP4pZ9ofJiHqOpFZjgVH"
-                    }
-                ]
-            },
-            "22": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Denzel Curry",
-                        "title": "CLOUT COBAIN | CLOUT CO13A1N",
-                        "uri": "2LNMhZ3YijTO7USmqjgJfG"
-                    },
-                    {
-                        "artist": "Denzel Curry",
-                        "title": "WISH FEAT. KIDDO MARV",
-                        "uri": "0shSP8DgseLewHgAiMC4UL"
-                    },
-                    {
-                        "artist": "Denzel Himself",
-                        "title": "Melty",
-                        "uri": "22sl5UcSw51isA42jb0LWG"
-                    }
-                ]
-            },
-            "23": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fabulous Trobadors",
-                        "title": "L'Omelette Au Pastis",
-                        "uri": "6hYR7BDkL41UEOcyrO0guv"
-                    },
-                    {
-                        "artist": "Löchil",
-                        "title": "omelette",
-                        "uri": "4yIMvqmEtI74lp62U1Of57"
-                    },
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    }
-                ]
-            },
-            "24": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet - Live",
-                        "uri": "0cTE5Q4WR2w4yC81iANKYv"
-                    }
-                ]
-            },
-            "25": {
-                "s0": "",
-                "s1": ""
-            },
-            "26": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    },
-                    {
-                        "artist": "Slip Hypnotic",
-                        "title": "Omelet",
-                        "uri": "1UhsNz1W2BvR3ho9hDwPlE"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet (Live at Telefunken Studios)",
-                        "uri": "5EAnLjkuw77xQnnY4YzvR3"
-                    }
-                ]
-            },
-            "27": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Löchil",
-                        "title": "omelette",
-                        "uri": "4yIMvqmEtI74lp62U1Of57"
-                    },
-                    {
-                        "artist": "CloZee",
-                        "title": "Lonely Island",
-                        "uri": "7MMPY3nzT16svsMYFsOpDV"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    }
-                ]
-            },
-            "28": {
-                "s0": "",
-                "s1": ""
-            },
-            "29": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "Löchil",
-                        "title": "omelette",
-                        "uri": "4yIMvqmEtI74lp62U1Of57"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    }
-                ]
-            },
-            "30": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "Olrete",
-                        "title": "Omen Suede",
-                        "uri": "6E0SSPkNilmRNVTuXVE5QL"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    }
-                ]
-            },
-            "31": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Fabulous Trobadors",
-                        "title": "L'Omelette Au Pastis",
-                        "uri": "6hYR7BDkL41UEOcyrO0guv"
-                    },
-                    {
-                        "artist": "Löchil",
-                        "title": "omelette",
-                        "uri": "4yIMvqmEtI74lp62U1Of57"
-                    },
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    }
-                ]
-            },
-            "32": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "3yg7fx2DVjbQRLoROq3wA8"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "38eOtrezOwFwpaDX8KyuRs"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "7yMDeYp2bJ0ySRj73HeMcB"
-                    }
-                ]
-            },
-            "33": {
-                "s0": [
-                    {
-                        "artist": "Omelette",
-                        "title": "Off The Deep End",
-                        "uri": "0Ynl2kPJdAhIVwDaQl4x4x"
-                    },
-                    {
-                        "artist": "OMELET",
-                        "title": "Lucifer (Estrella Caída de la Mañana)",
-                        "uri": "4USufGe4nGZ7dyCEg8PkE9"
-                    },
-                    {
-                        "artist": "Var Omelette",
-                        "title": "Moves Of Delirium",
-                        "uri": "5P91fwzGj7rpzi0vayt3QL"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "Fabulous Trobadors",
-                        "title": "L'Omelette Au Pastis",
-                        "uri": "6hYR7BDkL41UEOcyrO0guv"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    }
-                ]
-            },
-            "34": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "DJ DownLowDavis",
-                        "title": "King Pin",
-                        "uri": "2reKvcclyqlyv5roKmFXOH"
-                    },
-                    {
-                        "artist": "Makala",
-                        "title": "King Pistol",
-                        "uri": "3vSr7dfuaBZIruE3V0WT3d"
-                    },
-                    {
-                        "artist": "St1fu",
-                        "title": "KINGPINPIN",
-                        "uri": "2FXoFq9DBHcqde1O9i3BA1"
-                    }
-                ]
-            },
-            "35": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Gudrun Gut",
-                        "title": "Goofy",
-                        "uri": "59rYsxWw57CU715LRIQg0G"
-                    }
-                ]
-            },
-            "36": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Noname",
-                        "title": "Diddy Bop (feat. Cam O'bi & Raury)",
-                        "uri": "6JvfBzqZmSiEG5MjM7OcSY"
-                    },
-                    {
-                        "artist": "Noname",
-                        "title": "Diddy Bop",
-                        "uri": "24bPUsIQ2ocVEP0tgZV5jJ"
-                    }
-                ]
-            },
-            "37": {
-                "s0": [
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Rigamortus",
-                        "uri": "2lD6AoA8qf2t4Dkf2TcmNK"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Rigamortus",
-                        "uri": "2lD6AoA8qf2t4Dkf2TcmNK"
-                    },
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "United In Grief",
-                        "uri": "5Gt9bxniM1SxN61yRzRhXL"
-                    },
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Swimming Pools (Drank)",
-                        "uri": "6REbwUNlppTfcnV4d4ZoZi"
-                    }
-                ]
-            },
-            "38": {
-                "s0": [
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "7CH99b2i1TXS5P8UUyWtnM"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "4u8031pTkTODbRaDCbx8Yv"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes - Chopnotslop Remix",
-                        "uri": "2WRmxGFCK8b8oujhfK80TI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "7CH99b2i1TXS5P8UUyWtnM"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "4u8031pTkTODbRaDCbx8Yv"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes - Chopnotslop Remix",
-                        "uri": "2WRmxGFCK8b8oujhfK80TI"
-                    }
-                ]
-            }
+        "01": {
+            "artist": "Clipse",
+            "ratio": 6,
+            "title": "Intro",
+            "trackid": "07H9mwJYoTQdOoaOKxBH5z"
         },
-        "omelet-22nd-july-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "3yg7fx2DVjbQRLoROq3wA8"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "38eOtrezOwFwpaDX8KyuRs"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "7yMDeYp2bJ0ySRj73HeMcB"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "3yg7fx2DVjbQRLoROq3wA8"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "THat Part",
-                        "uri": "2yJ9GVCLMmzBBfQAnfzlwr"
-                    }
-                ]
-            },
-            "01": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "808INK",
-                        "title": "Suede Jaw",
-                        "uri": "6imaoKkU3JVj5TsJMZiD4G"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Flexing (Side A)",
-                        "uri": "35eTRjsCyCIASS7UmurJUc"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Smile",
-                        "uri": "0kRxyGBM6vfZ5ulLkBL14Y"
-                    }
-                ]
-            },
-            "02": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "PBGR",
-                        "title": "March",
-                        "uri": "61GVW8T7BsH6P5zhJcwobr"
-                    },
-                    {
-                        "artist": "Celldweller",
-                        "title": "The Imperial March - Pegboard Nerds Remix",
-                        "uri": "7cE8VabTiFSjD2FSf6xrOx"
-                    },
-                    {
-                        "artist": "PBR Paul",
-                        "title": "Stewie Griffin",
-                        "uri": "46xC8Jj48wKe5xxxRYyTYc"
-                    }
-                ]
-            },
-            "03": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Dope Dealer",
-                        "uri": "7pda6TLAbVGxUjIUtbiNt0"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Drunk (feat. 6LACK)",
-                        "uri": "06Y14QBRyzmPRqrswAfF4J"
-                    },
-                    {
-                        "artist": "Meek Mill",
-                        "title": "Dope Dealer",
-                        "uri": "5gjVjG4ynMxvyxljL55N6E"
-                    }
-                ]
-            },
-            "04": {
-                "s0": [
-                    {
-                        "artist": "A$Ton Matthews",
-                        "title": "Like This",
-                        "uri": "77wF6QTxPcNmTJuaTD9JOX"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "A$Ton Matthews",
-                        "title": "Like This",
-                        "uri": "77wF6QTxPcNmTJuaTD9JOX"
-                    },
-                    {
-                        "artist": "Shawn Mendes",
-                        "title": "Like This",
-                        "uri": "3Qwd9wK176KgmorU7fCW6S"
-                    },
-                    {
-                        "artist": "A$Ton Matthews",
-                        "title": "Maneuvering",
-                        "uri": "3KbAaV2ShuqxW9Q6N6ldX3"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Brand New Guy (feat. ScHoolboy Q)",
-                        "uri": "6haTrice1PU59Kd7esp3w1"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Goldie",
-                        "uri": "31G9RaSaDOI2NWcpnIp734"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Distorted Records",
-                        "uri": "57q6BgYP4gN6hPQViCB3um"
-                    }
-                ]
-            },
-            "06": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "gnash",
-                        "title": "that one song",
-                        "uri": "1lgWOtohsjX526FK6Ch5B8"
-                    },
-                    {
-                        "artist": "Daniel OG",
-                        "title": "Big Facts",
-                        "uri": "17pGiTmdjkvBnjvabYl8vh"
-                    },
-                    {
-                        "artist": "Nellie McKay",
-                        "title": "I Wanna Get Married",
-                        "uri": "0s6D23Hx6thladQfEuIXyw"
-                    }
-                ]
-            },
-            "07": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Flatbush Zombies",
-                        "title": "Palm Trees - LIVE",
-                        "uri": "6dCv4TGigsIVoLrkAj1hQt"
-                    },
-                    {
-                        "artist": "Flatbush Zombies",
-                        "title": "Headstone",
-                        "uri": "0PWP4LIOI5xjVkaWqES7ek"
-                    },
-                    {
-                        "artist": "Flatbush Zombies",
-                        "title": "Bounce",
-                        "uri": "6Hr77eZSmaVGgH0vVulMUH"
-                    }
-                ]
-            },
-            "08": {
-                "s0": "",
-                "s1": ""
-            },
-            "09": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Dustystaytrue",
-                        "title": "Never Change",
-                        "uri": "0rIrIUpcd1FFRSEwQGk1Cs"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Neva CHange",
-                        "uri": "6tPDalwocS7zgeFpYi3xtr"
-                    },
-                    {
-                        "artist": "Dustystaytrue",
-                        "title": "Never Change",
-                        "uri": "1d6XDNrd6AjQiGHHVnTrfv"
-                    }
-                ]
-            },
-            "10": {
-                "s0": [
-                    {
-                        "artist": "Joey Bada$$",
-                        "title": "Big Dusty",
-                        "uri": "3wnAMgb3pkn4O3gYYLP5db"
-                    },
-                    {
-                        "artist": "Joey Bada$$",
-                        "title": "Big Dusty",
-                        "uri": "2FjuuiAh0VnDZf6dNoSKpc"
-                    },
-                    {
-                        "artist": "Joey Bada$$",
-                        "title": "Big Dusty - Live from Sxsw 2015",
-                        "uri": "586KkhnJO8vf60559X1BYa"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Joey Bada$$",
-                        "title": "Big Dusty",
-                        "uri": "3wnAMgb3pkn4O3gYYLP5db"
-                    },
-                    {
-                        "artist": "Joey Bada$$",
-                        "title": "Big Dusty",
-                        "uri": "2FjuuiAh0VnDZf6dNoSKpc"
-                    },
-                    {
-                        "artist": "Joey Bada$$",
-                        "title": "Big Dusty - Live from Sxsw 2015",
-                        "uri": "586KkhnJO8vf60559X1BYa"
-                    }
-                ]
-            },
-            "11": {
-                "s0": [
-                    {
-                        "artist": "808INK",
-                        "title": "Chubby",
-                        "uri": "7KB5YLxNMy26cyTAytVeLC"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "808INK",
-                        "title": "Suede Jaw",
-                        "uri": "6imaoKkU3JVj5TsJMZiD4G"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Flexing (Side A)",
-                        "uri": "35eTRjsCyCIASS7UmurJUc"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Smile",
-                        "uri": "0kRxyGBM6vfZ5ulLkBL14Y"
-                    }
-                ]
-            },
-            "12": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Giggs",
-                        "title": "Lyrical Combat",
-                        "uri": "1WMYeCJ8gxzOEPhDjOBJPO"
-                    },
-                    {
-                        "artist": "Urmo",
-                        "title": "What's My Name",
-                        "uri": "2uTwweC6Sx4adv8BEXpoDZ"
-                    },
-                    {
-                        "artist": "Giggs",
-                        "title": "501 (Hollow & Heston)",
-                        "uri": "6dTX1RZHvOaBV9pz52JC07"
-                    }
-                ]
-            },
-            "13": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Nima",
-                        "title": "Break Into You",
-                        "uri": "2hRGfiWmpU3x3OTdYa2yNX"
-                    },
-                    {
-                        "artist": "Noam Bass",
-                        "title": "Break Into Your Head",
-                        "uri": "2ahYfnsbGZAJZopgcfMoOx"
-                    },
-                    {
-                        "artist": "Tyler Cain",
-                        "title": "Break Into Your Heart",
-                        "uri": "7H0HDJyal80WduDyRawDWr"
-                    }
-                ]
-            },
-            "14": {
-                "s0": [
-                    {
-                        "artist": "Skepta",
-                        "title": "Crime Riddim",
-                        "uri": "5NucMmR6MVuWsBfW4322yw"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Skepta",
-                        "title": "Crime Riddim",
-                        "uri": "5NucMmR6MVuWsBfW4322yw"
-                    },
-                    {
-                        "artist": "JAE5",
-                        "title": "Dimension (feat. Skepta & Rema)",
-                        "uri": "2Jy4EdqIZswDZvVDh5dx3A"
-                    },
-                    {
-                        "artist": "Skepta",
-                        "title": "Greaze Mode",
-                        "uri": "3nG784YlxS4VQOF0qiHKVP"
-                    }
-                ]
-            },
-            "15": {
-                "s0": [
-                    {
-                        "artist": "Pharrell Williams",
-                        "title": "Stay With Me",
-                        "uri": "2cSLkj6UYu4mXsu9VRtRh4"
-                    },
-                    {
-                        "artist": "Pharrell",
-                        "title": "Stay With Me",
-                        "uri": "5YghVvq4DLMdSDKwufxZHr"
-                    },
-                    {
-                        "artist": "Pharrell Williams",
-                        "title": "Stay With Me - Album Version (Edited)",
-                        "uri": "6PdHf5ov1bmWM75UvwrAJa"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Pharrell Williams",
-                        "title": "Stay With Me",
-                        "uri": "2cSLkj6UYu4mXsu9VRtRh4"
-                    },
-                    {
-                        "artist": "1nonly",
-                        "title": "Stay With Me",
-                        "uri": "2WYs5LxOZfEyURXu7V0O1a"
-                    },
-                    {
-                        "artist": "Pharrell",
-                        "title": "Stay With Me",
-                        "uri": "5YghVvq4DLMdSDKwufxZHr"
-                    }
-                ]
-            },
-            "16": {
-                "s0": [
-                    {
-                        "artist": "Skepta",
-                        "title": "Ladies Hit Squad",
-                        "uri": "5DddJVNEGBfUxy9Dtr45gI"
-                    },
-                    {
-                        "artist": "Skepta",
-                        "title": "Ladies Hit Squad",
-                        "uri": "6dvHK8JNEgDJZEjGkYQ0T1"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Skepta",
-                        "title": "Ladies Hit Squad",
-                        "uri": "5DddJVNEGBfUxy9Dtr45gI"
-                    },
-                    {
-                        "artist": "Skepta",
-                        "title": "Ladies Hit Squad",
-                        "uri": "6dvHK8JNEgDJZEjGkYQ0T1"
-                    },
-                    {
-                        "artist": "Skepta",
-                        "title": "Ayia Napa 2006 Skit",
-                        "uri": "6xwyEFdc9iu7Wbf06tvGG3"
-                    }
-                ]
-            },
-            "17": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "I'm Good",
-                        "uri": "307f48OjM79zfose1RR1ej"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "1QNemFMiIvHtjpG9BcszEC"
-                    },
-                    {
-                        "artist": "BeatRunnaz",
-                        "title": "Studio In the Style of ScHoolboy Q & BJ The Chicago Kid) [Instrumental Version]",
-                        "uri": "3QiafFVCBa3bKWpACgeil9"
-                    }
-                ]
-            },
-            "18": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Elk",
-                        "title": "Omelet",
-                        "uri": "7lt7hfiqE4vapLOLQPYIhb"
-                    },
-                    {
-                        "artist": "Löchil",
-                        "title": "omelette",
-                        "uri": "4yIMvqmEtI74lp62U1Of57"
-                    },
-                    {
-                        "artist": "One Time Weekend",
-                        "title": "Omelet",
-                        "uri": "0D1fr5kzOQ8hEsxFdntmDt"
-                    }
-                ]
-            },
-            "19": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Get Lit (feat. Fat Tony)",
-                        "uri": "4nzmPINOWf5sdKNrTjcM3z"
-                    },
-                    {
-                        "artist": "Tskinz",
-                        "title": "Get Lit",
-                        "uri": "4nxSXFQ1c7Om6dL5l8eA1k"
-                    },
-                    {
-                        "artist": "A$ap Mikey",
-                        "title": "Get Lit",
-                        "uri": "1P96Fd99umnxFGG9AVylH0"
-                    }
-                ]
-            },
-            "20": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Two-9",
-                        "title": "World Go Crazy",
-                        "uri": "4gCREr6YIJJcvhpsM91OMS"
-                    },
-                    {
-                        "artist": "Quinn XCII",
-                        "title": "Backpack",
-                        "uri": "6c2GmMxmjmDbytdyXpHPvw"
-                    },
-                    {
-                        "artist": "Bastille",
-                        "title": "World Gone Mad",
-                        "uri": "1ZyQGXH9dZ4AecevHhKUxi"
-                    }
-                ]
-            },
-            "21": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "808INK",
-                        "title": "Q'd Up",
-                        "uri": "6jgDrVYg0O5LyLpyAFl1nn"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Suede Jaw",
-                        "uri": "6imaoKkU3JVj5TsJMZiD4G"
-                    },
-                    {
-                        "artist": "808INK",
-                        "title": "Flexing (Side A)",
-                        "uri": "35eTRjsCyCIASS7UmurJUc"
-                    }
-                ]
-            },
-            "22": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "YUNG BUM",
-                        "uri": "6ZgAm99HOltvIDvaxXzBPp"
-                    },
-                    {
-                        "artist": "Ray Fuego",
-                        "title": "Doekoedoekoe",
-                        "uri": "4RimBbKrvdLMFeaYNYBh6T"
-                    },
-                    {
-                        "artist": "GRGY",
-                        "title": "STORES",
-                        "uri": "5gqS0gQOUTm7xdKLAjGHS0"
-                    }
-                ]
-            },
-            "23": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Tookie Knows II",
-                        "uri": "3mViCAKDSnEoGijjbmcQYA"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Tookie Knows II",
-                        "uri": "3mViCAKDSnEoGijjbmcQYA"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Kno Ya Wrong",
-                        "uri": "3yg7fx2DVjbQRLoROq3wA8"
-                    }
-                ]
-            },
-            "24": {
-                "s0": [
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "7CH99b2i1TXS5P8UUyWtnM"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "4u8031pTkTODbRaDCbx8Yv"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes - Chopnotslop Remix",
-                        "uri": "2WRmxGFCK8b8oujhfK80TI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "7CH99b2i1TXS5P8UUyWtnM"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes",
-                        "uri": "4u8031pTkTODbRaDCbx8Yv"
-                    },
-                    {
-                        "artist": "Thundercat",
-                        "title": "Them Changes - Chopnotslop Remix",
-                        "uri": "2WRmxGFCK8b8oujhfK80TI"
-                    }
-                ]
-            },
-            "25": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Daniela Goggi",
-                        "title": "Estoy bailando",
-                        "uri": "74OKTFFsDxp2nxMhsYtP6D"
-                    },
-                    {
-                        "artist": "DanielGóes",
-                        "title": "Lá",
-                        "uri": "4J3Wac9sB7fcolxnGjDEKr"
-                    },
-                    {
-                        "artist": "Daniel Goguen",
-                        "title": "Finalement la fin de semaine",
-                        "uri": "0QuLlXwlH61FuigAoDsogJ"
-                    }
-                ]
-            },
-            "26": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Solange",
-                        "title": "Almeda",
-                        "uri": "6IAgarq2wDeYzpsY2Kx0Hw"
-                    },
-                    {
-                        "artist": "Solange",
-                        "title": "T.O.N.Y.",
-                        "uri": "6GI2PcrptZqGDOVrqjsec0"
-                    },
-                    {
-                        "artist": "Solange",
-                        "title": "F.U.B.U. (feat. The-Dream & BJ The Chicago Kid)",
-                        "uri": "2aR6SYRJxy2QsBxA459ATF"
-                    }
-                ]
-            },
-            "27": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Man Of The Year",
-                        "uri": "5SsR3wtCOafDmZgvIdRhSm"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Man Of The Year",
-                        "uri": "4y2bMYA83ZNN3pW47ZOgmr"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Man Of The Year",
-                        "uri": "5SsR3wtCOafDmZgvIdRhSm"
-                    },
-                    {
-                        "artist": "Jake Darus",
-                        "title": "American Shakespeare",
-                        "uri": "0ykJC50NAFCnEEieeoMJv0"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Man Of The Year",
-                        "uri": "4y2bMYA83ZNN3pW47ZOgmr"
-                    }
-                ]
-            },
-            "28": {
-                "s0": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Groovy Tony / Eddie Kane",
-                        "uri": "1MY4HVXfBkUg1mUjmCjznI"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Groovy Tony / Eddie Kane",
-                        "uri": "1MY4HVXfBkUg1mUjmCjznI"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Groovy Tony",
-                        "uri": "2Gy3Mguhpkaszd6Zsbimkv"
-                    }
-                ]
-            },
-            "29": {
-                "s0": [
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Tammy's Song (Her Evils)",
-                        "uri": "22gXA7HlEd0z13zdc3hju7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Tammy's Song (Her Evils)",
-                        "uri": "22gXA7HlEd0z13zdc3hju7"
-                    },
-                    {
-                        "artist": "The Sweetgreens",
-                        "title": "Tammy's Song",
-                        "uri": "4I06sodO9XIEDp760gLK9k"
-                    },
-                    {
-                        "artist": "Liberace",
-                        "title": "Tammy",
-                        "uri": "43yOOeYtbYEZPAyVLwY3nb"
-                    }
-                ]
-            },
-            "30": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Kanye West",
-                        "title": "I'm In It",
-                        "uri": "52NmkyHsGsHGb1UX8fTkMg"
-                    },
-                    {
-                        "artist": "Lil Jozi",
-                        "title": "Trampoline",
-                        "uri": "7wnBxf6bSrTTbBSuzVReNi"
-                    },
-                    {
-                        "artist": "Kanye West",
-                        "title": "I Love It (& Lil Pump)",
-                        "uri": "4S8d14HvHb70ImctNgVzQQ"
-                    }
-                ]
-            },
-            "31": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Stormzy",
-                        "title": "Cold",
-                        "uri": "5gSed1Fd3tdse60Gc0Uuoe"
-                    },
-                    {
-                        "artist": "Giggs",
-                        "title": "Talkin the Hardest",
-                        "uri": "0JmKkvlDtgPIYwLdxPNtyx"
-                    },
-                    {
-                        "artist": "Giggs",
-                        "title": "The Essence",
-                        "uri": "2j36iWSMTg412fdTQx4WdI"
-                    }
-                ]
-            },
-            "32": {
-                "s0": [
-                    {
-                        "artist": "Big L",
-                        "title": "Da Graveyard",
-                        "uri": "04Rz403IY7QUqgfrTWX6OU"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Big L",
-                        "title": "Da Graveyard",
-                        "uri": "04Rz403IY7QUqgfrTWX6OU"
-                    },
-                    {
-                        "artist": "Big L",
-                        "title": "Put It On",
-                        "uri": "6JI5wNWYdBw68GZjOMmgK5"
-                    },
-                    {
-                        "artist": "Big L",
-                        "title": "Work, Pt. II (feat. Gang Starr)",
-                        "uri": "5DStWhj9vl1mUM4hWpxXI2"
-                    }
-                ]
-            },
-            "33": {
-                "s0": [
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit)",
-                        "uri": "6V5L99nGuMyJ1XlPCVNOcd"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit) - Instrumental",
-                        "uri": "2u4lshVSSbKo9067N8IQkx"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit) - Instrumental",
-                        "uri": "57GkfFGr5YpwVFd6NBpmex"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit)",
-                        "uri": "6V5L99nGuMyJ1XlPCVNOcd"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "0ql1SFxq7xKtXCPU0huup3"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax (Girl Shit) - Instrumental",
-                        "uri": "2u4lshVSSbKo9067N8IQkx"
-                    }
-                ]
-            },
-            "34": {
-                "s0": [
-                    {
-                        "artist": "Dr. Dre",
-                        "title": "Still D.R.E.",
-                        "uri": "503OTo2dSqe7qk76rgsbep"
-                    },
-                    {
-                        "artist": "Dr. Dre",
-                        "title": "Still D.R.E. - Instrumental",
-                        "uri": "3n4cCOBMqolImjZXPwWg1f"
-                    },
-                    {
-                        "artist": "Dr. Dre",
-                        "title": "Still D.R.E.",
-                        "uri": "00twZviPonMhKWN60B3l0F"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Dr. Dre",
-                        "title": "Still D.R.E.",
-                        "uri": "503OTo2dSqe7qk76rgsbep"
-                    },
-                    {
-                        "artist": "Dee7",
-                        "title": "Animal",
-                        "uri": "4lwyaG9e0dQyd4mQNaTudO"
-                    },
-                    {
-                        "artist": "Dr. Dre",
-                        "title": "Still D.R.E. - Instrumental",
-                        "uri": "3n4cCOBMqolImjZXPwWg1f"
-                    }
-                ]
-            },
-            "35": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Knight (feat. Domo Genesis)",
-                        "uri": "2LbL1HaoZrXrCR538uxUjl"
-                    },
-                    {
-                        "artist": "Tyler, The Creator",
-                        "title": "Rusty (feat. Domo Genesis & Earl Sweatshirt)",
-                        "uri": "4oQkcfukOHfKsmeoeXQLWC"
-                    },
-                    {
-                        "artist": "Freddie Gibbs",
-                        "title": "Robes (feat. Domo Genesis, Earl Sweatshirt)",
-                        "uri": "7gDuP7JHRP6A9zwbTIA5gF"
-                    }
-                ]
-            },
-            "36": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Three 6 Mafia",
-                        "title": "Playa Hataz",
-                        "uri": "0TfHub9Xd5kr6lwpiWOxO7"
-                    },
-                    {
-                        "artist": "Three 6 Mafia",
-                        "title": "Playa Hataz",
-                        "uri": "7cnoRMMYsWg7bU452gNksn"
-                    }
-                ]
-            },
-            "37": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "Bass",
-                        "uri": "3tynJ5xl3ZjRj2fPQF0kNi"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "D.M.B.",
-                        "uri": "7IBLt4Qarf4JDLxIQDv2O5"
-                    },
-                    {
-                        "artist": "A$AP Rocky",
-                        "title": "PMW (All I Really Need) (feat. ScHoolboy Q)",
-                        "uri": "5oeKoJMi9g6GXEbtz1ta0f"
-                    }
-                ]
-            },
-            "38": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "THat Part",
-                        "uri": "2yJ9GVCLMmzBBfQAnfzlwr"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "THat Part - Black Hippy Remix",
-                        "uri": "5sqHFfmw7MMc1L85BN8802"
-                    },
-                    {
-                        "artist": "ScHoolboy Q",
-                        "title": "Studio",
-                        "uri": "29gsi1zZrZxdStACmTQB0Z"
-                    }
-                ]
-            }
+        "02": {
+            "artist": "MC Lyte",
+            "ratio": 6,
+            "title": "Closer (feat. Space Nine)",
+            "trackid": "4xMExBV1gkHThPByOGHBMg"
         },
-        "omelet-24th-june-2016": {
-            "00": {
-                "s0": [
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Sunday (feat. Frank Ocean)",
-                        "uri": "0fAehaneUJdlSlWXYe1KZp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Sunday (feat. Frank Ocean)",
-                        "uri": "0fAehaneUJdlSlWXYe1KZp"
-                    },
-                    {
-                        "artist": "Zelooperz",
-                        "title": "Easter Sunday",
-                        "uri": "5aDZOMeCa6VuKJSENFsuGx"
-                    },
-                    {
-                        "artist": "The Alchemist",
-                        "title": "E. Coli (feat. Earl Sweatshirt)",
-                        "uri": "3GXSywNvYLAVUCtjMHkKDh"
-                    }
-                ]
-            },
-            "01": {
-                "s0": [
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "0ql1SFxq7xKtXCPU0huup3"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "7i47lf1W2WA41wagWBD3zH"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "3Vr90BG7c0cST8NRS9GLbe"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "0ql1SFxq7xKtXCPU0huup3"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "7i47lf1W2WA41wagWBD3zH"
-                    },
-                    {
-                        "artist": "Slum Village",
-                        "title": "Climax",
-                        "uri": "3Vr90BG7c0cST8NRS9GLbe"
-                    }
-                ]
-            },
-            "02": {
-                "s0": [
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Pre (feat. SK La' Flare)",
-                        "uri": "4B31QOL13iBeuIsaGD20BS"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Pre (feat. SK La' Flare)",
-                        "uri": "4B31QOL13iBeuIsaGD20BS"
-                    },
-                    {
-                        "artist": "The Alchemist",
-                        "title": "E. Coli (feat. Earl Sweatshirt)",
-                        "uri": "3GXSywNvYLAVUCtjMHkKDh"
-                    },
-                    {
-                        "artist": "Earl Sweatshirt",
-                        "title": "Hive (feat. Vince Staples & Casey Veggies)",
-                        "uri": "6JKoTnberZoBgUuxa6l4Kh"
-                    }
-                ]
-            },
-            "03": {
-                "s0": [
-                    {
-                        "artist": "James Blake",
-                        "title": "Digital Lion",
-                        "uri": "0BQV07dSwLltMlLDo47ckp"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "James Blake",
-                        "title": "Digital Lion",
-                        "uri": "0BQV07dSwLltMlLDo47ckp"
-                    },
-                    {
-                        "artist": "James Blake",
-                        "title": "Limit To Your Love",
-                        "uri": "33BnSMHgX0AsbKSIbkuMwh"
-                    },
-                    {
-                        "artist": "Beyoncé",
-                        "title": "Forward (feat. James Blake)",
-                        "uri": "2bOWJIYSbhwg2NMQq1QMYH"
-                    }
-                ]
-            },
-            "04": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Kanye West",
-                        "title": "I'm In It",
-                        "uri": "52NmkyHsGsHGb1UX8fTkMg"
-                    },
-                    {
-                        "artist": "Lil Jozi",
-                        "title": "Trampoline",
-                        "uri": "7wnBxf6bSrTTbBSuzVReNi"
-                    },
-                    {
-                        "artist": "Kanye West",
-                        "title": "I Love It (& Lil Pump)",
-                        "uri": "4S8d14HvHb70ImctNgVzQQ"
-                    }
-                ]
-            },
-            "05": {
-                "s0": "",
-                "s1": [
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Real",
-                        "uri": "73eGiraiU7JkIsmFyQyJAv"
-                    },
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Real",
-                        "uri": "2MYm1yy4bYba3mGF9Ou6Yo"
-                    },
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "ELEMENT.",
-                        "uri": "1EaKU4dMbesXXd3BrLCtYG"
-                    }
-                ]
-            },
-            "06": {
-                "s0": [
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Sherane a.k.a Master Splinter’s Daughter",
-                        "uri": "5FF6Pyuh5jW6ybKHiaiGMy"
-                    },
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Sherane a.k.a Master Splinter’s Daughter",
-                        "uri": "3KHjXNQDEZ0Hb2hzGdxcx7"
-                    }
-                ],
-                "s1": [
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Sherane a.k.a Master Splinter’s Daughter",
-                        "uri": "5FF6Pyuh5jW6ybKHiaiGMy"
-                    },
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Sherane a.k.a Master Splinter’s Daughter",
-                        "uri": "3KHjXNQDEZ0Hb2hzGdxcx7"
-                    },
-                    {
-                        "artist": "Kendrick Lamar",
-                        "title": "Mortal Man",
-                        "uri": "1WT11QmhZutciEv1NsHt1R"
-                    }
-                ]
-            }
+        "03": {
+            "artist": "Thundercat",
+            "ratio": 6,
+            "title": "Them Changes",
+            "trackid": "7CH99b2i1TXS5P8UUyWtnM"
+        },
+        "04": {
+            "artist": "N.E.R.D",
+            "ratio": 2,
+            "title": "Spaz",
+            "trackid": "51DOzyPzT5cDii6iGSXRN2"
+        },
+        "05": {
+            "artist": "Ray Fuego",
+            "ratio": 3,
+            "title": "Ik Leen Niet",
+            "trackid": "2kfqxLwKFLxzXysJ1CwkDX"
+        },
+        "06": {
+            "artist": "Slum Village",
+            "ratio": 6,
+            "title": "Climax (Girl Shit)",
+            "trackid": "6V5L99nGuMyJ1XlPCVNOcd"
+        },
+        "07": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "JoHn Muir",
+            "trackid": "7sr74Bz3GBTNMQe1m4F5Ut"
+        },
+        "08": {
+            "artist": "808INK",
+            "ratio": 6,
+            "title": "Billy",
+            "trackid": "0bwvwrxJWYxWPhdTo2OoB3"
+        },
+        "09": {
+            "artist": "GoldLink",
+            "ratio": 6,
+            "title": "Spectrum",
+            "trackid": "2LvpVkv0z8oFMcc048FfJd"
+        },
+        "10": {
+            "artist": "Katy B",
+            "ratio": 4,
+            "title": "Honey",
+            "trackid": "5q83kstyzBZWeoVbEBmrMD"
+        },
+        "11": {
+            "artist": "Travis Scott",
+            "ratio": 6,
+            "title": "I Can Tell",
+            "trackid": "2hiuiI3ac0I5kJWtkeGHEL"
+        },
+        "12": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Tookie Knows II",
+            "trackid": "3mViCAKDSnEoGijjbmcQYA"
+        },
+        "13": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "14": {
+            "artist": "Bankroll Fresh",
+            "ratio": 6,
+            "title": "Trap",
+            "trackid": "2ska41uZlmVLpQDmCBhCJN"
+        },
+        "15": {
+            "artist": "Kodak Black",
+            "ratio": 6,
+            "title": "No Flockin",
+            "trackid": "0ORJ7Yx45MjkTZXtcc99R3"
+        },
+        "16": {
+            "artist": "slowthai",
+            "ratio": 6,
+            "title": "Jiggle",
+            "trackid": "6DysQT0UnyVOHTNnBjaNXH"
+        },
+        "17": {
+            "artist": "Earl Sweatshirt",
+            "ratio": 6,
+            "title": "Chum",
+            "trackid": "6plT7nFGiXKSBP9HFSI4ef"
+        },
+        "18": {
+            "artist": "A$AP Rocky",
+            "ratio": 5,
+            "title": "Roll One Up",
+            "trackid": "2mUyRUNLHEPFflumWGuHyA"
+        },
+        "19": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Str8 Ballin",
+            "trackid": "3FzmWEUMpn2j2M5NCQK0WP"
+        },
+        "20": {
+            "artist": "808INK",
+            "ratio": 6,
+            "title": "Dssy",
+            "trackid": "0pf3QcnIQ1mswAN5Z8NsiC"
+        },
+        "21": {
+            "artist": "Daniel OG",
+            "ratio": 2,
+            "title": "When I (Dumpy)",
+            "trackid": "0ZSH6jKoLYojhdXaC6adbU"
+        },
+        "22": {
+            "artist": "Denzel Himself",
+            "ratio": 2,
+            "title": "Melty",
+            "trackid": "22sl5UcSw51isA42jb0LWG"
+        },
+        "23": {
+            "artist": "Elk",
+            "ratio": 1,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "24": {
+            "artist": "One Time Weekend",
+            "ratio": 1,
+            "title": "Omelet",
+            "trackid": "0D1fr5kzOQ8hEsxFdntmDt"
+        },
+        "25": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "26": {
+            "artist": "One Time Weekend",
+            "ratio": 2,
+            "title": "Omelet",
+            "trackid": "0D1fr5kzOQ8hEsxFdntmDt"
+        },
+        "27": {
+            "artist": "CloZee",
+            "ratio": 2,
+            "title": "Lonely Island",
+            "trackid": "7MMPY3nzT16svsMYFsOpDV"
+        },
+        "28": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "29": {
+            "artist": "One Time Weekend",
+            "ratio": 1,
+            "title": "Omelet",
+            "trackid": "0D1fr5kzOQ8hEsxFdntmDt"
+        },
+        "30": {
+            "artist": "Elk",
+            "ratio": 2,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "31": {
+            "artist": "Elk",
+            "ratio": 1,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "32": {
+            "artist": "ScHoolboy Q",
+            "ratio": 2,
+            "title": "Kno Ya Wrong",
+            "trackid": "3yg7fx2DVjbQRLoROq3wA8"
+        },
+        "33": {
+            "artist": "Elk",
+            "ratio": 2,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "34": {
+            "artist": "St1fu",
+            "ratio": 0,
+            "title": "KINGPINPIN",
+            "trackid": "2FXoFq9DBHcqde1O9i3BA1"
+        },
+        "35": {
+            "artist": "Gudrun Gut",
+            "ratio": 0,
+            "title": "Goofy",
+            "trackid": "59rYsxWw57CU715LRIQg0G"
+        },
+        "36": {
+            "artist": "Noname",
+            "ratio": 4,
+            "title": "Diddy Bop (feat. Cam O'bi & Raury)",
+            "trackid": "6JvfBzqZmSiEG5MjM7OcSY"
+        },
+        "37": {
+            "artist": "Kendrick Lamar",
+            "ratio": 6,
+            "title": "Rigamortus",
+            "trackid": "2lD6AoA8qf2t4Dkf2TcmNK"
+        },
+        "38": {
+            "artist": "Thundercat",
+            "ratio": 6,
+            "title": "Them Changes",
+            "trackid": "7CH99b2i1TXS5P8UUyWtnM"
+        }
+    },
+    "omelet-22nd-july-2016": {
+        "00": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Kno Ya Wrong",
+            "trackid": "3yg7fx2DVjbQRLoROq3wA8"
+        },
+        "01": {
+            "artist": "808INK",
+            "ratio": 1,
+            "title": "Suede Jaw",
+            "trackid": "6imaoKkU3JVj5TsJMZiD4G"
+        },
+        "02": {
+            "artist": "PBGR",
+            "ratio": 5,
+            "title": "March",
+            "trackid": "61GVW8T7BsH6P5zhJcwobr"
+        },
+        "03": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Dope Dealer",
+            "trackid": "7pda6TLAbVGxUjIUtbiNt0"
+        },
+        "04": {
+            "artist": "A$Ton Matthews",
+            "ratio": 6,
+            "title": "Like This",
+            "trackid": "77wF6QTxPcNmTJuaTD9JOX"
+        },
+        "05": {
+            "artist": "A$AP Rocky",
+            "ratio": 1,
+            "title": "Brand New Guy (feat. ScHoolboy Q)",
+            "trackid": "6haTrice1PU59Kd7esp3w1"
+        },
+        "06": {
+            "artist": "Nellie McKay",
+            "ratio": 1,
+            "title": "I Wanna Get Married",
+            "trackid": "0s6D23Hx6thladQfEuIXyw"
+        },
+        "07": {
+            "artist": "Flatbush Zombies",
+            "ratio": 2,
+            "title": "Headstone",
+            "trackid": "0PWP4LIOI5xjVkaWqES7ek"
+        },
+        "08": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "09": {
+            "artist": "ScHoolboy Q",
+            "ratio": 3,
+            "title": "Neva CHange",
+            "trackid": "6tPDalwocS7zgeFpYi3xtr"
+        },
+        "10": {
+            "artist": "Joey Bada$$",
+            "ratio": 6,
+            "title": "Big Dusty",
+            "trackid": "3wnAMgb3pkn4O3gYYLP5db"
+        },
+        "11": {
+            "artist": "808INK",
+            "ratio": 6,
+            "title": "Chubby",
+            "trackid": "7KB5YLxNMy26cyTAytVeLC"
+        },
+        "12": {
+            "artist": "Urmo",
+            "ratio": 2,
+            "title": "What's My Name",
+            "trackid": "2uTwweC6Sx4adv8BEXpoDZ"
+        },
+        "13": {
+            "artist": "Noam Bass",
+            "ratio": 1,
+            "title": "Break Into Your Head",
+            "trackid": "2ahYfnsbGZAJZopgcfMoOx"
+        },
+        "14": {
+            "artist": "Skepta",
+            "ratio": 6,
+            "title": "Crime Riddim",
+            "trackid": "5NucMmR6MVuWsBfW4322yw"
+        },
+        "15": {
+            "artist": "Pharrell",
+            "ratio": 6,
+            "title": "Stay With Me",
+            "trackid": "5YghVvq4DLMdSDKwufxZHr"
+        },
+        "16": {
+            "artist": "Skepta",
+            "ratio": 6,
+            "title": "Ladies Hit Squad",
+            "trackid": "5DddJVNEGBfUxy9Dtr45gI"
+        },
+        "17": {
+            "artist": "ScHoolboy Q",
+            "ratio": 1,
+            "title": "I'm Good",
+            "trackid": "307f48OjM79zfose1RR1ej"
+        },
+        "18": {
+            "artist": "Elk",
+            "ratio": 2,
+            "title": "Omelet",
+            "trackid": "7lt7hfiqE4vapLOLQPYIhb"
+        },
+        "19": {
+            "artist": "A$AP Rocky",
+            "ratio": 1,
+            "title": "Get Lit (feat. Fat Tony)",
+            "trackid": "4nzmPINOWf5sdKNrTjcM3z"
+        },
+        "20": {
+            "artist": "Two-9",
+            "ratio": 0,
+            "title": "World Go Crazy",
+            "trackid": "4gCREr6YIJJcvhpsM91OMS"
+        },
+        "21": {
+            "artist": "808INK",
+            "ratio": 6,
+            "title": "Q'd Up",
+            "trackid": "6jgDrVYg0O5LyLpyAFl1nn"
+        },
+        "22": {
+            "artist": "Ray Fuego",
+            "ratio": 4,
+            "title": "YUNG BUM",
+            "trackid": "6ZgAm99HOltvIDvaxXzBPp"
+        },
+        "23": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Tookie Knows II",
+            "trackid": "3mViCAKDSnEoGijjbmcQYA"
+        },
+        "24": {
+            "artist": "Thundercat",
+            "ratio": 6,
+            "title": "Them Changes",
+            "trackid": "7CH99b2i1TXS5P8UUyWtnM"
+        },
+        "25": {
+            "artist": "DanielGóes",
+            "ratio": 1,
+            "title": "Lá",
+            "trackid": "4J3Wac9sB7fcolxnGjDEKr"
+        },
+        "26": {
+            "artist": "Solange",
+            "ratio": 2,
+            "title": "Almeda",
+            "trackid": "6IAgarq2wDeYzpsY2Kx0Hw"
+        },
+        "27": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Man Of The Year",
+            "trackid": "5SsR3wtCOafDmZgvIdRhSm"
+        },
+        "28": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "Groovy Tony / Eddie Kane",
+            "trackid": "1MY4HVXfBkUg1mUjmCjznI"
+        },
+        "29": {
+            "artist": "Kendrick Lamar",
+            "ratio": 6,
+            "title": "Tammy's Song (Her Evils)",
+            "trackid": "22gXA7HlEd0z13zdc3hju7"
+        },
+        "30": {
+            "artist": "Kanye West",
+            "ratio": 6,
+            "title": "I'm In It",
+            "trackid": "52NmkyHsGsHGb1UX8fTkMg"
+        },
+        "31": {
+            "artist": "Giggs",
+            "ratio": 6,
+            "title": "Talkin the Hardest",
+            "trackid": "0JmKkvlDtgPIYwLdxPNtyx"
+        },
+        "32": {
+            "artist": "Big L",
+            "ratio": 6,
+            "title": "Da Graveyard",
+            "trackid": "04Rz403IY7QUqgfrTWX6OU"
+        },
+        "33": {
+            "artist": "Slum Village",
+            "ratio": 6,
+            "title": "Climax (Girl Shit)",
+            "trackid": "6V5L99nGuMyJ1XlPCVNOcd"
+        },
+        "34": {
+            "artist": "Dr. Dre",
+            "ratio": 6,
+            "title": "Still D.R.E.",
+            "trackid": "503OTo2dSqe7qk76rgsbep"
+        },
+        "35": {
+            "artist": "Earl Sweatshirt",
+            "ratio": 5,
+            "title": "Knight (feat. Domo Genesis)",
+            "trackid": "2LbL1HaoZrXrCR538uxUjl"
+        },
+        "36": {
+            "artist": "Three 6 Mafia",
+            "ratio": 5,
+            "title": "Playa Hataz",
+            "trackid": "0TfHub9Xd5kr6lwpiWOxO7"
+        },
+        "37": {
+            "artist": "A$AP Rocky",
+            "ratio": 5,
+            "title": "Bass",
+            "trackid": "3tynJ5xl3ZjRj2fPQF0kNi"
+        },
+        "38": {
+            "artist": "ScHoolboy Q",
+            "ratio": 6,
+            "title": "THat Part",
+            "trackid": "2yJ9GVCLMmzBBfQAnfzlwr"
+        }
+    },
+    "omelet-24th-june-2016": {
+        "00": {
+            "artist": "Earl Sweatshirt",
+            "ratio": 4,
+            "title": "Sunday (feat. Frank Ocean)",
+            "trackid": "0fAehaneUJdlSlWXYe1KZp"
+        },
+        "01": {
+            "artist": "Slum Village",
+            "ratio": 6,
+            "title": "Climax",
+            "trackid": "0ql1SFxq7xKtXCPU0huup3"
+        },
+        "02": {
+            "artist": "Earl Sweatshirt",
+            "ratio": 3,
+            "title": "Pre (feat. SK La' Flare)",
+            "trackid": "4B31QOL13iBeuIsaGD20BS"
+        },
+        "03": {
+            "artist": "James Blake",
+            "ratio": 6,
+            "title": "Digital Lion",
+            "trackid": "0BQV07dSwLltMlLDo47ckp"
+        },
+        "04": {
+            "artist": "Kanye West",
+            "ratio": 6,
+            "title": "I'm In It",
+            "trackid": "52NmkyHsGsHGb1UX8fTkMg"
+        },
+        "05": {
+            "artist": "Kendrick Lamar",
+            "ratio": 4,
+            "title": "Real",
+            "trackid": "73eGiraiU7JkIsmFyQyJAv"
+        },
+        "06": {
+            "artist": "Kendrick Lamar",
+            "ratio": 6,
+            "title": "Sherane a.k.a Master Splinter’s Daughter",
+            "trackid": "5FF6Pyuh5jW6ybKHiaiGMy"
         }
     }
 }
