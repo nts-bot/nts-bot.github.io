@@ -90,15 +90,17 @@ class nts:
             time.sleep(1.0)
             self._d2j(path,allot)
 
-    def prerun(self,json1,json2,tracks=True):
+    def prerun(self,json1,json2,meta=''):
         js1 = self._j2d(json1)
         js2 = self._j2d(json2)
+        if meta:
+            js2 = js2[meta]
         ok = [False]
         for i in js1: # episodes
             if i not in js2:
                 ok += [True]
             else:
-                if tracks:
+                if not meta:
                     for j in js1[i]: # tracks
                         if j not in js2[i]:
                             ok += [True]
@@ -108,22 +110,35 @@ class nts:
 
     # RUN SCRIPT
 
-    def runscript(self,shows,short=True):
+    def runscript(self,shows):
         for show in shows:
             # SCRAPE
-            self.scrape(show,short)
+            print('SCRAPE',end='\r')
+            if self.prerun(f"./tracklist/{show}",f"./extra/meta",show):
+                self.scrape(show,False)
+            else:
+                self.scrape(show,True)
             # SEARCH/RATE
-            if self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}",True):
-                self.searchloop(['tracklist','spotify_search_results'],'search')
-            if self.prerun(f"./tracklist/{show}",f"./spotify/{show}",True):
-                self.searchloop(['tracklist','spotify','spotify_search_results'],'rate')
-            # ADD
-            if self.prerun(f"./tracklist/{show}",f"./spotify/{show}",True):
-                self.searchloop(['tracklist','spotify','spotify_search_results'],'rate')
+            print('SEARCH/RATE',end='\r')
+            if self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}"):
+                print('SEARCH.TRUE.',end='\r')
+                self.searchloop(show,['tracklist','spotify_search_results'],'search')
+            if self.prerun(f"./tracklist/{show}",f"./spotify/{show}"):
+                print('RATE.TRUE.',end='\r')
+                self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate')
+                reset = True
+            else:
+                reset = False
             # BANDCAMP
-            if self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}",True):
-                self.searchloop(['tracklist','bandcamp','rate'],'bandcamp')
+            print('BANDCAMP',end='\r')
+            if self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}"):
+                print('BANDCAMP.TRUE.',end='\r')
+                self.searchloop(show,['tracklist','bandcamp','rate'],'bandcamp')
+            # ADD
+            print('ADD',end='\r')
+            self.spotifyplaylist(show,reset=reset)
             # HTML
+            print('HTML',end='\r')
             self.showhtml(show)
         self.home()
 
@@ -377,6 +392,8 @@ class nts:
             except Exception as error:
                 print(f'image failure for show : {show} : Error : {error}')
             #
+            self.connect()
+            #
             ref = self.sp.user_playlist_create(self.user,f'{show}-nts',public=True,description=f"(https://www.nts.live/shows/{show})")
             self.sp.playlist_upload_cover_image(ref, b64_string)
             #
@@ -413,6 +430,9 @@ class nts:
                         print(f'{show[:7]}{episode[:7]}. . . . .{subcounter}:{len(list(eval(jsonlist[0])[episode].keys()))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
+                            #
+                            self.connect()
+                            #
                             eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
@@ -632,9 +652,11 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    def _add(self,show,threshold=[3,10],remove=False,reset=False):
+    def spotifyplaylist(self,show,threshold=[3,10],remove=False,reset=False):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
-
+        #
+        self.connect()
+        #
         pid = self.pid(show)
         rate = self._j2d(f'./spotify/{show}')
         meta = self._j2d(f'./extra/meta')[show]
@@ -659,7 +681,7 @@ class nts:
                 if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
                     unsure += 1
 
-        tid = self.scene(tid[::-1])
+        tid = self.scene(tid[::-1])[::-1]
 
         current = self.sp.user_playlist_tracks(self.user,pid)
         tracks = current['items']
