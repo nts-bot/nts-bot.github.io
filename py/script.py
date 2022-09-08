@@ -180,7 +180,7 @@ class nts:
             try:
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
                 if rq:
-                    self.ntstracklist(do)
+                    self.ntstracklist(show,do)
                 else:
                     # self.scrape(show,True)
                     cont = False
@@ -483,13 +483,12 @@ class nts:
         for jsondir in jsonlist:
             locals()[jsondir] = self._j2d(f'./{jsondir}/{show}')
 
-        counter = 0
+        total = list(eval(jsonlist[0]).keys())
         if not episodelist:
             episodelist = eval(jsonlist[0])
         for episode in episodelist:
             multiple = []
-            counter += 1
-            print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{counter}:{len(list(eval(jsonlist[0]).keys()))}.',end='\r')
+            print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{total.index(episode)}:{len(total)}.',end='\r')
             try:
                 x = eval(jsonlist[1])[episode]
             except KeyError:
@@ -499,7 +498,6 @@ class nts:
             nk = eval(jsonlist[1])[episode].keys()
             vl = [i for i in eval(jsonlist[1])[episode].values()]
             if list(set(ok)-set(nk)) or (not all(vl)):
-                subcounter = 0
                 for trdx in eval(jsonlist[0])[episode]:
                     second = False
                     subcounter += 1
@@ -510,7 +508,7 @@ class nts:
                         second = True
                     if second:
                         first = True
-                        print(f'{show[:7]}{episode[:7]}. . . . .{subcounter}:{len(list(eval(jsonlist[0])[episode].keys()))}.',end='\r')
+                        print(f'{show[:7]}{episode[:7]}. . . . .{list(ok).index(trdx)}:{len(list(ok))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
                             eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
