@@ -16,7 +16,6 @@ from pprint import pprint
 # SPOTIFY API TOOL
 import spotipy
 # # Multiple Requests
-# import grequests
 import queue
 # IMAGE PROCESSING TOOLS
 import cv2
@@ -142,9 +141,11 @@ class nts:
         if meta:
             js2 = js2[meta]
         ok = [False]
+        do = []
         for i in js1: # episodes
             if i not in js2:
                 ok += [True]
+                do += [i]
             else:
                 if not meta:
                     for j in js1[i]: # tracks
@@ -155,7 +156,9 @@ class nts:
                                 ok += [True]
                             else:
                                 ok += [False]
-        return(any(ok))
+        if do:
+            print(do)
+        return(any(ok),do)
 
     # RUN SCRIPT
 
@@ -165,23 +168,28 @@ class nts:
             print(show)
             # SCRAPE
             try:
-                if self.prerun(f"./tracklist/{show}",f"./meta",show):
-                    self.scrape(show,False,round(len(self._j2d(f"./tracklist/{show}"))/12)+1)
+                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
+                if rq:
+                    self.ntstracklist(do)
                 else:
                     self.scrape(show,True)
             except:
                 self.scrape(show,False)
+                self.ntstracklist(show)
             # SEARCH/RATE
-            if self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}"):
-                self.searchloop(show,['tracklist','spotify_search_results'],'search')
-            if self.prerun(f"./tracklist/{show}",f"./spotify/{show}"):
-                self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate')
+            rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
+            if rq:
+                self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
+            rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
+            if rq:
+                self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
                 reset = True
             else:
                 reset = False
             # BANDCAMP
-            if self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}"):
-                self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp')
+            rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
+            if rq:
+                self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
             # ADD
             self.spotifyplaylist(show,reset=reset)
             # HTML
@@ -302,8 +310,9 @@ class nts:
             time.sleep(1.0)
             self.req(url)
 
-    def ntstracklist(self,show):
-        episodelist = self._j2d(f'./tracklist/{show}')
+    def ntstracklist(self,show,episodelist=[]):
+        if not episodelist:
+            episodelist = self._j2d(f'./tracklist/{show}')
         for episode in episodelist:
             if episodelist[episode]:
                 pass
@@ -311,6 +320,19 @@ class nts:
                 print(episode[:10], end='\r')
                 url = f"https://www.nts.live/shows/{show}/episodes/{episode}"
                 soup = bs(self.req(url).content, "html.parser")
+                
+                # meta
+                meta = self._j2d(f'./meta')
+                try:
+                    x = meta[show]
+                except KeyError:
+                    meta[show] = dict()
+                bt = soup.select('.episode__btn')
+                date = bt[0]['data-episode-date']
+                eptitle = bt[0]['data-episode-name']
+                meta[show][episode] = {'title':eptitle,'date':date}
+                self._d2j(f'./meta',meta)
+
                 tracks = soup.select('.track')
                 for j in range(len(tracks)):
                     print(f'{episode[:10]}:{j:02}', end='\r')
@@ -443,14 +465,16 @@ class nts:
             self._d2j('pid',pid)
             return(ref['id'])
 
-    def searchloop(self,show,jsonlist,kind='search'):
+    def searchloop(self,show,jsonlist,kind='search',episodelist=[]):
         # jsonlist = [TRACKLIST, DO-ON, ADDITIONALS]
 
         for jsondir in jsonlist:
             locals()[jsondir] = self._j2d(f'./{jsondir}/{show}')
 
         counter = 0
-        for episode in eval(jsonlist[0]):
+        if not episodelist:
+            episodelist = eval(jsonlist[0])
+        for episode in episodelist:
             multiple = []
             store = False
             counter += 1
@@ -869,18 +893,19 @@ class nts:
     def camp_version2(self,query):
 
         print(f'.{len(query)}.',end='\r')
-        time.sleep(round(len(query)/5)+3.0)
-
-        try:
-            response = perform_web_requests(list(query.values()), 16)
-        except HTTPError:
-            print('REQUEST FAILED')
-            time.sleep(5.0)
-            return(self.camp_version2(query))
-
-
+        
+        time.sleep(round(len(query)/3)+1.0)
+        response = perform_web_requests(list(query.values()), 16)
         if not isinstance(response,list):
             response = [response]
+
+        for i in range(len(query)):
+            try:
+                response[i]
+            except IndexError:
+                print('REQUEST FAILED')
+                time.sleep(10.0)
+                return(self.camp_version2(query))
 
         c=-1
         for td in query:
@@ -906,28 +931,22 @@ class nts:
         for td in multiple:
             track = f'{showson[episode][td]["artist"]} {showson[episode][td]["title"] }'
             q1[td] = f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t"
-            q3[td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
             if rateson[episode][td]['ratio'] >= 3:
                 spot = f'{rateson[episode][td]["artist"]} {rateson[episode][td]["title"] }'
                 q2[td] = f"https://bandcamp.com/search?q={urllib.parse.quote(spot)}&item_type=t"
             else:
-                pass
+                q2[td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
 
         reply = self.camp_version2(q1)
         qsuccess = {i : reply[i] for i in reply if reply[i] != -1}
         qfailure = {i : reply[i] for i in reply if reply[i] == -1}
-        if qfailure and q2:
+        if qfailure:
             q2 = {i:q2[i] for i in q2 if i not in qsuccess}
             reply = self.camp_version2(q2)
-            qsuccess = qsuccess | {i : reply[i] for i in reply if reply[i] != -1}
+            qsuccess |= {i : reply[i] for i in reply if reply[i] != -1}
             qfailure = {i : reply[i] for i in reply if reply[i] == -1}
-            if qfailure:
-                q3 = {i:q3[i] for i in q3 if i not in qsuccess}
-                reply = self.camp_version2(q3)
-                qsuccess = qsuccess | {i : reply[i] for i in reply if reply[i] != -1}
-                qfailure = {i : reply[i] for i in reply if reply[i] == -1}
 
-        return(qsuccess | qfailure)
+        return(qfailure | qsuccess)
 
         
 
