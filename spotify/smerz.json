@@ -1,1 +1,792 @@
-{}
+{
+    "smerz-12th-may-2022": {
+        "00": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "01": {
+            "artist": "Peach",
+            "ratio": 3,
+            "title": "I Dare You",
+            "trackid": "4CtzwTqh7sWBufkL4vJUgQ"
+        },
+        "02": {
+            "artist": "Micachu & The Shapes",
+            "ratio": 5,
+            "title": "Oh Baby",
+            "trackid": "0ilkWDtr2aM2Ms5aUqzHXG"
+        },
+        "03": {
+            "artist": "Zmeyev",
+            "ratio": 2,
+            "title": "Blossom",
+            "trackid": "0D9lh7wbV2UMA64FmzapX6"
+        },
+        "04": {
+            "artist": "Loke Rahbek",
+            "ratio": 4,
+            "title": "Elephant",
+            "trackid": "5GE3A5fpTpcqlI26hOTC1w"
+        },
+        "05": {
+            "artist": "Yin Yin",
+            "ratio": 6,
+            "title": "Dis kô Dis kô",
+            "trackid": "2NRWckehPD8dwH2iXmjZeB"
+        },
+        "06": {
+            "artist": "UNKNWN",
+            "ratio": 3,
+            "title": "Night Sky",
+            "trackid": "57w9uRI5chjC0lK4nM7Y2J"
+        },
+        "07": {
+            "artist": "Otha",
+            "ratio": 6,
+            "title": "One of the Girls",
+            "trackid": "25FJ3Wsiv3woan4iN0fzYd"
+        },
+        "08": {
+            "artist": "Neggy Gemmy",
+            "ratio": 4,
+            "title": "Bad Baby",
+            "trackid": "7z9RCMYYlvYrvUjQ0l7oba"
+        },
+        "09": {
+            "artist": "Federico Dubbini",
+            "ratio": 4,
+            "title": "Heavenly Flight",
+            "trackid": "0fwIBTIPjddOwD7vlyJEWb"
+        },
+        "10": {
+            "artist": "Björk",
+            "ratio": 6,
+            "title": "Blissing Me - Harp Version",
+            "trackid": "7foJPjFsUI7I7f9V5wklSl"
+        },
+        "11": {
+            "artist": "Slowdive",
+            "ratio": 3,
+            "title": "When the Sun Hits",
+            "trackid": "0oxYB9GoOIDrdzniNdKC44"
+        }
+    },
+    "smerz-14th-april-2022": {
+        "00": {
+            "artist": "Smerz",
+            "ratio": 3,
+            "title": "Because",
+            "trackid": "5aZtv4OVEGqBV06NDTObQw"
+        },
+        "01": {
+            "artist": "Lolina",
+            "ratio": 4,
+            "title": "Lolina",
+            "trackid": "1RylVXzYFROaSo5muCnHLn"
+        },
+        "02": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "03": {
+            "artist": "Britney Spears",
+            "ratio": 6,
+            "title": "Break the Ice",
+            "trackid": "52K4Nl7eVNqUpUeJeWJlwT"
+        },
+        "04": {
+            "artist": "Cristina",
+            "ratio": 6,
+            "title": "Things Fall Apart",
+            "trackid": "72ufqAeVBaTnQvINBoeRUG"
+        },
+        "05": {
+            "artist": "Madonna",
+            "ratio": 6,
+            "title": "Material Girl - Extended Dance Remix",
+            "trackid": "4vle25yO4Rf7AYkWtzSfAS"
+        },
+        "06": {
+            "artist": "BMR",
+            "ratio": 2,
+            "title": "LaMelo Ball",
+            "trackid": "2l0fPCOxeXvCM5w4Ws0qL1"
+        },
+        "07": {
+            "artist": "Pictureplane",
+            "ratio": 6,
+            "title": "Goth Star",
+            "trackid": "6yORRMExAPC131MqwTHirp"
+        },
+        "08": {
+            "artist": "Club Eat",
+            "ratio": 6,
+            "title": "Sticky",
+            "trackid": "5M5VOZjPEpANgaNn4mkUNE"
+        },
+        "09": {
+            "artist": "Ryuichi Sakamoto",
+            "ratio": 6,
+            "title": "Batavia",
+            "trackid": "0gBg60nk9ldic1b6KO5Eiv"
+        },
+        "10": {
+            "artist": "Mandy Moore",
+            "ratio": 6,
+            "title": "Candy",
+            "trackid": "2YhE6xeWN0R9RVwEOG9lR1"
+        },
+        "11": {
+            "artist": "Tirzah",
+            "ratio": 6,
+            "title": "Style",
+            "trackid": "5ItAYxuyACPsgNwztlhnsV"
+        },
+        "12": {
+            "artist": "Thulebasen",
+            "ratio": 6,
+            "title": "Gate 5",
+            "trackid": "4u6LRzk1RIUUrvs3AM1xZB"
+        },
+        "13": {
+            "artist": "Janet Jackson",
+            "ratio": 6,
+            "title": "Rock With U",
+            "trackid": "20JCr5mkcdwOZ2Pdjx8vFj"
+        },
+        "14": {
+            "artist": "New Order",
+            "ratio": 6,
+            "title": "Bizarre Love Triangle",
+            "trackid": "6wVViUl2xSRoDK2T7dMZbR"
+        }
+    },
+    "smerz-17th-february-2022": {
+        "00": {
+            "artist": "Frank Zappa",
+            "ratio": 6,
+            "title": "Strictly Genteel",
+            "trackid": "1SRLAz6J32NjkSWbfxpGL0"
+        },
+        "01": {
+            "artist": "Color Filter",
+            "ratio": 6,
+            "title": "Painter from New York",
+            "trackid": "6oArNVx8S0sRz3p34HsQa1"
+        },
+        "02": {
+            "artist": "System Olympia",
+            "ratio": 6,
+            "title": "Falling In Love",
+            "trackid": "2jQc7vUcpFAIguBF5PZdnD"
+        },
+        "03": {
+            "artist": "Princess Demeny",
+            "ratio": 6,
+            "title": "New York Grief '86",
+            "trackid": "08Z80NGo5GH08PrmVm9781"
+        },
+        "04": {
+            "artist": "Roger Doyle",
+            "ratio": 6,
+            "title": "Spring Is Coming With a Strawberry in the Mouth",
+            "trackid": "6kZmkCEqlDT1Mf694iPJBe"
+        },
+        "05": {
+            "artist": "The Durutti Column",
+            "ratio": 6,
+            "title": "Future Perfect",
+            "trackid": "0RlpgTdnxatoTRBvG34zaB"
+        },
+        "06": {
+            "artist": "Boredoms",
+            "ratio": 6,
+            "title": "100 Dom",
+            "trackid": "5MCWpOOprEneWY3lyPFJJI"
+        },
+        "07": {
+            "artist": "Rexy",
+            "ratio": 6,
+            "title": "Running Out Of Time",
+            "trackid": "0pMEFTRTbTpxJWEWonD7Mt"
+        },
+        "08": {
+            "artist": "Carol",
+            "ratio": 6,
+            "title": "So Low",
+            "trackid": "6K5ARWvcexBO4IyGJEuhPL"
+        },
+        "09": {
+            "artist": "Melt-Banana",
+            "ratio": 6,
+            "title": "Zero+",
+            "trackid": "2VsZHlh9G5koAKkH1d5gOq"
+        },
+        "10": {
+            "artist": "Sally Oldfield",
+            "ratio": 6,
+            "title": "Blue Water",
+            "trackid": "422lshqAn4jLi2ytuwiXv7"
+        },
+        "11": {
+            "artist": "Colin Munroe",
+            "ratio": 6,
+            "title": "Not Love",
+            "trackid": "7INM5h2nJqJt0rEG6CyPDp"
+        },
+        "12": {
+            "artist": "iB101",
+            "ratio": 6,
+            "title": "Volatile",
+            "trackid": "0jrBhhbQqWf3CtbS2YnNCA"
+        },
+        "13": {
+            "artist": "Mark & Suzann Farmer",
+            "ratio": 6,
+            "title": "Dreams",
+            "trackid": "470WfHFqyTx0niVEuOK7VJ"
+        }
+    },
+    "smerz-17th-march-2022": {
+        "00": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "01": {
+            "artist": "Pyotr Ilyich Tchaikovsky",
+            "ratio": 5,
+            "title": "Symphony No. 1 in G Minor, Op. 13, \"Winter Daydreams\": III. Scherzo: Allegro scherzando giocoso",
+            "trackid": "3df7rplSNk548CH0YCcooM"
+        }
+    },
+    "smerz-23rd-december-2021": {},
+    "smerz-25th-november-2021": {},
+    "smerz-28th-october-2021": {
+        "00": {
+            "artist": "SWV",
+            "ratio": 5,
+            "title": "Rain",
+            "trackid": "4G1qRhOk1YY0kewtMaCrMC"
+        },
+        "01": {
+            "artist": "Gigi D'Agostino",
+            "ratio": 6,
+            "title": "L'Amour Toujours",
+            "trackid": "52LJ3hyknOijCrE5gCD0rE"
+        },
+        "02": {
+            "artist": "Brandy",
+            "ratio": 6,
+            "title": "The Boy Is Mine",
+            "trackid": "6sHsXIJoEN5JpdkGMQDJxt"
+        },
+        "03": {
+            "artist": "Björk",
+            "ratio": 6,
+            "title": "Isobel",
+            "trackid": "1qyD5xpCI53VtITnxwB5Xn"
+        },
+        "04": {
+            "artist": "Kreayshawn",
+            "ratio": 6,
+            "title": "Bumpin Bumpin",
+            "trackid": "1rLTMSZ92QLFM3vBTe1pgA"
+        },
+        "05": {
+            "artist": "Bent Sørensen",
+            "ratio": 6,
+            "title": "Rosenbad (Papillons): VII. —",
+            "trackid": "1jN5Gx0NO5WMFgrRW0RITd"
+        },
+        "06": {
+            "artist": "Dario Von Slutty",
+            "ratio": 6,
+            "title": "Pisk Mig Hårdt!!!",
+            "trackid": "1q3Iuk3nVEwRPj7mR34QYQ"
+        },
+        "07": {
+            "artist": "Peaches",
+            "ratio": 6,
+            "title": "AA XXX",
+            "trackid": "0g1fQ5723NLV4aTRhh3P8B"
+        },
+        "08": {
+            "artist": "Henry Mancini",
+            "ratio": 6,
+            "title": "Pink Panther Theme",
+            "trackid": "1QPRmX2e3EZWskuOe5QqxM"
+        },
+        "09": {
+            "artist": "Mis-Teeq",
+            "ratio": 6,
+            "title": "Sumthin' Scandalous",
+            "trackid": "0V9fSrfKJKSax0hOV9SxuF"
+        },
+        "10": {
+            "artist": "Janet Jackson",
+            "ratio": 4,
+            "title": "Together Again",
+            "trackid": "1GrikfH0jDejDvrxo84n4P"
+        },
+        "11": {
+            "artist": "Britney Spears",
+            "ratio": 6,
+            "title": "Overprotected - Radio Edit",
+            "trackid": "5p0KCAuu5nrHpTuAIhHdLw"
+        },
+        "12": {
+            "artist": "Avril Lavigne",
+            "ratio": 6,
+            "title": "Losing Grip",
+            "trackid": "2LA4v20vokK9Uaj7WEEMaf"
+        },
+        "13": {
+            "artist": "Spice Girls",
+            "ratio": 6,
+            "title": "Viva Forever",
+            "trackid": "6BPDPcnbDMDf58srVzbfX9"
+        },
+        "14": {
+            "artist": "Sonique",
+            "ratio": 6,
+            "title": "It Feels So Good",
+            "trackid": "4Y8q64VnhD0vFYy9g2WFpi"
+        },
+        "15": {
+            "artist": "Alice Deejay",
+            "ratio": 6,
+            "title": "Better Off Alone",
+            "trackid": "5XVjNRubJUW0iPhhSWpLCj"
+        },
+        "16": {
+            "artist": "Vanessa Carlton",
+            "ratio": 6,
+            "title": "A Thousand Miles",
+            "trackid": "4w1lzcaoZ1IC2K5TwjalRP"
+        },
+        "17": {
+            "artist": "Britney Spears",
+            "ratio": 6,
+            "title": "Overprotected - Radio Edit",
+            "trackid": "5p0KCAuu5nrHpTuAIhHdLw"
+        },
+        "18": {
+            "artist": "Jack Ü",
+            "ratio": 5,
+            "title": "Where Are Ü Now (with Justin Bieber)",
+            "trackid": "66hayvUbTotekKU3H4ta1f"
+        },
+        "19": {
+            "artist": "Princess Nokia",
+            "ratio": 6,
+            "title": "Tomboy",
+            "trackid": "5PMogwhZnz10KCiawTGBnw"
+        },
+        "20": {
+            "artist": "Anna Domino",
+            "ratio": 6,
+            "title": "Everyday, I Don't",
+            "trackid": "1DcnA4LVSMwNGky0ia18cv"
+        },
+        "21": {
+            "artist": "Madonna",
+            "ratio": 6,
+            "title": "Hung Up",
+            "trackid": "3850dYVgOFIXJh5U4BFEWH"
+        },
+        "22": {
+            "artist": "50 Cent",
+            "ratio": 6,
+            "title": "Candy Shop",
+            "trackid": "5D2mYZuzcgjpchVY1pmTPh"
+        },
+        "23": {
+            "artist": "Cicciolina",
+            "ratio": 6,
+            "title": "My Sexy Shop",
+            "trackid": "1gur3GHWPJX3bkx54O1Ucl"
+        },
+        "24": {
+            "artist": "Britney Spears",
+            "ratio": 6,
+            "title": "Overprotected - Radio Edit",
+            "trackid": "0TZLelrXMYDMoc1bQC5yje"
+        },
+        "25": {
+            "artist": "Virna Lindt",
+            "ratio": 6,
+            "title": "Pillow Talk",
+            "trackid": "7CMA1qV49pHGaP8mUayVTs"
+        },
+        "26": {
+            "artist": "Spice Girls",
+            "ratio": 6,
+            "title": "2 Become 1",
+            "trackid": "36AWdhZIGLUTkWpJDhe7va"
+        },
+        "27": {
+            "artist": "Cicciolina",
+            "ratio": 5,
+            "title": "Baby Love",
+            "trackid": "0963W2BvY204PIAscnbzl1"
+        },
+        "28": {
+            "artist": "Madonna",
+            "ratio": 6,
+            "title": "Ray of Light",
+            "trackid": "4Fpsa3pYc3gozrxHRRPvR6"
+        },
+        "29": {
+            "artist": "Madonna",
+            "ratio": 6,
+            "title": "Hung Up",
+            "trackid": "3850dYVgOFIXJh5U4BFEWH"
+        },
+        "30": {
+            "artist": "Kendrick Lamar",
+            "ratio": 6,
+            "title": "HUMBLE.",
+            "trackid": "7KXjTSCq5nL1LoYtL7XAwS"
+        },
+        "31": {
+            "artist": "Mariah Carey",
+            "ratio": 6,
+            "title": "We Belong Together",
+            "trackid": "4EI8VuxUuIHKfafU72emqz"
+        }
+    },
+    "smerz-30th-september-2021": {
+        "00": {
+            "artist": "Cranes",
+            "ratio": 6,
+            "title": "Everywhere",
+            "trackid": "6sqVAbU5ghe076ecYhImXG"
+        },
+        "01": {
+            "artist": "boli group",
+            "ratio": 4,
+            "title": "How To Play",
+            "trackid": "1Gt1Q4dfTDuaMFzODebqK4"
+        },
+        "02": {
+            "artist": "OLAibi",
+            "ratio": 6,
+            "title": "pino pino",
+            "trackid": "4PVsjN0Rfv6ruWADoEI2lM"
+        },
+        "03": {
+            "artist": "PJ Harvey",
+            "ratio": 6,
+            "title": "We Float",
+            "trackid": "0FTdrBz10BKS1LI7rXAjFp"
+        },
+        "04": {
+            "artist": "iB101",
+            "ratio": 6,
+            "title": "Kim Basinger",
+            "trackid": "6TIEy0LOJDlsjwv3Bf9UnX"
+        },
+        "05": {
+            "artist": "Cranes",
+            "ratio": 6,
+            "title": "Trumpet Song",
+            "trackid": "7rk0se4lz51SXu3RrepsUf"
+        },
+        "06": {
+            "artist": "Leslie Winer",
+            "ratio": 6,
+            "title": "Skin",
+            "trackid": "0uqWC6CLGLc1LfgLyNhTox"
+        },
+        "07": {
+            "artist": "jonatan leandoer96",
+            "ratio": 6,
+            "title": "Sweet 17",
+            "trackid": "4Rjq2Gqh9m3e2Wp0lGnKVz"
+        },
+        "08": {
+            "artist": "Julia Wolfe",
+            "ratio": 6,
+            "title": "Fuel: Part V",
+            "trackid": "52jt9wfStd6sfHKDl5iQqb"
+        },
+        "09": {
+            "artist": "Les Rallizes Dénudés",
+            "ratio": 4,
+            "title": "White Awakening",
+            "trackid": "18qlbsvP1W1HpxplpEyaf6"
+        },
+        "10": {
+            "artist": "Broadcast",
+            "ratio": 6,
+            "title": "Message From Home",
+            "trackid": "2eJ20xwVzhH0Xe3qdqJ7wF"
+        }
+    },
+    "smerz-4th-july-2022": {
+        "00": {
+            "artist": "Symphonisches Blasorchester Kreuzlingen",
+            "ratio": 2,
+            "title": "Sinfonietta Concertante - Live",
+            "trackid": "1YGoSw6k3tDRY3dyQQttKb"
+        },
+        "01": {
+            "artist": "Christoph Graupner",
+            "ratio": 3,
+            "title": "Bassoon Concerto in C Minor: II. Vivace",
+            "trackid": "09qQfhQULBsLFebNk3Yz31"
+        },
+        "02": {
+            "artist": "Andrzej Panufnik",
+            "ratio": 3,
+            "title": "Landscape",
+            "trackid": "3QHFjM1IlB5WNP24yn1m3k"
+        }
+    },
+    "smerz-5th-august-2021": {
+        "00": {
+            "artist": "Claude Vivier",
+            "ratio": 6,
+            "title": "Prologue pour un Marco Polo",
+            "trackid": "7CoZisibZHAozsQXO6l4wx"
+        },
+        "01": {
+            "artist": "Claude Vivier",
+            "ratio": 3,
+            "title": "Bouchara",
+            "trackid": "2k2OiBMYr0cBshCtGl6X9h"
+        },
+        "02": {
+            "artist": "Claude Vivier",
+            "ratio": 4,
+            "title": "Zipangu",
+            "trackid": "0YN27mom5gnTjz2oDHyP6E"
+        },
+        "03": {
+            "artist": "Claude Vivier",
+            "ratio": 6,
+            "title": "Lonely Child",
+            "trackid": "489yI9JUMbPnEgs4YaX3gf"
+        }
+    },
+    "smerz-6th-august-2022": {
+        "00": {
+            "artist": "Creedence Clearwater Revival",
+            "ratio": 6,
+            "title": "Susie Q",
+            "trackid": "6z2AyfE9GZxoHqJVSA4NgN"
+        },
+        "01": {
+            "artist": "Craig David",
+            "ratio": 6,
+            "title": "Fill Me In",
+            "trackid": "0UzsDmdpw0Q14KU4hieQss"
+        },
+        "02": {
+            "artist": "Cassie",
+            "ratio": 6,
+            "title": "Can't Do It Without You",
+            "trackid": "40U3OoJBSz0doLU4Pul4K0"
+        },
+        "03": {
+            "artist": "Lolina",
+            "ratio": 6,
+            "title": "Music Is The Drug",
+            "trackid": "1BWGyrR8iDDXwhXmE5xmQQ"
+        },
+        "04": {
+            "artist": "Kate Nash",
+            "ratio": 6,
+            "title": "Foundations",
+            "trackid": "5JkTN6THtYH6bpOoHjOysc"
+        },
+        "05": {
+            "artist": "Lana Del Rey",
+            "ratio": 6,
+            "title": "Black Bathing Suit",
+            "trackid": "2LQGoKFKkZ9yk3UeYFj2xo"
+        },
+        "06": {
+            "artist": "Shirley",
+            "ratio": 3,
+            "title": "Szóljon a groove",
+            "trackid": "7oQu0QQohbRYyYs6kPlls4"
+        },
+        "07": {
+            "artist": "HAIM",
+            "ratio": 6,
+            "title": "Summer Girl",
+            "trackid": "4ppUqHIhC3lEHFCfhZQZuX"
+        },
+        "08": {
+            "artist": "Gianni Celeste",
+            "ratio": 6,
+            "title": "Tu Comm'a Mme",
+            "trackid": "4Zx49JZbXDTFqUlwUZMQqT"
+        },
+        "09": {
+            "artist": "Renée Zellweger",
+            "ratio": 6,
+            "title": "Funny Honey",
+            "trackid": "5uryqFuYGHHMkEFQGHoCsU"
+        },
+        "10": {
+            "artist": "The Beatles",
+            "ratio": 6,
+            "title": "While My Guitar Gently Weeps - Remastered 2009",
+            "trackid": "389QX9Q1eUOEZ19vtzzI9O"
+        },
+        "11": {
+            "artist": "Lana Del Rey",
+            "ratio": 6,
+            "title": "High By The Beach",
+            "trackid": "7g3htkaLz4ETFn0cifwM3y"
+        },
+        "12": {
+            "artist": "Oasis",
+            "ratio": 6,
+            "title": "Champagne Supernova - Remastered",
+            "trackid": "2A7GGXmTlXuH9LOvBXgOX4"
+        }
+    },
+    "smerz-8th-july-2021": {
+        "00": {
+            "artist": "Smerz",
+            "ratio": 4,
+            "title": "Sure",
+            "trackid": "4B3wSbmnVRqpmCh3AsIZAh"
+        },
+        "01": {
+            "artist": "Smerz",
+            "ratio": 3,
+            "title": "4 temaer",
+            "trackid": "0nXh55jjPe5SwEndePJPFc"
+        },
+        "02": {
+            "artist": "Smerz",
+            "ratio": 3,
+            "title": "Max",
+            "trackid": "7aWWOiX3LsB80ozbNTSTZb"
+        },
+        "03": {
+            "artist": "Smerz",
+            "ratio": 3,
+            "title": "Craig",
+            "trackid": "14Yco0prrBFU7cqwrsgCAM"
+        },
+        "04": {
+            "artist": "Smerz",
+            "ratio": 6,
+            "title": "Før og etter",
+            "trackid": "1UnK5hpYjJqeX3rrfu2sX5"
+        },
+        "05": {
+            "artist": "Saez",
+            "ratio": 6,
+            "title": "Tango",
+            "trackid": "57rKkuu02MlZ7r69WUfevt"
+        },
+        "06": {
+            "artist": "Smerz",
+            "ratio": 3,
+            "title": "Sure",
+            "trackid": "4B3wSbmnVRqpmCh3AsIZAh"
+        },
+        "07": {
+            "artist": "Smerz",
+            "ratio": 5,
+            "title": "Sure",
+            "trackid": "4B3wSbmnVRqpmCh3AsIZAh"
+        },
+        "08": {
+            "artist": "Smerz",
+            "ratio": 5,
+            "title": "Sure",
+            "trackid": "4B3wSbmnVRqpmCh3AsIZAh"
+        },
+        "09": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Østenfor Sol Og Vestenfor Måne",
+            "trackid": "37NjpmBW2FbxDog3UV3svJ"
+        },
+        "10": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Ord",
+            "trackid": "3cQMoc7AoPflXxPZzxZdQO"
+        },
+        "11": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Høyfjeldsbilde",
+            "trackid": "2gepbx8rSBH41O1Z7Y9wkk"
+        },
+        "12": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Nattleite",
+            "trackid": "081i6wtNODbOfSNKKdCpEU"
+        },
+        "13": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Kveldsang",
+            "trackid": "06uTbQzroxP7nzKIYTkaV1"
+        },
+        "14": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Naturmystikk",
+            "trackid": "73H1e0hv7pQ7q2Mm1tpou2"
+        },
+        "15": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Al Capella",
+            "trackid": "2jvG6VkiJ8VvBBxIhioGOx"
+        },
+        "16": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Hiertets Vee",
+            "trackid": "3hHGZsfti742e2492iDSMn"
+        },
+        "17": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Kledt I Nattens Farger",
+            "trackid": "1Y3o3j7PNWC7G0kG5hWxTZ"
+        },
+        "18": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Halling",
+            "trackid": "0f1sr4dLT5m0mvrg4MdNhG"
+        },
+        "19": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Utreise",
+            "trackid": "56UTSIGchZBFEVZuiCqEbP"
+        },
+        "20": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Søfn-ør paa Alfers Lund",
+            "trackid": "2YwsQkijMQG3eLunxTX2fb"
+        },
+        "21": {
+            "artist": "Ulver",
+            "ratio": 6,
+            "title": "Ulvsblakk",
+            "trackid": "7m4Z1nsSHc55wGVC0Go3iQ"
+        }
+    }
+}
