@@ -10,12 +10,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-# Multiple Requests
-import grequests
 # PPrint
 from pprint import pprint
 # SPOTIFY API TOOL
 import spotipy
+# # Multiple Requests
+# import grequests
+import queue
 # IMAGE PROCESSING TOOLS
 import cv2
 import base64
@@ -56,6 +57,48 @@ def timeout(timeout):
             return ret
         return wrapper
     return deco
+
+def perform_web_requests(addresses, no_workers):
+    class Worker(Thread):
+        def __init__(self, request_queue):
+            Thread.__init__(self)
+            self.queue = request_queue
+            self.results = []
+
+        def run(self):
+            while True:
+                content = self.queue.get()
+                if content == "":
+                    break
+                request = urllib.request.Request(content)
+                response = urllib.request.urlopen(request)
+                self.results.append(response.read())
+                self.queue.task_done()
+
+    # Create queue and add addresses
+    q = queue.Queue()
+    for url in addresses:
+        q.put(url)
+
+    # Workers keep working till they receive an empty string
+    for _ in range(no_workers):
+        q.put("")
+
+    # Create workers and add tot the queue
+    workers = []
+    for _ in range(no_workers):
+        worker = Worker(q)
+        worker.start()
+        workers.append(worker)
+    # Join workers to wait till they finished
+    for worker in workers:
+        worker.join()
+
+    # Combine results from all workers
+    r = []
+    for worker in workers:
+        r.extend(worker.results)
+    return r
 
 class nts:
 
@@ -122,7 +165,7 @@ class nts:
             # SCRAPE
             try:
                 if self.prerun(f"./tracklist/{show}",f"./extra/meta",show):
-                    self.scrape(show,False,ound(len(self._j2d(f"./tracklist/{show}"))/12))
+                    self.scrape(show,False,round(len(self._j2d(f"./tracklist/{show}"))/12))
                 else:
                     self.scrape(show,True)
             except:
@@ -443,7 +486,7 @@ class nts:
 
             if (kind == 'bandcamp') and multiple:
                 req = self.bandcamp_version2(eval(jsonlist[0]),eval(jsonlist[2]),episode,multiple)
-                for td  in trdx:
+                for td in multiple:
                     eval(jsonlist[1])[episode][td] = req[td]
 
             if store:
@@ -786,12 +829,18 @@ class nts:
         url = f"https://bandcamp.com/search?q={query}&item_type=t"
         soup = bs(self.req(url).content, "html.parser")
         try:
-            tj['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
-            tj['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
-            tj['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
+            if soup.select('.noresults-header'):
+                tj = -1
         except:
-            print(f'. . . . .n.a.',end='\r')
-            tj = -1
+            try:
+                tj['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
+                tj['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
+                tj['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
+            except:
+                # raise RuntimeError('REQUEST FAILED')
+                print('REQUEST FAILED')
+                time.sleep(5.0)
+                return(self.camp(query))
         return(tj)
 
     def bandcamp(self,showson,rateson,episode,trdx):
@@ -816,43 +865,70 @@ class nts:
 
         return(tl)
 
-    def bandcamp_version2(self,showson,rateson,episode,multiple):
+    def camp_version2(self,query):
 
-        bigquery = []
+        print(f'.{len(query)}.',end='\r')
+        time.sleep(round(len(query)/5))
+
+        try:
+            response = perform_web_requests(list(query.values()), 16)
+        except:
+            print('REQUEST FAILED')
+            time.sleep(5.0)
+            return(self.camp_version2(query))
+
+
+        if not isinstance(response,list):
+            response = [response]
+
+        c=-1
+        for td in query:
+            c+=1
+            soup = bs(response[c], "html.parser")
+            # pot += [bs(resp, "html.parser")]
+            try:
+                if soup.select('.noresults-header'):
+                    query[td] = -1
+            except:
+                query[td]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
+                query[td]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
+                query[td]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
+                break
+        # return(pot)
+        return(query)
+
+    def bandcamp_version2(self,showson,rateson,episode,multiple):
+        
+        q1 = dict()
+        q2 = dict()
+        q3 = dict()
         for td in multiple:
-            qd = dict()
             track = f'{showson[episode][td]["artist"]} {showson[episode][td]["title"] }'
+            q1[td] = f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t"
+            q3[td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
             if rateson[episode][td]['ratio'] >= 3:
                 spot = f'{rateson[episode][td]["artist"]} {rateson[episode][td]["title"] }'
-                qd[td] = 3
-                bigquery += [f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t",f"https://bandcamp.com/search?q={spot}&item_type=t",f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"]
+                q2[td] = f"https://bandcamp.com/search?q={urllib.parse.quote(spot)}&item_type=t"
             else:
-                qd[td] = 2
-                bigquery += [f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t",f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"]
+                pass
 
-        page = (grequests.get(u) for u in bigquery)
-        response = grequests.map(page)
+        reply = self.camp_version2(q1)
+        qsuccess = {i : reply[i] for i in reply if reply[i] != -1}
+        qfailure = {i : reply[i] for i in reply if reply[i] == -1}
+        if qfailure and q2:
+            q2 = {i:q2[i] for i in q2 if i not in qsuccess}
+            reply = self.camp_version2(q2)
+            qsuccess = qsuccess | {i : reply[i] for i in reply if reply[i] != -1}
+            qfailure = {i : reply[i] for i in reply if reply[i] == -1}
+            if qfailure:
+                q3 = {i:q3[i] for i in q3 if i not in qsuccess}
+                reply = self.camp_version2(q3)
+                qsuccess = qsuccess | {i : reply[i] for i in reply if reply[i] != -1}
+                qfailure = {i : reply[i] for i in reply if reply[i] == -1}
 
-        n = 0
-        for td in multiple:
-            
-            sublist = response[n:n+qd[td]]
-            n += qd[td]
+        return(qsuccess | qfailure)
 
-            for resp in sublist:
-                soup = bs(resp, "html.parser")
-                try:
-                    qd[td]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
-                    qd[td]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
-                    qd[td]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
-                    break
-                except:
-                    print(f'. . . . .n.a.',end='\r')
-                    qd[td] = -1
-
-        # return(response)
-        return(qd)
-
+        
 
     # HTML
 
