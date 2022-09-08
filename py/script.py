@@ -71,7 +71,16 @@ def perform_web_requests(addresses, no_workers):
                 if content == "":
                     break
                 request = urllib.request.Request(content)
-                response = urllib.request.urlopen(request)
+                repeat = True
+                c = 0
+                while repeat and c<=10:
+                    try:
+                        c+=1
+                        response = urllib.request.urlopen(request)
+                        repeat = False
+                    except HTTPError:
+                        print(f'.HTTPERROR.:{c}',end='\r')
+                        time.sleep(1.0)
                 self.results.append(response.read())
                 self.queue.task_done()
 
@@ -167,31 +176,34 @@ class nts:
         for show in shows:
             print(show)
             # SCRAPE
+            cont = True
             try:
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
                 if rq:
                     self.ntstracklist(do)
                 else:
-                    self.scrape(show,True)
+                    # self.scrape(show,True)
+                    cont = False
             except:
                 self.scrape(show,False)
                 self.ntstracklist(show)
-            # SEARCH/RATE
-            rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
-            if rq:
-                self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
-            rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
-            if rq:
-                self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
-                reset = True
-            else:
-                reset = False
-            # BANDCAMP
-            rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
-            if rq:
-                self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
-            # ADD
-            self.spotifyplaylist(show,reset=reset)
+            if cont:
+                # SEARCH/RATE
+                rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
+                if rq:
+                    self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
+                rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
+                if rq:
+                    self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
+                    reset = True
+                else:
+                    reset = False
+                # BANDCAMP
+                rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
+                if rq:
+                    self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
+                # ADD
+                self.spotifyplaylist(show,reset=reset)
             # HTML
             self.showhtml(show)
         self.home()
@@ -476,27 +488,28 @@ class nts:
             episodelist = eval(jsonlist[0])
         for episode in episodelist:
             multiple = []
-            store = False
             counter += 1
             print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{counter}:{len(list(eval(jsonlist[0]).keys()))}.',end='\r')
             try:
                 x = eval(jsonlist[1])[episode]
             except KeyError:
                 eval(jsonlist[1])[episode] = dict()
-                store = True
+                first = True
             ok = eval(jsonlist[0])[episode].keys()
             nk = eval(jsonlist[1])[episode].keys()
             vl = [i for i in eval(jsonlist[1])[episode].values()]
             if list(set(ok)-set(nk)) or (not all(vl)):
                 subcounter = 0
                 for trdx in eval(jsonlist[0])[episode]:
+                    second = False
                     subcounter += 1
                     try:
                         if not eval(jsonlist[1])[episode][trdx]:
-                            store = True
+                            second = True
                     except KeyError:
-                        store = True
-                    if store:
+                        second = True
+                    if second:
+                        first = True
                         print(f'{show[:7]}{episode[:7]}. . . . .{subcounter}:{len(list(eval(jsonlist[0])[episode].keys()))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
@@ -509,12 +522,11 @@ class nts:
                             # eval(jsonlist[1])[episode][trdx] = self.bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
                             multiple += [trdx]
 
-            if (kind == 'bandcamp') and multiple:
-                req = self.bandcamp_version2(eval(jsonlist[0]),eval(jsonlist[2]),episode,multiple)
-                for td in multiple:
-                    eval(jsonlist[1])[episode][td] = req[td]
-
-            if store:
+            if first or multiple:
+                if kind == 'bandcamp':
+                    req = self.bandcamp_version2(eval(jsonlist[0]),eval(jsonlist[2]),episode,multiple)
+                    for td in multiple:
+                        eval(jsonlist[1])[episode][td] = req[td]
                 if kind == 'rate':
                     ''' REMOVE UNKNOWNS '''
                     for j in eval(jsonlist[1]):
@@ -893,8 +905,8 @@ class nts:
     def camp_version2(self,query):
 
         print(f'.{len(query)}.',end='\r')
-        
-        time.sleep(round(len(query)/3)+1.0)
+
+        time.sleep(5.0)#(round(len(query)/3)+1.0)
         response = perform_web_requests(list(query.values()), 16)
         if not isinstance(response,list):
             response = [response]
@@ -904,7 +916,7 @@ class nts:
                 response[i]
             except IndexError:
                 print('REQUEST FAILED')
-                time.sleep(10.0)
+                time.sleep(5.0)
                 return(self.camp_version2(query))
 
         c=-1
