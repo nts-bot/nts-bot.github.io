@@ -1,5 +1,5 @@
 
-# Inbuilt Libraries
+# Basic Libraries
 import os, json, time, requests, re, pickle, urllib
 # Html Parser
 from bs4 import BeautifulSoup as bs
@@ -10,6 +10,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+# Multiple Requests
+import grequests
 # PPrint
 from pprint import pprint
 # SPOTIFY API TOOL
@@ -114,34 +116,31 @@ class nts:
     # RUN SCRIPT
 
     def runscript(self,shows):
+        self.connect()
         for show in shows:
+            print(show)
             # SCRAPE
-            print('SCRAPE',end='\r')
-            if self.prerun(f"./tracklist/{show}",f"./extra/meta",show):
+            try:
+                if self.prerun(f"./tracklist/{show}",f"./extra/meta",show):
+                    self.scrape(show,False,ound(len(self._j2d(f"./tracklist/{show}"))/12))
+                else:
+                    self.scrape(show,True)
+            except:
                 self.scrape(show,False)
-            else:
-                self.scrape(show,True)
             # SEARCH/RATE
-            print('SEARCH/RATE',end='\r')
             if self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}"):
-                print('SEARCH.TRUE.',end='\r')
                 self.searchloop(show,['tracklist','spotify_search_results'],'search')
             if self.prerun(f"./tracklist/{show}",f"./spotify/{show}"):
-                print('RATE.TRUE.',end='\r')
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate')
                 reset = True
             else:
                 reset = False
             # BANDCAMP
-            print('BANDCAMP',end='\r')
             if self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}"):
-                print('BANDCAMP.TRUE.',end='\r')
                 self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp')
             # ADD
-            print('ADD',end='\r')
             self.spotifyplaylist(show,reset=reset)
             # HTML
-            print('HTML',end='\r')
             self.showhtml(show)
         self.home()
 
@@ -170,12 +169,12 @@ class nts:
         driver.quit()
         return(soup)
 
-    def scrape(self,show,short=False):
+    def scrape(self,show,short=False,amount=100):
         url = f"https://www.nts.live/shows/{show}"
         if short:
             soup = bs(self.req(url).content, "html.parser")
         else:
-            soup = self.browse(url)
+            soup = self.browse(url,amount)
         grid = soup.select(".nts-grid-v2")
         episodelist = self._j2d(f'./tracklist/{show}')
 
@@ -198,17 +197,17 @@ class nts:
 
         episodemeta = soup.select('.nts-grid-v2-item__content')
         meta = self._j2d(f'./extra/meta')
+        try:
+            x = meta[show]
+        except KeyError:
+            meta[show] = dict()
         for i in episodemeta:
             sub = i.select('.nts-grid-v2-item__header')[0]
             ep = sub['href'].split('/')[-1]
             date = sub.select('span')[0].text
             eptitle = sub.select('.nts-grid-v2-item__header__title')[0].text
-            try:
-                store = meta[show]
-            except KeyError:
-                meta[show] = dict()
-                store = meta[show]
-            store[ep] = {'title':eptitle,'date':date}
+            meta[show][ep] = {'title':eptitle,'date':date}
+        self._d2j(f'./extra/meta',meta)
 
         # ARTIST IMAGES
 
@@ -248,9 +247,8 @@ class nts:
         self._d2j('./extra/titles',titlelist)
         self._d2j('./extra/descriptions',desklist)
         self._d2j(f'./tracklist/{show}',episodelist)
-        self._d2j(f'./extra/meta',meta)
-
-    @timeout(5.0)
+        
+    @timeout(10.0)
     def req(self,url):
         try:
             res = requests.get(url)
@@ -394,9 +392,6 @@ class nts:
                 b64_string = base64.b64encode(jpg_img[1]).decode('utf-8')
             except Exception as error:
                 print(f'image failure for show : {show} : Error : {error}')
-            #
-            self.connect()
-            #
             ref = self.sp.user_playlist_create(self.user,f'{show}-nts',public=True,description=f"(https://www.nts.live/shows/{show})")
             self.sp.playlist_upload_cover_image(ref, b64_string)
             #
@@ -412,6 +407,7 @@ class nts:
 
         counter = 0
         for episode in eval(jsonlist[0]):
+            multiple = []
             store = False
             counter += 1
             print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{counter}:{len(list(eval(jsonlist[0]).keys()))}.',end='\r')
@@ -422,8 +418,8 @@ class nts:
                 store = True
             ok = eval(jsonlist[0])[episode].keys()
             nk = eval(jsonlist[1])[episode].keys()
-            vl = [i for i in eval(jsonlist[1])[episode].values() if i]
-            if list(set(ok)-set(nk)) or (not vl):
+            vl = [i for i in eval(jsonlist[1])[episode].values()]
+            if list(set(ok)-set(nk)) or (not all(vl)):
                 subcounter = 0
                 for trdx in eval(jsonlist[0])[episode]:
                     subcounter += 1
@@ -436,27 +432,32 @@ class nts:
                         print(f'{show[:7]}{episode[:7]}. . . . .{subcounter}:{len(list(eval(jsonlist[0])[episode].keys()))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
-                            self.connect()
                             eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
                             eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
                         elif kind == 'bandcamp':
                             # 0 : TRACKLIST ; 1 : BANDCAMP ; 2 : RATE
-                            eval(jsonlist[1])[episode][trdx] = self.bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
+                            # eval(jsonlist[1])[episode][trdx] = self.bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
+                            multiple += [trdx]
 
-        if store:
-            if kind == 'rate':
-                ''' REMOVE UNKNOWNS '''
-                for j in eval(jsonlist[1]):
-                    for k in eval(jsonlist[1])[j]:
-                        if 'Unknown Artist' in eval(jsonlist[1])[j][k]['artist']:
-                            eval(jsonlist[1])[j][k]["ratio"] = -1
-                            eval(jsonlist[1])[j][k]["uri"] = ''
-                        if 'Unknown' == eval(jsonlist[1])[j][k]['artist']:
-                            eval(jsonlist[1])[j][k]["ratio"] = -1
-                            eval(jsonlist[1])[j][k]["uri"] = ''
-            self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
+            if (kind == 'bandcamp') and multiple:
+                req = self.bandcamp_version2(eval(jsonlist[0]),eval(jsonlist[2]),episode,multiple)
+                for td  in trdx:
+                    eval(jsonlist[1])[episode][td] = req[td]
+
+            if store:
+                if kind == 'rate':
+                    ''' REMOVE UNKNOWNS '''
+                    for j in eval(jsonlist[1]):
+                        for k in eval(jsonlist[1])[j]:
+                            if 'Unknown Artist' in eval(jsonlist[1])[j][k]['artist']:
+                                eval(jsonlist[1])[j][k]["ratio"] = -1
+                                eval(jsonlist[1])[j][k]["uri"] = ''
+                            if 'Unknown' == eval(jsonlist[1])[j][k]['artist']:
+                                eval(jsonlist[1])[j][k]["ratio"] = -1
+                                eval(jsonlist[1])[j][k]["uri"] = ''
+                self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
 
     def spotifysearch(self,showson,episode,trdx):
         q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
@@ -658,9 +659,6 @@ class nts:
 
     def spotifyplaylist(self,show,threshold=[3,10],remove=False,reset=False):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
-        #
-        self.connect()
-        #
         pid = self.pid(show)
         rate = self._j2d(f'./spotify/{show}')
         meta = self._j2d(f'./extra/meta')[show]
@@ -817,6 +815,44 @@ class nts:
                 tl = self.camp(quer2)
 
         return(tl)
+
+    def bandcamp_version2(self,showson,rateson,episode,multiple):
+
+        bigquery = []
+        for td in multiple:
+            qd = dict()
+            track = f'{showson[episode][td]["artist"]} {showson[episode][td]["title"] }'
+            if rateson[episode][td]['ratio'] >= 3:
+                spot = f'{rateson[episode][td]["artist"]} {rateson[episode][td]["title"] }'
+                qd[td] = 3
+                bigquery += [f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t",f"https://bandcamp.com/search?q={spot}&item_type=t",f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"]
+            else:
+                qd[td] = 2
+                bigquery += [f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t",f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"]
+
+        page = (grequests.get(u) for u in bigquery)
+        response = grequests.map(page)
+
+        n = 0
+        for td in multiple:
+            
+            sublist = response[n:n+qd[td]]
+            n += qd[td]
+
+            for resp in sublist:
+                soup = bs(resp, "html.parser")
+                try:
+                    qd[td]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
+                    qd[td]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
+                    qd[td]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
+                    break
+                except:
+                    print(f'. . . . .n.a.',end='\r')
+                    qd[td] = -1
+
+        # return(response)
+        return(qd)
+
 
     # HTML
 
