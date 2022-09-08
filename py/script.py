@@ -117,6 +117,9 @@ class nts:
                 self.searchloop(['tracklist','spotify_search_results'],'search')
             if self.prerun(f"./tracklist/{show}",f"./spotify/{show}",True):
                 self.searchloop(['tracklist','spotify','spotify_search_results'],'rate')
+            # ADD
+            if self.prerun(f"./tracklist/{show}",f"./spotify/{show}",True):
+                self.searchloop(['tracklist','spotify','spotify_search_results'],'rate')
             # BANDCAMP
             if self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}",True):
                 self.searchloop(['tracklist','bandcamp','rate'],'bandcamp')
@@ -345,20 +348,6 @@ class nts:
                 print(f'.other error. : {error}',end='\r')
                 time.sleep(5.0)
                 self.wait(path,op)
-
-    def flag(self,show,flag=True,title='flag',pick='wait'):
-        self.wait(pick,True)
-        flagger = self._j2d(f'./extra/{title}')
-        try:
-            flagger[show]
-        except KeyError:
-            flagger[show] = dict()
-        if flag:
-            flagger[show] = 1
-        else:
-            del flagger[show]
-        self._d2j(f'./extra/{title}',flagger)
-        self.wait(pick,False)
 
     # SPOTIFY SEARCH
 
@@ -687,7 +676,6 @@ class nts:
             for i in hund:                    
                 print(f'.resetting',end='\r')
                 self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
-            self.flag(show,False)
             ids = []
 
         if remove:
