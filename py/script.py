@@ -80,7 +80,7 @@ def perform_web_requests(addresses, no_workers):
                         repeat = False
                     except HTTPError:
                         print(f'.HTTPERROR.:{c}',end='\r')
-                        time.sleep(1.0)
+                        time.sleep(5.0)
                 self.results.append(response.read())
                 self.queue.task_done()
 
@@ -133,16 +133,16 @@ class nts:
         
     @timeout(5.0)
     def _d2j(self,path,allot):
-        # try:
-        if isinstance(allot,dict):
-            with open(f"{path}.json", 'w', encoding='utf-8') as f:
-                json.dump(allot, f, sort_keys=True, ensure_ascii=False, indent=4)
-        else:
-            raise ValueError(f'You are trying to dump {type(allot)} instead dict()')
-        # except:
-        #     print(f'Error When Storing JSON')
-        #     time.sleep(0.5)
-        #     self._d2j(path,allot)
+        try:
+            if isinstance(allot,dict):
+                with open(f"{path}.json", 'w', encoding='utf-8') as f:
+                    json.dump(allot, f, sort_keys=True, ensure_ascii=False, indent=4)
+            else:
+                raise ValueError(f'You are trying to dump {type(allot)} instead dict()')
+        except:
+            print(f'Error When Storing JSON')
+            time.sleep(0.5)
+            self._d2j(path,allot)
 
     def prerun(self,json1,json2,meta=''):
         js1 = self._j2d(json1)
@@ -179,14 +179,14 @@ class nts:
             cont = True
             try:
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
-                if rq:
-                    self.ntstracklist(show,do)
-                else:
-                    # self.scrape(show,True)
-                    cont = False
             except:
                 self.scrape(show,False)
                 self.ntstracklist(show)
+                rq = ''
+            if rq:
+                self.ntstracklist(show,do)
+            elif rq != '':
+                cont = False          
             if cont:
                 # SEARCH/RATE
                 rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
@@ -322,13 +322,17 @@ class nts:
             time.sleep(1.0)
             self.req(url)
 
-    def ntstracklist(self,show,episodelist=[]):
-        if not episodelist:
-            episodelist = self._j2d(f'./tracklist/{show}')
-        for episode in episodelist:
-            if episodelist[episode]:
+    def ntstracklist(self,show,episodes=[]):
+        episodelist = self._j2d(f'./tracklist/{show}')
+        if episodes:
+            metabool = True
+        else:
+            episodes = episodelist
+            metabool = False
+        for episode in episodes:
+            if episodelist[episode] and not metabool:
                 pass
-            elif isinstance(episodelist[episode],dict) and not episodelist[episode]:
+            elif (isinstance(episodelist[episode],dict) and not episodelist[episode]) or metabool:
                 print(episode[:10], end='\r')
                 url = f"https://www.nts.live/shows/{show}/episodes/{episode}"
                 soup = bs(self.req(url).content, "html.parser")
@@ -367,6 +371,7 @@ class nts:
                         }
             else:
                 episodelist[episode] = ''
+        self._d2j(f'./tracklist/{show}',episodelist)
 
     # SPOTIFY API
 
@@ -500,7 +505,6 @@ class nts:
             if list(set(ok)-set(nk)) or (not all(vl)):
                 for trdx in eval(jsonlist[0])[episode]:
                     second = False
-                    subcounter += 1
                     try:
                         if not eval(jsonlist[1])[episode][trdx]:
                             second = True
