@@ -117,6 +117,9 @@ class nts:
                 self.searchloop(['tracklist','spotify_search_results'],'search')
             if self.prerun(f"./tracklist/{show}",f"./spotify/{show}",True):
                 self.searchloop(['tracklist','spotify','spotify_search_results'],'rate')
+            # ADD
+            if self.prerun(f"./tracklist/{show}",f"./spotify/{show}",True):
+                self.searchloop(['tracklist','spotify','spotify_search_results'],'rate')
             # BANDCAMP
             if self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}",True):
                 self.searchloop(['tracklist','bandcamp','rate'],'bandcamp')
