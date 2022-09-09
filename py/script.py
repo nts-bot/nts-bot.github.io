@@ -80,8 +80,8 @@ def perform_web_requests(addresses, no_workers):
                         response = urllib.request.urlopen(request)
                         repeat = False
                     except HTTPError:
-                        print(f'.RE:{c}.',end='\r')
-                        time.sleep(round(no_workers/10))
+                        print(f'. . . . .RE:{c}.',end='\r')
+                        time.sleep(1.0) #round(no_workers/10)+1
                 end = time.time()
                 print(round(end - start,4),end='\r')
                 self.results.append(response.read())
@@ -169,7 +169,10 @@ class nts:
                             else:
                                 ok += [False]
         if do:
-            pprint(do)
+            if len(do) > 10:
+                print(len(do))
+            else:
+                pprint(do)
         return(any(ok),do)
 
     # RUN SCRIPT
@@ -918,7 +921,7 @@ class nts:
 
         # flatten query
         querylist = [query[l1][l2] for l1 in query for l2 in query[l1]]
-        print(f'.{len(querylist)}.',end='\r')
+        print(f'.{len(querylist)}.')
 
         # run syncronious mass request
         time.sleep(1.0)
@@ -977,12 +980,13 @@ class nts:
         # {i:{j:a[i][j] for j in a[i] if a[i][j]!=-1} for i in a}
         qsuccess = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply}
         qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
-        if qfailure:
+        if any([True for i in qfailure if qfailure[i]]):
             # q2 = {i:q2[i] for i in q2 if i not in qsuccess}
             q2 = {i:{j:q2[i][j] for j in q2[i] if j not in qsuccess[i]} for i in q2}
-            reply = self.camp_version2(q2)
-            qsuccess = self.upndict({i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply},qsuccess)
-            qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
+            if any([True for i in q2 if q2[i]]):
+                reply = self.camp_version2(q2)
+                qsuccess = self.upndict({i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply},qsuccess)
+                qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
 
         return(self.upndict(qfailure,qsuccess))
 
@@ -1021,6 +1025,7 @@ class nts:
         
         doc += '<div><h2>index</h2></div>'
         title = self._j2d('./extra/titles')
+        meta = self._j2d(f'./meta')
 
         for shw in self.showlist:
             ''' CREATE LIST OF SHOW TITLES ALPHABETICALLY (LIST) '''
@@ -1047,7 +1052,10 @@ class nts:
                         name = list(title.keys())[list(title.values()).index(how)]
                     except ValueError:
                         name = list(title.keys())[list(title.keys()).index(how)]
-                    doc += f"""<li><a class="show" href="./html/{name}.html">{how}</li>"""
+                    if name in meta:
+                        doc += f"""<li><a class="show" href="./html/{name}.html">{how}</li>"""
+                    else:
+                        doc += f"""<li><a class="show">{how}</li>"""
                 doc += f"""</details>"""
             except NameError as error:
                 print(f'{shw} : {error}')            
