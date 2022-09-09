@@ -73,14 +73,17 @@ def perform_web_requests(addresses, no_workers):
                 request = urllib.request.Request(content)
                 repeat = True
                 c = 0
-                while repeat and c<=10:
+                start = time.time()
+                while repeat:
                     try:
                         c+=1
                         response = urllib.request.urlopen(request)
                         repeat = False
                     except HTTPError:
-                        print(f'.HTTPERROR.:{c}',end='\r')
-                        time.sleep(5.0)
+                        print(f'.RE:{c}.',end='\r')
+                        time.sleep(round(no_workers/10))
+                end = time.time()
+                print(round(end - start,4),end='\r')
                 self.results.append(response.read())
                 self.queue.task_done()
 
@@ -166,7 +169,7 @@ class nts:
                             else:
                                 ok += [False]
         if do:
-            print(do)
+            pprint(do)
         return(any(ok),do)
 
     # RUN SCRIPT
@@ -495,6 +498,8 @@ class nts:
 
         for episode in episodelist:
             first = False
+            multiple[episode] = dict()
+
             print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{total.index(episode)}:{len(total)}.',end='\r')
             try:
                 x = eval(jsonlist[1])[episode]
@@ -526,7 +531,7 @@ class nts:
                             # eval(jsonlist[1])[episode][trdx] = self.bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
                             multiple[episode][trdx] = 0
 
-            if first and not multiple:
+            if first:
                 if kind == 'rate':
                     ''' REMOVE UNKNOWNS '''
                     for j in eval(jsonlist[1]):
@@ -539,7 +544,7 @@ class nts:
                                 eval(jsonlist[1])[j][k]["uri"] = ''
                 self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
     
-        if multiple:
+        if any([True for i in multiple if multiple[i]]):
             req = self.bandcamp_version2(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
             for episode in multiple:
                 for td in multiple[episode]:
@@ -911,27 +916,44 @@ class nts:
 
     def camp_version2(self,query):
 
-        print(f'.{len(query)}.',end='\r')
+        # flatten query
+        querylist = [query[l1][l2] for l1 in query for l2 in query[l1]]
+        print(f'.{len(querylist)}.',end='\r')
 
-        time.sleep(10.0)#(round(len(query)/3)+1.0)
-        response = perform_web_requests(list(query.values()), 16)
+        # run syncronious mass request
+        time.sleep(1.0)
+        response = perform_web_requests(querylist, round(len(query)/10))
+
+        # make nested list
         if not isinstance(response,list):
             response = [response]
+        partition=[]
+        i=0
+        l = [len(query[q]) for q in query]
+        for n in l:
+            partition.append(response[i:i+n])
+            i+=n
 
-        c=-1
-        for td in query:
-            c+=1
-            soup = bs(response[c], "html.parser")
-            # pot += [bs(resp, "html.parser")]
-            try:
-                if soup.select('.noresults-header'):
-                    query[td] = -1
-            except:
-                query[td]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
-                query[td]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
-                query[td]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
-                break
-        # return(pot)
+        qk = list(query.keys())
+        print(f'.{len(response)}->{len(partition)}={len(qk)}.')
+        for episode in range(len(qk)):
+
+            qt = list(query[qk[episode]].keys())
+            print(f'.{len(partition[episode])}={len(qt)}.',end='\r')
+
+            for td in range(len(qt)):
+
+                soup = bs(partition[episode][td], "html.parser")
+
+                try:
+                    if soup.select('.noresults-header'):
+                        query[qk[episode]][qt[td]] = -1
+                except:
+                    query[qk[episode]][qt[td]]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
+                    query[qk[episode]][qt[td]]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
+                    query[qk[episode]][qt[td]]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
+                    break
+
         return(query)
 
     def bandcamp_version2(self,showson,rateson,multiple):
@@ -939,6 +961,8 @@ class nts:
         q1 = dict()
         q2 = dict()
         for episode in multiple:
+            q1[episode] = dict()
+            q2[episode] = dict()
             for td in multiple[episode]:
                 track = f'{showson[episode][td]["artist"]} {showson[episode][td]["title"] }'
                 q1[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t"
@@ -954,7 +978,8 @@ class nts:
         qsuccess = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply}
         qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
         if qfailure:
-            q2 = {i:q2[i] for i in q2 if i not in qsuccess}
+            # q2 = {i:q2[i] for i in q2 if i not in qsuccess}
+            q2 = {i:{j:q2[i][j] for j in q2[i] if j not in qsuccess[i]} for i in q2}
             reply = self.camp_version2(q2)
             qsuccess = self.upndict({i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply},qsuccess)
             qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
