@@ -8,7 +8,9 @@ os.chdir(f"{dr}/py")
 import script
 nts = script.nts()
 
-soup = nts.browse("https://www.nts.live/latest",amount=30) # 50 ~ a week of shows
+am = 80 # 50 ~ a week of shows
+
+soup = nts.browse("https://www.nts.live/latest",amount=am)
 episodes = soup.select('a.nts-grid-v2-item__header')
 shelf = dict()
 for i in episodes:

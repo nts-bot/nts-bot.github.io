@@ -58,60 +58,6 @@ def timeout(timeout):
         return wrapper
     return deco
 
-def perform_web_requests(addresses, no_workers):
-    class Worker(Thread):
-        def __init__(self, request_queue):
-            Thread.__init__(self)
-            self.queue = request_queue
-            self.results = []
-
-        def run(self):
-            while True:
-                content = self.queue.get()
-                if content == "":
-                    break
-                request = urllib.request.Request(content)
-                repeat = True
-                c = 0
-                start = time.time()
-                while repeat:
-                    try:
-                        c+=1
-                        response = urllib.request.urlopen(request)
-                        repeat = False
-                    except HTTPError:
-                        print(f'. . . . .RE:{c}.',end='\r')
-                        time.sleep(1.0) #round(no_workers/10)+1
-                end = time.time()
-                print(round(end - start,4),end='\r')
-                self.results.append(response.read())
-                self.queue.task_done()
-
-    # Create queue and add addresses
-    q = queue.Queue()
-    for url in addresses:
-        q.put(url)
-
-    # Workers keep working till they receive an empty string
-    for _ in range(no_workers):
-        q.put("")
-
-    # Create workers and add tot the queue
-    workers = []
-    for _ in range(no_workers):
-        worker = Worker(q)
-        worker.start()
-        workers.append(worker)
-    # Join workers to wait till they finished
-    for worker in workers:
-        worker.join()
-
-    # Combine results from all workers
-    r = []
-    for worker in workers:
-        r.extend(worker.results)
-    return r
-
 class nts:
 
     def __init__(self):
@@ -182,30 +128,33 @@ class nts:
         for show in shows:
             print(show)
             # SCRAPE
-            try:
+            if show in self._j2d(f'./meta'):
+                self.scrape(show,True)
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
-            except:
-                self.scrape(show,True) #False
-                self.ntstracklist(show)
-                rq = ''
-            if rq:
+                self.ntstracklist(show,do)
+            else:
+                self.scrape(show,False,amount=10) # CHANGE AMOUNT TO 100 TO GET FULL EPISODELIST
+                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
                 self.ntstracklist(show,do)
             # SEARCH/RATE
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
             if rq:
                 self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
+            #
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
             if rq:
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
-                reset = True
-            else:
-                reset = False
-            # BANDCAMP
-            rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
-            if rq:
-                self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
+            # BANDCAMP # TODO
+            # rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
+            # if rq:
+            #     self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
             # ADD
-            self.spotifyplaylist(show,reset=reset)
+            if show not in self._j2d('./uploaded'):
+                self.spotifyplaylist(show)
+            else:
+                rq, do = self.prerun(f"./tracklist/{show}",f"./uploaded",show) 
+                if rq: # or (show not in self._j2d('./extra/dflag'))
+                    self.spotifyplaylist(show)
             # HTML
             self.showhtml(show)
         self.home()
@@ -326,6 +275,7 @@ class nts:
 
     def ntstracklist(self,show,episodes=[]):
         episodelist = self._j2d(f'./tracklist/{show}')
+        meta = self._j2d(f'./meta')
         if episodes:
             metabool = True
         else:
@@ -341,16 +291,12 @@ class nts:
                 
                 # meta
                 try:
-                    meta = self._j2d(f'./meta')
-                    try:
-                        x = meta[show]
-                    except KeyError:
+                    if show not in meta:
                         meta[show] = dict()
                     bt = soup.select('.episode__btn')
                     date = bt[0]['data-episode-date']
                     eptitle = bt[0]['data-episode-name']
                     meta[show][episode] = {'title':eptitle,'date':date}
-                    self._d2j(f'./meta',meta)
                 except:
                     print(f'ERROR PROCESSING META : {show}:{episode}\n')
 
@@ -376,6 +322,7 @@ class nts:
                         }
             else:
                 episodelist[episode] = ''
+        self._d2j(f'./meta',meta)
         self._d2j(f'./tracklist/{show}',episodelist)
 
     # SPOTIFY API
@@ -504,9 +451,7 @@ class nts:
             multiple[episode] = dict()
 
             print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{total.index(episode)}:{len(total)}.',end='\r')
-            try:
-                x = eval(jsonlist[1])[episode]
-            except KeyError:
+            if episode not in eval(jsonlist[1]):
                 eval(jsonlist[1])[episode] = dict()
                 first = True
             ok = eval(jsonlist[0])[episode].keys()
@@ -525,7 +470,8 @@ class nts:
                         print(f'{show[:7]}{episode[:7]}. . . . .{list(ok).index(trdx)}:{len(list(ok))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
-                            eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
+                            # eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
+                            multiple[episode][trdx] = 0
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
                             eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
@@ -548,7 +494,10 @@ class nts:
                 self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
     
         if any([True for i in multiple if multiple[i]]):
-            req = self.bandcamp_version2(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
+            if kind == 'search':
+                req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
+            elif kind == 'bandcamp':
+                req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
             for episode in multiple:
                 for td in multiple[episode]:
                     eval(jsonlist[1])[episode][td] = req[episode][td]
@@ -752,11 +701,15 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    def spotifyplaylist(self,show,threshold=[3,10],remove=False,reset=False):
+    def spotifyplaylist(self,show,threshold=[3,10],reset=False): #remove=False,
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         rate = self._j2d(f'./spotify/{show}')
         meta = self._j2d(f'./meta')[show]
+        uploaded = self._j2d(f'./uploaded')
+        if show not in uploaded:
+            uploaded[show] = dict()
+            reset = True
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
 
         tid = []
@@ -765,20 +718,33 @@ class nts:
         almost = 0
         unsure = 0
 
+        firstep = sortmeta[0][0]
+
         for mt in sortmeta[::-1]:
             episodes = mt[1]
-            for track in rate[episodes]:
-                if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
-                    tid += [rate[episodes][track]['trackid']]
-                pup += [rate[episodes][track]['trackid']]
-                if not rate[episodes][track]['trackid']:
-                    mis += 1
-                if threshold[0]  <= rate[episodes][track]['ratio'] == 4:
-                    almost += 1
-                if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
-                    unsure += 1
+            if episodes not in uploaded[show]:
+                uploaded[show][episodes] = 1
+                for track in rate[episodes]:
+                    if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
+                        tid += [rate[episodes][track]['trackid']]
+                    pup += [rate[episodes][track]['trackid']]
+                    if not rate[episodes][track]['trackid']:
+                        mis += 1
+                    if threshold[0]  <= rate[episodes][track]['ratio'] == 4:
+                        almost += 1
+                    if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
+                        unsure += 1
+            else:
+                pass
 
-        tid = self.scene(tid[::-1])[::-1]
+        tidup = self.scene(tid[::-1])[::-1]
+        dups = len(tid) - len(tidup)
+
+        # tim = self._j2d('./extra/dflag')
+        # if show not in tim:
+        #     tim[show] = 1
+            
+        #     self._d2j('./extra/dflag',tim)
 
         current = self.sp.user_playlist_tracks(self.user,pid)
         tracks = current['items']
@@ -789,6 +755,10 @@ class nts:
         for x in tracks:
             ids.append(x['track']['id'])
 
+            # add = [i for i in tid if i not in ids]
+            # if len(add) > 50:
+            #     reset = True
+
         if reset:
             rem = list(set(ids))
             hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
@@ -797,38 +767,41 @@ class nts:
                 self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
             ids = []
 
-        if remove:
-            rem = list(set(ids) - set(tid))
-            hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
-            for i in hund:                    
-                print(f'.removing',end='\r')
-                self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
-        
-        add = [i for i in tid if i not in ids]
+            # if remove:
+            #     rem = list(set(ids) - set(tid))
+            #     hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
+            #     for i in hund:                    
+            #         print(f'.removing',end='\r')
+            #         self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
+            
+            # add = [i for i in tid if i not in ids]
 
-        if add:
-            hund = [add[i:i+100] for i in range(0, len(add), 100)]
+        if tid:
+            hund = [tid[i:i+100] for i in range(0, len(tid), 100)]
             for i in hund:                    
-                print(f'.tracks appended', end='\r')
+                print(f'.tracks appended.', end='\r')
                 self.sp.user_playlist_add_tracks(self.user, pid, i) #, position=0
-        else:
-            print('.no tracks appended')
 
-        if almost:
-            almost = f'{almost} almost sure ;'
-        else:
-            almost = ''
+            if almost:
+                almost = f'{almost} almost sure ;'
+            else:
+                almost = ''
 
-        if unsure:
-            unsure = f' {unsure} unsure ;'
-        else:
-            unsure = ''
+            if unsure:
+                unsure = f' {unsure} unsure ;'
+            else:
+                unsure = ''
 
-        title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
-        desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure} {mis+len(set(pup))-len(set(tid))} missing. Tracks are grouped by episode]"
-        
-        x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
+            duplicates = f' {dups} repeated ;'
+
+            title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
+            desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
+            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Reverse chronological, starting from {firstep}]"
+            
+            x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
+            self._d2j(f'./uploaded',uploaded)
+        else:
+            print('.no tracks to append.')
 
     def follow(self,usr=1,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
@@ -917,7 +890,184 @@ class nts:
 
         return(tl)
 
-    def camp_version2(self,query):
+    def upndict(self,new,old):
+        for episode in new:
+            for td in new[episode]:
+                if td not in old[episode]:
+                    old[episode][td] = new[episode][td]
+                else:
+                    raise RuntimeError('DICTIONARY UPDATE SCRIPT FAILED')
+        return(old)
+        
+    # MULTITHREADING
+
+    def mt_spotipy(self,query):
+        return(self._run(query))
+
+    def mt_request(self,content):
+        c = 0
+        request = urllib.request.Request(content)
+        repeat = True
+        while repeat:
+            try:
+                c+=1
+                return(urllib.request.urlopen(request).read())
+                repeat = False
+            except HTTPError:
+                print(f'. . . . .RE:{c}.',end='\r')
+                time.sleep(1.0)
+
+    def multithreading(self,tasklist, no_workers,task):
+        class __worker__(Thread):
+            def __init__(self, request_queue):
+                Thread.__init__(self)
+                self.queue = request_queue
+                self.results = []
+
+            def run(self):
+                while True:
+                    content = self.queue.get()
+                    if content == "":
+                        break
+                    if not isinstance(content,list):
+                        content = [content]
+                    start = time.time()
+                    # TASK START
+                    response = eval(f'{task}(*{content})')
+                    # TASK END
+                    end = time.time()
+                    print(round(end - start,4),end='\r')
+                    self.results.append(response)
+                    self.queue.task_done()
+
+        # Create queue and add tasklist
+        q = queue.Queue()
+        for url in tasklist:
+            q.put(url)
+
+        # Workers keep working till they receive an empty string
+        for _ in range(no_workers):
+            q.put("")
+
+        # Create workers and add tot the queue
+        workers = []
+        for _ in range(no_workers):
+            worker = __worker__(q)
+            worker.start()
+            workers.append(worker)
+        # Join workers to wait till they finished
+        for worker in workers:
+            worker.join()
+
+        # Combine results from all workers
+        r = []
+        for worker in workers:
+            r.extend(worker.results)
+        return r
+
+    def mt_spotifysearch(self,showson,multiple):
+
+        q1 = dict()
+        q2 = dict()
+        for episode in multiple:
+            q1[episode] = dict()
+            q2[episode] = dict()
+            for td in multiple[episode]:
+                q1[episode][td] = f'artist:{showson[episode][td]["artist"]} track:{showson[episode][td]["title"]}'
+                q2[episode][td] = f'{showson[episode][td]["artist"]} : {showson[episode][td]["title"]}'
+
+        return(self.mt_samp(q1,q2))
+
+    def mt_samp(self,q1,q2):
+
+        # flatten queries
+        Q1, Q2 = [q1[l1][l2] for l1 in q1 for l2 in q1[l1]], [q2[l1][l2] for l1 in q2 for l2 in q2[l1]]
+        print(f'.{len(Q1)}.{len(Q2)}')
+
+        # run syncronious mass request
+        time.sleep(1.0)
+        response = self.multithreading(Q1+Q2, 16, 'self.mt_spotipy')
+        if not isinstance(response,list):
+            response = [response]
+
+        r1, r2 = response[:len(Q1)], response[len(Q1):]
+
+        # make nested list
+        p1=[]
+        i=0
+        l = [len(q1[q]) for q in q1]
+        for n in l:
+            p1.append(r1[i:i+n])
+            i+=n
+        p2=[]
+        i=0
+        l = [len(q2[q]) for q in q2]
+        for n in l:
+            p2.append(r2[i:i+n])
+            i+=n
+
+        #
+
+        qk = list(q1.keys())
+        print(f'.{len(r1)}/{len(r2)}->{len(p1)}/{len(p2)}={len(qk)}.')
+        for episode in range(len(qk)):
+
+            qt = list(q1[qk[episode]].keys())
+            print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
+
+            for td in range(len(qt)):
+
+                if p1[qk[episode]][qt[td]]['tracks']['items']:
+                    S0 = [{'artist':j['artists'][0]['name'],
+                        'title':j['name'],
+                        'uri':j['uri'].split(':')[-1]} 
+                        for j in p1[qk[episode]][qt[td]]['tracks']['items'][:3]]
+                else:
+                    S0 = ''
+                if p2[qk[episode]][qt[td]]['tracks']['items']:
+                    S1 = [{'artist':j['artists'][0]['name'],
+                        'title':j['name'],
+                        'uri':j['uri'].split(':')[-1]} 
+                        for j in p2[qk[episode]][qt[td]]['tracks']['items'][:3]]
+                else:
+                    S1 = ''
+
+                q1[qk[episode]][qt[td]] = {'s0':S0,'s1':S1}
+
+        return(q1)
+
+    def mt_bandcamp(self,showson,rateson,multiple):
+        
+        q1 = dict()
+        q2 = dict()
+        for episode in multiple:
+            q1[episode] = dict()
+            q2[episode] = dict()
+            for td in multiple[episode]:
+                track = f'{showson[episode][td]["artist"]} {showson[episode][td]["title"] }'
+                q1[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t"
+                if rateson[episode][td]['ratio'] >= 3:
+                    spot = f'{rateson[episode][td]["artist"]} {rateson[episode][td]["title"] }'
+                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(spot)}&item_type=t"
+                else:
+                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
+
+        reply = self.mt_camp(q1)
+        # qsuccess = {i : reply[i] for i in reply if reply[i] != -1}
+        # {i:{j:a[i][j] for j in a[i] if a[i][j]!=-1} for i in a}
+        qsuccess = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply}
+        qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
+        if any([True for i in qfailure if qfailure[i]]):
+            # q2 = {i:q2[i] for i in q2 if i not in qsuccess}
+            q2 = {i:{j:q2[i][j] for j in q2[i] if j not in qsuccess[i]} for i in q2}
+            if any([True for i in q2 if q2[i]]):
+                reply = self.mt_camp(q2)
+                qsuccess = self.upndict({i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply},qsuccess)
+                qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
+
+        return(self.upndict(qfailure,qsuccess))
+
+    def mt_camp(self,query):
 
         # flatten query
         querylist = [query[l1][l2] for l1 in query for l2 in query[l1]]
@@ -925,7 +1075,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-        response = perform_web_requests(querylist, round(len(query)/10))
+        response = self.multithreading(querylist, 16, 'self.mt_request')
 
         # make nested list
         if not isinstance(response,list):
@@ -958,47 +1108,6 @@ class nts:
                     break
 
         return(query)
-
-    def bandcamp_version2(self,showson,rateson,multiple):
-        
-        q1 = dict()
-        q2 = dict()
-        for episode in multiple:
-            q1[episode] = dict()
-            q2[episode] = dict()
-            for td in multiple[episode]:
-                track = f'{showson[episode][td]["artist"]} {showson[episode][td]["title"] }'
-                q1[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t"
-                if rateson[episode][td]['ratio'] >= 3:
-                    spot = f'{rateson[episode][td]["artist"]} {rateson[episode][td]["title"] }'
-                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(spot)}&item_type=t"
-                else:
-                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
-
-        reply = self.camp_version2(q1)
-        # qsuccess = {i : reply[i] for i in reply if reply[i] != -1}
-        # {i:{j:a[i][j] for j in a[i] if a[i][j]!=-1} for i in a}
-        qsuccess = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply}
-        qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
-        if any([True for i in qfailure if qfailure[i]]):
-            # q2 = {i:q2[i] for i in q2 if i not in qsuccess}
-            q2 = {i:{j:q2[i][j] for j in q2[i] if j not in qsuccess[i]} for i in q2}
-            if any([True for i in q2 if q2[i]]):
-                reply = self.camp_version2(q2)
-                qsuccess = self.upndict({i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply},qsuccess)
-                qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
-
-        return(self.upndict(qfailure,qsuccess))
-
-    def upndict(self,new,old):
-        for episode in new:
-            for td in new[episode]:
-                if td not in old[episode]:
-                    old[episode][td] = new[episode][td]
-                else:
-                    raise RuntimeError('DICTIONARY UPDATE SCRIPT FAILED')
-        return(old)
-        
 
     # HTML
 
@@ -1144,5 +1253,57 @@ class nts:
         pretty = soup.prettify() 
         with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
             f.write(pretty)
+
+# OLD
+
+# class working:
+
+#     def __init__(self,task,extraArgs):
+#         # The queue for tasks
+#         self.q = queue.Queue()
+#         self.task = task
+#         self.extraArgs = extraArgs
+#         self.results = []
+#     # Worker, handles each task
+#     def worker(self):
+#         while True:
+#             item = self.q.get()
+#             if item is None:
+#                 break
+#             print("Working on", item, end='\r')
+#             # START TASK FUNCTION
+#             self.results += [eval(f'{self.task}(*{self.extraArgs})')]
+#             # END TASK FUNCTION
+#             time.sleep(1)
+#             self.q.task_done()
+#     def start_workers(self,worker_pool=1000):
+#         threads = []
+#         for i in range(worker_pool):
+#             t = Thread(target=i)
+#             t.start()
+#             threads.append(t)
+#         return threads
+#     def stop_workers(self,threads):
+#         # stop workers
+#         for i in threads:
+#             self.q.put(None)
+#         for t in threads:
+#             t.join()
+#     def create_queue(self,task_items):
+#         for item in task_items:
+#             self.q.put(item)
+
+
+#     def run(self):
+#         # Dummy tasks
+#         tasks = [item for item in range(1000)]
+
+#         # Start up your workers
+#         workers = self.start_workers(worker_pool=10)
+#         self.create_queue(tasks)
+
+#         # Blocks until all tasks are complete
+#         self.q.join()
+#         self.stop_workers(workers)
 
 #
