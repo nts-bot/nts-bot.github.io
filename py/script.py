@@ -794,7 +794,7 @@ class nts:
 
             title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
             desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. from-{lastep}-until-{firstep}]"
+            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. ordered {lastep}-to-{firstep}]"
             
             x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
             self._d2j(f'./uploaded',uploaded)
