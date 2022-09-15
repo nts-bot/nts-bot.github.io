@@ -1,5 +1,4 @@
-import warnings
-warnings.filterwarnings("ignore")
+
 # Basic Libraries
 import os, json, time, requests, re, pickle, urllib
 from urllib.error import HTTPError
@@ -67,7 +66,7 @@ class nts:
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
 
     # LOCAL DATABASE
-    # @timeout(5.0)
+    @timeout(5.0)
     def _j2d(self,path):
         try:
             with open(f"{path}.json", 'r', encoding='utf-8') as f:
@@ -81,7 +80,7 @@ class nts:
             time.sleep(0.5)
             return(self._j2d(path))
         
-    # @timeout(5.0)
+    @timeout(5.0)
     def _d2j(self,path,allot):
         try:
             if isinstance(allot,dict):
@@ -328,7 +327,7 @@ class nts:
 
     # SPOTIFY API
 
-    @timeout(15.0)
+    @timeout(5.0)
     def subconnect(self,index,pick):
         ''' CONNECTION FUNCTION w/ TIMEOUT '''
         self.user = os.getenv("ssr")
@@ -380,7 +379,7 @@ class nts:
         except Exception:
             self.conexcp()
 
-    # @timeout(10.0)
+    @timeout(10.0)
     def wait(self,path,op=True):
         if not op:
             with open(f'./extra/{path}.pickle', 'wb') as handle:
@@ -564,7 +563,7 @@ class nts:
 
     # SPOTIFY SEARCH/RATE SUBFUNCTIONS
 
-    @timeout(50.0)
+    @timeout(15.0)
     def subrun(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
         try:
@@ -574,7 +573,7 @@ class nts:
             else:
                 return(result)
         except spotipy.SpotifyException as error:
-            print(f'.spotify-api-error.',end='\r')
+            print(f'Spotify API Error')
             return({'tracks':{'items':''}})
 
     def _run(self,query):
@@ -597,7 +596,7 @@ class nts:
         if trans:
             time.sleep(0.5)
             ln = translator.detect(tex).lang
-            print(f'.{ln}.',end='\r')
+            print(f'. . . . . . . . . . . .{ln}.',end='\r')
             try:
                 if ln != 'en':
                     time.sleep(0.5)
@@ -741,6 +740,12 @@ class nts:
         tidup = self.scene(tid[::-1])[::-1]
         dups = len(tid) - len(tidup)
 
+        # tim = self._j2d('./extra/dflag')
+        # if show not in tim:
+        #     tim[show] = 1
+            
+        #     self._d2j('./extra/dflag',tim)
+
         current = self.sp.user_playlist_tracks(self.user,pid)
         tracks = current['items']
         while current['next']:
@@ -749,6 +754,10 @@ class nts:
         ids = []
         for x in tracks:
             ids.append(x['track']['id'])
+
+            # add = [i for i in tid if i not in ids]
+            # if len(add) > 50:
+            #     reset = True
 
         if reset:
             rem = list(set(ids))
@@ -1209,19 +1218,20 @@ def multithreading(tasklist, no_workers,kind):
             Thread.__init__(self)
             self.queue = request_queue
             self.results = []
+            #
+            # self.task = task
+            # self.nts = nts
 
         def run(self):
             while True:
                 content = self.queue.get()
                 if content == "":
                     break
-                #
-                time.sleep(1.0)
-                #
                 start = time.time() # if not isinstance(content,list): #     content = [content]
                 # TASK START
+                # response = exec('self.nts.' + self.task + '("' + content + '")')
                 if kind == 'spotify':
-                    response = stn._run(content) # response = exec('self.nts.' + self.task + '("' + content + '")')
+                    response = stn._run(content)
                 elif kind == 'bandcamp':
                     response = stn.mt_request(content)
                 # TASK END
