@@ -1,7 +1,7 @@
 import warnings
 warnings.filterwarnings("ignore")
 # Basic Libraries
-import os, json, time, requests, re, pickle, urllib
+import os, json, time, requests, re, pickle, urllib, math
 from urllib.error import HTTPError
 # Html Parser
 from bs4 import BeautifulSoup as bs
@@ -742,53 +742,51 @@ class nts:
 
         tidup = self.scene(tid[::-1])[::-1]
         dups = len(tid) - len(tidup)
-
-        return(len(tid),mis)
+        
+        current = self.sp.user_playlist_tracks(self.user,pid)
+        tracks = current['items']
         #
-        # current = self.sp.user_playlist_tracks(self.user,pid)
-        # tracks = current['items']
-        # #
-        # while current['next']:
-        #     current = self.sp.next(current)
-        #     tracks.extend(current['items'])        
-        # ids = []
-        # for x in tracks:
-        #     ids.append(x['track']['id'])
+        while current['next']:
+            current = self.sp.next(current)
+            tracks.extend(current['items'])        
+        ids = []
+        for x in tracks:
+            ids.append(x['track']['id'])
 
-        # if reset:
-        #     rem = list(set(ids))
-        #     hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
-        #     for i in hund:                    
-        #         print(f'.resetting',end='\r')
-        #         self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
-        #     ids = []
+        if reset:
+            rem = list(set(ids))
+            hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
+            for i in hund:                    
+                print(f'.resetting',end='\r')
+                self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
+            ids = []
 
-        # if tid:
-        #     hund = [tid[i:i+100] for i in range(0, len(tid), 100)]
-        #     for i in hund:                    
-        #         print(f'.tracks appended.', end='\r')
-        #         self.sp.user_playlist_add_tracks(self.user, pid, i,position=0)
+        if tid:
+            hund = [tid[i:i+100] for i in range(0, len(tid), 100)]
+            for i in hund:                    
+                print(f'.tracks appended.', end='\r')
+                self.sp.user_playlist_add_tracks(self.user, pid, i) #,position=0
 
-        #     if almost:
-        #         almost = f'{almost} almost sure ;'
-        #     else:
-        #         almost = ''
+            if almost:
+                almost = f'{almost} almost sure ;'
+            else:
+                almost = ''
 
-        #     if unsure:
-        #         unsure = f' {unsure} unsure ;'
-        #     else:
-        #         unsure = ''
+            if unsure:
+                unsure = f' {unsure} unsure ;'
+            else:
+                unsure = ''
 
-        #     duplicates = f' {dups} repeated ;'
+            duplicates = f' {dups} repeated ;'
 
-        #     title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
-        #     desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        #     syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Reverse chronological, starting from {firstep}]"
+            title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
+            desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
+            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Reverse Chronology (end: {firstep})]"
             
-        #     x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
-        #     self._d2j(f'./uploaded',uploaded)
-        # else:
-        #     print('.no tracks to append.')
+            x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
+            self._d2j(f'./uploaded',uploaded)
+        else:
+            print('.no tracks to append.')
 
     def follow(self,usr=1,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
@@ -920,56 +918,39 @@ class nts:
         Q1, Q2 = [q1[l1][l2] for l1 in q1 for l2 in q1[l1]], [q2[l1][l2] for l1 in q2 for l2 in q2[l1]]
         print(f'.{len(Q1)}.{len(Q2)}')
 
+        taskdict = {f"q1.{l1:03}.{l2:03}":q1[list(q1.keys())[l1]][list(q1[list(q1.keys())[l1]].keys())[l2]] 
+                    for l1 in range(len(q1)) 
+                    for l2 in range(len(q1[list(q1.keys())[l1]]))
+                    }
+        taskdict |= {f"q2.{l1:03}.{l2:03}":q2[list(q2.keys())[l1]][list(q2[list(q2.keys())[l1]].keys())[l2]] 
+                    for l1 in range(len(q2)) 
+                    for l2 in range(len(q2[list(q2.keys())[l1]]))
+                    }
+
         # run syncronious mass request
         time.sleep(1.0)
-        response = multithreading(Q1+Q2, 16, 'spotify') #_run
-        if not isinstance(response,list):
-            response = [response]
-
-        r1, r2 = response[:len(Q1)], response[len(Q1):]
-
-        # make nested list
-        p1=[]
-        i=0
-        l = [len(q1[q]) for q in q1]
-        for n in l:
-            p1.append(r1[i:i+n])
-            i+=n
-        p2=[]
-        i=0
-        l = [len(q2[q]) for q in q2]
-        for n in l:
-            p2.append(r2[i:i+n])
-            i+=n
-
+        taskdict = multithreading(taskdict, 16, 'spotify') #_run
         #
-
-        qk = list(q1.keys())
-        print(f'.{len(r1)}/{len(r2)}->{len(p1)}/{len(p2)}={len(qk)}.')
-
-        for episode in range(len(qk)):
-
-            qt = list(q1[qk[episode]].keys())
-            print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
-
-            for td in range(len(qt)): # td are tracks
-
-                if p1[episode][td]['tracks']['items']:
+        for l1 in range(len(q1)):
+            episode = list(q1.keys())[l1]
+            for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
+                td = list(q1[list(q1.keys())[l1]].keys())[l2]
+                if taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items']:
                     S0 = [{'artist':j['artists'][0]['name'],
                         'title':j['name'],
                         'uri':j['uri'].split(':')[-1]} 
-                        for j in p1[episode][td]['tracks']['items'][:3]]
+                        for j in taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
                 else:
                     S0 = ''
-                if p2[episode][td]['tracks']['items']:
+                if taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items']:
                     S1 = [{'artist':j['artists'][0]['name'],
                         'title':j['name'],
                         'uri':j['uri'].split(':')[-1]} 
-                        for j in p2[episode][td]['tracks']['items'][:3]]
+                        for j in taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
                 else:
                     S1 = ''
 
-                q1[qk[episode]][qt[td]] = {'s0':S0,'s1':S1}
+                q1[episode][td] = {'s0':S0,'s1':S1}
 
         return(q1)
 
@@ -1195,7 +1176,7 @@ class nts:
 
 # MULTITHREADING WORKER
 
-def multithreading(tasklist, no_workers,kind):
+def multithreading(taskdict, no_workers,kind):
 
     stn = nts()
     stn.connect()
@@ -1213,23 +1194,23 @@ def multithreading(tasklist, no_workers,kind):
                     break
                 #
                 time.sleep(1.0)
-                #
                 start = time.time() # if not isinstance(content,list): #     content = [content]
+                taskid = list(content.keys())[0] # READ ID's
                 # TASK START
                 if kind == 'spotify':
-                    response = stn._run(content) # response = exec('self.nts.' + self.task + '("' + content + '")')
+                    taskdict[taskid] = stn._run(content[taskid]) # response = exec('self.nts.' + self.task + '("' + content + '")')
                 elif kind == 'bandcamp':
-                    response = stn.mt_request(content)
+                    taskdict[taskid] = stn.mt_request(content[taskid])
                 # TASK END
                 end = time.time()
                 print(round(end - start,4),end='\r')
-                self.results.append(response)
+                # self.results.append(response)
                 self.queue.task_done()
 
     # Create queue and add tasklist
     q = queue.Queue()
-    for url in tasklist:
-        q.put(url)
+    for url in taskdict:
+        q.put({url : taskdict[url]})
 
     # Workers keep working till they receive an empty string
     for _ in range(no_workers):
@@ -1245,8 +1226,10 @@ def multithreading(tasklist, no_workers,kind):
     for worker in workers:
         worker.join()
 
-    # Combine results from all workers
-    r = []
-    for worker in workers:
-        r.extend(worker.results)
-    return r
+    # # Combine results from all workers
+    # r = []
+    # for worker in workers:
+    #     r.extend(worker.results)
+    # return r
+
+    return(taskdict)
