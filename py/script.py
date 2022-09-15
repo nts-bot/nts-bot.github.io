@@ -126,8 +126,12 @@ class nts:
 
     def runscript(self,shows):
         self.connect()
-        for show in shows:
-            print(show)
+        o = {i:shows[i] for i in range(len(shows))}
+        print(o)
+        for i in range(len(shows)):
+            show = shows[i]
+            oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
+            print(f'{oo[:50]}{i}/{range(len(shows))}')
             time.sleep(2.0)
             # SCRAPE
             if show in self._j2d(f'./meta'):
