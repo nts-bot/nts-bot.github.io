@@ -128,6 +128,7 @@ class nts:
         self.connect()
         for show in shows:
             print(show)
+            time.sleep(2.0)
             # SCRAPE
             if show in self._j2d(f'./meta'):
                 self.scrape(show,True)
