@@ -379,7 +379,7 @@ class nts:
         except Exception:
             self.conexcp()
 
-    # @timeout(10.0)
+    @timeout(10.0)
     def wait(self,path,op=True):
         if not op:
             with open(f'./extra/{path}.pickle', 'wb') as handle:
@@ -470,8 +470,8 @@ class nts:
                         print(f'{show[:7]}{episode[:7]}. . . . .{list(ok).index(trdx)}:{len(list(ok))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
-                            # eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
-                            multiple[episode][trdx] = 0
+                            eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
+                            # multiple[episode][trdx] = 0 # WIP
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
                             eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
@@ -494,15 +494,16 @@ class nts:
                 self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
     
         if any([True for i in multiple if multiple[i]]):
-            if kind == 'search':
-                req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
+            if kind == 'search': # WIP
+                pass
+            #     req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
+            # return(req)
             elif kind == 'bandcamp':
                 req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
-            # for episode in multiple:
-            #     for td in multiple[episode]:
-            #         eval(jsonlist[1])[episode][td] = req[episode][td]
-            # self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
-            return(req)
+            for episode in multiple:
+                for td in multiple[episode]:
+                    eval(jsonlist[1])[episode][td] = req[episode][td]
+            self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
 
     def spotifysearch(self,showson,episode,trdx):
         q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
@@ -1015,7 +1016,7 @@ class nts:
 
         return(p1,p2,qk)
 
-        # for episode in range(len(qk)):
+        # for episode in range(len(qk)): # WIP
 
         #     qt = list(q1[qk[episode]].keys())
         #     print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
