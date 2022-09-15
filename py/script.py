@@ -379,7 +379,7 @@ class nts:
         except Exception:
             self.conexcp()
 
-    @timeout(10.0)
+    # @timeout(10.0)
     def wait(self,path,op=True):
         if not op:
             with open(f'./extra/{path}.pickle', 'wb') as handle:
@@ -498,10 +498,11 @@ class nts:
                 req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
             elif kind == 'bandcamp':
                 req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
-            for episode in multiple:
-                for td in multiple[episode]:
-                    eval(jsonlist[1])[episode][td] = req[episode][td]
-            self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
+            # for episode in multiple:
+            #     for td in multiple[episode]:
+            #         eval(jsonlist[1])[episode][td] = req[episode][td]
+            # self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
+            return(req)
 
     def spotifysearch(self,showson,episode,trdx):
         q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
@@ -899,41 +900,27 @@ class nts:
                     raise RuntimeError('DICTIONARY UPDATE SCRIPT FAILED')
         return(old)
         
-    # MULTITHREADING
-
-    def mt_spotipy(self,query):
-        return(self._run(query))
-
-    def mt_request(self,content):
-        c = 0
-        request = urllib.request.Request(content)
-        repeat = True
-        while repeat:
-            try:
-                c+=1
-                return(urllib.request.urlopen(request).read())
-                repeat = False
-            except HTTPError:
-                print(f'. . . . .RE:{c}.',end='\r')
-                time.sleep(1.0)
+    # MULTITHREADING WORKER
 
     def multithreading(self,tasklist, no_workers,task):
+
         class __worker__(Thread):
-            def __init__(self, request_queue):
+            def __init__(self, request_queue,task,nts):
                 Thread.__init__(self)
                 self.queue = request_queue
                 self.results = []
+                #
+                self.task = task
+                self.nts = nts
 
             def run(self):
                 while True:
                     content = self.queue.get()
                     if content == "":
                         break
-                    if not isinstance(content,list):
-                        content = [content]
-                    start = time.time()
+                    start = time.time() # if not isinstance(content,list): #     content = [content]
                     # TASK START
-                    response = eval(f'{task}(*{content})')
+                    response = exec('self.nts.' + self.task + '("' + content + '")') 
                     # TASK END
                     end = time.time()
                     print(round(end - start,4),end='\r')
@@ -952,7 +939,7 @@ class nts:
         # Create workers and add tot the queue
         workers = []
         for _ in range(no_workers):
-            worker = __worker__(q)
+            worker = __worker__(q,task,self)
             worker.start()
             workers.append(worker)
         # Join workers to wait till they finished
@@ -964,6 +951,21 @@ class nts:
         for worker in workers:
             r.extend(worker.results)
         return r
+
+    # MULTITHREADING FUNCTIONS
+
+    def mt_request(self,content):
+        c = 0
+        request = urllib.request.Request(content)
+        repeat = True
+        while repeat:
+            try:
+                c+=1
+                return(urllib.request.urlopen(request).read())
+                repeat = False
+            except HTTPError:
+                print(f'. . . . .RE:{c}.',end='\r')
+                time.sleep(1.0)
 
     def mt_spotifysearch(self,showson,multiple):
 
@@ -986,7 +988,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-        response = self.multithreading(Q1+Q2, 16, 'self.mt_spotipy')
+        response = self.multithreading(Q1+Q2, 16, '_run')
         if not isinstance(response,list):
             response = [response]
 
@@ -1010,31 +1012,34 @@ class nts:
 
         qk = list(q1.keys())
         print(f'.{len(r1)}/{len(r2)}->{len(p1)}/{len(p2)}={len(qk)}.')
-        for episode in range(len(qk)):
 
-            qt = list(q1[qk[episode]].keys())
-            print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
+        return(p1,p2,qk)
 
-            for td in range(len(qt)):
+        # for episode in range(len(qk)):
 
-                if p1[qk[episode]][qt[td]]['tracks']['items']:
-                    S0 = [{'artist':j['artists'][0]['name'],
-                        'title':j['name'],
-                        'uri':j['uri'].split(':')[-1]} 
-                        for j in p1[qk[episode]][qt[td]]['tracks']['items'][:3]]
-                else:
-                    S0 = ''
-                if p2[qk[episode]][qt[td]]['tracks']['items']:
-                    S1 = [{'artist':j['artists'][0]['name'],
-                        'title':j['name'],
-                        'uri':j['uri'].split(':')[-1]} 
-                        for j in p2[qk[episode]][qt[td]]['tracks']['items'][:3]]
-                else:
-                    S1 = ''
+        #     qt = list(q1[qk[episode]].keys())
+        #     print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
 
-                q1[qk[episode]][qt[td]] = {'s0':S0,'s1':S1}
+        #     for td in range(len(qt)):
 
-        return(q1)
+        #         if p1[td][qk[episode]][qt[td]]['tracks']['items']:
+        #             S0 = [{'artist':j['artists'][0]['name'],
+        #                 'title':j['name'],
+        #                 'uri':j['uri'].split(':')[-1]} 
+        #                 for j in p1[qk[episode]][qt[td]]['tracks']['items'][:3]]
+        #         else:
+        #             S0 = ''
+        #         if p2[td][qk[episode]][qt[td]]['tracks']['items']:
+        #             S1 = [{'artist':j['artists'][0]['name'],
+        #                 'title':j['name'],
+        #                 'uri':j['uri'].split(':')[-1]} 
+        #                 for j in p2[qk[episode]][qt[td]]['tracks']['items'][:3]]
+        #         else:
+        #             S1 = ''
+
+        #         q1[qk[episode]][qt[td]] = {'s0':S0,'s1':S1}
+
+        # return(q1)
 
     def mt_bandcamp(self,showson,rateson,multiple):
         
@@ -1075,7 +1080,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-        response = self.multithreading(querylist, 16, 'self.mt_request')
+        response = self.multithreading(querylist, 16, 'mt_request')
 
         # make nested list
         if not isinstance(response,list):
@@ -1254,56 +1259,4 @@ class nts:
         with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
             f.write(pretty)
 
-# OLD
-
-# class working:
-
-#     def __init__(self,task,extraArgs):
-#         # The queue for tasks
-#         self.q = queue.Queue()
-#         self.task = task
-#         self.extraArgs = extraArgs
-#         self.results = []
-#     # Worker, handles each task
-#     def worker(self):
-#         while True:
-#             item = self.q.get()
-#             if item is None:
-#                 break
-#             print("Working on", item, end='\r')
-#             # START TASK FUNCTION
-#             self.results += [eval(f'{self.task}(*{self.extraArgs})')]
-#             # END TASK FUNCTION
-#             time.sleep(1)
-#             self.q.task_done()
-#     def start_workers(self,worker_pool=1000):
-#         threads = []
-#         for i in range(worker_pool):
-#             t = Thread(target=i)
-#             t.start()
-#             threads.append(t)
-#         return threads
-#     def stop_workers(self,threads):
-#         # stop workers
-#         for i in threads:
-#             self.q.put(None)
-#         for t in threads:
-#             t.join()
-#     def create_queue(self,task_items):
-#         for item in task_items:
-#             self.q.put(item)
-
-
-#     def run(self):
-#         # Dummy tasks
-#         tasks = [item for item in range(1000)]
-
-#         # Start up your workers
-#         workers = self.start_workers(worker_pool=10)
-#         self.create_queue(tasks)
-
-#         # Blocks until all tasks are complete
-#         self.q.join()
-#         self.stop_workers(workers)
-
-#
+# END
