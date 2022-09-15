@@ -131,8 +131,7 @@ class nts:
         for i in range(len(shows)):
             show = shows[i]
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
-            print(f'{oo[:50]}{i}/{range(len(shows))}')
-            time.sleep(2.0)
+            print(f'{oo[:50]}{i}/{len(shows)}')
             # SCRAPE
             if show in self._j2d(f'./meta'):
                 self.scrape(show,True)
@@ -1210,13 +1209,13 @@ def multithreading(taskdict, no_workers,kind):
                 if content == "":
                     break
                 #
-                time.sleep(1.0)
                 start = time.time() # if not isinstance(content,list): #     content = [content]
                 taskid = list(content.keys())[0] # READ ID's
                 # TASK START
                 if kind == 'spotify':
                     taskdict[taskid] = stn._run(content[taskid]) # response = exec('self.nts.' + self.task + '("' + content + '")')
                 elif kind == 'bandcamp':
+                    time.sleep(1.0)
                     taskdict[taskid] = stn.mt_request(content[taskid])
                 # TASK END
                 end = time.time()
