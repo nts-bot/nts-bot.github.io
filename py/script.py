@@ -292,15 +292,24 @@ class nts:
                 soup = bs(self.req(url).content, "html.parser")
                 
                 # meta
+                if show not in meta:
+                    meta[show] = dict()
                 try:
-                    if show not in meta:
-                        meta[show] = dict()
                     bt = soup.select('.episode__btn')
                     date = bt[0]['data-episode-date']
                     eptitle = bt[0]['data-episode-name']
                     meta[show][episode] = {'title':eptitle,'date':date}
                 except:
-                    print(f'ERROR PROCESSING META : {show}:{episode}\n')
+                    try:
+                        print(f'.trying-once-more-to-find-meta.')
+                        soup = self.browse(url,1)
+                        bt = soup.select('.episode__btn')
+                        date = bt[0]['data-episode-date']
+                        eptitle = bt[0]['data-episode-name']
+                        meta[show][episode] = {'title':eptitle,'date':date}
+                    except:
+                        print(f'FAILURE PROCESSING META : {show}:{episode}\n')
+                    
 
                 tracks = soup.select('.track')
                 for j in range(len(tracks)):
@@ -725,7 +734,7 @@ class nts:
         fp = sortmeta[0][0].split('.')
         firstep = f"{fp[2]}.{fp[1]}.{fp[0]}"
         lp = sortmeta[-1][0].split('.')
-        lastep = f"{fp[2]}.{fp[1]}.{fp[0]}"
+        lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
 
         for mt in sortmeta[::-1]:
             episodes = mt[1]
@@ -785,7 +794,7 @@ class nts:
 
             title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
             desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. {lastep}-to-{firstep}]"
+            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. from-{lastep}-until-{firstep}]"
             
             x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
             self._d2j(f'./uploaded',uploaded)
