@@ -722,7 +722,10 @@ class nts:
         almost = 0
         unsure = 0
 
-        firstep = sortmeta[0][0]
+        fp = sortmeta[0][0].split('.')
+        firstep = f"{fp[2]}.{fp[1]}.{fp[0]}"
+        lp = sortmeta[-1][0].split('.')
+        lastep = f"{fp[2]}.{fp[1]}.{fp[0]}"
 
         for mt in sortmeta[::-1]:
             episodes = mt[1]
@@ -782,7 +785,7 @@ class nts:
 
             title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
             desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Reverse Chronology (end: {firstep})]"
+            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Latest-to-{firstep}]"
             
             x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
             self._d2j(f'./uploaded',uploaded)
@@ -1234,3 +1237,5 @@ def multithreading(taskdict, no_workers,kind):
     # return r
 
     return(taskdict)
+
+#
