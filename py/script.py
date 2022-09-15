@@ -470,8 +470,8 @@ class nts:
                         print(f'{show[:7]}{episode[:7]}. . . . .{list(ok).index(trdx)}:{len(list(ok))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
-                            eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
-                            # multiple[episode][trdx] = 0 # WIP
+                            # eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
+                            multiple[episode][trdx] = 0 # WIP
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
                             eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
@@ -495,15 +495,15 @@ class nts:
     
         if any([True for i in multiple if multiple[i]]):
             if kind == 'search': # WIP
-                pass
-            #     req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
-            # return(req)
-            elif kind == 'bandcamp':
-                req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
-            for episode in multiple:
-                for td in multiple[episode]:
-                    eval(jsonlist[1])[episode][td] = req[episode][td]
-            self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
+                # pass
+                req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
+            return(req)
+            # elif kind == 'bandcamp':
+            #     req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
+            # for episode in multiple:
+            #     for td in multiple[episode]:
+            #         eval(jsonlist[1])[episode][td] = req[episode][td]
+            # self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
 
     def spotifysearch(self,showson,episode,trdx):
         q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
@@ -901,58 +901,6 @@ class nts:
                     raise RuntimeError('DICTIONARY UPDATE SCRIPT FAILED')
         return(old)
         
-    # MULTITHREADING WORKER
-
-    def multithreading(self,tasklist, no_workers,task):
-
-        class __worker__(Thread):
-            def __init__(self, request_queue,task,nts):
-                Thread.__init__(self)
-                self.queue = request_queue
-                self.results = []
-                #
-                self.task = task
-                self.nts = nts
-
-            def run(self):
-                while True:
-                    content = self.queue.get()
-                    if content == "":
-                        break
-                    start = time.time() # if not isinstance(content,list): #     content = [content]
-                    # TASK START
-                    response = exec('self.nts.' + self.task + '("' + content + '")') 
-                    # TASK END
-                    end = time.time()
-                    print(round(end - start,4),end='\r')
-                    self.results.append(response)
-                    self.queue.task_done()
-
-        # Create queue and add tasklist
-        q = queue.Queue()
-        for url in tasklist:
-            q.put(url)
-
-        # Workers keep working till they receive an empty string
-        for _ in range(no_workers):
-            q.put("")
-
-        # Create workers and add tot the queue
-        workers = []
-        for _ in range(no_workers):
-            worker = __worker__(q,task,self)
-            worker.start()
-            workers.append(worker)
-        # Join workers to wait till they finished
-        for worker in workers:
-            worker.join()
-
-        # Combine results from all workers
-        r = []
-        for worker in workers:
-            r.extend(worker.results)
-        return r
-
     # MULTITHREADING FUNCTIONS
 
     def mt_request(self,content):
@@ -989,7 +937,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-        response = self.multithreading(Q1+Q2, 16, '_run')
+        response = multithreading(Q1+Q2, 16, 'spotify') #_run
         if not isinstance(response,list):
             response = [response]
 
@@ -1081,7 +1029,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-        response = self.multithreading(querylist, 16, 'mt_request')
+        response = multithreading(querylist, 16, 'bandcamp')
 
         # make nested list
         if not isinstance(response,list):
@@ -1261,3 +1209,62 @@ class nts:
             f.write(pretty)
 
 # END
+
+# MULTITHREADING WORKER
+
+def multithreading(tasklist, no_workers,kind):
+
+    stn = nts()
+    stn.connect()
+
+    class __worker__(Thread):
+        def __init__(self, request_queue):
+            Thread.__init__(self)
+            self.queue = request_queue
+            self.results = []
+            #
+            # self.task = task
+            # self.nts = nts
+
+        def run(self):
+            while True:
+                content = self.queue.get()
+                if content == "":
+                    break
+                start = time.time() # if not isinstance(content,list): #     content = [content]
+                # TASK START
+                # response = exec('self.nts.' + self.task + '("' + content + '")')
+                if kind == 'spotify':
+                    response = stn._run(content)
+                elif kind == 'bandcamp':
+                    response = stn.mt_request(content)
+                # TASK END
+                end = time.time()
+                print(round(end - start,4),end='\r')
+                self.results.append(response)
+                self.queue.task_done()
+
+    # Create queue and add tasklist
+    q = queue.Queue()
+    for url in tasklist:
+        q.put(url)
+
+    # Workers keep working till they receive an empty string
+    for _ in range(no_workers):
+        q.put("")
+
+    # Create workers and add tot the queue
+    workers = []
+    for _ in range(no_workers):
+        worker = __worker__(q)
+        worker.start()
+        workers.append(worker)
+    # Join workers to wait till they finished
+    for worker in workers:
+        worker.join()
+
+    # Combine results from all workers
+    r = []
+    for worker in workers:
+        r.extend(worker.results)
+    return r
