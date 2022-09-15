@@ -471,7 +471,7 @@ class nts:
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
                             # eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
-                            multiple[episode][trdx] = 0
+                            multiple[episode][trdx] = 0 # WIP
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
                             eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
@@ -494,14 +494,16 @@ class nts:
                 self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
     
         if any([True for i in multiple if multiple[i]]):
-            if kind == 'search':
+            if kind == 'search': # WIP
+                # pass
                 req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
-            elif kind == 'bandcamp':
-                req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
-            for episode in multiple:
-                for td in multiple[episode]:
-                    eval(jsonlist[1])[episode][td] = req[episode][td]
-            self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
+            return(req)
+            # elif kind == 'bandcamp':
+            #     req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
+            # for episode in multiple:
+            #     for td in multiple[episode]:
+            #         eval(jsonlist[1])[episode][td] = req[episode][td]
+            # self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
 
     def spotifysearch(self,showson,episode,trdx):
         q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
@@ -960,31 +962,33 @@ class nts:
         qk = list(q1.keys())
         print(f'.{len(r1)}/{len(r2)}->{len(p1)}/{len(p2)}={len(qk)}.')
 
-        for episode in range(len(qk)):
+        return(p1,p2,qk)
 
-            qt = list(q1[qk[episode]].keys())
-            print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
+        # for episode in range(len(qk)): # WIP
 
-            for td in range(len(qt)): # td are tracks
+        #     qt = list(q1[qk[episode]].keys())
+        #     print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
 
-                if p1[episode][td]['tracks']['items']:
-                    S0 = [{'artist':j['artists'][0]['name'],
-                        'title':j['name'],
-                        'uri':j['uri'].split(':')[-1]} 
-                        for j in p1[episode][td]['tracks']['items'][:3]]
-                else:
-                    S0 = ''
-                if p2[episode][td]['tracks']['items']:
-                    S1 = [{'artist':j['artists'][0]['name'],
-                        'title':j['name'],
-                        'uri':j['uri'].split(':')[-1]} 
-                        for j in p2[episode][td]['tracks']['items'][:3]]
-                else:
-                    S1 = ''
+        #     for td in range(len(qt)):
 
-                q1[qk[episode]][qt[td]] = {'s0':S0,'s1':S1}
+        #         if p1[td][qk[episode]][qt[td]]['tracks']['items']:
+        #             S0 = [{'artist':j['artists'][0]['name'],
+        #                 'title':j['name'],
+        #                 'uri':j['uri'].split(':')[-1]} 
+        #                 for j in p1[qk[episode]][qt[td]]['tracks']['items'][:3]]
+        #         else:
+        #             S0 = ''
+        #         if p2[td][qk[episode]][qt[td]]['tracks']['items']:
+        #             S1 = [{'artist':j['artists'][0]['name'],
+        #                 'title':j['name'],
+        #                 'uri':j['uri'].split(':')[-1]} 
+        #                 for j in p2[qk[episode]][qt[td]]['tracks']['items'][:3]]
+        #         else:
+        #             S1 = ''
 
-        return(q1)
+        #         q1[qk[episode]][qt[td]] = {'s0':S0,'s1':S1}
+
+        # return(q1)
 
     def mt_bandcamp(self,showson,rateson,multiple):
         
