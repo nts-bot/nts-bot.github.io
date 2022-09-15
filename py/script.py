@@ -1,4 +1,5 @@
-
+import warnings
+warnings.filterwarnings("ignore")
 # Basic Libraries
 import os, json, time, requests, re, pickle, urllib
 from urllib.error import HTTPError
@@ -66,7 +67,7 @@ class nts:
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
 
     # LOCAL DATABASE
-    @timeout(5.0)
+    # @timeout(5.0)
     def _j2d(self,path):
         try:
             with open(f"{path}.json", 'r', encoding='utf-8') as f:
@@ -80,7 +81,7 @@ class nts:
             time.sleep(0.5)
             return(self._j2d(path))
         
-    @timeout(5.0)
+    # @timeout(5.0)
     def _d2j(self,path,allot):
         try:
             if isinstance(allot,dict):
@@ -327,7 +328,7 @@ class nts:
 
     # SPOTIFY API
 
-    @timeout(5.0)
+    @timeout(15.0)
     def subconnect(self,index,pick):
         ''' CONNECTION FUNCTION w/ TIMEOUT '''
         self.user = os.getenv("ssr")
@@ -379,7 +380,7 @@ class nts:
         except Exception:
             self.conexcp()
 
-    @timeout(10.0)
+    # @timeout(10.0)
     def wait(self,path,op=True):
         if not op:
             with open(f'./extra/{path}.pickle', 'wb') as handle:
@@ -471,7 +472,7 @@ class nts:
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
                             # eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
-                            multiple[episode][trdx] = 0 # WIP
+                            multiple[episode][trdx] = 0
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
                             eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
@@ -494,25 +495,14 @@ class nts:
                 self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
     
         if any([True for i in multiple if multiple[i]]):
-            if kind == 'search': # WIP
-                # pass
+            if kind == 'search':
                 req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
-<<<<<<< HEAD
-            return(req)
-            # elif kind == 'bandcamp':
-            #     req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
-            # for episode in multiple:
-            #     for td in multiple[episode]:
-            #         eval(jsonlist[1])[episode][td] = req[episode][td]
-            # self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
-=======
             elif kind == 'bandcamp':
                 req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
             for episode in multiple:
                 for td in multiple[episode]:
                     eval(jsonlist[1])[episode][td] = req[episode][td]
             self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
->>>>>>> parent of d3f6245 (.)
 
     def spotifysearch(self,showson,episode,trdx):
         q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
@@ -574,7 +564,7 @@ class nts:
 
     # SPOTIFY SEARCH/RATE SUBFUNCTIONS
 
-    @timeout(15.0)
+    @timeout(50.0)
     def subrun(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
         try:
@@ -584,7 +574,7 @@ class nts:
             else:
                 return(result)
         except spotipy.SpotifyException as error:
-            print(f'Spotify API Error')
+            print(f'.spotify-api-error.',end='\r')
             return({'tracks':{'items':''}})
 
     def _run(self,query):
@@ -607,7 +597,7 @@ class nts:
         if trans:
             time.sleep(0.5)
             ln = translator.detect(tex).lang
-            print(f'. . . . . . . . . . . .{ln}.',end='\r')
+            print(f'.{ln}.',end='\r')
             try:
                 if ln != 'en':
                     time.sleep(0.5)
@@ -717,12 +707,14 @@ class nts:
         pid = self.pid(show)
         rate = self._j2d(f'./spotify/{show}')
         meta = self._j2d(f'./meta')[show]
+        #
         uploaded = self._j2d(f'./uploaded')
         if show not in uploaded:
             uploaded[show] = dict()
             reset = True
+        #   
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
-
+        #
         tid = []
         pup = []
         mis = 0
@@ -751,68 +743,52 @@ class nts:
         tidup = self.scene(tid[::-1])[::-1]
         dups = len(tid) - len(tidup)
 
-        # tim = self._j2d('./extra/dflag')
-        # if show not in tim:
-        #     tim[show] = 1
+        return(len(tid),mis)
+        #
+        # current = self.sp.user_playlist_tracks(self.user,pid)
+        # tracks = current['items']
+        # #
+        # while current['next']:
+        #     current = self.sp.next(current)
+        #     tracks.extend(current['items'])        
+        # ids = []
+        # for x in tracks:
+        #     ids.append(x['track']['id'])
+
+        # if reset:
+        #     rem = list(set(ids))
+        #     hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
+        #     for i in hund:                    
+        #         print(f'.resetting',end='\r')
+        #         self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
+        #     ids = []
+
+        # if tid:
+        #     hund = [tid[i:i+100] for i in range(0, len(tid), 100)]
+        #     for i in hund:                    
+        #         print(f'.tracks appended.', end='\r')
+        #         self.sp.user_playlist_add_tracks(self.user, pid, i,position=0)
+
+        #     if almost:
+        #         almost = f'{almost} almost sure ;'
+        #     else:
+        #         almost = ''
+
+        #     if unsure:
+        #         unsure = f' {unsure} unsure ;'
+        #     else:
+        #         unsure = ''
+
+        #     duplicates = f' {dups} repeated ;'
+
+        #     title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
+        #     desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
+        #     syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Reverse chronological, starting from {firstep}]"
             
-        #     self._d2j('./extra/dflag',tim)
-
-        current = self.sp.user_playlist_tracks(self.user,pid)
-        tracks = current['items']
-        while current['next']:
-            current = self.sp.next(current)
-            tracks.extend(current['items'])        
-        ids = []
-        for x in tracks:
-            ids.append(x['track']['id'])
-
-            # add = [i for i in tid if i not in ids]
-            # if len(add) > 50:
-            #     reset = True
-
-        if reset:
-            rem = list(set(ids))
-            hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
-            for i in hund:                    
-                print(f'.resetting',end='\r')
-                self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
-            ids = []
-
-            # if remove:
-            #     rem = list(set(ids) - set(tid))
-            #     hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
-            #     for i in hund:                    
-            #         print(f'.removing',end='\r')
-            #         self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
-            
-            # add = [i for i in tid if i not in ids]
-
-        if tid:
-            hund = [tid[i:i+100] for i in range(0, len(tid), 100)]
-            for i in hund:                    
-                print(f'.tracks appended.', end='\r')
-                self.sp.user_playlist_add_tracks(self.user, pid, i) #, position=0
-
-            if almost:
-                almost = f'{almost} almost sure ;'
-            else:
-                almost = ''
-
-            if unsure:
-                unsure = f' {unsure} unsure ;'
-            else:
-                unsure = ''
-
-            duplicates = f' {dups} repeated ;'
-
-            title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
-            desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Reverse chronological, starting from {firstep}]"
-            
-            x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
-            self._d2j(f'./uploaded',uploaded)
-        else:
-            print('.no tracks to append.')
+        #     x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
+        #     self._d2j(f'./uploaded',uploaded)
+        # else:
+        #     print('.no tracks to append.')
 
     def follow(self,usr=1,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
@@ -910,14 +886,7 @@ class nts:
                     raise RuntimeError('DICTIONARY UPDATE SCRIPT FAILED')
         return(old)
         
-<<<<<<< HEAD
     # MULTITHREADING FUNCTIONS
-=======
-    # MULTITHREADING
-
-    def mt_spotipy(self,query):
-        return(self._run(query))
->>>>>>> parent of d3f6245 (.)
 
     def mt_request(self,content):
         c = 0
@@ -932,57 +901,6 @@ class nts:
                 print(f'. . . . .RE:{c}.',end='\r')
                 time.sleep(1.0)
 
-<<<<<<< HEAD
-=======
-    def multithreading(self,tasklist, no_workers,task):
-        class __worker__(Thread):
-            def __init__(self, request_queue):
-                Thread.__init__(self)
-                self.queue = request_queue
-                self.results = []
-
-            def run(self):
-                while True:
-                    content = self.queue.get()
-                    if content == "":
-                        break
-                    if not isinstance(content,list):
-                        content = [content]
-                    start = time.time()
-                    # TASK START
-                    response = eval(f'{task}(*{content})')
-                    # TASK END
-                    end = time.time()
-                    print(round(end - start,4),end='\r')
-                    self.results.append(response)
-                    self.queue.task_done()
-
-        # Create queue and add tasklist
-        q = queue.Queue()
-        for url in tasklist:
-            q.put(url)
-
-        # Workers keep working till they receive an empty string
-        for _ in range(no_workers):
-            q.put("")
-
-        # Create workers and add tot the queue
-        workers = []
-        for _ in range(no_workers):
-            worker = __worker__(q)
-            worker.start()
-            workers.append(worker)
-        # Join workers to wait till they finished
-        for worker in workers:
-            worker.join()
-
-        # Combine results from all workers
-        r = []
-        for worker in workers:
-            r.extend(worker.results)
-        return r
-
->>>>>>> parent of d3f6245 (.)
     def mt_spotifysearch(self,showson,multiple):
 
         q1 = dict()
@@ -1004,11 +922,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-<<<<<<< HEAD
         response = multithreading(Q1+Q2, 16, 'spotify') #_run
-=======
-        response = self.multithreading(Q1+Q2, 16, 'self.mt_spotipy')
->>>>>>> parent of d3f6245 (.)
         if not isinstance(response,list):
             response = [response]
 
@@ -1032,29 +946,26 @@ class nts:
 
         qk = list(q1.keys())
         print(f'.{len(r1)}/{len(r2)}->{len(p1)}/{len(p2)}={len(qk)}.')
+
         for episode in range(len(qk)):
 
             qt = list(q1[qk[episode]].keys())
             print(f'.{len(p1[episode])}/{len(p2[episode])}={len(qt)}.',end='\r')
 
-<<<<<<< HEAD
-        # for episode in range(len(qk)): # WIP
-=======
-            for td in range(len(qt)):
->>>>>>> parent of d3f6245 (.)
+            for td in range(len(qt)): # td are tracks
 
-                if p1[qk[episode]][qt[td]]['tracks']['items']:
+                if p1[episode][td]['tracks']['items']:
                     S0 = [{'artist':j['artists'][0]['name'],
                         'title':j['name'],
                         'uri':j['uri'].split(':')[-1]} 
-                        for j in p1[qk[episode]][qt[td]]['tracks']['items'][:3]]
+                        for j in p1[episode][td]['tracks']['items'][:3]]
                 else:
                     S0 = ''
-                if p2[qk[episode]][qt[td]]['tracks']['items']:
+                if p2[episode][td]['tracks']['items']:
                     S1 = [{'artist':j['artists'][0]['name'],
                         'title':j['name'],
                         'uri':j['uri'].split(':')[-1]} 
-                        for j in p2[qk[episode]][qt[td]]['tracks']['items'][:3]]
+                        for j in p2[episode][td]['tracks']['items'][:3]]
                 else:
                     S1 = ''
 
@@ -1101,11 +1012,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-<<<<<<< HEAD
         response = multithreading(querylist, 16, 'bandcamp')
-=======
-        response = self.multithreading(querylist, 16, 'self.mt_request')
->>>>>>> parent of d3f6245 (.)
 
         # make nested list
         if not isinstance(response,list):
@@ -1284,7 +1191,6 @@ class nts:
         with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
             f.write(pretty)
 
-<<<<<<< HEAD
 # END
 
 # MULTITHREADING WORKER
@@ -1299,20 +1205,19 @@ def multithreading(tasklist, no_workers,kind):
             Thread.__init__(self)
             self.queue = request_queue
             self.results = []
-            #
-            # self.task = task
-            # self.nts = nts
 
         def run(self):
             while True:
                 content = self.queue.get()
                 if content == "":
                     break
+                #
+                time.sleep(1.0)
+                #
                 start = time.time() # if not isinstance(content,list): #     content = [content]
                 # TASK START
-                # response = exec('self.nts.' + self.task + '("' + content + '")')
                 if kind == 'spotify':
-                    response = stn._run(content)
+                    response = stn._run(content) # response = exec('self.nts.' + self.task + '("' + content + '")')
                 elif kind == 'bandcamp':
                     response = stn.mt_request(content)
                 # TASK END
@@ -1345,58 +1250,3 @@ def multithreading(tasklist, no_workers,kind):
     for worker in workers:
         r.extend(worker.results)
     return r
-=======
-# OLD
-
-# class working:
-
-#     def __init__(self,task,extraArgs):
-#         # The queue for tasks
-#         self.q = queue.Queue()
-#         self.task = task
-#         self.extraArgs = extraArgs
-#         self.results = []
-#     # Worker, handles each task
-#     def worker(self):
-#         while True:
-#             item = self.q.get()
-#             if item is None:
-#                 break
-#             print("Working on", item, end='\r')
-#             # START TASK FUNCTION
-#             self.results += [eval(f'{self.task}(*{self.extraArgs})')]
-#             # END TASK FUNCTION
-#             time.sleep(1)
-#             self.q.task_done()
-#     def start_workers(self,worker_pool=1000):
-#         threads = []
-#         for i in range(worker_pool):
-#             t = Thread(target=i)
-#             t.start()
-#             threads.append(t)
-#         return threads
-#     def stop_workers(self,threads):
-#         # stop workers
-#         for i in threads:
-#             self.q.put(None)
-#         for t in threads:
-#             t.join()
-#     def create_queue(self,task_items):
-#         for item in task_items:
-#             self.q.put(item)
-
-
-#     def run(self):
-#         # Dummy tasks
-#         tasks = [item for item in range(1000)]
-
-#         # Start up your workers
-#         workers = self.start_workers(worker_pool=10)
-#         self.create_queue(tasks)
-
-#         # Blocks until all tasks are complete
-#         self.q.join()
-#         self.stop_workers(workers)
-
-#
->>>>>>> parent of d3f6245 (.)
