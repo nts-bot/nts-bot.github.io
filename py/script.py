@@ -154,12 +154,23 @@ class nts:
             # if rq:
             #     self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
             # ADD
+            dr = False
             if show not in self._j2d('./uploaded'):
-                self.spotifyplaylist(show)
+                while not dr:
+                    try:
+                        self.spotifyplaylist(show)
+                        dr = True
+                    except:
+                        pass
             else:
                 rq, do = self.prerun(f"./tracklist/{show}",f"./uploaded",show) 
                 if rq: # or (show not in self._j2d('./extra/dflag'))
-                    self.spotifyplaylist(show)
+                    while not dr:
+                        try:
+                            self.spotifyplaylist(show)
+                            dr = True
+                        except:
+                            pass
             # HTML
             self.showhtml(show)
         self.home()
