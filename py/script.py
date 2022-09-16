@@ -127,7 +127,9 @@ class nts:
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
+        brk = 0
         for i in range(len(shows)):
+            br = []
             show = shows[i]
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
             print(f'{oo[:50]}{i}/{len(shows)}')
@@ -145,10 +147,12 @@ class nts:
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
             if rq:
                 self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
+            br += [rq]
             #
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
             if rq:
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
+            br += [rq]
             # BANDCAMP # TODO
             # rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
             # if rq:
@@ -171,6 +175,11 @@ class nts:
                             dr = True
                         except:
                             pass
+                br += [rq]
+            if not any(br):
+                brk += 1
+            if brk > 10:
+                break
             # HTML
             self.showhtml(show)
         self.home()
@@ -220,7 +229,7 @@ class nts:
                     print(f'. . . . . . .{episode[-10:]}.', end='\r')
                     episodelist[episode] = dict()
                 else:
-                    print(f'. . . . . . .{episode[-5:]}. skip', end='\r')
+                    print(f'. . . . . . .{episode[-5:]}', end='\r')
             else:
                 print('href failed')
 
