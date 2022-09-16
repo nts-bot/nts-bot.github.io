@@ -309,6 +309,7 @@ class nts:
                         meta[show][episode] = {'title':eptitle,'date':date}
                     except:
                         print(f'FAILURE PROCESSING META : {show}:{episode}\n')
+                        meta[show][episode] = '' # WIP
                     
 
                 tracks = soup.select('.track')
@@ -1271,13 +1272,11 @@ class nts:
 # END
 
 # MULTITHREADING WORKER
-from multiprocessing import Process
-
 def multithreading(taskdict, no_workers,kind):
 
     stn = nts()
     stn.connect()
-    global count, amount, taskcopy, c_lock
+    # global count, amount, taskcopy, c_lock
     count = 0
     c_lock = Lock()
     taskcopy = dict(taskdict)
@@ -1285,17 +1284,17 @@ def multithreading(taskdict, no_workers,kind):
     keys = list(taskdict.keys())[::-1]
 
     def counter(tid,result):
-        global c_lock
+        # global c_lock
         c_lock.acquire()
         taskdict[tid] = result
         keys.remove(tid)
-        global count
+        # global count
         count += 1
         c_lock.release()
         return(count)
 
     def task(kind,taskid):
-        global taskcopy
+        # global taskcopy
         if kind == 'spotify':
             result = stn._run(taskcopy[taskid])
             cont = counter(taskid,result)
@@ -1322,14 +1321,10 @@ def multithreading(taskdict, no_workers,kind):
             Thread.__init__(self)
             self.queue = request_queue
         def run(self): # def worker(workq):
-            global amount
+            # global amount
             while not self.queue.empty(): # while True:
                 taskid = self.queue.get_nowait() #self.queue
                 if not taskid:
-                    if kind=='rate':
-                        ''' EMERGENCY BREAK '''
-                        global count
-                        count = amount
                     break
                 start = time.time()
                 # TASK START
@@ -1361,9 +1356,11 @@ def multithreading(taskdict, no_workers,kind):
             print(f'({count})',end='\r')
             if count == amount:
                 kill = True
+            elif count + 10 > amount:
+                kill = True
         if keys:
-            for taskid in keys:
-                cont = task(kind,taskid)
+            for i in keys:
+                cont = task('rate',i)
     else:
         for worker in workers:
             worker.join()
