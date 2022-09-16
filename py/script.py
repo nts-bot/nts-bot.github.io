@@ -114,10 +114,7 @@ class nts:
                             else:
                                 ok += [False]
         if do:
-            if len(do) > 10:
-                print(len(do))
-            else:
-                pprint(do)
+            print(f'.{json1[2:5]}:{json2[2:5]}:{len(do)}.',end='\r')
         return(any(ok),do)
 
     # RUN SCRIPT
@@ -130,6 +127,7 @@ class nts:
             show = shows[i]
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
             print(f'{oo[:50]}{i}/{len(shows)}')
+            time.sleep(0.1)
             # SCRAPE
             if show in self._j2d(f'./meta'):
                 self.scrape(show,True)
@@ -459,13 +457,11 @@ class nts:
         multiple = dict()
 
         for episode in episodelist:
-            # first = False
             multiple[episode] = dict()
-
             print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{total.index(episode)}:{len(total)}.',end='\r')
             if episode not in eval(jsonlist[1]):
                 eval(jsonlist[1])[episode] = dict()
-                # first = True
+                self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
             ok = eval(jsonlist[0])[episode].keys()
             nk = eval(jsonlist[1])[episode].keys()
             vl = [i for i in eval(jsonlist[1])[episode].values()]
@@ -478,7 +474,6 @@ class nts:
                     except KeyError:
                         second = True
                     if second:
-                        # first = True
                         print(f'{show[:7]}{episode[:7]}. . . . .{list(ok).index(trdx)}:{len(list(ok))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
@@ -613,7 +608,7 @@ class nts:
                 c = 0
                 while tr:
                     c += 1
-                    print(f'<t{c}>',end='\r')
+                    # print(f'<t{c}>',end='\r')
                     try:
                         time.sleep(0.5)
                         convert = translator.translate(tex,dest='en',src=ln).text
@@ -623,7 +618,7 @@ class nts:
                         tr=False
                         pass
                     except Exception:
-                        print(f'[{c}!TTA]',end='\r')
+                        print(f'[{c}/TTA]',end='\r')
                         time.sleep(1.0)
                         pass
         return(convert)
@@ -1292,7 +1287,7 @@ def multithreading(taskdict, no_workers,kind):
                 start = time.time()
                 global count, amount
                 count += 1
-                print(f'<r{count}>',end='\r')
+                # print(f'<r{count}>',end='\r')
                 taskid = list(content.keys())[0] # READ ID's
 
                 # TASK START
@@ -1304,12 +1299,12 @@ def multithreading(taskdict, no_workers,kind):
                     c = 0
                     while tn:
                         c += 1
-                        print(f'<T{c}>',end='\r')
+                        # print(f'<T{c}>',end='\r')
                         try:
                             a0,t0,r0,u0 = stn.test(content[taskid]['s'],content[taskid]['qa'],content[taskid]['qt'])
                             tn = False
                         except:
-                            print(f'[{c}!{count}!TF]',end='\r')
+                            print(f'[{c}/{count}/TF]',end='\r')
                             pass
                     taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
                 elif kind == 'bandcamp':
@@ -1318,7 +1313,7 @@ def multithreading(taskdict, no_workers,kind):
                 # TASK END
 
                 end = time.time()
-                print(f". . . . . .|{count}/{amount}.{round(end - start,2)}|",end='\r')
+                print(f"|{count}/{amount}.{round(end - start,2)}|",end='\r')
 
                 # self.results.append(response)
                 self.queue.task_done()
