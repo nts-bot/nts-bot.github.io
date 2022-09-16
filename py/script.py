@@ -1274,68 +1274,68 @@ class nts:
 from multiprocessing import Process
 
 def multithreading(taskdict, no_workers,kind):
+
     stn = nts()
     stn.connect()
-    stn.wait('thread',False)
-    global count, amount, task, c_lock
+    global count, amount, taskcopy, c_lock
     count = 0
     c_lock = Lock()
-    task = dict(taskdict)
+    taskcopy = dict(taskdict)
     amount = len(taskdict)
-    keys = list(taskdict.keys())
+    keys = list(taskdict.keys())[::-1]
 
     def counter(tid,result):
         global c_lock
         c_lock.acquire()
         taskdict[tid] = result
-        stn.wait('thread',True)
+        keys.remove(tid)
         global count
         count += 1
-        f = int(count)
-        stn.wait('thread',False)
         c_lock.release()
-        return(f)
+        return(count)
 
+    def task(kind,taskid):
+        global taskcopy
+        if kind == 'spotify':
+            result = stn._run(taskcopy[taskid])
+            cont = counter(taskid,result)
+
+        elif kind == 'rate':
+            tn = True
+            c = 0
+            while tn:
+                c += 1
+                try:
+                    a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
+                    tn = False
+                except:
+                    print(f'[{c}/TF]',end='\r')
+            cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+
+        elif kind == 'bandcamp':
+            time.sleep(1.0)
+            result = stn.mt_request(taskcopy[taskid])
+            cont = counter(taskid,result)
+        
+        return(cont)
 
     class __worker__(Thread):
         def __init__(self, request_queue):
             Thread.__init__(self)
             self.queue = request_queue
         def run(self): # def worker(workq):
+            global amount
             while not self.queue.empty(): # while True:
                 taskid = self.queue.get_nowait() #self.queue
                 if not taskid:
                     ''' EMERGENCY BREAK '''
-                    stn.wait('thread',True)
-                    global count, amount
+                    global count
                     count = amount
-                    stn.wait('thread',False)
-                    return
+                    break
                 start = time.time()
                 # TASK START
-                if kind == 'spotify':
-                    result = stn._run(task[taskid])
-                    cont = counter(taskid,result)
-
-                elif kind == 'rate':
-                    tn = True
-                    c = 0
-                    while tn:
-                        c += 1
-                        try:
-                            a0,t0,r0,u0 = stn.test(task[taskid]['s'],task[taskid]['qa'],task[taskid]['qt'])
-                            tn = False
-                        except:
-                            print(f'[{c}/TF]',end='\r')
-                    cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-
-                elif kind == 'bandcamp':
-                    time.sleep(1.0)
-                    result = stn.mt_request(task[taskid])
-                    cont = counter(taskid,result)
-
+                cont = task(kind,taskid)
                 # TASK END
-
                 end = time.time()
                 print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
                 self.queue.task_done() #self.queue
@@ -1354,18 +1354,15 @@ def multithreading(taskdict, no_workers,kind):
         worker.start()
         workers.append(worker)
 
-    @timeout(10.0)
+    @timeout(5.0)
     def killthread(k):
         if k == 0:
             for worker in workers:
                 worker.join()
         elif k == 1:
-            stn.wait('thread',True)
             global count
-            f = int(count)
-            stn.wait('thread',False)
-            print(f'({f})',end='\r')
-            if f == amount:
+            print(f'({count})',end='\r')
+            if count == amount:
                 return(True)
             else:
                 return(False)
@@ -1380,6 +1377,12 @@ def multithreading(taskdict, no_workers,kind):
             pass
         if not kill:
             kill = killthread(1)
+
+    time.sleep(5.0)
+    if keys:
+        print('.unfinished.',end='\r')
+        for taskid in keys:
+            cont = task(taskid,kind)
     
     print('.Threading.Complete.',end='\r')
     return(taskdict)
