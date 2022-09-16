@@ -131,12 +131,12 @@ class nts:
             # SCRAPE
             if show in self._j2d(f'./meta'):
                 self.scrape(show,True)
-                # rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
-                self.ntstracklist(show)#,do
+                # rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                self.ntstracklist(show)#,do)
             else:
                 self.scrape(show,False,amount=10) # CHANGE AMOUNT TO 100 TO GET FULL EPISODELIST
-                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
-                self.ntstracklist(show)#,do
+                # rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                self.ntstracklist(show)#,do)
             # SEARCH/RATE
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
             if rq:
@@ -721,6 +721,7 @@ class nts:
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
         #
         tid = []
+        trackdict = dict()
         pup = []
         mis = 0
         almost = 0
@@ -733,11 +734,13 @@ class nts:
 
         for mt in sortmeta[::-1]:
             episodes = mt[1]
+            trackdict[episodes] = []
             if episodes not in uploaded[show]:
                 uploaded[show][episodes] = 1
                 for track in rate[episodes]:
                     if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
                         tid += [rate[episodes][track]['trackid']]
+                        trackdict[episodes] += [rate[episodes][track]['trackid']]
                     pup += [rate[episodes][track]['trackid']]
                     if not rate[episodes][track]['trackid']:
                         mis += 1
@@ -764,16 +767,23 @@ class nts:
         if reset:
             rem = list(set(ids))
             hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
-            for i in hund:                    
+            for i in hund:
                 print(f'.resetting',end='\r')
                 self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
             ids = []
 
+        # return(trackdict)
+
         if tid:
-            hund = [tid[i:i+100] for i in range(0, len(tid), 100)]
-            for i in hund:                    
-                print(f'.tracks appended.', end='\r')
-                self.sp.user_playlist_add_tracks(self.user, pid, i)
+            print(f'.tracks appending.', end='\r')
+            for episode in list(trackdict.keys())[::-1]:
+                if trackdict[episode]:
+                    trackstoadd = trackdict[episode]
+                    hund = [trackstoadd[i:i+100] for i in range(0, len(trackstoadd), 100)]
+                    for i in hund:
+                        self.sp.user_playlist_add_tracks(self.user, pid, i,0)
+            print(f'.tracks appended.', end='\r')
+
 
             if almost:
                 almost = f'{almost} almost sure ;'
