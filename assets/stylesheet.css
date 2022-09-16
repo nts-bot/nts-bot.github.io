@@ -116,10 +116,10 @@ span {
 }
 
 .icon {
-  height: 1.2em;
-  vertical-align: baseline;
+  height: 2em;
   position:relative;
-  top: 0.2em;
+  /* overflow: hidden; */
+  margin: 0 0 -11px -0px;
 }
 
 .show {

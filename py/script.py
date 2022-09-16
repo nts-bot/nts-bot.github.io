@@ -598,7 +598,6 @@ class nts:
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
-        tbool = False
         convert = unidecode(tex)
         bl = SequenceMatcher(None,convert,tex).ratio()
         if bl < 0.01:
@@ -609,22 +608,25 @@ class nts:
             time.sleep(0.5)
             ln = translator.detect(tex).lang
             print(f'.{ln}.',end='\r')
-            try:
-                if ln != 'en':
-                    time.sleep(0.5)
-                    convert = translator.translate(tex,dest='en',src=ln).text
-                    tbool = True
-            except ValueError as error:
-                print(f'{ln} : {error}')
-                pass
-            except Exception as error:
-                try:
-                    print('.trying api again.')
-                    time.sleep(5.0)
-                    convert = translator.translate(tex,dest='en',src=ln).text
-                except Exception as error:
-                    raise RuntimeError(f'.api. error : {error}')
-        return(convert,tbool)
+            if ln != 'en':
+                tr = True
+                c = 0
+                while tr:
+                    c += 1
+                    print(f'<t{c}>',end='\r')
+                    try:
+                        time.sleep(0.5)
+                        convert = translator.translate(tex,dest='en',src=ln).text
+                        tr=False
+                    except ValueError as error:
+                        print(f'{ln} : {error}',end='\r')
+                        tr=False
+                        pass
+                    except Exception:
+                        print(f'[{c}!TTA]',end='\r')
+                        time.sleep(1.0)
+                        pass
+        return(convert)
 
     def ratio(self,a,b):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
@@ -645,10 +647,10 @@ class nts:
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        k1, t1 = self.trnslate(a) # O AUTHOR
-        k2, t2 = self.trnslate(b) # O TITLE
-        k3, t3 = self.trnslate(c) # S AUTHOR
-        k4, t4 = self.trnslate(d) # S TITLE
+        k1 = self.trnslate(a) # O AUTHOR
+        k2 = self.trnslate(b) # O TITLE
+        k3 = self.trnslate(c) # S AUTHOR
+        k4 = self.trnslate(d) # S TITLE
 
         r = [self.ratio(k1,k3), self.ratio(k3,k1), self.ratio(k1,k4), self.ratio(k4,k1)] # AUTHOR
         X1 = max(r)
@@ -1008,7 +1010,7 @@ class nts:
 
         # run syncronious mass request
         time.sleep(1.0)
-        taskdict = multithreading(taskdict, 16, 'rate') #_run
+        taskdict = multithreading(taskdict, 8, 'rate') #_run
         #
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
@@ -1206,7 +1208,7 @@ class nts:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back [NTS]<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.png" class="icon"/> = Bandcamp<br><a href="https://open.spotify.com/playlist/{pid}">⭕ - Show Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
+        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.png" class="icon"/> = Bandcamp<br><a href="https://open.spotify.com/playlist/{pid}">⭕ : Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
@@ -1231,7 +1233,7 @@ class nts:
 
                 try:
                     bc = bandcamp[i][j]['url']
-                    bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt.png" class="icon"/></a>  """
+                    bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt-invert.svg" class="icon"/></a>  """
                 except:
                     bnd = ''
                 
@@ -1271,6 +1273,10 @@ def multithreading(taskdict, no_workers,kind):
     stn = nts()
     stn.connect()
 
+    global count, amount
+    count = 0
+    amount = len(taskdict)
+
     class __worker__(Thread):
         def __init__(self, request_queue):
             Thread.__init__(self)
@@ -1282,21 +1288,38 @@ def multithreading(taskdict, no_workers,kind):
                 content = self.queue.get()
                 if content == "":
                     break
+
                 start = time.time()
+                global count, amount
+                count += 1
+                print(f'<r{count}>',end='\r')
                 taskid = list(content.keys())[0] # READ ID's
+
                 # TASK START
                 if kind == 'spotify':
                     taskdict[taskid] = stn._run(content[taskid]) 
                     # response = exec('self.nts.' + self.task + '("' + content + '")')
                 elif kind == 'rate':
-                    a0,t0,r0,u0 = stn.test(content[taskid]['s'],content[taskid]['qa'],content[taskid]['qt'])
+                    tn = True
+                    c = 0
+                    while tn:
+                        c += 1
+                        print(f'<T{c}>',end='\r')
+                        try:
+                            a0,t0,r0,u0 = stn.test(content[taskid]['s'],content[taskid]['qa'],content[taskid]['qt'])
+                            tn = False
+                        except:
+                            print(f'[{c}!{count}!TF]',end='\r')
+                            pass
                     taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
                 elif kind == 'bandcamp':
                     time.sleep(1.0)
                     taskdict[taskid] = stn.mt_request(content[taskid])
                 # TASK END
+
                 end = time.time()
-                print(round(end - start,4),end='\r')
+                print(f". . . . . .|{count}/{amount}.{round(end - start,2)}|",end='\r')
+
                 # self.results.append(response)
                 self.queue.task_done()
 
@@ -1325,6 +1348,7 @@ def multithreading(taskdict, no_workers,kind):
     #     r.extend(worker.results)
     # return r
 
+    print('.Threading.Complete.',end='\r')
     return(taskdict)
 
 #
