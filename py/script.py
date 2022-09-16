@@ -131,12 +131,12 @@ class nts:
             # SCRAPE
             if show in self._j2d(f'./meta'):
                 self.scrape(show,True)
-                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
-                self.ntstracklist(show,do)
+                # rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
+                self.ntstracklist(show)#,do
             else:
                 self.scrape(show,False,amount=10) # CHANGE AMOUNT TO 100 TO GET FULL EPISODELIST
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show)
-                self.ntstracklist(show,do)
+                self.ntstracklist(show)#,do
             # SEARCH/RATE
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
             if rq:
@@ -277,15 +277,12 @@ class nts:
     def ntstracklist(self,show,episodes=[]):
         episodelist = self._j2d(f'./tracklist/{show}')
         meta = self._j2d(f'./meta')
-        if episodes:
-            metabool = True
-        else:
+        if not episodes:
             episodes = episodelist
-            metabool = False
         for episode in episodes:
-            if episodelist[episode] and not metabool:
+            if episodelist[episode]:
                 pass
-            elif (isinstance(episodelist[episode],dict) and not episodelist[episode]) or metabool:
+            elif isinstance(episodelist[episode],dict): # and not episodelist[episode]
                 print(episode[:10], end='\r')
                 url = f"https://www.nts.live/shows/{show}/episodes/{episode}"
                 soup = bs(self.req(url).content, "html.parser")
@@ -776,7 +773,7 @@ class nts:
             hund = [tid[i:i+100] for i in range(0, len(tid), 100)]
             for i in hund:                    
                 print(f'.tracks appended.', end='\r')
-                self.sp.user_playlist_add_tracks(self.user, pid, i) #,position=0
+                self.sp.user_playlist_add_tracks(self.user, pid, i)
 
             if almost:
                 almost = f'{almost} almost sure ;'
