@@ -404,11 +404,11 @@ class nts:
                         pickle.dump(1, handle, protocol=pickle.HIGHEST_PROTOCOL)
                 else:
                     # print(f'.{path}.',end='\r')
-                    time.sleep(1.0)
+                    time.sleep(0.1)
                     self.wait(path,op)
             except Exception as error:
-                # print(f'.W.{error}.',end='\r')
-                time.sleep(5.0)
+                print(f'.W.{error}.',end='\r')
+                time.sleep(1.0)
                 self.wait(path,op)
 
     # SPOTIFY SEARCH
@@ -1277,17 +1277,24 @@ def multithreading(taskdict, no_workers,kind):
     stn = nts()
     stn.connect()
     stn.wait('thread',False)
-    global count, amount
+    global count, amount, task, c_lock
     count = 0
+    c_lock = Lock()
+    task = dict(taskdict)
     amount = len(taskdict)
     keys = list(taskdict.keys())
 
-    def counter():
+    def counter(tid,result):
+        global c_lock
+        c_lock.acquire()
+        taskdict[tid] = result
         stn.wait('thread',True)
         global count
         count += 1
+        f = int(count)
         stn.wait('thread',False)
-        return(count)
+        c_lock.release()
+        return(f)
 
 
     class __worker__(Thread):
@@ -1296,44 +1303,42 @@ def multithreading(taskdict, no_workers,kind):
             self.queue = request_queue
         def run(self): # def worker(workq):
             while not self.queue.empty(): # while True:
-                try:
-                    taskid = self.queue.get_nowait() #self.queue
-                    if not taskid:
-                        return
-                    start = time.time()
-                    # TASK START
-                    if kind == 'spotify':
-                        taskdict[taskid] = stn._run(taskdict[taskid])
-                        cont = counter()
-
-                    elif kind == 'rate':
-                        tn = True
-                        c = 0
-                        while tn:
-                            c += 1
-                            try:
-                                a0,t0,r0,u0 = stn.test(taskdict[taskid]['s'],taskdict[taskid]['qa'],taskdict[taskid]['qt'])
-                                tn = False
-                            except:
-                                print(f'[{c}/TF]',end='\r')
-                        taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
-                        cont = counter()
-
-                    elif kind == 'bandcamp':
-                        time.sleep(1.0)
-                        taskdict[taskid] = stn.mt_request(taskdict[taskid])
-                        cont = counter()
-
-                    # TASK END
-
-                    end = time.time()
-                    global amount
-                    print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
-                except Exception as error:
-                    print(f'.{error}.',end='\r')
+                taskid = self.queue.get_nowait() #self.queue
+                if not taskid:
+                    ''' EMERGENCY BREAK '''
+                    stn.wait('thread',True)
+                    global count, amount
+                    count = amount
+                    stn.wait('thread',False)
                     return
-                finally:
-                    self.queue.task_done() #self.queue
+                start = time.time()
+                # TASK START
+                if kind == 'spotify':
+                    result = stn._run(task[taskid])
+                    cont = counter(taskid,result)
+
+                elif kind == 'rate':
+                    tn = True
+                    c = 0
+                    while tn:
+                        c += 1
+                        try:
+                            a0,t0,r0,u0 = stn.test(task[taskid]['s'],task[taskid]['qa'],task[taskid]['qt'])
+                            tn = False
+                        except:
+                            print(f'[{c}/TF]',end='\r')
+                    cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+
+                elif kind == 'bandcamp':
+                    time.sleep(1.0)
+                    result = stn.mt_request(task[taskid])
+                    cont = counter(taskid,result)
+
+                # TASK END
+
+                end = time.time()
+                print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
+                self.queue.task_done() #self.queue
 
     # Create queue and add tasklist
     workq = queue.Queue()
@@ -1349,15 +1354,18 @@ def multithreading(taskdict, no_workers,kind):
         worker.start()
         workers.append(worker)
 
-    @timeout(5.0)
+    @timeout(10.0)
     def killthread(k):
         if k == 0:
             for worker in workers:
                 worker.join()
         elif k == 1:
+            stn.wait('thread',True)
             global count
-            print(f'!{count}!',end='\r')
-            if count == amount:
+            f = int(count)
+            stn.wait('thread',False)
+            print(f'({f})',end='\r')
+            if f == amount:
                 return(True)
             else:
                 return(False)
@@ -1376,59 +1384,4 @@ def multithreading(taskdict, no_workers,kind):
     print('.Threading.Complete.',end='\r')
     return(taskdict)
 #
-
-# OLD
-
-# Workers keep working till they receive an empty string
-# for _ in range(no_workers):
-#     q.put("")
-# # Create workers and add to the queue
-# workers = []
-# for _ in range(no_workers):
-#     worker = __worker__(q)
-#     worker.start()
-#     workers.append(worker)
-# # Join workers to wait till they finished
-# for worker in workers:
-#     worker.join()
-
-# Combine results from all workers
-    # r = dict()
-    # for worker in workers:
-    #     r |= worker.taskcopy
-
-# from concurrent import futures
-# from concurrent.futures import ThreadPoolExecutor
-
-# def worker(taskid):
-#     start = time.time()
-#     global count, amount
-#     count += 1
-#     content = taskdict[taskid]
-#     # TASK START
-#     if kind == 'spotify':
-#         taskdict[taskid] = stn._run(content) 
-#     elif kind == 'rate':
-#         tn = True
-#         c = 0
-#         while tn:
-#             c += 1
-#             try:
-#                 a0,t0,r0,u0 = stn.test(content['s'],content['qa'],contents['qt'])
-#                 tn = False
-#             except:
-#                 print(f'[{c}/{count}/TF]',end='\r')
-#                 pass
-#         taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
-#     elif kind == 'bandcamp':
-#         time.sleep(1.0)
-#         taskdict[taskid] = stn.mt_request(content)
-#     end = time.time()
-#     print(f"|{count}/{amount}/{round(end - start,2)}|",end='\r')
-#     return('')
-
-# def main():
-#     with ThreadPoolExecutor(max_workers=no_workers) as executor:
-#         results = executor.map(worker, keys)
-#         executor.shutdown(wait=True)
 
