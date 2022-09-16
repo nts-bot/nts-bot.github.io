@@ -17,5 +17,6 @@ for i in episodes:
     href = i['href']
     show = href.split('/')[2]
     epis = href.split('/')[-1]
-    shelf[show] = [epis]
+    if show not in shelf:
+        shelf[show] = [epis]
 nts.runscript(list(shelf.keys()))#[::-1])
