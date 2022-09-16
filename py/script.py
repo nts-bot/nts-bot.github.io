@@ -1274,22 +1274,18 @@ class nts:
 from multiprocessing import Process
 
 def multithreading(taskdict, no_workers,kind):
-
+    stn.wait('thread',False)
     stn = nts()
     stn.connect()
-    global count, amount, c_lock
-    count = 0
+    global count, amount
     amount = len(taskdict)
     keys = list(taskdict.keys())
-    c_lock = Lock()
 
     def counter():
-        global c_lock
-        c_lock.acquire()
+        stn.wait('thread',True)
         global count
         count += 1
-        c_lock.release()
-        return(count)
+        stn.wait('thread',False)
 
 
     class __worker__(Thread):
@@ -1358,7 +1354,7 @@ def multithreading(taskdict, no_workers,kind):
                 worker.join()
         elif k == 1:
             global count
-            print(f'.w{count}.',end=' ')
+            print(f'!{count}!',end='\r')
             if count == amount:
                 return(True)
             else:
