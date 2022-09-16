@@ -1353,7 +1353,7 @@ def multithreading(taskdict, no_workers,kind):
         worker.start()
         workers.append(worker)
 
-    @timeout(10.0)
+    @timeout(5.0)
     def killthread():
         for worker in workers:
             worker.join()
