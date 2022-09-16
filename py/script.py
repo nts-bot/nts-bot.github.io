@@ -1210,7 +1210,7 @@ class nts:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.png" class="icon"/> = Bandcamp<br><a href="https://open.spotify.com/playlist/{pid}">⭕ : Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
+        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.svg" class="icon"/> = Bandcamp<br><a href="https://open.spotify.com/playlist/{pid}">⭕ : Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
