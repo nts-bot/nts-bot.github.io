@@ -129,7 +129,7 @@ class nts:
             print(f'{oo[:50]}{i}/{len(shows)}')
             time.sleep(0.1)
             # SCRAPE
-            if show in self._j2d(f'./meta'):
+            if show in self._j2d(f'./meta'): # WIP
                 self.scrape(show,True)
                 # rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
                 self.ntstracklist(show)#,do)
