@@ -342,9 +342,9 @@ class nts:
         cid = os.getenv(f"{index[pick]}id")#('ssd')#
         secret = os.getenv(f"{index[pick]}st")#('sst')#
         self.sp = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope=['ugc-image-upload','playlist-modify-public'],username=self.user), requests_timeout=5, retries=5)
-        print('Testing . . .')
+        print('. Testing . ',end='')
         test = self.sp.user(self.user)
-        print('. . . . . . . . Successful',end='\r')
+        print('Successful',end='\r')
 
     def connect(self):
         ''' CONNECTION HANDLER ; VIA https://developer.spotify.com/dashboard/applications '''
@@ -353,7 +353,7 @@ class nts:
         try:
             with open('./extra/spotipywebapi.pickle', 'rb') as handle:
                 pick = pickle.load(handle)
-            print(index[pick])
+            print(index[pick],end=' ')
             self.subconnect(index,pick)
             self.wait('connect',False)
         except Exception:
@@ -599,7 +599,7 @@ class nts:
         if trans:
             time.sleep(0.5)
             ln = translator.detect(tex).lang
-            print(f'.{ln}.',end='\r')
+            print(f'({ln})',end='\r')
             if ln != 'en':
                 tr = True
                 c = 0
@@ -618,6 +618,7 @@ class nts:
                         print(f'[{c}/TTA]',end='\r')
                         time.sleep(1.0)
                         pass
+        print(f' {" "*len(ln)} ',end='\r')
         return(convert)
 
     def ratio(self,a,b):
@@ -1210,7 +1211,8 @@ class nts:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote>⚫⚪ = Listen Back<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.svg" class="icon"/> = Bandcamp<br><a href="https://open.spotify.com/playlist/{pid}">⭕ : Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
+        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote><a href="https://open.spotify.com/playlist/{pid}">⭕ : Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
+        #⚫⚪ = Listen Back<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.svg" class="icon"/> = Bandcamp<br>
 
         # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
 
@@ -1235,7 +1237,7 @@ class nts:
 
                 try:
                     bc = bandcamp[i][j]['url']
-                    bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt-invert.svg" class="icon"/></a>  """
+                    bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt.svg" class="subicon"/></a>  """
                 except:
                     bnd = ''
                 
@@ -1294,7 +1296,6 @@ def multithreading(taskdict, no_workers,kind):
                 start = time.time()
                 global count, amount
                 count += 1
-                # print(f'<r{count}>',end='\r')
                 taskid = list(content.keys())[0] # READ ID's
 
                 # TASK START
@@ -1306,7 +1307,6 @@ def multithreading(taskdict, no_workers,kind):
                     c = 0
                     while tn:
                         c += 1
-                        # print(f'<T{c}>',end='\r')
                         try:
                             a0,t0,r0,u0 = stn.test(content[taskid]['s'],content[taskid]['qa'],content[taskid]['qt'])
                             tn = False
@@ -1320,9 +1320,7 @@ def multithreading(taskdict, no_workers,kind):
                 # TASK END
 
                 end = time.time()
-                print(f"|{count}/{amount}.{round(end - start,2)}|",end='\r')
-
-                # self.results.append(response)
+                print(f"|{count}/{amount}/{round(end - start,2)}|",end='\r')
                 self.queue.task_done()
 
     # Create queue and add tasklist
@@ -1343,12 +1341,6 @@ def multithreading(taskdict, no_workers,kind):
     # Join workers to wait till they finished
     for worker in workers:
         worker.join()
-
-    # # Combine results from all workers
-    # r = []
-    # for worker in workers:
-    #     r.extend(worker.results)
-    # return r
 
     print('.Threading.Complete.',end='\r')
     return(taskdict)
