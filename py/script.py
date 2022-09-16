@@ -403,11 +403,11 @@ class nts:
                     with open(f'./extra/{path}.pickle', 'wb') as handle:
                         pickle.dump(1, handle, protocol=pickle.HIGHEST_PROTOCOL)
                 else:
-                    print(f'.waiting. : {path}',end='\r')
+                    # print(f'.{path}.',end='\r')
                     time.sleep(1.0)
                     self.wait(path,op)
             except Exception as error:
-                print(f'.other error. : {error}',end='\r')
+                # print(f'.W.{error}.',end='\r')
                 time.sleep(5.0)
                 self.wait(path,op)
 
@@ -1274,10 +1274,11 @@ class nts:
 from multiprocessing import Process
 
 def multithreading(taskdict, no_workers,kind):
-    stn.wait('thread',False)
     stn = nts()
     stn.connect()
+    stn.wait('thread',False)
     global count, amount
+    count = 0
     amount = len(taskdict)
     keys = list(taskdict.keys())
 
@@ -1286,6 +1287,7 @@ def multithreading(taskdict, no_workers,kind):
         global count
         count += 1
         stn.wait('thread',False)
+        return(count)
 
 
     class __worker__(Thread):
@@ -1362,7 +1364,7 @@ def multithreading(taskdict, no_workers,kind):
 
     kill = False
     while not kill:
-        time.sleep(1.0)
+        time.sleep(5.0)
         try:
             killthread(0)
             kill = True
