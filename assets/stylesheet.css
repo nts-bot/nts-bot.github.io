@@ -115,6 +115,13 @@ span {
   background-color: #000;
 }
 
+.icon {
+  height: 1.2em;
+  vertical-align: baseline;
+  position:relative;
+  top: 0.2em;
+}
+
 .show {
   text-decoration: underline;
 }

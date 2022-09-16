@@ -1,11 +1,9 @@
-import warnings
-warnings.filterwarnings("ignore")
-# Basic Libraries
-import os, json, time, requests, re, pickle, urllib, math
+# BASIC LIBRARIES
+import os, json, time, requests, re, pickle, urllib
 from urllib.error import HTTPError
-# Html Parser
+# HTML PARSER
 from bs4 import BeautifulSoup as bs
-# Browser
+# BROWSER
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -16,7 +14,7 @@ from selenium.webdriver.common.keys import Keys
 from pprint import pprint
 # SPOTIFY API TOOL
 import spotipy
-# # Multiple Requests
+# MULTITHREADING TASKS
 import queue
 # IMAGE PROCESSING TOOLS
 import cv2
@@ -30,7 +28,7 @@ from difflib import SequenceMatcher
 # TIMEOUT FUNCTION
 import functools
 from threading import Thread
-# Environment Variables
+# ENVIRONMENT VARIABLES
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -449,8 +447,8 @@ class nts:
             return(ref['id'])
 
     def searchloop(self,show,jsonlist,kind='search',episodelist=[]):
-        # jsonlist = [TRACKLIST, DO-ON, ADDITIONALS]
-
+        
+        '''jsonlist = [TRACKLIST, DO-ON, ADDITIONALS] ''' 
         for jsondir in jsonlist:
             locals()[jsondir] = self._j2d(f'./{jsondir}/{show}')
 
@@ -461,13 +459,13 @@ class nts:
         multiple = dict()
 
         for episode in episodelist:
-            first = False
+            # first = False
             multiple[episode] = dict()
 
             print(f'{show[:7]}{episode[:7]}. . . . . . . . . .{total.index(episode)}:{len(total)}.',end='\r')
             if episode not in eval(jsonlist[1]):
                 eval(jsonlist[1])[episode] = dict()
-                first = True
+                # first = True
             ok = eval(jsonlist[0])[episode].keys()
             nk = eval(jsonlist[1])[episode].keys()
             vl = [i for i in eval(jsonlist[1])[episode].values()]
@@ -480,7 +478,7 @@ class nts:
                     except KeyError:
                         second = True
                     if second:
-                        first = True
+                        # first = True
                         print(f'{show[:7]}{episode[:7]}. . . . .{list(ok).index(trdx)}:{len(list(ok))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
@@ -488,28 +486,27 @@ class nts:
                             multiple[episode][trdx] = 0
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
-                            eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
+                            # eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
+                            multiple[episode][trdx] = 0
                         elif kind == 'bandcamp':
                             # 0 : TRACKLIST ; 1 : BANDCAMP ; 2 : RATE
                             # eval(jsonlist[1])[episode][trdx] = self.bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
                             multiple[episode][trdx] = 0
-
-            if first:
-                if kind == 'rate':
-                    ''' REMOVE UNKNOWNS '''
-                    for j in eval(jsonlist[1]):
-                        for k in eval(jsonlist[1])[j]:
-                            if 'Unknown Artist' in eval(jsonlist[1])[j][k]['artist']:
-                                eval(jsonlist[1])[j][k]["ratio"] = -1
-                                eval(jsonlist[1])[j][k]["uri"] = ''
-                            if 'Unknown' == eval(jsonlist[1])[j][k]['artist']:
-                                eval(jsonlist[1])[j][k]["ratio"] = -1
-                                eval(jsonlist[1])[j][k]["uri"] = ''
-                self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
     
         if any([True for i in multiple if multiple[i]]):
             if kind == 'search':
                 req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
+            elif kind == 'rate':
+                req = self.mt_spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
+                # ''' REMOVE UNKNOWNS (unecessary) '''
+                # for j in req:
+                #     for k in req[j]:
+                #         if 'Unknown Artist' in req[j][k]['artist']:
+                #             req[j][k]["ratio"] = -1
+                #             req[j][k]["uri"] = ''
+                #         if 'Unknown' == req[j][k]['artist']:
+                #             req[j][k]["ratio"] = -1
+                #             req[j][k]["uri"] = ''
             elif kind == 'bandcamp':
                 req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
             for episode in multiple:
@@ -518,6 +515,7 @@ class nts:
             self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
 
     def spotifysearch(self,showson,episode,trdx):
+        ''' Not Used '''
         q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
         q1 = f'{showson[episode][trdx]["artist"]} : {showson[episode][trdx]["title"]}'
         s0 = self._run(q0)
@@ -970,6 +968,82 @@ class nts:
 
         return(q1)
 
+    def mt_spotifyrate(self,showson,srchson,multiple):
+
+        q1 = dict()
+        q2 = dict()
+        for episode in multiple:
+            q1[episode] = dict()
+            q2[episode] = dict()
+            for td in multiple[episode]:
+                
+                qa = showson[episode][td]["artist"]
+                qt = showson[episode][td]["title"]
+                s0 = srchson[episode][td]['s0']
+                s1 = srchson[episode][td]['s1']
+
+                if all([qa,qt]) and (qa,qt != 'Unknown') and ('Unknown Artist' not in qa):
+                    q1[episode][td] = {'s':s0,'qa':qa,'qt':qt}
+                    q2[episode][td] = {'s':s1,'qa':qa,'qt':qt}
+                else:
+                    q1[episode][td] = {'s':'','qa':'','qt':''}
+                    q2[episode][td] = {'s':'','qa':'','qt':''}
+
+        return(self.mt_rate(q1,q2))
+
+    def mt_rate(self,q1,q2):
+
+        # flatten queries
+        Q1, Q2 = [q1[l1][l2] for l1 in q1 for l2 in q1[l1]], [q2[l1][l2] for l1 in q2 for l2 in q2[l1]]
+        print(f'.{len(Q1)}.{len(Q2)}')
+
+        taskdict = {f"q1.{l1:03}.{l2:03}":q1[list(q1.keys())[l1]][list(q1[list(q1.keys())[l1]].keys())[l2]] 
+                    for l1 in range(len(q1)) 
+                    for l2 in range(len(q1[list(q1.keys())[l1]]))
+                    }
+        taskdict |= {f"q2.{l1:03}.{l2:03}":q2[list(q2.keys())[l1]][list(q2[list(q2.keys())[l1]].keys())[l2]] 
+                    for l1 in range(len(q2)) 
+                    for l2 in range(len(q2[list(q2.keys())[l1]]))
+                    }
+
+        # run syncronious mass request
+        time.sleep(1.0)
+        taskdict = multithreading(taskdict, 16, 'rate') #_run
+        #
+        for l1 in range(len(q1)):
+            episode = list(q1.keys())[l1]
+            for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
+                td = list(q1[list(q1.keys())[l1]].keys())[l2]
+                #
+                a0,t0,r0,u0 = taskdict[f"q1.{l1:03}.{l2:03}"]['a'],taskdict[f"q1.{l1:03}.{l2:03}"]['t'],taskdict[f"q1.{l1:03}.{l2:03}"]['r'],taskdict[f"q1.{l1:03}.{l2:03}"]['u']
+                a1,t1,r1,u1 = taskdict[f"q2.{l1:03}.{l2:03}"]['a'],taskdict[f"q2.{l1:03}.{l2:03}"]['t'],taskdict[f"q2.{l1:03}.{l2:03}"]['r'],taskdict[f"q2.{l1:03}.{l2:03}"]['u']
+                #
+                if ([a0,t0,r0,u0] != ['','',0,'']) or ([a1,t1,r1,u1] != ['','',0,'']):
+                    dx = [r0,r1].index(max([r0,r1]))
+                    if round(eval(f'r{dx}'),1) >= 0.4:
+                        lag = 1
+                    if round(eval(f'r{dx}'),1) >= 0.5:
+                        lag = 2
+                    if round(eval(f'r{dx}'),1) >= 0.6:
+                        lag = 3
+                    if round(eval(f'r{dx}'),1) >= 0.7:
+                        lag = 4
+                    if round(eval(f'r{dx}'),1) >= 0.8:
+                        lag = 5
+                    if round(eval(f'r{dx}'),1) >= 0.9:
+                        lag = 6
+                    if round(eval(f'r{dx}'),1) < 0.4:
+                        lag = 0
+
+                    if any([a0,a1]):
+                        q1[episode][td] = {'artist':eval(f'a{dx}'),'title':eval(f't{dx}'),'ratio':lag,'trackid':eval(f'u{dx}')}
+                    else:
+                        q1[episode][td] = {'artist':eval(f'a{dx}'),'title':eval(f't{dx}'),'ratio':-1,'trackid':''}
+                else:
+                    q1[episode][td] = {'artist':'','title':'','ratio':-1,'trackid':''}
+
+        return(q1)
+
     def mt_bandcamp(self,showson,rateson,multiple):
         
         q1 = dict()
@@ -1001,7 +1075,7 @@ class nts:
 
         return(self.upndict(qfailure,qsuccess))
 
-    def mt_camp(self,query):
+    def mt_camp(self,query): # WIP
 
         # flatten query
         querylist = [query[l1][l2] for l1 in query for l2 in query[l1]]
@@ -1208,12 +1282,15 @@ def multithreading(taskdict, no_workers,kind):
                 content = self.queue.get()
                 if content == "":
                     break
-                #
-                start = time.time() # if not isinstance(content,list): #     content = [content]
+                start = time.time()
                 taskid = list(content.keys())[0] # READ ID's
                 # TASK START
                 if kind == 'spotify':
-                    taskdict[taskid] = stn._run(content[taskid]) # response = exec('self.nts.' + self.task + '("' + content + '")')
+                    taskdict[taskid] = stn._run(content[taskid]) 
+                    # response = exec('self.nts.' + self.task + '("' + content + '")')
+                elif kind == 'rate':
+                    a0,t0,r0,u0 = stn.test(content[taskid]['s'],content[taskid]['qa'],content[taskid]['qt'])
+                    taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
                 elif kind == 'bandcamp':
                     time.sleep(1.0)
                     taskdict[taskid] = stn.mt_request(content[taskid])
