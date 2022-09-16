@@ -1362,12 +1362,12 @@ def multithreading(taskdict, no_workers,kind):
             if count == amount:
                 kill = True
         if keys:
-            print('.unfinished.',end='\r')
             for taskid in keys:
                 cont = task(kind,taskid)
     else:
+        for worker in workers:
+            worker.join()
 
-    
     print('.Threading.Complete.',end='\r')
     return(taskdict)
 #
