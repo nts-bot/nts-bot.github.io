@@ -18,4 +18,4 @@ for i in episodes:
     show = href.split('/')[2]
     epis = href.split('/')[-1]
     shelf[show] = [epis]
-nts.runscript(list(shelf.keys()))#[::-1]
+nts.runscript(list(shelf.keys())[:])#[::-1]

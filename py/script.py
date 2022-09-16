@@ -1299,7 +1299,6 @@ def multithreading(taskdict, no_workers,kind):
         if kind == 'spotify':
             result = stn._run(taskcopy[taskid])
             cont = counter(taskid,result)
-
         elif kind == 'rate':
             tn = True
             c = 0
@@ -1311,7 +1310,6 @@ def multithreading(taskdict, no_workers,kind):
                 except:
                     print(f'[{c}/TF]',end='\r')
             cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-
         elif kind == 'bandcamp':
             time.sleep(1.0)
             result = stn.mt_request(taskcopy[taskid])
@@ -1328,9 +1326,10 @@ def multithreading(taskdict, no_workers,kind):
             while not self.queue.empty(): # while True:
                 taskid = self.queue.get_nowait() #self.queue
                 if not taskid:
-                    ''' EMERGENCY BREAK '''
-                    global count
-                    count = amount
+                    if kind=='rate':
+                        ''' EMERGENCY BREAK '''
+                        global count
+                        count = amount
                     break
                 start = time.time()
                 # TASK START
@@ -1354,35 +1353,20 @@ def multithreading(taskdict, no_workers,kind):
         worker.start()
         workers.append(worker)
 
-    @timeout(5.0)
-    def killthread(k):
-        if k == 0:
-            for worker in workers:
-                worker.join()
-        elif k == 1:
-            global count
+
+    if kind == 'rate':
+        kill = False
+        while not kill:
+            time.sleep(10.0)
             print(f'({count})',end='\r')
             if count == amount:
-                return(True)
-            else:
-                return(False)
+                kill = True
+        if keys:
+            print('.unfinished.',end='\r')
+            for taskid in keys:
+                cont = task(kind,taskid)
+    else:
 
-    kill = False
-    while not kill:
-        time.sleep(5.0)
-        try:
-            killthread(0)
-            kill = True
-        except Exception:
-            pass
-        if not kill:
-            kill = killthread(1)
-
-    time.sleep(5.0)
-    if keys:
-        print('.unfinished.',end='\r')
-        for taskid in keys:
-            cont = task(taskid,kind)
     
     print('.Threading.Complete.',end='\r')
     return(taskdict)
