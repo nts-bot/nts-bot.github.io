@@ -8,7 +8,7 @@ os.chdir(f"{dr}/py")
 import script
 nts = script.nts()
 
-am = 50 #10 # 50 ~ a week of shows
+am = 10 #10 # 50 ~ a week of shows
 
 soup = nts.browse("https://www.nts.live/latest",amount=am)
 episodes = soup.select('a.nts-grid-v2-item__header')
