@@ -135,12 +135,12 @@ class nts:
             # SCRAPE
             if show in self._j2d(f'./meta'): # WIP
                 self.scrape(show,True)
-                # rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                self.ntstracklist(show)#,do)
+                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                self.ntstracklist(show,do)
             else:
                 self.scrape(show,False,amount=10) # CHANGE AMOUNT TO 100 TO GET FULL EPISODELIST
-                # rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                self.ntstracklist(show)#,do)
+                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                self.ntstracklist(show,do)
             # SEARCH/RATE
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
             if rq:
@@ -755,31 +755,29 @@ class nts:
                         unsure += 1
             else:
                 pass
-
-        tidup = self.scene(tid[::-1])[::-1]
-        dups = len(tid) - len(tidup)
-        
-        current = self.sp.user_playlist_tracks(self.user,pid)
-        tracks = current['items']
-        #
-        while current['next']:
-            current = self.sp.next(current)
-            tracks.extend(current['items'])        
-        ids = []
-        for x in tracks:
-            ids.append(x['track']['id'])
-
-        if reset:
-            rem = list(set(ids))
-            hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
-            for i in hund:
-                print(f'.resetting',end='\r')
-                self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
-            ids = []
-
-        # return(trackdict)
-
         if tid:
+            
+            tidup = self.scene(tid[::-1])[::-1]
+            dups = len(tid) - len(tidup)
+            
+            current = self.sp.user_playlist_tracks(self.user,pid)
+            tracks = current['items']
+            #
+            while current['next']:
+                current = self.sp.next(current)
+                tracks.extend(current['items'])        
+            ids = []
+            for x in tracks:
+                ids.append(x['track']['id'])
+
+            if reset:
+                rem = list(set(ids))
+                hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
+                for i in hund:
+                    print(f'.resetting',end='\r')
+                    self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
+                ids = []
+
             print(f'.tracks appending.', end='\r')
             for episode in list(trackdict.keys())[::-1]:
                 if trackdict[episode]:
@@ -1354,20 +1352,27 @@ def multithreading(taskdict, no_workers,kind):
         workers.append(worker)
 
     @timeout(5.0)
-    def killthread():
-        for worker in workers:
-            worker.join()
+    def killthread(k):
+        if k == 0:
+            for worker in workers:
+                worker.join()
+        elif k == 1:
+            global count
+            if count == amount:
+                return(True)
+            else:
+                return(False)
 
     kill = False
     while not kill:
         time.sleep(1.0)
         try:
-            killthread()
+            killthread(0)
             kill = True
         except Exception:
             pass
-        if count == amount:
-            kill = True
+        if not kill:
+            kill = killthread(1)
     
     print('.Threading.Complete.',end='\r')
     return(taskdict)
