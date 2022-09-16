@@ -1,4 +1,5 @@
 # BASIC LIBRARIES
+from importlib.resources import contents
 import os, json, time, requests, re, pickle, urllib
 from urllib.error import HTTPError
 # HTML PARSER
@@ -27,7 +28,7 @@ from unidecode import unidecode
 from difflib import SequenceMatcher
 # TIMEOUT FUNCTION
 import functools
-from threading import Thread
+from threading import Thread, Lock
 # ENVIRONMENT VARIABLES
 from dotenv import load_dotenv
 load_dotenv()
@@ -108,11 +109,14 @@ class nts:
                     for j in js1[i]: # tracks
                         if j not in js2[i]:
                             ok += [True]
+                            do += [i]
                         else:
                             if not js2[i][j]:
                                 ok += [True]
+                                do += [i]
                             else:
                                 ok += [False]
+        do = self.scene(do)
         if do:
             print(f'.{json1[2:5]}:{json2[2:5]}:{len(do)}.',end='\r')
         return(any(ok),do)
@@ -489,16 +493,15 @@ class nts:
             if kind == 'search':
                 req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
             elif kind == 'rate':
+                # if len(multiple) <= 3:
                 req = self.mt_spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
-                # ''' REMOVE UNKNOWNS (unecessary) '''
-                # for j in req:
-                #     for k in req[j]:
-                #         if 'Unknown Artist' in req[j][k]['artist']:
-                #             req[j][k]["ratio"] = -1
-                #             req[j][k]["uri"] = ''
-                #         if 'Unknown' == req[j][k]['artist']:
-                #             req[j][k]["ratio"] = -1
-                #             req[j][k]["uri"] = ''
+                # else:
+                #     req = dict()
+                #     keys = list(multiple.keys())
+                #     n = 2
+                #     for di in range(0,len(keys),n):
+                #         subdic = {k: multiple[k] for k in keys[di: di + n]}
+                #         req |= self.mt_spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),subdic)
             elif kind == 'bandcamp':
                 req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
             for episode in multiple:
@@ -599,7 +602,7 @@ class nts:
         if trans:
             time.sleep(0.5)
             ln = translator.detect(tex).lang
-            print(f'({ln})',end='\r')
+            # print(f'({ln})',end='\r')
             if ln != 'en':
                 tr = True
                 c = 0
@@ -609,16 +612,17 @@ class nts:
                     try:
                         time.sleep(0.5)
                         convert = translator.translate(tex,dest='en',src=ln).text
+                        # print(f' {" "*len(ln)} ',end='\r')
                         tr=False
                     except ValueError as error:
                         print(f'{ln} : {error}',end='\r')
                         tr=False
                         pass
                     except Exception:
-                        print(f'[{c}/TTA]',end='\r')
+                        # print(f'[{c}/TTA]',end='\r')
+                        print(f'[{c}]',end='\r')
                         time.sleep(1.0)
                         pass
-        print(f' {" "*len(ln)} ',end='\r')
         return(convert)
 
     def ratio(self,a,b):
@@ -1011,10 +1015,8 @@ class nts:
                     for l2 in range(len(q2[list(q2.keys())[l1]]))
                     }
 
-        # run syncronious mass request
-        time.sleep(1.0)
         taskdict = multithreading(taskdict, 8, 'rate') #_run
-        #
+        
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
             for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
@@ -1271,78 +1273,158 @@ class nts:
 # END
 
 # MULTITHREADING WORKER
+from multiprocessing import Process
 
 def multithreading(taskdict, no_workers,kind):
 
     stn = nts()
     stn.connect()
-
-    global count, amount
+    global count, amount, c_lock
     count = 0
     amount = len(taskdict)
+    keys = list(taskdict.keys())
+    c_lock = Lock()
+
+    def counter():
+        global c_lock
+        c_lock.acquire()
+        global count
+        count += 1
+        c_lock.release()
+        return(count)
+
 
     class __worker__(Thread):
         def __init__(self, request_queue):
             Thread.__init__(self)
             self.queue = request_queue
-            self.results = []
+        def run(self): # def worker(workq):
+            while not self.queue.empty(): # while True:
+                try:
+                    taskid = self.queue.get_nowait() #self.queue
+                    if not taskid:
+                        return
+                    start = time.time()
+                    # TASK START
+                    if kind == 'spotify':
+                        taskdict[taskid] = stn._run(taskdict[taskid])
+                        cont = counter()
 
-        def run(self):
-            while True:
-                content = self.queue.get()
-                if content == "":
-                    break
+                    elif kind == 'rate':
+                        tn = True
+                        c = 0
+                        while tn:
+                            c += 1
+                            try:
+                                a0,t0,r0,u0 = stn.test(taskdict[taskid]['s'],taskdict[taskid]['qa'],taskdict[taskid]['qt'])
+                                tn = False
+                            except:
+                                print(f'[{c}/TF]',end='\r')
+                        taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
+                        cont = counter()
 
-                start = time.time()
-                global count, amount
-                count += 1
-                taskid = list(content.keys())[0] # READ ID's
+                    elif kind == 'bandcamp':
+                        time.sleep(1.0)
+                        taskdict[taskid] = stn.mt_request(taskdict[taskid])
+                        cont = counter()
 
-                # TASK START
-                if kind == 'spotify':
-                    taskdict[taskid] = stn._run(content[taskid]) 
-                    # response = exec('self.nts.' + self.task + '("' + content + '")')
-                elif kind == 'rate':
-                    tn = True
-                    c = 0
-                    while tn:
-                        c += 1
-                        try:
-                            a0,t0,r0,u0 = stn.test(content[taskid]['s'],content[taskid]['qa'],content[taskid]['qt'])
-                            tn = False
-                        except:
-                            print(f'[{c}/{count}/TF]',end='\r')
-                            pass
-                    taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
-                elif kind == 'bandcamp':
-                    time.sleep(1.0)
-                    taskdict[taskid] = stn.mt_request(content[taskid])
-                # TASK END
+                    # TASK END
 
-                end = time.time()
-                print(f"|{count}/{amount}/{round(end - start,2)}|",end='\r')
-                self.queue.task_done()
+                    end = time.time()
+                    global amount
+                    print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
+                except Exception as error:
+                    print(f'.{error}.',end='\r')
+                    return
+                finally:
+                    self.queue.task_done() #self.queue
 
     # Create queue and add tasklist
-    q = queue.Queue()
-    for url in taskdict:
-        q.put({url : taskdict[url]})
-
-    # Workers keep working till they receive an empty string
+    workq = queue.Queue()
+    for k in keys:
+        workq.put(k)
     for _ in range(no_workers):
-        q.put("")
+        workq.put("")
 
-    # Create workers and add tot the queue
+    # Create workers and add to the queue
     workers = []
     for _ in range(no_workers):
-        worker = __worker__(q)
+        worker = __worker__(workq)
         worker.start()
         workers.append(worker)
-    # Join workers to wait till they finished
-    for worker in workers:
-        worker.join()
 
+    @timeout(10.0)
+    def killthread():
+        for worker in workers:
+            worker.join()
+
+    kill = False
+    while not kill:
+        time.sleep(1.0)
+        try:
+            killthread()
+            kill = True
+        except Exception:
+            pass
+        if count == amount:
+            kill = True
+    
     print('.Threading.Complete.',end='\r')
     return(taskdict)
-
 #
+
+# OLD
+
+# Workers keep working till they receive an empty string
+# for _ in range(no_workers):
+#     q.put("")
+# # Create workers and add to the queue
+# workers = []
+# for _ in range(no_workers):
+#     worker = __worker__(q)
+#     worker.start()
+#     workers.append(worker)
+# # Join workers to wait till they finished
+# for worker in workers:
+#     worker.join()
+
+# Combine results from all workers
+    # r = dict()
+    # for worker in workers:
+    #     r |= worker.taskcopy
+
+# from concurrent import futures
+# from concurrent.futures import ThreadPoolExecutor
+
+# def worker(taskid):
+#     start = time.time()
+#     global count, amount
+#     count += 1
+#     content = taskdict[taskid]
+#     # TASK START
+#     if kind == 'spotify':
+#         taskdict[taskid] = stn._run(content) 
+#     elif kind == 'rate':
+#         tn = True
+#         c = 0
+#         while tn:
+#             c += 1
+#             try:
+#                 a0,t0,r0,u0 = stn.test(content['s'],content['qa'],contents['qt'])
+#                 tn = False
+#             except:
+#                 print(f'[{c}/{count}/TF]',end='\r')
+#                 pass
+#         taskdict[taskid] = {'a':a0,'t':t0,'r':r0,'u':u0}
+#     elif kind == 'bandcamp':
+#         time.sleep(1.0)
+#         taskdict[taskid] = stn.mt_request(content)
+#     end = time.time()
+#     print(f"|{count}/{amount}/{round(end - start,2)}|",end='\r')
+#     return('')
+
+# def main():
+#     with ThreadPoolExecutor(max_workers=no_workers) as executor:
+#         results = executor.map(worker, keys)
+#         executor.shutdown(wait=True)
+
