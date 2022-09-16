@@ -1358,6 +1358,7 @@ def multithreading(taskdict, no_workers,kind):
                 worker.join()
         elif k == 1:
             global count
+            print(f'.w{count}.',end=' ')
             if count == amount:
                 return(True)
             else:
