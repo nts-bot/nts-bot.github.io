@@ -602,8 +602,13 @@ class nts:
             trans = False
         if trans:
             time.sleep(0.5)
-            ln = translator.detect(tex).lang
-            # print(f'({ln})',end='\r')
+            tr = True
+            while tr:
+                try:
+                    ln = translator.detect(tex).lang
+                    tr = False
+                except:
+                    time.sleep(1.0)
             if ln != 'en':
                 tr = True
                 c = 0
@@ -618,9 +623,12 @@ class nts:
                         tr=False
                         pass
                     except Exception:
+                        print(f'{c}$',end='\r')
                         if c < 3:
                             time.sleep(1.0)
                         elif c < 6:
+                            time.sleep(3.0)
+                        elif c < 10:
                             time.sleep(5.0)
                         else:
                             time.sleep(10.0)
@@ -1287,8 +1295,9 @@ def multithreading(taskdict, no_workers,kind):
     amount = len(taskdict)
     keys = list(taskdict.keys())[::-1]
 
-    def counter(tid,result):
-        c_lock.acquire()
+    def counter(tid,result,thr=True):
+        if thr:
+            c_lock.acquire()
         try:
             keys.remove(tid)
             taskdict[tid] = result
@@ -1296,7 +1305,8 @@ def multithreading(taskdict, no_workers,kind):
             pass
         global count
         count += 1
-        c_lock.release()
+        if thr:
+            c_lock.release()
         return(count)
 
     def task(kind,taskid):
@@ -1305,11 +1315,14 @@ def multithreading(taskdict, no_workers,kind):
             cont = counter(taskid,result)
         elif kind == 'rate':
             tn = True
+            p = 0
             while tn:
                 try:
+                    p += 1
                     a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
                     tn = False
                 except:
+                    print(error,end='\r')
                     pass
             cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
         elif kind == 'bandcamp':
@@ -1357,20 +1370,21 @@ def multithreading(taskdict, no_workers,kind):
                 print(f'({count})',end='\r')
                 if count >= amount:
                     kill = True
-                elif count + 10 >= no_workers:
+                elif count + 10 >= amount:
                     kill = True
                     sys.exit()
-                # if (wcount == count) and ((count + 5 > amount) or (g > 3)):
-                #     kill = True
-                # else:
-                #     wcount = count
-                #     if count + 10 > amount:
-                #         g += 1
         except SystemExit:
             print('.double-checking.')
-            for k in taskcopy:
-                if taskcopy[k] == taskdict[k]:
-                    ct = task('rate',k)
+            for taskid in taskcopy:
+                if taskcopy[taskid] == taskdict[taskid]:
+                    tn = True
+                    while tn:
+                        try:
+                            a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
+                            tn = False
+                        except Exception as error:
+                            pass
+                    cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0},False)
     else:
         for worker in workers:
             worker.join()
