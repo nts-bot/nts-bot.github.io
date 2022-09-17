@@ -133,7 +133,7 @@ class nts:
             if show in self._j2d(f'./meta'):
                 sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
                 fp = sortmeta[0][0].split('.')
-                if (len(sortmeta) < 30) and (fp[0] != '22'):
+                if ((len(sortmeta) < 12) and (fp[0] != '22')) or ((len(sortmeta) < 24) and (fp[0] != '21')):
                     self.scrape(show,False,amount=100)
                     rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
                     if rq:
@@ -756,7 +756,6 @@ class nts:
     def spotifyplaylist(self,show,threshold=[3,10],reset=False): #remove=False,
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
-        rate = self._j2d(f'./spotify/{show}')
         meta = self._j2d(f'./meta')[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
         #
@@ -765,7 +764,7 @@ class nts:
         if show not in uploaded:
             uploaded[show] = dict()
             reset = True
-        elif sortmeta:
+        elif (sortmeta) and (uploaded[show]):
             metacopy = [i[1] for i in sortmeta]
             met0 = list(uploaded[show].keys())
             for i in met0[:-1]:
@@ -773,7 +772,20 @@ class nts:
             metaind = metacopy.index(met0[-1])
             met1 = metacopy[:metaind] #old shows
             if met1:
+                uploaded[show] = dict() # reset upload
                 reset = True
+        #
+        rate = self._j2d(f'./spotify/{show}')
+        ''' REMOVE UNKNOWNS '''
+        for j in rate:
+            for k in rate[j]:
+                if 'Unknown Artist' in rate[j][k]['artist']:
+                    rate[j][k]["ratio"] = -1
+                    rate[j][k]["uri"] = ''
+                if 'Unknown' == rate[j][k]['artist']:
+                    rate[j][k]["ratio"] = -1
+                    rate[j][k]["uri"] = ''
+        self._d2j(f'./spotify/{show}',rate)
         #
         tid = []
         trackdict = dict()
