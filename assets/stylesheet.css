@@ -117,23 +117,23 @@ span {
 
 .icon {
   height: 1.5em;
-  position:relative;
-  /* overflow: hidden; */
-  margin: 0px 0px -3px 5px;
+  margin: 1px 0px 0px 10px;
 }
 
 .picon {
   height: 1em;
-  position:relative;
-  margin: 0px 0px -15px 20px;
+  margin: 10px 0px 0px 20px;
 }
 
-.subicon{
+.subicon {
   height: 3em;
-  position:relative;
-  margin: 0 0 -15px -0px;
+  margin: -7.25px 0px 0px 2px;
   -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
   filter: invert(100%);  
+}
+
+img{
+  position:absolute;
 }
 
 .show {
