@@ -1229,7 +1229,7 @@ class nts:
                 ttit = episodes[i][j]['title']
 
                 try:
-                    bc = bandcamp[i][j]['url']
+                    bc = bandcamp[i][j]
                     bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt.svg" class="subicon"/></a>  """
                 except:
                     bnd = ''
