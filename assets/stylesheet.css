@@ -116,16 +116,22 @@ span {
 }
 
 .icon {
-  height: 2em;
+  height: 1.5em;
   position:relative;
   /* overflow: hidden; */
-  margin: 0 0 -11px -0px;
+  margin: 0px 0px -3px 5px;
+}
+
+.picon {
+  height: 1em;
+  position:relative;
+  margin: 0px 0px -15px 20px;
 }
 
 .subicon{
-  height: 2em;
+  height: 3em;
   position:relative;
-  margin: 0 0 -11px -0px;
+  margin: 0 0 -15px -0px;
   -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
   filter: invert(100%);  
 }

@@ -1207,10 +1207,7 @@ class nts:
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br><blockquote><a href="https://open.spotify.com/playlist/{pid}">⭕ : Playlist</a></blockquote></div>' # Show Title Spotify_icon.svg
-        #⚫⚪ = Listen Back<br>🟢 = Spotify<br><img src="../assets/bandcamp-logo-alt.svg" class="icon"/> = Bandcamp<br>
-
-        # For each episode : collapsable details / tracklist / ntslink / spotifylink / bandcamplink
+        doc += f'<div><br><a href="https://open.spotify.com/playlist/{pid}"><img class="picon" src="../assets/Spotify_icon.svg.png"/></a></div><div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br></div>'
 
         episodes = self._j2d(f'./tracklist/{show}')
         spotify = self._j2d(f'./spotify/{show}')
@@ -1223,7 +1220,7 @@ class nts:
             i = mt[1]
             ti = f"{meta[i]['title']} - {meta[i]['date']}"
 
-            doc += f'<details><summary><h3><div class="title">{ti}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}">⚫⚪</a></span></h3></summary>'
+            doc += f'<details><summary><h3><div class="title">{ti}</div><span class="data"><a href="https://nts.live/shows/{show}/episodes/{i}"><img class="icon" src="../assets/nts-icon.jpg"/></a></span></h3></summary>'
             doc += '<ol>'
 
             for j in episodes[i]:
