@@ -136,15 +136,18 @@ class nts:
                 if (len(sortmeta) < 30) and (fp[0] != '22'):
                     self.scrape(show,False,amount=100)
                     rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                    self.ntstracklist(show,do)
+                    if rq:
+                        self.ntstracklist(show,do)
                 else:
                     self.scrape(show,True)
                     rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                    self.ntstracklist(show,do)
+                    if rq:
+                        self.ntstracklist(show,do)
             else:
                 self.scrape(show,False,amount=10)
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                self.ntstracklist(show,do)
+                if rq:
+                    self.ntstracklist(show,do)
                 
             # SEARCH/RATE
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
@@ -749,16 +752,17 @@ class nts:
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
         #
         uploaded = self._j2d(f'./uploaded')
+        
         if show not in uploaded:
             uploaded[show] = dict()
             reset = True
         elif sortmeta:
-            metacopy = list(sortmeta)
-            for i in uploaded[show][:-1]:
+            metacopy = [i[1] for i in sortmeta]
+            met0 = list(uploaded[show].keys())
+            for i in met0[:-1]:
                 metacopy.remove(i)
-            metaind = metacopy.index(uploaded[show][-1])
+            metaind = metacopy.index(met0[-1])
             met1 = metacopy[:metaind] #old shows
-            # met2 = metacopy[metaind:] # new shows
             if met1:
                 reset = True
         #
