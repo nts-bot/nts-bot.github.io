@@ -1,5 +1,4 @@
 # BASIC LIBRARIES
-from importlib.resources import contents
 import os, json, time, requests, re, pickle, urllib
 from urllib.error import HTTPError
 # HTML PARSER
@@ -11,8 +10,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-# PPrint
-from pprint import pprint
 # SPOTIFY API TOOL
 import spotipy
 # MULTITHREADING TASKS
@@ -127,9 +124,7 @@ class nts:
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
-        brk = 0
         for i in range(len(shows)):
-            br = []
             show = shows[i]
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
             print(f'{oo[:50]}{i}/{len(shows)}')
@@ -143,20 +138,22 @@ class nts:
                 self.scrape(show,False,amount=10) # CHANGE AMOUNT TO 100 TO GET FULL EPISODELIST
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
                 self.ntstracklist(show,do)
+                
             # SEARCH/RATE
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
             if rq:
                 self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
-            br += [rq]
+
             #
             rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
             if rq:
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
-            br += [rq]
-            # BANDCAMP # TODO
-            # rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
-            # if rq:
-            #     self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
+
+            # BANDCAMP
+            rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
+            if rq:
+                self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
+                
             # ADD
             dr = False
             if show not in self._j2d('./uploaded'):
@@ -175,11 +172,6 @@ class nts:
                             dr = True
                         except:
                             pass
-                br += [rq]
-            if not any(br):
-                brk += 1
-            if brk > 10:
-                break
             # HTML
             self.showhtml(show)
         self.home()
@@ -937,6 +929,20 @@ class nts:
         
     # MULTITHREADING FUNCTIONS
 
+    def qmt(self,q,kind,nw=16):
+        q1 = q[0]
+        taskdict = {f"q1.{l1:03}.{l2:03}":q1[list(q1.keys())[l1]][list(q1[list(q1.keys())[l1]].keys())[l2]] 
+                    for l1 in range(len(q1)) 
+                    for l2 in range(len(q1[list(q1.keys())[l1]]))
+                    }
+        if len(q) == 2:
+            q2 = q[1]
+            taskdict |= {f"q2.{l1:03}.{l2:03}":q2[list(q2.keys())[l1]][list(q2[list(q2.keys())[l1]].keys())[l2]] 
+                        for l1 in range(len(q2)) 
+                        for l2 in range(len(q2[list(q2.keys())[l1]]))
+                        }
+        return(multithreading(taskdict, nw, kind))
+
     def mt_request(self,content):
         c = 0
         request = urllib.request.Request(content)
@@ -964,24 +970,7 @@ class nts:
         return(self.mt_samp(q1,q2))
 
     def mt_samp(self,q1,q2):
-
-        # flatten queries
-        Q1, Q2 = [q1[l1][l2] for l1 in q1 for l2 in q1[l1]], [q2[l1][l2] for l1 in q2 for l2 in q2[l1]]
-        print(f'.{len(Q1)}.{len(Q2)}')
-
-        taskdict = {f"q1.{l1:03}.{l2:03}":q1[list(q1.keys())[l1]][list(q1[list(q1.keys())[l1]].keys())[l2]] 
-                    for l1 in range(len(q1)) 
-                    for l2 in range(len(q1[list(q1.keys())[l1]]))
-                    }
-        taskdict |= {f"q2.{l1:03}.{l2:03}":q2[list(q2.keys())[l1]][list(q2[list(q2.keys())[l1]].keys())[l2]] 
-                    for l1 in range(len(q2)) 
-                    for l2 in range(len(q2[list(q2.keys())[l1]]))
-                    }
-
-        # run syncronious mass request
-        time.sleep(1.0)
-        taskdict = multithreading(taskdict, 16, 'spotify') #_run
-        #
+        taskdict = self.qmt([q1,q2],'spotify')
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
             for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
@@ -1002,7 +991,6 @@ class nts:
                     S1 = ''
 
                 q1[episode][td] = {'s0':S0,'s1':S1}
-
         return(q1)
 
     def mt_spotifyrate(self,showson,srchson,multiple):
@@ -1029,22 +1017,7 @@ class nts:
         return(self.mt_rate(q1,q2))
 
     def mt_rate(self,q1,q2):
-
-        # flatten queries
-        Q1, Q2 = [q1[l1][l2] for l1 in q1 for l2 in q1[l1]], [q2[l1][l2] for l1 in q2 for l2 in q2[l1]]
-        print(f'.{len(Q1)}.{len(Q2)}')
-
-        taskdict = {f"q1.{l1:03}.{l2:03}":q1[list(q1.keys())[l1]][list(q1[list(q1.keys())[l1]].keys())[l2]] 
-                    for l1 in range(len(q1)) 
-                    for l2 in range(len(q1[list(q1.keys())[l1]]))
-                    }
-        taskdict |= {f"q2.{l1:03}.{l2:03}":q2[list(q2.keys())[l1]][list(q2[list(q2.keys())[l1]].keys())[l2]] 
-                    for l1 in range(len(q2)) 
-                    for l2 in range(len(q2[list(q2.keys())[l1]]))
-                    }
-
-        taskdict = multithreading(taskdict, 8, 'rate') #_run
-        
+        taskdict = self.qmt([q1,q2],'rate',8)
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
             for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
@@ -1076,7 +1049,6 @@ class nts:
                         q1[episode][td] = {'artist':eval(f'a{dx}'),'title':eval(f't{dx}'),'ratio':-1,'trackid':''}
                 else:
                     q1[episode][td] = {'artist':'','title':'','ratio':-1,'trackid':''}
-
         return(q1)
 
     def mt_bandcamp(self,showson,rateson,multiple):
@@ -1110,46 +1082,21 @@ class nts:
 
         return(self.upndict(qfailure,qsuccess))
 
-    def mt_camp(self,query): # WIP
-
-        # flatten query
-        querylist = [query[l1][l2] for l1 in query for l2 in query[l1]]
-        print(f'.{len(querylist)}.')
-
-        # run syncronious mass request
-        time.sleep(1.0)
-        response = multithreading(querylist, 16, 'bandcamp')
-
-        # make nested list
-        if not isinstance(response,list):
-            response = [response]
-        partition=[]
-        i=0
-        l = [len(query[q]) for q in query]
-        for n in l:
-            partition.append(response[i:i+n])
-            i+=n
-
-        qk = list(query.keys())
-        print(f'.{len(response)}->{len(partition)}={len(qk)}.')
-        for episode in range(len(qk)):
-
-            qt = list(query[qk[episode]].keys())
-            print(f'.{len(partition[episode])}={len(qt)}.',end='\r')
-
-            for td in range(len(qt)):
-
-                soup = bs(partition[episode][td], "html.parser")
-
+    def mt_camp(self,query):
+        taskdict = self.qmt([query],'bandcamp')
+        for l1 in range(len(query)):
+            episode = list(query.keys())[l1]
+            for l2 in range(len(query[list(query.keys())[l1]])): # td are tracks
+                td = list(query[list(query.keys())[l1]].keys())[l2]
+                soup = bs(taskdict[f"q1.{l1:03}.{l2:03}"], "html.parser")
                 try:
                     if soup.select('.noresults-header'):
-                        query[qk[episode]][qt[td]] = -1
+                        query[episode][td] = -1
                 except:
-                    query[qk[episode]][qt[td]]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
-                    query[qk[episode]][qt[td]]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
-                    query[qk[episode]][qt[td]]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
+                    query[episode][td]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
+                    query[episode][td]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
+                    query[episode][td]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
                     break
-
         return(query)
 
     # HTML
@@ -1302,7 +1249,6 @@ class nts:
 
 # MULTITHREADING WORKER
 import sys
-
 def multithreading(taskdict, no_workers,kind):
 
     stn = nts()
