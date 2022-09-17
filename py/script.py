@@ -1088,35 +1088,29 @@ class nts:
                     q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(spot)}&item_type=t"
                 else:
                     q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
+        return(self.mt_camp(q1,q2))
 
-        reply = self.mt_camp(q1)
-        qsuccess = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply}
-        qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
-        if any([True for i in qfailure if qfailure[i]]):
-            q2 = {i:{j:q2[i][j] for j in q2[i] if j not in qsuccess[i]} for i in q2}
-            if any([True for i in q2 if q2[i]]):
-                reply = self.mt_camp(q2)
-                qsuccess = self.upndict({i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply},qsuccess)
-                qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
-
-        return(self.upndict(qfailure,qsuccess))
-
-    def mt_camp(self,query):
-        taskdict = self.qmt([query],'bandcamp',8)
-        for l1 in range(len(query)):
-            episode = list(query.keys())[l1]
-            for l2 in range(len(query[list(query.keys())[l1]])): # td are tracks
-                td = list(query[list(query.keys())[l1]].keys())[l2]
-                soup = bs(taskdict[f"q1.{l1:03}.{l2:03}"], "html.parser")
-                try:
-                    if soup.select('.noresults-header'):
-                        query[episode][td] = -1
-                except:
-                    query[episode][td]['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
-                    query[episode][td]['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
-                    query[episode][td]['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
-                    break
-        return(query)
+    def mt_camp(self,q1,q2):
+        taskdict = self.qmt([q1],'bandcamp',8)
+        q12 = dict()
+        for l1 in range(len(q1)):
+            episode = list(q1.keys())[l1]
+            for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
+                td = list(q1[list(q1.keys())[l1]].keys())[l2]
+                if taskdict[f"q1.{l1:03}.{l2:03}"] == -1:
+                    if episode not in q12:
+                        q12[episode] = dict()
+                    q12[episode][td] = q2[episode][td]
+                else:
+                    q1[episode][td] = taskdict[f"q1.{l1:03}.{l2:03}"]
+        if q12:
+            td2 = self.qmt([q12],'bandcamp',8)
+            for l1 in range(len(q12)):
+                episode = list(q12.keys())[l1]
+                for l2 in range(len(q12[list(q12.keys())[l1]])): # td are tracks
+                    td = list(q12[list(q12.keys())[l1]].keys())[l2]
+                    q1[episode][td] = td2[f"q1.{l1:03}.{l2:03}"]
+        return(q1)
 
     # HTML
 
@@ -1229,7 +1223,7 @@ class nts:
                 ttit = episodes[i][j]['title']
 
                 try:
-                    bc = bandcamp[i][j]
+                    bc = bandcamp[i][j]['url']
                     bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt.svg" class="subicon"/></a>  """
                 except:
                     bnd = ''
@@ -1310,8 +1304,18 @@ def multithreading(taskdict, no_workers,kind):
         elif kind == 'bandcamp':
             time.sleep(1.0)
             result = stn.mt_request(taskcopy[taskid])
-            cont = counter(taskid,result)
-        
+            soup = bs(result, "html.parser")
+            try:
+                if soup.select('.noresults-header'):
+                    cont = counter(taskid,-1)
+                else:
+                    cont = counter(taskid,{'artist':soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip(),
+                    'title':soup.select('.heading')[0].text.replace('\n','').strip(),
+                    'url':soup.select('.itemurl')[0].text.replace('\n','').strip()})
+            except:
+                cont = counter(taskid,{'artist':soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip(),
+                    'title':soup.select('.heading')[0].text.replace('\n','').strip(),
+                    'url':soup.select('.itemurl')[0].text.replace('\n','').strip()})    
         return(cont)
 
     class __worker__(Thread):
