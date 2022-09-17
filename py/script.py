@@ -779,10 +779,9 @@ class nts:
         ''' REMOVE UNKNOWNS '''
         for j in rate:
             for k in rate[j]:
-                if 'Unknown Artist' in rate[j][k]['artist']:
-                    rate[j][k]["ratio"] = -1
-                    rate[j][k]["uri"] = ''
-                if 'Unknown' == rate[j][k]['artist']:
+                ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[j][k]['artist']).split()).lower()
+                ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[j][k]['title']).split()).lower()
+                if ('unknown artist' in ua) or ('unknown' == ua) or ('unknown' == ut):
                     rate[j][k]["ratio"] = -1
                     rate[j][k]["uri"] = ''
         self._d2j(f'./spotify/{show}',rate)
