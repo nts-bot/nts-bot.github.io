@@ -831,49 +831,52 @@ class nts:
         else:
             print('.no tracks to append.')
 
-    def follow(self,usr=1,kind='cre'):
+    def follow(self,kind='cre'): #usr=1,
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
         creds = self._j2d(f'{kind}dentials')
-        user = creds[str(usr)]['user']
-        cid = creds[str(usr)]['cid']
-        secret = creds[str(usr)]['secret']
-        callback = 'http://localhost:8888/callback'
-        spot = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope='playlist-modify-public user-follow-modify',username=user), requests_timeout=5, retries=5)
-        print('Testing . ',end=' ')
-        test = spot.user(user)
-        print('Successful . ',end=' ')
-        
-        if kind == 'cre':
-            extent = self.showlist[(200 * (usr - 1)):(200 * (usr))]
-        elif kind == 'pre':
-            extent = self.showlist
+        usrcall = round(len(self.showlist)/200 + 0.4999)
+        for us in range(usrcall):
+            usr = us + 1
+            user = creds[str(usr)]['user']
+            cid = creds[str(usr)]['cid']
+            secret = creds[str(usr)]['secret']
+            callback = 'http://localhost:8888/callback'
+            spot = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope='playlist-modify-public user-follow-modify',username=user), requests_timeout=5, retries=5)
+            print('Testing .',end=' ')
+            test = spot.user(user)
+            print('Successful .',end=' ')
+            
+            if kind == 'cre':
+                extent = self.showlist[(200 * (usr - 1)):(200 * (usr))]
+            # elif kind == 'pre':
+            #     extent = self.showlist
 
-        print('Unfollowing',end='\r')
-        plys = []
-        for i in range(4):
-            it = spot.user_playlists(user,offset=(i * 50))['items']
-            plys += [k['id'] for k in it]
-        for i in plys:
-            playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
-            spot.user_playlist_unfollow(playlist_owner_id, i)
+            print('Unfollowing',end='\r')
+            plys = []
+            for i in range(4):
+                it = spot.user_playlists(user,offset=(i * 50))['items']
+                plys += [k['id'] for k in it]
+            for i in plys:
+                playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
+                spot.user_playlist_unfollow(playlist_owner_id, i)
 
-        ## follow
-        print('Following')
-        print(f'{extent[0][0]} : {extent[-1][0]}')
-        for i in extent[::-1]:
-            print(i[:20],end='\r')
-            playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
-            playlist_id = self.pid(i)
-            if playlist_id:
-                spot.user_playlist_follow_playlist(playlist_owner_id, playlist_id)
-            else:
-                print(f'FAILED : {i}')
-        ## follow users
-        del creds[str(usr)]
-        u = []
-        for i in creds:
-            u += [creds[i]['user']]
-        spot.user_follow_users(u)
+            # follow
+            print('Following')
+            print(f'{extent[0][0]} : {extent[-1][0]}')
+            for i in extent[::-1]:
+                print(i[:20],end='\r')
+                playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
+                playlist_id = self.pid(i)
+                if playlist_id:
+                    spot.user_playlist_follow_playlist(playlist_owner_id, playlist_id)
+                else:
+                    print(f'FAILED : {i}')
+            ## follow users
+            del creds[str(usr)]
+            u = []
+            for i in creds:
+                u += [creds[i]['user']]
+            spot.user_follow_users(u)
 
     # BANDCAMP SEARCH
 
@@ -1083,7 +1086,7 @@ class nts:
         return(self.upndict(qfailure,qsuccess))
 
     def mt_camp(self,query):
-        taskdict = self.qmt([query],'bandcamp')
+        taskdict = self.qmt([query],'bandcamp',8)
         for l1 in range(len(query)):
             episode = list(query.keys())[l1]
             for l2 in range(len(query[list(query.keys())[l1]])): # td are tracks
