@@ -19,4 +19,5 @@ for i in episodes:
     epis = href.split('/')[-1]
     if show not in shelf:
         shelf[show] = [epis]
-nts.runscript(list(shelf.keys()))#[::-1])
+        
+nts.runscript(list(shelf.keys()),True)

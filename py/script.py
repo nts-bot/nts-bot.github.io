@@ -120,7 +120,7 @@ class nts:
 
     # RUN SCRIPT
 
-    def runscript(self,shows):
+    def runscript(self,shows,bd=False):
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
@@ -160,9 +160,10 @@ class nts:
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
 
             # BANDCAMP
-            # rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
-            # if rq:
-            #     self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
+            if bd:
+                rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
+                if rq:
+                    self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
                 
             # ADD
             dr = False
@@ -303,61 +304,69 @@ class nts:
     def ntstracklist(self,show,episodes=[]):
         episodelist = self._j2d(f'./tracklist/{show}')
         meta = self._j2d(f'./meta')
+        if show not in meta:
+            meta[show] = dict()
         if not episodes:
             episodes = episodelist
         for episode in episodes:
-            if episodelist[episode]:
-                pass
-            elif isinstance(episodelist[episode],dict): # and not episodelist[episode]
+            try:
+                meta[show][episode]
+            except:
+                meta[show][episode] = dict()
+            try:
+                episodelist[episode]
+            except:
+                episodelist[episode] = dict()
+            if (not episodelist[episode]) or (not meta[show][episode]):
                 print(episode[:10], end='\r')
                 url = f"https://www.nts.live/shows/{show}/episodes/{episode}"
                 soup = bs(self.req(url).content, "html.parser")
-                
-                # meta
-                if show not in meta:
-                    meta[show] = dict()
-                try:
-                    bt = soup.select('.episode__btn')
-                    date = bt[0]['data-episode-date']
-                    eptitle = bt[0]['data-episode-name']
-                    meta[show][episode] = {'title':eptitle,'date':date}
-                except:
+                if (not episodelist[episode]) and (isinstance(episodelist[episode],dict)):
                     try:
-                        print(f'.trying-once-more-to-find-meta.')
-                        soup = self.browse(url,1)
+                        tracks = soup.select('.track')
+                        for j in range(len(tracks)):
+                            print(f'{episode[:10]}:{j:02}', end='\r')
+                            try:
+                                episodelist[episode][f"{j:02}"] = {
+                                    "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
+                                    "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
+                                }
+                            except IndexError:
+                                print('Index Error')
+                                try:
+                                    episodelist[episode][f"{j:02}"] = {
+                                    "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
+                                    "title" : ""
+                                }
+                                except IndexError:
+                                    episodelist[episode][f"{j:02}"] = {
+                                    "artist" : f"",
+                                    "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
+                                }
+                    except:
+                        episodelist[episode] = ''
+                    self._d2j(f'./tracklist/{show}',episodelist)
+                if (not meta[show][episode]):
+                    # meta
+                    try:
                         bt = soup.select('.episode__btn')
                         date = bt[0]['data-episode-date']
                         eptitle = bt[0]['data-episode-name']
                         meta[show][episode] = {'title':eptitle,'date':date}
                     except:
-                        print(f'FAILURE PROCESSING META : {show}:{episode}\n')
-                        meta[show][episode] = {'title':'','date':'00.00.00'}
-                    
-
-                tracks = soup.select('.track')
-                for j in range(len(tracks)):
-                    print(f'{episode[:10]}:{j:02}', end='\r')
-                    try:
-                        episodelist[episode][f"{j:02}"] = {
-                            "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
-                            "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
-                        }
-                    except IndexError:
-                        print('Index Error')
                         try:
-                            episodelist[episode][f"{j:02}"] = {
-                            "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
-                            "title" : ""
-                        }
-                        except IndexError:
-                            episodelist[episode][f"{j:02}"] = {
-                            "artist" : f"",
-                            "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
-                        }
+                            print(f'.trying-once-more-to-find-meta.')
+                            soup = self.browse(url,1)
+                            bt = soup.select('.episode__btn')
+                            date = bt[0]['data-episode-date']
+                            eptitle = bt[0]['data-episode-name']
+                            meta[show][episode] = {'title':eptitle,'date':date}
+                        except:
+                            print(f'FAILURE PROCESSING META : {show}:{episode}\n')
+                            meta[show][episode] = {'title':'','date':'00.00.00'}
+                    self._d2j(f'./meta',meta)
             else:
-                episodelist[episode] = ''
-        self._d2j(f'./meta',meta)
-        self._d2j(f'./tracklist/{show}',episodelist)
+                pass
 
     # SPOTIFY API
 
