@@ -1071,12 +1071,9 @@ class nts:
                     q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
 
         reply = self.mt_camp(q1)
-        # qsuccess = {i : reply[i] for i in reply if reply[i] != -1}
-        # {i:{j:a[i][j] for j in a[i] if a[i][j]!=-1} for i in a}
         qsuccess = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]!=-1} for i in reply}
         qfailure = {i:{j:reply[i][j] for j in reply[i] if reply[i][j]==-1} for i in reply}
         if any([True for i in qfailure if qfailure[i]]):
-            # q2 = {i:q2[i] for i in q2 if i not in qsuccess}
             q2 = {i:{j:q2[i][j] for j in q2[i] if j not in qsuccess[i]} for i in q2}
             if any([True for i in q2 if q2[i]]):
                 reply = self.mt_camp(q2)
