@@ -839,16 +839,16 @@ class nts:
         secret = creds[str(usr)]['secret']
         callback = 'http://localhost:8888/callback'
         spot = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope='playlist-modify-public user-follow-modify',username=user), requests_timeout=5, retries=5)
-        print('Testing . . .')
+        print('Testing . ',end=' ')
         test = spot.user(user)
-        print('. . . . . . . . Successful',end='\r')
+        print('Successful . ',end=' ')
         
         if kind == 'cre':
             extent = self.showlist[(200 * (usr - 1)):(200 * (usr))]
         elif kind == 'pre':
             extent = self.showlist
 
-        print('Unfollowing')
+        print('Unfollowing',end='\r')
         plys = []
         for i in range(4):
             it = spot.user_playlists(user,offset=(i * 50))['items']
@@ -953,7 +953,7 @@ class nts:
                 return(urllib.request.urlopen(request).read())
                 repeat = False
             except HTTPError:
-                print(f'. . . . .RE:{c}.',end='\r')
+                print(f'{c}$',end='\r')
                 time.sleep(1.0)
 
     def mt_spotifysearch(self,showson,multiple):
