@@ -130,12 +130,19 @@ class nts:
             print(f'{oo[:50]}{i}/{len(shows)}')
             time.sleep(0.1)
             # SCRAPE
-            if show in self._j2d(f'./meta'): # WIP
-                self.scrape(show,True)
-                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                self.ntstracklist(show,do)
+            if show in self._j2d(f'./meta'):
+                sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
+                fp = sortmeta[0][0].split('.')
+                if (len(sortmeta) < 30) and (fp[0] != '22'):
+                    self.scrape(show,False,amount=100)
+                    rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                    self.ntstracklist(show,do)
+                else:
+                    self.scrape(show,True)
+                    rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                    self.ntstracklist(show,do)
             else:
-                self.scrape(show,False,amount=10) # CHANGE AMOUNT TO 100 TO GET FULL EPISODELIST
+                self.scrape(show,False,amount=10)
                 rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
                 self.ntstracklist(show,do)
                 
@@ -739,13 +746,21 @@ class nts:
         pid = self.pid(show)
         rate = self._j2d(f'./spotify/{show}')
         meta = self._j2d(f'./meta')[show]
+        sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
         #
         uploaded = self._j2d(f'./uploaded')
         if show not in uploaded:
             uploaded[show] = dict()
             reset = True
-        #   
-        sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
+        elif sortmeta:
+            metacopy = list(sortmeta)
+            for i in uploaded[show][:-1]:
+                metacopy.remove(i)
+            metaind = metacopy.index(uploaded[show][-1])
+            met1 = metacopy[:metaind] #old shows
+            # met2 = metacopy[metaind:] # new shows
+            if met1:
+                reset = True
         #
         tid = []
         trackdict = dict()
@@ -955,7 +970,7 @@ class nts:
                 c+=1
                 return(urllib.request.urlopen(request).read())
                 repeat = False
-            except HTTPError:
+            except:
                 print(f'{c}$',end='\r')
                 time.sleep(1.0)
 
