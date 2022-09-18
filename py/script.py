@@ -120,7 +120,7 @@ class nts:
 
     # RUN SCRIPT
 
-    def runscript(self,shows,bd=False):
+    def runscript(self,shows,bd=False,fast=False):
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
@@ -133,24 +133,30 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE
-                    if show in self._j2d(f'./meta'):
-                        sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
-                        fp = sortmeta[0][0].split('.')
-                        if ((len(sortmeta) < 12) and (fp[0] != '22')) or ((len(sortmeta) < 24) and (fp[0] != '21')):
-                            self.scrape(show,False,amount=100)
-                            rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                            if rq:
-                                self.ntstracklist(show,do)
-                        else:
-                            self.scrape(show,True)
-                            rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                            if rq:
-                                self.ntstracklist(show,do)
-                    else:
-                        self.scrape(show,False,amount=10)
+                    if fast:
+                        self.scrape(show,True)
                         rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
                         if rq:
                             self.ntstracklist(show,do)
+                    else:
+                        if show in self._j2d(f'./meta'):
+                            sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
+                            fp = sortmeta[0][0].split('.')
+                            if ((len(sortmeta) < 12) and (fp[0] != '22')) or ((len(sortmeta) < 24) and (fp[0] != '21')):
+                                self.scrape(show,False,amount=100)
+                                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                                if rq:
+                                    self.ntstracklist(show,do)
+                            else:
+                                self.scrape(show,True)
+                                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                                if rq:
+                                    self.ntstracklist(show,do)
+                        else:
+                            self.scrape(show,False,amount=10)
+                            rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                            if rq:
+                                self.ntstracklist(show,do)
                         
                     # SEARCH/RATE
                     rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
@@ -799,8 +805,15 @@ class nts:
         almost = 0
         unsure = 0
 
-        fp = sortmeta[0][0].split('.')
-        firstep = f"{fp[2]}.{fp[1]}.{fp[0]}"
+        f = True
+        ff = 0
+        while f:
+            fp = sortmeta[ff][0].split('.')
+            firstep = f"{fp[2]}.{fp[1]}.{fp[0]}"
+            if firstep != '00.00.00':
+                f = False
+            else:
+                ff += 1
         lp = sortmeta[-1][0].split('.')
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
 
@@ -1383,6 +1396,12 @@ def multithreading(taskdict, no_workers,kind):
                 if count >= amount:
                     kill = True
                 elif count + 10 >= amount:
+                    x = 0
+                    while x < 10:
+                        x += 2
+                        time.sleep(round(x/2))
+                        if count + x/2 >= amount:
+                            break
                     kill = True
                     sys.exit()
         except SystemExit:
