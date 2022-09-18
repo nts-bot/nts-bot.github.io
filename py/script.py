@@ -125,64 +125,70 @@ class nts:
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
         for i in range(len(shows)):
-            show = shows[i]
-            oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
-            print(f'{oo[:50]}{i}/{len(shows)}')
-            time.sleep(0.1)
-            # SCRAPE
-            if show in self._j2d(f'./meta'):
-                sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
-                fp = sortmeta[0][0].split('.')
-                if ((len(sortmeta) < 12) and (fp[0] != '22')) or ((len(sortmeta) < 24) and (fp[0] != '21')):
-                    self.scrape(show,False,amount=100)
-                    rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+            runbool = True
+            while runbool:
+                try:
+                    show = shows[i]
+                    oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
+                    print(f'{oo[:50]}{i}/{len(shows)}')
+                    time.sleep(0.1)
+                    # SCRAPE
+                    if show in self._j2d(f'./meta'):
+                        sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
+                        fp = sortmeta[0][0].split('.')
+                        if ((len(sortmeta) < 12) and (fp[0] != '22')) or ((len(sortmeta) < 24) and (fp[0] != '21')):
+                            self.scrape(show,False,amount=100)
+                            rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                            if rq:
+                                self.ntstracklist(show,do)
+                        else:
+                            self.scrape(show,True)
+                            rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                            if rq:
+                                self.ntstracklist(show,do)
+                    else:
+                        self.scrape(show,False,amount=10)
+                        rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                        if rq:
+                            self.ntstracklist(show,do)
+                        
+                    # SEARCH/RATE
+                    rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
                     if rq:
-                        self.ntstracklist(show,do)
-                else:
-                    self.scrape(show,True)
-                    rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                        self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
+
+                    #
+                    rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
                     if rq:
-                        self.ntstracklist(show,do)
-            else:
-                self.scrape(show,False,amount=10)
-                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                if rq:
-                    self.ntstracklist(show,do)
-                
-            # SEARCH/RATE
-            rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
-            if rq:
-                self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
+                        self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
 
-            #
-            rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
-            if rq:
-                self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
-
-            # BANDCAMP
-            if bd:
-                rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
-                if rq:
-                    self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
-                
-            # ADD
-            dr = False
-            if show not in self._j2d('./uploaded'):
-                while not dr:
-                    try:
-                        self.spotifyplaylist(show)
-                        dr = True
-                    except:
-                        pass
-            else:
-                rq, do = self.prerun(f"./tracklist/{show}",f"./uploaded",show) 
-                if rq: # or (show not in self._j2d('./extra/dflag'))
-                    while not dr:
-                        try:
-                            self.spotifyplaylist(show)
-                            dr = True
-                        except:
-                            pass
+                    # BANDCAMP
+                    if bd:
+                        rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
+                        if rq:
+                            self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
+                        
+                    # ADD
+                    dr = False
+                    if show not in self._j2d('./uploaded'):
+                        while not dr:
+                            try:
+                                self.spotifyplaylist(show)
+                                dr = True
+                            except:
+                                pass
+                    else:
+                        rq, do = self.prerun(f"./tracklist/{show}",f"./uploaded",show) 
+                        if rq: # or (show not in self._j2d('./extra/dflag'))
+                            while not dr:
+                                try:
+                                    self.spotifyplaylist(show)
+                                    dr = True
+                                except:
+                                    pass
+                    runbool=False
+                except:
+                    pass
             # HTML
             self.showhtml(show)
         self.home()
