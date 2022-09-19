@@ -10,5 +10,5 @@ nts = script.nts()
 
 # shows = ['the-breakfast-show-flo','early-bird-show-maria-somerville','early-bird-show-spirit-blue','corticeps','shanticeleste','patrickforge','fifth-world','high-jazz','tilly','htrk','carla-dal-forno','the-sam-wilkes-radio-hour','soup-to-nuts-lupini','donna-leake','jen-monroe','kaitlyn-aurelia-smith','floating-points','music-4-lovers','the-breakfast-show-zakia']
 # nts.runscript(shows)
-n = 757
+n = 986
 nts.runscript(nts.showlist[n:],fast=True)

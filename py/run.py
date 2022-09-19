@@ -20,4 +20,4 @@ for i in episodes:
     if show not in shelf:
         shelf[show] = [epis]
         
-nts.runscript(list(shelf.keys()),True)
+nts.runscript(list(shelf.keys()),False) #True (bandcamp)

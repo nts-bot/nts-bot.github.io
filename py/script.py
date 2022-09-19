@@ -115,7 +115,7 @@ class nts:
                                 ok += [False]
         do = self.scene(do)
         if do:
-            print(f'.{json1[2:5]}:{json2[2:5]}:{len(do)}.',end='\r')
+            print(f'. . . . . . . . . . . . .{json1[2:5]}:{json2[2:5]}:{len(do)}.',end='\r')
         return(any(ok),do)
 
     # RUN SCRIPT
@@ -125,8 +125,9 @@ class nts:
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
         for i in range(len(shows)):
-            runbool = True
-            while runbool:
+            runbool = 0
+            while runbool <= 10:
+                runbool += 1
                 try:
                     show = shows[i]
                     oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
@@ -192,9 +193,9 @@ class nts:
                                     dr = True
                                 except:
                                     pass
-                    runbool=False
-                except:
-                    pass
+                    break
+                except Exception as error:
+                    print(error)
             # HTML
             self.showhtml(show)
         self.home()
@@ -884,7 +885,7 @@ class nts:
             desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
             syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. ordered {lastep}-to-{firstep}]"
             
-            x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk} {syn}")
+            x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}... {syn}")
             self._d2j(f'./uploaded',uploaded)
         else:
             print('.no tracks to append.')
