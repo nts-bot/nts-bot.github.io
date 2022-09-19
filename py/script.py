@@ -136,29 +136,28 @@ class nts:
                     # SCRAPE
                     if fast:
                         self.scrape(show,True)
-                        rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                        if rq:
-                            self.ntstracklist(show,do)
                     else:
                         if show in self._j2d(f'./meta'):
                             sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
                             fp = sortmeta[0][0].split('.')
-                            if ((len(sortmeta) < 12) and (fp[0] != '22')) or ((len(sortmeta) < 24) and (fp[0] != '21')):
+                            if (len(sortmeta) < 24) and (fp[0] not in ['22','21','19']):
                                 self.scrape(show,False,amount=100)
-                                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                                if rq:
-                                    self.ntstracklist(show,do)
                             else:
                                 self.scrape(show,True)
-                                rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                                if rq:
-                                    self.ntstracklist(show,do)
                         else:
                             self.scrape(show,False,amount=10)
-                            rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                            if rq:
-                                self.ntstracklist(show,do)
-                        
+                            
+                    rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
+                    if rq:
+                        self.ntstracklist(show,do)
+                    else:
+                        episodelist = self._j2d(f'./tracklist/{show}')
+                        do = []
+                        for episode in episodelist:
+                            if not episodelist[episode]:
+                                do += [episode]
+                        if do:
+                            self.ntstracklist(show,do)
                     # SEARCH/RATE
                     rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
                     if rq:
@@ -317,10 +316,12 @@ class nts:
     def ntstracklist(self,show,episodes=[]):
         episodelist = self._j2d(f'./tracklist/{show}')
         meta = self._j2d(f'./meta')
+
         if show not in meta:
             meta[show] = dict()
         if not episodes:
             episodes = episodelist
+
         for episode in episodes:
             try:
                 meta[show][episode]
@@ -330,36 +331,40 @@ class nts:
                 episodelist[episode]
             except:
                 episodelist[episode] = dict()
-            if (not episodelist[episode]) or (not meta[show][episode]):
-                print(episode[:10], end='\r')
+            if (not episodelist[episode] and isinstance(episodelist[episode],dict)) or (not meta[show][episode]):
+                print(f'{episode[:7]}{episode[-7:]}', end='\r')
                 url = f"https://www.nts.live/shows/{show}/episodes/{episode}"
                 soup = bs(self.req(url).content, "html.parser")
-                if (not episodelist[episode]) and (isinstance(episodelist[episode],dict)):
-                    try:
-                        tracks = soup.select('.track')
-                        for j in range(len(tracks)):
-                            print(f'{episode[:10]}:{j:02}', end='\r')
+                if not episodelist[episode]:
+                    print(f'{episode[:7]}{episode[-7:]}:soup', end='\r')
+                    # try:
+                    tracks = soup.select('.track')
+                    for j in range(len(tracks)):
+                        print(f'{episode[:7]}{episode[-7:]}:{j:02}', end='\r')
+                        try:
+                            episodelist[episode][f"{j:02}"] = {
+                                "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
+                                "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
+                            }
+                        except IndexError:
+                            print('Index Error')
                             try:
                                 episodelist[episode][f"{j:02}"] = {
-                                    "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
-                                    "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
-                                }
+                                "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
+                                "title" : ""
+                            }
                             except IndexError:
-                                print('Index Error')
-                                try:
-                                    episodelist[episode][f"{j:02}"] = {
-                                    "artist" : f"{tracks[j].select('.track__artist')[0].get_text()}",
-                                    "title" : ""
-                                }
-                                except IndexError:
-                                    episodelist[episode][f"{j:02}"] = {
-                                    "artist" : f"",
-                                    "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
-                                }
-                    except:
+                                episodelist[episode][f"{j:02}"] = {
+                                "artist" : f"",
+                                "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
+                            }
+                    # except:
+                    if not episodelist[episode]:
+                        print(f'{episode[:7]}{episode[-7:]}:fail', end='\r')
                         episodelist[episode] = ''
                     self._d2j(f'./tracklist/{show}',episodelist)
                 if (not meta[show][episode]):
+                    print(f'{episode[:7]}{episode[-7:]}:meta', end='\r')
                     # meta
                     try:
                         bt = soup.select('.episode__btn')
@@ -836,6 +841,7 @@ class nts:
                         unsure += 1
             else:
                 pass
+
         if tid:
             
             tidup = self.scene(tid[::-1])[::-1]
