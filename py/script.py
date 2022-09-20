@@ -1,8 +1,6 @@
 # BASIC LIBRARIES
-import os, json, time, requests, re, pickle, urllib
+import os, json, time, requests, re, pickle, urllib, git
 from urllib.error import HTTPError
-# GIT
-from git import Repo
 # HTML PARSER
 from bs4 import BeautifulSoup as bs
 # BROWSER
@@ -1306,16 +1304,14 @@ class nts:
     # GIT Commit
 
     def _git(self):
-        repo = Repo.init(os.getcwd()).git
-        index = Repo.init(os.getcwd()).index
-        for x in xrange(1,10):
-            fname = 'filename' + str(x)
-            f.open(fname, 'wb+')
-            f.write()
-            f.close()
-            repo.add(fname)
-
-        index.commit("initial commit")
+        try:
+            repo = git.Repo(os.getcwd())
+            repo.git.add(update=True)
+            repo.index.commit("auto-gitpush")
+            origin = repo.remote(name='origin')
+            origin.push()
+        except Exception as error:
+            print(f'Error : {error}')  
 
 # END
 
