@@ -1,5 +1,5 @@
 # BASIC LIBRARIES
-import os, json, time, requests, re, pickle, urllib, git, sys
+import os, json, time, requests, re, pickle, urllib, sys
 from urllib.error import HTTPError
 # HTML PARSER
 from bs4 import BeautifulSoup as bs
@@ -136,16 +136,8 @@ class nts:
                     if fast:
                         self.scrape(show,True)
                     else:
-                        if show in self._j2d(f'./meta'):
-                            # sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
-                            # fp = sortmeta[0][0].split('.')
-                            # if (len(sortmeta) < 24) and (fp[0] not in ['22','21','19']):
-                            #     self.scrape(show,False,amount=100)
-                            # else:
-                            self.scrape(show,True)
-                        else:
-                            self.scrape(show,False,amount=10)
-                            
+                        self.scrape(show,False,amount=100)
+                    #                            
                     rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
                     if rq:
                         self.ntstracklist(show,do)
@@ -1299,18 +1291,6 @@ class nts:
         pretty = soup.prettify() 
         with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
             f.write(pretty)
-
-    # GIT Commit
-
-    def _git(self):
-        try:
-            repo = git.Repo(os.getcwd())
-            repo.git.add(update=True)
-            repo.index.commit("auto-gitpush")
-            origin = repo.remote(name='origin')
-            origin.push()
-        except Exception as error:
-            print(f'Error : {error}')  
 
 # MULTITHREADING WORKER
 
