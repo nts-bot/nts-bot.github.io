@@ -1,5 +1,5 @@
 # BASIC LIBRARIES
-import os, json, time, requests, re, pickle, urllib, git
+import os, json, time, requests, re, pickle, urllib, git, sys
 from urllib.error import HTTPError
 # HTML PARSER
 from bs4 import BeautifulSoup as bs
@@ -15,8 +15,7 @@ import spotipy
 # MULTITHREADING TASKS
 import queue
 # IMAGE PROCESSING TOOLS
-import cv2
-import base64
+import cv2, base64
 from PIL import Image
 # THE TRANSLATOR & COMPARISON TOOLS
 from googletrans import Translator
@@ -1313,10 +1312,8 @@ class nts:
         except Exception as error:
             print(f'Error : {error}')  
 
-# END
-
 # MULTITHREADING WORKER
-import sys
+
 def multithreading(taskdict, no_workers,kind):
 
     stn = nts()
@@ -1441,5 +1438,7 @@ def multithreading(taskdict, no_workers,kind):
 
     print('.Threading.Complete.',end='\r')
     return(taskdict)
+
 #
 
+# END
