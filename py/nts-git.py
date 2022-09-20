@@ -6,7 +6,7 @@ import os, git
 
 try:
     repo = git.Repo(os.getenv("directory"))
-    repo.git.add(update=True)
+    repo.git.add('.') #update=True
     repo.index.commit("auto-gitpush")
     origin = repo.remote(name='origin')
     origin.push()
