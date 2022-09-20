@@ -1,6 +1,8 @@
 # BASIC LIBRARIES
 import os, json, time, requests, re, pickle, urllib
 from urllib.error import HTTPError
+# GIT
+from git import Repo
 # HTML PARSER
 from bs4 import BeautifulSoup as bs
 # BROWSER
@@ -1300,6 +1302,20 @@ class nts:
         pretty = soup.prettify() 
         with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
             f.write(pretty)
+
+    # GIT Commit
+
+    def _git(self):
+        repo = Repo.init(os.getcwd()).git
+        index = Repo.init(os.getcwd()).index
+        for x in xrange(1,10):
+            fname = 'filename' + str(x)
+            f.open(fname, 'wb+')
+            f.write()
+            f.close()
+            repo.add(fname)
+
+        index.commit("initial commit")
 
 # END
 
