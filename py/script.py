@@ -138,12 +138,12 @@ class nts:
                         self.scrape(show,True)
                     else:
                         if show in self._j2d(f'./meta'):
-                            sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
-                            fp = sortmeta[0][0].split('.')
-                            if (len(sortmeta) < 24) and (fp[0] not in ['22','21','19']):
-                                self.scrape(show,False,amount=100)
-                            else:
-                                self.scrape(show,True)
+                            # sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in self._j2d(f'./meta')[show].items())
+                            # fp = sortmeta[0][0].split('.')
+                            # if (len(sortmeta) < 24) and (fp[0] not in ['22','21','19']):
+                            #     self.scrape(show,False,amount=100)
+                            # else:
+                            self.scrape(show,True)
                         else:
                             self.scrape(show,False,amount=10)
                             
