@@ -62,7 +62,7 @@ class nts:
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
 
     # LOCAL DATABASE
-    # @timeout(5.0)
+
     def _j2d(self,path):
         try:
             with open(f"{path}.json", 'r', encoding='utf-8') as f:
@@ -76,7 +76,6 @@ class nts:
             time.sleep(0.5)
             return(self._j2d(path))
         
-    # @timeout(5.0)
     def _d2j(self,path,allot):
         try:
             if isinstance(allot,dict):
@@ -136,19 +135,15 @@ class nts:
                     if fast:
                         self.scrape(show,True)
                     else:
-                        self.scrape(show,False,amount=100)
-                    #                            
-                    rq, do = self.prerun(f"./tracklist/{show}",f"./meta",show) #meta
-                    if rq:
+                        self.scrape(show) #,False,amount=100
+                    #
+                    episodelist = self._j2d(f'./tracklist/{show}')
+                    do = []
+                    for episode in episodelist:
+                        if not episodelist[episode]:
+                            do += [episode]
+                    if do:
                         self.ntstracklist(show,do)
-                    else:
-                        episodelist = self._j2d(f'./tracklist/{show}')
-                        do = []
-                        for episode in episodelist:
-                            if not episodelist[episode]:
-                                do += [episode]
-                        if do:
-                            self.ntstracklist(show,do)
                     # SEARCH/RATE
                     rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
                     if rq:
@@ -176,7 +171,7 @@ class nts:
                                 pass
                     else:
                         rq, do = self.prerun(f"./tracklist/{show}",f"./uploaded",show) 
-                        if rq: # or (show not in self._j2d('./extra/dflag'))
+                        if rq:
                             while not dr:
                                 try:
                                     self.spotifyplaylist(show)
@@ -349,7 +344,6 @@ class nts:
                                 "artist" : f"",
                                 "title" : f"{tracks[j].select('.track__title')[0].get_text()}"
                             }
-                    # except:
                     if not episodelist[episode]:
                         print(f'{episode[:7]}{episode[-7:]}:fail', end='\r')
                         episodelist[episode] = ''
@@ -384,8 +378,8 @@ class nts:
         ''' CONNECTION FUNCTION w/ TIMEOUT '''
         self.user = os.getenv("ssr")
         callback = 'http://localhost:8888/callback'
-        cid = os.getenv(f"{index[pick]}id")#('ssd')#
-        secret = os.getenv(f"{index[pick]}st")#('sst')#
+        cid = os.getenv(f"{index[pick]}id")
+        secret = os.getenv(f"{index[pick]}st")
         self.sp = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope=['ugc-image-upload','playlist-modify-public'],username=self.user), requests_timeout=5, retries=5)
         print('. Testing . ',end='')
         test = self.sp.user(self.user)
@@ -431,7 +425,6 @@ class nts:
         except Exception:
             self.conexcp()
 
-    # @timeout(10.0)
     def wait(self,path,op=True):
         if not op:
             with open(f'./extra/{path}.pickle', 'wb') as handle:
@@ -444,7 +437,6 @@ class nts:
                     with open(f'./extra/{path}.pickle', 'wb') as handle:
                         pickle.dump(1, handle, protocol=pickle.HIGHEST_PROTOCOL)
                 else:
-                    # print(f'.{path}.',end='\r')
                     time.sleep(0.1)
                     self.wait(path,op)
             except Exception as error:
@@ -487,7 +479,6 @@ class nts:
             return(ref['id'])
 
     def searchloop(self,show,jsonlist,kind='search',episodelist=[]):
-        
         '''jsonlist = [TRACKLIST, DO-ON, ADDITIONALS] ''' 
         for jsondir in jsonlist:
             locals()[jsondir] = self._j2d(f'./{jsondir}/{show}')
@@ -519,95 +510,25 @@ class nts:
                         print(f'{show[:7]}{episode[:7]}. . . . .{list(ok).index(trdx)}:{len(list(ok))}.',end='\r')
                         if kind == 'search':
                             # 0 : TRACKLIST ; 1 : SEARCH
-                            # eval(jsonlist[1])[episode][trdx] = self.spotifysearch(eval(jsonlist[0]),episode,trdx)
                             multiple[episode][trdx] = 0
                         elif kind == 'rate':
                             # 0 : TRACKLIST ; 1 : RATE ; 2 : SEARCH
-                            # eval(jsonlist[1])[episode][trdx] = self.spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
                             multiple[episode][trdx] = 0
                         elif kind == 'bandcamp':
                             # 0 : TRACKLIST ; 1 : BANDCAMP ; 2 : RATE
-                            # eval(jsonlist[1])[episode][trdx] = self.bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),episode,trdx)
                             multiple[episode][trdx] = 0
     
         if any([True for i in multiple if multiple[i]]):
             if kind == 'search':
                 req = self.mt_spotifysearch(eval(jsonlist[0]),multiple)
             elif kind == 'rate':
-                # if len(multiple) <= 3:
                 req = self.mt_spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
-                # else:
-                #     req = dict()
-                #     keys = list(multiple.keys())
-                #     n = 2
-                #     for di in range(0,len(keys),n):
-                #         subdic = {k: multiple[k] for k in keys[di: di + n]}
-                #         req |= self.mt_spotifyrate(eval(jsonlist[0]),eval(jsonlist[2]),subdic)
             elif kind == 'bandcamp':
                 req = self.mt_bandcamp(eval(jsonlist[0]),eval(jsonlist[2]),multiple)
             for episode in multiple:
                 for td in multiple[episode]:
                     eval(jsonlist[1])[episode][td] = req[episode][td]
             self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
-
-    def spotifysearch(self,showson,episode,trdx):
-        ''' Not Used '''
-        q0= f'artist:{showson[episode][trdx]["artist"]} track:{showson[episode][trdx]["title"]}'
-        q1 = f'{showson[episode][trdx]["artist"]} : {showson[episode][trdx]["title"]}'
-        s0 = self._run(q0)
-        s1 = self._run(q1)
-        
-        if s0['tracks']['items']:
-            S0 = [{'artist':j['artists'][0]['name'],
-                'title':j['name'],
-                'uri':j['uri'].split(':')[-1]} 
-                for j in s0['tracks']['items'][:3]]
-        else:
-            S0 = ''
-        if s1['tracks']['items']:
-            S1 = [{'artist':j['artists'][0]['name'],
-                'title':j['name'],
-                'uri':j['uri'].split(':')[-1]} 
-                for j in s1['tracks']['items'][:3]]
-        else:
-            S1 = ''
-        return({'s0':S0,'s1':S1})
-
-    def spotifyrate(self,showson,srchson,episode,trdx):
-
-        qa = showson[episode][trdx]["artist"]
-        qt = showson[episode][trdx]["title"]
-        s0 = srchson[episode][trdx]['s0']
-        s1 = srchson[episode][trdx]['s1']
-
-        if all([qa,qt]) and (qa,qt != 'Unknown') and ('Unknown Artist' not in qa):
-
-            a0,t0,r0,u0 = self.test(s0,qa,qt)
-            a1,t1,r1,u1 = self.test(s1,qa,qt)
-
-            dx = [r0,r1].index(max([r0,r1]))
-
-            if round(eval(f'r{dx}'),1) >= 0.4:
-                lag = 1
-            if round(eval(f'r{dx}'),1) >= 0.5:
-                lag = 2
-            if round(eval(f'r{dx}'),1) >= 0.6:
-                lag = 3
-            if round(eval(f'r{dx}'),1) >= 0.7:
-                lag = 4
-            if round(eval(f'r{dx}'),1) >= 0.8:
-                lag = 5
-            if round(eval(f'r{dx}'),1) >= 0.9:
-                lag = 6
-            if round(eval(f'r{dx}'),1) < 0.4:
-                lag = 0
-
-            if any([a0,a1]):
-                return({'artist':eval(f'a{dx}'),'title':eval(f't{dx}'),'ratio':lag,'trackid':eval(f'u{dx}')})
-            else:
-                return({'artist':eval(f'a{dx}'),'title':eval(f't{dx}'),'ratio':-1,'trackid':''})
-        else:
-            return({'artist':'','title':'','ratio':-1,'trackid':''})
 
     # SPOTIFY SEARCH/RATE SUBFUNCTIONS
 
@@ -620,7 +541,7 @@ class nts:
                 raise RuntimeWarning('Spotify API Broken')
             else:
                 return(result)
-        except spotipy.SpotifyException as error:
+        except spotipy.SpotifyException:
             print(f'.spotify-api-error.',end='\r')
             return({'tracks':{'items':''}})
 
@@ -641,7 +562,6 @@ class nts:
         else:
             trans = False
         if trans:
-            time.sleep(0.5)
             tr = True
             while tr:
                 try:
@@ -655,7 +575,6 @@ class nts:
                 while tr:
                     c += 1
                     try:
-                        time.sleep(0.5)
                         convert = translator.translate(tex,dest='en',src=ln).text
                         tr=False
                     except ValueError as error:
@@ -703,7 +622,6 @@ class nts:
         X1 = max(r)
         r = [self.ratio(k2,k3), self.ratio(k3,k2), self.ratio(k2,k4), self.ratio(k4,k2)] # TITLE
         Y1 = max(r)
-        # r = [self.ratio(f'{k1} {k2}',f'{k3} {k4}'), self.ratio(f'{k3} {k4}',f'{k1} {k2}'), self.ratio(f'{k2} {k1}',f'{k3} {k4}'), self.ratio(f'{k1} {k4}',f'{k2} {k1}')] # TOGETHER
         Z1 = (X1 + Y1)/2
 
         G = list(map(set,[k1.split(' '),k2.split(' '),k3.split(' '),k4.split(' ')]))
@@ -711,8 +629,6 @@ class nts:
         k2 = ' '.join(list(G[1]-G[2]-G[3]))
         k3 = ' '.join(list(G[2]-G[0]-G[1]))
         k4 = ' '.join(list(G[3]-G[0]-G[1]))
-
-        # print([k1,k2,k3,k4])
 
         r = [self.ratio(k1,k3), self.ratio(k3,k1), self.ratio(k1,k4), self.ratio(k4,k1)] # AUTHOR
         try:
@@ -725,15 +641,10 @@ class nts:
         except:
             y = 1
 
-        # print(x,y)
-        # print(f'X1 : {X1} ; Y1 : {Y1} ; Z1 : {Z1}')
-
         if not (x == 1 and y == 1):
             X1 = (X1 + min(x,y))/2
             Y1 = (Y1 + min(x,y))/2
             Z1 = (Z1 + min(x,y))/2
-
-        # print(f'X1 : {X1} ; Y1 : {Y1} ; Z1 : {Z1}')
 
         return((X1+Y1+Z1)/3)
 
@@ -755,14 +666,14 @@ class nts:
         else:
             return('','',0,'')
 
-    # SPOTIFY PLAYLIST
+    # SPOTIFY PLAYLIST FUNCTIONS
 
     def scene(self,sequence):
         ''' GET UNIQUE ITEMS IN LIST & IN ORDER '''
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    def spotifyplaylist(self,show,threshold=[3,10],reset=False): #remove=False,
+    def spotifyplaylist(self,show,threshold=[3,10],reset=False):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         meta = self._j2d(f'./meta')[show]
@@ -887,7 +798,7 @@ class nts:
         else:
             print('.no tracks to append.')
 
-    def follow(self,kind='cre'): #usr=1,
+    def follow(self,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
         creds = self._j2d(f'{kind}dentials')
         usrcall = round(len(self.showlist)/200 + 0.4999)
@@ -904,8 +815,6 @@ class nts:
             
             if kind == 'cre':
                 extent = self.showlist[(200 * (usr - 1)):(200 * (usr))]
-            # elif kind == 'pre':
-            #     extent = self.showlist
 
             print('Unfollowing',end='\r')
             plys = []
@@ -916,7 +825,6 @@ class nts:
                 playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
                 spot.user_playlist_unfollow(playlist_owner_id, i)
 
-            # follow
             print('Following')
             print(f'{extent[0][0]} : {extent[-1][0]}')
             for i in extent[::-1]:
@@ -927,64 +835,12 @@ class nts:
                     spot.user_playlist_follow_playlist(playlist_owner_id, playlist_id)
                 else:
                     print(f'FAILED : {i}')
-            ## follow users
+
             del creds[str(usr)]
             u = []
             for i in creds:
                 u += [creds[i]['user']]
             spot.user_follow_users(u)
-
-    # BANDCAMP SEARCH
-
-    def camp(self,query):
-        tj = dict()
-        url = f"https://bandcamp.com/search?q={query}&item_type=t"
-        soup = bs(self.req(url).content, "html.parser")
-        try:
-            if soup.select('.noresults-header'):
-                tj = -1
-        except:
-            try:
-                tj['artist'] = soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip()
-                tj['title'] = soup.select('.heading')[0].text.replace('\n','').strip()
-                tj['url'] = soup.select('.itemurl')[0].text.replace('\n','').strip()
-            except:
-                # raise RuntimeError('REQUEST FAILED')
-                print('REQUEST FAILED')
-                time.sleep(5.0)
-                return(self.camp(query))
-        return(tj)
-
-    def bandcamp(self,showson,rateson,episode,trdx):
-
-        ort = showson[episode][trdx]["artist"] # original artist
-        oit = showson[episode][trdx]["title"] # original title
-
-        track = f'{ort} {oit}'
-        quer1 = urllib.parse.quote(track)
-
-        tl = self.camp(quer1)
-        if not tl:
-            if rateson[episode][trdx]['ratio'] >= 3:
-                ort = rateson[episode][trdx]["artist"] # original artist
-                oit = rateson[episode][trdx]["title"] # original title
-                track = f'{ort} {oit}'
-                quer2 = urllib.parse.quote(track)
-                tl = self.camp(quer2)
-            else:
-                quer2 = urllib.parse.quote(self.refine(unidecode(track),False))
-                tl = self.camp(quer2)
-
-        return(tl)
-
-    def upndict(self,new,old):
-        for episode in new:
-            for td in new[episode]:
-                if td not in old[episode]:
-                    old[episode][td] = new[episode][td]
-                else:
-                    raise RuntimeError('DICTIONARY UPDATE SCRIPT FAILED')
-        return(old)
         
     # MULTITHREADING FUNCTIONS
 
@@ -1087,19 +943,20 @@ class nts:
                 #
                 if ([a0,t0,r0,u0] != ['','',0,'']) or ([a1,t1,r1,u1] != ['','',0,'']):
                     dx = [r0,r1].index(max([r0,r1]))
-                    if round(eval(f'r{dx}'),1) >= 0.4:
-                        lag = 1
-                    if round(eval(f'r{dx}'),1) >= 0.5:
-                        lag = 2
-                    if round(eval(f'r{dx}'),1) >= 0.6:
-                        lag = 3
-                    if round(eval(f'r{dx}'),1) >= 0.7:
-                        lag = 4
-                    if round(eval(f'r{dx}'),1) >= 0.8:
-                        lag = 5
+
                     if round(eval(f'r{dx}'),1) >= 0.9:
                         lag = 6
-                    if round(eval(f'r{dx}'),1) < 0.4:
+                    elif round(eval(f'r{dx}'),1) >= 0.8:
+                        lag = 5
+                    elif round(eval(f'r{dx}'),1) >= 0.6:
+                        lag = 3
+                    elif round(eval(f'r{dx}'),1) >= 0.7:
+                        lag = 4
+                    elif round(eval(f'r{dx}'),1) >= 0.5:
+                        lag = 2
+                    elif round(eval(f'r{dx}'),1) >= 0.4:
+                        lag = 1
+                    else: # round(eval(f'r{dx}'),1) < 0.4
                         lag = 0
 
                     if any([a0,a1]):
@@ -1149,9 +1006,9 @@ class nts:
                     q1[episode][td] = td2[f"q1.{l1:03}.{l2:03}"]
         return(q1)
 
-    # HTML
+    # HTML MAKER
 
-    def home(self): # HTML HOME
+    def home(self):
         doc = """
         <!DOCTYPE html>
         <html>
