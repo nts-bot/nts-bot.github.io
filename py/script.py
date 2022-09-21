@@ -96,7 +96,7 @@ class nts:
         ok = [False]
         do = []
         for i in js1: # episodes
-            if i not in js2:
+            if (i not in js2) and (isinstance(js1[i],dict)):
                 ok += [True]
                 do += [i]
             else:
@@ -132,7 +132,7 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE
-                    if fast:
+                    if fast or bd:
                         self.scrape(show,True)
                     else:
                         self.scrape(show) #,False,amount=100
@@ -140,7 +140,7 @@ class nts:
                     episodelist = self._j2d(f'./tracklist/{show}')
                     do = []
                     for episode in episodelist:
-                        if not episodelist[episode]:
+                        if isinstance(episodelist[episode],dict) and (not episodelist[episode]):
                             do += [episode]
                     if do:
                         self.ntstracklist(show,do)
@@ -178,7 +178,7 @@ class nts:
                                     dr = True
                                 except:
                                     pass
-                    break
+                            break
                 except Exception as error:
                     print(error)
             # HTML
