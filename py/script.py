@@ -124,7 +124,7 @@ class nts:
         print(o)
         for i in range(len(shows)):
             runbool = 0
-            while runbool <= 10:
+            while runbool <= 3:
                 runbool += 1
                 try:
                     show = shows[i]
@@ -161,24 +161,13 @@ class nts:
                             self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
                         
                     # ADD
-                    dr = False
                     if show not in self._j2d('./uploaded'):
-                        while not dr:
-                            try:
-                                self.spotifyplaylist(show)
-                                dr = True
-                            except:
-                                pass
+                        self.spotifyplaylist(show)
                     else:
                         rq, do = self.prerun(f"./tracklist/{show}",f"./uploaded",show) 
                         if rq:
-                            while not dr:
-                                try:
-                                    self.spotifyplaylist(show)
-                                    dr = True
-                                except:
-                                    pass
-                            break
+                            self.spotifyplaylist(show)
+                    break
                 except Exception as error:
                     print(error)
             # HTML
@@ -280,7 +269,7 @@ class nts:
                 desk = ''
         else:
             print('. . . . . . . . . .Bio not found', end='\r')
-            title = ''
+            title = show
             desk = ''
         titlelist[show] = title
         desklist[show] = desk
@@ -730,17 +719,20 @@ class nts:
             trackdict[episodes] = []
             if episodes not in uploaded[show]:
                 uploaded[show][episodes] = 1
-                for track in rate[episodes]:
-                    if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
-                        tid += [rate[episodes][track]['trackid']]
-                        trackdict[episodes] += [rate[episodes][track]['trackid']]
-                    pup += [rate[episodes][track]['trackid']]
-                    if not rate[episodes][track]['trackid']:
-                        mis += 1
-                    if threshold[0]  <= rate[episodes][track]['ratio'] == 4:
-                        almost += 1
-                    if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
-                        unsure += 1
+                try:
+                    for track in rate[episodes]:
+                        if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
+                            tid += [rate[episodes][track]['trackid']]
+                            trackdict[episodes] += [rate[episodes][track]['trackid']]
+                        pup += [rate[episodes][track]['trackid']]
+                        if not rate[episodes][track]['trackid']:
+                            mis += 1
+                        if threshold[0]  <= rate[episodes][track]['ratio'] == 4:
+                            almost += 1
+                        if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
+                            unsure += 1
+                except Exception as error:
+                    print(error)
             else:
                 pass
 
