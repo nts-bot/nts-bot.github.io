@@ -172,6 +172,7 @@ class nts:
                     print(error)
             # HTML
             self.showhtml(show)
+            _git()
         self.home()
 
     # WEBSCRAPING
@@ -1268,6 +1269,17 @@ def multithreading(taskdict, no_workers,kind):
     print('.Threading.Complete.',end='\r')
     return(taskdict)
 
-#
+# GIT PUSH
+
+import git
+def _git():
+    try:
+        repo = git.Repo(os.getenv("directory"))
+        repo.git.add('.') #update=True
+        repo.index.commit("auto-gitpush")
+        origin = repo.remote(name='origin')
+        origin.push()
+    except Exception as error:
+        print(f'Error : {error}')  
 
 # END
