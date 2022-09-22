@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -18,18 +25,14 @@
    </a>
   </h1>
   <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/69qlb1lMAGBB8HIJM7RmU2">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
    <h2>
     <a href="https://nts.live/shows/ana-roxanne">
      Spirit People w/ Ana Roxanne
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/69qlb1lMAGBB8HIJM7RmU2?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -48,56 +51,53 @@
     <li>
      Jefre Cantu-Ledesma - Door With No Sign   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6g5XiNggfbiEKO69RaHQFz">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6g5XiNggfbiEKO69RaHQFz?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://jefrecantu-ledesma.bandcamp.com/track/door-with-no-sign">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/track=386823720/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Stars Of The Lid - Don’t Bother They’re Here   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/477naywDON3t1iAF4COlOV">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/477naywDON3t1iAF4COlOV?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://starsofthelid.bandcamp.com/track/dont-bother-theyre-here">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=605498052/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=862003714/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Hiroshi Yoshimura - Sleep   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4hNzwEykt9DWUiU7KRf6Pr">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4hNzwEykt9DWUiU7KRf6Pr?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://hiroshiyoshimura.bandcamp.com/track/sleep">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2915646406/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1123480940/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Julianna Barwick - Safe   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6JM5pGkZn1GQQlG0KuuwbF">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6JM5pGkZn1GQQlG0KuuwbF?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://juliannabarwick.bandcamp.com/track/safe">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1770815062/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2795374280/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Brian Eno - Discreet Music   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/69eD0IfAqEIUnKX63Npksy">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/69eD0IfAqEIUnKX63Npksy?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://kid606.bandcamp.com/track/discreet-music-brian-eno-cover">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -119,61 +119,55 @@
     <li>
      Art Ensemble Of Chicago - Full Force   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1lTKg3SBagMOcO8RtxLgJ5">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1lTKg3SBagMOcO8RtxLgJ5?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Gil Scott-Heron - Free Will   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/33RNcX2EEwJH9bnUQwkr34">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/33RNcX2EEwJH9bnUQwkr34?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Pharaoh Sanders - Selflessness   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7d1At4ZTVK7MUyfJvHnH4B">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7d1At4ZTVK7MUyfJvHnH4B?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://cosmic-compositions.bandcamp.com/track/selflessness">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Alice Coltrane - Journey To Satchidananda   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1X40qr2Zs0z6UBJ2gUA4OS">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1X40qr2Zs0z6UBJ2gUA4OS?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://alicecoltrane.bandcamp.com/track/journey-to-satchidananda">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=979604399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1780009289/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Laraaji - The Dance No. 3 (1980)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ernnlD3qqeZ4AXysXPkE6">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ernnlD3qqeZ4AXysXPkE6?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://laraajimusic.bandcamp.com/track/the-dance-no-3">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2182162049/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=369444274/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Gil Scott-Heron - The Prisoner   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1QqaSee7G9ypb8RgRyhQid">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1QqaSee7G9ypb8RgRyhQid?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://dionbrown.bandcamp.com/track/the-prisoner">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
@@ -200,12 +194,12 @@
     <li>
      Bill Evans - Peace Piece   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/58yFroDNbzHpYzvicaC0de">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/58yFroDNbzHpYzvicaC0de?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://latenighttales.bandcamp.com/track/peace-piece-2">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=22474099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1927477033/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
@@ -216,91 +210,88 @@
     <li>
      Horowitz,  - Consolation In E Major S. 172 (R. 12) No. 2   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7vWnEktnuFj0ynIxDuyxTc">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7vWnEktnuFj0ynIxDuyxTc?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Grouper - Vapor Trails   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/47JKSnbM992KC8rZ2wph0e">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/47JKSnbM992KC8rZ2wph0e?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://grouper.bandcamp.com/track/vapor-trails">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=3002869071/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2019342699/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Álafoss - Sigur Rós - Untitled #5   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3sqyTvMpQeKfGfwmtsheF3">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3sqyTvMpQeKfGfwmtsheF3?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://store.sigurros.com/track/untitled-5-lafoss">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1374531825/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2658060476/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Claude Debussy,  - Bruyères, L. 123   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3u0q67L7DVMHnmlAxcJ4Ws">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3u0q67L7DVMHnmlAxcJ4Ws?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Windy &amp; Carl - Moth To The Flame   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5BitCNM8yKhEXiV4IKclcZ">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5BitCNM8yKhEXiV4IKclcZ?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://windyandcarl.bandcamp.com/track/moth-to-the-flame">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=777840817/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3123359101/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Kaitlyn Aurelia Smith - Stratus   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0DuKfzPUyHNS92DuruNqpK">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0DuKfzPUyHNS92DuruNqpK?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://kaitlynaureliasmith.bandcamp.com/track/stratus">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=3318091763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2081634324/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Aretha Franklin - The Day Is Past And Gone   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0H2DLIuY6kJrR3iqjzbWMv">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0H2DLIuY6kJrR3iqjzbWMv?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Julianna Barwick - Forever   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Pn4v9RemDhJ2iOi0q11js">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Pn4v9RemDhJ2iOi0q11js?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://juliannabarwick.bandcamp.com/track/forever">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2097781097/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3576589210/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Cocteau Twins - Pur   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5nxG6nyYvcTFGp36y62kvn">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5nxG6nyYvcTFGp36y62kvn?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://theblogthatcelebratesitself.bandcamp.com/track/in-our-angelhood-performed-by-schonwald">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -322,112 +313,97 @@
     <li>
      Whitney Houston - Home (The Merv Griffin Show, 1983)    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5jSTW2AuRhDst5I7J86KUH">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5jSTW2AuRhDst5I7J86KUH?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - I Believe In You And Me (Record Version)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4JPDPdPodOHkdRAMSrO7X6">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4JPDPdPodOHkdRAMSrO7X6?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - Joy   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4KNc21J4RPztm1ZZSCokg3">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4KNc21J4RPztm1ZZSCokg3?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://djdcstorm.bandcamp.com/track/whitney-houston-joy-to-the-world">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston,  - Hold On, Help Is On The Way   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2nYSSi21kg6wEseR3JvwEa">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2nYSSi21kg6wEseR3JvwEa?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston,  - I Go To The Rock   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Sx7ifYacUq3ZbKJVpsMkm">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Sx7ifYacUq3ZbKJVpsMkm?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston,  - I Love The Lord   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2xrXUa8o1JJtz8nobY2UsY">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2xrXUa8o1JJtz8nobY2UsY?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://lilianapinheiro.bandcamp.com/track/i-love-the-lord-low-key-by-whitney-houston-instrumental-with-lyrics">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - You Were Loved   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5NGVnEhrimV9vYwPRxsM3i">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5NGVnEhrimV9vYwPRxsM3i?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - My Heart Is Calling   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4w0cBvy6wMmV8iA60cTYXl">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4w0cBvy6wMmV8iA60cTYXl?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://bee-west.bandcamp.com/track/whitney-houston-my-heart-is-calling-bee-west-mix">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - Jesus Loves Me   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/77ld03vIqCjakQkIQBPTVA">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/77ld03vIqCjakQkIQBPTVA?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://guillotinesilverwolf.bandcamp.com/track/jesus-loves-me-noise-short-whitney-houston-rip">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - I Have Nothing   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/31er9IGsfFbwqy1pH4aiTP">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/31er9IGsfFbwqy1pH4aiTP?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://sing2piano.bandcamp.com/track/i-have-nothing-lower-key-originally-performed-by-whitney-houston-piano-karaoke-version">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - Step By Step (Teddy Riley Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1foOfWSzPNMFs1OiQShv69">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1foOfWSzPNMFs1OiQShv69?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston - Who Would Imagine A King   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6J71TL7fO6GjN6qfAN3mI0">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6J71TL7fO6GjN6qfAN3mI0?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
@@ -438,20 +414,17 @@
     <li>
      Cissy Houston,  - The Lord Is My Shepherd   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0Gizt0VIOGSRMje4pkfocJ">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0Gizt0VIOGSRMje4pkfocJ?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Whitney Houston,  - Joy To The World   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0sKAxwRubZuqKadRspVY96">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0sKAxwRubZuqKadRspVY96?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://djdcstorm.bandcamp.com/track/whitney-houston-joy-to-the-world">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -476,33 +449,30 @@
      </span>
     </li>
     <li>
-     Alicia De Larrocha - Allegreto   :
+     Alicia De Larrocha - Allegreto
      <span class="data">
-      <a class="goto" href="https://pragadigitals.bandcamp.com/track/iberia-suite-vi-triana-allegretto">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
      </span>
     </li>
     <li>
      Julia Holter - In Gardens' Muteness   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0CGjIONYzCZ4znIhW38mTL">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0CGjIONYzCZ4znIhW38mTL?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://juliaholter.bandcamp.com/track/in-gardens-muteness">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=989980970/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1563701436/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      William Basinski - Melancholia XIV   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1byWhbJY7ieWL4O35gOeQv">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1byWhbJY7ieWL4O35gOeQv?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://williambasinski.bandcamp.com/track/melancholia-xiv">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=482284901/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2821191408/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
@@ -513,39 +483,39 @@
     <li>
      Herbie Hancock - Alone And I   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6R8nSLyU9JzqgPShtKe8GO">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6R8nSLyU9JzqgPShtKe8GO?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Green-House - Soft Meadow   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Xe5aArRgoUutgD8MP00Qs">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Xe5aArRgoUutgD8MP00Qs?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://green-house.bandcamp.com/track/soft-meadow">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1535950305/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=55808804/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Nina Simone - I’ll Look Around   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2eOXexkWN3JV9UZ1hUsrU5">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2eOXexkWN3JV9UZ1hUsrU5?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Jordan De La Sierra - Music For Gymnastics   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5DhUiqa8Fc48J17GZtAs7i">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5DhUiqa8Fc48J17GZtAs7i?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://jordandelasierra.bandcamp.com/track/music-for-gymnastics">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=181699491/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=586374589/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -567,56 +537,56 @@
     <li>
      Sam Wilkes - Welcome   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1mRZ5rxqd2tdXIPu4NGJqC">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1mRZ5rxqd2tdXIPu4NGJqC?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://samwilkes.bandcamp.com/track/welcome">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1909343724/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3482711890/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Björk - Like Someone In Love   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/61QEkw7VnsH9kWUm1Zjunq">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/61QEkw7VnsH9kWUm1Zjunq?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://bjork.bandcamp.com/track/like-someone-in-love">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2683810063/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=568676075/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Arp - Reading A Wave   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6Txp4EgKL5CUIpdV9eXtn4">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6Txp4EgKL5CUIpdV9eXtn4?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://arpetc.bandcamp.com/track/reading-a-wave">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=870864855/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=466901998/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Blossom Dearie - Manhattan   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6ReTCbOAUbnKKVBY0ckJMS">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6ReTCbOAUbnKKVBY0ckJMS?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://moochinaboutltd.bandcamp.com/track/manhattan-3">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=501522388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1386042023/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Claude Debussy,  - Arabesque No. 1   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3SnHqm01a3dF4eEarqX1A0">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3SnHqm01a3dF4eEarqX1A0?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://claudedebussy.bandcamp.com/track/arabesque-no-1-andantino-con-moto">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=337992198/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2181834609/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
@@ -627,42 +597,42 @@
     <li>
      Nina Simone - I Loves You Porgy   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0kDpFPQgQYeZ7t04Quiwkn">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0kDpFPQgQYeZ7t04Quiwkn?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://primitivrecords.bandcamp.com/track/i-loves-you-porgy">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=3693030786/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=871627867/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Alice Coltrane Turiyasangitananda - Keshava Murahara   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0KI9f3QcFF4cF6HhnPm5Tn">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0KI9f3QcFF4cF6HhnPm5Tn?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://alicecoltrane.bandcamp.com/track/keshava-murahara">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=979604399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=893073235/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Jefre Cantu-Ledesma - Conversations With Myself 2   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0nF2pOxBoEO9BWMwm6F0XG">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0nF2pOxBoEO9BWMwm6F0XG?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://shiningskullstudio.bandcamp.com/track/conversations-with-myself-2">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=246606053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=215735389/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Nivhek - Walking In A Spiral Towards The House: Side D   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4F8HlqT6gkJDytZwMwhtGE">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4F8HlqT6gkJDytZwMwhtGE?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -684,17 +654,14 @@
     <li>
      Benjamin Britten,  - O magnum mysterium   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5jHiNNqY9mFnpIgYFJzHkh">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5jHiNNqY9mFnpIgYFJzHkh?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
-     Pharaoh Sanders - Harvest Time   :
+     Pharaoh Sanders - Harvest Time
      <span class="data">
-      <a class="goto" href="https://sosrip.bandcamp.com/track/harvest-time-pharoah-sanders">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
      </span>
     </li>
     <li>
@@ -705,36 +672,33 @@
     <li>
      Aretha Franklin - Precious Memories   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6NhWz5c9LZcLFZbNYp35Xh">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6NhWz5c9LZcLFZbNYp35Xh?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      JAB - "A Little Breeze"    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6hXdxmVlbktyhRTOxkhClf">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6hXdxmVlbktyhRTOxkhClf?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Laurie Anderson - O Superman   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/421Gp1eSmOIcD6alTWowFR">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/421Gp1eSmOIcD6alTWowFR?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://vaaticanrecords.bandcamp.com/track/laurie-anderson-o-superman-aphex-twin-taking-control">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Maurice Jarre - Witness (Main Title) / Journey To Baltimore   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/71G0G8id5H7Y0CyxdPW89v">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/71G0G8id5H7Y0CyxdPW89v?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -756,91 +720,88 @@
     <li>
      Claude Debussy - Reverie   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4N0TDLJQt8VcbqpyV5zLgf">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4N0TDLJQt8VcbqpyV5zLgf?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://magdalenahirsz.bandcamp.com/track/claude-debussy-r-verie">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      The Real Group - Det Är En Ros Utsprungen   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/55XhRt0DJ0othYUiNh1oqK">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/55XhRt0DJ0othYUiNh1oqK?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Windy &amp; Carl - Forest Trails   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Gvy4DbDM6NQ5rUJDljXz4">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Gvy4DbDM6NQ5rUJDljXz4?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Don Slepian - Grace   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/339T6HHHwu983026MSeaDo">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/339T6HHHwu983026MSeaDo?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Gas - Pop 3   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4EIGit0b2tPnfp4jPdrtKZ">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4EIGit0b2tPnfp4jPdrtKZ?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://kompakt-gas.bandcamp.com/track/pop-3">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=810155818/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1950169441/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Low - Violence   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7EJ70jXSrpkjcVRdz8dL9x">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7EJ70jXSrpkjcVRdz8dL9x?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://kwaai-fi.bandcamp.com/track/vex-appeal">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/track=900508294/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Julianna Barwick - Cloak   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ba6auWc3836ta3iuS06H7">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ba6auWc3836ta3iuS06H7?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://juliannabarwick.bandcamp.com/track/cloak">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1291689333/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=543192500/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Kali Malone - Spectacle Of Ritual   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/62SMTFdXWQ4g8UMcgk0WLz">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/62SMTFdXWQ4g8UMcgk0WLz?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://idealrecordings.bandcamp.com/track/spectacle-of-ritual">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1013479658/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1230938900/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Sigur Rós - Untitled #1 (Vaka)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/331TLlSwGbVcNKJMkylNbK">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/331TLlSwGbVcNKJMkylNbK?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://store.sigurros.com/track/untitled-1-vaka">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1374531825/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=896089861/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -927,42 +888,42 @@
     <li>
      AOKI Takamasa,  - Alien   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/05l7wFuuVcNVNp5Kbsfd0b">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/05l7wFuuVcNVNp5Kbsfd0b?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://tujikonoriko1.bandcamp.com/track/alien">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2249972576/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1219546034/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Kuniyuki Takahashi - Your Home    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/71wMg6idF6wrnILEFsikwI">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/71wMg6idF6wrnILEFsikwI?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://music-from-memory.bandcamp.com/track/your-home">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2624252016/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=256257669/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      CFCF - Life Is Perfecto   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0hxQaAiOiZS1RabZGThCU5">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0hxQaAiOiZS1RabZGThCU5?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://cfcf.bandcamp.com/track/life-is-perfecto">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2237741739/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1310797935/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      林强 (Lim Giong) - Lighting Road From Millennium Mambo OST   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6ww6GyXWZOg3W18Fe3i0vA">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6ww6GyXWZOg3W18Fe3i0vA?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -984,80 +945,77 @@
     <li>
      Joanna Brouk - Going Through The Veil: Becoming A Swan   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7pSEzaEANrWXuYpXS2jgV2">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7pSEzaEANrWXuYpXS2jgV2?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://joannabrouk.bandcamp.com/track/going-through-the-veil-becoming-a-swan">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=3079526432/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2737985634/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Alice Coltrane Turiyasangitananda - Keshava Murahara   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0KI9f3QcFF4cF6HhnPm5Tn">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0KI9f3QcFF4cF6HhnPm5Tn?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://alicecoltrane.bandcamp.com/track/keshava-murahara">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=979604399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=893073235/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Leech - Amethyst		   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/66GIX78XLyoC8UTFBmw2ZK">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/66GIX78XLyoC8UTFBmw2ZK?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://l33ch.bandcamp.com/track/amethyst">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2550771707/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1626521764/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      TINT - Earth D423    :
      <span class="data">
-      <a class="goto" href="https://tintintint.bandcamp.com/track/earth-d423">
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=961684428/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3605083819/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
-     Skúli Sverrison - Amadeo   :
+     Skúli Sverrison - Amadeo
      <span class="data">
-      <a class="goto" href="https://skulisverrisson.bandcamp.com/track/amedeo">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
      </span>
     </li>
     <li>
      Sheila Chandra - Lament Of McCrimmon / Song Of The Banshee   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7aOQQQsob9u6oFrlS9ZJME">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7aOQQQsob9u6oFrlS9ZJME?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://heartsofspacerecords.bandcamp.com/track/lament-of-mccrimmon-song-of-the-banshee">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2418836934/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2897878602/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      The King's Singers - Texas Girl At The Funeral Of Her Father   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Q8rw2AIhZxOE7sKIPFuVS">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Q8rw2AIhZxOE7sKIPFuVS?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Caroline Polachek - Parachute   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3ha7MSw0EdLTuXG7MOWU7F">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3ha7MSw0EdLTuXG7MOWU7F?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://carolinepolachek.bandcamp.com/track/parachute">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=3444714407/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2392951097/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -1079,44 +1037,41 @@
     <li>
      Harold Budd - Bismillahi ´Rrahmani ´Rrahim   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5oTnjavcEz8hENl2nlYmdx">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5oTnjavcEz8hENl2nlYmdx?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Shirley Horn Trio - I Watch You Sleep   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4JygDwvt7segPuyhgEabyk">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4JygDwvt7segPuyhgEabyk?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Brian McBride - Theguilt Of Uncomplicated Thoughts   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0IkQZHiFvjqefBBI7iv4rO">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0IkQZHiFvjqefBBI7iv4rO?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Laraaji,  - Meditation No. 1   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Z9PWaE8d55XcOxEHwx6U8">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Z9PWaE8d55XcOxEHwx6U8?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Miles Davis - Blue In Green   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5Q427qiOu3zUMjgUrTdIR9">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Q427qiOu3zUMjgUrTdIR9?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://thewarmers.bandcamp.com/track/miles-davis-blue-in-green-the-warmers-acid-dub">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -1138,105 +1093,99 @@
     <li>
      Serpentwithfeet - Bless Ur Heart   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7frwQQu06pNZ9AlB2DLK4O">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7frwQQu06pNZ9AlB2DLK4O?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://serpentwithfeet.bandcamp.com/track/bless-ur-heart">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Félicia Atkinson,  - ME   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2d7FoK7amJiLOk6S0IT8AS">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2d7FoK7amJiLOk6S0IT8AS?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://shelterpress.bandcamp.com/track/me">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2856724559/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3217347409/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Nina Simone - I Got It Bad (And That Ain’t Good)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0K2mx1BKskmnL5d3O3LJ2g">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0K2mx1BKskmnL5d3O3LJ2g?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://moochinaboutltd.bandcamp.com/track/i-got-it-bad-and-that-aint-good-2">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=501522388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1024912995/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Alice Coltrane - The Sun   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4I8E4jmk2GiTryyL8vPOZc">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4I8E4jmk2GiTryyL8vPOZc?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Jordan De La Sierra - Music For Devotional Pastimes   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0tfVbXqq9jxb1kpHZlstmq">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0tfVbXqq9jxb1kpHZlstmq?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://jordandelasierra.bandcamp.com/track/music-for-devotional-past">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=181699491/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=184432468/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Linda Perhacs - Dolphin   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6LRX4u7auZzD52OUIB1xly">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6LRX4u7auZzD52OUIB1xly?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://lindaperhacs.bandcamp.com/track/dolphin">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2123507608/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2805247342/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Jaco Pastorius - Portrait Of Tracy   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5NBAy2oiS9OIWyAZhklsH2">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5NBAy2oiS9OIWyAZhklsH2?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://tomsmerlo.bandcamp.com/track/portrait-of-tracy-jaco-pastorius">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/track=207176492/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Pauline Anna Strom - The Unveiling   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6uY4jTpE2hjhSwE2imW2A1">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6uY4jTpE2hjhSwE2imW2A1?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://paulineannastrom.bandcamp.com/track/the-unveiling">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=366322971/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1556433900/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Blossom Dearie - Now At Last   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1KVjdT6gGX1U40DAvEXjsq">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1KVjdT6gGX1U40DAvEXjsq?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Saint-Saëns - The Carnival Of The Animals   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3U8Fx7zNTQrctytkj6Gqgd">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3U8Fx7zNTQrctytkj6Gqgd?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://yoednir.bandcamp.com/track/saint-sa-ns-the-carnival-of-the-animals-xiii-the-swan">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -1258,66 +1207,66 @@
     <li>
      Laraaji - Sun Zither (1984)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0EL7m5rcM5FAWsZqQPHLgd">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0EL7m5rcM5FAWsZqQPHLgd?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://laraaji.bandcamp.com/track/sun-zither-2-2">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2037326968/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3101546684/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Steve Reich - Six Marimbas   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6sIs5PgFkiE1Sxj84GJ8Mg">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6sIs5PgFkiE1Sxj84GJ8Mg?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Moondog - Moondog Monologue    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4ob54LbuG9oNmKMxhJ5c4z">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4ob54LbuG9oNmKMxhJ5c4z?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://honestjonsrecords.bandcamp.com/track/moondog-monologue">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=2911492199/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=4262986033/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Rita Sahai -  Dim Ta Dare Dim: Raag Jog (Tarana) [Druta Teental]    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/47ZC3DXhVQBvR7nJD4VsHp">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/47ZC3DXhVQBvR7nJD4VsHp?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Meredith Monk - Ellis Island   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6LKYTKdEEgikRjVjKXj3d9">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6LKYTKdEEgikRjVjKXj3d9?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Julia Holter - Boy In The Moon   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3E4TJMJYHnHRwRsEbUtJ1T">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3E4TJMJYHnHRwRsEbUtJ1T?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Saloli - Lullaby   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4bMuiGIGcyFAa2OJ9lDMaK">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4bMuiGIGcyFAa2OJ9lDMaK?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://saloli.bandcamp.com/track/lullaby">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=1075737664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2967769285/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>
@@ -1337,38 +1286,35 @@
    </summary>
    <ol>
     <li>
-     Harold Budd,  - Why Do You Love Me?   :
+     Harold Budd,  - Why Do You Love Me?
      <span class="data">
-      <a class="goto" href="https://darrpurple.bandcamp.com/track/8-harold-budd-elizabeth-fraser-robin-guthrie-simon-raymonde-why-do-you-love-me">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
      </span>
     </li>
     <li>
      Erik Satie - Tendrement   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4PZIUFS1BWz6b1s8cJL0XP">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4PZIUFS1BWz6b1s8cJL0XP?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      The Singers Unlimited - Killing Me Softly   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5QP9P48x0NmnLhCTRg3CYU">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5QP9P48x0NmnLhCTRg3CYU?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Stars Of The Lid - A Meaningful Moment Through A Meaning(less) Process   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4TrCvd1PrqI14lZb7tEtYo">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4TrCvd1PrqI14lZb7tEtYo?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://starsofthelid.bandcamp.com/track/a-meaningful-moment-through-a-meaning-less-process">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=605498052/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1150655336/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
@@ -1379,12 +1325,12 @@
     <li>
      Björk - All Is Full Of Love   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6igs0Bpazd8H8VM8tJZaHB">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6igs0Bpazd8H8VM8tJZaHB?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://bjork.bandcamp.com/track/all-is-full-of-love">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=411120297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2816611839/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
@@ -1400,31 +1346,28 @@
     <li>
      Ustad Rais Khan,  - Raga Yaman Kalyan   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0aAk63pl3x0ZEcApoU2CHO">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0aAk63pl3x0ZEcApoU2CHO?utm_source=generator')">
        🟢
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Brian Eno - Thursday Afternoon   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4t3Yh6tKkxXrc458pNI7zZ">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4t3Yh6tKkxXrc458pNI7zZ?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://cloudlandbluequartet.bandcamp.com/track/variation-on-brian-enos-thursday-afternoon-pt-1">
-       <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
     <li>
      Jefre Cantu-Ledesma - Conversations With Myself 1   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0sPtS0MV67mn4QAhMeXuED">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0sPtS0MV67mn4QAhMeXuED?utm_source=generator')">
        🟢
-      </a>
-      <a class="goto" href="https://shiningskullstudio.bandcamp.com/track/conversations-with-myself-1">
+      </button>
+      <button class="goto" onclick="embedplay('https://bandcamp.com/EmbeddedPlayer/album=246606053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1567184773/transparent=true/')">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
-      </a>
+      </button>
      </span>
     </li>
    </ol>

@@ -163,6 +163,7 @@ class nts:
                         rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
                         if rq:
                             self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)
+                            self.mt_bmeta(show)
                         
                     # ADD
                     if show not in self._j2d('./uploaded'):
@@ -851,7 +852,7 @@ class nts:
             for i in creds:
                 u += [creds[i]['user']]
             spot.user_follow_users(u)
-        
+
     # MULTITHREADING FUNCTIONS
 
     def qmt(self,q,kind,nw=16):
@@ -1001,20 +1002,42 @@ class nts:
             episode = list(q1.keys())[l1]
             for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
                 td = list(q1[list(q1.keys())[l1]].keys())[l2]
-                if taskdict[f"q1.{l1:03}.{l2:03}"] == -1:
+                if taskdict[f"q1.{l1:03}.{l2:03}"] == '':
                     if episode not in q12:
                         q12[episode] = dict()
                     q12[episode][td] = q2[episode][td]
                 else:
-                    q1[episode][td] = taskdict[f"q1.{l1:03}.{l2:03}"]
+                    q1[episode][td] = {'s0':taskdict[f"q1.{l1:03}.{l2:03}"],'s1':''}
         if q12:
+            print('.running-twice.',end='\r')
             td2 = self.qmt([q12],'bandcamp',8)
             for l1 in range(len(q12)):
                 episode = list(q12.keys())[l1]
                 for l2 in range(len(q12[list(q12.keys())[l1]])): # td are tracks
                     td = list(q12[list(q12.keys())[l1]].keys())[l2]
-                    q1[episode][td] = td2[f"q1.{l1:03}.{l2:03}"]
+                    q1[episode][td] = {'s0':'','s1':td2[f"q1.{l1:03}.{l2:03}"]}
+                    
         return(q1)
+
+    def mt_bmeta(self,show):
+        bandcamp = self._j2d(f'./bandcamp/{show}')
+        q1 = dict()
+        for e in bandcamp:
+            for t in bandcamp[e]:
+                if bandcamp[e][t]['ratio'] >= 3:
+                    if 'albumid' not in bandcamp[e][t]:
+                        if e not in q1:
+                            q1[e] = dict()
+                        q1[e][t] = bandcamp[e][t]['trackid']
+        if q1:
+            taskdict = self.qmt([q1],'bmeta',8)
+            for l1 in range(len(q1)):
+                episode = list(q1.keys())[l1]
+                for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
+                    td = list(q1[list(q1.keys())[l1]].keys())[l2]
+                    bandcamp[episode][td]['album_id'] = taskdict[f"q1.{l1:03}.{l2:03}"]['album_id']
+                    bandcamp[episode][td]['track_id'] = taskdict[f"q1.{l1:03}.{l2:03}"]['track_id']
+        self._d2j(f'./bandcamp/{show}',bandcamp)
 
     # HTML MAKER
 
@@ -1099,16 +1122,31 @@ class nts:
             <meta content="width=device-width,initial-scale=1" name="viewport"/>
             <link href="../assets/stylesheet.css" rel="stylesheet"/>
             <link rel="icon" href="../assets/Nts-radio.jpg">
+            <script>
+                    function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+            </script>
             </head>
             <body>
                 <h1><a href="https://github.com/nts-bot/nts-bot.github.io">GitHub</a></h1>
             """
         pid = self._j2d('pid')[show]
         title = self._j2d('./extra/titles')
-        doc += f'<div><br><a href="https://open.spotify.com/playlist/{pid}"><img class="picon" src="../assets/Spotify_icon.svg.png"/></a></div><div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br></div>'
-
+        # <div><br>
+        # <a href="https://open.spotify.com/playlist/{pid}"><img class="picon" src="../assets/Spotify_icon.svg.png"/></a>
+        # </div>
+        doc += f"""
+        <div>
+        <h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br>
+        <iframe id="embed" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{pid}?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" seamless>
+        </iframe>
+        </div>
+        """
         episodes = self._j2d(f'./tracklist/{show}')
-        # spotify = self._j2d(f'./spotify/{show}')
+        spotify = self._j2d(f'./spotify/{show}')
         bandcamp = self._j2d(f'./bandcamp/{show}')
         meta = self._j2d(f'./meta')[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
@@ -1127,15 +1165,26 @@ class nts:
                 ttit = episodes[i][j]['title']
 
                 try:
-                    bc = bandcamp[i][j]['url']
-                    bnd = f"""<a class="goto" href="{bc}"><img src="../assets/bandcamp-logo-alt.svg" class="subicon"/></a>  """
+                    tid = bandcamp[i][j]['track_id']
+                    aid = bandcamp[i][j]['album_id']
+                    if aid == "null":
+                        bc = f'https://bandcamp.com/EmbeddedPlayer/track={tid}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/'
+                    else:
+                        bc = f'https://bandcamp.com/EmbeddedPlayer/album={aid}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track={tid}/transparent=true/'
+                    bnd = f"""
+                    <button class="goto" onClick="embedplay('{bc}')">
+                    <img src="../assets/bandcamp-logo-alt.svg" class="subicon"/>
+                    </button>
+                    """
                 except:
                     bnd = ''
                 
                 try:
                     if spotify[i][j]['ratio'] >= 3:
-                        sp = f"""https://open.spotify.com/track/{spotify[i][j]['trackid']}"""
-                        spo = f"""<a class="goto" href="{sp}">🟢</a>  """
+                        spo = f"""
+                        <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/{spotify[i][j]['trackid']}?utm_source=generator')">🟢
+                        </button>  
+                        """
                     else:
                         spo = ''
                 except:
@@ -1207,20 +1256,25 @@ def multithreading(taskdict, no_workers,kind):
             time.sleep(1.0)
             result = stn.mt_request(taskcopy[taskid])
             soup = bs(result, "html.parser")
-            # try:
             if soup.select('.noresults-header'):
                 cont = counter(taskid,'') #-1
             else:
                 d = []
-                for k in range(len(soup.select('.subhead'))):
+                kk = len(soup.select('.subhead'))
+                if kk <= 3:
+                    kr = kk
+                else:
+                    kr = 3
+                for k in range(kr):
                     d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
                     'title':soup.select('.heading')[k].text.replace('\n','').strip(),
-                    'url':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
+                    'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
                 cont = counter(taskid,d)
-            # except:
-            #     cont = counter(taskid,{'artist':soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip(),
-            #         'title':soup.select('.heading')[0].text.replace('\n','').strip(),
-            #         'url':soup.select('.itemurl')[0].text.replace('\n','').strip()})    
+        elif kind == 'bmeta':
+            soup = str(stn.mt_request(taskcopy[taskid]))
+            cont = counter(taskid,{
+                'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
+                'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
         return(cont)
 
     class __worker__(Thread):
