@@ -144,11 +144,11 @@ class nts:
                             do += [episode]
                     if do:
                         self.ntstracklist(show,do)
-                    # SEARCH/RATE
+
+                    # SPOTIFY
                     rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
                     if rq:
                         self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
-
                     #
                     rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
                     if rq:
@@ -156,9 +156,13 @@ class nts:
 
                     # BANDCAMP
                     if bd:
+                        rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp_search_results/{show}") 
+                        if rq:
+                            self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)
+
                         rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
                         if rq:
-                            self.searchloop(show,['tracklist','bandcamp','spotify'],'bandcamp',do)
+                            self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)
                         
                     # ADD
                     if show not in self._j2d('./uploaded'):
@@ -810,24 +814,37 @@ class nts:
                 extent = self.showlist[(200 * (usr - 1)):(200 * (usr))]
 
             print('Unfollowing',end='\r')
-            plys = []
-            for i in range(4):
-                it = spot.user_playlists(user,offset=(i * 50))['items']
-                plys += [k['id'] for k in it]
-            for i in plys:
-                playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
-                spot.user_playlist_unfollow(playlist_owner_id, i)
+            cn = False
+            while not cn:
+                try:
+                    plys = []
+                    for i in range(4):
+                        it = spot.user_playlists(user,offset=(i * 50))['items']
+                        plys += [k['id'] for k in it]
+                    for i in plys:
+                        playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
+                        spot.user_playlist_unfollow(playlist_owner_id, i)
+                    cn = True
+                except:
+                    print('error')
 
             print('Following')
             print(f'{extent[0][0]} : {extent[-1][0]}')
-            for i in extent[::-1]:
-                print(i[:20],end='\r')
-                playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
-                playlist_id = self.pid(i)
-                if playlist_id:
-                    spot.user_playlist_follow_playlist(playlist_owner_id, playlist_id)
-                else:
-                    print(f'FAILED : {i}')
+            cn = False
+            while not cn:
+                try:
+                    for i in extent[::-1]:
+                        print(i[:20],end='\r')
+                        playlist_owner_id = '31yeoenly5iu5pvoatmuvt7i7ksy'
+                        playlist_id = self.pid(i)
+                        if playlist_id:
+                            spot.user_playlist_follow_playlist(playlist_owner_id, playlist_id)
+                        else:
+                            print(f'FAILED : {i}')
+                    cn = True
+                except:
+                    print('error')
+            
 
             del creds[str(usr)]
             u = []
@@ -1190,17 +1207,20 @@ def multithreading(taskdict, no_workers,kind):
             time.sleep(1.0)
             result = stn.mt_request(taskcopy[taskid])
             soup = bs(result, "html.parser")
-            try:
-                if soup.select('.noresults-header'):
-                    cont = counter(taskid,-1)
-                else:
-                    cont = counter(taskid,{'artist':soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip(),
-                    'title':soup.select('.heading')[0].text.replace('\n','').strip(),
-                    'url':soup.select('.itemurl')[0].text.replace('\n','').strip()})
-            except:
-                cont = counter(taskid,{'artist':soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip(),
-                    'title':soup.select('.heading')[0].text.replace('\n','').strip(),
-                    'url':soup.select('.itemurl')[0].text.replace('\n','').strip()})    
+            # try:
+            if soup.select('.noresults-header'):
+                cont = counter(taskid,'') #-1
+            else:
+                d = []
+                for k in range(len(soup.select('.subhead'))):
+                    d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
+                    'title':soup.select('.heading')[k].text.replace('\n','').strip(),
+                    'url':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
+                cont = counter(taskid,d)
+            # except:
+            #     cont = counter(taskid,{'artist':soup.select('.subhead')[0].text.replace('\n','').split('by')[1].strip(),
+            #         'title':soup.select('.heading')[0].text.replace('\n','').strip(),
+            #         'url':soup.select('.itemurl')[0].text.replace('\n','').strip()})    
         return(cont)
 
     class __worker__(Thread):
