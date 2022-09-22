@@ -10,6 +10,15 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+        function embedplay(link) 
+        {
+            document.getElementById("embed").setAttribute('src', link)
+            // document.querySelector('[title="Play"]').click()
+            // document.querySelector('button[data-testid="play-button"]').click()
+            // document.querySelector('button[title="Play"]').click()
+        }
+  </script>
  </head>
  <body>
   <h1>
@@ -28,8 +37,11 @@
     <a href="https://nts.live/shows/the-breakfast-show-flo">
      The NTS Breakfast Show w/ Flo
     </a>
-   </h2>
+   </h2> 
    <br/>
+   <!-- https://open.spotify.com/embed/track/55fTOI7uzuDswQFUjmgu3M?utm_source=generator -->
+    <iframe id="embed" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4yN04eQGIl1Vs1ijVCCyeL?utm_source=generator&theme=1" width="80%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
   </div>
   <details>
    <summary>
@@ -48,12 +60,13 @@
     <li>
      Misha Panfilov - Seagulls   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/55fTOI7uzuDswQFUjmgu3M">
+      <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/55fTOI7uzuDswQFUjmgu3M?utm_source=generator')">
        🟢
-      </a>
+      </button>
       <a class="goto" href="https://mpsc.bandcamp.com/track/seagulls">
        <img class="subicon" src="../assets/bandcamp-logo-alt.svg"/>
       </a>
+      <!-- "https://bandcamp.com/EmbeddedPlayer/album=990383762/size=small/bgcol=ffffff/linkcol=0687f5/track=418800771/transparent=true/" seamless> -->
      </span>
     </li>
     <li>

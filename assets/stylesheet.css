@@ -132,6 +132,10 @@ span {
   filter: invert(100%);  
 }
 
+iframe{
+  margin-left: 2em;
+}
+
 img{
   position:absolute;
 }

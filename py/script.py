@@ -1091,7 +1091,7 @@ class nts:
         doc += f'<div><br><a href="https://open.spotify.com/playlist/{pid}"><img class="picon" src="../assets/Spotify_icon.svg.png"/></a></div><div><h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br></div>'
 
         episodes = self._j2d(f'./tracklist/{show}')
-        spotify = self._j2d(f'./spotify/{show}')
+        # spotify = self._j2d(f'./spotify/{show}')
         bandcamp = self._j2d(f'./bandcamp/{show}')
         meta = self._j2d(f'./meta')[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
