@@ -16,19 +16,6 @@
 html {
   scroll-behavior: smooth;
 }
-/* FONT */
-/* 
-i, em {
-  font-family: Garamond;
-  font-style: italic;
-  text-decoration: underline;
-}
-
-i b {
-  font-family: Garamond;
-  font-style: italic;
-  font-weight: bold;
-} */
 
 h1,
 h2,
@@ -70,21 +57,6 @@ blockquote {
   padding: 2em;
 }
 
-details > summary {
-  cursor: cell;
-  list-style: none;
-}
-
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
-details {
-  background-color: #000;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
 .title {
   font-family: 'nts2';
   color:#ffffff;
@@ -122,11 +94,11 @@ span {
 
 .picon {
   height: 1em;
-  margin: 10px 0px 0px 20px;
+  margin: 0.3em 0em 0em 5em;
 }
 
 .subicon {
-  margin: -0.8em 0em 0em 2em;
+  margin: -0.7em 0em 0em 7em;
   height: 3em;
   -webkit-filter: invert(100%);
   filter: brightness(0) invert(1);
@@ -160,7 +132,6 @@ img{
 .data {
   font-size: small;
   text-decoration: none;
-  /* color: #000; */
 }
 
 body {
@@ -192,6 +163,10 @@ ul {
   color: #ffffff;
 }
 
+ol {
+  margin-right: 5em;
+}
+
 /* MEDIA */
 
 @media screen and (max-width: 38em) {
@@ -200,5 +175,12 @@ ul {
   }
   span {
     line-height: initial;
+  }
+  ol{
+    margin-left: 0em;
+    padding-left: 0em;
+  }
+  li{
+    list-style-type: none;
   }
 }

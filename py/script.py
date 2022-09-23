@@ -1182,7 +1182,8 @@ class nts:
                 try:
                     if spotify[i][j]['ratio'] >= 3:
                         spo = f"""
-                        <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/{spotify[i][j]['trackid']}?utm_source=generator')">🟢
+                        <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/{spotify[i][j]['trackid']}?utm_source=generator')">
+                        <img class="picon" src="../assets/Spotify_icon.svg.png"/>
                         </button>  
                         """
                     else:
