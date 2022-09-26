@@ -1031,7 +1031,7 @@ class nts:
                             q1[e] = dict()
                         q1[e][t] = bandcamp[e][t]['trackid']
         if q1:
-            taskdict = self.qmt([q1],'bmeta',8)
+            taskdict = self.qmt([q1],'bmeta',16) #8?
             for l1 in range(len(q1)):
                 episode = list(q1.keys())[l1]
                 for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
