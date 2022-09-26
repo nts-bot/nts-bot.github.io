@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -18,19 +25,31 @@
    </a>
   </h1>
   <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/6pAOh9F2caxqiN6VBIIoHU">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
    <h2>
     <a href="https://nts.live/shows/martin-newells-oddcaste">
      Martin Newell's Oddcaste
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/6pAOh9F2caxqiN6VBIIoHU?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
+  <details>
+   <summary>
+    <h3>
+     <div class="title">
+      Martin Newell's Oddcaste - 25.09.22
+     </div>
+     <span class="data">
+      <a href="https://nts.live/shows/martin-newells-oddcaste/episodes/martin-newells-oddcaste-25th-september-2022">
+       <img class="icon" src="../assets/nts-icon.jpg"/>
+      </a>
+     </span>
+    </h3>
+   </summary>
+   <ol>
+   </ol>
+  </details>
   <details>
    <summary>
     <h3>
@@ -1664,17 +1683,17 @@
     <li>
      Pink Floyd - Grantchester Meadows   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5YllQ4X9X9WgxeERRfgogO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5YllQ4X9X9WgxeERRfgogO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Pink Floyd - Grantchester Meadows   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5YllQ4X9X9WgxeERRfgogO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5YllQ4X9X9WgxeERRfgogO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1728,9 +1747,9 @@
     <li>
      Robert Farnon,  - Westminster Waltz   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4AlWX8feyg6J5FNUlTMWay">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4AlWX8feyg6J5FNUlTMWay?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1800,17 +1819,17 @@
     <li>
      Charles Trenet - La Mer   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1ZK8WJqkD1XhEYI1AlkMHG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1ZK8WJqkD1XhEYI1AlkMHG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Petula Clark - I Couldn't Live Without Your Love   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0neniOq88zX3RLJmYffzjc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0neniOq88zX3RLJmYffzjc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1848,9 +1867,9 @@
     <li>
      Elvis Costello - My Funny Valentine   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0k5RclJGfmZqOy3cRggtom">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0k5RclJGfmZqOy3cRggtom?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1872,9 +1891,9 @@
     <li>
      Ian Dury - My Old Man   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3cPJ4DPg09gqDXiOWeHTI8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3cPJ4DPg09gqDXiOWeHTI8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1912,9 +1931,9 @@
     <li>
      Marty Wilde - Abergavenny   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4ljeDGHXdSBBxQB1iL4Jp1">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4ljeDGHXdSBBxQB1iL4Jp1?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1936,25 +1955,25 @@
     <li>
      Helen Kane - Button Up Your Overcoat   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2dviMmmrCcal3fy5faAvuQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2dviMmmrCcal3fy5faAvuQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      The Sensational Alex Harvey Band - The Last Of The Teenage Idols (Parts 1, 2, 3)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1KDjUPtGQmnQrtvOu59tqu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1KDjUPtGQmnQrtvOu59tqu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bonzo Dog Band - Postcard   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/17KStxx4XoZWsJWtAWzawl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/17KStxx4XoZWsJWtAWzawl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
