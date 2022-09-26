@@ -119,6 +119,7 @@ class nts:
     # RUN SCRIPT
 
     def runscript(self,shows,bd=False,fast=False):
+        self.backup()
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
@@ -1208,6 +1209,14 @@ class nts:
         pretty = soup.prettify() 
         with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
             f.write(pretty)
+
+    # BACKUP
+
+    def backup(self):
+        for i in ['meta','pid']:
+            file = self._j2d(f'{i}')
+            self._d2j(f'./extra/{i}',file)
+
 
 # MULTITHREADING WORKER
 
