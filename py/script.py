@@ -174,6 +174,8 @@ class nts:
                         if rq:
                             self.spotifyplaylist(show)
                     break
+                except KeyboardInterrupt:
+                    break
                 except Exception as error:
                     print(error)
             # HTML
