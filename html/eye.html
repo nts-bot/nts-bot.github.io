@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -18,24 +25,20 @@
    </a>
   </h1>
   <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/1htFQSkpC0721t0oQxrRJm">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
    <h2>
     <a href="https://nts.live/shows/eye">
-     EYE
+     E Y E
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/1htFQSkpC0721t0oQxrRJm?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
     <h3>
      <div class="title">
-      EYE - 16.09.22
+      E Y E - 16.09.22
      </div>
      <span class="data">
       <a href="https://nts.live/shows/eye/episodes/eye-16th-september-2022">
@@ -51,7 +54,7 @@
    <summary>
     <h3>
      <div class="title">
-      EYE - 19.08.22
+      E Y E - 19.08.22
      </div>
      <span class="data">
       <a href="https://nts.live/shows/eye/episodes/eye-19th-august-2022">
