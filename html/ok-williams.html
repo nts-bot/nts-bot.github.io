@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -18,18 +25,14 @@
    </a>
   </h1>
   <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/7ABJESHbGsF3JyaLI7T0Xu">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
    <h2>
     <a href="https://nts.live/shows/ok-williams">
      OK Williams
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/7ABJESHbGsF3JyaLI7T0Xu?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -53,9 +56,9 @@
     <li>
      Emma DJ,  - Julia Bashmore   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/48wqsurBc6BFBYDh58LqK9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/48wqsurBc6BFBYDh58LqK9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -71,17 +74,17 @@
     <li>
      Puff Daddy - It's All About The Benjamins   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1oR0rQInqnWVUN8SALMQwT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1oR0rQInqnWVUN8SALMQwT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      John B - Olé   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5HDum847m4mCo5jOf5bKxa">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5HDum847m4mCo5jOf5bKxa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -97,9 +100,9 @@
     <li>
      Bamz - Forward V Backroll   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/43S4ZSqLSmvR3Lc3FvGwJJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/43S4ZSqLSmvR3Lc3FvGwJJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -110,9 +113,9 @@
     <li>
      Dave N.A. -  Patypliz   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2bK4zVFgf1BZDcCuDwlDFZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2bK4zVFgf1BZDcCuDwlDFZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -133,9 +136,9 @@
     <li>
      Breaka - Solaria   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1uRly12KAbKb9VVrooZabA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1uRly12KAbKb9VVrooZabA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -146,17 +149,17 @@
     <li>
      Dj CO.KR - Soundbwoy Rudebwoy (Qnoe Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6pI2fZEVBJP9PiAy8ztm4T">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6pI2fZEVBJP9PiAy8ztm4T?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Helsmoortel - Evil Intent (Nickname Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1085lqtmwUq0O5eW7NGKdf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1085lqtmwUq0O5eW7NGKdf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -172,9 +175,9 @@
     <li>
      Helsmoortel - FTP Server   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/38UT3lECH12ui9ydK8SgeG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/38UT3lECH12ui9ydK8SgeG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -185,9 +188,9 @@
     <li>
      Bitter Babe,  - Delirio   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6s3dcu8YI2WXvNIbxNvhsI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6s3dcu8YI2WXvNIbxNvhsI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -238,9 +241,9 @@
     <li>
      Take Van - Buzzkill   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4p9ROZgApJpuFRKl2Ffhbu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4p9ROZgApJpuFRKl2Ffhbu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -262,81 +265,81 @@
     <li>
      Sam Gendel - Waraku3   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3mavjUsHUNsOzf6aTNfmmt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3mavjUsHUNsOzf6aTNfmmt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Mechatok - Terminal T6   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0TInuyK1qZbXpBfZ5FA64w">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0TInuyK1qZbXpBfZ5FA64w?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Eugy,  - My Touch (Skillibeng Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3ookSZqoelaMwmWbMNL9eU">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3ookSZqoelaMwmWbMNL9eU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      CLIP - Fall Back   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2vbrodbHlus3zzc1Ai3ooO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2vbrodbHlus3zzc1Ai3ooO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Future - My Collection   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0526DaOuV7mRlPKxhMSJKw">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0526DaOuV7mRlPKxhMSJKw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Three-6 Mafia - In Da Game   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4bCJZwyVjboKU3l7s9AzGH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4bCJZwyVjboKU3l7s9AzGH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Gangsta Boo - Mask 2 My Face   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3j4yKzIaTnsruQDmfaw2kK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3j4yKzIaTnsruQDmfaw2kK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      K-Trap - Pour It Up   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/21mIuBa7WbUnpV0kDRpiEG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/21mIuBa7WbUnpV0kDRpiEG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ac-130 - Reality Check   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0eOiv0nxcgONufFJeBNGbH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0eOiv0nxcgONufFJeBNGbH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Coucou Chloé,  - ZERO FIVE STARS (KELVIN KRASH REMIX)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5u2NPvCmo6iGMLY69eO92O">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5u2NPvCmo6iGMLY69eO92O?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -352,73 +355,73 @@
     <li>
      Bar Italia - Miracle Crush   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3NOiTPO3GxedH6szoZraG5">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3NOiTPO3GxedH6szoZraG5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dry Cleaning - Her Hippo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2HOYi7C1zGWQZCZMXy0ME3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2HOYi7C1zGWQZCZMXy0ME3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      bôa - Duvet   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/42qNWdLKCI41S4uzfamhFM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/42qNWdLKCI41S4uzfamhFM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Isabelle Antena - How Can They Tell   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ryPeR87CDNu35GvxiM8Ne">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ryPeR87CDNu35GvxiM8Ne?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Alectra - Mr. Man   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2L48Dg50rN1kLZ9jToYMTe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2L48Dg50rN1kLZ9jToYMTe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Toni - True Lies   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4BU1Q9Q64xbDt0s3TJx6lG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4BU1Q9Q64xbDt0s3TJx6lG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ssiege - Meteora   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1vM3lWyQETXLojw1rq9eZn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1vM3lWyQETXLojw1rq9eZn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jawnino - Dance   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/164a87eqJFZ1NGLWAgjcyh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/164a87eqJFZ1NGLWAgjcyh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Rochelle Jordan - Got Em (Sango Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/52b5Bl2zPRRfZi7uinhGZR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/52b5Bl2zPRRfZi7uinhGZR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -434,9 +437,9 @@
     <li>
      Carol Harding - Movin’ On   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0oTvUfW5H2iiTd01gFBijt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0oTvUfW5H2iiTd01gFBijt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -447,25 +450,25 @@
     <li>
      Telex - Moscow Diskow    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/11vZ8s5Cgf0J4YXf3kFW7c">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/11vZ8s5Cgf0J4YXf3kFW7c?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Wiley - Wearing My Rolex   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5lg2KyBGoMgP7zle5Zy03S">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5lg2KyBGoMgP7zle5Zy03S?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      SL2 - On A Ragga Tip (Original Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7gX6Y2jhsrVqu9qIrxpPof">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7gX6Y2jhsrVqu9qIrxpPof?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -492,9 +495,9 @@
     <li>
      African-American Sound Recordings - Astral Breakin’   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2cvt2qzOujpEBAvgXkj0TI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2cvt2qzOujpEBAvgXkj0TI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -510,25 +513,25 @@
     <li>
      Shaybo - Ya Dun Know   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2VtSzOd6YBhKvsLiI3X6IE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2VtSzOd6YBhKvsLiI3X6IE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      BAMBU - INVT   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0qJS2xp3qDmRwIbwSfp7YN">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0qJS2xp3qDmRwIbwSfp7YN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Python - TMMD (IMMD)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/24SK6jRWGJpXwbODXYqaIO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/24SK6jRWGJpXwbODXYqaIO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -539,9 +542,9 @@
     <li>
      Skiifall - Bloodclarrt Business   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0x3VmItOxAzDKLOT94FQSv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0x3VmItOxAzDKLOT94FQSv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -552,9 +555,9 @@
     <li>
      Sylvere - Shellington   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1tolZXrvX5rGg6ogHkaDz8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1tolZXrvX5rGg6ogHkaDz8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -570,49 +573,49 @@
     <li>
      DJ Richard - In Broad Daylight   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/404ZHM6Q3hkzAJ7Tfm6udy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/404ZHM6Q3hkzAJ7Tfm6udy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Moor Mother - After Images   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2v9iiqNM2C4gaVb6YKHJPM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2v9iiqNM2C4gaVb6YKHJPM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Danifox - Solo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1fClaZOfVwU8aExlxP8oeC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1fClaZOfVwU8aExlxP8oeC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Doraemon - Sequncia Do Empurra E Toma   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0fBp9poFKdE2GuK1QqsPzt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0fBp9poFKdE2GuK1QqsPzt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Vanyfox - Cinco Por Cento   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6ZbFBuonGhAM40i1oejL4c">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6ZbFBuonGhAM40i1oejL4c?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      700 Bliss - Anthology   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6sFHuU9O63nbo3LKNIvHFK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6sFHuU9O63nbo3LKNIvHFK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -633,9 +636,9 @@
     <li>
      Conrad Pack - Depart   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/428Xj2orE2D3fMPwBqv5Oc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/428Xj2orE2D3fMPwBqv5Oc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -651,25 +654,25 @@
     <li>
      VHOOR - Ritmada   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2DbatwBXqAP4zzyjJFJk5e">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2DbatwBXqAP4zzyjJFJk5e?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dave N.A. - Cloudchill   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5KfZT5fKXVN5pjWNREruww">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5KfZT5fKXVN5pjWNREruww?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Sxylk - Barbiana Remix   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1xFHgIsrHC3WYPDGznMpEe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1xFHgIsrHC3WYPDGznMpEe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -680,9 +683,9 @@
     <li>
      Gigi FM - Ketu’s Dance   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7b2V8Zbrdx8Igu4lFh4Smd">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7b2V8Zbrdx8Igu4lFh4Smd?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -693,9 +696,9 @@
     <li>
      Return Of Q Project - Champion Sound (Alliance Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5HUlait8F98NnmUy8PoKA2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5HUlait8F98NnmUy8PoKA2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -738,9 +741,9 @@
     <li>
      Lyam Feat. Shy Girl &amp; John Glacier - Origami   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6pSnejvD3efWC49xei2LMC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6pSnejvD3efWC49xei2LMC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -751,65 +754,65 @@
     <li>
      Jeshi Feat. Fredwave - Another Cigarette   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5VBin8B0PcZgPtvw54VnU7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5VBin8B0PcZgPtvw54VnU7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jeshi - CHROME BENZO   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5lmhqes9LKoJv1i8yuYz1N">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5lmhqes9LKoJv1i8yuYz1N?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jeshi Feat. Obongjayar - Protein   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/13bJjJi6Oe6u73fBcOqltB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/13bJjJi6Oe6u73fBcOqltB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jeshi - Mask On   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7zxtj0SKcfBMYWnf7nYrsG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7zxtj0SKcfBMYWnf7nYrsG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Brbko Feat. Jawnino - Bonsam B3su   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1h0erkz45vK18tgwbJqdCe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1h0erkz45vK18tgwbJqdCe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ase Manual - Lawdaa Mercy   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0hiFDb8xu38uctSd9qrNHs">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0hiFDb8xu38uctSd9qrNHs?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Atjazz Feat. Clyde - I Forgot You   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2vQZXxNpl0tc7RZroeip8r">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2vQZXxNpl0tc7RZroeip8r?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Drake Feat. Future &amp; Young Thug - Way 2 Sexy (Srensen Funky Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0k1WUmIRnG3xU6fvvDVfRG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0k1WUmIRnG3xU6fvvDVfRG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -820,9 +823,9 @@
     <li>
      Jeshi - 3210 (Ross From Friends Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1PfbIpFjsS1BayUoqB3X7O">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1PfbIpFjsS1BayUoqB3X7O?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -833,41 +836,41 @@
     <li>
      Lyam - Moonbase   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6aBnuTBY7L10ukiSVK5Noz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6aBnuTBY7L10ukiSVK5Noz?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jawnino - It’s Cold Out   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5kJ7kbW1KVvGy5AZKwxvd8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5kJ7kbW1KVvGy5AZKwxvd8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dimzy X Monkey X #Smokeboys Swift - Richard Hammond   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ahIeJkSEpZCUnVJnjl4O8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ahIeJkSEpZCUnVJnjl4O8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      MJ Cole,  - From The Drop   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4tTmktgPZI8JHMsWpyipYE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4tTmktgPZI8JHMsWpyipYE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Wagon Christ - Receiver   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/06Ep0Rp9Moqwtboz6DXjT6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/06Ep0Rp9Moqwtboz6DXjT6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -878,17 +881,17 @@
     <li>
      Jeshi - Coffee   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4OFhR9J0DYdSCTjA4meJyR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4OFhR9J0DYdSCTjA4meJyR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      EVM128 - Slo Mo (Vip Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2fA0zcJ1K1xjHeubh2JGWC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2fA0zcJ1K1xjHeubh2JGWC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -904,17 +907,17 @@
     <li>
      DJ Jenfa - Dresscode   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1SRaQzTzWb02BZM5vvXoO5">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1SRaQzTzWb02BZM5vvXoO5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Louke Man - Creepin   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1gMn0jk3wTRbiSA8NFNyMa">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1gMn0jk3wTRbiSA8NFNyMa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -925,17 +928,17 @@
     <li>
      LSDXOXO - The Devil   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2EkOwCBWjcFfhychOKcY7j">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2EkOwCBWjcFfhychOKcY7j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Galcher Lustwerk - Cig Angel (Dance Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4KvQKVvr3X0kc2QYzhCNMH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4KvQKVvr3X0kc2QYzhCNMH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -951,17 +954,17 @@
     <li>
      SB Feat. Lavida Loca - New New   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5YS2FVqafUZg1mWh1v4wVZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5YS2FVqafUZg1mWh1v4wVZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Doja Cat - Get Into It (Yuh)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0W6I02J9xcqK8MtSeosEXb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0W6I02J9xcqK8MtSeosEXb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -982,9 +985,9 @@
     <li>
      Tessela - Hackney Parrot (Bailey’s Techno Tool)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/170ukLhJmsiTNqLHbNtcsG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/170ukLhJmsiTNqLHbNtcsG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1011,41 +1014,41 @@
     <li>
      Jeshi - 3210   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5o3UjkMXVuXH9ioZc4cqu2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5o3UjkMXVuXH9ioZc4cqu2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bekah CC - No Change   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2nUKXpyUdf43x27Wl6I24X">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2nUKXpyUdf43x27Wl6I24X?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Soraya - Hypnotized   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3BDAxgeGpUEUfKCbuXCyxn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3BDAxgeGpUEUfKCbuXCyxn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Rochelle Jordan - Next 2 You    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3bX6x6oCl1GU0CzfRUylOs">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3bX6x6oCl1GU0CzfRUylOs?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      John F.M. - ... And Then Leave   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6lskjwZN7Wzy4gumGCMHnC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6lskjwZN7Wzy4gumGCMHnC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1056,17 +1059,17 @@
     <li>
      Olive T - Bird In Space (M Bootyspoon’s Out To Lunch Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/14Aqt7l8tyuAzksLbl9JWT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/14Aqt7l8tyuAzksLbl9JWT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Louke Man - Hyperrealllll   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/60NM1wFD69UIkTE2BwV4eG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/60NM1wFD69UIkTE2BwV4eG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1082,9 +1085,9 @@
     <li>
      A-Trak - Spit   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7l2F2a8lakz6Hj1XS00jP8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7l2F2a8lakz6Hj1XS00jP8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1100,25 +1103,25 @@
     <li>
      Martyn Bootyspoon - Buss Down (Xzavier Stone Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3qCRmaeUQFWaaMuL0uV9iq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3qCRmaeUQFWaaMuL0uV9iq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Assault - Move Yo’ Big Booty   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2jWqCj69MWm0XWfIPlwHNt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2jWqCj69MWm0XWfIPlwHNt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Mark Pritchard - One Way Mirror   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/03rEqExKHDpzCBSrdOwEwu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/03rEqExKHDpzCBSrdOwEwu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1139,17 +1142,17 @@
     <li>
      Cream Dream - Come Into My House   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0vm2MCdqG0pjJvrdiyc3TC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0vm2MCdqG0pjJvrdiyc3TC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      CFCF - Sunrise Blue   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/70dtWf6DYY53vWH7migEiJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/70dtWf6DYY53vWH7migEiJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1160,17 +1163,17 @@
     <li>
      Haider - I Came To Destroy   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7gMWQ6FE1okjzZ15sxTwkm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7gMWQ6FE1okjzZ15sxTwkm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Laced - Caustic Reverie   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4nwLaU3jhAIUuGsKEZkBFW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4nwLaU3jhAIUuGsKEZkBFW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1191,57 +1194,57 @@
     <li>
      LSDXOXO - Baby   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4spLPc6Uh4GMLATBXJSLUj">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4spLPc6Uh4GMLATBXJSLUj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Aaron-Carl - 21 Positions   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2sWER5irVUgv5Uq4KJLEBc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2sWER5irVUgv5Uq4KJLEBc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Housewife 9 - Aston   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0F3O5aPpF30lw1NkC8Vm3j">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0F3O5aPpF30lw1NkC8Vm3j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      La Goony Chonga - Chongivity Activity   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ubBi2b3ke2dQ0kOXQl915">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ubBi2b3ke2dQ0kOXQl915?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Marie Davidson,  - Renegade Breakdown   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4u7nqGA1U5h5Eh0kIN3utu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4u7nqGA1U5h5Eh0kIN3utu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Doss - Look   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/42y1R39jgfNb8tNtNNoYMZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/42y1R39jgfNb8tNtNNoYMZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Sfire - Sfire 7   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/57raKVKlm6ofEoCCJJvTsY">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/57raKVKlm6ofEoCCJJvTsY?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1252,49 +1255,49 @@
     <li>
      MJ Cole,  - From The Drop (L-Vis 1990 Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0fBswcVTczJ5gzYQV5c6p6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0fBswcVTczJ5gzYQV5c6p6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      LSDXOXO - Sick Bitch (River Moon Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6TAwC9ee52uO1ZDnWkdyl9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6TAwC9ee52uO1ZDnWkdyl9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dance System,  - Get Up On It!   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6EJdMfuTTtkT3ODpuT0MyP">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6EJdMfuTTtkT3ODpuT0MyP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Manny - You All I Need   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3BCOiOHG6ifxr3d3WQMZrQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3BCOiOHG6ifxr3d3WQMZrQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DULLAFTRUSE - BABY   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5mt19tvqPmyNfTGbwcGl5S">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5mt19tvqPmyNfTGbwcGl5S?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      LSDXOXO - Mutant Exotic (BadSista Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4hmopYLIJhSr9l2Q52XGME">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4hmopYLIJhSr9l2Q52XGME?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1316,9 +1319,9 @@
     <li>
      No Home - Who Cares, The State Wants Me Dead Anyway   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4LW3H3ayHUcLjMKUJDxyAy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4LW3H3ayHUcLjMKUJDxyAy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1329,41 +1332,41 @@
     <li>
      Jadasea - Ashes To Ashes   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7mJzF7n5SpLf0UhMXyh7eg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7mJzF7n5SpLf0UhMXyh7eg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Babyfather - Snakeman Freestyle   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7gn9jIPGY5WaR0Kn9qQDge">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7gn9jIPGY5WaR0Kn9qQDge?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Kiran Kai - Missilence   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0hgTPnXvaWUTfZm6cOptFk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0hgTPnXvaWUTfZm6cOptFk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Oli XL - Go Oli Go!   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2sDQP7g2tR7opPnkjxXy6Y">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2sDQP7g2tR7opPnkjxXy6Y?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Sky H1 - Darklite   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6oe3kHHmXpyyCaAbUWDGbJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6oe3kHHmXpyyCaAbUWDGbJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1374,41 +1377,41 @@
     <li>
      Ssiege - Meteora   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1vM3lWyQETXLojw1rq9eZn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1vM3lWyQETXLojw1rq9eZn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Lauren Duffus - Stir Fry   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1kjuMZbI46u3Af1vlGZGue">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1kjuMZbI46u3Af1vlGZGue?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Manny - Never Was Ah Hoe   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2xrWiAwQeW7V7YaZ0YEAwK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2xrWiAwQeW7V7YaZ0YEAwK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Mark William Lewis - Pleasure Is Everything   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1mkOMJZWTrRriUbvr93q11">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1mkOMJZWTrRriUbvr93q11?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Proc Fiskal - Anti Chessst   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/02oaq3LWUIYXfpnzHu2cZN">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/02oaq3LWUIYXfpnzHu2cZN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1419,17 +1422,17 @@
     <li>
      Simo Cell - FARTS   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/65aKIK2GRSTlDSH4ieN965">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/65aKIK2GRSTlDSH4ieN965?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Teen - Pls (Emily Glass Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1MQbvMPxfJRGJYrKt4Zt4S">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1MQbvMPxfJRGJYrKt4Zt4S?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1440,17 +1443,17 @@
     <li>
      E-Saggila - Relik   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5cRFYdbzZQ70jFL4KRamFZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5cRFYdbzZQ70jFL4KRamFZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Arca - Brokeup   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7pQyoXUiVOptxs9FuA6wOX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7pQyoXUiVOptxs9FuA6wOX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1461,9 +1464,9 @@
     <li>
      Two Shell - Touchpad   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Zi6jLDMzAgfEN737xzx08">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Zi6jLDMzAgfEN737xzx08?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1474,17 +1477,17 @@
     <li>
      DJ Plead - RB C   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7fzBqW2jnVFNzUWmz6rc0J">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7fzBqW2jnVFNzUWmz6rc0J?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Buttechno - Big D Acid   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6SvGqF11Zi6k1WdFNbK2fK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6SvGqF11Zi6k1WdFNbK2fK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1500,33 +1503,33 @@
     <li>
      DJ Manny - Club GTA   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/226GZVbySRDSIpoHtlPAdz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/226GZVbySRDSIpoHtlPAdz?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ish Couture - Just For Fun   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3ZDKVfVPuOnpZTalgBhwvK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3ZDKVfVPuOnpZTalgBhwvK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Daemon - Dirk Ft. Modulaw, Xzavier Stone   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/02ormvxHaY1veBWQ5iJpSz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/02ormvxHaY1veBWQ5iJpSz?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Vegyn - Magenta Flu [140 BPM]   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7ICQzuRPMh5PCXnPO7BLL9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7ICQzuRPMh5PCXnPO7BLL9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1542,17 +1545,17 @@
     <li>
      1995 epilepsy - tug of war   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6YKoYWbcwkRc1cdiqQfiUs">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6YKoYWbcwkRc1cdiqQfiUs?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Oklou - Fall (Morwell Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7pGR1s6E9qSq3gtBVmXGMk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7pGR1s6E9qSq3gtBVmXGMk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1574,17 +1577,17 @@
     <li>
      Zazim - Everything   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/45jL4bA4jjpxa5MXt9mN10">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/45jL4bA4jjpxa5MXt9mN10?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dean Blunt - Coco   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0f880iHP6wM2Q9WGEce6Wt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0f880iHP6wM2Q9WGEce6Wt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1595,9 +1598,9 @@
     <li>
      She Spells Doom - Rudnick   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/71xCUQQW5WahvdO4p7NEIq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/71xCUQQW5WahvdO4p7NEIq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1608,25 +1611,25 @@
     <li>
      Titonton Duvanté - Foreplay   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/17JjNJ4aUhIIA1c2uDdEcd">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/17JjNJ4aUhIIA1c2uDdEcd?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Los Hermanos Detroit - Guidance   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0UrYx5qwawZN1cR90NAMEr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0UrYx5qwawZN1cR90NAMEr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Oyubi - WYB   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Rtx8ZJvF3Z083yoUinwlS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Rtx8ZJvF3Z083yoUinwlS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1637,9 +1640,9 @@
     <li>
      INVT - Sudando   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1d52WBN4qBWE8UDadQHH5T">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1d52WBN4qBWE8UDadQHH5T?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1655,9 +1658,9 @@
     <li>
      BEARCAT - Emergency   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6VJhT1TOIAhGOnQqMrf5F2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6VJhT1TOIAhGOnQqMrf5F2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1673,9 +1676,9 @@
     <li>
      Nikki Nair - Trunk   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6yLaCMWpaJ6i9yqYh0YCna">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6yLaCMWpaJ6i9yqYh0YCna?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1691,25 +1694,25 @@
     <li>
      Acemo - System Override   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/125BUABP1Yz2LPGPYh6OQk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/125BUABP1Yz2LPGPYh6OQk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Rush - Energ’e   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4nA3xCAiqZPK5K7y55DvFF">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4nA3xCAiqZPK5K7y55DvFF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      X-Coast - Track 1   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3cdEnpOnQLehzl5gZfdOir">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3cdEnpOnQLehzl5gZfdOir?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1725,9 +1728,9 @@
     <li>
      Kush Jones - Rugrats (Anz Childish Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7m5oA4sa3qj47SAHsKSABc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7m5oA4sa3qj47SAHsKSABc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1738,25 +1741,25 @@
     <li>
      Oyubi - Amen Spotter   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/72LdyBmgyKD5w9PHYNERdW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/72LdyBmgyKD5w9PHYNERdW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Kush Jones - Rugrats (DJ Manny Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4GvGt5u9j9OEGOvzH4Wi6C">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4GvGt5u9j9OEGOvzH4Wi6C?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Young Smoke - Tha Portal   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1ugIPTVn9lB2VPzEBhLIGr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1ugIPTVn9lB2VPzEBhLIGr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1777,73 +1780,73 @@
     <li>
      Basic Rhythm - 2 Da Core (RP Boo Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/008IjTp9I5sFB97AXTuU9x">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/008IjTp9I5sFB97AXTuU9x?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      M-Beat - Rough Like Me   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1gRUSFCuD4fCYGXgYNdses">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1gRUSFCuD4fCYGXgYNdses?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Foul-Play - Ragatere   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7t4LmKK4d0cUiWrGfEFhNV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7t4LmKK4d0cUiWrGfEFhNV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Luke - I Wanna Rock   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6BPA3Uzu6xDFTklgeWGqbD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6BPA3Uzu6xDFTklgeWGqbD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dj Paypal - Pop   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0qIHeRElaMQ3rwktKH5lsx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0qIHeRElaMQ3rwktKH5lsx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Stephanie Mills Ft. Teddy Pendergrass - Two Hearts   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4pbLfe9w0kIzns4ZekqfvO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4pbLfe9w0kIzns4ZekqfvO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      PinkPantheress - Pain (LSDXOXO Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4p7euivNtllV68CZSbso2I">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4p7euivNtllV68CZSbso2I?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Will Hofbauer,  - Pumice   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7dHdFQCFNNGfzoOE9jBYCV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7dHdFQCFNNGfzoOE9jBYCV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Swoose - Brepo (Full Circle Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/116iYEVqnxsRMp3P7bDEmV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/116iYEVqnxsRMp3P7bDEmV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1859,9 +1862,9 @@
     <li>
      DJ Co.KR - Soundbwoy  Rudeboy (Bianca Oblivion)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7x2wZdGO8EJKD3d9bKasaE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7x2wZdGO8EJKD3d9bKasaE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1877,9 +1880,9 @@
     <li>
      PinkPantheress - Nineteen (Nia Archives Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7LiSEDSNgSSBkFLDZlsLIm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7LiSEDSNgSSBkFLDZlsLIm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1906,41 +1909,41 @@
     <li>
      DJ Pitch - But In Fact   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0E1LVWPP1CzxIC6zCNCXkG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0E1LVWPP1CzxIC6zCNCXkG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ossie - Kalimba 03   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4gTcQlRQ0ZwNQIGupSBdtf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4gTcQlRQ0ZwNQIGupSBdtf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Evan Baggs - Blossom   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5yPhSWvZ5KdHhz8R7z7oyI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5yPhSWvZ5KdHhz8R7z7oyI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Anthony Naples - Pez Anthem   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5TzvTDMRSzEnO4qkWICS9W">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5TzvTDMRSzEnO4qkWICS9W?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Cari Lekebusch - Rituals   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1kYD2QQkKONs7hKw2y1aei">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1kYD2QQkKONs7hKw2y1aei?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1951,57 +1954,57 @@
     <li>
      Azealia Banks - Fuck Him All Night   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4vMZPiiWKgmjcUcJVdW6YD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4vMZPiiWKgmjcUcJVdW6YD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Da Klubb Kings - It's Time To Get Funky (Original Klubb Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2wQA0jhUWzVkfIj6Q9pG1s">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2wQA0jhUWzVkfIj6Q9pG1s?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Roska - Pree Me   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1Q24wvZpPBYxEZBpOQDdDD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Q24wvZpPBYxEZBpOQDdDD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Adapta - Black Orpheus   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6xIOPE97qRHmIyWlWIAA95">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6xIOPE97qRHmIyWlWIAA95?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Sunshower - Weekend Millionaire   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1aRzLMFWtpxkhT8XZMHHfE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1aRzLMFWtpxkhT8XZMHHfE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ ADHD - Wobble 4x4   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6GNdahBRj8IRdRLWttMDu7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6GNdahBRj8IRdRLWttMDu7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Huey Mnemonic - Technician 3   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3xLbCKemIe41o9AMKsJPiy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3xLbCKemIe41o9AMKsJPiy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2012,41 +2015,41 @@
     <li>
      Filter - Welcome To The Fold (FreQ Nasty Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6qzplcG4ftHRzyVYKwwuhQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6qzplcG4ftHRzyVYKwwuhQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Pangaea - Majestic 12   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/02eB50rlnsuzQ5prKXr0BR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/02eB50rlnsuzQ5prKXr0BR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Davis Galvin - RISSP   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3eNGb1jBhsyJfPVnCEEgHS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3eNGb1jBhsyJfPVnCEEgHS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Amaliah - Selene’s Serenade   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6SuC0g3Diky5E0NKv7ZHFJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6SuC0g3Diky5E0NKv7ZHFJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      8ulentina - Upward Spiral   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2tzXDGHMwL1olNt7onY2bK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2tzXDGHMwL1olNt7onY2bK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2067,9 +2070,9 @@
     <li>
      DJ Gunshot - Wheel 'n' Deal   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1KFRrAojGNc0gjXxp6akc9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1KFRrAojGNc0gjXxp6akc9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2080,9 +2083,9 @@
     <li>
      Kloke - Other Worlds   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4I08sf0cJZx435iYj9juyO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4I08sf0cJZx435iYj9juyO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -2109,9 +2112,9 @@
     <li>
      Tony Bontana - Sanity   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2kPFEaJS6fu3iXwvIN72vf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2kPFEaJS6fu3iXwvIN72vf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2127,17 +2130,17 @@
     <li>
      Loukeman - Toes Down   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4RBltccJevBLRCaKx8GeP0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4RBltccJevBLRCaKx8GeP0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Tony Bontana - What Do You Miss   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3fGMUADIAZsOFlZfVVNzjg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3fGMUADIAZsOFlZfVVNzjg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2148,25 +2151,25 @@
     <li>
      Amaarae - Sad Girlz Luv Money [Explicit]    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2pgDBO0ZAgvye7joSmdDm8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2pgDBO0ZAgvye7joSmdDm8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Alfa Kat,  - Sip Sip   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4d2RyvIr6rWlq4hirfd8bG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4d2RyvIr6rWlq4hirfd8bG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DBN Gogo,  - Shuck n Jive   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1Fq4uuOWLcEHbKghZOuqWe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Fq4uuOWLcEHbKghZOuqWe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2197,9 +2200,9 @@
     <li>
      Wheelman - Broke   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2wrFeySGrUtsX03zQhuDZe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2wrFeySGrUtsX03zQhuDZe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2210,9 +2213,9 @@
     <li>
      Blamhaus - Grab On (Rob Zile Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3WHgyCvC14V8Y1THGeJ8H6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3WHgyCvC14V8Y1THGeJ8H6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2223,25 +2226,25 @@
     <li>
      Instant Graham - No Sleep Til Clapton   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0g7H5rwK5n6QiLKZESiGK8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0g7H5rwK5n6QiLKZESiGK8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ish Couture - Fire To Lightning   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0OrfRvAK7sBhH0bISkXbFH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0OrfRvAK7sBhH0bISkXbFH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dimzy &amp; 67 - Executed (Feat. Monkey &amp; 67 SJ)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4j5JJZaIydRxw50E3LSYGU">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4j5JJZaIydRxw50E3LSYGU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2252,9 +2255,9 @@
     <li>
      Equiknoxx - Jump! Ft. Shanique Marie, Bobby Blackbird, Time Cow &amp; Gavsborg   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1AjIovtnd9gh1zF9pal8Ob">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1AjIovtnd9gh1zF9pal8Ob?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2265,9 +2268,9 @@
     <li>
      Bearcat - Sight   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/49PM8LpFGSbCTfcanylyiT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/49PM8LpFGSbCTfcanylyiT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2278,9 +2281,9 @@
     <li>
      Sky H1 - Elysian Heights   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1IEHhrdBcjiZ4tZ5CiDGb3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1IEHhrdBcjiZ4tZ5CiDGb3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -2302,9 +2305,9 @@
     <li>
      Ase Manual - Taboo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2U8ahM90r696UDi2Tca1ti">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2U8ahM90r696UDi2Tca1ti?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2315,9 +2318,9 @@
     <li>
      Hagan - Shape Shift   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3a17nv0HSfjORgxYLz5sDl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3a17nv0HSfjORgxYLz5sDl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2328,65 +2331,65 @@
     <li>
      City Girls - Twerkulator   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Ty7EDf9XLYzEUqEIwJfDC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Ty7EDf9XLYzEUqEIwJfDC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bamz - Dominate   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4PGIKygAj59ng6lc7DMGXa">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4PGIKygAj59ng6lc7DMGXa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Cardi B,  - WAP   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2hxv1RjtmtTnZXHKkVK6y6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2hxv1RjtmtTnZXHKkVK6y6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Special Request - Brainstorm (Gerd Janson &amp; Shan House Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5RDHemzKRn1MJ7KZzrmBuT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5RDHemzKRn1MJ7KZzrmBuT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Speedy J - Fusion   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0deE03RFBWdzKsmfSvfNo3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0deE03RFBWdzKsmfSvfNo3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      September - Cry For U (OSSX EDIT)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2FuJvdLfBf8eUmgtlz3Rb3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2FuJvdLfBf8eUmgtlz3Rb3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dart - Endless Sky   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2UGW5c6FRyk704CDAh6Lrg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2UGW5c6FRyk704CDAh6Lrg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      BADSISTA - SOCA SEM PARAR (Ft. MC MORENA)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2we9nckHstdAqAyTRufLwg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2we9nckHstdAqAyTRufLwg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2407,17 +2410,17 @@
     <li>
      Dave Angel - Tokyo Stealth Fighter (Carl Craig Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/64EIcnMshG1K4XnSAuIqgi">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/64EIcnMshG1K4XnSAuIqgi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      JME,  - Man Don't Care   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/04tGB3iBg3EFjmHt7XmOoO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/04tGB3iBg3EFjmHt7XmOoO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -2476,25 +2479,25 @@
     <li>
      John T. Gast - Congress   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2hFRzLWbZB1MciMbFKNFuf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2hFRzLWbZB1MciMbFKNFuf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jamal Moss - Salvation Is The Cure   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Ixs2lkyJ2Z8JFxkNlzALr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Ixs2lkyJ2Z8JFxkNlzALr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Machine Woman - Timbu Limbu And Her War Bass   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6e0eVsUOcWSykyieIlpxrQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6e0eVsUOcWSykyieIlpxrQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2505,25 +2508,25 @@
     <li>
      Impey - Kwest   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6leoKMhowFT2kI15ZnyDbB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6leoKMhowFT2kI15ZnyDbB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bambounou,  - Rai   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3kQKmyR72imok1PapkpjjE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3kQKmyR72imok1PapkpjjE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Planetary Secrets - Guatemala Dreams (Pépe Fruit Of The Loon Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/15cvydhjEEhKhedM8Te0eW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/15cvydhjEEhKhedM8Te0eW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2549,9 +2552,9 @@
     <li>
      Novelist - Active    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4z5WcMruV9ABwG9pJE1GT2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4z5WcMruV9ABwG9pJE1GT2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2562,9 +2565,9 @@
     <li>
      Dave Angel - Bounce Back   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5ktDDsNZ4bFkLpDF4YeRBm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5ktDDsNZ4bFkLpDF4YeRBm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2575,9 +2578,9 @@
     <li>
      Alpha Maid - Good Times   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3KB3IJQymNN6HtQJEs2ZvE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3KB3IJQymNN6HtQJEs2ZvE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -2604,41 +2607,41 @@
     <li>
      LYAM - Misery   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/29kbhFDzI2TLGklAlDkzcW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/29kbhFDzI2TLGklAlDkzcW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Lokey - Slowdown   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5X2olT0G7uH2gw8P3a6JBP">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5X2olT0G7uH2gw8P3a6JBP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Andy Stott - Don’t Know How (Feat. Alison Skidmore)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/041kYJkQYbRFwOaIPA7YXa">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/041kYJkQYbRFwOaIPA7YXa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Vegyn - So Much Time So Little Time   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/57rFduD3zuHTN0ArCt5aUc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/57rFduD3zuHTN0ArCt5aUc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jossy Mitsu - Ø   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4aOBjMHxMx1sVUojVz557p">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4aOBjMHxMx1sVUojVz557p?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2649,9 +2652,9 @@
     <li>
      Club Winston - Soft Half   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2vQpwEJ8ket6DqZBbArHvE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2vQpwEJ8ket6DqZBbArHvE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2662,17 +2665,17 @@
     <li>
      Amor Satyr - Palma Da Mao   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4JokvuhcPejlZVfnIuWLSy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4JokvuhcPejlZVfnIuWLSy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      RS Produções - Reflexão   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2A2TGLqNIOEo3f85lD9LqA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2A2TGLqNIOEo3f85lD9LqA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2683,9 +2686,9 @@
     <li>
      Exzakt - End Of The Pain   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2FBPF1uOqmudRiS0QX1oWH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2FBPF1uOqmudRiS0QX1oWH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2701,9 +2704,9 @@
     <li>
      LSDXOXO - Sick Bitch   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7FfPZEeRpDjisWER6xohdV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7FfPZEeRpDjisWER6xohdV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2714,17 +2717,17 @@
     <li>
      IOU - A.G.   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0c2wc6bNQBq1o4h2wUbgfp">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0c2wc6bNQBq1o4h2wUbgfp?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Empty - Janet Jackson   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/05rQNWjxu8XCVoOqxXdH1v">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/05rQNWjxu8XCVoOqxXdH1v?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -2751,9 +2754,9 @@
     <li>
      Scratchclart - Hardbody 999   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2AwNpEQzEU100Dk0HWtmiF">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2AwNpEQzEU100Dk0HWtmiF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2764,9 +2767,9 @@
     <li>
      Ben Hauke - Nobol   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1sa73XlY4aXjx4RcPLt5gg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1sa73XlY4aXjx4RcPLt5gg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2777,9 +2780,9 @@
     <li>
      Goldfinger - Fonky   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4pKIprAe1wPAQjB1RQnkYr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4pKIprAe1wPAQjB1RQnkYr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2790,33 +2793,33 @@
     <li>
      MM - Tompocalypse   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5Vu1mxDsiOwGyNXAesZrbW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Vu1mxDsiOwGyNXAesZrbW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Anz - Morphing Into Brighter   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3HgmrWodpBQMpjjDPHRakM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3HgmrWodpBQMpjjDPHRakM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Fauzia - Insurrection   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2bLbC9cUYN1RA3QdWnED8G">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2bLbC9cUYN1RA3QdWnED8G?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Goldfinger - All Those Trees   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Qz9q7ncBOjd5EU1lM4Hgc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Qz9q7ncBOjd5EU1lM4Hgc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2862,9 +2865,9 @@
     <li>
      PELADA - Granadilla   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5qa3CZcjMo7FrU7vidkFBx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5qa3CZcjMo7FrU7vidkFBx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -2886,9 +2889,9 @@
     <li>
      Erika de Casier - Little Bit   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/10b4AEecewD0ns6uXImPEt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/10b4AEecewD0ns6uXImPEt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2904,41 +2907,41 @@
     <li>
      Rochy RD - Normalito   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5ofy5iScjvOAImTRaIysmC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5ofy5iScjvOAImTRaIysmC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Boo Williams - Mortal Trance   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1KRW7yt0Z4jd7R5bIrbWql">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1KRW7yt0Z4jd7R5bIrbWql?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Merci &amp; Marco - Evade   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7328PIGiRk2rrCDmX9aUKt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7328PIGiRk2rrCDmX9aUKt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      LFO - We Are Back   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2htCnal9SZWs6WTB7O7b9m">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2htCnal9SZWs6WTB7O7b9m?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Mansur Brown - Mashita   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/49Rz605It8O5mahpEFwH7e">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/49Rz605It8O5mahpEFwH7e?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -2949,49 +2952,49 @@
     <li>
      Ben Hauke - Spare Change   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2AoczwKoCvq71SKMipvOzy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2AoczwKoCvq71SKMipvOzy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      LFO - Freak   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0E0RNF1SGwL44s3PU52gIb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0E0RNF1SGwL44s3PU52gIb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jossy Mitsu - Turismo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3xPHWOCgbWLF9eXUcwVu1w">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3xPHWOCgbWLF9eXUcwVu1w?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Pablo Pepstasy - No Future   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4zisHS8NkVLf1z6lAmLyVC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4zisHS8NkVLf1z6lAmLyVC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Shygirl - LENG   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4wpWZDW50CVGxQUgMmwmGZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4wpWZDW50CVGxQUgMmwmGZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      P. Adrix - Abertura De Roda   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/43wZEZtB5xFuv4Sx1lIhL0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/43wZEZtB5xFuv4Sx1lIhL0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3002,33 +3005,33 @@
     <li>
      J-Zbel - Rustie Le Clown   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4RKPvyrn2All9b9tIphrGi">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4RKPvyrn2All9b9tIphrGi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jamilah Barry - Once Upon A Time   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ruXlI2lrBoSApcBbjtRE4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ruXlI2lrBoSApcBbjtRE4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Tygapaw - Magenta Riddim   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6lJY4FGt7VUeyIqcp4ZQuM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6lJY4FGt7VUeyIqcp4ZQuM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Shaybo &amp; Miss La Familia - Bonjour Cava   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/76Bx53DN6iYKFDwl5aCGLa">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/76Bx53DN6iYKFDwl5aCGLa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -3050,49 +3053,49 @@
     <li>
      Radioactive Man - Uranium   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0tB3mGQGEbxIFU61m141id">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0tB3mGQGEbxIFU61m141id?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Andrea Parker - Invasion   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5gOZGq79e4EwD38UGwGNO6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5gOZGq79e4EwD38UGwGNO6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Transllusion - Negative Flash   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5mMv7uoBn2u2z1c7DOEPsl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5mMv7uoBn2u2z1c7DOEPsl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Andrea Parker,  - Bounce That Ass   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6Ng1oK38OUX5TXyMLtQsTQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6Ng1oK38OUX5TXyMLtQsTQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Stasis - Funky Purple Hotpants From The Planet Disco   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/45koxhUXtRga8duNFdPlLm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/45koxhUXtRga8duNFdPlLm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ciarra Black - By Design   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Fk4uk9i0QvFSWck5aSyCV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Fk4uk9i0QvFSWck5aSyCV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3108,17 +3111,17 @@
     <li>
      Japanese Telecom - The Making Of Ultraman   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/25aszKqvqhf3IgdZl9i7Sh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/25aszKqvqhf3IgdZl9i7Sh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Privacy - Four Lo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/13TG855qFa8TWn4StlFj9x">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/13TG855qFa8TWn4StlFj9x?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3129,41 +3132,41 @@
     <li>
      Morphology - Vector Plant   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7kHaOCIF0hUyWeMLCObcm9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7kHaOCIF0hUyWeMLCObcm9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dave Angel - Tokyo Stealth Fighter   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/64EIcnMshG1K4XnSAuIqgi">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/64EIcnMshG1K4XnSAuIqgi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Industrial Bass Machine - Invisible Force   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5aYSNQiXnc6zsZZqR4uv9j">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5aYSNQiXnc6zsZZqR4uv9j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Little Artist - CANCEL COPENHAGEN   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5q9HjEKIYytuRNaXIcDqxS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5q9HjEKIYytuRNaXIcDqxS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Abra Cadabra - Keep Going   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4T8a8YOsX7AqwbY4yc2IxT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4T8a8YOsX7AqwbY4yc2IxT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -3190,185 +3193,185 @@
     <li>
      Gigi Masin,  - Swallows' Tempest   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7djqsatJBcmWwyiZtBLJxb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7djqsatJBcmWwyiZtBLJxb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Big Muff - My Funny Valentine   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0n2UaHGhyKP0H6M3zh0Epm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0n2UaHGhyKP0H6M3zh0Epm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      June11 - White Bird   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Sy4StbMbzQgTyCoIitCBt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Sy4StbMbzQgTyCoIitCBt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Gigi Masin - The Wind Song   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/37wDs1QxOgwWV2pDUO7YQy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/37wDs1QxOgwWV2pDUO7YQy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Pharaoh Sanders - My Jewels Of Love   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/69aQUg26NSzWRuBnnQ2CKs">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/69aQUg26NSzWRuBnnQ2CKs?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jill Scott - Cross My Mind   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1ALx4MXQeWeDU2BXqhs1xs">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1ALx4MXQeWeDU2BXqhs1xs?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Khotin - Alla’s Scans   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5IXr38JjmHcFxNtqHprLy0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5IXr38JjmHcFxNtqHprLy0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Liv.e - She's My Brand New Crush   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Va6b9roVSbx38qyz8Tytx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Va6b9roVSbx38qyz8Tytx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Cleo Sol - One Love   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6cZC8G9pzltSqlk6u7kcE7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6cZC8G9pzltSqlk6u7kcE7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Duval Timothy - Fall Again   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4S5KBWW3eO0Qec67AkP3iK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4S5KBWW3eO0Qec67AkP3iK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Stan Getz,  - Saudade Vem Correndo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3QxAadrRx8aSEVd6Qzr8KF">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3QxAadrRx8aSEVd6Qzr8KF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dean Blunt - Felony Stalker 7   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3VJpYV0zNiQdZWsGeV4sGg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3VJpYV0zNiQdZWsGeV4sGg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Kendrick Lamar - How Much a Dollar Cost   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4tQcyj5488alHT1ZgFduzn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4tQcyj5488alHT1ZgFduzn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Anthony Ferraro - Gesture No. 6   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5SAWWVAMZYpGpKB1om1UoG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5SAWWVAMZYpGpKB1om1UoG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Velly Joonas - Käes On Aeg   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Rt87txGAEFKxZCfdwhka7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Rt87txGAEFKxZCfdwhka7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Gail Laughton - Pompeii 76 A.D.   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/68sMOYzXAebkYwfvZsedDI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/68sMOYzXAebkYwfvZsedDI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Son.sine - Mudita   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7vGV1UzzcayeWB6SZR33MO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7vGV1UzzcayeWB6SZR33MO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Illa J - Timeless   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0orx71B4ZvfNRrHmYiNjQt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0orx71B4ZvfNRrHmYiNjQt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Fifth Of Heaven - Just A Little More (Surrender Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/52RYUINQZHNgmd1b1jvr1T">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/52RYUINQZHNgmd1b1jvr1T?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Urban Tribe - Covert Action   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2xKzx3BcVuCB7X0CHBagYv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2xKzx3BcVuCB7X0CHBagYv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Knxwledge - Kometostai.aintreallynootherwaytoputitro   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7oeNO6HoCTIHIuoNUp2Ur4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7oeNO6HoCTIHIuoNUp2Ur4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Uku Kuut - Soft Fashion   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1TnJachvchrYLMwfZT6QaL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1TnJachvchrYLMwfZT6QaL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      380 Volt Electric Papa - I Think You’re Boring   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5mm1K20sdFv5bS4z112NG1">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5mm1K20sdFv5bS4z112NG1?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3384,9 +3387,9 @@
     <li>
      Qendresa? - Real Luv   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4N1Vch91SH2b2xrseGfHTy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4N1Vch91SH2b2xrseGfHTy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3402,9 +3405,9 @@
     <li>
      The Horn - Whiddon On Down   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1L83MfFMXqKSMfdLFuy6G2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1L83MfFMXqKSMfdLFuy6G2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -3441,177 +3444,177 @@
     <li>
      Aphex Twin - Alberto Balsalm   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/21Phj46KeUHOWyZW9A9b7P">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/21Phj46KeUHOWyZW9A9b7P?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bobbi Humphrey - Please Set Me At Ease   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5emxS2ghZWuPnRFOe10vdq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5emxS2ghZWuPnRFOe10vdq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Eartheater - Airborne Ashes   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2yPypPdaYzHyHaBeRZzNw4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2yPypPdaYzHyHaBeRZzNw4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Silentjay &amp; Jayce XL - Rockabye   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6v7qVlVatkeaGeot3i8BD7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6v7qVlVatkeaGeot3i8BD7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Harry Whitaker - Black Renaissance   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3pHwLwXZ1bnMHEUaRFF572">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3pHwLwXZ1bnMHEUaRFF572?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Freddie Gibbs,  - Look at Me   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6kK3m2FiYERYrUF269y0Es">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6kK3m2FiYERYrUF269y0Es?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Minnie Ripperton - Memory Lane   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Hl3TSGhhpSHfZcgi9CKpT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Hl3TSGhhpSHfZcgi9CKpT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Fela Anikulapo Kuti - Coffin For Head Of State   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0q4fyBmazN8IvpdZW6UiRv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0q4fyBmazN8IvpdZW6UiRv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Loose Ends - Love Controversy Pt. 1   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/65vHeUg08NqpNjgp4J78Th">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/65vHeUg08NqpNjgp4J78Th?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      LL Cool J - Loungin (Who Do Ya Luv)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0fKolf0hpjCwjTSLszadI8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0fKolf0hpjCwjTSLszadI8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Piero Umiliani - Pelle Di Luna   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1T1s83GwCXB8aAhqlmhjGM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1T1s83GwCXB8aAhqlmhjGM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Eartheater - Bellow The Clavicle   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7FHG31F8SzGxcpQHsRTDoI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7FHG31F8SzGxcpQHsRTDoI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      The Lijadu Sisters - Gbowo Mi   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3QJRJZSnTIcOpUe3NNjeT5">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3QJRJZSnTIcOpUe3NNjeT5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      The Alchemist - Hold You Down   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5Lzumvaqcoa6eZLLQn0IW2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Lzumvaqcoa6eZLLQn0IW2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Qendresa - Love Or Lust   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5N2cPHhndfHTfrTjPOjvJe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5N2cPHhndfHTfrTjPOjvJe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Portishead - It Could Be Sweet   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1cpnpMvnvmdy3hzYgd5oo9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1cpnpMvnvmdy3hzYgd5oo9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Davina - Mercy   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4KWYiPzuJErAxg10mFmzI0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4KWYiPzuJErAxg10mFmzI0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Serpentwithfeet - redemption   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/23dsgBpRcRIoZhR5QaAIxj">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/23dsgBpRcRIoZhR5QaAIxj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Aaliyah - Rock The Boat   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0qvlhVNm7L5IWabWF5hlEL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0qvlhVNm7L5IWabWF5hlEL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Mobb Deep - Temperature's Rising   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/54DkO9CDT5uGxIimT458lj">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/54DkO9CDT5uGxIimT458lj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Qendresa - Be Mine   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3dSZcr7SWwFdOmY0r3Ryih">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3dSZcr7SWwFdOmY0r3Ryih?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Shawty Pimp - Play No Playa (Feat Reddog)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0TZLq2MXtunvVZjrfrCYFD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0TZLq2MXtunvVZjrfrCYFD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -3638,41 +3641,41 @@
     <li>
      John Martyn - Small Hours   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1sFh9LmPrsZarW5PqhOFD9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1sFh9LmPrsZarW5PqhOFD9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Dean Blunt - As Long As Ropes Unravel Fake Rolex Will Travel   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0x76ELCEwqe7Rg8YjZyeXA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0x76ELCEwqe7Rg8YjZyeXA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bark Psychosis - Absent Friend   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6CqmencKN0UsB67DzZAP8f">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6CqmencKN0UsB67DzZAP8f?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      A.C. Marias - To Sleep   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6DRBmfcnJsiqlkF4G6iCib">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6DRBmfcnJsiqlkF4G6iCib?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      System Olympia - Possible Worlds   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0jUcl6B7vPZH9uAEzx04HG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0jUcl6B7vPZH9uAEzx04HG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3688,17 +3691,17 @@
     <li>
      Babyfather - God Hour   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/79k4PkE9Hllo7OqZm5Q01R">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/79k4PkE9Hllo7OqZm5Q01R?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Insides - Distractions   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Sk7msDsVButqx4LKFQZoA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Sk7msDsVButqx4LKFQZoA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3709,81 +3712,81 @@
     <li>
      R. Elizabeth - Cut Piano   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/10kfDHcyjkgXKyLB84cXoI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/10kfDHcyjkgXKyLB84cXoI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      System Olympia - Not Us U   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3xuC7HmjJ7RwTy2aKZlomt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3xuC7HmjJ7RwTy2aKZlomt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Babeheaven - Heaven   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/46pPrpf8IOeKGPs1qSjrgt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/46pPrpf8IOeKGPs1qSjrgt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Baaba Maal - Bouyel   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3UorTGovLqEjDieo3dvuCr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3UorTGovLqEjDieo3dvuCr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Cocteau Twins - Pearly-Dewdrops' Drops   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6quWkdjaWC5OrskbKTbuMl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6quWkdjaWC5OrskbKTbuMl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Broadcast - Lights Out   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/56CTgWX6SgM7jTWSLh0sae">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/56CTgWX6SgM7jTWSLh0sae?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jaco Pastorious - Portrait Of Tracey   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5NBAy2oiS9OIWyAZhklsH2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5NBAy2oiS9OIWyAZhklsH2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Zero 7 - In The Waiting Line   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5ARrtxJLVCeTv5TWo1oKgC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5ARrtxJLVCeTv5TWo1oKgC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Qendresa - Rumour   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/43jjp5s4gbwoCmBQQczKbo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/43jjp5s4gbwoCmBQQczKbo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      The Glove - Sex-Eye-Make-Up   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4SL4xlYH0nXHY5NPEvAhdE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4SL4xlYH0nXHY5NPEvAhdE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3794,9 +3797,9 @@
     <li>
      Homeshake - Fresh Air   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0Ck3xQefg5EJSsAZK3GOPG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0Ck3xQefg5EJSsAZK3GOPG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3807,9 +3810,9 @@
     <li>
      Sugababes - Overload   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7orBBkQgdmanhPCD0FyHHZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7orBBkQgdmanhPCD0FyHHZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3820,41 +3823,41 @@
     <li>
      Easy - Just Us   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5hkNDE7u4GcUlA07BqvCI0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5hkNDE7u4GcUlA07BqvCI0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Babeheaven - Friday Sky   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/00VbchCfba7gnTSbMJ9sKZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/00VbchCfba7gnTSbMJ9sKZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Prefab Sprout - Wild Horse   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0MYOG171DxrbiArjhhhqOS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0MYOG171DxrbiArjhhhqOS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Chromosone - Gasolina   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0LwVHJa9GiiIC7nWoWeWKu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0LwVHJa9GiiIC7nWoWeWKu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Zero 7 - Likufanele   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0iYrVsieo4PqL89iONIklK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0iYrVsieo4PqL89iONIklK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -3876,17 +3879,17 @@
     <li>
      Broadcast - Tears In The Typing Pool   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2xFELTbN4G0rgID5uQGLvP">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2xFELTbN4G0rgID5uQGLvP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Lex Amor - 100 Angels   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Uj9WdCC9S1GebDsXekHZo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Uj9WdCC9S1GebDsXekHZo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3897,9 +3900,9 @@
     <li>
      Mary Lattimore - Sometimes He’s In My Dreams   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2BQplCyfCnTV5RvDYBz9UB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2BQplCyfCnTV5RvDYBz9UB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3910,9 +3913,9 @@
     <li>
      Duval Timothy - Groundnut Ft. Twin Shadow   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6RpSStPwYW4MufCmHfMTVT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6RpSStPwYW4MufCmHfMTVT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3923,25 +3926,25 @@
     <li>
      Sault - Black Is   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ritGnnjhOz4jBiUUIJyHR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ritGnnjhOz4jBiUUIJyHR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Liv.e - Lessons From My Mistakes...But I Lost Your Number   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0Wlxm2dYSsTWicwsHMuxcf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0Wlxm2dYSsTWicwsHMuxcf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      A.C. Marias - Just Talk   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0tVoNGqwCUIlFuvDT6YH1J">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0tVoNGqwCUIlFuvDT6YH1J?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -3952,49 +3955,49 @@
     <li>
      Liv.e - SirLadyMakemFall   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/46TiVkjyvcRJB8edSAi3bk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/46TiVkjyvcRJB8edSAi3bk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ojerime - Whiskey Demo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3LEtl0Jm1SzyqtDVHb4n2e">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3LEtl0Jm1SzyqtDVHb4n2e?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Cocteau Twins - Why Do You Love Me?   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6mnDez8mWJqlTyp6GjCKKR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6mnDez8mWJqlTyp6GjCKKR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      R. Elizabeth - An Image Is Different    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/28sKbaKW6Xeeo3mcc4IuMq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/28sKbaKW6Xeeo3mcc4IuMq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Joviale - Dreamboat   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6gLziluLoYfPsu1Y2KKGNo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6gLziluLoYfPsu1Y2KKGNo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Lex Amor,  - 341 Freestyle   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5UUKoYl7eWK6EJcemxw9s7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5UUKoYl7eWK6EJcemxw9s7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -4016,9 +4019,9 @@
     <li>
      Ojerime - Give It Up 2 Me   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3X7wVYr4XpzGgoXmQVnrJo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3X7wVYr4XpzGgoXmQVnrJo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4049,9 +4052,9 @@
     <li>
      Lokowat - Canoa Abatida   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0pRSY5BAusWr2DZgzFZPKg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0pRSY5BAusWr2DZgzFZPKg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4077,25 +4080,25 @@
     <li>
      Dizzee Rascal - Brand New Day   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1duDjDMNljGTbQpQ4f2lrc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1duDjDMNljGTbQpQ4f2lrc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Will Hofbauer - Count Me In   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5zgFc3vxUxCpQIztvOphtK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5zgFc3vxUxCpQIztvOphtK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Mutant Joe - Sao Paulo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6oVZxAqOFZMVSJnEDWhPFS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6oVZxAqOFZMVSJnEDWhPFS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4116,9 +4119,9 @@
     <li>
      Philou Louzolo - Samarou Strikes Again   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7AQ0ruBB4IVGOX5YPHOWYs">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7AQ0ruBB4IVGOX5YPHOWYs?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4129,9 +4132,9 @@
     <li>
      Unknown T - Deh Deh   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7A463Loc9qD0NXE7IJG53J">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7A463Loc9qD0NXE7IJG53J?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -4153,17 +4156,17 @@
     <li>
      Brothers With Soul - Music Is So Special   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0Mji8nmH76MqqTf76qACku">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0Mji8nmH76MqqTf76qACku?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Horizontal Phase - Step Reduction   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0S5KJWuf7slJOdKBOLFDjn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0S5KJWuf7slJOdKBOLFDjn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4174,25 +4177,25 @@
     <li>
      Source Direct - Snake Style   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7KatxuIjbOuJfMPDZiXWpT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7KatxuIjbOuJfMPDZiXWpT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Q Project - Champion Sound (Alliance Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7eArPRN5TlNF09fYnK4LhR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7eArPRN5TlNF09fYnK4LhR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Horizontal Phase - The Gate   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/525lzOPGXMOqxPYzXjQvWC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/525lzOPGXMOqxPYzXjQvWC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4233,17 +4236,17 @@
     <li>
      Origin Unknown - Valley Of The Shadows (Original Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0UJS6KzdwnlWvMTFaU6rAa">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0UJS6KzdwnlWvMTFaU6rAa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Horizontal Phase - On Tour   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1a8mRplXOb8n3XwhIuq5dV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1a8mRplXOb8n3XwhIuq5dV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -4265,33 +4268,33 @@
     <li>
      James Bangura - Bronx Metro   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4s5wO2TSs7QM6ce6biNype">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4s5wO2TSs7QM6ce6biNype?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Carpainter VS Guchon - Running Wheel   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Ry0xcvNGmIzS3M8EprjNk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Ry0xcvNGmIzS3M8EprjNk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      MADVILLA &amp; Timmy P - Make Me Feel   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6UbLCKyvdtiKlbqhSzC85j">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6UbLCKyvdtiKlbqhSzC85j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Kilig - Buckled   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4KFkYq1IkNodPg7jvYYTA2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4KFkYq1IkNodPg7jvYYTA2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4302,9 +4305,9 @@
     <li>
      Jamesjamesjames - Rhinoplasty   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2GWnD736qlpwqcJMnZJVoC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2GWnD736qlpwqcJMnZJVoC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4320,9 +4323,9 @@
     <li>
      Interplanetary Criminal - Gyaldem Dub   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3OzuJHXpQFKeydCvACILuh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3OzuJHXpQFKeydCvACILuh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4333,9 +4336,9 @@
     <li>
      DJ T-1000 - My Body Is Ready   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0CjQFTzSVNo21m6Km6I19q">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0CjQFTzSVNo21m6Km6I19q?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4346,25 +4349,25 @@
     <li>
      AceMo - System Override   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/125BUABP1Yz2LPGPYh6OQk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/125BUABP1Yz2LPGPYh6OQk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ase Manual - FUCK YOU, KISS ME   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1AEyJRsXcqm8UnwJVSKx4C">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1AEyJRsXcqm8UnwJVSKx4C?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Toni Moralez - MAKE LUV 2 YA BUTT   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7iubZRnUMgNPAWA9kENeKe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7iubZRnUMgNPAWA9kENeKe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4375,9 +4378,9 @@
     <li>
      DJ Swisha,  - Snare Track   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7l57eKFfzPA1EhR7EVs44F">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7l57eKFfzPA1EhR7EVs44F?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4414,9 +4417,9 @@
     <li>
      Afrodeutsche - Phase Two   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3DKEKycsW3H7RyjdvjrVLr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3DKEKycsW3H7RyjdvjrVLr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4437,17 +4440,17 @@
     <li>
      Knox,  - Kalamazoo   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Z58FrbrBpAOSqBPtVkxv6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Z58FrbrBpAOSqBPtVkxv6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Claude Young - Changing Factors   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7oR6u4OKtC1EJHEFXlus5P">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7oR6u4OKtC1EJHEFXlus5P?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4478,9 +4481,9 @@
     <li>
      Anz - Invitation 2 Dance   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7mSkiwSf3IEWVkhr0cUV1v">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7mSkiwSf3IEWVkhr0cUV1v?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4491,17 +4494,17 @@
     <li>
      Tribe Of Colin - Woman Of Amazon   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6z7yqVKIsJ97v1EB6SQkcH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6z7yqVKIsJ97v1EB6SQkcH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Drexciya - Sea Quake   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2s56WnV9HXs4Dy57HeQn0A">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2s56WnV9HXs4Dy57HeQn0A?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -4523,9 +4526,9 @@
     <li>
      OutKast - You May Die (Intro)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5katW3JH8JM3jiEdrr2zuR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5katW3JH8JM3jiEdrr2zuR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4536,25 +4539,25 @@
     <li>
      MC Lyte,  - Keep On, Keepin' On (Instrumental)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/42aZFX1bcCDj75ue0KoNSd">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/42aZFX1bcCDj75ue0KoNSd?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ranking Ann - Love On A Mountain Top   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0zuS8GejxxyKZQVKnc08Ox">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0zuS8GejxxyKZQVKnc08Ox?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Kraftwerk - Computer World..2   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1Q8n7UU4pULe4Mf1m3DxCm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Q8n7UU4pULe4Mf1m3DxCm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4565,57 +4568,57 @@
     <li>
      Don Toliver - Company   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0paIDUEcixm7WmcC72KgKZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0paIDUEcixm7WmcC72KgKZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bark Psychosis - Three Girl Rhumba   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2bgZANIt20JUkTeeeSB1ak">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2bgZANIt20JUkTeeeSB1ak?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Yves Tumor - Hasdallen Lights   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0mq9yqCMnbP7OBio0mnVuq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0mq9yqCMnbP7OBio0mnVuq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jill Scott - Honey Molasses   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6JSkFn1DZEiq82cEw5nP44">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6JSkFn1DZEiq82cEw5nP44?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Angie Stone - Pissed Off   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4yorDWFzW0orW36OMr9WSS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4yorDWFzW0orW36OMr9WSS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      OutKast - Crumblin' Erb   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3T790QTg0ebUUk5tCRbtbN">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3T790QTg0ebUUk5tCRbtbN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Uku Kuut - Secret Dream   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3n8KeugUILZd0oSdfkC3Gb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3n8KeugUILZd0oSdfkC3Gb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4626,9 +4629,9 @@
     <li>
      Slam,  - Visions (2 Lone Swordsmen Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5dhXiAnDzxe5vpuOrlloed">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5dhXiAnDzxe5vpuOrlloed?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4639,9 +4642,9 @@
     <li>
      Eartheater - Fontanel   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4LFNtfmZrgvAOvnAW4p1ho">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4LFNtfmZrgvAOvnAW4p1ho?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -4663,25 +4666,25 @@
     <li>
      BFTT - BM-15   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0P98FKIij5F9A2DjOhhfJK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0P98FKIij5F9A2DjOhhfJK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bergsonist - Poverty   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1g88YUKWUV7MO7ApsilNby">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1g88YUKWUV7MO7ApsilNby?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ps - Freak Walk   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5xrLGTMEZb2rdfT9eQTHIZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5xrLGTMEZb2rdfT9eQTHIZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4692,9 +4695,9 @@
     <li>
      DJ Nigga Fox - 5 Violinos   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0SAqSlYnwu3OBxfOLioI0e">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0SAqSlYnwu3OBxfOLioI0e?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4705,17 +4708,17 @@
     <li>
      Shadowax - Nikolai Reptile   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0eQOusYQKiwfQlsPRNRulI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0eQOusYQKiwfQlsPRNRulI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Air Max '97 - Bruxis   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6CbIUThF5SdMq5pSlXOEyD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6CbIUThF5SdMq5pSlXOEyD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4731,73 +4734,73 @@
     <li>
      Missy Elliot - I’m Really Hot   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7hHuFhxTBH473jDChXrS68">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7hHuFhxTBH473jDChXrS68?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      4E - Temple Traxxx 001   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0DukDMuUB6ZivExSlmbo7B">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0DukDMuUB6ZivExSlmbo7B?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Populous - Umi   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0lisxhancKoNCgeEfzemnE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0lisxhancKoNCgeEfzemnE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Yak - Darunia   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3YWVcsKXAJsjQcxL7eGPbY">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3YWVcsKXAJsjQcxL7eGPbY?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Burago - TMOTA   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/76cGg1JVsqpVFPDqTPlnnE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/76cGg1JVsqpVFPDqTPlnnE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      BFTT - YDON’T   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2UGt7uBoNh2IhZZhECTof6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2UGt7uBoNh2IhZZhECTof6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Essaie Pas - Complet Brouillé (Khidja's Hidden Formula Mix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/18XL0yidlObpFo213rCNns">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/18XL0yidlObpFo213rCNns?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DMX Krew - Vicious Bleebz   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4snipgbY0UJNLMTdSlCeTf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4snipgbY0UJNLMTdSlCeTf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Steve Poindexter - 190 Octane   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/04Kb8rBplqWuDxorALO1GO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/04Kb8rBplqWuDxorALO1GO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4813,49 +4816,49 @@
     <li>
      HED Ardennes - Devender   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2M1fTnkjQr6AwrFiGzctBf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2M1fTnkjQr6AwrFiGzctBf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Bby Eco - Restless Aquatic   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/42EZEr49tOKFGC9El3boOx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/42EZEr49tOKFGC9El3boOx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Linquency - Tensoil   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5HgAjBvxpuSzA9ixDzh3tg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5HgAjBvxpuSzA9ixDzh3tg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      A2A - Yike!   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5ABIG2ihu6VkMePkiSGkeQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5ABIG2ihu6VkMePkiSGkeQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      John T. Gast - Bad   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2GarCe3rq0Sj0ooO19mxFu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2GarCe3rq0Sj0ooO19mxFu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Umwelt - Chrondite   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/33Z5TE6444QBjTvgoDNtP8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/33Z5TE6444QBjTvgoDNtP8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4896,9 +4899,9 @@
     <li>
      Lokowat - COITA DE AMOR   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2RcvfP9nSzzEpO9FJXcgF9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2RcvfP9nSzzEpO9FJXcgF9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4914,9 +4917,9 @@
     <li>
      Ellll - PEPSI   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3IdnDP0OL9Xzdd1Z7JPhcW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3IdnDP0OL9Xzdd1Z7JPhcW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4927,17 +4930,17 @@
     <li>
      Ecko Bazz - Kyusa Embela   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1rWTjPzAXB9YIGaiEFzF20">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1rWTjPzAXB9YIGaiEFzF20?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ramadanman - Revenue (Untold Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6TYKuJfSERDFjAcnXLonjF">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6TYKuJfSERDFjAcnXLonjF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4948,17 +4951,17 @@
     <li>
      Untitled B1 - Grain   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/59EmID80R4hu0n7UPyzOT4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/59EmID80R4hu0n7UPyzOT4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Johannes Heil - The Hitmachine (Part 1)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4F5c0Aox4RTsymOy71zmk3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4F5c0Aox4RTsymOy71zmk3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -4969,9 +4972,9 @@
     <li>
      SL X Pa Salieu - Hit The Block   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1hLPPb7WDI3DKtEyoA4N0Y">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1hLPPb7WDI3DKtEyoA4N0Y?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -4993,17 +4996,17 @@
     <li>
      Insides - Distractions   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Sk7msDsVButqx4LKFQZoA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Sk7msDsVButqx4LKFQZoA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      The Allegorist - Foggy Mountains   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Ak69OG1XWYsnxl5fZqvA6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Ak69OG1XWYsnxl5fZqvA6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5019,9 +5022,9 @@
     <li>
      Thee J Johanz - Bafrique    :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/00ym4ig3N54OfWkOFlDJfE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/00ym4ig3N54OfWkOFlDJfE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5032,9 +5035,9 @@
     <li>
      Biochip - M.O.   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/36PkEm8QtsPLz6y6y7AOq8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/36PkEm8QtsPLz6y6y7AOq8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5045,17 +5048,17 @@
     <li>
      Thee J Johanz - Unreleased #9   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0RDln9eHf4KYbhlidbyDpy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0RDln9eHf4KYbhlidbyDpy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Fabio Monesi - The Raw Theory   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6OvbAwXXqKIZeUOEzBZ444">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6OvbAwXXqKIZeUOEzBZ444?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5066,17 +5069,17 @@
     <li>
      LAPS - Who Me?   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/44HyEYyRRJKKJrQ11J4kXn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/44HyEYyRRJKKJrQ11J4kXn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Roza Terenzi - Weakest Link (D. Tiffany Remix)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5ZUucjkIg6YiCCaYyZaUVL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5ZUucjkIg6YiCCaYyZaUVL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5087,9 +5090,9 @@
     <li>
      Savile - Talk Smile Bite   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1ALi3zlheZWsgjywADHVm7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1ALi3zlheZWsgjywADHVm7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -5111,9 +5114,9 @@
     <li>
      Eartheater - Spill The Milk   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2hhIvbMtsxm8Lw5WDO6GKk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2hhIvbMtsxm8Lw5WDO6GKk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5129,33 +5132,33 @@
     <li>
      Gary Martin - Inspired By Spray Paint   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1iRs7zKUSXth9WPwUq5s9W">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1iRs7zKUSXth9WPwUq5s9W?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      A-Sim - The Homie Breakdown   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2TyPRWtr5kwUwRtoXo8zl9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2TyPRWtr5kwUwRtoXo8zl9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Aaron-Carl - Tears   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2zbQbQe1EBEu5j1bkDhuwg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2zbQbQe1EBEu5j1bkDhuwg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Firmeza - Intenso   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/07rfc6ewvInWEOI0dowhSQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/07rfc6ewvInWEOI0dowhSQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -5187,17 +5190,17 @@
     <li>
      BFTT - YDON'T   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2UGt7uBoNh2IhZZhECTof6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2UGt7uBoNh2IhZZhECTof6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      PELADA - A Mí Me Juzgan Por Ser Mujer   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/70HJl6JSaQILVIBAWBnvWS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/70HJl6JSaQILVIBAWBnvWS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5218,33 +5221,33 @@
     <li>
      Will Lister - Pleasant Air   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5Yrdo2vmqlUWWvWs0c4QL0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Yrdo2vmqlUWWvWs0c4QL0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      DJ Nigga Fox - Talanzele   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6AskVTAkIRDedW1NH0IOJg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6AskVTAkIRDedW1NH0IOJg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      MoMA READY - This Version May Never Come Out   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6XpMuxFCE7jlqgXYFWJLP5">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6XpMuxFCE7jlqgXYFWJLP5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      PELADA - Caderona   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/03loZkeUh2ap229rChbVoX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/03loZkeUh2ap229rChbVoX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5255,9 +5258,9 @@
     <li>
      Elkka - Stay (Warm Edit)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6OqoJsiuXFMbGAD6NFcNSe">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6OqoJsiuXFMbGAD6NFcNSe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5268,9 +5271,9 @@
     <li>
      DJbboy(Tmp) - LEGS   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3RDaJidmhhf3RgmwgkIQFh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3RDaJidmhhf3RgmwgkIQFh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5281,9 +5284,9 @@
     <li>
      J-Zbel - Tunnel Vision   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3hiSJibKGv9vlRClBfF5E7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3hiSJibKGv9vlRClBfF5E7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -5294,9 +5297,9 @@
     <li>
      The Golden Filter - U O K   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1kyWwtnQ0EXh1JlHGpQask">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1kyWwtnQ0EXh1JlHGpQask?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
