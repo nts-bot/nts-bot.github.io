@@ -1,15 +1,583 @@
 {
-    "after-dark-w-helm-10th-july-2019": {},
-    "after-dark-w-helm-13th-may-2020": {},
-    "after-dark-w-helm-15th-may-2019": {},
-    "after-dark-w-helm-19th-february-2020": {},
-    "after-dark-w-helm-20th-february-2019": {},
-    "after-dark-w-helm-22nd-january-2020": {},
-    "after-dark-w-helm-2nd-dec-2019": {},
-    "after-dark-w-helm-2nd-october-2019": {},
-    "after-dark-w-helm-7th-august-2019": {},
-    "after-dark-w-helm-wednesday-10th-june": {},
-    "helm-10th-september-2018": {},
+    "after-dark-w-helm-10th-july-2019": {
+        "00": {
+            "artist": "Red Wine And Sugar",
+            "title": "That Book You’re Reading"
+        },
+        "01": {
+            "artist": "Oren Ambarchi",
+            "title": "Palm Sugar Candy"
+        },
+        "02": {
+            "artist": "Croatian Amor",
+            "title": "In Alarm Light"
+        },
+        "03": {
+            "artist": "Nick Klein & Lack",
+            "title": "B1"
+        },
+        "04": {
+            "artist": "Fabulous Diamonds",
+            "title": "Forever Turned"
+        },
+        "05": {
+            "artist": "Pablo Guerrero, ",
+            "title": "Dragones Negros "
+        },
+        "06": {
+            "artist": "The Cure",
+            "title": "All Cats Are Grey"
+        },
+        "07": {
+            "artist": "Miguel A. Ruiz",
+            "title": "Transparent"
+        },
+        "08": {
+            "artist": "Metal U",
+            "title": "Lady Coca Cola"
+        },
+        "09": {
+            "artist": "Comfort",
+            "title": "Calm Of The Crowd"
+        },
+        "10": {
+            "artist": "Scrap Brain",
+            "title": "Die TERF Scum"
+        },
+        "11": {
+            "artist": "Mika Vainio",
+            "title": "Load"
+        },
+        "12": {
+            "artist": "Acolytes",
+            "title": "Untitled Pt II"
+        },
+        "13": {
+            "artist": "1127",
+            "title": "Zezinia 2 Ft. She7ta Wel3a"
+        },
+        "14": {
+            "artist": "MSYLMA",
+            "title": "Min Bab Jihad-i Alljtihad"
+        },
+        "15": {
+            "artist": "Geins’t Nait",
+            "title": "Dimanche"
+        },
+        "16": {
+            "artist": "Ramleh",
+            "title": "No Music For These Times"
+        },
+        "17": {
+            "artist": "Orphx, ",
+            "title": "Demagogue"
+        },
+        "18": {
+            "artist": "Low Jack",
+            "title": "Wheel"
+        },
+        "19": {
+            "artist": "Jay Glass Dubs",
+            "title": "A New Model For Emulation"
+        },
+        "20": {
+            "artist": "Black Midi",
+            "title": "Speedway"
+        },
+        "21": {
+            "artist": "Trevor",
+            "title": "Speed Ave"
+        },
+        "22": {
+            "artist": "Objekt",
+            "title": "Rest Yr Troubles Over Me"
+        },
+        "23": {
+            "artist": "Bad Breeding",
+            "title": "Tortured Reality"
+        },
+        "24": {
+            "artist": "Asid",
+            "title": "Tsar Bomba"
+        }
+    },
+    "after-dark-w-helm-13th-may-2020": {
+        "00": {
+            "artist": "This Heat",
+            "title": "Graphic/Varispeed"
+        },
+        "01": {
+            "artist": "Kraftwerk",
+            "title": "Radioactivity"
+        },
+        "02": {
+            "artist": "Kraftwerk",
+            "title": "Elektrisches Roulette"
+        },
+        "03": {
+            "artist": "Muslimgauze",
+            "title": "Black September Session"
+        },
+        "04": {
+            "artist": "Kaiser Nietzsche",
+            "title": "Paint"
+        },
+        "05": {
+            "artist": "Silent Servant",
+            "title": "Moral Divide (Endless)"
+        },
+        "06": {
+            "artist": "The Stranglers",
+            "title": "The Raven"
+        },
+        "07": {
+            "artist": "Yoko Ono",
+            "title": "Air Male (Tone Deaf Jam)"
+        },
+        "08": {
+            "artist": "Kraftwerk",
+            "title": "Radio Stars"
+        },
+        "09": {
+            "artist": "Kraftwerk",
+            "title": "Uranium"
+        },
+        "10": {
+            "artist": "Cremation Lily",
+            "title": "Don’t Drown"
+        },
+        "11": {
+            "artist": "Christoph de Babalon",
+            "title": "Webs Of Wraith"
+        },
+        "12": {
+            "artist": "Blackman",
+            "title": "Trick"
+        },
+        "13": {
+            "artist": "Boyd Rice, ",
+            "title": "Extraction 7"
+        },
+        "14": {
+            "artist": "Front 242",
+            "title": "Lovely Day"
+        },
+        "15": {
+            "artist": "Cube",
+            "title": "Favorite"
+        },
+        "16": {
+            "artist": "Chrome",
+            "title": "Armageddon"
+        },
+        "17": {
+            "artist": "Swans",
+            "title": "Job"
+        },
+        "18": {
+            "artist": "Godflesh",
+            "title": "Streetcleaner"
+        },
+        "19": {
+            "artist": "Kraftwerk",
+            "title": "Das Model"
+        },
+        "20": {
+            "artist": "Blake Hargreaves",
+            "title": "Minuet At Justinuskirche, Höchst"
+        },
+        "21": {
+            "artist": "Roland S Howard",
+            "title": "Undone"
+        },
+        "22": {
+            "artist": "POWERPLANT",
+            "title": "Evidence "
+        }
+    },
+    "after-dark-w-helm-15th-may-2019": "",
+    "after-dark-w-helm-19th-february-2020": "",
+    "after-dark-w-helm-20th-february-2019": {
+        "00": {
+            "artist": "Charalambides",
+            "title": "Silvatica"
+        },
+        "01": {
+            "artist": "John Fahey",
+            "title": "On The Sunny Side Of The Ocean"
+        },
+        "02": {
+            "artist": "Dave Evans",
+            "title": "Rosie"
+        },
+        "03": {
+            "artist": "John Martyn",
+            "title": "Fine Lines"
+        },
+        "04": {
+            "artist": "Linda Perhacs",
+            "title": "Parallelograms"
+        },
+        "05": {
+            "artist": "Simon Finn",
+            "title": "Patrice"
+        },
+        "06": {
+            "artist": "Linda Cohen",
+            "title": "Fantasia Inca"
+        },
+        "07": {
+            "artist": "Bardo Pond",
+            "title": "Walking Clouds"
+        },
+        "08": {
+            "artist": "The Garbage And The Flowers",
+            "title": "Carousel"
+        },
+        "09": {
+            "artist": "Jack Rose",
+            "title": "Now That I´m A Man Full Grown II"
+        },
+        "10": {
+            "artist": "Keith Christmas",
+            "title": "Travelling Down"
+        },
+        "11": {
+            "artist": "Spirogyra",
+            "title": "Old Boot Wine"
+        },
+        "12": {
+            "artist": "Tyrannosaurus Rex",
+            "title": "Dragon's Ear"
+        },
+        "13": {
+            "artist": "Robbie Basho",
+            "title": "Rocky Mountain Raga"
+        },
+        "14": {
+            "artist": "Jackson C. Frank",
+            "title": "Don't Look Back"
+        },
+        "15": {
+            "artist": "Loren Mazzacane Connors & Kath Bloom",
+            "title": "Man It’s A Long Lonesome Road"
+        },
+        "16": {
+            "artist": "Mike Cooper",
+            "title": "Journey To The East"
+        },
+        "17": {
+            "artist": "Six Organs Of Admittance",
+            "title": "Journey Through Sankuan Path"
+        },
+        "18": {
+            "artist": "Richard And Mimi Fariña",
+            "title": "The Quiet Joys Of Brotherhood"
+        },
+        "19": {
+            "artist": "Slowdive",
+            "title": "All Of Us"
+        },
+        "20": {
+            "artist": "Davy Graham, ",
+            "title": "Proud Maisrie"
+        },
+        "21": {
+            "artist": "Trees",
+            "title": "The Garden Of Jane Delawney"
+        },
+        "22": {
+            "artist": "Led Zeppelin",
+            "title": "Going To California"
+        },
+        "23": {
+            "artist": "Current 93",
+            "title": "The Bloodbells Chime"
+        },
+        "24": {
+            "artist": "David Kauffman, ",
+            "title": "Kiss Another Day Goodbye"
+        },
+        "25": {
+            "artist": "Mary Hopkin",
+            "title": "There's Got To Be More"
+        },
+        "26": {
+            "artist": "Gastr Del Sol",
+            "title": "The Seasons Reverse"
+        }
+    },
+    "after-dark-w-helm-22nd-january-2020": {
+        "00": {
+            "artist": "Pavel Milyakov",
+            "title": "Moon Pad"
+        },
+        "01": {
+            "artist": "Frederik Valentin, ",
+            "title": "Scarlett"
+        },
+        "02": {
+            "artist": "Steve Hauschildt",
+            "title": "Time We Have"
+        },
+        "03": {
+            "artist": "Marc Bolan",
+            "title": "Beyond The Risin' Sun"
+        },
+        "04": {
+            "artist": "Michael Speers",
+            "title": "tombeau"
+        },
+        "05": {
+            "artist": "Ossia",
+            "title": "Devil's Dance"
+        },
+        "06": {
+            "artist": "Robert Turman",
+            "title": "Lotek"
+        },
+        "07": {
+            "artist": "Frederik Valentin, ",
+            "title": "Elephant"
+        }
+    },
+    "after-dark-w-helm-2nd-dec-2019": {
+        "00": {
+            "artist": "Cam Deas",
+            "title": "Refract Deflect"
+        },
+        "01": {
+            "artist": "Cam Deas",
+            "title": "Refract Deflect"
+        },
+        "02": {
+            "artist": "Billy Bultheel",
+            "title": "Opening March"
+        },
+        "03": {
+            "artist": "Kommando",
+            "title": "Metal Teeth"
+        },
+        "04": {
+            "artist": "Vatican Shadow",
+            "title": "Conspiratorial Whispers"
+        }
+    },
+    "after-dark-w-helm-2nd-october-2019": {
+        "00": {
+            "artist": "Kali Malone",
+            "title": "Sacrificial Code"
+        },
+        "01": {
+            "artist": "Sheer Mag",
+            "title": "Steels Sharpens Steel"
+        },
+        "02": {
+            "artist": "Drab Majesty",
+            "title": "Ellipsis"
+        },
+        "03": {
+            "artist": "Cube",
+            "title": "Alkaline"
+        }
+    },
+    "after-dark-w-helm-7th-august-2019": {
+        "00": {
+            "artist": "Coil",
+            "title": "The First Five Minutes After Violent Death"
+        },
+        "01": {
+            "artist": "Vainio / Väisänen / Vega",
+            "title": "Endless"
+        },
+        "02": {
+            "artist": "Sensational",
+            "title": "I Always Rock It Right"
+        },
+        "03": {
+            "artist": "Nocturnal Emissions",
+            "title": "No Sacrifice (In Love And Revolution)"
+        },
+        "04": {
+            "artist": "De Fabriek",
+            "title": "Mina De Carbón Konstantin"
+        },
+        "05": {
+            "artist": "White Hospital",
+            "title": "White Hospital"
+        },
+        "06": {
+            "artist": "Philippe Grancher",
+            "title": "3000 Miles Away"
+        },
+        "07": {
+            "artist": "Simon Wickham-Smith, Richard Youngs",
+            "title": "On A Bus"
+        },
+        "08": {
+            "artist": "Wojciech Rusin",
+            "title": "Paolo’s Dream"
+        },
+        "09": {
+            "artist": "W. Ravenveer",
+            "title": "Rungler Speech Therapy"
+        },
+        "10": {
+            "artist": "Jean Guérin",
+            "title": "Ca Va Lecomte"
+        },
+        "11": {
+            "artist": "Jean Schwarz",
+            "title": "Galaxie"
+        },
+        "12": {
+            "artist": "Smegma",
+            "title": "Id-O-Matic"
+        },
+        "13": {
+            "artist": "impLOG",
+            "title": "Holland Tunnel Dive"
+        },
+        "14": {
+            "artist": "The Shadow Ring",
+            "title": "Hold Onto I.D."
+        },
+        "15": {
+            "artist": "Dame Area",
+            "title": "Dicevi A Me"
+        },
+        "16": {
+            "artist": "Grim",
+            "title": "Ejiki"
+        },
+        "17": {
+            "artist": "Amnesia Scanner, ",
+            "title": "Lexachast IV"
+        },
+        "18": {
+            "artist": "Ultra",
+            "title": "Whistle For Your Mistress"
+        },
+        "19": {
+            "artist": "Tomaga",
+            "title": "Unruly Gloam"
+        },
+        "20": {
+            "artist": "Etant Donnes Ft Alan Vega",
+            "title": "Re-Up"
+        },
+        "21": {
+            "artist": "Bernard Parmegiani",
+            "title": "Rencontre Brisson"
+        },
+        "22": {
+            "artist": "P.I.L",
+            "title": "Banging The Door"
+        },
+        "23": {
+            "artist": "Spacemen 3",
+            "title": "Losing Touch With My Mind"
+        },
+        "24": {
+            "artist": "The Faith",
+            "title": "In The Black"
+        },
+        "25": {
+            "artist": "Keith Hudson, ",
+            "title": "Part 1-2 Dubwise"
+        },
+        "26": {
+            "artist": "David Jackman",
+            "title": "Wietzendorf"
+        }
+    },
+    "after-dark-w-helm-wednesday-10th-june": "",
+    "helm-10th-september-2018": {
+        "00": {
+            "artist": "John Surman",
+            "title": "Part I Nestor's Saga (The Tale Of The Ancient)"
+        },
+        "01": {
+            "artist": "Cosey Fanni Tutti",
+            "title": "The Secret Touch"
+        },
+        "02": {
+            "artist": "Christoph De Babalon",
+            "title": "My Confession"
+        },
+        "03": {
+            "artist": "Pete Shelley",
+            "title": "Sky Yen Pt 2"
+        },
+        "04": {
+            "artist": "John Lennon / Yoko Ono",
+            "title": "Cambridge 1969"
+        },
+        "05": {
+            "artist": "Lino Capra Vaccina",
+            "title": "Echi Armonici (Part 1)"
+        },
+        "06": {
+            "artist": "Organum",
+            "title": "Delta"
+        },
+        "07": {
+            "artist": "Korea Undok Group",
+            "title": "This Fantasy Is Unhealthy"
+        },
+        "08": {
+            "artist": "Will Guthrie",
+            "title": "Spiked"
+        },
+        "09": {
+            "artist": "Luciano Berio",
+            "title": "Momenti"
+        },
+        "10": {
+            "artist": "Marcus Schmickler",
+            "title": "Hypercubist Pareto Dist"
+        },
+        "11": {
+            "artist": "Pierre Henry",
+            "title": "March Du Jeune Homme"
+        },
+        "12": {
+            "artist": "Peter Hamill",
+            "title": "German Overalls"
+        },
+        "13": {
+            "artist": "Lol Coxhill",
+            "title": "Il Froga Silencio"
+        },
+        "14": {
+            "artist": "Ezy Ryder",
+            "title": "Atlantis"
+        },
+        "15": {
+            "artist": "Ramleh",
+            "title": "Pit Bull"
+        },
+        "16": {
+            "artist": "The Hafler Trio",
+            "title": "Ceraunomancy"
+        },
+        "17": {
+            "artist": "Merzbow",
+            "title": "Ha Ha Ho Bari (Mari)"
+        },
+        "18": {
+            "artist": "Avro Part",
+            "title": "Cantus In Memory Of Benjamin Britten"
+        },
+        "19": {
+            "artist": "Julie Tippetts",
+            "title": "Behind The Eyes"
+        },
+        "20": {
+            "artist": "Andrew Chalk",
+            "title": "Untitled"
+        }
+    },
     "helm-12th-april-2022": {
         "00": {
             "artist": "Eliane Radigue",
@@ -226,8 +794,130 @@
             "title": "Last Chance For A Slow Dance"
         }
     },
-    "helm-15th-april-2020": {},
-    "helm-16th-april-2019": {},
+    "helm-15th-april-2020": {
+        "00": {
+            "artist": "Dale Cornish",
+            "title": "A Better Dancer"
+        },
+        "01": {
+            "artist": "Ligature",
+            "title": "Pit Viper / Heat Stroke"
+        },
+        "02": {
+            "artist": "Prurient",
+            "title": "In The Ruins Of My Brother"
+        },
+        "03": {
+            "artist": "Will Guthrie",
+            "title": "For Stephane (Excerpt)"
+        },
+        "04": {
+            "artist": "Rudolph Eb.Er",
+            "title": "Sang 1"
+        },
+        "05": {
+            "artist": "Jeff Witscher",
+            "title": "Ah (2016) "
+        },
+        "06": {
+            "artist": "Alex Zhang Hungtai & Tseng Kuo Hung",
+            "title": "Broken Gate"
+        },
+        "07": {
+            "artist": "The South Yorkshire Mick Hucknall",
+            "title": "He Catches Thieves Just Like Flies"
+        },
+        "08": {
+            "artist": "Horse Lords",
+            "title": "The Radiant City"
+        },
+        "09": {
+            "artist": "To Live And Shave In L.A.",
+            "title": "The Plot That Failed"
+        },
+        "10": {
+            "artist": "Acre",
+            "title": "Sepulchre"
+        },
+        "11": {
+            "artist": "Orden Mundial",
+            "title": "Marginal"
+        },
+        "12": {
+            "artist": "ESP Kinetic",
+            "title": "Under The Bed"
+        },
+        "13": {
+            "artist": "PC World",
+            "title": "Running Man"
+        },
+        "14": {
+            "artist": "Robin Stewart",
+            "title": "Eat Grass"
+        },
+        "15": {
+            "artist": "Triple Negative",
+            "title": "Fine Cargo Lacquer"
+        },
+        "16": {
+            "artist": "Burning Star Core",
+            "title": "Statue Of Trust Pt 2"
+        },
+        "17": {
+            "artist": "Світлана Няньо, ",
+            "title": "Episode 14"
+        },
+        "18": {
+            "artist": "Brantenn Schnure",
+            "title": "Blut Auf Der Gosbertsteige"
+        },
+        "19": {
+            "artist": "Malvern Brume",
+            "title": "Circling"
+        },
+        "20": {
+            "artist": "PRIVAT",
+            "title": "Gesicht"
+        },
+        "21": {
+            "artist": "Nick Klein",
+            "title": "French-Property.com"
+        },
+        "22": {
+            "artist": "Jay Glass Dubs",
+            "title": "Laguna"
+        },
+        "23": {
+            "artist": "Iceage",
+            "title": "Lockdown Blues"
+        }
+    },
+    "helm-16th-april-2019": {
+        "00": {
+            "artist": "Senyawa",
+            "title": "Tanggalkan Di Dunia (Undo The World) "
+        },
+        "01": {
+            "artist": "Eartaker",
+            "title": "Iron Trivet"
+        },
+        "02": {
+            "artist": "Game",
+            "title": "D.B.M."
+        },
+        "03": {
+            "artist": "Elvin Brandhi",
+            "title": "IMBRED WAILE / OCDC"
+        },
+        "04": {
+            "artist": "Fennesz",
+            "title": "Agora"
+        },
+        "05": {
+            "artist": "Nate Young",
+            "title": "In The Shadow Of"
+        }
+    },
     "helm-16th-february-2022": {
         "00": {
             "artist": "Mark Harwood",
@@ -408,7 +1098,7 @@
             "title": "Regions Of May"
         }
     },
-    "helm-17th-february-2021": {},
+    "helm-17th-february-2021": "",
     "helm-17th-march-2021": {
         "00": {
             "artist": "Wolves Of Greece",
@@ -499,9 +1189,284 @@
             "title": "Work Last Monday"
         }
     },
-    "helm-19th-march-2019": {},
-    "helm-20th-january-2021": {},
-    "helm-22nd-january-2019": {},
+    "helm-19th-march-2019": {
+        "00": {
+            "artist": "Diat",
+            "title": "Disintergrate"
+        },
+        "01": {
+            "artist": "Low Life",
+            "title": "Gabbertron"
+        },
+        "02": {
+            "artist": "Молчат Дома, ",
+            "title": "Na Dne"
+        },
+        "03": {
+            "artist": "Maria Somerville",
+            "title": "All Too Much "
+        },
+        "04": {
+            "artist": "Shudder To Think",
+            "title": "Love Catastrophe"
+        },
+        "05": {
+            "artist": "Bass Clef",
+            "title": "It’s Time For The Revelator"
+        },
+        "06": {
+            "artist": "Not Waving",
+            "title": "Orange"
+        },
+        "07": {
+            "artist": "Main",
+            "title": "Firmament IV"
+        },
+        "08": {
+            "artist": "Siekiera",
+            "title": "Tak Dużo, Tak Mocno"
+        },
+        "09": {
+            "artist": "POWERPLANT",
+            "title": "Warm Skin"
+        },
+        "10": {
+            "artist": "Malvern Brume",
+            "title": "Mud Lap"
+        },
+        "11": {
+            "artist": "Oppenheimer Analysis",
+            "title": "Men In White Coats"
+        },
+        "12": {
+            "artist": "Talk Talk",
+            "title": "New Grass"
+        },
+        "13": {
+            "artist": "Don Caballero",
+            "title": "June Is Finally Here"
+        },
+        "14": {
+            "artist": "Still House Plants",
+            "title": "Shoulder Blade"
+        },
+        "15": {
+            "artist": "Otherworld Mix (",
+            "title": "All Material By Otherworld)."
+        }
+    },
+    "helm-20th-january-2021": {
+        "00": {
+            "artist": "Norman Westberg",
+            "title": "The Olive Rolls Away From The Tree"
+        },
+        "01": {
+            "artist": "Nurse With Wound",
+            "title": "Untitled"
+        },
+        "02": {
+            "artist": "Auvinen",
+            "title": "Ausvassa Eksyminen"
+        },
+        "03": {
+            "artist": "Jeremy Gara",
+            "title": "Passerine Finale"
+        },
+        "04": {
+            "artist": "Heather Leigh",
+            "title": "Molly"
+        },
+        "05": {
+            "artist": "CS + Kreme",
+            "title": "Bugged"
+        },
+        "06": {
+            "artist": "Laila Sakini",
+            "title": "La Macchina (The Car Drive)"
+        },
+        "07": {
+            "artist": "Drissi El-Abbassi",
+            "title": "Zedti Laadab Aliya"
+        },
+        "08": {
+            "artist": "Youssef Abouzaid",
+            "title": "Drpapgad"
+        },
+        "09": {
+            "artist": "Mika Vainio",
+            "title": "Movement 4 (Excerpt)"
+        },
+        "10": {
+            "artist": "Gism",
+            "title": "(Tere Their) Syphilitic Vaginas To Pieces"
+        },
+        "11": {
+            "artist": "The Human Race",
+            "title": "Adverts"
+        },
+        "12": {
+            "artist": "Untitled",
+            "title": "Untitled"
+        },
+        "13": {
+            "artist": "Confuse",
+            "title": "Hate War"
+        },
+        "14": {
+            "artist": "Nilotika",
+            "title": "Ejokawulida"
+        },
+        "15": {
+            "artist": "Grim",
+            "title": "Hi Volt"
+        },
+        "16": {
+            "artist": "James Barnard",
+            "title": "Helix"
+        },
+        "17": {
+            "artist": "Teresa Winter",
+            "title": "Love Crime"
+        },
+        "18": {
+            "artist": "Cabaret Voltaire",
+            "title": "What's Goin' On"
+        },
+        "19": {
+            "artist": "The Chisel",
+            "title": "Billy Aaron"
+        },
+        "20": {
+            "artist": "Undergang",
+            "title": "Indtørret Lig"
+        },
+        "21": {
+            "artist": "Dr. Feelgood",
+            "title": "Milk & Alcohol"
+        },
+        "22": {
+            "artist": "Helm",
+            "title": "Ghost Versions (Excerpt)"
+        },
+        "23": {
+            "artist": "Kara-Lis Coverdale",
+            "title": "A 478"
+        },
+        "24": {
+            "artist": "Chubby & The Gang",
+            "title": "Grenfell Forever"
+        }
+    },
+    "helm-22nd-january-2019": {
+        "00": {
+            "artist": "Throbbing Gristle",
+            "title": "I.B.M."
+        },
+        "01": {
+            "artist": "Surgeon",
+            "title": "Dinah’s Dream"
+        },
+        "02": {
+            "artist": "Nate Young",
+            "title": "Vents Of Blue"
+        },
+        "03": {
+            "artist": "The Last Man In Europe Corporation",
+            "title": "Slide"
+        },
+        "04": {
+            "artist": "Container",
+            "title": "Interior"
+        },
+        "05": {
+            "artist": "Cam Deas",
+            "title": "Untitled"
+        },
+        "06": {
+            "artist": "Various Artists (Chain Reaction)",
+            "title": "5"
+        },
+        "07": {
+            "artist": "Digital",
+            "title": "Down Under"
+        },
+        "08": {
+            "artist": "Christoph De Babalon",
+            "title": "Raw Mind"
+        },
+        "09": {
+            "artist": "Nkisi",
+            "title": "III"
+        },
+        "10": {
+            "artist": "Hieroglyphic Being",
+            "title": "The Appearance Of The Remember Of Me (Electronic Drums Version)"
+        },
+        "11": {
+            "artist": "Polygon Window",
+            "title": "Quoth (Wooden Thump Mix)"
+        },
+        "12": {
+            "artist": "Nitzer Ebb",
+            "title": "Fun To Be Had (George Clinton Edit)"
+        },
+        "13": {
+            "artist": "Equiknoxx Music",
+            "title": "I Really Want To Write On Her Purple Wall"
+        },
+        "14": {
+            "artist": "A Split - Second",
+            "title": "Flesh"
+        },
+        "15": {
+            "artist": "Public Relation",
+            "title": "Eighty Eight (Vocal)"
+        },
+        "16": {
+            "artist": "The Concrete Beat",
+            "title": "It's Not The Way To Do It (Dub Mix)"
+        },
+        "17": {
+            "artist": "L&O",
+            "title": "Even Now (O-Mix)"
+        },
+        "18": {
+            "artist": "Digital Vamp",
+            "title": "You Can Take My Body (Exotic Mix)"
+        },
+        "19": {
+            "artist": "Neon",
+            "title": "Voices"
+        },
+        "20": {
+            "artist": "White House White",
+            "title": "God Bless America"
+        },
+        "21": {
+            "artist": "Vicious Pink",
+            "title": "The Spaceship Is Over There"
+        },
+        "22": {
+            "artist": "Code 61",
+            "title": "Done The Deal (Rough Beat-Box Mix)"
+        },
+        "23": {
+            "artist": "Total Recall",
+            "title": "Spectrum (New Beat Mix)"
+        },
+        "24": {
+            "artist": "Pulse 8",
+            "title": "Radio Morocco (Mix 2 Youth Dub Mix)"
+        },
+        "25": {
+            "artist": "Futur Perfect",
+            "title": "Sato Agrepo (Radio Mix)"
+        },
+        "26": {
+            "artist": "Kate B",
+            "title": "Breakdown"
+        }
+    },
     "helm-23rd-december-2021": {
         "00": {
             "artist": "Property",
@@ -624,8 +1589,190 @@
             "title": "Cast"
         }
     },
-    "helm-25th-november-2020": {},
-    "helm-27th-november-2018": {},
+    "helm-25th-november-2020": {
+        "00": {
+            "artist": "Tor Lundvall",
+            "title": "The Falling Snow"
+        },
+        "01": {
+            "artist": ":zoviet*france:",
+            "title": "Ram"
+        },
+        "02": {
+            "artist": "Oneohtrix Point Never",
+            "title": "Imago"
+        },
+        "03": {
+            "artist": "Controlled Bleeding",
+            "title": "Did You Ever...?"
+        },
+        "04": {
+            "artist": "group A",
+            "title": "Yonaki Ishi"
+        },
+        "05": {
+            "artist": "Sleep Chamber",
+            "title": "Consequence Or Commitment?"
+        },
+        "06": {
+            "artist": "O Yuki Conjugate",
+            "title": "Earth Loop (Fragment)"
+        },
+        "07": {
+            "artist": "Laughing Hands",
+            "title": "Eleven"
+        },
+        "08": {
+            "artist": "Haus Arafna",
+            "title": "Toter Mensch [Krone Der Schöpfung]"
+        },
+        "09": {
+            "artist": "Shareholder",
+            "title": "The Glass"
+        },
+        "10": {
+            "artist": "Colin Potter",
+            "title": "Ssroi'asitjk"
+        },
+        "11": {
+            "artist": "Regis",
+            "title": "In Syrian Tongue"
+        },
+        "12": {
+            "artist": "Rapoon",
+            "title": "Vernal Crossing"
+        },
+        "13": {
+            "artist": "Blod",
+            "title": "Trygghet"
+        },
+        "14": {
+            "artist": "Christoph De Babalon",
+            "title": "No Man's Land"
+        },
+        "15": {
+            "artist": "Jesse Osborne-Lanthier",
+            "title": "Eh Op He Op Ho Pe Oh Pe Op Eh Op He Pe Ho Pe Oh"
+        },
+        "16": {
+            "artist": "Kleistwahr",
+            "title": "Over Your Heads Forever"
+        },
+        "17": {
+            "artist": "Birds Of Delay",
+            "title": "A Living Room At The Bottom Of A Lake II"
+        },
+        "18": {
+            "artist": "Nick Klein",
+            "title": "Choking On Thin Ice"
+        }
+    },
+    "helm-27th-november-2018": {
+        "00": {
+            "artist": "Iueke",
+            "title": "Untitled"
+        },
+        "01": {
+            "artist": "Yello",
+            "title": "Ciel Ouvert"
+        },
+        "02": {
+            "artist": "The Associates",
+            "title": "White Car In Germany"
+        },
+        "03": {
+            "artist": "SHXCXCHCXSH",
+            "title": "SsSsSsSsSsSsSsSsSsSsSsSsSsSsSs"
+        },
+        "04": {
+            "artist": "Imminent Starvation",
+            "title": "Lost Highway 45"
+        },
+        "05": {
+            "artist": "Demdike Stare",
+            "title": "At It Again"
+        },
+        "06": {
+            "artist": "Zuli",
+            "title": "Follow Your Breath"
+        },
+        "07": {
+            "artist": "Space Afrika",
+            "title": "Forthcoming"
+        },
+        "08": {
+            "artist": "Analog~1",
+            "title": "Mute"
+        },
+        "09": {
+            "artist": "JFK",
+            "title": "Secret Orders"
+        },
+        "10": {
+            "artist": "Autechre",
+            "title": "Nil"
+        },
+        "11": {
+            "artist": "John Bernard",
+            "title": "Euph"
+        },
+        "12": {
+            "artist": "X-103",
+            "title": "Minnia (The Queen’s Theme)"
+        },
+        "13": {
+            "artist": "The Maxx",
+            "title": "Heavy"
+        },
+        "14": {
+            "artist": "Executive Slacks",
+            "title": "The Bus"
+        },
+        "15": {
+            "artist": "Depeche Mode",
+            "title": "Master And Servant (Slavery Whip Mix)"
+        },
+        "16": {
+            "artist": "Tools You Can Trust",
+            "title": "Cut A New Seam"
+        },
+        "17": {
+            "artist": "Mosquitoes",
+            "title": "Eraserom"
+        },
+        "18": {
+            "artist": "Thomas Leer",
+            "title": "Tight As A Drum"
+        },
+        "19": {
+            "artist": "Section 25",
+            "title": "Inspiration"
+        },
+        "20": {
+            "artist": "Stine Janvin",
+            "title": "LIPS"
+        },
+        "21": {
+            "artist": "Lolina",
+            "title": "Murder"
+        },
+        "22": {
+            "artist": "The Residents",
+            "title": "Diskomo"
+        },
+        "23": {
+            "artist": "Parade Ground",
+            "title": "Moans"
+        },
+        "24": {
+            "artist": "The Nosebleeds",
+            "title": "Ain’t Been To No Music School"
+        },
+        "25": {
+            "artist": "Karla Borecky",
+            "title": "Just In Case"
+        }
+    },
     "helm-27th-october-2021": {
         "00": {
             "artist": "Kristian Olsson",
@@ -708,7 +1855,96 @@
             "title": "Am I Evil"
         }
     },
-    "helm-28th-october-2020": {},
+    "helm-28th-october-2020": {
+        "00": {
+            "artist": ":zoviet*france:",
+            "title": "Caught In The Square"
+        },
+        "01": {
+            "artist": "Autechre",
+            "title": "Metaz form8"
+        },
+        "02": {
+            "artist": "Sparkle Division",
+            "title": "To Feel"
+        },
+        "03": {
+            "artist": "Flora Yin-Wong",
+            "title": "Vale"
+        },
+        "04": {
+            "artist": "Drew McDowall",
+            "title": "Algalma VI"
+        },
+        "05": {
+            "artist": "Final",
+            "title": "The World Is Not Waiting For You \t"
+        },
+        "06": {
+            "artist": "Actress",
+            "title": "Save"
+        },
+        "07": {
+            "artist": "Jake Muir",
+            "title": "Fleeting Touches"
+        },
+        "08": {
+            "artist": "Vatican Shadow",
+            "title": "Moving Secret Money"
+        },
+        "09": {
+            "artist": "Maths Balance Volumes",
+            "title": "Dark Sky"
+        },
+        "10": {
+            "artist": "A.R. Kane",
+            "title": "Haunting"
+        },
+        "11": {
+            "artist": "Private World",
+            "title": "Jones To Engel (Pierrot)"
+        },
+        "12": {
+            "artist": "Sparkle Division",
+            "title": "You Ain't Takin' My Man"
+        },
+        "13": {
+            "artist": "Eartheater",
+            "title": "Diamond In The Bedrock"
+        },
+        "14": {
+            "artist": "Siouxsie And The Banshees",
+            "title": "Obsession"
+        },
+        "15": {
+            "artist": "Astaron",
+            "title": "As Time Joins In"
+        },
+        "16": {
+            "artist": "Alastair Galbraith",
+            "title": "I’m Brave I’m Scared"
+        },
+        "17": {
+            "artist": "PC World",
+            "title": "Beyond The Zero "
+        },
+        "18": {
+            "artist": "Rian Treanor",
+            "title": "Closed Curve"
+        },
+        "19": {
+            "artist": "Powell",
+            "title": "servenofunction, 19"
+        },
+        "20": {
+            "artist": "Autechre",
+            "title": "r cazt"
+        },
+        "21": {
+            "artist": "Growing",
+            "title": "Primitive Associations / Great Mass Above"
+        }
+    },
     "helm-29th-september-2021": {
         "00": {
             "artist": "John Surman",
@@ -799,8 +2035,8 @@
             "title": "End Of The Night"
         }
     },
-    "helm-2nd-august-2022": {},
-    "helm-2nd-september-2020": {},
+    "helm-2nd-august-2022": "",
+    "helm-2nd-september-2020": "",
     "helm-4th-august-2021": {
         "00": {
             "artist": "Iron Monkey",
@@ -887,7 +2123,96 @@
             "title": "3"
         }
     },
-    "helm-5th-august-2020": {},
+    "helm-5th-august-2020": {
+        "00": {
+            "artist": "The Gerogerigegege",
+            "title": ">(Decrescendo)"
+        },
+        "01": {
+            "artist": "Pale Cocoon",
+            "title": "Kumoatsume"
+        },
+        "02": {
+            "artist": "Bob Tilton",
+            "title": "Lilac"
+        },
+        "03": {
+            "artist": "Subdued",
+            "title": "Problem Of Evil"
+        },
+        "04": {
+            "artist": "Failing Lights",
+            "title": "Growing Green Wood"
+        },
+        "05": {
+            "artist": "Fingerprint",
+            "title": "Unlimited"
+        },
+        "06": {
+            "artist": "Unwound",
+            "title": "Demolished"
+        },
+        "07": {
+            "artist": "Ashtray Navigations",
+            "title": "The Ultimate Mechanical Abrasion"
+        },
+        "08": {
+            "artist": "Kitchener",
+            "title": "Hate And Stupidity"
+        },
+        "09": {
+            "artist": "Anenzephalia",
+            "title": "Noehaem II"
+        },
+        "10": {
+            "artist": "Portraits Of Past",
+            "title": "Snicker Snicker"
+        },
+        "11": {
+            "artist": "Світлана Няньо, ",
+            "title": "Untitled 4"
+        },
+        "12": {
+            "artist": "Dead Wrong",
+            "title": "Time Was"
+        },
+        "13": {
+            "artist": "Still House Plants",
+            "title": "Do"
+        },
+        "14": {
+            "artist": "The Fall",
+            "title": "R.O.D."
+        },
+        "15": {
+            "artist": "Jesu",
+            "title": "Because Of You"
+        },
+        "16": {
+            "artist": "Medicine",
+            "title": "Miss Drugstore"
+        },
+        "17": {
+            "artist": "Actress",
+            "title": "Spoon"
+        },
+        "18": {
+            "artist": "Hated",
+            "title": "Anonymous Descriptions Of Uncontrollable Urges"
+        },
+        "19": {
+            "artist": "A.R. Kane",
+            "title": "Crazy Blue"
+        },
+        "20": {
+            "artist": "Easterhouse",
+            "title": "Whistling In The Dark"
+        },
+        "21": {
+            "artist": "Ennio Morricone",
+            "title": "Symphonie Pour L'Attentat"
+        }
+    },
     "helm-7th-june-2022": {
         "00": {
             "artist": "Iætun",
@@ -994,7 +2319,104 @@
             "title": "Sun Shimmer Repeater"
         }
     },
-    "helm-8th-july-2020": {},
+    "helm-8th-july-2020": {
+        "00": {
+            "artist": "Helm",
+            "title": "II"
+        },
+        "01": {
+            "artist": "JS Aurelius",
+            "title": "Fallin Asleep To The Smell Of The End (Taken From ALT26)"
+        },
+        "02": {
+            "artist": "Love Theme",
+            "title": "Desert Exile (Taken From ALT34)"
+        },
+        "03": {
+            "artist": "Basic House",
+            "title": "Pyxis (Taken From ALT31)"
+        },
+        "04": {
+            "artist": "Richard Youngs",
+            "title": "Rurtain (Oneohtrix Point Never Remix)"
+        },
+        "05": {
+            "artist": "Cremation Lily",
+            "title": "Outlined Expanse (Taken From ALT42)"
+        },
+        "06": {
+            "artist": "Liberez",
+            "title": "Nema Te Part 2"
+        },
+        "07": {
+            "artist": "The Bomber Jackets",
+            "title": "The Lister (Taken From ALT14)"
+        },
+        "08": {
+            "artist": "Hieroglyphic Being",
+            "title": "The Electronic Belt "
+        },
+        "09": {
+            "artist": "Trevor",
+            "title": "Speed Ave (Taken From ALT48)"
+        },
+        "10": {
+            "artist": "Yeah You",
+            "title": "Remove In Line"
+        },
+        "11": {
+            "artist": "Acolytes",
+            "title": "MXE666 (Taken From ALT41)"
+        },
+        "12": {
+            "artist": "Nick Klein",
+            "title": "Time Changes The Garden"
+        },
+        "13": {
+            "artist": "The Pheromoans",
+            "title": "Kitchen English (Taken From ALT46)"
+        },
+        "14": {
+            "artist": "Opera Mort",
+            "title": "Ballion Rose (Taken From ALT15)"
+        },
+        "15": {
+            "artist": "Malvern Brume",
+            "title": "Thrum (Taken From ALT54)"
+        },
+        "16": {
+            "artist": "Fabulous Diamonds",
+            "title": "Desperate Living (Taken From ALT49)"
+        },
+        "17": {
+            "artist": "H.M.S. RMA",
+            "title": "The Vanilla Alternative (Forthcoming)"
+        },
+        "18": {
+            "artist": "Total Control",
+            "title": "Luxury Vacuum (Taken From ALT38)"
+        },
+        "19": {
+            "artist": "Tom James Scott",
+            "title": "Nightshade II (Forthcoming)"
+        },
+        "20": {
+            "artist": "Low Life",
+            "title": "Friends (Taken From ALT36)"
+        },
+        "21": {
+            "artist": "Chain Of Flowers",
+            "title": "Death’s Got A Hold On Me (Taken From ALT22)"
+        },
+        "22": {
+            "artist": "Container",
+            "title": "Queaser (Taken From ALT52)"
+        },
+        "23": {
+            "artist": "Shallow Sanction",
+            "title": "Vacant Rituals (Taken From ALT702)"
+        }
+    },
     "helm-9th-june-2021": {
         "00": {
             "artist": "Liberez",
@@ -1113,5 +2535,30 @@
             "title": "Way Through Vulnerability"
         }
     },
-    "helm-9th-october-2018": {}
+    "helm-9th-october-2018": {
+        "00": {
+            "artist": "Amnesia Scanner",
+            "title": "AS A.W.O.L."
+        },
+        "01": {
+            "artist": "The Prophets",
+            "title": "Wallenberg (French Version)"
+        },
+        "02": {
+            "artist": "Teresa Winter",
+            "title": "For Murder"
+        },
+        "03": {
+            "artist": "1991",
+            "title": "No More Dreams I"
+        },
+        "04": {
+            "artist": "Broadcast",
+            "title": "America's Boy"
+        },
+        "05": {
+            "artist": "The Wimple Winch",
+            "title": "Save My Soul"
+        }
+    }
 }
