@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -18,18 +25,14 @@
    </a>
   </h1>
   <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/3shIHibGsHf1jCEDEEKoF9">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
    <h2>
     <a href="https://nts.live/shows/the-golden-record">
      The NTS Golden Record
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/3shIHibGsHf1jCEDEEKoF9?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -58,9 +61,9 @@
     <li>
      Senegal - Percussion   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0TNJO3cj1RGqt3y8hUzuOo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0TNJO3cj1RGqt3y8hUzuOo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -81,9 +84,9 @@
     <li>
      Chuck Berry - Johnny B. Goode   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2QfiRTz5Yc8DdShCxG1tB2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2QfiRTz5Yc8DdShCxG1tB2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -119,9 +122,9 @@
     <li>
      Louis Armstrong &amp; His Hot Seven - Melancholy Blues   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5oTcuRrs45iCTjOpWuVyyn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5oTcuRrs45iCTjOpWuVyyn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -182,9 +185,9 @@
     <li>
      Blind Willie Johnson - Dark Was The Night   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3u853RKLZjG8vubsNSuHpT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3u853RKLZjG8vubsNSuHpT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -211,9 +214,9 @@
     <li>
      Alabama Sacred Harp Singers - Present Joys   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0uxg5RUP8xlsNER0nAOVsk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0uxg5RUP8xlsNER0nAOVsk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -224,9 +227,9 @@
     <li>
      Ursula K. Le Guin,  - Heron Dance   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6l00RwI1yq7Q8Hyca3zxzK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6l00RwI1yq7Q8Hyca3zxzK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -237,9 +240,9 @@
     <li>
      Erik Satie - Gymnopédie No.1   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5NGtFXVpXSvwunEIGeviY3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5NGtFXVpXSvwunEIGeviY3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -260,9 +263,9 @@
     <li>
      Hamza El Din - Mwasha   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5qmccL1z7kKuKj3S4L9NNr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5qmccL1z7kKuKj3S4L9NNr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -273,105 +276,105 @@
     <li>
      Joe Meek,  - I Hear A New World   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4PH7xjN7nrCbnPIpIwqluF">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4PH7xjN7nrCbnPIpIwqluF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Amália - Estranha Forma De Vida   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/07Mb5h7Y8r6AScCmwmM6MV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/07Mb5h7Y8r6AScCmwmM6MV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Miles Davis - He Loved Him Madly   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4lZpLYUCRXmIiwdtNIbxVq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4lZpLYUCRXmIiwdtNIbxVq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Carl Stone - Banteay Srey   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/12k3jzWp62OnNqEZzHU3T1">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/12k3jzWp62OnNqEZzHU3T1?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Pharoah Sanders - Love Is Everywhere   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4IIxBK0L8uj7viwxhmuSc4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4IIxBK0L8uj7viwxhmuSc4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Gil Scott-Heron - Whitey On The Moon   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7eDz4e7BnffOzpMbpqH8tW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7eDz4e7BnffOzpMbpqH8tW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ryo Fukui - Scenery   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Uk4xYpKI1WIOtWqS6fs62">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Uk4xYpKI1WIOtWqS6fs62?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Ivor Cutler - Beautiful Cosmos   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2JsTEJJ8to83TqK08yrOLS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2JsTEJJ8to83TqK08yrOLS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Aphex Twin - Alberto Balsalm   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/21Phj46KeUHOWyZW9A9b7P">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/21Phj46KeUHOWyZW9A9b7P?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Aphrodite's Child - Loud, Loud, Loud   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2UqILem2vrLt2KLy980niE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2UqILem2vrLt2KLy980niE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Jon Hassell - Last Night The Moon Came   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7EVB8TpxzTh6llHIcPANAi">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7EVB8TpxzTh6llHIcPANAi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Akira Yamaoka - A World Of Madness   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2GMeVXL0JQFLmAIJJa8K2n">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2GMeVXL0JQFLmAIJJa8K2n?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Boards Of Canada - Corsair   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/54IGiCAOFeISJAGZoHjtjf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/54IGiCAOFeISJAGZoHjtjf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -387,9 +390,9 @@
     <li>
      Mulatu Astatke - Tezeta   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7JPNvoMjoIXkTDAMx9Aajj">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7JPNvoMjoIXkTDAMx9Aajj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -405,41 +408,41 @@
     <li>
      Fela Ransome Kuti,  - Water No Get Enemy   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2oWex6rYoQ7Bl2D9zG8d3F">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2oWex6rYoQ7Bl2D9zG8d3F?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Vicente Fernández - Volver Volver   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Fvnz1ZJ86IdqDAepWYPAh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Fvnz1ZJ86IdqDAepWYPAh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Glen Campbell - Wichita Lineman   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0H1X2br2ZPFznGDtpGpJ11">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0H1X2br2ZPFznGDtpGpJ11?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Marvin Gaye - I Want You   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2gmWJA9oF4GD2Vw5QoRqu1">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2gmWJA9oF4GD2Vw5QoRqu1?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Herbie Hancock - Watermelon Man   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2zQl59dZMzwhrmeSBEgiXY">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2zQl59dZMzwhrmeSBEgiXY?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -450,49 +453,49 @@
     <li>
      Uku Kuut - Vision Of Estonia (Demo)   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2ft1wSjXp2O42vWmGN1YEI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2ft1wSjXp2O42vWmGN1YEI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Cocteau Twins - Lorelei   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5y34eErZjDS8URSTaz6m8Y">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5y34eErZjDS8URSTaz6m8Y?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Björk - Come To Me   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0bHpsorTpt9wX6Dkr2LEfg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0bHpsorTpt9wX6Dkr2LEfg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Sophie - It's Okay To Cry   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0QA1xpUuqHDHWZhi0eAbH7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0QA1xpUuqHDHWZhi0eAbH7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Drexciya - Andreaen Sand Dunes   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5vcCF1Q328JhaZj4MS6XqO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5vcCF1Q328JhaZj4MS6XqO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
      Playboi Carti - Location   :
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3yk7PJnryiJ8mAPqsrujzf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3yk7PJnryiJ8mAPqsrujzf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
