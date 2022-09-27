@@ -8,5 +8,4 @@ os.chdir(f"{dr}/py")
 import script
 nts = script.nts()
 
-# nts.runscript(nts.showlist,fast=True)
-nts.runscript(['nts-picks'],False)
+nts.runscript(nts.showlist,fast=True)
