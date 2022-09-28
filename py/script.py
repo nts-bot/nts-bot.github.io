@@ -135,6 +135,7 @@ class nts:
         else:
             print('skip',end='\r')
             return('kill')
+            
         if run or bypass:
             if subcommand:
                 eval(subcommand)
