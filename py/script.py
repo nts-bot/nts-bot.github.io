@@ -163,7 +163,7 @@ class nts:
                     # SCRAPE
                     eval(self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)"))
                     # SPOTIFY
-                    eval(self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)"))
+                    self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
                     self.review(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
                     # BANDCAMP
                     bd = False
