@@ -128,26 +128,22 @@ class nts:
 
     # RUN SCRIPT
 
-    def review(self,show,reviewpath,command,subcommand=""):
-        if reviewpath:
-            reviewdate = datetime.datetime.fromtimestamp(os.path.getmtime(f'{reviewpath}.json')).date()
-        else:
-            reviewdate = datetime.datetime.fromtimestamp(os.path.getmtime(f'./tracklist/{show}.json')).date()
-        #
-        if datetime.date.today() == reviewdate:
-            print('skip',end='\r')
+    def review(self,show):
+        if datetime.date.today() == datetime.datetime.fromtimestamp(os.path.getmtime(f"./spotify/{show}.json")).date():
+            print('$',end='\r')
             return(True)
-        #
-        if subcommand:
-            eval(subcommand)
-        rq, do = self.prerun(f"./tracklist/{show}",reviewpath)
+        else:
+            print('%',end='\r')
+            return(False)
+            
+    def runner(self,show,path,command):
+        rq, do = self.prerun(f"./tracklist/{show}",path)
         if rq:
             if isinstance(command,str):
                 eval(command)                    
             else:
                 eval(command[0])
                 eval(command[1])
-        return(False)
 
     def runscript(self,shows): #,bd=False,fast=False
         self.backup()
@@ -161,24 +157,29 @@ class nts:
                     oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
-                    # SCRAPE
-                    v = self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)")
-                    # if v:
-                    #     break
-                    # SPOTIFY
-                    self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
-                    self.review(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
-                    # BANDCAMP
-                    bd = False
-                    if bd:
-                        self.review(show,f"./bandcamp_search_results/{show}","self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)")
-                        self.review(show,f"./bandcamp/{show}",["self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)","self.mt_bmeta(show)"])
-                    # ADD
-                    if show not in self._j2d('./uploaded'):
-                        self.spotifyplaylist(show)
+                    # SCRAPE / PRELIMINARY
+                    v = self.review(show)
+                    if v:
+                        break
                     else:
-                        self.review(show,f"./uploaded","self.spotifyplaylist(show)")
-                    break
+                        # self.runner(show,"self.scrape(show)")
+                        self.runner(show,"self.scrape(show,True)") # Fast
+                        # TRACKLIST
+                        self.runner(show,"","self.ntstracklist(show,do)")
+                        # SPOTIFY
+                        self.runner(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
+                        self.runner(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
+                        # BANDCAMP
+                        bd = False
+                        if bd:
+                            self.runner(show,f"./bandcamp_search_results/{show}","self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)")
+                            self.runner(show,f"./bandcamp/{show}",["self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)","self.mt_bmeta(show)"])
+                        # ADD
+                        if show not in self._j2d('./uploaded'):
+                            self.spotifyplaylist(show)
+                        else:
+                            self.runner(show,f"./uploaded","self.spotifyplaylist(show)")
+                        break
                 except KeyboardInterrupt:
                     break
                 except Exception as error:
