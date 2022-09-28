@@ -1,5 +1,5 @@
 # BASIC LIBRARIES
-import os, json, time, requests, re, pickle, urllib, sys
+import os, json, time, requests, re, pickle, urllib, sys, datetime
 from urllib.error import HTTPError
 # HTML PARSER
 from bs4 import BeautifulSoup as bs
@@ -88,29 +88,39 @@ class nts:
             time.sleep(0.5)
             self._d2j(path,allot)
 
-    def prerun(self,json1,json2,meta=''):
+    def prerun(self,json1,json2='',meta=''):
         js1 = self._j2d(json1)
-        js2 = self._j2d(json2)
-        if meta:
-            js2 = js2[meta]
+        if js2:
+            js2 = self._j2d(json2)
+            if meta:
+                js2 = js2[meta]
+        #
         ok = [False]
         do = []
-        for i in js1: # episodes
-            if (i not in js2) and (isinstance(js1[i],dict)):
-                ok += [True]
-                do += [i]
-            else:
-                if not meta:
-                    for j in js1[i]: # tracks
-                        if j not in js2[i]:
-                            ok += [True]
-                            do += [i]
-                        else:
-                            if not js2[i][j]:
+        #
+        if js2:        
+            for i in js1: # episodes
+                if (i not in js2) and (isinstance(js1[i],dict)):
+                    ok += [True]
+                    do += [i]
+                else:
+                    if not meta:
+                        for j in js1[i]: # tracks
+                            if j not in js2[i]:
                                 ok += [True]
                                 do += [i]
                             else:
-                                ok += [False]
+                                if not js2[i][j]:
+                                    ok += [True]
+                                    do += [i]
+                                else:
+                                    ok += [False]
+        else:
+            for i in js1: # episodes
+                if isinstance(js1[i],dict) and (not js1[i]):
+                    ok += [True]
+                    do += [i]
+        #
         do = self.scene(do)
         if do:
             print(f'. . . . . . . . . . . . .{json1[2:5]}:{json2[2:5]}:{len(do)}.',end='\r')
@@ -118,7 +128,25 @@ class nts:
 
     # RUN SCRIPT
 
-    def runscript(self,shows,bd=False,fast=False):
+    def review(self,show,reviewpath,command,subcommand="",bypass=False):
+        if datetime.date.today() != datetime.datetime.fromtimestamp(os.path.getmtime(f'./tracklist/{show}.json')).date():
+            print('!',end='\r')
+            run = True
+        else:
+            print('skip',end='\r')
+            run = False
+        if run or bypass:
+            if subcommand:
+                eval(subcommand)
+            rq, do = self.prerun(f"./tracklist/{show}",reviewpath)
+            if rq:
+                if isinstance(command,str):
+                    eval(command)                    
+                else:
+                    eval(command[0])
+                    eval(command[1])
+
+    def runscript(self,shows): #,bd=False,fast=False
         self.backup()
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
@@ -133,46 +161,20 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE
-                    if fast or bd:
-                        self.scrape(show,True)
-                    else:
-                        self.scrape(show) #,False,amount=100
-                    #
-                    episodelist = self._j2d(f'./tracklist/{show}')
-                    do = []
-                    for episode in episodelist:
-                        if isinstance(episodelist[episode],dict) and (not episodelist[episode]):
-                            do += [episode]
-                    if do:
-                        self.ntstracklist(show,do)
-
+                    self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)")
                     # SPOTIFY
-                    rq, do = self.prerun(f"./tracklist/{show}",f"./spotify_search_results/{show}")
-                    if rq:
-                        self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
-                    #
-                    rq, do = self.prerun(f"./tracklist/{show}",f"./spotify/{show}") 
-                    if rq:
-                        self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
-
+                    self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
+                    self.review(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
                     # BANDCAMP
+                    bd = False
                     if bd:
-                        rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp_search_results/{show}") 
-                        if rq:
-                            self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)
-
-                        rq, do = self.prerun(f"./tracklist/{show}",f"./bandcamp/{show}") 
-                        if rq:
-                            self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)
-                            self.mt_bmeta(show)
-                        
+                        self.review(show,f"./bandcamp_search_results/{show}","self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)")
+                        self.review(show,f"./bandcamp/{show}",["self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)","self.mt_bmeta(show)"])
                     # ADD
                     if show not in self._j2d('./uploaded'):
                         self.spotifyplaylist(show)
                     else:
-                        rq, do = self.prerun(f"./tracklist/{show}",f"./uploaded",show) 
-                        if rq:
-                            self.spotifyplaylist(show)
+                        self.review(show,f"./uploaded","self.spotifyplaylist(show)")
                     break
                 except KeyboardInterrupt:
                     break
