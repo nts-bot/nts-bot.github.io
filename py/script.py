@@ -159,9 +159,9 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE
-                    v = self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)",bypass=True)
-                    if v:
-                        break
+                    v = self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)")
+                    # if v:
+                    #     break
                     # SPOTIFY
                     self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
                     self.review(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
