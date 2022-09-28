@@ -129,23 +129,22 @@ class nts:
     # RUN SCRIPT
 
     def review(self,show,reviewpath,command,subcommand="",bypass=False):
-        if datetime.date.today() != datetime.datetime.fromtimestamp(os.path.getmtime(f'./tracklist/{show}.json')).date():
-            print('!',end='\r')
-            run = True
-        else:
-            print('skip',end='\r')
-            return('kill')
-            
-        if run or bypass:
-            if subcommand:
-                eval(subcommand)
-            rq, do = self.prerun(f"./tracklist/{show}",reviewpath)
-            if rq:
-                if isinstance(command,str):
-                    eval(command)                    
-                else:
-                    eval(command[0])
-                    eval(command[1])
+        if not bypass:
+            if datetime.date.today() != datetime.datetime.fromtimestamp(os.path.getmtime(f'./tracklist/{show}.json')).date():
+                print('!',end='\r')
+            else:
+                print('skip',end='\r')
+                return('break')
+        if subcommand:
+            eval(subcommand)
+        rq, do = self.prerun(f"./tracklist/{show}",reviewpath)
+        if rq:
+            if isinstance(command,str):
+                eval(command)                    
+            else:
+                eval(command[0])
+                eval(command[1])
+        return('continue')
 
     def runscript(self,shows): #,bd=False,fast=False
         self.backup()
