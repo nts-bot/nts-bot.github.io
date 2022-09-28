@@ -140,11 +140,20 @@ class nts:
         rq, do = self.prerun(f"./tracklist/{show}",path)
         if rq:
             print('!',end='\r')
-            if isinstance(command,str):
-                eval(command)                    
-            else:
-                eval(command[0])
-                eval(command[1])
+            if command == 1:
+                self.ntstracklist(show,do)
+            elif command == 2:
+                self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
+            elif command == 3:
+                self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
+            elif command == 4:
+                self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)
+            elif command == 5:
+                self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)
+                self.mt_bmeta(show)
+            elif command == 6:
+                self.spotifyplaylist(show)
+
 
     def runscript(self,shows): #,bd=False,fast=False
         self.backup()
@@ -159,29 +168,25 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE / PRELIMINARY
-                    v = self.review(show)
-                    # v = False # Debugging
-                    if v:
-                        break
+                    # v = self.review(show) # optional (for long scrape)
+                    # self.scrape(show)
+                    self.scrape(show,True) # Debugging
+                    # TRACKLIST
+                    self.runner(show,"",1)
+                    # SPOTIFY
+                    self.runner(show,f"./spotify_search_results/{show}",2)
+                    self.runner(show,f"./spotify/{show}",3)
+                    # BANDCAMP
+                    bd = False
+                    if bd:
+                        self.runner(show,f"./bandcamp_search_results/{show}",4)
+                        self.runner(show,f"./bandcamp/{show}",5)
+                    # ADD
+                    if show not in self._j2d('./uploaded'):
+                        self.spotifyplaylist(show)
                     else:
-                        self.scrape(show)
-                        # self.scrape(show,True) # Debugging
-                        # TRACKLIST
-                        self.runner(show,"","self.ntstracklist(show,do)")
-                        # SPOTIFY
-                        self.runner(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
-                        self.runner(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
-                        # BANDCAMP
-                        bd = False
-                        if bd:
-                            self.runner(show,f"./bandcamp_search_results/{show}","self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)")
-                            self.runner(show,f"./bandcamp/{show}",["self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)","self.mt_bmeta(show)"])
-                        # ADD
-                        if show not in self._j2d('./uploaded'):
-                            self.spotifyplaylist(show)
-                        else:
-                            self.runner(show,f"./uploaded","self.spotifyplaylist(show)")
-                        break
+                        self.runner(show,f"./uploaded",6)
+                    break
                 except KeyboardInterrupt:
                     break
                 except Exception as error:
@@ -696,7 +701,7 @@ class nts:
             for i in met0[:-1]:
                 metacopy.remove(i)
             metaind = metacopy.index(met0[-1])
-            met1 = metacopy[:metaind] #old shows
+            met1 = metacopy[:metaind] # old shows
             if met1:
                 uploaded[show] = dict() # reset upload
                 reset = True
@@ -720,37 +725,38 @@ class nts:
         lp = sortmeta[-1][0].split('.')
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
 
-        # metadata
+        showlist = self._j2d(f'./tracklist/{show}')
         rate = self._j2d(f'./spotify/{show}')
         upend = False
         for mt in sortmeta[::-1]:
-            episodes = mt[1]
-            trackdict[episodes] = []
-            if episodes not in uploaded[show]:
-                uploaded[show][episodes] = 1
+            ep = mt[1]
+            trackdict[ep] = []
+            if ep not in uploaded[show]:
+                uploaded[show][ep] = 1
                 up = True
             else:
                 up = False
-            for track in rate[episodes]:
-                #
-                ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[episodes][track]['artist']).split()).lower()
-                ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[episodes][track]['title']).split()).lower()
-                if ('unknown artist' in ua) or ('unknown' == ua) or ('unknown' == ut):
-                    rate[episodes][track]["ratio"] = -1
-                    rate[episodes][track]["uri"] = ''
-                #
-                if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
-                    tid += [rate[episodes][track]['trackid']]
-                    if up:
-                        upend = True
-                        trackdict[episodes] += [rate[episodes][track]['trackid']]
-                pup += [rate[episodes][track]['trackid']]
-                if not rate[episodes][track]['trackid']:
-                    mis += 1
-                if threshold[0]  <= rate[episodes][track]['ratio'] == 4:
-                    almost += 1
-                if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
-                    unsure += 1
+            if showlist[ep]:
+                for tr in rate[ep]:
+                    #
+                    ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[ep][tr]['artist']).split()).lower()
+                    ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[ep][tr]['title']).split()).lower()
+                    if ('unknown artist' in ua) or ('unknown' == ua) or ('unknown' == ut):
+                        rate[ep][tr]["ratio"] = -1
+                        rate[ep][tr]["uri"] = ''
+                    #
+                    if threshold[0] <= rate[ep][tr]['ratio'] <= threshold[1]:
+                        tid += [rate[ep][tr]['trackid']]
+                        if up:
+                            upend = True
+                            trackdict[ep] += [rate[ep][tr]['trackid']]
+                    pup += [rate[ep][tr]['trackid']]
+                    if not rate[ep][tr]['trackid']:
+                        mis += 1
+                    if threshold[0]  <= rate[ep][tr]['ratio'] == 4:
+                        almost += 1
+                    if threshold[0]  <= rate[ep][tr]['ratio'] <= 3:
+                        unsure += 1
 
         self._d2j(f'./spotify/{show}',rate)
         tidup = self.scene(tid[::-1])[::-1]
