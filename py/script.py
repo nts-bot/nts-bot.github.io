@@ -134,7 +134,7 @@ class nts:
                 print('!',end='\r')
             else:
                 print('skip',end='\r')
-                return('break')
+                return(True)
         if subcommand:
             eval(subcommand)
         rq, do = self.prerun(f"./tracklist/{show}",reviewpath)
@@ -144,7 +144,7 @@ class nts:
             else:
                 eval(command[0])
                 eval(command[1])
-        return('pass')
+        return(False)
 
     def runscript(self,shows): #,bd=False,fast=False
         self.backup()
@@ -161,22 +161,22 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE
-                    v = self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)")
-                    if v == 'break':
+                    v = self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)",bypass=True)
+                    if v:
                         break
                     # SPOTIFY
-                    self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
+                    self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)",bypass=True)
                     self.review(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
                     # BANDCAMP
                     bd = False
                     if bd:
-                        self.review(show,f"./bandcamp_search_results/{show}","self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)")
-                        self.review(show,f"./bandcamp/{show}",["self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)","self.mt_bmeta(show)"])
+                        self.review(show,f"./bandcamp_search_results/{show}","self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)",bypass=True)
+                        self.review(show,f"./bandcamp/{show}",["self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)","self.mt_bmeta(show)"],bypass=True)
                     # ADD
                     if show not in self._j2d('./uploaded'):
                         self.spotifyplaylist(show)
                     else:
-                        self.review(show,f"./uploaded","self.spotifyplaylist(show)")
+                        self.review(show,f"./uploaded","self.spotifyplaylist(show)",bypass=True)
                     break
                 except KeyboardInterrupt:
                     break
