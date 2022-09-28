@@ -793,8 +793,8 @@ class nts:
             title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
             desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
             syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. ordered {lastep}-to-{firstep}]"
-            
-            x = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}... {syn}")
+            x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
+            x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}... {syn}")
             self._d2j(f'./uploaded',uploaded)
         else:
             print('.no tracks to append.')
