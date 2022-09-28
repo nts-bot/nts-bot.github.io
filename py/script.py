@@ -139,6 +139,7 @@ class nts:
     def runner(self,show,path,command):
         rq, do = self.prerun(f"./tracklist/{show}",path)
         if rq:
+            print('!',end='\r')
             if isinstance(command,str):
                 eval(command)                    
             else:
@@ -159,11 +160,12 @@ class nts:
                     time.sleep(0.1)
                     # SCRAPE / PRELIMINARY
                     v = self.review(show)
+                    # v = False # Debugging
                     if v:
                         break
                     else:
-                        # self.runner(show,"","self.scrape(show)")
-                        self.runner(show,"","self.scrape(show,True)") # Fast
+                        self.scrape(show)
+                        # self.scrape(show,True) # Debugging
                         # TRACKLIST
                         self.runner(show,"","self.ntstracklist(show,do)")
                         # SPOTIFY
@@ -684,7 +686,7 @@ class nts:
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
         #
         uploaded = self._j2d(f'./uploaded')
-        
+        #
         if show not in uploaded:
             uploaded[show] = dict()
             reset = True
@@ -698,17 +700,6 @@ class nts:
             if met1:
                 uploaded[show] = dict() # reset upload
                 reset = True
-        #
-        rate = self._j2d(f'./spotify/{show}')
-        ''' REMOVE UNKNOWNS '''
-        for j in rate:
-            for k in rate[j]:
-                ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[j][k]['artist']).split()).lower()
-                ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[j][k]['title']).split()).lower()
-                if ('unknown artist' in ua) or ('unknown' == ua) or ('unknown' == ut):
-                    rate[j][k]["ratio"] = -1
-                    rate[j][k]["uri"] = ''
-        self._d2j(f'./spotify/{show}',rate)
         #
         tid = []
         trackdict = dict()
@@ -729,51 +720,58 @@ class nts:
         lp = sortmeta[-1][0].split('.')
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
 
+        # metadata
+        rate = self._j2d(f'./spotify/{show}')
+        upend = False
         for mt in sortmeta[::-1]:
             episodes = mt[1]
             trackdict[episodes] = []
             if episodes not in uploaded[show]:
                 uploaded[show][episodes] = 1
-                try:
-                    for track in rate[episodes]:
-                        if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
-                            tid += [rate[episodes][track]['trackid']]
-                            trackdict[episodes] += [rate[episodes][track]['trackid']]
-                        pup += [rate[episodes][track]['trackid']]
-                        if not rate[episodes][track]['trackid']:
-                            mis += 1
-                        if threshold[0]  <= rate[episodes][track]['ratio'] == 4:
-                            almost += 1
-                        if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
-                            unsure += 1
-                except Exception as error:
-                    print(error)
+                up = True
             else:
-                pass
+                up = False
+            for track in rate[episodes]:
+                #
+                ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[episodes][track]['artist']).split()).lower()
+                ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[episodes][track]['title']).split()).lower()
+                if ('unknown artist' in ua) or ('unknown' == ua) or ('unknown' == ut):
+                    rate[episodes][track]["ratio"] = -1
+                    rate[episodes][track]["uri"] = ''
+                #
+                if threshold[0] <= rate[episodes][track]['ratio'] <= threshold[1]:
+                    tid += [rate[episodes][track]['trackid']]
+                    if up:
+                        upend = True
+                        trackdict[episodes] += [rate[episodes][track]['trackid']]
+                pup += [rate[episodes][track]['trackid']]
+                if not rate[episodes][track]['trackid']:
+                    mis += 1
+                if threshold[0]  <= rate[episodes][track]['ratio'] == 4:
+                    almost += 1
+                if threshold[0]  <= rate[episodes][track]['ratio'] <= 3:
+                    unsure += 1
 
-        if tid:
-            
-            tidup = self.scene(tid[::-1])[::-1]
-            dups = len(tid) - len(tidup)
-            
+        self._d2j(f'./spotify/{show}',rate)
+        tidup = self.scene(tid[::-1])[::-1]
+        dups = len(tid) - len(tidup)
+
+        if reset:
             current = self.sp.user_playlist_tracks(self.user,pid)
             tracks = current['items']
-            #
             while current['next']:
                 current = self.sp.next(current)
                 tracks.extend(current['items'])        
             ids = []
             for x in tracks:
                 ids.append(x['track']['id'])
+            rem = list(set(ids))
+            hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
+            for i in hund:
+                print(f'.resetting',end='\r')
+                self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
 
-            if reset:
-                rem = list(set(ids))
-                hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
-                for i in hund:
-                    print(f'.resetting',end='\r')
-                    self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
-                ids = []
-
+        if upend:
             print(f'.tracks appending.', end='\r')
             for episode in list(trackdict.keys())[::-1]:
                 if trackdict[episode]:
@@ -782,28 +780,25 @@ class nts:
                     for i in hund:
                         self.sp.user_playlist_add_tracks(self.user, pid, i,0)
             print(f'.tracks appended.', end='\r')
-
-
-            if almost:
-                almost = f'{almost} almost sure ;'
-            else:
-                almost = ''
-
-            if unsure:
-                unsure = f' {unsure} unsure ;'
-            else:
-                unsure = ''
-
-            duplicates = f' {dups} repeated ;'
-
-            title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
-            desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-            syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. ordered {lastep}-to-{firstep}]"
-            x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
-            x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}... {syn}")
-            self._d2j(f'./uploaded',uploaded)
+            
+        if almost:
+            almost = f'{almost} almost sure ;'
         else:
-            print('.no tracks to append.')
+            almost = ''
+        if unsure:
+            unsure = f' {unsure} unsure ;'
+        else:
+            unsure = ''
+        duplicates = f' {dups} repeated ;'
+
+        title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
+        desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
+
+        syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. ordered {lastep}-to-{firstep}]"
+        x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
+        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}... {syn}")
+
+        self._d2j(f'./uploaded',uploaded)
 
     def follow(self,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
