@@ -162,8 +162,8 @@ class nts:
                     if v:
                         break
                     else:
-                        # self.runner(show,"self.scrape(show)")
-                        self.runner(show,"self.scrape(show,True)") # Fast
+                        # self.runner(show,"","self.scrape(show)")
+                        self.runner(show,"","self.scrape(show,True)") # Fast
                         # TRACKLIST
                         self.runner(show,"","self.ntstracklist(show,do)")
                         # SPOTIFY
