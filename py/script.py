@@ -128,13 +128,16 @@ class nts:
 
     # RUN SCRIPT
 
-    def review(self,show,reviewpath,command,subcommand="",bypass=False):
-        if not bypass:
-            if datetime.date.today() != datetime.datetime.fromtimestamp(os.path.getmtime(f'{reviewpath}.json')).date():
-                print('!',end='\r')
-            else:
-                print('skip',end='\r')
-                return(True)
+    def review(self,show,reviewpath,command,subcommand=""):
+        if reviewpath:
+            reviewdate = datetime.datetime.fromtimestamp(os.path.getmtime(f'{reviewpath}.json')).date()
+        else:
+            reviewdate = datetime.datetime.fromtimestamp(os.path.getmtime(f'./tracklist/{show}.json')).date()
+        #
+        if datetime.date.today() == reviewdate:
+            print('skip',end='\r')
+            return(True)
+        #
         if subcommand:
             eval(subcommand)
         rq, do = self.prerun(f"./tracklist/{show}",reviewpath)
