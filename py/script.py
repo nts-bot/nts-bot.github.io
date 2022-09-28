@@ -90,7 +90,7 @@ class nts:
 
     def prerun(self,json1,json2='',meta=''):
         js1 = self._j2d(json1)
-        if js2:
+        if json2:
             js2 = self._j2d(json2)
             if meta:
                 js2 = js2[meta]
@@ -98,9 +98,9 @@ class nts:
         ok = [False]
         do = []
         #
-        if js2:        
+        if json2:        
             for i in js1: # episodes
-                if (i not in js2) and (isinstance(js1[i],dict)):
+                if (i not in js2) and isinstance(js1[i],dict):
                     ok += [True]
                     do += [i]
                 else:
