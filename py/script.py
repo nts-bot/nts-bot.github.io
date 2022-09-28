@@ -144,7 +144,7 @@ class nts:
             else:
                 eval(command[0])
                 eval(command[1])
-        return('continue')
+        return('pass')
 
     def runscript(self,shows): #,bd=False,fast=False
         self.backup()
@@ -161,9 +161,9 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE
-                    self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)")
+                    eval(self.review(show,'',"self.ntstracklist(show,do)","self.scrape(show)"))
                     # SPOTIFY
-                    self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)")
+                    eval(self.review(show,f"./spotify_search_results/{show}","self.searchloop(show,['tracklist','spotify_search_results'],'search',do)"))
                     self.review(show,f"./spotify/{show}","self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)")
                     # BANDCAMP
                     bd = False
