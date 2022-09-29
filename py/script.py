@@ -60,11 +60,12 @@ class nts:
         dr = os.getenv("directory")
         os.chdir(f"{dr}")
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
-        try:
-            self.meta = self._j2d(f'./meta')
-        except:
-            print('META FILE CORRUPTED : USING BACKUP')
-            self.meta = self._j2d(f'./extra/meta')
+        self.meta = self._j2d(f'./meta')
+        # try:
+        #     self.meta = self._j2d(f'./meta')
+        # except:
+        #     print('META FILE CORRUPTED : USING BACKUP')
+        #     self.meta = self._j2d(f'./extra/meta')
 
     # LOCAL DATABASE
 
@@ -264,18 +265,17 @@ class nts:
         # EPISODES META
 
         episodemeta = soup.select('.nts-grid-v2-item__content')
-        meta = self.meta
         try:
-            x = meta[show]
+            x = self.meta[show]
         except KeyError:
-            meta[show] = dict()
+            self.meta[show] = dict()
         for i in episodemeta:
             sub = i.select('.nts-grid-v2-item__header')[0]
             ep = sub['href'].split('/')[-1]
             date = sub.select('span')[0].text
             eptitle = sub.select('.nts-grid-v2-item__header__title')[0].text
-            meta[show][ep] = {'title':eptitle,'date':date}
-        self._d2j(f'./meta',meta)
+            self.meta[show][ep] = {'title':eptitle,'date':date}
+        self._d2j(f'./meta',self.meta)
 
         # ARTIST IMAGES
 
@@ -328,23 +328,22 @@ class nts:
 
     def ntstracklist(self,show,episodes=[]):
         episodelist = self._j2d(f'./tracklist/{show}')
-        meta = self.meta
-
-        if show not in meta:
-            meta[show] = dict()
+        
+        if show not in self.meta:
+            self.meta[show] = dict()
         if not episodes:
             episodes = episodelist
 
         for episode in episodes:
             try:
-                meta[show][episode]
+                self.meta[show][episode]
             except:
-                meta[show][episode] = dict()
+                self.meta[show][episode] = dict()
             try:
                 episodelist[episode]
             except:
                 episodelist[episode] = dict()
-            if (not episodelist[episode] and isinstance(episodelist[episode],dict)) or (not meta[show][episode]):
+            if (not episodelist[episode] and isinstance(episodelist[episode],dict)) or (not self.meta[show][episode]):
                 print(f'{episode[:7]}{episode[-7:]}', end='\r')
                 url = f"https://www.nts.live/shows/{show}/episodes/{episode}"
                 soup = bs(self.req(url).content, "html.parser")
@@ -375,14 +374,13 @@ class nts:
                         print(f'{episode[:7]}{episode[-7:]}:fail', end='\r')
                         episodelist[episode] = ''
                     self._d2j(f'./tracklist/{show}',episodelist)
-                if (not meta[show][episode]):
+                if (not self.meta[show][episode]):
                     print(f'{episode[:7]}{episode[-7:]}:meta', end='\r')
-                    # meta
                     try:
                         bt = soup.select('.episode__btn')
                         date = bt[0]['data-episode-date']
                         eptitle = bt[0]['data-episode-name']
-                        meta[show][episode] = {'title':eptitle,'date':date}
+                        self.meta[show][episode] = {'title':eptitle,'date':date}
                     except:
                         try:
                             print(f'.trying-once-more-to-find-meta.')
@@ -390,11 +388,11 @@ class nts:
                             bt = soup.select('.episode__btn')
                             date = bt[0]['data-episode-date']
                             eptitle = bt[0]['data-episode-name']
-                            meta[show][episode] = {'title':eptitle,'date':date}
+                            self.meta[show][episode] = {'title':eptitle,'date':date}
                         except:
                             print(f'FAILURE PROCESSING META : {show}:{episode}\n')
-                            meta[show][episode] = {'title':'','date':'00.00.00'}
-                    self._d2j(f'./meta',meta)
+                            self.meta[show][episode] = {'title':'','date':'00.00.00'}
+                    self._d2j(f'./meta',self.meta)
             else:
                 pass
 
