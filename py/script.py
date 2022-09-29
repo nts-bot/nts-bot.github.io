@@ -197,11 +197,11 @@ class nts:
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
             print(f'{oo[:50]}{i}/{len(shows)}')
             # SCRAPE / PRELIMINARY
-            v = self.review(show)
-            if v:
-                self.scrape(show,True) # short
-            else:
-                self.scrape(show) # long
+            # v = self.review(show)
+            # if v:
+            #     self.scrape(show,True) # short
+            # else:
+            self.scrape(show) # long
             # TRACKLIST
             self.runner(show,"",1)
             while True:
@@ -225,9 +225,11 @@ class nts:
                 except Exception as error:
                     print(error)
             # HTML
-            self.showhtml(show)
+            if bd:
+                self.showhtml(show)
         _git()
-        self.home()
+        if bd:
+            self.home()
 
     # WEBSCRAPING
 
