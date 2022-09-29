@@ -8,4 +8,6 @@ os.chdir(f"{dr}/py")
 import script
 nts = script.nts()
 
-nts.runscript(nts.showlist,fast=True)
+show = input('Input Show\n')
+
+nts.runscript([show])

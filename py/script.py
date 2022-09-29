@@ -168,11 +168,11 @@ class nts:
                     print(f'{oo[:50]}{i}/{len(shows)}')
                     time.sleep(0.1)
                     # SCRAPE / PRELIMINARY
-                    v = self.review(show) # optional (for long scrape)
+                    v = self.review(show)
                     if v:
-                        self.scrape(show,True) # Debugging
+                        self.scrape(show,True) # short
                     else:
-                        self.scrape(show)
+                        self.scrape(show) # long
                     # TRACKLIST
                     self.runner(show,"",1)
                     # SPOTIFY
