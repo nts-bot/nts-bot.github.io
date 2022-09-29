@@ -60,6 +60,11 @@ class nts:
         dr = os.getenv("directory")
         os.chdir(f"{dr}")
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
+        try:
+            self.meta = self._j2d(f'./meta')
+        except:
+            print('META FILE CORRUPTED : USING BACKUP')
+            self.meta = self._j2d(f'./extra/meta')
 
     # LOCAL DATABASE
 
@@ -133,7 +138,13 @@ class nts:
         day = [tday]
         for i in range(1,15):
             day += [tday - datetime.timedelta(i)]
-        if datetime.datetime.fromtimestamp(os.path.getmtime(f"./spotify/{show}.json")).date() in day:
+        #
+        try:
+            rday = datetime.datetime.fromtimestamp(os.path.getmtime(f"./spotify/{show}.json")).date()
+        except:
+            print('.',end='\r')
+            return(True)
+        if rday in day:
             print('$',end='\r')
             return(True)
         else:
@@ -165,20 +176,19 @@ class nts:
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
         for i in range(len(shows)):
+            show = shows[i]
+            oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
+            print(f'{oo[:50]}{i}/{len(shows)}')
+            # SCRAPE / PRELIMINARY
+            v = self.review(show)
+            if v:
+                self.scrape(show,True) # short
+            else:
+                self.scrape(show) # long
+            # TRACKLIST
+            self.runner(show,"",1)
             while True:
                 try:
-                    show = shows[i]
-                    oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
-                    print(f'{oo[:50]}{i}/{len(shows)}')
-                    time.sleep(0.1)
-                    # SCRAPE / PRELIMINARY
-                    v = self.review(show)
-                    if v:
-                        self.scrape(show,True) # short
-                    else:
-                        self.scrape(show) # long
-                    # TRACKLIST
-                    self.runner(show,"",1)
                     # SPOTIFY
                     self.runner(show,f"./spotify_search_results/{show}",2)
                     self.runner(show,f"./spotify/{show}",3)
@@ -199,7 +209,7 @@ class nts:
                     print(error)
             # HTML
             self.showhtml(show)
-            _git()
+        _git()
         self.home()
 
     # WEBSCRAPING
@@ -254,7 +264,7 @@ class nts:
         # EPISODES META
 
         episodemeta = soup.select('.nts-grid-v2-item__content')
-        meta = self._j2d(f'./meta')
+        meta = self.meta
         try:
             x = meta[show]
         except KeyError:
@@ -318,7 +328,7 @@ class nts:
 
     def ntstracklist(self,show,episodes=[]):
         episodelist = self._j2d(f'./tracklist/{show}')
-        meta = self._j2d(f'./meta')
+        meta = self.meta
 
         if show not in meta:
             meta[show] = dict()
@@ -693,7 +703,7 @@ class nts:
     def spotifyplaylist(self,show,threshold=[3,10],reset=False):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
-        meta = self._j2d(f'./meta')[show]
+        meta = self.meta[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
         #
         uploaded = self._j2d(f'./uploaded')
