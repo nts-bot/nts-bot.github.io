@@ -171,6 +171,19 @@ class nts:
                 self.spotifyplaylist(show)
 
 
+    def _reset(self,show):
+        print('.RESET.')
+        self._d2j(f"./spotify_search_results/{show}",dict())
+        self._d2j(f"./spotify/{show}",dict())
+        # self._d2j(f"./bandcamp_search_results/{show}",dict())
+        # self._d2j(f"./bandcamp/{show}",dict())
+        d = self._j2d(f"./uploaded")
+        d[show] = dict()
+        self._d2j(f"./uploaded",d)
+        f = self._j2d(f"./extra/reset")
+        f[show] = 1
+        self._d2j(f"./extra/reset",f)
+
     def runscript(self,shows): #,bd=False,fast=False
         self.backup()
         self.connect()
@@ -178,6 +191,10 @@ class nts:
         print(o)
         for i in range(len(shows)):
             show = shows[i]
+            # reset 
+            if show not in self._j2d(f"./extra/reset"):
+                self._reset(show)
+            #
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
             print(f'{oo[:50]}{i}/{len(shows)}')
             # SCRAPE / PRELIMINARY
@@ -932,11 +949,11 @@ class nts:
                         for j in taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
                 else:
                     S0 = ''
-                if taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items']:
+                if taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items']: # q2
                     S1 = [{'artist':j['artists'][0]['name'],
                         'title':j['name'],
                         'uri':j['uri'].split(':')[-1]} 
-                        for j in taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
+                        for j in taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
                 else:
                     S1 = ''
 
@@ -1237,7 +1254,7 @@ class nts:
 
     def backup(self):
         for i in ['meta','pid']:
-            file = self._j2d(f'{i}')
+            file = self._j2d(f'./{i}')
             self._d2j(f'./extra/{i}',file)
 
 
