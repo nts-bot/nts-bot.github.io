@@ -620,18 +620,18 @@ class nts:
     def tbool(self,tex):
         trans = False
         convert = unidecode(tex)
-        c = ''.join(re.findall("[^a-zA-Z\d\s:\u00C0-\u00FF]",tex))
-        if SequenceMatcher(None,c,unidecode(c)).ratio() < 0.1:
-            ln = self.model.predict(tex)[0][0].split('__label__')[1]
-            # print(ln)
-            if ln in ['ja','zh','kr','vn']:
-                d = unihandecode.Unidecoder(lang=ln)
-                convert = re.sub('\(([^\)]+)\)','',d.decode(tex))
-                trans = True
+        # c = ''.join(re.findall("[^a-zA-Z\d\s:\u00C0-\u00FF]",tex))
+        # if SequenceMatcher(None,c,unidecode(c)).ratio() < 0.1:
+        ln = self.model.predict(tex)[0][0].split('__label__')[1]
+        if ln in ['ja','zh','kr','vn']:
+            d = unihandecode.Unidecoder(lang=ln)
+            convert = d.decode(tex)
+            trans = True
         return(self.kill(convert),trans)
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
+        # tex = re.sub('\(([^\)]+)\)','',tex)
         tr = true
         while tr:
             try:
@@ -641,7 +641,7 @@ class nts:
                 tr=False
             except Exception:
                 time.sleep(5.0)
-        return(self.kill(re.sub('\(([^\)]+)\)','',tex)))
+        return(self.kill(tex))
 
     def ratio(self,a,b):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
@@ -709,8 +709,8 @@ class nts:
 
         result = (X1+Y1+Z1)/3
 
-        if (result < 0.5) and (any([t1,t2,t3,t4])):
-            result = self.comp(a,b,c,d,second=True)
+        if (result < 0.55) and (any([t1,t2,t3,t4])):
+            result = self.comp(a,b,c,d,second=True) + 0.05
 
         return(result)
 
@@ -739,7 +739,7 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    def spotifyplaylist(self,show,threshold=[5,10],reset=False):
+    def spotifyplaylist(self,show,threshold=[5.5,10],reset=False):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         meta = self.meta[show]
@@ -812,7 +812,7 @@ class nts:
                         mis += 1
                     if rate[ep][tr]['ratio'] == 6:
                         almost += 1
-                    if rate[ep][tr]['ratio'] == 5: #threshold[0]  <= 
+                    if rate[ep][tr]['ratio'] == 5.5: #threshold[0]  <= 
                         unsure += 1
 
         self._d2j(f'./spotify/{show}',rate)
@@ -857,7 +857,7 @@ class nts:
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
 
-        syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. ordered {lastep}-to-{firstep}]"
+        syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
         x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}... {syn}")
 
@@ -1030,6 +1030,8 @@ class nts:
                         lag = 7
                     elif round(eval(f'r{dx}'),1) >= 0.6:
                         lag = 6
+                    elif round(eval(f'r{dx}'),1) >= 0.55:
+                        lag = 5.5
                     elif round(eval(f'r{dx}'),1) >= 0.5:
                         lag = 5
                     elif round(eval(f'r{dx}'),1) >= 0.4:
