@@ -184,7 +184,9 @@ class nts:
         self._d2j(f"./extra/reset",f)
 
     def runscript(self,shows): #,bd=False,fast=False
+        bd = False
         self.backup()
+        #
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
         print(o)
@@ -210,7 +212,6 @@ class nts:
                     self.runner(show,f"./spotify_search_results/{show}",2)
                     self.runner(show,f"./spotify/{show}",3)
                     # BANDCAMP
-                    bd = False
                     if bd:
                         self.runner(show,f"./bandcamp_search_results/{show}",4)
                         self.runner(show,f"./bandcamp/{show}",5)
@@ -625,7 +626,7 @@ class nts:
             # print(ln)
             if ln in ['ja','zh','kr','vn']:
                 d = unihandecode.Unidecoder(lang=ln)
-                convert = d.decode(tex)
+                convert = re.sub('\(([^\)]+)\)','',d.decode(tex))
                 trans = True
         return(self.kill(convert),trans)
 
@@ -640,7 +641,7 @@ class nts:
                 tr=False
             except Exception:
                 time.sleep(5.0)
-        return(self.kill(tex))
+        return(self.kill(re.sub('\(([^\)]+)\)','',tex)))
 
     def ratio(self,a,b):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
