@@ -129,7 +129,10 @@ class nts:
     # RUN SCRIPT
 
     def review(self,show):
-        if datetime.date.today() == datetime.datetime.fromtimestamp(os.path.getmtime(f"./spotify/{show}.json")).date():
+        tday = datetime.date.today()
+        yday = tday - datetime.timedelta(1)
+        bday = yday - datetime.timedelta(1)
+        if datetime.datetime.fromtimestamp(os.path.getmtime(f"./spotify/{show}.json")).date() in [tday, yday, bday] :
             print('$',end='\r')
             return(True)
         else:
