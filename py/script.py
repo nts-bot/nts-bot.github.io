@@ -226,9 +226,9 @@ class nts:
                 except Exception as error:
                     print(error)
             # HTML
-            # self.showhtml(show)
+            self.showhtml(show)
         _git()
-        # self.home()
+        self.home()
 
     # WEBSCRAPING
 
@@ -278,23 +278,40 @@ class nts:
                         print(f'. . . . . . .{episode[-5:]}', end='\r')
                 else:
                     print('href failed')
+        except:
+            soup = self.browse(url,1)
+            grid = soup.select(".nts-grid-v2")
+            for i in grid[0]:
+                a = i.select('a')
+                if a:
+                    href = a[0]['href']
+                    episode = href.split('/episodes/')[1]
+                    if episode not in episodelist.keys():
+                        print(f'. . . . . . .{episode[-10:]}.', end='\r')
+                        episodelist[episode] = dict()
+                    else:
+                        print(f'. . . . . . .{episode[-5:]}', end='\r')
+                else:
+                    print('href failed')
 
-            # EPISODES META
+        # EPISODES META
 
-            episodemeta = soup.select('.nts-grid-v2-item__content')
-            try:
-                x = self.meta[show]
-            except KeyError:
-                self.meta[show] = dict()
-            for i in episodemeta:
-                sub = i.select('.nts-grid-v2-item__header')[0]
-                ep = sub['href'].split('/')[-1]
-                date = sub.select('span')[0].text
-                eptitle = sub.select('.nts-grid-v2-item__header__title')[0].text
-                self.meta[show][ep] = {'title':eptitle,'date':date}
-            self._d2j(f'./meta',self.meta)
+        episodemeta = soup.select('.nts-grid-v2-item__content')
+        try:
+            x = self.meta[show]
+        except KeyError:
+            self.meta[show] = dict()
+        for i in episodemeta:
+            sub = i.select('.nts-grid-v2-item__header')[0]
+            ep = sub['href'].split('/')[-1]
+            date = sub.select('span')[0].text
+            eptitle = sub.select('.nts-grid-v2-item__header__title')[0].text
+            self.meta[show][ep] = {'title':eptitle,'date':date}
+        self._d2j(f'./meta',self.meta)
 
-            # ARTIST IMAGES
+        # ARTIST IMAGES
+
+        try:
 
             imlist = [i.split('.')[0] for i in os.listdir('./jpeg/')]
             if show not in imlist:
@@ -308,32 +325,34 @@ class nts:
                 else:
                     print('. . . . . . . . .Image not found.', end='\r')
 
-            # ARTIST BIO
+        except:
 
-            bio = soup.select('.bio')
-            titlelist = self._j2d('./extra/titles')
-            desklist = self._j2d('./extra/descriptions')
-            if bio:
-                title = bio[0].select('.bio__title')[0].select('h1')[0].text
-                desk = bio[0].select('.description')[0].text
-                if not title:
-                    print('title-failed',end='\r')
-                    title = show
-                if not desk:
-                    print('description-missing',end='\r')
-                    desk = ''
-            else:
-                print('. . . . . . . . . .Bio not found', end='\r')
+            pass
+
+        # ARTIST BIO
+
+        bio = soup.select('.bio')
+        titlelist = self._j2d('./extra/titles')
+        desklist = self._j2d('./extra/descriptions')
+        if bio:
+            title = bio[0].select('.bio__title')[0].select('h1')[0].text
+            desk = bio[0].select('.description')[0].text
+            if not title:
+                print('title-failed',end='\r')
                 title = show
+            if not desk:
+                print('description-missing',end='\r')
                 desk = ''
-            titlelist[show] = title
-            desklist[show] = desk
-                
-            self._d2j('./extra/titles',titlelist)
-            self._d2j('./extra/descriptions',desklist)
-            self._d2j(f'./tracklist/{show}',episodelist)
-        except Exception as error:
-            print(f'Scrape Error : {error}')
+        else:
+            print('. . . . . . . . . .Bio not found', end='\r')
+            title = show
+            desk = ''
+        titlelist[show] = title
+        desklist[show] = desk
+            
+        self._d2j('./extra/titles',titlelist)
+        self._d2j('./extra/descriptions',desklist)
+        self._d2j(f'./tracklist/{show}',episodelist)
         
     @timeout(10.0)
     def req(self,url):
