@@ -1,5 +1,7 @@
 # BASIC LIBRARIES
 import os, json, time, requests, re, pickle, urllib, sys, datetime
+
+from sympy import true
 from urllib.error import HTTPError
 # HTML PARSER
 from bs4 import BeautifulSoup as bs
@@ -21,6 +23,7 @@ from PIL import Image
 from googletrans import Translator
 translator = Translator()
 from unidecode import unidecode
+import unihandecode, fasttext # japanese, korea, mandarin &c.
 from difflib import SequenceMatcher
 # TIMEOUT FUNCTION
 import functools
@@ -61,11 +64,7 @@ class nts:
         os.chdir(f"{dr}")
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
         self.meta = self._j2d(f'./meta')
-        # try:
-        #     self.meta = self._j2d(f'./meta')
-        # except:
-        #     print('META FILE CORRUPTED : USING BACKUP')
-        #     self.meta = self._j2d(f'./extra/meta')
+        self.model = fasttext.load_model("./extra/lid.176.ftz") #bin is more accurate
 
     # LOCAL DATABASE
 
@@ -177,9 +176,9 @@ class nts:
         self._d2j(f"./spotify/{show}",dict())
         # self._d2j(f"./bandcamp_search_results/{show}",dict())
         # self._d2j(f"./bandcamp/{show}",dict())
-        d = self._j2d(f"./uploaded")
-        d[show] = dict()
-        self._d2j(f"./uploaded",d)
+        # d = self._j2d(f"./uploaded")
+        # d[show] = dict()
+        # self._d2j(f"./uploaded",d)
         f = self._j2d(f"./extra/reset")
         f[show] = 1
         self._d2j(f"./extra/reset",f)
@@ -312,7 +311,6 @@ class nts:
         # ARTIST IMAGES
 
         try:
-
             imlist = [i.split('.')[0] for i in os.listdir('./jpeg/')]
             if show not in imlist:
                 back = soup.select('.background-image')
@@ -325,9 +323,8 @@ class nts:
                 else:
                     print('. . . . . . . . .Image not found.', end='\r')
 
-        except:
-
-            pass
+        except Exception as error:
+            print(f'Image Request Failed : {error}')
 
         # ARTIST BIO
 
@@ -598,6 +595,7 @@ class nts:
     @timeout(50.0)
     def subrun(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
+        # time.sleep(0.5) # trying to reduce api request stalling
         try:
             result = self.sp.search(q=query, type="track,artist")
             if result is None:
@@ -616,100 +614,102 @@ class nts:
             self.connect()
             return(self.subrun(query))
 
+    def tbool(self,tex):
+        trans = False
+        convert = unidecode(tex)
+        c = ''.join(re.findall("[^a-zA-Z\d\s:\u00C0-\u00FF]",tex))
+        if SequenceMatcher(None,c,unidecode(c)).ratio() < 0.1:
+            ln = self.model.predict(tex)[0][0].split('__label__')[1]
+            # print(ln)
+            if ln in ['ja','zh','kr','vn']:
+                d = unihandecode.Unidecoder(lang=ln)
+                convert = d.decode(tex)
+                trans = True
+        return(self.kill(convert),trans)
+
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
-        convert = unidecode(tex)
-        bl = SequenceMatcher(None,convert,tex).ratio()
-        if bl < 0.01:
-            trans = True
-        else:
-            trans = False
-        if trans:
-            tr = True
-            while tr:
-                try:
-                    ln = translator.detect(tex).lang
-                    tr = False
-                except:
-                    time.sleep(1.0)
-            if ln != 'en':
-                tr = True
-                c = 0
-                while tr:
-                    c += 1
-                    try:
-                        convert = translator.translate(tex,dest='en',src=ln).text
-                        tr=False
-                    except ValueError as error:
-                        print(f'{ln} : {error}',end='\r')
-                        tr=False
-                        pass
-                    except Exception:
-                        print(f'{c}$',end='\r')
-                        if c < 3:
-                            time.sleep(1.0)
-                        elif c < 6:
-                            time.sleep(3.0)
-                        elif c < 10:
-                            time.sleep(5.0)
-                        else:
-                            time.sleep(10.0)
-                        pass
-        return(convert)
+        tr = true
+        while tr:
+            try:
+                tex = translator.translate(tex,dest='en').text
+                tr=False
+            except ValueError:
+                tr=False
+            except Exception:
+                time.sleep(5.0)
+        return(self.kill(tex))
 
     def ratio(self,a,b):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
-        return(SequenceMatcher(None, self.refine(a.lower()), self.refine(b.lower())).ratio())
+        return(SequenceMatcher(None, self.refine(a), self.refine(b)).ratio())
 
     def kill(self,text):
         ''' ELIMINATE DUPLICATES & UNNECESSARY CHARACTERS WITHIN STRING '''
-        cv = text.replace('・',' ').replace('+',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('/',' ').replace(';',' ').replace(':',' ').replace('.',' ').replace(',',' ').split(' ')
-        return(" ".join(dict.fromkeys(cv)))
+        cv = text.replace('°',' ').replace('・',' ').replace('+',' ').replace('}',' ').replace('{',' ').replace('|',' ').replace('/',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('/',' ').replace(';',' ').replace(':',' ').replace('.',' ').replace(',',' ').replace('  ',' ').split(' ')
+        return(" ".join(dict.fromkeys(cv)).lower())
 
-    def refine(self,text,kill=True):
+    def refine(self,text):
         ''' ELIMINATE UNNECCESARY WORDS WITHIN STRING '''
-        if kill:
-            text = self.kill(text)
         for i in list(range(1990,2022)):
             text = text.replace(str(i),'')
-        return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','')
+        return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('originally','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','')#.replace('y','i')
 
-    def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
+    def _ratio(self,x,y,z,var=-1):
+        if var == -1:
+            return([max([self.ratio(x,y), self.ratio(y,x)]), 
+                max([self.ratio(x,z), self.ratio(z,x)])])
+        elif var == 0:
+            return(max([self.ratio(x,y), self.ratio(y,x)]))
+        elif var == 1:
+            return(max([self.ratio(x,z), self.ratio(z,x)]))
+
+    def comp(self,a,b,c,d,second=False): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        k1 = self.trnslate(a) # O AUTHOR
-        k2 = self.trnslate(b) # O TITLE
-        k3 = self.trnslate(c) # S AUTHOR
-        k4 = self.trnslate(d) # S TITLE
+        if not second:
+            k1,t1 = self.tbool(a) # O AUTHOR
+            k2,t2 = self.tbool(b) # O TITLE
+            k3,t3 = self.tbool(c) # S AUTHOR
+            k4,t4 = self.tbool(d) # S TITLE
+        else:
+            k1,t1 = self.trnslate(a),False # O AUTHOR
+            k2,t2 = self.trnslate(b),False # O TITLE
+            k3,t3 = self.trnslate(c),False # S AUTHOR
+            k4,t4 = self.trnslate(d),False # S TITLE
 
-        r = [self.ratio(k1,k3), self.ratio(k3,k1), self.ratio(k1,k4), self.ratio(k4,k1)] # AUTHOR
-        X1 = max(r)
-        r = [self.ratio(k2,k3), self.ratio(k3,k2), self.ratio(k2,k4), self.ratio(k4,k2)] # TITLE
-        Y1 = max(r)
+        r = self._ratio(k1,k3,k4) # AUTHOR
+        it = r.index(max(r))
+        X1 = r[it] # max(r)
+        Y1 = self._ratio(k2,k4,k3,it) # TITLE
         Z1 = (X1 + Y1)/2
 
-        G = list(map(set,[k1.split(' '),k2.split(' '),k3.split(' '),k4.split(' ')]))
-        k1 = ' '.join(list(G[0]-G[2]-G[3]))
-        k2 = ' '.join(list(G[1]-G[2]-G[3]))
-        k3 = ' '.join(list(G[2]-G[0]-G[1]))
-        k4 = ' '.join(list(G[3]-G[0]-G[1]))
+        # print(X1,Y1,Z1,'\n')
 
-        r = [self.ratio(k1,k3), self.ratio(k3,k1), self.ratio(k1,k4), self.ratio(k4,k1)] # AUTHOR
-        try:
-            x = min(i for i in r if i not in [0,1])
-        except:
-            x = 1
-        r = [self.ratio(k2,k3), self.ratio(k3,k2), self.ratio(k2,k4), self.ratio(k4,k2)] # TITLE
-        try:
-            y = min(i for i in r if i not in [0,1])
-        except:
-            y = 1
+        G = list(map(set,[k1.split(' '),k2.split(' '),k3.split(' '),k4.split(' ')]))
+        k1 = ' '.join(list(G[0]-G[2]-G[3])).strip()
+        k2 = ' '.join(list(G[1]-G[2]-G[3])).strip()
+        k3 = ' '.join(list(G[2]-G[0]-G[1])).strip()
+        k4 = ' '.join(list(G[3]-G[0]-G[1])).strip()
+
+        # print(k1,'\n',k2,'\n',k3,'\n',k4,'\n')
+    
+        x = self.ratio(*[[k1,k3],[k1,k4]][it])
+        y = self.ratio(*[[k2,k4],[k2,k3]][it])
+
+        # print(x,y)
 
         if not (x == 1 and y == 1):
             X1 = (X1 + min(x,y))/2
             Y1 = (Y1 + min(x,y))/2
             Z1 = (Z1 + min(x,y))/2
+            result = (X1+Y1+Z1)/3
 
-        return((X1+Y1+Z1)/3)
+        result = (X1+Y1+Z1)/3
+
+        if (result < 0.5) and (any([t1,t2,t3,t4])):
+            result = self.comp(a,b,c,d,second=True)
+
+        return(result)
 
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
@@ -736,7 +736,7 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    def spotifyplaylist(self,show,threshold=[3,10],reset=False):
+    def spotifyplaylist(self,show,threshold=[5,10],reset=False):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         meta = self.meta[show]
@@ -746,6 +746,7 @@ class nts:
         #
         if show not in uploaded:
             uploaded[show] = dict()
+            print(f'.reset.',end='\r')
             reset = True
         elif (sortmeta) and (uploaded[show]):
             metacopy = [i[1] for i in sortmeta]
@@ -756,6 +757,7 @@ class nts:
             met1 = metacopy[:metaind] # old shows
             if met1:
                 uploaded[show] = dict() # reset upload
+                print(f'.reset.',end='\r')
                 reset = True
         #
         tid = []
@@ -805,9 +807,9 @@ class nts:
                     pup += [rate[ep][tr]['trackid']]
                     if not rate[ep][tr]['trackid']:
                         mis += 1
-                    if threshold[0]  <= rate[ep][tr]['ratio'] == 4:
+                    if rate[ep][tr]['ratio'] == 6:
                         almost += 1
-                    if threshold[0]  <= rate[ep][tr]['ratio'] <= 3:
+                    if rate[ep][tr]['ratio'] == 5: #threshold[0]  <= 
                         unsure += 1
 
         self._d2j(f'./spotify/{show}',rate)
@@ -826,7 +828,7 @@ class nts:
             rem = list(set(ids))
             hund = [rem[i:i+100] for i in range(0, len(rem), 100)]
             for i in hund:
-                print(f'.resetting',end='\r')
+                print(f'.resetting.',end='\r')
                 self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
 
         if upend:
@@ -1018,18 +1020,20 @@ class nts:
                     dx = [r0,r1].index(max([r0,r1]))
 
                     if round(eval(f'r{dx}'),1) >= 0.9:
-                        lag = 6
+                        lag = 9
                     elif round(eval(f'r{dx}'),1) >= 0.8:
-                        lag = 5
-                    elif round(eval(f'r{dx}'),1) >= 0.6:
-                        lag = 3
+                        lag = 8
                     elif round(eval(f'r{dx}'),1) >= 0.7:
-                        lag = 4
+                        lag = 7
+                    elif round(eval(f'r{dx}'),1) >= 0.6:
+                        lag = 6
                     elif round(eval(f'r{dx}'),1) >= 0.5:
-                        lag = 2
+                        lag = 5
                     elif round(eval(f'r{dx}'),1) >= 0.4:
-                        lag = 1
-                    else: # round(eval(f'r{dx}'),1) < 0.4
+                        lag = 4
+                    elif round(eval(f'r{dx}'),1) >= 0.3:
+                        lag = 3
+                    else:
                         lag = 0
 
                     if any([a0,a1]):
@@ -1054,7 +1058,7 @@ class nts:
                     spot = f'{rateson[episode][td]["artist"]} {rateson[episode][td]["title"] }'
                     q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(spot)}&item_type=t"
                 else:
-                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track),False))}&item_type=t"
+                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track)))}&item_type=t"
         return(self.mt_camp(q1,q2))
 
     def mt_camp(self,q1,q2):
