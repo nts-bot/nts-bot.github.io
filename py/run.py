@@ -1,6 +1,8 @@
 # Environment Variables
 from dotenv import load_dotenv
 load_dotenv()
+import warnings
+warnings.filterwarnings("ignore")
 # Directory
 import os
 dr = os.getenv("directory")

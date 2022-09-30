@@ -1,6 +1,5 @@
 # BASIC LIBRARIES
-import os, json, time, requests, re, pickle, urllib, sys, datetime
-
+import os, json, time, requests, re, pickle, urllib, urllib3, sys, datetime
 from sympy import true
 from urllib.error import HTTPError
 # HTML PARSER
@@ -186,6 +185,7 @@ class nts:
     def runscript(self,shows): #,bd=False,fast=False
         bd = False
         self.backup()
+        self.wait('connect',False)
         #
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
@@ -223,13 +223,15 @@ class nts:
                     break
                 except KeyboardInterrupt:
                     break
+                except RuntimeError as error:
+                    raise RuntimeError(error)
                 except Exception as error:
                     print(error)
             # HTML
             if bd:
                 self.showhtml(show)
-        _git()
         if bd:
+            _git()
             self.home()
 
     # WEBSCRAPING
@@ -595,24 +597,32 @@ class nts:
 
     # SPOTIFY SEARCH/RATE SUBFUNCTIONS
 
-    @timeout(50.0)
+    @timeout(15.0)
     def subrun(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
-        # time.sleep(0.5) # trying to reduce api request stalling
         try:
             result = self.sp.search(q=query, type="track,artist")
             if result is None:
-                raise RuntimeWarning('Spotify API Broken')
+                raise RuntimeError('Spotify API Broken')
             else:
                 return(result)
-        except spotipy.SpotifyException:
-            print(f'.spotify-api-error.',end='\r')
-            return({'tracks':{'items':''}})
+        except spotipy.SpotifyException as error:
+            if error.http_status == 400: # HTTP ERROR ?
+                print('?',end='\r')
+                print(f'.spotify-api-error.',end='\r')
+                return({'tracks':{'items':''}})
+            elif error.http_status == 429: # MAX RETRY ERROR ?
+                time.sleep(3.0)
+                return(self.subrun(query))
+            else:
+                raise RuntimeError(error)
 
     def _run(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
         try:
             return(self.subrun(query))
+        except RuntimeError:
+            raise RuntimeError('Spotify API Broken')
         except Exception:
             self.connect()
             return(self.subrun(query))
@@ -629,17 +639,25 @@ class nts:
             trans = True
         return(self.kill(convert),trans)
 
+    # @timeout(50.0)
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
         # tex = re.sub('\(([^\)]+)\)','',tex)
         tr = true
+        c=0
         while tr:
+            c+=1
             try:
                 tex = translator.translate(tex,dest='en').text
                 tr=False
             except ValueError:
+                print(f'{c}%',end='\r')
+                tr=False
+            except IndexError:
+                print(f'{c}@',end='\r')
                 tr=False
             except Exception:
+                print(f'{c}$',end='\r')
                 time.sleep(5.0)
         return(self.kill(tex))
 
@@ -739,7 +757,8 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    def spotifyplaylist(self,show,threshold=[5.5,10],reset=False):
+    @timeout(50.0)
+    def spotifyplaylist(self,show,threshold=[6,10],reset=False):
         ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         meta = self.meta[show]
@@ -812,8 +831,8 @@ class nts:
                         mis += 1
                     if rate[ep][tr]['ratio'] == 6:
                         almost += 1
-                    if rate[ep][tr]['ratio'] == 5.5: #threshold[0]  <= 
-                        unsure += 1
+                    # if rate[ep][tr]['ratio'] == 5: #threshold[0]  <= 
+                    #     unsure += 1
 
         self._d2j(f'./spotify/{show}',rate)
         tidup = self.scene(tid[::-1])[::-1]
@@ -845,11 +864,11 @@ class nts:
             print(f'.tracks appended.', end='\r')
             
         if almost:
-            almost = f'{almost} almost sure ;'
+            almost = f'{almost} unsure ;'
         else:
             almost = ''
         if unsure:
-            unsure = f' {unsure} unsure ;'
+            unsure = f' {unsure} maybe ;'
         else:
             unsure = ''
         duplicates = f' {dups} repeated ;'
@@ -859,7 +878,7 @@ class nts:
 
         syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
-        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}... {syn}")
+        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}. {syn}")
 
         self._d2j(f'./uploaded',uploaded)
 
@@ -963,7 +982,7 @@ class nts:
         return(self.mt_samp(q1,q2))
 
     def mt_samp(self,q1,q2):
-        taskdict = self.qmt([q1,q2],'spotify')
+        taskdict = self.qmt([q1,q2],'spotify',32)
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
             for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
@@ -1010,7 +1029,7 @@ class nts:
         return(self.mt_rate(q1,q2))
 
     def mt_rate(self,q1,q2):
-        taskdict = self.qmt([q1,q2],'rate',8)
+        taskdict = self.qmt([q1,q2],'rate',16)
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
             for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
@@ -1030,8 +1049,6 @@ class nts:
                         lag = 7
                     elif round(eval(f'r{dx}'),1) >= 0.6:
                         lag = 6
-                    elif round(eval(f'r{dx}'),1) >= 0.55:
-                        lag = 5.5
                     elif round(eval(f'r{dx}'),1) >= 0.5:
                         lag = 5
                     elif round(eval(f'r{dx}'),1) >= 0.4:
@@ -1321,16 +1338,7 @@ def multithreading(taskdict, no_workers,kind):
             result = stn._run(taskcopy[taskid])
             cont = counter(taskid,result)
         elif kind == 'rate':
-            tn = True
-            p = 0
-            while tn:
-                try:
-                    p += 1
-                    a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-                    tn = False
-                except:
-                    print(error,end='\r')
-                    pass
+            a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
             cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
         elif kind == 'bandcamp':
             time.sleep(1.0)
@@ -1356,6 +1364,7 @@ def multithreading(taskdict, no_workers,kind):
                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
         return(cont)
+
 
     class __worker__(Thread):
         def __init__(self, request_queue):
@@ -1406,15 +1415,10 @@ def multithreading(taskdict, no_workers,kind):
                     sys.exit()
         except SystemExit:
             print('.double-checking.')
+            fast = True
             for taskid in taskcopy:
                 if taskcopy[taskid] == taskdict[taskid]:
-                    tn = True
-                    while tn:
-                        try:
-                            a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-                            tn = False
-                        except Exception as error:
-                            pass
+                    a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
                     cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0},False)
     else:
         for worker in workers:
