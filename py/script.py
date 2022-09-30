@@ -1,7 +1,5 @@
 # BASIC LIBRARIES
-import os, json, time, requests, re, pickle, urllib, urllib3, sys, datetime
-from sympy import true
-from urllib.error import HTTPError
+import os, json, time, requests, re, pickle, urllib, datetime
 # HTML PARSER
 from bs4 import BeautifulSoup as bs
 # BROWSER
@@ -62,7 +60,11 @@ class nts:
         dr = os.getenv("directory")
         os.chdir(f"{dr}")
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
-        self.meta = self._j2d(f'./meta')
+        try:
+            self.meta = self._j2d(f'./meta')
+        except:
+            print('.META ERROR.')
+            self.meta = self._j2d(f'./extra/meta')
         self.model = fasttext.load_model("./extra/lid.176.ftz") #bin is more accurate
 
     # LOCAL DATABASE
@@ -231,8 +233,8 @@ class nts:
             if bd:
                 self.showhtml(show)
         if bd:
-            _git()
             self.home()
+        _git()
 
     # WEBSCRAPING
 
@@ -639,11 +641,10 @@ class nts:
             trans = True
         return(self.kill(convert),trans)
 
-    # @timeout(50.0)
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
         # tex = re.sub('\(([^\)]+)\)','',tex)
-        tr = true
+        tr = True
         c=0
         while tr:
             c+=1
@@ -657,8 +658,7 @@ class nts:
                 print(f'{c}@',end='\r')
                 tr=False
             except Exception:
-                print(f'{c}$',end='\r')
-                time.sleep(5.0)
+                raise RuntimeError
         return(self.kill(tex))
 
     def ratio(self,a,b):
@@ -781,13 +781,17 @@ class nts:
                 uploaded[show] = dict() # reset upload
                 print(f'.reset.',end='\r')
                 reset = True
+
         #
+        
         tid = []
         trackdict = dict()
         pup = []
         mis = 0
         almost = 0
         unsure = 0
+
+        #
 
         f = True
         ff = 0
@@ -801,9 +805,12 @@ class nts:
         lp = sortmeta[-1][0].split('.')
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
 
+        #
+
         showlist = self._j2d(f'./tracklist/{show}')
         rate = self._j2d(f'./spotify/{show}')
         upend = False
+
         for mt in sortmeta[::-1]:
             ep = mt[1]
             trackdict[ep] = []
@@ -1311,7 +1318,9 @@ def multithreading(taskdict, no_workers, kind):
 
     stn = nts()
     stn.connect()
-    global count, wcount
+    global count, wcount, thr, dbc
+    dbc = []
+    thr = True
     count = 0
     wcount = 0
     c_lock = Lock()
@@ -1319,20 +1328,21 @@ def multithreading(taskdict, no_workers, kind):
     amount = len(taskdict)
     keys = list(taskdict.keys())[::-1]
 
-    def counter(tid,result,thr=True):
+    def counter(tid,result):
+        global thr,count
         if thr:
             c_lock.acquire()
-        try:
-            keys.remove(tid)
-            taskdict[tid] = result
-        except:
-            pass
-        global count
-        count += 1
+        # try:
+        #     keys.remove(tid)
+        taskdict[tid] = result
+        # except:
+        #     pass
         if thr:
+            count += 1
             c_lock.release()
         return(count)
 
+    @timeout(20.0)
     def task(kind,taskid):
         if kind == 'spotify':
             result = stn._run(taskcopy[taskid])
@@ -1365,7 +1375,6 @@ def multithreading(taskdict, no_workers, kind):
                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
         return(cont)
 
-
     class __worker__(Thread):
         def __init__(self, request_queue):
             Thread.__init__(self)
@@ -1377,7 +1386,13 @@ def multithreading(taskdict, no_workers, kind):
                     break
                 start = time.time()
                 # TASK START
-                cont = task(kind,taskid)
+                try:
+                    cont = task(kind,taskid)
+                except:
+                    print('*',end='\r')
+                    global dbc
+                    dbc += [taskid]
+                    cont = '!'
                 # TASK END
                 end = time.time()
                 print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
@@ -1396,32 +1411,49 @@ def multithreading(taskdict, no_workers, kind):
         worker.start()
         workers.append(worker)
 
-    if kind == 'rate':
-        kill = False
-        try:
-            while not kill:
-                time.sleep(5.0)
-                print(f'({count})',end='\r')
-                if count >= amount:
-                    kill = True
-                elif count + no_workers >= amount:
-                    x = 0
-                    while x < no_workers:
-                        x += 2
-                        time.sleep(round(x/2))
-                        if count + x/2 >= amount:
-                            break
-                    kill = True
-                    sys.exit()
-        except SystemExit:
-            print('.double-checking.')
-            for taskid in taskcopy:
-                if taskcopy[taskid] == taskdict[taskid]:
-                    a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-                    cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0},False)
-    else:
-        for worker in workers:
-            worker.join()
+    # if kind == 'rate':
+    #     kill = False
+    #     try:
+    #         while not kill:
+    #             time.sleep(5.0)
+    #             print(f'({count})',end='\r')
+    #             if count >= amount:
+    #                 kill = True
+    #             elif count + no_workers >= amount:
+    #                 x = 0
+    #                 while x < no_workers:
+    #                     x += 2
+    #                     time.sleep(round(x/2))
+    #                     if count + x/2 >= amount:
+    #                         break
+    #                 kill = True
+    #                 sys.exit()
+    #     except SystemExit:
+    #         print('.double-checking.')
+    #         for taskid in list(taskcopy.keys())[::-1]:
+    #             if taskcopy[taskid] == taskdict[taskid]:
+    #                 task(kind,taskid)
+    #                 a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
+    #                 cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0},False)
+    # else:
+    
+    for worker in workers:
+        worker.join()
+
+    if dbc:
+        print(f'.DC:{len(dbc)}.',end='\r')
+        thr = False
+        c = 0
+        for taskid in dbc:
+            tf = True
+            while tf:
+                try:
+                    cont = task(kind,taskid)
+                    tf = False
+                    c+=1
+                    print(f'.*{c}:{len(dbc)}.',end='\r')
+                except:
+                    print(f'.*!.',end='\r')
 
     print('.Threading.Complete.',end='\r')
     return(taskdict)
@@ -1430,13 +1462,10 @@ def multithreading(taskdict, no_workers, kind):
 
 import git
 def _git():
-    try:
-        repo = git.Repo(os.getenv("directory"))
-        repo.git.add('.') #update=True
-        repo.index.commit("auto-gitpush")
-        origin = repo.remote(name='origin')
-        origin.push()
-    except Exception as error:
-        print(f'Error : {error}')  
+    repo = git.Repo(os.getcwd()) #os.getenv("directory")
+    repo.git.add('.') #update=True
+    repo.index.commit("auto-gitpush")
+    origin = repo.remote(name='origin')
+    origin.push()
 
 # END
