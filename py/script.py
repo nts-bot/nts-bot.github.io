@@ -1307,7 +1307,7 @@ class nts:
 
 # MULTITHREADING WORKER
 
-def multithreading(taskdict, no_workers,kind):
+def multithreading(taskdict, no_workers, kind):
 
     stn = nts()
     stn.connect()
@@ -1404,9 +1404,9 @@ def multithreading(taskdict, no_workers,kind):
                 print(f'({count})',end='\r')
                 if count >= amount:
                     kill = True
-                elif count + 10 >= amount:
+                elif count + no_workers >= amount:
                     x = 0
-                    while x < 10:
+                    while x < no_workers:
                         x += 2
                         time.sleep(round(x/2))
                         if count + x/2 >= amount:
@@ -1415,7 +1415,6 @@ def multithreading(taskdict, no_workers,kind):
                     sys.exit()
         except SystemExit:
             print('.double-checking.')
-            fast = True
             for taskid in taskcopy:
                 if taskcopy[taskid] == taskdict[taskid]:
                     a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
