@@ -473,7 +473,7 @@ class nts:
         callback = 'http://localhost:8888/callback'
         cid = os.getenv(f"{index[pick]}id")
         secret = os.getenv(f"{index[pick]}st")
-        self.sp = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope=['ugc-image-upload','playlist-modify-public'],username=self.user), requests_timeout=5, retries=5)
+        self.sp = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope=['ugc-image-upload','playlist-modify-public'],username=self.user), requests_timeout=5, retries=10)
         print('. Testing . ',end='')
         test = self.sp.user(self.user)
         print('Successful',end='\r')
@@ -625,9 +625,9 @@ class nts:
 
     # SPOTIFY SEARCH/RATE SUBFUNCTIONS
 
-    @timeout(20.0)
+    @timeout(15.0)
     def subrun(self,query):
-        ''' RUN SPOTIFY API WITH TIMEOUT '''
+        ''' RUN SPOTIFY API '''
         try:
             result = self.sp.search(q=query, type="track,artist")
             if result is None:
@@ -635,10 +635,9 @@ class nts:
             else:
                 return(result)
         except spotipy.SpotifyException as error:
-            if error.http_status == 400: # HTTP ERROR ?
-                print('.spotify-api-error.',end='\n')
+            if error.http_status == 400: # HTTP ERROR
                 return({'tracks':{'items':''}})
-            elif error.http_status == 429: # MAX RETRY ERROR ?
+            elif error.http_status == 429: # MAX RETRY ERROR
                 time.sleep(3.0)
                 return(self.subrun(query))
             else:
@@ -651,15 +650,16 @@ class nts:
         except RuntimeError:
             raise RuntimeError('Spotify API Broken')
         except Exception as error:
-            # print(error)
             self.connect()
             return(self.subrun(query))
+
+    def yrun(self,query):
+        result = self.you.search(query,filter='videos') #f'{track["artist"]} : {track["title"]}'
+        return(result)
 
     def tbool(self,tex):
         trans = False
         convert = unidecode(tex)
-        # c = ''.join(re.findall("[^a-zA-Z\d\s:\u00C0-\u00FF]",tex))
-        # if SequenceMatcher(None,c,unidecode(c)).ratio() < 0.1:
         ln = self.model.predict(tex)[0][0].split('__label__')[1]
         if ln in ['ja','zh','kr','vn']:
             d = unihandecode.Unidecoder(lang=ln)
@@ -672,29 +672,6 @@ class nts:
         ln = self.model.predict(tex)[0][0].split('__label__')[1]
         translator = Translator(to_lang="en",from_lang=ln)
         convert = translator.translate(tex)
-        # tex = translator.translate(tex,dest='en').tex
-        # tex = re.sub('\(([^\)]+)\)','',tex)
-        # tr = True
-        # c=0
-        # while tr:
-        #     c+=1
-        #     if c < 3:
-        #         try:
-        #             ln = self.model.predict(tex)[0][0].split('__label__')[1]
-        #             translator = Translator(to_lang="en",from_lang=ln)
-        #             tex = translator.translate(tex,dest='en').text
-        #             tr=False
-        #         # except ValueError:
-        #         #     print(f'{c}%',end='\r')
-        #         #     tr=False
-        #         # except IndexError:
-        #         #     print(f'{c}@',end='\r')
-        #         #     tr=False
-        #         except Exception:
-        #             time.sleep(1.0)
-        #     else:
-        #         tex = translator.translate(tex,dest='en').text
-        #         tr=False
         return(self.kill(convert))
 
     def ratio(self,a,b):
@@ -1022,7 +999,6 @@ class nts:
                 time.sleep(1.0)
 
     def mt_spotifysearch(self,showson,multiple):
-
         q1 = dict()
         q2 = dict()
         for episode in multiple:
@@ -1031,7 +1007,6 @@ class nts:
             for td in multiple[episode]:
                 q1[episode][td] = f'artist:{showson[episode][td]["artist"]} track:{showson[episode][td]["title"]}'
                 q2[episode][td] = f'{showson[episode][td]["artist"]} : {showson[episode][td]["title"]}'
-
         return(self.mt_samp(q1,q2))
 
     def mt_samp(self,q1,q2):
@@ -1040,23 +1015,33 @@ class nts:
             episode = list(q1.keys())[l1]
             for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
                 td = list(q1[list(q1.keys())[l1]].keys())[l2]
-                if taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items']:
-                    S0 = [{'artist':j['artists'][0]['name'],
-                        'title':j['name'],
-                        'uri':j['uri'].split(':')[-1]} 
-                        for j in taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
-                else:
-                    S0 = ''
-                if taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items']: # q2
-                    S1 = [{'artist':j['artists'][0]['name'],
-                        'title':j['name'],
-                        'uri':j['uri'].split(':')[-1]} 
-                        for j in taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
-                else:
-                    S1 = ''
-
+                S0 = taskdict[f"q1.{l1:03}.{l2:03}"]
+                S1 = taskdict[f"q2.{l1:03}.{l2:03}"]
                 q1[episode][td] = {'s0':S0,'s1':S1}
         return(q1)
+
+        # taskdict = self.qmt([q1,q2],'spotify',32)
+        # for l1 in range(len(q1)):
+        #     episode = list(q1.keys())[l1]
+        #     for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
+        #         td = list(q1[list(q1.keys())[l1]].keys())[l2]
+        #         if taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items']:
+        #             S0 = [{'artist':j['artists'][0]['name'],
+        #                 'title':j['name'],
+        #                 'uri':j['uri'].split(':')[-1]} 
+        #                 for j in taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
+        #         else:
+        #             S0 = ''
+        #         if taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items']: # q2
+        #             S1 = [{'artist':j['artists'][0]['name'],
+        #                 'title':j['name'],
+        #                 'uri':j['uri'].split(':')[-1]} 
+        #                 for j in taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
+        #         else:
+        #             S1 = ''
+
+        #         q1[episode][td] = {'s0':S0,'s1':S1}
+        # return(q1)
 
     def mt_spotifyrate(self,showson,srchson,multiple):
 
@@ -1129,11 +1114,17 @@ class nts:
             for td in multiple[episode]:
                 track = f'{showson[episode][td]["artist"]} {showson[episode][td]["title"] }'
                 q1[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(track)}&item_type=t"
-                if rateson[episode][td]['ratio'] >= 3:
+                if rateson[episode][td]['ratio'] >= 6:
                     spot = f'{rateson[episode][td]["artist"]} {rateson[episode][td]["title"] }'
                     q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(spot)}&item_type=t"
                 else:
-                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(unidecode(track)))}&item_type=t"
+                    ln = self.model.predict(track)[0][0].split('__label__')[1]
+                    if ln in ['ja','zh','kr','vn']:
+                        d = unihandecode.Unidecoder(lang=ln)
+                        convert = d.decode(track)
+                    else:
+                        convert = unidecode(track)
+                    q2[episode][td] = f"https://bandcamp.com/search?q={urllib.parse.quote(self.refine(convert))}&item_type=t"
         return(self.mt_camp(q1,q2))
 
     def mt_camp(self,q1,q2):
@@ -1165,7 +1156,7 @@ class nts:
         q1 = dict()
         for e in bandcamp:
             for t in bandcamp[e]:
-                if bandcamp[e][t]['ratio'] >= 3:
+                if bandcamp[e][t]['ratio'] >= 5:
                     if 'albumid' not in bandcamp[e][t]:
                         if e not in q1:
                             q1[e] = dict()
@@ -1179,6 +1170,24 @@ class nts:
                     bandcamp[episode][td]['album_id'] = taskdict[f"q1.{l1:03}.{l2:03}"]['album_id']
                     bandcamp[episode][td]['track_id'] = taskdict[f"q1.{l1:03}.{l2:03}"]['track_id']
         self._d2j(f'./bandcamp/{show}',bandcamp)
+
+    def mt_youtubesearch(self,showson,multiple):
+        q1 = dict()
+        for episode in multiple:
+            q1[episode] = dict()
+            for td in multiple[episode]:
+                q1[episode][td] = f'{showson[episode][td]["artist"]} : {showson[episode][td]["title"]}'
+        return(self.mt_tube(q1))
+
+    def mt_tube(self,q1):
+        taskdict = self.qmt([q1],'youtube',32)
+        for l1 in range(len(q1)):
+            episode = list(q1.keys())[l1]
+            for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
+                td = list(q1[list(q1.keys())[l1]].keys())[l2]
+                S0 = taskdict[f"q1.{l1:03}.{l2:03}"]
+                q1[episode][td] = {'s0':S0,'s1':''}
+        return(q1)
 
     # HTML MAKER
 
@@ -1368,7 +1377,7 @@ class mt:
         self.kind = kind
 
     def multithreading(self,no_workers,keys=[]):
-
+        self.thrd = True
         if not keys:
             self.keys = list(self.taskdict.keys())[::-1]
             self.fast = True
@@ -1389,10 +1398,10 @@ class mt:
                     start = time.time()
                     # TASK START
                     try:
-                        if selbst.t.fast:
-                            selbst.t.task(taskid)
+                        if selbst.t.fast and selbst.t.kind != 'spotify':
+                            selbst.task5(taskid)
                         else:
-                            selbst.t.reruntask(taskid)
+                            selbst.task20(taskid)
                     except Exception as error:
                         # print(f'MT : {error}',end='\r')
                         selbst.t.double += [taskid]
@@ -1400,6 +1409,13 @@ class mt:
                     end = time.time()
                     print(f"|{selbst.t.count}/{len(selbst.t.keys)}/{round(end - start,2)}|",end='\r')
                     selbst.queue.task_done()
+            @timeout(5.0)        
+            def task5(selbst,taskid):
+                selbst.t.task(taskid)
+            @timeout(20.0)
+            def task20(selbst,taskid):
+                selbst.t.task(taskid)
+                
         
         self.count = 0
         self.double = []
@@ -1421,16 +1437,24 @@ class mt:
             worker.join()
 
     def counter(self,tid,result):
-        self.c_lock.acquire()
+        if self.thrd:
+            self.c_lock.acquire()
         self.taskdict[tid] = result
-        self.c_lock.release()
-        self.count += 1
+        if self.thrd:
+            self.c_lock.release()
+            self.count += 1
 
-    @timeout(2.0)
     def task(self,taskid):
         if self.kind == 'spotify':
             result = self.nts._run(self.taskcopy[taskid])
-            self.counter(taskid,result)
+            if result['tracks']['items']:
+                takeaway = [{'artist':j['artists'][0]['name'],
+                'title':j['name'],
+                'uri':j['uri'].split(':')[-1]}
+                for j in result['tracks']['items'][:3]]
+            else:
+                takeaway = ''
+            self.counter(taskid,takeaway)
         elif self.kind == 'rate':
             a0,t0,r0,u0 = self.nts.test(self.taskcopy[taskid]['s'],self.taskcopy[taskid]['qa'],self.taskcopy[taskid]['qt'])
             self.counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
@@ -1457,197 +1481,27 @@ class mt:
             self.counter(taskid,{
                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
-
-    @timeout(20.0)
-    def reruntask(self,taskid):
-        if self.kind == 'spotify':
-            result = self.nts._run(self.taskcopy[taskid])
-            self.counter(taskid,result)
-        elif self.kind == 'rate':
-            a0,t0,r0,u0 = self.nts.test(self.taskcopy[taskid]['s'],self.taskcopy[taskid]['qa'],self.taskcopy[taskid]['qt'])
-            self.counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-        elif self.kind == 'bandcamp':
-            time.sleep(1.0)
-            result = self.nts.mt_request(self.taskcopy[taskid])
-            soup = bs(result, "html.parser")
-            if soup.select('.noresults-header'):
-                self.counter(taskid,'') #-1
+        elif self.kind == 'youtube':
+            result = self.nts.yrun(self.taskcopy[taskid])
+            if result:
+                takeaway = [{'artist':result[0]['artists'][0]['name'],
+                'title':result[0]['title'],
+                'uri':result[0]['videoId']}] # result[0] == top result
             else:
-                d = []
-                kk = len(soup.select('.subhead'))
-                if kk <= 3:
-                    kr = kk
-                else:
-                    kr = 3
-                for k in range(kr):
-                    d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
-                    'title':soup.select('.heading')[k].text.replace('\n','').strip(),
-                    'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
-                self.counter(taskid,d)
-        elif self.kind == 'bmeta':
-            soup = str(self.nts.mt_request(self.taskcopy[taskid]))
-            self.counter(taskid,{
-                'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
-                'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
+                takeaway = ''
+            self.counter(taskid,result)
 
     def reruncounter(self,tid,result):
         self.taskdict[tid] = result
 
     def nothread(self,keys):
         self.keys = list(keys)
-        self.fast = False
+        self.thrd = False 
         c = 0
         for taskid in keys:
-            
             c+=1
             print(f'.{c}:{len(keys)}.',end='\r')
-
-            if self.kind == 'spotify':
-                result = self.nts._run(self.taskcopy[taskid])
-                self.reruncounter(taskid,result)
-            elif self.kind == 'rate':
-                a0,t0,r0,u0 = self.nts.test(self.taskcopy[taskid]['s'],self.taskcopy[taskid]['qa'],self.taskcopy[taskid]['qt'])
-                self.reruncounter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-            elif self.kind == 'bandcamp':
-                time.sleep(1.0)
-                result = self.nts.mt_request(self.taskcopy[taskid])
-                soup = bs(result, "html.parser")
-                if soup.select('.noresults-header'):
-                    self.reruncounter(taskid,'') #-1
-                else:
-                    d = []
-                    kk = len(soup.select('.subhead'))
-                    if kk <= 3:
-                        kr = kk
-                    else:
-                        kr = 3
-                    for k in range(kr):
-                        d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
-                        'title':soup.select('.heading')[k].text.replace('\n','').strip(),
-                        'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
-                    self.reruncounter(taskid,d)
-            elif self.kind == 'bmeta':
-                soup = str(self.nts.mt_request(self.taskcopy[taskid]))
-                self.reruncounter(taskid,{
-                    'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
-                    'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
-
-# def multithreading(taskdict, no_workers, kind):
-
-#     stn = nts()
-#     stn.connect()
-#     global count, thr, dbc
-#     dbc = []
-#     thr = True
-#     count = 0
-#     c_lock = Lock()
-#     taskcopy = dict(taskdict)
-#     amount = len(taskdict)
-#     keys = list(taskdict.keys())[::-1]
-
-#     class __worker__(Thread):
-#         def __init__(self, request_queue):
-#             Thread.__init__(self)
-#             self.queue = request_queue
-#         def run(self):
-#             while not self.queue.empty():
-#                 taskid = self.queue.get_nowait()
-#                 if not taskid:
-#                     break
-#                 start = time.time()
-#                 # TASK START
-#                 try:
-#                     cont = task(kind,taskid)
-#                 except:
-#                     print('*',end='\r')
-#                     global dbc
-#                     dbc += [taskid]
-#                     cont = '!'
-#                 # TASK END
-#                 end = time.time()
-#                 print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
-#                 self.queue.task_done()
-
-#     def counter(tid,result):
-#         global thr,count
-#         if thr:
-#             c_lock.acquire()
-#         # try:
-#         #     keys.remove(tid)
-#         taskdict[tid] = result
-#         # except:
-#         #     pass
-#         if thr:
-#             count += 1
-#             c_lock.release()
-#         return(count)
-
-#     @timeout(20.0)
-#     def task(kind,taskid):
-#         if kind == 'spotify':
-#             result = stn._run(taskcopy[taskid])
-#             cont = counter(taskid,result)
-#         elif kind == 'rate':
-#             a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-#             cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-#         elif kind == 'bandcamp':
-#             time.sleep(1.0)
-#             result = stn.mt_request(taskcopy[taskid])
-#             soup = bs(result, "html.parser")
-#             if soup.select('.noresults-header'):
-#                 cont = counter(taskid,'') #-1
-#             else:
-#                 d = []
-#                 kk = len(soup.select('.subhead'))
-#                 if kk <= 3:
-#                     kr = kk
-#                 else:
-#                     kr = 3
-#                 for k in range(kr):
-#                     d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
-#                     'title':soup.select('.heading')[k].text.replace('\n','').strip(),
-#                     'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
-#                 cont = counter(taskid,d)
-#         elif kind == 'bmeta':
-#             soup = str(stn.mt_request(taskcopy[taskid]))
-#             cont = counter(taskid,{
-#                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
-#                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
-#         return(cont)
-
-#     # Create queue and add tasklist
-#     workq = queue.Queue()
-#     for k in keys:
-#         workq.put(k)
-#     for _ in range(no_workers):
-#         workq.put("")
-#     #        
-#     workers = []
-#     for _ in range(no_workers):
-#         worker = __worker__(workq)
-#         worker.start()
-#         workers.append(worker)
-    
-#     for worker in workers:
-#         worker.join()
-
-#     if dbc:
-#         print(f'.DC:{len(dbc)}.',end='\r')
-#         thr = False
-#         c = 0
-#         for taskid in dbc[::-1]:
-#             tf = True
-#             while tf:
-#                 try:
-#                     cont = task(kind,taskid)
-#                     tf = False
-#                     c+=1
-#                     print(f'.*{c}:{len(dbc)}.',end='\r')
-#                 except:
-#                     print(f'.*!.',end='\r')
-#                     time.sleep(1.0)
-#     print('.Threading.Complete.',end='\r')
-#     return(taskdict)
+            self.task(taskid)
 
 # GIT PUSH
 
