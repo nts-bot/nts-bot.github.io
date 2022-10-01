@@ -658,7 +658,7 @@ class nts:
                 print(f'{c}@',end='\r')
                 tr=False
             except Exception:
-                raise RuntimeError
+                time.sleep(1.0)
         return(self.kill(tex))
 
     def ratio(self,a,b):
@@ -960,7 +960,19 @@ class nts:
                         for l1 in range(len(q2)) 
                         for l2 in range(len(q2[list(q2.keys())[l1]]))
                         }
-        return(multithreading(taskdict, nw, kind))
+
+        # RUN MULTITHREADING
+
+        MT = mt(taskdict,kind) # load class
+        MT.multithreading(nw) # run threads
+        repeat = True
+        while repeat: # re-run for failed threads
+            if MT.double:
+                MT.multithreading(nw)
+            else:
+                repeat = False
+
+        return(MT.taskdict)
 
     def mt_request(self,content):
         c = 0
@@ -1312,50 +1324,85 @@ class nts:
             self._d2j(f'./extra/{i}',file)
 
 
-# MULTITHREADING WORKER
+# MULTITHREADING & WORKERS
 
-def multithreading(taskdict, no_workers, kind):
+class __worker__(Thread):
+    def __init__(self, request_queue):
+        Thread.__init__(self)
+        self.queue = request_queue
 
-    stn = nts()
-    stn.connect()
-    global count, wcount, thr, dbc
-    dbc = []
-    thr = True
-    count = 0
-    wcount = 0
-    c_lock = Lock()
-    taskcopy = dict(taskdict)
-    amount = len(taskdict)
-    keys = list(taskdict.keys())[::-1]
+class mt:
+    def __init__(self, taskdict, kind): #, no_workers
+        self.nts = nts()
+        self.nts.connect()
+        self.taskdict = taskdict
+        self.taskcopy = dict(self.taskdict)
+        self.kind = kind
 
-    def counter(tid,result):
-        global thr,count
-        if thr:
-            c_lock.acquire()
-        # try:
-        #     keys.remove(tid)
-        taskdict[tid] = result
-        # except:
-        #     pass
-        if thr:
-            count += 1
-            c_lock.release()
-        return(count)
+    def employ(self,workq):
+        # super(workclass, self).__init__(workq)
+        employed = __worker__(workq)
+        while not employed.queue.empty():
+            taskid = employed.queue.get_nowait()
+            if not taskid:
+                break
+            start = time.time()
+            # TASK START
+            try:
+                self.task(taskid)
+            except:
+                print('*',end='\r')
+                self.double += [taskid]
+            # TASK END
+            end = time.time()
+            print(f"|{self.count}/{len(self.keys)}/{round(end - start,2)}|",end='\r')
+            employed.queue.task_done()
+
+    def multithreading(self,no_workers,keys=[]):
+        self.count = 0
+        self.double = []
+        self.c_lock = Lock()
+
+        if not keys:
+            self.keys = list(self.taskdict.keys())[::-1]
+        else:
+            self.keys = keys
+
+        workq = queue.Queue()
+        for k in self.keys:
+            workq.put(k)
+        for _ in range(no_workers):
+            workq.put("")
+                
+        workers = []
+        for _ in range(no_workers):
+            worker = self.employ(workq)
+            worker.start()
+            workers.append(worker)
+
+        for worker in workers:
+            worker.join()
+
+    def counter(self,tid,result):
+        self.c_lock.acquire()
+        self.taskdict[tid] = result
+        self.c_lock.release()
+        self.count += 1
 
     @timeout(20.0)
-    def task(kind,taskid):
-        if kind == 'spotify':
-            result = stn._run(taskcopy[taskid])
-            cont = counter(taskid,result)
-        elif kind == 'rate':
-            a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-            cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-        elif kind == 'bandcamp':
+    def task(self,taskid):
+        if self.kind == 'spotify':
+            result = self.nts._run(self.taskcopy[taskid])
+            self.counter(taskid,result)
+        elif self.kind == 'rate':
+            a0,t0,r0,u0 = self.nts.test(self.taskcopy[taskid]['s'],self.taskcopy[taskid]['qa'],self.taskcopy[taskid]['qt'])
+            self.counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+        elif self.kind == 'bandcamp':
             time.sleep(1.0)
-            result = stn.mt_request(taskcopy[taskid])
+            result = self.nts.mt_request(self.taskcopy[taskid])
             soup = bs(result, "html.parser")
             if soup.select('.noresults-header'):
-                cont = counter(taskid,'') #-1
+                self.counter(taskid,'') #-1
             else:
                 d = []
                 kk = len(soup.select('.subhead'))
@@ -1367,96 +1414,136 @@ def multithreading(taskdict, no_workers, kind):
                     d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
                     'title':soup.select('.heading')[k].text.replace('\n','').strip(),
                     'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
-                cont = counter(taskid,d)
-        elif kind == 'bmeta':
-            soup = str(stn.mt_request(taskcopy[taskid]))
-            cont = counter(taskid,{
+                self.counter(taskid,d)
+        elif self.kind == 'bmeta':
+            soup = str(self.nts.mt_request(self.taskcopy[taskid]))
+            self.counter(taskid,{
                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
-        return(cont)
 
-    class __worker__(Thread):
-        def __init__(self, request_queue):
-            Thread.__init__(self)
-            self.queue = request_queue
-        def run(self):
-            while not self.queue.empty():
-                taskid = self.queue.get_nowait()
-                if not taskid:
-                    break
-                start = time.time()
-                # TASK START
-                try:
-                    cont = task(kind,taskid)
-                except:
-                    print('*',end='\r')
-                    global dbc
-                    dbc += [taskid]
-                    cont = '!'
-                # TASK END
-                end = time.time()
-                print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
-                self.queue.task_done()
+# def multithreading(taskdict, no_workers, kind):
 
-    # Create queue and add tasklist
-    workq = queue.Queue()
-    for k in keys:
-        workq.put(k)
-    for _ in range(no_workers):
-        workq.put("")
-    #        
-    workers = []
-    for _ in range(no_workers):
-        worker = __worker__(workq)
-        worker.start()
-        workers.append(worker)
+#     stn = nts()
+#     stn.connect()
+#     global count, wcount, thr, dbc
+#     dbc = []
+#     thr = True
+#     count = 0
+#     wcount = 0
+#     c_lock = Lock()
+#     taskcopy = dict(taskdict)
+#     amount = len(taskdict)
+#     keys = list(taskdict.keys())[::-1]
 
-    # if kind == 'rate':
-    #     kill = False
-    #     try:
-    #         while not kill:
-    #             time.sleep(5.0)
-    #             print(f'({count})',end='\r')
-    #             if count >= amount:
-    #                 kill = True
-    #             elif count + no_workers >= amount:
-    #                 x = 0
-    #                 while x < no_workers:
-    #                     x += 2
-    #                     time.sleep(round(x/2))
-    #                     if count + x/2 >= amount:
-    #                         break
-    #                 kill = True
-    #                 sys.exit()
-    #     except SystemExit:
-    #         print('.double-checking.')
-    #         for taskid in list(taskcopy.keys())[::-1]:
-    #             if taskcopy[taskid] == taskdict[taskid]:
-    #                 task(kind,taskid)
-    #                 a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-    #                 cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0},False)
-    # else:
+#     def counter(tid,result):
+#         global thr,count
+#         if thr:
+#             c_lock.acquire()
+#         # try:
+#         #     keys.remove(tid)
+#         taskdict[tid] = result
+#         # except:
+#         #     pass
+#         if thr:
+#             count += 1
+#             c_lock.release()
+#         return(count)
+
+#     @timeout(20.0)
+#     def task(kind,taskid):
+#         if kind == 'spotify':
+#             result = stn._run(taskcopy[taskid])
+#             cont = counter(taskid,result)
+#         elif kind == 'rate':
+#             a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
+#             cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+#         elif kind == 'bandcamp':
+#             time.sleep(1.0)
+#             result = stn.mt_request(taskcopy[taskid])
+#             soup = bs(result, "html.parser")
+#             if soup.select('.noresults-header'):
+#                 cont = counter(taskid,'') #-1
+#             else:
+#                 d = []
+#                 kk = len(soup.select('.subhead'))
+#                 if kk <= 3:
+#                     kr = kk
+#                 else:
+#                     kr = 3
+#                 for k in range(kr):
+#                     d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
+#                     'title':soup.select('.heading')[k].text.replace('\n','').strip(),
+#                     'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
+#                 cont = counter(taskid,d)
+#         elif kind == 'bmeta':
+#             soup = str(stn.mt_request(taskcopy[taskid]))
+#             cont = counter(taskid,{
+#                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
+#                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
+#         return(cont)
+
+
+#     # Create queue and add tasklist
+#     workq = queue.Queue()
+#     for k in keys:
+#         workq.put(k)
+#     for _ in range(no_workers):
+#         workq.put("")
+#     #        
+#     workers = []
+#     for _ in range(no_workers):
+#         worker = __worker__(workq)
+#         worker.start()
+#         workers.append(worker)
+
+#     # if kind == 'rate':
+#     #     kill = False
+#     #     try:
+#     #         while not kill:
+#     #             time.sleep(5.0)
+#     #             print(f'({count})',end='\r')
+#     #             if count >= amount:
+#     #                 kill = True
+#     #             elif count + no_workers >= amount:
+#     #                 x = 0
+#     #                 while x < no_workers:
+#     #                     x += 2
+#     #                     time.sleep(round(x/2))
+#     #                     if count + x/2 >= amount:
+#     #                         break
+#     #                 kill = True
+#     #                 sys.exit()
+#     #     except SystemExit:
+#     #         print('.double-checking.')
+#     #         for taskid in list(taskcopy.keys())[::-1]:
+#     #             if taskcopy[taskid] == taskdict[taskid]:
+#     #                 task(kind,taskid)
+#     #                 a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
+#     #                 cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0},False)
+#     # else:
     
-    for worker in workers:
-        worker.join()
+#     for worker in workers:
+#         worker.join()
 
-    if dbc:
-        print(f'.DC:{len(dbc)}.',end='\r')
-        thr = False
-        c = 0
-        for taskid in dbc:
-            tf = True
-            while tf:
-                try:
-                    cont = task(kind,taskid)
-                    tf = False
-                    c+=1
-                    print(f'.*{c}:{len(dbc)}.',end='\r')
-                except:
-                    print(f'.*!.',end='\r')
+#     if dbc:
+#         # print(f'.DC:{len(dbc)}.',end='\r')
+#         # thr = False
+#         # c = 0
+#         # for taskid in dbc[::-1]:
+#         #     tf = True
+#         #     while tf:
+#         #         try:
+#         #             cont = task(kind,taskid)
+#         #             tf = False
+#         #             c+=1
+#         #             print(f'.*{c}:{len(dbc)}.',end='\r')
+#         #         except:
+#         #             print(f'.*!.',end='\r')
+#         #             time.sleep(1.0)
 
-    print('.Threading.Complete.',end='\r')
-    return(taskdict)
+
+#     print('.Threading.Complete.',end='\r')
+#     return(taskdict)
 
 # GIT PUSH
 
