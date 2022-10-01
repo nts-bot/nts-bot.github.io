@@ -204,11 +204,11 @@ class nts:
         global bd, yt
         # SPOTIFY
         self.runner(show,f"./spotify_search_results/{show}",2)
+        self.runner(show,f"./spotify/{show}",3)
         # YOUTUBE
         if yt:
-            self.runner(show,f"./youtube/{show}",2.5)
-        # SPOTIFY RATE
-        self.runner(show,f"./spotify/{show}",3)
+            self.runner(show,f"./youtube_search_results/{show}",2.5)
+            self.runner(show,f"./youtube/{show}",3.5)
         # BANDCAMP
         if bd:
             self.runner(show,f"./bandcamp_search_results/{show}",4)
@@ -218,6 +218,11 @@ class nts:
             self.spotifyplaylist(show)
         else:
             self.runner(show,f"./uploaded",6)
+        if yt:
+            if show not in self._j2d('./yploaded'):
+                self.youtubeplaylist(show)
+            else:
+                self.runner(show,f"./yploaded",6.5)
 
     def runscript(self,shows,debug=False):
         global bd, yt
