@@ -1004,13 +1004,18 @@ class nts:
         #
         if reset:
             print(f'.resetting.', end='\r')
-            ply = self.you.get_playlist(yid, 10000)
-            response = self.you.remove_playlist_items(yid,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply['tracks']])
+            pt = True
+            while pt:
+                try:
+                    ply = self.you.get_playlist(shelf, 500)['tracks']
+                    response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply])
+                except KeyError as error:
+                    print(error)
+                    pt = False
             print(f'.complete.', end='\r')
         #
         if upend:
             print(f'.tracks appending.', end='\r')
-            # [item for sublist in l for item in sublist]
             trackstoadd = [j for i in trackdict for j in trackdict[i]]
             response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
             print(f'.tracks appended.', end='\r')
