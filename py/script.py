@@ -1327,9 +1327,26 @@ class nts:
 # MULTITHREADING & WORKERS
 
 class __worker__(Thread):
-    def __init__(self, request_queue):
+    def __init__(self, mt, request_queue):
         Thread.__init__(self)
+        self.mt = mt
         self.queue = request_queue
+        def run(self):
+            while not self.queue.empty():
+                taskid = self.queue.get_nowait()
+                if not taskid:
+                    break
+                start = time.time()
+                # TASK START
+                try:
+                    self.mt.task(taskid)
+                except:
+                    print('*',end='\r')
+                    self.mt.double += [taskid]
+                # TASK END
+                end = time.time()
+                print(f"|{self.mt.count}/{len(self.mt.keys)}/{round(end - start,2)}|",end='\r')
+                self.queue.task_done()
 
 class mt:
     def __init__(self, taskdict, kind): #, no_workers
@@ -1338,25 +1355,6 @@ class mt:
         self.taskdict = taskdict
         self.taskcopy = dict(self.taskdict)
         self.kind = kind
-
-    def employ(self,workq):
-        # super(workclass, self).__init__(workq)
-        employed = __worker__(workq)
-        while not employed.queue.empty():
-            taskid = employed.queue.get_nowait()
-            if not taskid:
-                break
-            start = time.time()
-            # TASK START
-            try:
-                self.task(taskid)
-            except:
-                print('*',end='\r')
-                self.double += [taskid]
-            # TASK END
-            end = time.time()
-            print(f"|{self.count}/{len(self.keys)}/{round(end - start,2)}|",end='\r')
-            employed.queue.task_done()
 
     def multithreading(self,no_workers,keys=[]):
         self.count = 0
@@ -1376,7 +1374,7 @@ class mt:
                 
         workers = []
         for _ in range(no_workers):
-            worker = self.employ(workq)
+            worker = __worker__(self,workq)
             worker.start()
             workers.append(worker)
 
@@ -1435,6 +1433,29 @@ class mt:
 #     amount = len(taskdict)
 #     keys = list(taskdict.keys())[::-1]
 
+#     class __worker__(Thread):
+#         def __init__(self, request_queue):
+#             Thread.__init__(self)
+#             self.queue = request_queue
+#         def run(self):
+#             while not self.queue.empty():
+#                 taskid = self.queue.get_nowait()
+#                 if not taskid:
+#                     break
+#                 start = time.time()
+#                 # TASK START
+#                 try:
+#                     cont = task(kind,taskid)
+#                 except:
+#                     print('*',end='\r')
+#                     global dbc
+#                     dbc += [taskid]
+#                     cont = '!'
+#                 # TASK END
+#                 end = time.time()
+#                 print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
+#                 self.queue.task_done()
+
 #     def counter(tid,result):
 #         global thr,count
 #         if thr:
@@ -1482,7 +1503,6 @@ class mt:
 #                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
 #         return(cont)
 
-
 #     # Create queue and add tasklist
 #     workq = queue.Queue()
 #     for k in keys:
@@ -1495,32 +1515,6 @@ class mt:
 #         worker = __worker__(workq)
 #         worker.start()
 #         workers.append(worker)
-
-#     # if kind == 'rate':
-#     #     kill = False
-#     #     try:
-#     #         while not kill:
-#     #             time.sleep(5.0)
-#     #             print(f'({count})',end='\r')
-#     #             if count >= amount:
-#     #                 kill = True
-#     #             elif count + no_workers >= amount:
-#     #                 x = 0
-#     #                 while x < no_workers:
-#     #                     x += 2
-#     #                     time.sleep(round(x/2))
-#     #                     if count + x/2 >= amount:
-#     #                         break
-#     #                 kill = True
-#     #                 sys.exit()
-#     #     except SystemExit:
-#     #         print('.double-checking.')
-#     #         for taskid in list(taskcopy.keys())[::-1]:
-#     #             if taskcopy[taskid] == taskdict[taskid]:
-#     #                 task(kind,taskid)
-#     #                 a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-#     #                 cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0},False)
-#     # else:
     
 #     for worker in workers:
 #         worker.join()
@@ -1540,8 +1534,6 @@ class mt:
 #         #         except:
 #         #             print(f'.*!.',end='\r')
 #         #             time.sleep(1.0)
-
-
 #     print('.Threading.Complete.',end='\r')
 #     return(taskdict)
 
