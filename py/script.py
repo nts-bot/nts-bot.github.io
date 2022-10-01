@@ -1020,29 +1020,6 @@ class nts:
                 q1[episode][td] = {'s0':S0,'s1':S1}
         return(q1)
 
-        # taskdict = self.qmt([q1,q2],'spotify',32)
-        # for l1 in range(len(q1)):
-        #     episode = list(q1.keys())[l1]
-        #     for l2 in range(len(q1[list(q1.keys())[l1]])): # td are tracks
-        #         td = list(q1[list(q1.keys())[l1]].keys())[l2]
-        #         if taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items']:
-        #             S0 = [{'artist':j['artists'][0]['name'],
-        #                 'title':j['name'],
-        #                 'uri':j['uri'].split(':')[-1]} 
-        #                 for j in taskdict[f"q1.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
-        #         else:
-        #             S0 = ''
-        #         if taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items']: # q2
-        #             S1 = [{'artist':j['artists'][0]['name'],
-        #                 'title':j['name'],
-        #                 'uri':j['uri'].split(':')[-1]} 
-        #                 for j in taskdict[f"q2.{l1:03}.{l2:03}"]['tracks']['items'][:3]]
-        #         else:
-        #             S1 = ''
-
-        #         q1[episode][td] = {'s0':S0,'s1':S1}
-        # return(q1)
-
     def mt_spotifyrate(self,showson,srchson,multiple):
 
         q1 = dict()
