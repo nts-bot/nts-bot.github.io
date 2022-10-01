@@ -17,8 +17,10 @@ import queue
 import cv2, base64
 from PIL import Image
 # THE TRANSLATOR & COMPARISON TOOLS
-from googletrans import Translator
-translator = Translator()
+# from googletrans import Translator
+# translator = Translator()
+# translator.raise_Exception = True
+from translate import Translator
 from unidecode import unidecode
 import unihandecode, fasttext # japanese, korea, mandarin &c.
 from difflib import SequenceMatcher
@@ -65,6 +67,7 @@ class nts:
         except:
             print('.META ERROR.')
             self.meta = self._j2d(f'./extra/meta')
+            self._d2j(f'./meta',self.meta)
         self.model = fasttext.load_model("./extra/lid.176.ftz") #bin is more accurate
 
     # LOCAL DATABASE
@@ -189,8 +192,9 @@ class nts:
         if not debug:
             while True:
                 try:
-                    # SPOTIFY
+                    print('SPOTIFY')
                     self.runner(show,f"./spotify_search_results/{show}",2)
+                    print('RATE')
                     self.runner(show,f"./spotify/{show}",3)
                     # BANDCAMP
                     if bd:
@@ -620,29 +624,34 @@ class nts:
     @timeout(15.0)
     def subrun(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
+        c = 0
         try:
             result = self.sp.search(q=query, type="track,artist")
             if result is None:
-                raise RuntimeError('Spotify API Broken')
+                raise RuntimeError
             else:
                 return(result)
         except spotipy.SpotifyException as error:
             if error.http_status == 400: # HTTP ERROR ?
-                print('?',end='\r')
-                print(f'.spotify-api-error.',end='\r')
+                print('.spotify-api-error.',end='\n')
                 return({'tracks':{'items':''}})
             elif error.http_status == 429: # MAX RETRY ERROR ?
+                # print('.max-retry-error.',end='\n')
+                c += 1
                 time.sleep(3.0)
-                return(self.subrun(query))
-            else:
-                raise RuntimeError(error)
-
+                if c < 3:
+                    return(self.subrun(query))
+            # else
+            raise RuntimeWarning(error)    
+            
     def _run(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
         try:
             return(self.subrun(query))
         except RuntimeError:
             raise RuntimeError('Spotify API Broken')
+        except RuntimeWarning as error:
+            raise RuntimeWarning(error)
         except Exception:
             self.connect()
             return(self.subrun(query))
@@ -661,23 +670,33 @@ class nts:
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
+        ln = self.model.predict(tex)[0][0].split('__label__')[1]
+        translator = Translator(to_lang="en",from_lang=ln)
+        convert = translator.translate(tex)
+        # tex = translator.translate(tex,dest='en').tex
         # tex = re.sub('\(([^\)]+)\)','',tex)
-        tr = True
-        c=0
-        while tr:
-            c+=1
-            try:
-                tex = translator.translate(tex,dest='en').text
-                tr=False
-            except ValueError:
-                print(f'{c}%',end='\r')
-                tr=False
-            except IndexError:
-                print(f'{c}@',end='\r')
-                tr=False
-            except Exception:
-                time.sleep(1.0)
-        return(self.kill(tex))
+        # tr = True
+        # c=0
+        # while tr:
+        #     c+=1
+        #     if c < 3:
+        #         try:
+        #             ln = self.model.predict(tex)[0][0].split('__label__')[1]
+        #             translator = Translator(to_lang="en",from_lang=ln)
+        #             tex = translator.translate(tex,dest='en').text
+        #             tr=False
+        #         # except ValueError:
+        #         #     print(f'{c}%',end='\r')
+        #         #     tr=False
+        #         # except IndexError:
+        #         #     print(f'{c}@',end='\r')
+        #         #     tr=False
+        #         except Exception:
+        #             time.sleep(1.0)
+        #     else:
+        #         tex = translator.translate(tex,dest='en').text
+        #         tr=False
+        return(self.kill(convert))
 
     def ratio(self,a,b):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
@@ -982,13 +1001,12 @@ class nts:
         # RUN MULTITHREADING
         MT = mt(taskdict,kind) # load class
         MT.multithreading(nw) # run threads
-        repeat = True
-        while repeat:
-            if MT.double:
-                print('.Re-Threading.',end='\r')
-                MT.multithreading(nw,MT.double)
-            else:
-                repeat = False
+        if MT.double:
+            print('.Re-Threading.',end='\r')
+            MT.multithreading(8,MT.double)
+        if MT.double:
+            print('.ReRe-Threading.',end='\r')
+            MT.nothread(MT.double)
         return(MT.taskdict)
 
     def mt_request(self,content):
@@ -1354,8 +1372,10 @@ class mt:
 
         if not keys:
             self.keys = list(self.taskdict.keys())[::-1]
+            self.fast = True
         else:
             self.keys = list(keys)
+            self.fast = False
 
         class __worker__(Thread):
             def __init__(selbst, request_queue, t):
@@ -1370,9 +1390,12 @@ class mt:
                     start = time.time()
                     # TASK START
                     try:
-                        selbst.t.task(taskid)
-                    except:
-                        print('*',end='\r')
+                        if selbst.t.fast:
+                            selbst.t.task(taskid)
+                        else:
+                            selbst.t.reruntask(taskid)
+                    except Exception as error:
+                        # print(f'MT : {error}',end='\r')
                         selbst.t.double += [taskid]
                     # TASK END
                     end = time.time()
@@ -1404,7 +1427,7 @@ class mt:
         self.c_lock.release()
         self.count += 1
 
-    @timeout(20.0)
+    @timeout(5.0)
     def task(self,taskid):
         if self.kind == 'spotify':
             result = self.nts._run(self.taskcopy[taskid])
@@ -1436,71 +1459,20 @@ class mt:
                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
 
-
-def multithreading(taskdict, no_workers, kind):
-
-    stn = nts()
-    stn.connect()
-    global count, thr, dbc
-    dbc = []
-    thr = True
-    count = 0
-    c_lock = Lock()
-    taskcopy = dict(taskdict)
-    amount = len(taskdict)
-    keys = list(taskdict.keys())[::-1]
-
-    class __worker__(Thread):
-        def __init__(self, request_queue):
-            Thread.__init__(self)
-            self.queue = request_queue
-        def run(self):
-            while not self.queue.empty():
-                taskid = self.queue.get_nowait()
-                if not taskid:
-                    break
-                start = time.time()
-                # TASK START
-                try:
-                    cont = task(kind,taskid)
-                except:
-                    print('*',end='\r')
-                    global dbc
-                    dbc += [taskid]
-                    cont = '!'
-                # TASK END
-                end = time.time()
-                print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
-                self.queue.task_done()
-
-    def counter(tid,result):
-        global thr,count
-        if thr:
-            c_lock.acquire()
-        # try:
-        #     keys.remove(tid)
-        taskdict[tid] = result
-        # except:
-        #     pass
-        if thr:
-            count += 1
-            c_lock.release()
-        return(count)
-
     @timeout(20.0)
-    def task(kind,taskid):
-        if kind == 'spotify':
-            result = stn._run(taskcopy[taskid])
-            cont = counter(taskid,result)
-        elif kind == 'rate':
-            a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-            cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-        elif kind == 'bandcamp':
+    def reruntask(self,taskid):
+        if self.kind == 'spotify':
+            result = self.nts._run(self.taskcopy[taskid])
+            self.counter(taskid,result)
+        elif self.kind == 'rate':
+            a0,t0,r0,u0 = self.nts.test(self.taskcopy[taskid]['s'],self.taskcopy[taskid]['qa'],self.taskcopy[taskid]['qt'])
+            self.counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+        elif self.kind == 'bandcamp':
             time.sleep(1.0)
-            result = stn.mt_request(taskcopy[taskid])
+            result = self.nts.mt_request(self.taskcopy[taskid])
             soup = bs(result, "html.parser")
             if soup.select('.noresults-header'):
-                cont = counter(taskid,'') #-1
+                self.counter(taskid,'') #-1
             else:
                 d = []
                 kk = len(soup.select('.subhead'))
@@ -1512,47 +1484,171 @@ def multithreading(taskdict, no_workers, kind):
                     d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
                     'title':soup.select('.heading')[k].text.replace('\n','').strip(),
                     'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
-                cont = counter(taskid,d)
-        elif kind == 'bmeta':
-            soup = str(stn.mt_request(taskcopy[taskid]))
-            cont = counter(taskid,{
+                self.counter(taskid,d)
+        elif self.kind == 'bmeta':
+            soup = str(self.nts.mt_request(self.taskcopy[taskid]))
+            self.counter(taskid,{
                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
-        return(cont)
 
-    # Create queue and add tasklist
-    workq = queue.Queue()
-    for k in keys:
-        workq.put(k)
-    for _ in range(no_workers):
-        workq.put("")
-    #        
-    workers = []
-    for _ in range(no_workers):
-        worker = __worker__(workq)
-        worker.start()
-        workers.append(worker)
-    
-    for worker in workers:
-        worker.join()
+    def reruncounter(self,tid,result):
+        self.taskdict[tid] = result
 
-    if dbc:
-        print(f'.DC:{len(dbc)}.',end='\r')
-        thr = False
+    def nothread(self,keys):
+        self.keys = list(keys)
+        self.fast = False
         c = 0
-        for taskid in dbc[::-1]:
-            tf = True
-            while tf:
-                try:
-                    cont = task(kind,taskid)
-                    tf = False
-                    c+=1
-                    print(f'.*{c}:{len(dbc)}.',end='\r')
-                except:
-                    print(f'.*!.',end='\r')
-                    time.sleep(1.0)
-    print('.Threading.Complete.',end='\r')
-    return(taskdict)
+        for taskid in keys:
+            
+            c+=1
+            print(f'.{c}:{len(keys)}.',end='\r')
+
+            if self.kind == 'spotify':
+                result = self.nts._run(self.taskcopy[taskid])
+                self.reruncounter(taskid,result)
+            elif self.kind == 'rate':
+                a0,t0,r0,u0 = self.nts.test(self.taskcopy[taskid]['s'],self.taskcopy[taskid]['qa'],self.taskcopy[taskid]['qt'])
+                self.reruncounter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+            elif self.kind == 'bandcamp':
+                time.sleep(1.0)
+                result = self.nts.mt_request(self.taskcopy[taskid])
+                soup = bs(result, "html.parser")
+                if soup.select('.noresults-header'):
+                    self.reruncounter(taskid,'') #-1
+                else:
+                    d = []
+                    kk = len(soup.select('.subhead'))
+                    if kk <= 3:
+                        kr = kk
+                    else:
+                        kr = 3
+                    for k in range(kr):
+                        d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
+                        'title':soup.select('.heading')[k].text.replace('\n','').strip(),
+                        'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
+                    self.reruncounter(taskid,d)
+            elif self.kind == 'bmeta':
+                soup = str(self.nts.mt_request(self.taskcopy[taskid]))
+                self.reruncounter(taskid,{
+                    'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
+                    'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
+
+# def multithreading(taskdict, no_workers, kind):
+
+#     stn = nts()
+#     stn.connect()
+#     global count, thr, dbc
+#     dbc = []
+#     thr = True
+#     count = 0
+#     c_lock = Lock()
+#     taskcopy = dict(taskdict)
+#     amount = len(taskdict)
+#     keys = list(taskdict.keys())[::-1]
+
+#     class __worker__(Thread):
+#         def __init__(self, request_queue):
+#             Thread.__init__(self)
+#             self.queue = request_queue
+#         def run(self):
+#             while not self.queue.empty():
+#                 taskid = self.queue.get_nowait()
+#                 if not taskid:
+#                     break
+#                 start = time.time()
+#                 # TASK START
+#                 try:
+#                     cont = task(kind,taskid)
+#                 except:
+#                     print('*',end='\r')
+#                     global dbc
+#                     dbc += [taskid]
+#                     cont = '!'
+#                 # TASK END
+#                 end = time.time()
+#                 print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
+#                 self.queue.task_done()
+
+#     def counter(tid,result):
+#         global thr,count
+#         if thr:
+#             c_lock.acquire()
+#         # try:
+#         #     keys.remove(tid)
+#         taskdict[tid] = result
+#         # except:
+#         #     pass
+#         if thr:
+#             count += 1
+#             c_lock.release()
+#         return(count)
+
+#     @timeout(20.0)
+#     def task(kind,taskid):
+#         if kind == 'spotify':
+#             result = stn._run(taskcopy[taskid])
+#             cont = counter(taskid,result)
+#         elif kind == 'rate':
+#             a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
+#             cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+#         elif kind == 'bandcamp':
+#             time.sleep(1.0)
+#             result = stn.mt_request(taskcopy[taskid])
+#             soup = bs(result, "html.parser")
+#             if soup.select('.noresults-header'):
+#                 cont = counter(taskid,'') #-1
+#             else:
+#                 d = []
+#                 kk = len(soup.select('.subhead'))
+#                 if kk <= 3:
+#                     kr = kk
+#                 else:
+#                     kr = 3
+#                 for k in range(kr):
+#                     d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
+#                     'title':soup.select('.heading')[k].text.replace('\n','').strip(),
+#                     'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
+#                 cont = counter(taskid,d)
+#         elif kind == 'bmeta':
+#             soup = str(stn.mt_request(taskcopy[taskid]))
+#             cont = counter(taskid,{
+#                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
+#                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
+#         return(cont)
+
+#     # Create queue and add tasklist
+#     workq = queue.Queue()
+#     for k in keys:
+#         workq.put(k)
+#     for _ in range(no_workers):
+#         workq.put("")
+#     #        
+#     workers = []
+#     for _ in range(no_workers):
+#         worker = __worker__(workq)
+#         worker.start()
+#         workers.append(worker)
+    
+#     for worker in workers:
+#         worker.join()
+
+#     if dbc:
+#         print(f'.DC:{len(dbc)}.',end='\r')
+#         thr = False
+#         c = 0
+#         for taskid in dbc[::-1]:
+#             tf = True
+#             while tf:
+#                 try:
+#                     cont = task(kind,taskid)
+#                     tf = False
+#                     c+=1
+#                     print(f'.*{c}:{len(dbc)}.',end='\r')
+#                 except:
+#                     print(f'.*!.',end='\r')
+#                     time.sleep(1.0)
+#     print('.Threading.Complete.',end='\r')
+#     return(taskdict)
 
 # GIT PUSH
 
