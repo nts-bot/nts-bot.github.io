@@ -19,10 +19,10 @@ import queue
 import cv2, base64
 from PIL import Image
 # THE TRANSLATOR & COMPARISON TOOLS
-# from googletrans import Translator
-# translator = Translator()
-# translator.raise_Exception = True
-from translate import Translator
+from googletrans import Translator as ggt
+trans_1 = ggt()
+trans_1.raise_Exception = True
+from translate import Translator as ttt
 from unidecode import unidecode
 import unihandecode, fasttext # japanese, korea, mandarin &c.
 from difflib import SequenceMatcher
@@ -172,10 +172,10 @@ class nts:
                 print('Youtube')
                 self.searchloop(show,['tracklist','youtube_search_results'],'yearn',do)
             elif command == 3:
-                print('Rate')
+                print('S-Rate')
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
             elif command == 3.5:
-                print('Rate')
+                print('Y-Rate')
                 self.searchloop(show,['tracklist','youtube','youtube_search_results'],'rate',do)
             elif command == 4:
                 self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)
@@ -183,8 +183,10 @@ class nts:
                 self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)
                 self.mt_bmeta(show)
             elif command == 6:
+                print('S-Playlist')
                 self.spotifyplaylist(show)
             elif command == 6.5:
+                print('Y-Playlist')
                 self.youtubeplaylist(show)
 
     def _reset(self,show):
@@ -252,6 +254,7 @@ class nts:
                 while True:
                     try:
                         self.scripts(show)
+                        break
                     except KeyboardInterrupt:
                         break
                     except RuntimeError as error:
@@ -676,8 +679,11 @@ class nts:
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
         ln = self.model.predict(tex)[0][0].split('__label__')[1]
-        translator = Translator(to_lang="en",from_lang=ln)
-        convert = translator.translate(tex)
+        try:
+            trans_2 = ttt(to_lang="en",from_lang=ln)
+            convert = trans_2.translate(tex)
+        except:
+            convert = trans_1.translate(tex,dest='en').text
         return(self.kill(convert))
 
     def ratio(self,a,b):
