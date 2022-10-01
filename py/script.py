@@ -1014,7 +1014,10 @@ class nts:
             while pt:
                 try:
                     ply = self.you.get_playlist(shelf, 100)['tracks']
-                    response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply])
+                    if ply:
+                        response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply])
+                    else:
+                        pt = False
                 except KeyError as error:
                     print(error)
                     pt = False
@@ -1036,6 +1039,11 @@ class nts:
                 except KeyError as error:
                     print(error)
                     time.sleep(1.0)
+                except: # tracks not uploaded
+                    print(f'.tracks re-appending.', end='\r')
+                    trackstoadd = [j for i in trackdict for j in trackdict[i]]
+                    response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
+                    print(f'.tracks re-appended.', end='\r')
         #
         self.you.edit_playlist(shelf,f"{title} - NTS",syn)
         self._d2j(f'./yploaded',uploaded)
