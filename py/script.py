@@ -11,6 +11,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 # SPOTIFY API TOOL
 import spotipy
+# YOUTUBE API TOOL
+from ytmusicapi import YTMusic as ytm
 # MULTITHREADING TASKS
 import queue
 # IMAGE PROCESSING TOOLS
@@ -69,6 +71,9 @@ class nts:
             self.meta = self._j2d(f'./extra/meta')
             self._d2j(f'./meta',self.meta)
         self.model = fasttext.load_model("./extra/lid.176.ftz") #bin is more accurate
+
+        # YOUTUBE
+        # self.you = ytm(auth='./headers_auth.json',user=uid)
 
     # LOCAL DATABASE
 
@@ -162,8 +167,10 @@ class nts:
             if command == 1:
                 self.ntstracklist(show,do)
             elif command == 2:
+                print('Spotify')
                 self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
             elif command == 3:
+                print('Rate')
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
             elif command == 4:
                 self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)
@@ -192,9 +199,7 @@ class nts:
         if not debug:
             while True:
                 try:
-                    print('SPOTIFY')
                     self.runner(show,f"./spotify_search_results/{show}",2)
-                    print('RATE')
                     self.runner(show,f"./spotify/{show}",3)
                     # BANDCAMP
                     if bd:
@@ -230,7 +235,6 @@ class nts:
         global bd
         bd = False
         self.backup()
-        self.wait('connect',False)
         #
         self.connect()
         o = {i:shows[i] for i in range(len(shows))}
@@ -621,10 +625,9 @@ class nts:
 
     # SPOTIFY SEARCH/RATE SUBFUNCTIONS
 
-    @timeout(15.0)
+    @timeout(20.0)
     def subrun(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
-        c = 0
         try:
             result = self.sp.search(q=query, type="track,artist")
             if result is None:
@@ -636,13 +639,10 @@ class nts:
                 print('.spotify-api-error.',end='\n')
                 return({'tracks':{'items':''}})
             elif error.http_status == 429: # MAX RETRY ERROR ?
-                # print('.max-retry-error.',end='\n')
-                c += 1
                 time.sleep(3.0)
-                if c < 3:
-                    return(self.subrun(query))
-            # else
-            raise RuntimeWarning(error)    
+                return(self.subrun(query))
+            else:
+                raise RuntimeWarning(error)
             
     def _run(self,query):
         ''' RUN SPOTIFY API WITH TIMEOUT '''
@@ -650,9 +650,8 @@ class nts:
             return(self.subrun(query))
         except RuntimeError:
             raise RuntimeError('Spotify API Broken')
-        except RuntimeWarning as error:
-            raise RuntimeWarning(error)
-        except Exception:
+        except Exception as error:
+            # print(error)
             self.connect()
             return(self.subrun(query))
 
@@ -1427,7 +1426,7 @@ class mt:
         self.c_lock.release()
         self.count += 1
 
-    @timeout(5.0)
+    @timeout(2.0)
     def task(self,taskid):
         if self.kind == 'spotify':
             result = self.nts._run(self.taskcopy[taskid])
