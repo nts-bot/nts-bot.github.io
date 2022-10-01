@@ -11,7 +11,7 @@ import script
 nts = script.nts()
 
 show = input('Input Show\n')
-nts.runscript([show])
+nts.runscript([show],True)
 
 # import datetime
 # shows = []

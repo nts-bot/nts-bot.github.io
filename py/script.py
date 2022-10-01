@@ -184,30 +184,9 @@ class nts:
         f[show] = 1
         self._d2j(f"./extra/reset",f)
 
-    def runscript(self,shows): #,bd=False,fast=False
-        bd = False
-        self.backup()
-        self.wait('connect',False)
-        #
-        self.connect()
-        o = {i:shows[i] for i in range(len(shows))}
-        print(o)
-        for i in range(len(shows)):
-            show = shows[i]
-            # reset 
-            if show not in self._j2d(f"./extra/reset"):
-                self._reset(show)
-            #
-            oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
-            print(f'{oo[:50]}{i}/{len(shows)}')
-            # SCRAPE / PRELIMINARY
-            v = self.review(show)
-            if v:
-                self.scrape(show,True) # short
-            else:
-                self.scrape(show) # long
-            # TRACKLIST
-            self.runner(show,"",1)
+    def subrunscript(self,show,debug=False):
+        global bd
+        if not debug:
             while True:
                 try:
                     # SPOTIFY
@@ -229,6 +208,45 @@ class nts:
                     raise RuntimeError(error)
                 except Exception as error:
                     print(error)
+        else:
+            # SPOTIFY
+            self.runner(show,f"./spotify_search_results/{show}",2)
+            self.runner(show,f"./spotify/{show}",3)
+            # BANDCAMP
+            if bd:
+                self.runner(show,f"./bandcamp_search_results/{show}",4)
+                self.runner(show,f"./bandcamp/{show}",5)
+            # ADD
+            if show not in self._j2d('./uploaded'):
+                self.spotifyplaylist(show)
+            else:
+                self.runner(show,f"./uploaded",6)
+
+    def runscript(self,shows,debug=False): #,bd=False,fast=False
+        global bd
+        bd = False
+        self.backup()
+        self.wait('connect',False)
+        #
+        self.connect()
+        o = {i:shows[i] for i in range(len(shows))}
+        print(o)
+        for i in range(len(shows)):
+            show = shows[i]
+            if show not in self._j2d(f"./extra/reset"):
+                self._reset(show)
+            oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
+            print(f'{oo[:50]}{i}/{len(shows)}')
+            # SCRAPE / PRELIMINARY
+            v = self.review(show)
+            if v:
+                self.scrape(show,True) # short
+            else:
+                self.scrape(show) # long
+            # TRACKLIST
+            self.runner(show,"",1)
+            # MAIN FUNCTIONS
+            self.subrunscript(show,debug)
             # HTML
             if bd:
                 self.showhtml(show)
@@ -962,16 +980,15 @@ class nts:
                         }
 
         # RUN MULTITHREADING
-
         MT = mt(taskdict,kind) # load class
         MT.multithreading(nw) # run threads
         repeat = True
-        while repeat: # re-run for failed threads
+        while repeat:
             if MT.double:
-                MT.multithreading(nw)
+                print('.Re-Threading.',end='\r')
+                MT.multithreading(nw,MT.double)
             else:
                 repeat = False
-
         return(MT.taskdict)
 
     def mt_request(self,content):
@@ -1323,30 +1340,7 @@ class nts:
             file = self._j2d(f'./{i}')
             self._d2j(f'./extra/{i}',file)
 
-
 # MULTITHREADING & WORKERS
-
-class __worker__(Thread):
-    def __init__(self, mt, request_queue):
-        Thread.__init__(self)
-        self.mt = mt
-        self.queue = request_queue
-        def run(self):
-            while not self.queue.empty():
-                taskid = self.queue.get_nowait()
-                if not taskid:
-                    break
-                start = time.time()
-                # TASK START
-                try:
-                    self.mt.task(taskid)
-                except:
-                    print('*',end='\r')
-                    self.mt.double += [taskid]
-                # TASK END
-                end = time.time()
-                print(f"|{self.mt.count}/{len(self.mt.keys)}/{round(end - start,2)}|",end='\r')
-                self.queue.task_done()
 
 class mt:
     def __init__(self, taskdict, kind): #, no_workers
@@ -1357,6 +1351,29 @@ class mt:
         self.kind = kind
 
     def multithreading(self,no_workers,keys=[]):
+
+        class __worker__(Thread):
+            def __init__(selbst, request_queue, t):
+                Thread.__init__(selbst)
+                selbst.t = t
+                selbst.queue = request_queue
+            def run(selbst):
+                while not selbst.queue.empty():
+                    taskid = selbst.queue.get_nowait()
+                    if not taskid:
+                        break
+                    start = time.time()
+                    # TASK START
+                    try:
+                        selbst.t.task(taskid)
+                    except:
+                        print('*',end='\r')
+                        selbst.t.double += [taskid]
+                    # TASK END
+                    end = time.time()
+                    print(f"|{selbst.t.count}/{len(selbst.t.keys)}/{round(end - start,2)}|",end='\r')
+                    selbst.queue.task_done()
+        
         self.count = 0
         self.double = []
         self.c_lock = Lock()
@@ -1374,7 +1391,7 @@ class mt:
                 
         workers = []
         for _ in range(no_workers):
-            worker = __worker__(self,workq)
+            worker = __worker__(workq, self) #self,
             worker.start()
             workers.append(worker)
 
@@ -1419,123 +1436,123 @@ class mt:
                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
 
-# def multithreading(taskdict, no_workers, kind):
 
-#     stn = nts()
-#     stn.connect()
-#     global count, wcount, thr, dbc
-#     dbc = []
-#     thr = True
-#     count = 0
-#     wcount = 0
-#     c_lock = Lock()
-#     taskcopy = dict(taskdict)
-#     amount = len(taskdict)
-#     keys = list(taskdict.keys())[::-1]
+def multithreading(taskdict, no_workers, kind):
 
-#     class __worker__(Thread):
-#         def __init__(self, request_queue):
-#             Thread.__init__(self)
-#             self.queue = request_queue
-#         def run(self):
-#             while not self.queue.empty():
-#                 taskid = self.queue.get_nowait()
-#                 if not taskid:
-#                     break
-#                 start = time.time()
-#                 # TASK START
-#                 try:
-#                     cont = task(kind,taskid)
-#                 except:
-#                     print('*',end='\r')
-#                     global dbc
-#                     dbc += [taskid]
-#                     cont = '!'
-#                 # TASK END
-#                 end = time.time()
-#                 print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
-#                 self.queue.task_done()
+    stn = nts()
+    stn.connect()
+    global count, thr, dbc
+    dbc = []
+    thr = True
+    count = 0
+    c_lock = Lock()
+    taskcopy = dict(taskdict)
+    amount = len(taskdict)
+    keys = list(taskdict.keys())[::-1]
 
-#     def counter(tid,result):
-#         global thr,count
-#         if thr:
-#             c_lock.acquire()
-#         # try:
-#         #     keys.remove(tid)
-#         taskdict[tid] = result
-#         # except:
-#         #     pass
-#         if thr:
-#             count += 1
-#             c_lock.release()
-#         return(count)
+    class __worker__(Thread):
+        def __init__(self, request_queue):
+            Thread.__init__(self)
+            self.queue = request_queue
+        def run(self):
+            while not self.queue.empty():
+                taskid = self.queue.get_nowait()
+                if not taskid:
+                    break
+                start = time.time()
+                # TASK START
+                try:
+                    cont = task(kind,taskid)
+                except:
+                    print('*',end='\r')
+                    global dbc
+                    dbc += [taskid]
+                    cont = '!'
+                # TASK END
+                end = time.time()
+                print(f"|{cont}/{amount}/{round(end - start,2)}|",end='\r')
+                self.queue.task_done()
 
-#     @timeout(20.0)
-#     def task(kind,taskid):
-#         if kind == 'spotify':
-#             result = stn._run(taskcopy[taskid])
-#             cont = counter(taskid,result)
-#         elif kind == 'rate':
-#             a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
-#             cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
-#         elif kind == 'bandcamp':
-#             time.sleep(1.0)
-#             result = stn.mt_request(taskcopy[taskid])
-#             soup = bs(result, "html.parser")
-#             if soup.select('.noresults-header'):
-#                 cont = counter(taskid,'') #-1
-#             else:
-#                 d = []
-#                 kk = len(soup.select('.subhead'))
-#                 if kk <= 3:
-#                     kr = kk
-#                 else:
-#                     kr = 3
-#                 for k in range(kr):
-#                     d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
-#                     'title':soup.select('.heading')[k].text.replace('\n','').strip(),
-#                     'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
-#                 cont = counter(taskid,d)
-#         elif kind == 'bmeta':
-#             soup = str(stn.mt_request(taskcopy[taskid]))
-#             cont = counter(taskid,{
-#                 'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
-#                 'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
-#         return(cont)
+    def counter(tid,result):
+        global thr,count
+        if thr:
+            c_lock.acquire()
+        # try:
+        #     keys.remove(tid)
+        taskdict[tid] = result
+        # except:
+        #     pass
+        if thr:
+            count += 1
+            c_lock.release()
+        return(count)
 
-#     # Create queue and add tasklist
-#     workq = queue.Queue()
-#     for k in keys:
-#         workq.put(k)
-#     for _ in range(no_workers):
-#         workq.put("")
-#     #        
-#     workers = []
-#     for _ in range(no_workers):
-#         worker = __worker__(workq)
-#         worker.start()
-#         workers.append(worker)
+    @timeout(20.0)
+    def task(kind,taskid):
+        if kind == 'spotify':
+            result = stn._run(taskcopy[taskid])
+            cont = counter(taskid,result)
+        elif kind == 'rate':
+            a0,t0,r0,u0 = stn.test(taskcopy[taskid]['s'],taskcopy[taskid]['qa'],taskcopy[taskid]['qt'])
+            cont = counter(taskid,{'a':a0,'t':t0,'r':r0,'u':u0})
+        elif kind == 'bandcamp':
+            time.sleep(1.0)
+            result = stn.mt_request(taskcopy[taskid])
+            soup = bs(result, "html.parser")
+            if soup.select('.noresults-header'):
+                cont = counter(taskid,'') #-1
+            else:
+                d = []
+                kk = len(soup.select('.subhead'))
+                if kk <= 3:
+                    kr = kk
+                else:
+                    kr = 3
+                for k in range(kr):
+                    d += [{'artist':soup.select('.subhead')[k].text.replace('\n','').split('by')[1].strip(),
+                    'title':soup.select('.heading')[k].text.replace('\n','').strip(),
+                    'uri':soup.select('.itemurl')[k].text.replace('\n','').strip()}]
+                cont = counter(taskid,d)
+        elif kind == 'bmeta':
+            soup = str(stn.mt_request(taskcopy[taskid]))
+            cont = counter(taskid,{
+                'album_id':re.findall(f'album_id&quot;:(.*?),',soup)[1],
+                'track_id':re.findall(f'track_id&quot;:(.*?),',soup)[0]})
+        return(cont)
+
+    # Create queue and add tasklist
+    workq = queue.Queue()
+    for k in keys:
+        workq.put(k)
+    for _ in range(no_workers):
+        workq.put("")
+    #        
+    workers = []
+    for _ in range(no_workers):
+        worker = __worker__(workq)
+        worker.start()
+        workers.append(worker)
     
-#     for worker in workers:
-#         worker.join()
+    for worker in workers:
+        worker.join()
 
-#     if dbc:
-#         # print(f'.DC:{len(dbc)}.',end='\r')
-#         # thr = False
-#         # c = 0
-#         # for taskid in dbc[::-1]:
-#         #     tf = True
-#         #     while tf:
-#         #         try:
-#         #             cont = task(kind,taskid)
-#         #             tf = False
-#         #             c+=1
-#         #             print(f'.*{c}:{len(dbc)}.',end='\r')
-#         #         except:
-#         #             print(f'.*!.',end='\r')
-#         #             time.sleep(1.0)
-#     print('.Threading.Complete.',end='\r')
-#     return(taskdict)
+    if dbc:
+        print(f'.DC:{len(dbc)}.',end='\r')
+        thr = False
+        c = 0
+        for taskid in dbc[::-1]:
+            tf = True
+            while tf:
+                try:
+                    cont = task(kind,taskid)
+                    tf = False
+                    c+=1
+                    print(f'.*{c}:{len(dbc)}.',end='\r')
+                except:
+                    print(f'.*!.',end='\r')
+                    time.sleep(1.0)
+    print('.Threading.Complete.',end='\r')
+    return(taskdict)
 
 # GIT PUSH
 
