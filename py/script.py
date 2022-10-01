@@ -1013,7 +1013,7 @@ class nts:
             pt = True
             while pt:
                 try:
-                    ply = self.you.get_playlist(shelf, 500)['tracks']
+                    ply = self.you.get_playlist(shelf, 100)['tracks']
                     response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply])
                 except KeyError as error:
                     print(error)
