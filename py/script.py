@@ -1352,6 +1352,11 @@ class mt:
 
     def multithreading(self,no_workers,keys=[]):
 
+        if not keys:
+            self.keys = list(self.taskdict.keys())[::-1]
+        else:
+            self.keys = list(keys)
+
         class __worker__(Thread):
             def __init__(selbst, request_queue, t):
                 Thread.__init__(selbst)
@@ -1377,11 +1382,6 @@ class mt:
         self.count = 0
         self.double = []
         self.c_lock = Lock()
-
-        if not keys:
-            self.keys = list(self.taskdict.keys())[::-1]
-        else:
-            self.keys = keys
 
         workq = queue.Queue()
         for k in self.keys:
