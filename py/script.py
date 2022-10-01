@@ -1004,11 +1004,8 @@ class nts:
         #
         if reset:
             print(f'.resetting.', end='\r')
-            try:
-                playlist = self.you.get_playlist(yid, 10000)['tracks']
-                response = self.you.remove_playlist_items(yid,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in playlist])
-            except Exception as error:
-                print(error)
+            ply = self.you.get_playlist(yid, 10000)
+            response = self.you.remove_playlist_items(yid,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply['tracks']])
             print(f'.complete.', end='\r')
         #
         if upend:
