@@ -161,7 +161,7 @@ class nts:
             print('%',end='\r')
             return(False)
             
-    def runner(self,show,path,command):
+    def runner(self,show,path,command): # WIP : fix youtube
         rq, do = self.prerun(f"./tracklist/{show}",path)
         if rq:
             print('!',end='\r')
