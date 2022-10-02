@@ -162,7 +162,10 @@ class nts:
             return(False)
             
     def runner(self,show,path,command): # WIP : fix youtube
-        rq, do = self.prerun(f"./tracklist/{show}",path)
+        if path.split('/')[-1] == show:
+            rq, do = self.prerun(f"./tracklist/{show}",path)
+        else:
+            rq, do = self.prerun(f"./tracklist/{show}",path,show)
         if rq:
             print('!',end='\r')
             if command == 1:
