@@ -1614,8 +1614,8 @@ class mt:
                 #     for j in result[:3]]
                 for i in range(2):
                     try:
-                        art = result[i]['artists'][0]['name']
-                        tit = result[i]['title']
+                        art = result[i]['artists'][0]['name'].replace('\n','')
+                        tit = result[i]['title'].replace('\n','')
                         if self.nts.ratio(art,self.taskcopy[taskid].split(' - ')[0]) <= 0.5:
                             tit = tit.replace('~','-').replace('–','-').replace(':','-').replace('_','-').replace('•','-')
                             art = tit.split('-')[0].strip()
