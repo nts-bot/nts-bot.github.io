@@ -171,21 +171,29 @@ class nts:
             if command == 1:
                 self.ntstracklist(show,do)
             elif command == 2:
+                print('Spotify')
                 self.searchloop(show,['tracklist','spotify_search_results'],'search',do)
             elif command == 2.5:
+                print('Youtube')
                 self.searchloop(show,['tracklist','youtube_search_results'],'yearn',do)
             elif command == 3:
+                print('Spotify-Rate')
                 self.searchloop(show,['tracklist','spotify','spotify_search_results'],'rate',do)
             elif command == 3.5:
+                print('Youtube-Rate')
                 self.searchloop(show,['tracklist','youtube','youtube_search_results'],'rate',do)
             elif command == 4:
+                print('Bandcamp')
                 self.searchloop(show,['tracklist','bandcamp_search_results','spotify'],'bandcamp',do)
             elif command == 5:
+                print('B-Meta')
                 self.searchloop(show,['tracklist','bandcamp','bandcamp_search_results'],'rate',do)
                 self.mt_bmeta(show)
             elif command == 6:
+                print('Spotify-Playlist')
                 self.spotifyplaylist(show)
             elif command == 6.5:
+                print('Youtube-Playlist')
                 self.youtubeplaylist(show)
 
     def _reset(self,show):
@@ -204,29 +212,25 @@ class nts:
     def scripts(self,show):
         global bd, yt
         # SPOTIFY
-        print('Spotify')
         self.runner(show,f"./spotify_search_results/{show}",2)
-        print('S-Rate')
         self.runner(show,f"./spotify/{show}",3)
         # YOUTUBE
         if yt:
-            print('Youtube')
             self.runner(show,f"./youtube_search_results/{show}",2.5)
-            print('Y-Rate')
             self.runner(show,f"./youtube/{show}",3.5)
         # BANDCAMP
         if bd:
             self.runner(show,f"./bandcamp_search_results/{show}",4)
             self.runner(show,f"./bandcamp/{show}",5)
         # ADD
-        print('S-Playlist')
         if show not in self._j2d('./uploaded'):
+            print('S-Playlist')
             self.spotifyplaylist(show)
         else:
             self.runner(show,f"./uploaded",6)
         if yt:
-            print('Y-Playlist')
             if show not in self._j2d('./yploaded'):
+                print('Y-Playlist')
                 self.youtubeplaylist(show)
                 time.sleep(1.0)
                 self.youtubeplaylist(show)
