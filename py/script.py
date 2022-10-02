@@ -1035,19 +1035,16 @@ class nts:
             response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
             print(f'.tracks appended.', end='\r')
         #
-        if 'pt' in locals():
-            while not pt:
-                try:
-                    ply = self.you.get_playlist(shelf, 10)['tracks']
-                    pt = True
-                except KeyError as error:
-                    print(error)
-                    time.sleep(1.0)
-                except: # tracks not uploaded
-                    print(f'.tracks re-appending.', end='\r')
-                    trackstoadd = [j for i in trackdict for j in trackdict[i]]
-                    response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
-                    print(f'.tracks re-appended.', end='\r')
+        if reset:
+            try:
+                ply = self.you.get_playlist(shelf, 10)['tracks']
+            except KeyError as error:
+                print(error)
+                time.sleep(1.0)
+                print(f'.tracks re-appending.', end='\r')
+                trackstoadd = [j for i in trackdict for j in trackdict[i]]
+                response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
+                print(f'.tracks re-appended.', end='\r')
         #
         self.you.edit_playlist(shelf,f"{title} - NTS",syn)
         self._d2j(f'./yploaded',uploaded)
