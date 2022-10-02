@@ -182,8 +182,6 @@ class nts:
                 self.spotifyplaylist(show)
             elif command == 6.5:
                 self.youtubeplaylist(show)
-                time.sleep(1.0)
-                self.youtubeplaylist(show)
 
     def _reset(self,show):
         print('.RESET.')
