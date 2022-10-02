@@ -73,6 +73,8 @@ class nts:
         self.model = fasttext.load_model("./extra/lid.176.ftz") #bin is more accurate
         # YOUTUBE
         self.you = ytm(auth='./headers_auth.json',user=os.getenv("uid"))
+        # LOCK
+        self.lock = Lock()
 
     # LOCAL DATABASE
 
@@ -491,13 +493,14 @@ class nts:
     def connect(self):
         ''' CONNECTION HANDLER ; VIA https://developer.spotify.com/dashboard/applications '''
         index = ['a','b','c','d','e','f','g','h','i','j','k','l']
-        self.wait('connect',True)
+        self.lock.acquire()
         try:
             with open('./extra/spotipywebapi.pickle', 'rb') as handle:
                 pick = pickle.load(handle)
             print(index[pick],end=' ')
             self.subconnect(index,pick)
-            self.wait('connect',False)
+            time.sleep(1.0)
+            self.lock.release()
         except Exception:
             self.conexcp()
 
@@ -523,29 +526,30 @@ class nts:
                 pickle.dump(pick, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
             self.subconnect(index,pick)
-            self.wait('connect',False)
+            time.sleep(1.0)
+            self.lock.release()
 
         except Exception:
             self.conexcp()
 
-    def wait(self,path,op=True):
-        if not op:
-            with open(f'./extra/{path}.pickle', 'wb') as handle:
-                pickle.dump(0, handle, protocol=pickle.HIGHEST_PROTOCOL)
-        else:
-            try:
-                with open(f'./extra/{path}.pickle', 'rb') as handle:
-                    pick = pickle.load(handle)
-                if pick == 0:
-                    with open(f'./extra/{path}.pickle', 'wb') as handle:
-                        pickle.dump(1, handle, protocol=pickle.HIGHEST_PROTOCOL)
-                else:
-                    time.sleep(0.1)
-                    self.wait(path,op)
-            except Exception as error:
-                print(f'.W.{error}.',end='\r')
-                time.sleep(1.0)
-                self.wait(path,op)
+    # def wait(self,path,op=True):
+    #     if not op:
+    #         with open(f'./extra/{path}.pickle', 'wb') as handle:
+    #             pickle.dump(0, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    #     else:
+    #         try:
+    #             with open(f'./extra/{path}.pickle', 'rb') as handle:
+    #                 pick = pickle.load(handle)
+    #             if pick == 0:
+    #                 with open(f'./extra/{path}.pickle', 'wb') as handle:
+    #                     pickle.dump(1, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    #             else:
+    #                 time.sleep(0.1)
+    #                 self.wait(path,op)
+    #         except Exception as error:
+    #             print(f'.W.{error}.',end='\r')
+    #             time.sleep(1.0)
+    #             self.wait(path,op)
 
     # SPOTIFY SEARCH
 
@@ -863,7 +867,7 @@ class nts:
                     pup += [rate[ep][tr]['trackid']]
                     if not rate[ep][tr]['trackid']:
                         mis += 1
-                    if rate[ep][tr]['ratio'] == 6:
+                    if rate[ep][tr]['ratio'] in [6]:
                         almost += 1
                     # if rate[ep][tr]['ratio'] == 5: #threshold[0]  <= 
                     #     unsure += 1
@@ -995,7 +999,7 @@ class nts:
                     pup += [rate[ep][tr]['trackid']]
                     if not rate[ep][tr]['trackid']:
                         mis += 1
-                    if rate[ep][tr]['ratio'] in [4,5]:
+                    if rate[ep][tr]['ratio'] in [4]:
                         almost += 1
         #
         self._d2j(f'./youtube/{show}',rate)

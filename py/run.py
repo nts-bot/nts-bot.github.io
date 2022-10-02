@@ -9,7 +9,7 @@ dr = os.getenv("directory")
 os.chdir(f"{dr}/py")
 import script
 nts = script.nts()
-nts.wait('connect',False)
+# nts.wait('connect',False)
 # soup = nts.browse("https://www.nts.live/nts-picks",amount=100) 
 soup = nts.browse("https://www.nts.live/latest",amount=15)
 episodes = soup.select('a.nts-grid-v2-item__header')
