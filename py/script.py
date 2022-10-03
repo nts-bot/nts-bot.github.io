@@ -108,8 +108,12 @@ class nts:
         if json2:
             jsm = self._j2d(json2)
             if meta:
-                js2 = jsm[meta]
-                # self._d2j(json2,jsm)
+                try:
+                    js2 = jsm[meta]
+                except KeyError:
+                    jsm[meta] = dict()
+                    self._d2j(json2,jsm)
+                    js2 = jsm[meta]
             else:
                 js2 = jsm
         #
@@ -653,35 +657,7 @@ class nts:
                     eval(jsonlist[1])[episode][td] = req[episode][td]
             self._d2j(f'./{jsonlist[1]}/{show}',eval(jsonlist[1]))
 
-    # SPOTIFY/YOUTUBE SEARCH/RATE SUBFUNCTIONS
-
-    @timeout(15.0)
-    def subrun(self,query):
-        ''' RUN SPOTIFY API '''
-        try:
-            result = self.sp.search(q=query, type="track,artist")
-            if result is None:
-                raise RuntimeError
-            else:
-                return(result)
-        except spotipy.SpotifyException as error:
-            if error.http_status == 400: # HTTP ERROR
-                return({'tracks':{'items':''}})
-            elif error.http_status == 429: # MAX RETRY ERROR
-                time.sleep(3.0)
-                return(self.subrun(query))
-            else:
-                raise RuntimeWarning(error)
-            
-    def _run(self,query):
-        ''' RUN SPOTIFY API WITH TIMEOUT '''
-        try:
-            return(self.subrun(query))
-        except RuntimeError:
-            raise RuntimeError('Spotify API Broken')
-        except Exception as error:
-            self.connect()
-            return(self.subrun(query))
+    # RATE FUNCTIONS
 
     def tbool(self,tex):
         trans = False
@@ -1118,6 +1094,36 @@ class nts:
             for i in creds:
                 u += [creds[i]['user']]
             spot.user_follow_users(u)
+
+    # SPOTIFY API SEARCH FUNCTIONS
+
+    @timeout(15.0)
+    def subrun(self,query):
+        ''' RUN SPOTIFY API '''
+        try:
+            result = self.sp.search(q=query, type="track,artist", limit=3)
+            if result is None:
+                raise RuntimeError
+            else:
+                return(result)
+        except spotipy.SpotifyException as error:
+            if error.http_status == 400: # HTTP ERROR
+                return({'tracks':{'items':''}})
+            elif error.http_status == 429: # MAX RETRY ERROR
+                time.sleep(3.0)
+                return(self.subrun(query))
+            else:
+                raise RuntimeWarning(error)
+            
+    def _run(self,query):
+        ''' RUN SPOTIFY API WITH TIMEOUT '''
+        try:
+            return(self.subrun(query))
+        except RuntimeError:
+            raise RuntimeError('Spotify API Broken')
+        except Exception as error:
+            self.connect()
+            return(self.subrun(query))
 
     # MULTITHREADING FUNCTIONS
 
@@ -1588,8 +1594,10 @@ class mt:
                 takeaway = [{'artist':j['artists'][0]['name'],
                 'title':j['name'],
                 'uri':j['uri'].split(':')[-1]}
-                for j in result['tracks']['items'][:3]]
-            else:
+                for j in result['tracks']['items'][:3] if j is not None]
+            # else:
+            #     takeaway = ''
+            if 'takeaway' not in locals():
                 takeaway = ''
             self.counter(taskid,takeaway)
         elif self.kind == 'rate':
