@@ -13,22 +13,26 @@ from selenium.webdriver.common.keys import Keys
 import spotipy
 # YOUTUBE API TOOL
 from ytmusicapi import YTMusic as ytm
-# MULTITHREADING TASKS
-import queue
 # IMAGE PROCESSING TOOLS
 import cv2, base64
 from PIL import Image
-# THE TRANSLATOR & COMPARISON TOOLS
+# TRANSLATORS
 from googletrans import Translator as ggt
 trans_1 = ggt()
 trans_1.raise_Exception = True
 from translate import Translator as ttt
 from unidecode import unidecode
-import unihandecode, fasttext # japanese, korea, mandarin &c.
+## PARSING NONLATIN SCRIPT & MACHINE LEARNING LANGUAGE IDENTIFICATION MODEL
+import unihandecode, fasttext
+# TEXT COMPARISON TOOL
 from difflib import SequenceMatcher
-# TIMEOUT FUNCTION
-import functools
+# MULTITHREADING TASKS
+import queue
 from threading import Thread, Lock
+## TIMEOUT FUNCTION PACKAGES
+import functools
+## LOCK
+lock = Lock()
 # ENVIRONMENT VARIABLES
 from dotenv import load_dotenv
 load_dotenv()
@@ -58,11 +62,13 @@ def timeout(timeout):
         return wrapper
     return deco
 
+os.chdir(os.getenv("directory"))
+lid_model = fasttext.load_model("./extra/lid.176.ftz")
+
 class nts:
 
     def __init__(self):
-        dr = os.getenv("directory")
-        os.chdir(f"{dr}")
+        os.chdir(os.getenv("directory"))
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
         try:
             self.meta = self._j2d(f'./meta')
@@ -70,11 +76,11 @@ class nts:
             print('.META ERROR.')
             self.meta = self._j2d(f'./extra/meta')
             self._d2j(f'./meta',self.meta)
-        self.model = fasttext.load_model("./extra/lid.176.ftz") #bin is more accurate
+        self.model = lid_model #bin is more accurate
         # YOUTUBE
         self.you = ytm(auth='./headers_auth.json',user=os.getenv("uid"))
         # LOCK
-        self.lock = Lock()
+        self.lock = lock
 
     # LOCAL DATABASE
 
@@ -507,7 +513,7 @@ class nts:
 
     def connect(self):
         ''' CONNECTION HANDLER ; VIA https://developer.spotify.com/dashboard/applications '''
-        index = ['a','b','c','d','e','f','g','h','i','j','k','l']
+        index = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o']
         self.lock.acquire()
         try:
             with open('./extra/spotipywebapi.pickle', 'rb') as handle:
@@ -1514,7 +1520,8 @@ class nts:
 class mt:
     def __init__(self, taskdict, kind): #, no_workers
         self.nts = nts()
-        self.nts.connect()
+        if kind == 'spotify':
+            self.nts.connect()
         self.taskdict = taskdict
         self.taskcopy = dict(self.taskdict)
         self.kind = kind
@@ -1558,8 +1565,7 @@ class mt:
             @timeout(20.0)
             def task20(selbst,taskid):
                 selbst.t.task(taskid)
-                
-        
+                 
         self.count = 0
         self.double = []
         self.c_lock = Lock()
