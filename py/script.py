@@ -106,9 +106,12 @@ class nts:
     def prerun(self,json1,json2='',meta=''):
         js1 = self._j2d(json1)
         if json2:
-            js2 = self._j2d(json2)
+            jsm = self._j2d(json2)
             if meta:
-                js2 = js2[meta]
+                js2 = jsm[meta]
+                # self._d2j(json2,jsm)
+            else:
+                js2 = jsm
         #
         ok = [False]
         do = []
@@ -161,7 +164,7 @@ class nts:
             print('%',end='\r')
             return(False)
             
-    def runner(self,show,path,command): # WIP : fix youtube
+    def runner(self,show,path,command):
         if path.split('/')[-1] == show:
             rq, do = self.prerun(f"./tracklist/{show}",path)
         else:
@@ -260,6 +263,7 @@ class nts:
                 self.scrape(show) # long
             # TRACKLIST
             self.runner(show,"",1)
+
             # MAIN FUNCTIONS
             if not debug:
                 while True:
