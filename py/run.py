@@ -21,4 +21,4 @@ for i in episodes:
     if show not in shelf:
         shelf[show] = [epis]
         
-nts.runscript(list(shelf.keys()))#,bd=False,fast=True)
+nts.runscript(list(shelf.keys())[::-1],True)#,bd=False,fast=True)
