@@ -554,6 +554,7 @@ class nts:
             self.conexcp()
 
     # def wait(self,path,op=True):
+    ''' DIY ALTERNATIVE TO LOCK() '''
     #     if not op:
     #         with open(f'./extra/{path}.pickle', 'wb') as handle:
     #             pickle.dump(0, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -701,6 +702,7 @@ class nts:
         return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('originally','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','')#.replace('y','i')
 
     def _ratio(self,x,y,z,var=-1):
+        ''' RETURN MAX RATIO FROM TEXT COMPARISON ''' 
         if var == -1:
             return([max([self.ratio(x,y), self.ratio(y,x)]), 
                 max([self.ratio(x,z), self.ratio(z,x)])])
@@ -783,13 +785,13 @@ class nts:
 
     @timeout(50.0)
     def spotifyplaylist(self,show,threshold=[6,10],reset=False):
-        ''' APPEND/CREATE/REMOVE FROM SPOTIFY PLAYLIST '''
+        ''' APPEND-FROM/CREATE SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         meta = self.meta[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
-        #
         uploaded = self._j2d(f'./uploaded')
-        #
+
+        ''' IF NEW SHOW, OR IF EPISODE IS OLDER THAN CURRENTLY UPLOADED '''
         if show not in uploaded:
             uploaded[show] = dict()
             print(f'.reset.',end='\r')
@@ -806,19 +808,22 @@ class nts:
                 print(f'.reset.',end='\r')
                 reset = True
 
-        #
-        
+        ''' EMPTY PARAMETERS TO FILL '''        
         tid = []
         trackdict = dict()
         pup = []
         mis = 0
         almost = 0
         unsure = 0
-
-        #
-
         f = True
         ff = 0
+        upend = False
+        
+        ''' LOAD DATA '''
+        showlist = self._j2d(f'./tracklist/{show}')
+        rate = self._j2d(f'./youtube/{show}')
+
+        ''' GET SHOW EPISODES LATEST & OLDEST DATES '''   
         while f:
             fp = sortmeta[ff][0].split('.')
             firstep = f"{fp[2]}.{fp[1]}.{fp[0]}"
@@ -829,12 +834,7 @@ class nts:
         lp = sortmeta[-1][0].split('.')
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
 
-        #
-
-        showlist = self._j2d(f'./tracklist/{show}')
-        rate = self._j2d(f'./spotify/{show}')
-        upend = False
-
+        ''' LOOP : GET (NEW) TRACKS TO UPLOAD (ACCORDING TO THRESHOLD) '''
         for mt in sortmeta[::-1]:
             ep = mt[1]
             trackdict[ep] = []
@@ -862,13 +862,15 @@ class nts:
                         mis += 1
                     if rate[ep][tr]['ratio'] in [6]:
                         almost += 1
-                    # if rate[ep][tr]['ratio'] == 5: #threshold[0]  <= 
-                    #     unsure += 1
 
+        ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./spotify/{show}',rate)
+
+        ''' GET NUMBER OF DUPLICATE TRACKS '''
         tidup = self.scene(tid[::-1])[::-1]
         dups = len(tid) - len(tidup)
 
+        ''' RESET CONDITION '''
         if reset:
             current = self.sp.user_playlist_tracks(self.user,pid)
             tracks = current['items']
@@ -884,6 +886,7 @@ class nts:
                 print(f'.resetting.',end='\r')
                 self.sp.user_playlist_remove_all_occurrences_of_tracks(self.user, pid, i)
 
+        ''' UPLOAD '''
         if upend:
             print(f'.tracks appending.', end='\r')
             for episode in list(trackdict.keys())[::-1]:
@@ -894,29 +897,31 @@ class nts:
                         self.sp.user_playlist_add_tracks(self.user, pid, i,0)
             print(f'.tracks appended.', end='\r')
             
+        ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
             almost = f'{almost} unsure ;'
         else:
             almost = ''
-        if unsure:
-            unsure = f' {unsure} maybe ;'
-        else:
-            unsure = ''
         duplicates = f' {dups} repeated ;'
 
+        ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-
-        syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{unsure}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
+        syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
+        
+        ''' UPDATE SPOTIFY PLAYLIST DETAILS '''
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
         x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}. {syn}")
 
+        ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./uploaded',uploaded)
 
     def youtubeplaylist(self,show,threshold=[4,10],reset=False):
+        ''' APPEND-FROM/CREATE YOUTUBE PLAYLIST '''
         yid = self._j2d('./yid')
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
-        #
+
+        ''' SIMPLIFICATION OF "PID" FUNCTION '''
         try:
             shelf = yid[show]
         except:
@@ -926,9 +931,9 @@ class nts:
         #
         meta = self.meta[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
-        #
         uploaded = self._j2d(f'./yploaded')
-        #
+        
+        ''' IF NEW SHOW, OR IF EPISODE IS OLDER THAN CURRENTLY UPLOADED '''
         if show not in uploaded:
             uploaded[show] = dict()
             print(f'.reset.',end='\r')
@@ -944,15 +949,22 @@ class nts:
                 uploaded[show] = dict() # reset upload
                 print(f'.reset.',end='\r')
                 reset = True
-        #
+        
+        ''' EMPTY PARAMETERS TO FILL '''
         tid = []
         trackdict = dict()
         pup = []
         mis = 0
         almost = 0
-        #
         f = True
         ff = 0
+        upend = False
+
+        ''' LOAD DATA '''
+        showlist = self._j2d(f'./tracklist/{show}')
+        rate = self._j2d(f'./youtube/{show}')
+        
+        ''' GET SHOW EPISODES LATEST & OLDEST DATES '''
         while f:
             fp = sortmeta[ff][0].split('.')
             firstep = f"{fp[2]}.{fp[1]}.{fp[0]}"
@@ -962,11 +974,8 @@ class nts:
                 ff += 1
         lp = sortmeta[-1][0].split('.')
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
-        #
-        showlist = self._j2d(f'./tracklist/{show}')
-        rate = self._j2d(f'./youtube/{show}')
-        upend = False
-        #
+        
+        ''' LOOP : GET (NEW) TRACKS TO UPLOAD (ACCORDING TO THRESHOLD) '''
         for mt in sortmeta[::-1]:
             ep = mt[1]
             trackdict[ep] = []
@@ -994,19 +1003,24 @@ class nts:
                         mis += 1
                     if rate[ep][tr]['ratio'] in [4]:
                         almost += 1
-        #
+        
+        ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./youtube/{show}',rate)
+
+        ''' GET NUMBER OF DUPLICATE TRACKS '''
         tidup = self.scene(tid[::-1])[::-1]
         dups = len(tid) - len(tidup)
-        #
+        ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
             almost = f'{almost} unsure ;'
         else:
             almost = ''
         duplicates = f' {dups} repeated ;'
-        #
+        
+        ''' DESCRIPTION '''
         syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
-        #
+        
+        ''' RESET CONDITION '''
         if reset:
             print(f'.resetting.', end='\r')
             pt = True
@@ -1021,15 +1035,17 @@ class nts:
                     print(error)
                     pt = False
             print(f'.complete.', end='\r')
-        #
+
         time.sleep(2.0)
-        #
+
+        ''' UPLOAD '''
         if upend:
             print(f'.tracks appending.', end='\r')
             trackstoadd = [j for i in trackdict for j in trackdict[i]]
             response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
             print(f'.tracks appended.', end='\r')
-        #
+        
+        ''' YOUTUBE UPLOADBUG DOUBLECHECK '''
         if reset:
             try:
                 ply = self.you.get_playlist(shelf, 10)['tracks']
@@ -1040,8 +1056,11 @@ class nts:
                 trackstoadd = [j for i in trackdict for j in trackdict[i]]
                 response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                 print(f'.tracks re-appended.', end='\r')
-        #
+        
+        ''' YOUTUBE UPLOADBUG FINALCHECK '''
         self.you.edit_playlist(shelf,f"{title} - NTS",syn)
+
+        ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./yploaded',uploaded)
 
     def follow(self,kind='cre'):
@@ -1132,8 +1151,11 @@ class nts:
             return(self.subrun(query))
 
     # MULTITHREADING FUNCTIONS
+    ## IT IS POSSIBLE TO COMBINE/GENERALISE ALL OF THESE INTO ONE FUNCTION
 
     def qmt(self,q,kind,nw=16):
+        ''' GENERAL MULTITHREADING FUNCTION '''
+        ''' COMBINE DICTIONARIES INTO FLAT DICTIONARY (INDEX-DATA = NEW-KEY) '''
         q1 = q[0]
         taskdict = {f"q1.{l1:03}.{l2:03}":q1[list(q1.keys())[l1]][list(q1[list(q1.keys())[l1]].keys())[l2]] 
                     for l1 in range(len(q1)) 
@@ -1146,18 +1168,21 @@ class nts:
                         for l2 in range(len(q2[list(q2.keys())[l1]]))
                         }
 
-        # RUN MULTITHREADING
+        ''' RUN MULTITHREAD (5 second TIMEOUT) '''
         MT = mt(taskdict,kind) # load class
         MT.multithreading(nw) # run threads
+        ''' RE-RUN MULTITHREAD FOR SKIPPED (20 second TIMEOUT) '''
         if MT.double:
             print('.Re-Threading.',end='\r')
             MT.multithreading(8,MT.double)
+        ''' RE-RE-RUN WITHOUT MULTITHREADING (AS LAST RESORT) FOR SKIPPED (NO TIMEOUT) '''
         if MT.double:
-            print('.ReRe-Threading.',end='\r')
+            print('.Re-Re-Threading.',end='\r')
             MT.nothread(MT.double)
         return(MT.taskdict)
 
     def mt_request(self,content):
+        ''' REQUESTS FUNCTION '''
         c = 0
         request = urllib.request.Request(content)
         repeat = True
@@ -1171,6 +1196,7 @@ class nts:
                 time.sleep(1.0)
 
     def mt_spotifysearch(self,showson,multiple):
+        ''' SPOTIFY SEARCH : DICTIONARY MAKER '''
         q1 = dict()
         q2 = dict()
         for episode in multiple:
@@ -1182,6 +1208,7 @@ class nts:
         return(self.mt_samp(q1,q2))
 
     def mt_samp(self,q1,q2):
+        ''' SPOTIFY SEARCH : RUN MULTITHREAD AND RECREATE DICTIONARY FROM RESULT '''
         taskdict = self.qmt([q1,q2],'spotify',32)
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
@@ -1193,7 +1220,7 @@ class nts:
         return(q1)
 
     def mt_streamrate(self,showson,srchson,multiple):
-
+        ''' RATE RESULTS FROM YOUTUBE/SPOTIFY/BANDCAMP : DICTIONARY MAKER '''
         q1 = dict()
         q2 = dict()
         for episode in multiple:
@@ -1216,6 +1243,7 @@ class nts:
         return(self.mt_rate(q1,q2))
 
     def mt_rate(self,q1,q2):
+        ''' RATE RESULTS FROM YOUTUBE/SPOTIFY/BANDCAMP : RUN MULTITHREAD AND RECREATE DICTIONARY FROM RESULT '''
         taskdict = self.qmt([q1,q2],'rate',16)
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
@@ -1254,7 +1282,7 @@ class nts:
         return(q1)
 
     def mt_bandcamp(self,showson,rateson,multiple):
-        
+        ''' BANDCAMP SEARCH : DICTIONARY MAKER '''
         q1 = dict()
         q2 = dict()
         for episode in multiple:
@@ -1277,6 +1305,7 @@ class nts:
         return(self.mt_camp(q1,q2))
 
     def mt_camp(self,q1,q2):
+        ''' BANDCAMP SEARCH : RUN MULTITHREAD AND RECREATE DICTIONARY FROM RESULT '''
         taskdict = self.qmt([q1],'bandcamp',8)
         q12 = dict()
         for l1 in range(len(q1)):
@@ -1289,6 +1318,7 @@ class nts:
                     q12[episode][td] = q2[episode][td]
                 else:
                     q1[episode][td] = {'s0':taskdict[f"q1.{l1:03}.{l2:03}"],'s1':''}
+        ''' BANDCAMP SEARCH : RE-RUN MULTITHREAD FOR "NO RESULTS FOUND" SEARCHES USING SPOTIFY RESULTS '''
         if q12:
             print('.running-twice.',end='\r')
             td2 = self.qmt([q12],'bandcamp',8)
@@ -1296,11 +1326,11 @@ class nts:
                 episode = list(q12.keys())[l1]
                 for l2 in range(len(q12[list(q12.keys())[l1]])): # td are tracks
                     td = list(q12[list(q12.keys())[l1]].keys())[l2]
-                    q1[episode][td] = {'s0':'','s1':td2[f"q1.{l1:03}.{l2:03}"]}
-                    
+                    q1[episode][td] = {'s0':'','s1':td2[f"q1.{l1:03}.{l2:03}"]}       
         return(q1)
 
     def mt_bmeta(self,show):
+        ''' BANDCAMP METADATA MULTITHREAD FUNCTION '''
         bandcamp = self._j2d(f'./bandcamp/{show}')
         q1 = dict()
         for e in bandcamp:
@@ -1321,6 +1351,7 @@ class nts:
         self._d2j(f'./bandcamp/{show}',bandcamp)
 
     def mt_youtubesearch(self,showson,multiple):
+        ''' YOUTUBE SEARCH : DICTIONARY MAKER '''
         q1 = dict()
         for episode in multiple:
             q1[episode] = dict()
@@ -1329,6 +1360,7 @@ class nts:
         return(self.mt_tube(q1))
 
     def mt_tube(self,q1):
+        ''' YOUTUBE SEARCH : RUN MULTITHREAD AND RECREATE DICTIONARY FROM RESULT '''
         taskdict = self.qmt([q1],'youtube',32)
         for l1 in range(len(q1)):
             episode = list(q1.keys())[l1]
@@ -1338,7 +1370,7 @@ class nts:
                 q1[episode][td] = {'s0':S0,'s1':''}
         return(q1)
 
-    # HTML MAKER
+    # HTML MAKER : CF. https://nts-bot.github.io
 
     def home(self):
         doc = """
@@ -1508,7 +1540,7 @@ class nts:
         with open(f"./html/{show}.html", 'w', encoding='utf8') as f:
             f.write(pretty)
 
-    # BACKUP
+    # BACKUP META & PID IN CASE SCRIPT CRASHES
 
     def backup(self):
         for i in ['meta','pid']:
@@ -1672,7 +1704,7 @@ class mt:
             print(f'.{c}:{len(keys)}.',end='\r')
             self.task(taskid)
 
-# GIT PUSH
+# HOW TO GIT PUSH WITH PYTHON W/ SSH KEYS (MAKE SURE config IN ./git IS SETUP CORRECTLY)
 
 import git
 def _git():
