@@ -763,7 +763,7 @@ class nts:
         seen = set()
         return [x for x in sequence if not (x in seen or seen.add(x))]
 
-    @timeout(120.0)
+    @timeout(300.0)
     def spotifyplaylist(self,show,threshold=[6,10],reset=False):
         ''' APPEND-FROM/CREATE SPOTIFY PLAYLIST '''
         pid = self.pid(show)
