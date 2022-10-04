@@ -553,26 +553,6 @@ class nts:
         except Exception:
             self.conexcp()
 
-    # def wait(self,path,op=True):
-    ''' DIY ALTERNATIVE TO LOCK() '''
-    #     if not op:
-    #         with open(f'./extra/{path}.pickle', 'wb') as handle:
-    #             pickle.dump(0, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    #     else:
-    #         try:
-    #             with open(f'./extra/{path}.pickle', 'rb') as handle:
-    #                 pick = pickle.load(handle)
-    #             if pick == 0:
-    #                 with open(f'./extra/{path}.pickle', 'wb') as handle:
-    #                     pickle.dump(1, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    #             else:
-    #                 time.sleep(0.1)
-    #                 self.wait(path,op)
-    #         except Exception as error:
-    #             print(f'.W.{error}.',end='\r')
-    #             time.sleep(1.0)
-    #             self.wait(path,op)
-
     # SPOTIFY SEARCH
 
     def pid(self,show):
@@ -821,7 +801,7 @@ class nts:
         
         ''' LOAD DATA '''
         showlist = self._j2d(f'./tracklist/{show}')
-        rate = self._j2d(f'./youtube/{show}')
+        rate = self._j2d(f'./spotify/{show}')
 
         ''' GET SHOW EPISODES LATEST & OLDEST DATES '''   
         while f:
