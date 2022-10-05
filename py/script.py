@@ -728,10 +728,11 @@ class nts:
         if not (x == 1 and y == 1):
             X1 = (X1 + min(x,y))/2
             Y1 = (Y1 + min(x,y))/2
-            Z1 = (Z1 + min(x,y))/2
+            # Z1 = (Z1 + min(x,y))/2
             result = (X1+Y1+Z1)/3
 
         result = (X1+Y1+Z1)/3
+        # result = (Z1+)
 
         if (result < 0.55) and (any([t1,t2,t3,t4])):
             result = self.comp(a,b,c,d,second=True) + 0.05
