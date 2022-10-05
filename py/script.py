@@ -212,7 +212,7 @@ class nts:
     def _reset(self,show):
         print('.RESET.')
         self._d2j(f"./spotify_search_results/{show}",dict())
-        self._d2j(f"./spotify/{show}",dict())
+        # self._d2j(f"./spotify/{show}",dict())
         # self._d2j(f"./bandcamp_search_results/{show}",dict())
         # self._d2j(f"./bandcamp/{show}",dict())
         # d = self._j2d(f"./uploaded")
