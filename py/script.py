@@ -212,7 +212,7 @@ class nts:
     def _reset(self,show):
         print('.RESET.')
         self._d2j(f"./spotify_search_results/{show}",dict())
-        # self._d2j(f"./spotify/{show}",dict())
+        self._d2j(f"./spotify/{show}",dict())
         # self._d2j(f"./bandcamp_search_results/{show}",dict())
         # self._d2j(f"./bandcamp/{show}",dict())
         # d = self._j2d(f"./uploaded")
@@ -732,7 +732,6 @@ class nts:
             result = (X1+Y1+Z1)/3
 
         result = (X1+Y1+Z1)/3
-        # result = (Z1+)
 
         if (result < 0.55) and (any([t1,t2,t3,t4])):
             result = self.comp(a,b,c,d,second=True) + 0.05
@@ -1020,11 +1019,15 @@ class nts:
         time.sleep(2.0)
 
         ''' UPLOAD '''
+        number = 5000
         if upend:
-            print(f'.tracks appending.', end='\r')
-            trackstoadd = [j for i in trackdict for j in trackdict[i]]
-            response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
-            print(f'.tracks appended.', end='\r')
+            try:
+                print(f'.tracks appending.', end='\r')
+                trackstoadd = [j for i in trackdict for j in trackdict[i]][:number] # 5000 upload limit
+                response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
+                print(f'.tracks appended.', end='\r')
+            except:
+                number -= 100
         
         ''' YOUTUBE UPLOADBUG DOUBLECHECK '''
         if reset:
@@ -1032,11 +1035,14 @@ class nts:
                 ply = self.you.get_playlist(shelf, 10)['tracks']
             except KeyError as error:
                 print(error)
-                time.sleep(1.0)
-                print(f'.tracks re-appending.', end='\r')
-                trackstoadd = [j for i in trackdict for j in trackdict[i]]
-                response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
-                print(f'.tracks re-appended.', end='\r')
+                try:
+                    time.sleep(1.0)
+                    print(f'.tracks re-appending.', end='\r')
+                    trackstoadd = [j for i in trackdict for j in trackdict[i]][:number]
+                    response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
+                    print(f'.tracks re-appended.', end='\r')
+                except:
+                    number -= 100
         
         ''' YOUTUBE UPLOADBUG FINALCHECK '''
         self.you.edit_playlist(shelf,f"{title} - NTS",syn)
