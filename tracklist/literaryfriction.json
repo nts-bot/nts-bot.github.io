@@ -1,7 +1,7 @@
 {
-    "literary-friction-14th-july-2021": {},
-    "literary-friction-16th-june-2021": {},
-    "literary-friction-19th-may-2021": {},
+    "literary-friction-14th-july-2021": "",
+    "literary-friction-16th-june-2021": "",
+    "literary-friction-19th-may-2021": "",
     "literary-friction-1st-december-2021": {
         "00": {
             "artist": "Loma",
@@ -16,10 +16,58 @@
             "title": "Oranges"
         }
     },
-    "literary-friction-20th-october-2020": {},
-    "literary-friction-21st-april-2021": {},
-    "literary-friction-22nd-november-2020": {},
-    "literary-friction-24th-february-2021": {},
+    "literary-friction-20th-october-2020": {
+        "00": {
+            "artist": "YMO",
+            "title": "Light In Darkness"
+        },
+        "01": {
+            "artist": "Marker Starling",
+            "title": "Silk Rock (Marker Starling Version)"
+        },
+        "02": {
+            "artist": "Daniel Avery",
+            "title": "A Story In E5"
+        }
+    },
+    "literary-friction-21st-april-2021": {
+        "00": {
+            "artist": "Cecilla Lundh",
+            "title": "Bushwick"
+        },
+        "01": {
+            "artist": "Dylan Sitts",
+            "title": "Swimmingly"
+        },
+        "02": {
+            "artist": "Amber Spill",
+            "title": "Lougin"
+        }
+    },
+    "literary-friction-22nd-november-2020": {
+        "00": {
+            "artist": "Music Esporadica",
+            "title": "I Forgot The Shirts"
+        },
+        "01": {
+            "artist": "Music Esporadica",
+            "title": "Music Esporadica"
+        }
+    },
+    "literary-friction-24th-february-2021": {
+        "00": {
+            "artist": "Men I Trust",
+            "title": "Alright"
+        },
+        "01": {
+            "artist": "Mulatu Astatke, ",
+            "title": "To Know Without Knowing"
+        },
+        "02": {
+            "artist": "Julie Driscoll, Brian Auger & The Trinity",
+            "title": "Let The Sunshine In"
+        }
+    },
     "literary-friction-24th-june-2022": {
         "00": {
             "artist": "Frazy Ford",
@@ -34,8 +82,38 @@
             "title": "Done"
         }
     },
-    "literary-friction-24th-march-2021": {},
-    "literary-friction-27th-january-2021": {},
+    "literary-friction-24th-march-2021": {
+        "00": {
+            "artist": "Cecilla Lundh",
+            "title": "Bushwick"
+        },
+        "01": {
+            "artist": "Kizis",
+            "title": "Redbody"
+        },
+        "02": {
+            "artist": "Dylan Sitts",
+            "title": "Swimmingly"
+        },
+        "03": {
+            "artist": "Amber Spill",
+            "title": "Lougin"
+        }
+    },
+    "literary-friction-27th-january-2021": {
+        "00": {
+            "artist": "Sunburned Hand Of The Man",
+            "title": "Flex"
+        },
+        "01": {
+            "artist": "Kaleidoscope",
+            "title": "Another Lover"
+        },
+        "02": {
+            "artist": "Minami Deutsch",
+            "title": "Sunrise, Sunset"
+        }
+    },
     "literary-friction-29th-april-2022": {
         "00": {
             "artist": "Brigade X Kahl & Kaemena",
@@ -82,7 +160,20 @@
             "title": "Pond House"
         }
     },
-    "literary-friction-5th-november-2020": {},
+    "literary-friction-5th-november-2020": {
+        "00": {
+            "artist": "Ela Orleans",
+            "title": "Planet Mars"
+        },
+        "01": {
+            "artist": "Patrick Cowley",
+            "title": "Spiked Punch"
+        },
+        "02": {
+            "artist": "Sweatson Klank",
+            "title": "More Time"
+        }
+    },
     "literary-friction-6th-october-2021": {
         "00": {
             "artist": "Michael White",
@@ -97,8 +188,29 @@
             "title": "Body In The Mirror"
         }
     },
-    "literary-friction-8th-december-2020": {},
-    "literary-friction-8th-september-2021": {},
+    "literary-friction-8th-december-2020": {
+        "00": {
+            "artist": "Tenderlonious",
+            "title": "Buffalo Gurl"
+        },
+        "01": {
+            "artist": "Il Quadro Di Troisi",
+            "title": "Il Giudizio"
+        },
+        "02": {
+            "artist": "Idris Ackamoor, ",
+            "title": "When Will I See You Again?"
+        },
+        "03": {
+            "artist": "Magic In Threes",
+            "title": "At Jody's"
+        },
+        "04": {
+            "artist": "Carly Simon",
+            "title": "Why (Extended Version))"
+        }
+    },
+    "literary-friction-8th-september-2021": "",
     "literaryfriction-10th-august-2022": {
         "00": {
             "artist": "Mode Moderne",
@@ -185,6 +297,24 @@
         "02": {
             "artist": "Vanishing Twin",
             "title": "Phase One Million"
+        }
+    },
+    "literaryfriction-5th-october-2022": {
+        "00": {
+            "artist": "Celeste OST",
+            "title": "First Steps"
+        },
+        "01": {
+            "artist": "Hotline Miami",
+            "title": "Pertubator"
+        },
+        "02": {
+            "artist": "Stardew Valley OST",
+            "title": "Fall (The Smell Of Mushrooms)"
+        },
+        "03": {
+            "artist": "Undertale OST",
+            "title": "Dating Start!"
         }
     }
 }
