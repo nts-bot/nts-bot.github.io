@@ -668,7 +668,12 @@ class nts:
 
     def ratio(self,a,b):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
-        return(SequenceMatcher(None, self.refine(a), self.refine(b)).ratio())
+        A = self.refine(a)
+        B = self.refine(b)
+        if (A == 'untitled') and (B == 'untitled'): # Having the Same Non-Title Returns False Positives
+            return 0.6
+        else:
+            return SequenceMatcher(None,A,B).ratio()
 
     def kill(self,text):
         ''' ELIMINATE DUPLICATES & UNNECESSARY CHARACTERS WITHIN STRING '''
@@ -679,7 +684,7 @@ class nts:
         ''' ELIMINATE UNNECCESARY WORDS WITHIN STRING '''
         for i in list(range(1990,2022)):
             text = text.replace(str(i),'')
-        return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('originally','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','')#.replace('y','i')
+        return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('originally','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','')#.replace('y','i')
 
     def _ratio(self,x,y,z,var=-1):
         ''' RETURN MAX RATIO FROM TEXT COMPARISON ''' 
@@ -708,9 +713,12 @@ class nts:
         it = r.index(max(r))
         X1 = r[it] # max(r)
         Y1 = self._ratio(k2,k4,k3,it) # TITLE
-        Z1 = (X1 + Y1)/2
+        result = (X1 + Y1)/2
 
-        # print(X1,Y1,Z1,'\n')
+        if result >= 0.9:
+            return(result)
+
+        print(X1,Y1,result)
 
         G = list(map(set,[k1.split(' '),k2.split(' '),k3.split(' '),k4.split(' ')]))
         k1 = ' '.join(list(G[0]-G[2]-G[3])).strip()
@@ -718,20 +726,19 @@ class nts:
         k3 = ' '.join(list(G[2]-G[0]-G[1])).strip()
         k4 = ' '.join(list(G[3]-G[0]-G[1])).strip()
 
-        # print(k1,'\n',k2,'\n',k3,'\n',k4,'\n')
+        print(k1,k2,k3,k4)
     
         x = self.ratio(*[[k1,k3],[k1,k4]][it])
         y = self.ratio(*[[k2,k4],[k2,k3]][it])
 
-        # print(x,y)
+        print(x,y,(x+y)/2)
 
         if not (x == 1 and y == 1):
             X1 = (X1 + min(x,y))/2
             Y1 = (Y1 + min(x,y))/2
-            # Z1 = (Z1 + min(x,y))/2
-            result = (X1+Y1+Z1)/3
-
-        result = (X1+Y1+Z1)/3
+            result = (X1+Y1+result)/3
+            
+        # result = (result + min(x,y))/2
 
         if (result < 0.55) and (any([t1,t2,t3,t4])):
             result = self.comp(a,b,c,d,second=True) + 0.05
@@ -889,9 +896,13 @@ class nts:
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
         syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
         
+        reduced_title = desk.split('.')[0]
+        if len(reduced_title) < 20:
+            reduced_title = '.'.join(desk.split('.')[:1])
+        
         ''' UPDATE SPOTIFY PLAYLIST DETAILS '''
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
-        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{desk.split('.')[0]}. {syn}")
+        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{reduced_title}. {syn}")
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./uploaded',uploaded)
