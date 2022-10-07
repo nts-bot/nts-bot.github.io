@@ -718,7 +718,7 @@ class nts:
         if result >= 0.9:
             return(result)
 
-        print(X1,Y1,result)
+        # print(X1,Y1,result)
 
         G = list(map(set,[k1.split(' '),k2.split(' '),k3.split(' '),k4.split(' ')]))
         k1 = ' '.join(list(G[0]-G[2]-G[3])).strip()
@@ -726,12 +726,12 @@ class nts:
         k3 = ' '.join(list(G[2]-G[0]-G[1])).strip()
         k4 = ' '.join(list(G[3]-G[0]-G[1])).strip()
 
-        print(k1,k2,k3,k4)
+        # print(k1,k2,k3,k4)
     
         x = self.ratio(*[[k1,k3],[k1,k4]][it])
         y = self.ratio(*[[k2,k4],[k2,k3]][it])
 
-        print(x,y,(x+y)/2)
+        # print(x,y,(x+y)/2)
 
         if not (x == 1 and y == 1):
             X1 = (X1 + min(x,y))/2
