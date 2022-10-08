@@ -885,16 +885,16 @@ class nts:
             print(f'.tracks appended.', end='\r')
             
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
-        if almost:
-            almost = f'{almost} unsure ;'
-        else:
-            almost = ''
+        # if almost:
+            # almost = f'{almost} unsure ;'
+        # else:
+        almost = ''
         duplicates = f' {dups} repeated ;'
 
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[Archive of (www.nts.live/shows/{show}) : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
+        syn = f"[Archive of (www.nts.live/shows/{show}) : Ordered = {lastep}-2-{firstep} : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
         
         reduced_title = desk.split('.')[0]
         if len(reduced_title) < 20:
@@ -1002,14 +1002,14 @@ class nts:
         tidup = self.scene(tid[::-1])[::-1]
         dups = len(tid) - len(tidup)
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
-        if almost:
-            almost = f'{almost} unsure ;'
-        else:
-            almost = ''
+        # if almost:
+        #     almost = f'{almost} unsure ;'
+        # else:
+        almost = ''
         duplicates = f' {dups} repeated ;'
         
         ''' DESCRIPTION '''
-        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing. Order: {lastep}-to-{firstep}]"
+        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Order = {lastep}-2-{firstep} : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
