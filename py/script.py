@@ -1024,11 +1024,11 @@ class nts:
                         response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply])
                     else:
                         pt = False
-                except KeyError as error:
-                    print(error, end='\r')
+                except KeyError:
                     pt = False
-                except Exception as error:
-                    print(error, end='\r')
+                except:
+                    print('error')
+                    pt = False
             print(f'.complete.', end='\r')
 
         time.sleep(2.0)
@@ -1044,8 +1044,8 @@ class nts:
                     response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                     print(f'.tracks appended.', end='\r')
                     doup = False
-                except Exception as error:
-                    print(f'. . . . . . . . . . . . .error : {error[:10]} : {len(trackstoadd)}',end='\r')
+                except:
+                    print(f'. . . . . . . . .error : {len(trackstoadd)}',end='\r')
                     if number > 500:
                         number -= 500
                     else:
@@ -1059,8 +1059,7 @@ class nts:
                 try:
                     ply = self.you.get_playlist(shelf, 10)['tracks']
                     doup = False
-                except KeyError as error:
-                    print(error)
+                except KeyError:
                     try:
                         time.sleep(1.0)
                         print(f'.tracks re-appending.', end='\r')
@@ -1074,6 +1073,9 @@ class nts:
                             number -= 500
                         else:
                             number = 0
+                except:
+                    print('error')
+                    doup=False
         
         ''' YOUTUBE UPLOADBUG FINALCHECK '''
         self.you.edit_playlist(shelf,f"{title} - NTS",syn)
