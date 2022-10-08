@@ -1025,8 +1025,10 @@ class nts:
                     else:
                         pt = False
                 except KeyError as error:
-                    print(error)
+                    print(error, end='\r')
                     pt = False
+                except Exception as error:
+                    print(error, end='\r')
             print(f'.complete.', end='\r')
 
         time.sleep(2.0)
