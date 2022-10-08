@@ -1038,6 +1038,7 @@ class nts:
                 response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                 print(f'.tracks appended.', end='\r')
             except:
+                print(f'.error.')
                 number -= 100
         
         ''' YOUTUBE UPLOADBUG DOUBLECHECK '''
@@ -1053,6 +1054,7 @@ class nts:
                     response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                     print(f'.tracks re-appended.', end='\r')
                 except:
+                    print(f'.error.')
                     number -= 100
         
         ''' YOUTUBE UPLOADBUG FINALCHECK '''
