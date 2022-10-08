@@ -1037,11 +1037,12 @@ class nts:
                 trackstoadd = [j for i in trackdict for j in trackdict[i]][:number] # 5000 upload limit
                 response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                 print(f'.tracks appended.', end='\r')
-            except:
-                print(f'.error.')
+            except Exception as error:
+                print(f'.error : {error}.')
                 number -= 100
         
         ''' YOUTUBE UPLOADBUG DOUBLECHECK '''
+        number = 5000
         if reset:
             try:
                 ply = self.you.get_playlist(shelf, 10)['tracks']
@@ -1053,8 +1054,8 @@ class nts:
                     trackstoadd = [j for i in trackdict for j in trackdict[i]][:number]
                     response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                     print(f'.tracks re-appended.', end='\r')
-                except:
-                    print(f'.error.')
+                except Exception as error:
+                    print(f'.error : {error}.')
                     number -= 100
         
         ''' YOUTUBE UPLOADBUG FINALCHECK '''
