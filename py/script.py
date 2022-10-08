@@ -1043,9 +1043,9 @@ class nts:
                     print(f'.tracks appended.', end='\r')
                     doup = False
                 except Exception as error:
-                    print(f'.error : {error}.')
-                    if number > 100:
-                        number -= 100
+                    print(f'. . . . . . . . . . . . .error : {error[:10]} : {len(trackstoadd)}',end='\r')
+                    if number > 500:
+                        number -= 500
                     else:
                         number = 0
         
@@ -1067,9 +1067,9 @@ class nts:
                         print(f'.tracks re-appended.', end='\r')
                         doup = False
                     except Exception as error:
-                        print(f'.error : {error}.')
-                        if number > 100:
-                            number -= 100
+                        print(f'. . . . . . . . . . . . .error : {error[:10]} : {len(trackstoadd)}',end='\r')
+                        if number > 500:
+                            number -= 500
                         else:
                             number = 0
         
