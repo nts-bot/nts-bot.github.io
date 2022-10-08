@@ -77,8 +77,10 @@ class nts:
             self.meta = self._j2d(f'./extra/meta')
             self._d2j(f'./meta',self.meta)
         self.model = lid_model #bin is more accurate
-        # YOUTUBE
+        # YOUTUBE & TEST
         self.you = ytm(auth='./headers_auth.json',user=os.getenv("uid"))
+        test_id = self.you.create_playlist('test','test')
+        response = self.you.delete_playlist(test_id)
         # LOCK
         self.lock = lock
 
