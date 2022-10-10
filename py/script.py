@@ -896,7 +896,7 @@ class nts:
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[Archive of (www.nts.live/shows/{show}) : Order = {lastep}-{firstep} : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
         
         reduced_title = desk.split('.')[0]
         if len(reduced_title) < 20:
@@ -1011,7 +1011,7 @@ class nts:
         duplicates = f' {dups} repeated ;'
         
         ''' DESCRIPTION '''
-        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Order = {lastep}-{firstep} : {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
