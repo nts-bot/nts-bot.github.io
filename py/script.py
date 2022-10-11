@@ -65,6 +65,19 @@ def timeout(timeout):
 os.chdir(os.getenv("directory"))
 lid_model = fasttext.load_model("./extra/lid.176.ftz")
 
+# TEST YOUTUBE
+you = ytm(auth='./headers_auth.json',user=os.getenv("uid"))
+try:
+    test_id = you.create_playlist('test','test')
+    response = you.delete_playlist(test_id)
+    yt = True
+except Exception as error:
+    print(error)
+    yt = False
+
+# BANDCAMP
+bd = False
+
 class nts:
 
     def __init__(self):
@@ -77,10 +90,11 @@ class nts:
             self.meta = self._j2d(f'./extra/meta')
             self._d2j(f'./meta',self.meta)
         self.model = lid_model #bin is more accurate
-        # YOUTUBE & TEST
+        # YOUTUBE
         self.you = ytm(auth='./headers_auth.json',user=os.getenv("uid"))
-        test_id = self.you.create_playlist('test','test')
-        response = self.you.delete_playlist(test_id)
+        # BANDCAMP & YOUTUBE BOOLEAN
+        self.bd = bd
+        self.yt = yt
         # LOCK
         self.lock = lock
 
@@ -225,16 +239,15 @@ class nts:
         self._d2j(f"./extra/reset",f)
 
     def scripts(self,show):
-        global bd, yt
         # SPOTIFY
         self.runner(show,f"./spotify_search_results/{show}",2)
         self.runner(show,f"./spotify/{show}",3)
         # YOUTUBE
-        if yt:
+        if self.yt:
             self.runner(show,f"./youtube_search_results/{show}",2.5)
             self.runner(show,f"./youtube/{show}",3.5)
         # BANDCAMP
-        if bd:
+        if self.bd:
             self.runner(show,f"./bandcamp_search_results/{show}",4)
             self.runner(show,f"./bandcamp/{show}",5)
         # ADD
@@ -243,7 +256,7 @@ class nts:
             self.spotifyplaylist(show)
         else:
             self.runner(show,f"./uploaded",6)
-        if yt:
+        if self.yt:
             if show not in self._j2d('./yploaded'):
                 print('Y-Playlist')
                 self.youtubeplaylist(show)
@@ -253,9 +266,6 @@ class nts:
                 self.runner(show,f"./yploaded",6.5)
 
     def runscript(self,shows,debug=False):
-        global bd, yt
-        bd = False # BANDCAMP
-        yt = True # YOUTUBE
         self.backup()
         #
         self.connect()
@@ -278,7 +288,9 @@ class nts:
 
             # MAIN FUNCTIONS
             if not debug:
-                while True:
+                f = 0
+                while f < 5:
+                    f += 1
                     try:
                         self.scripts(show)
                         break
