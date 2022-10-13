@@ -11,7 +11,7 @@ import script
 nts = script.nts()
 # nts.wait('connect',False)
 # soup = nts.browse("https://www.nts.live/nts-picks",amount=100) 
-soup = nts.browse("https://www.nts.live/latest",amount=15)
+soup = nts.browse("https://www.nts.live/latest",amount=30) #15
 episodes = soup.select('a.nts-grid-v2-item__header')
 shelf = dict()
 for i in episodes:
