@@ -698,7 +698,7 @@ class nts:
         ''' ELIMINATE UNNECCESARY WORDS WITHIN STRING '''
         for i in list(range(1900,2022)):
             text = text.replace(str(i),'')
-        return text.replace('yellow magic orchestra','ymo').replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('untitled','').replace('film','').replace('movie','').replace('originally','').replace('from','').replace('theme','').replace('motion picture','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat','').replace('comp','').replace('vocal','').replace('instrumental','').replace('&','and').replace('0','zero').replace('1','one').replace('2','two').replace('3','three').replace('4','four').replace('5','five').replace('6','six').replace('7','seven').replace('8','eight').replace('9','nine').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','').replace('  ',' ')
+        return text.replace('yellow magic orchestra','ymo').replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('untitled','').replace('film','').replace('movie','').replace('originally','').replace('from','').replace('theme','').replace('motion picture','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat','').replace('comp','').replace('vocal','').replace('instrumental','').replace('&','and').replace('0','zero').replace('1','one').replace('2','two').replace('3','three').replace('4','four').replace('5','five').replace('6','six').replace('7','seven').replace('8','eight').replace('9','nine').replace('excerpt','').replace('single','').replace('album','').replace('intro','').replace('anonymous','').replace('unknown','').replace('traditional','').replace('  ',' ')
 
     def _ratio(self,x,y,z=''):
         ''' RETURN MAX RATIO FROM TEXT COMPARISON '''
@@ -710,7 +710,7 @@ class nts:
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        debug = False # TEST
+        debug = True # TEST
 
         k1,t1 = self.tbool(a)           # O AUTHOR
         k2,t2 = self.tbool(b)           # O TITLE
@@ -732,8 +732,8 @@ class nts:
         except:
             it = 0
 
-        X1 = f'{[k1,k2][it]} {[k2,k1][it]}'
-        Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'
+        X1 = f'{[k1,k2][it]} {[k2,k1][it]}'.replace('s','')
+        Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'.replace('s','')
 
         h1 = set(X1.split(' '))         # TOKENIZATION
         h2 = set(Y1.split(' '))         # TOKENIZATION
@@ -749,8 +749,8 @@ class nts:
         if not debug:
             return(R1)
         else:
-            am = 20
-            return({'R':R1,'T':[X1[:am],Y1[:am],X2[:am],Y2[:am]]}) # TEST
+            am = 200
+            return({'R':[R1,self.ratio(X1,Y1)],'T':[X1[:am],Y1[:am],X2[:am],Y2[:am]]}) # TEST
         
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
@@ -840,8 +840,8 @@ class nts:
             if showlist[ep]:
                 for tr in rate[ep]:
                     #
-                    ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[ep][tr]['artist']).split()).lower()
-                    ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", rate[ep][tr]['title']).split()).lower()
+                    ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", showlist[ep][tr]['artist']).split()).lower()
+                    ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", showlist[ep][tr]['title']).split()).lower()
                     if ('unknown artist' in ua) or ('unknown' == ua) or ('unknown' == ut):
                         rate[ep][tr]["ratio"] = -1
                         rate[ep][tr]["uri"] = ''
