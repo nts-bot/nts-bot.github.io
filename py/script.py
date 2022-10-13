@@ -673,92 +673,86 @@ class nts:
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
         ln = self.model.predict(tex)[0][0].split('__label__')[1]
-        try:
-            trans_2 = ttt(to_lang="en",from_lang=ln)
-            convert = trans_2.translate(tex)
-        except:
-            convert = trans_1.translate(tex,dest='en').text
-        return(self.kill(convert))
-
-    def ratio(self,a,b):
-        ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
-        A = self.refine(a)
-        B = self.refine(b)
-        if (A == 'untitled') and (B == 'untitled'): # Having the Same Non-Title Returns False Positives
-            return 0.6
+        trans_2 = ttt(to_lang="en",from_lang=ln)
+        convert = trans_2.translate(tex)
+        if convert != tex:
+            return(self.kill(convert))
         else:
-            return SequenceMatcher(None,A,B).ratio()
+            convert = trans_1.translate(tex,dest='en').text
+            return(self.kill(convert))
+        
+
+    def ratio(self,A,B):
+        ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
+        return round(SequenceMatcher(None,A,B).ratio(),4)
 
     def kill(self,text):
         ''' ELIMINATE DUPLICATES & UNNECESSARY CHARACTERS WITHIN STRING '''
-        cv = text.replace('°',' ').replace('・',' ').replace('+',' ').replace('}',' ').replace('{',' ').replace('|',' ').replace('/',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('/',' ').replace(';',' ').replace(':',' ').replace('.',' ').replace(',',' ').replace('  ',' ').split(' ')
-        return(" ".join(dict.fromkeys(cv)).lower())
+        cv = text.replace('°',' ').replace('・',' ').replace('+',' ').replace('}',' ').replace('{',' ').replace('|',' ').replace('/',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('=',' ').replace('>',' ').replace('<',' ').replace('@',' ').replace('$',' ').replace('&',' ').replace('_',' ').replace('?',' ').replace('/',' ').replace(';',' ').replace(':',' ').replace('.',' ').replace(',',' ').replace('  ',' ').split(' ')
+        return(self.refine(" ".join(dict.fromkeys(cv)).lower()).strip())
 
     def refine(self,text):
         ''' ELIMINATE UNNECCESARY WORDS WITHIN STRING '''
         for i in list(range(1990,2022)):
             text = text.replace(str(i),'')
-        return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('originally','').replace('from','').replace('theme','').replace('motion picture soundtrack','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat.','').replace('comp.','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','')#.replace('y','i')
+        return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('untitled','').replace('film','').replace('movie','').replace('originally','').replace('from','').replace('theme','').replace('motion picture','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat','').replace('comp','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','').replace('y','i').replace('  ',' ')
 
-    def _ratio(self,x,y,z,var=-1):
-        ''' RETURN MAX RATIO FROM TEXT COMPARISON ''' 
-        if var == -1:
+    def _ratio(self,x,y,z=''):
+        ''' RETURN MAX RATIO FROM TEXT COMPARISON '''
+        if z: # Test all
             return([max([self.ratio(x,y), self.ratio(y,x)]), 
                 max([self.ratio(x,z), self.ratio(z,x)])])
-        elif var == 0:
-            return(max([self.ratio(x,y), self.ratio(y,x)]))
-        elif var == 1:
-            return(max([self.ratio(x,z), self.ratio(z,x)]))
-
-    def comp(self,a,b,c,d,second=False): #OA, #OT, #SA, #ST
-        ''' COMPARISON FUNCTION '''
-        if not second:
-            k1,t1 = self.tbool(a) # O AUTHOR
-            k2,t2 = self.tbool(b) # O TITLE
-            k3,t3 = self.tbool(c) # S AUTHOR
-            k4,t4 = self.tbool(d) # S TITLE
         else:
-            k1,t1 = self.trnslate(a),False # O AUTHOR
-            k2,t2 = self.trnslate(b),False # O TITLE
-            k3,t3 = self.trnslate(c),False # S AUTHOR
-            k4,t4 = self.trnslate(d),False # S TITLE
+            return(max([self.ratio(x,y), self.ratio(y,x)]))
+
+    def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
+        ''' COMPARISON FUNCTION '''
+        debug = False # TEST
+
+        k1,t1 = self.tbool(a) # O AUTHOR
+        k2,t2 = self.tbool(b) # O TITLE
+        k3,t3 = self.tbool(c) # S AUTHOR
+        k4,t4 = self.tbool(d) # S TITLE
 
         r = self._ratio(k1,k3,k4) # AUTHOR
-        it = r.index(max(r))
-        X1 = r[it] # max(r)
-        Y1 = self._ratio(k2,k4,k3,it) # TITLE
-        result = (X1 + Y1)/2
+        
+        try:
+            it = r.index(max(r)) # INDEX (in case AUTHOR switched w/ TITLE)
+        except:
+            it = 0
 
-        if result >= 0.9:
-            return(result)
+        if not any([t1,t2,t3,t4]):
+            X1 = f'{[k1,k2][it]} {[k2,k1][it]}'
+            Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'
+            R1 = self.ratio(X1,Y1) # RESULT 1
+            if (R1 >= 0.9) and not debug:
+                return(R1)
+        else:
+            X1 = self.kill(f'{[a,b][it]} {[b,a][it]}')
+            Y1 = self.kill(f'{[c,d][it]} {[d,c][it]}')
 
-        # print(X1,Y1,result)
+        h1 = set(X1.split(' ')) # TOKENIZATION
+        h2 = set(Y1.split(' ')) # TOKENIZATION
 
-        G = list(map(set,[k1.split(' '),k2.split(' '),k3.split(' '),k4.split(' ')]))
-        k1 = ' '.join(list(G[0]-G[2]-G[3])).strip()
-        k2 = ' '.join(list(G[1]-G[2]-G[3])).strip()
-        k3 = ' '.join(list(G[2]-G[0]-G[1])).strip()
-        k4 = ' '.join(list(G[3]-G[0]-G[1])).strip()
+        X2 = ' '.join(h1-h2).strip()
+        Y2 = ' '.join(h2-h1).strip()
 
-        # print(k1,k2,k3,k4)
-    
-        x = self.ratio(*[[k1,k3],[k1,k4]][it])
-        y = self.ratio(*[[k2,k4],[k2,k3]][it])
+        if any([t1,t2,t3,t4]):
+            R1 = self.ratio(self.trnslate(X2),self.trnslate(Y2)) # RESULT 1
+            R2 = 0 # RESULT 2
+        else:
+            R2 = self.ratio(X2,Y2) # RESULT 2
 
-        # print(x,y,(x+y)/2)
+        if R2 == 0:
+            R3 = R1 # RESULT 3
+        else:
+            R3 = round((R1 + R2)/2,4) # RESULT 3
 
-        if not (x == 1 and y == 1):
-            X1 = (X1 + min(x,y))/2
-            Y1 = (Y1 + min(x,y))/2
-            result = (X1+Y1+result)/3
-            
-        # result = (result + min(x,y))/2
-
-        if (result < 0.55) and (any([t1,t2,t3,t4])):
-            result = self.comp(a,b,c,d,second=True) + 0.05
-
-        return(result)
-
+        if not debug:
+            return(R3)
+        else:
+            return({'O':[X1,Y1],'TK':[X2,Y2],'R':[R1,R2,R3]}) # TEST
+        
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
         if search:
