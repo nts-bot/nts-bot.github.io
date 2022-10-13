@@ -672,19 +672,29 @@ class nts:
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
+        
+        convert = ''
+        tryagain = False
+
         if tex:
             ln = self.model.predict(tex)[0][0].split('__label__')[1]
-            trans_2 = ttt(to_lang="en",from_lang=ln)
-            convert = trans_2.translate(tex)
+            try:
+                trans_2 = ttt(to_lang="en",from_lang=ln)
+                convert = trans_2.translate(tex)
+            except:
+                tryagain = True
             if convert != tex:
                 return(self.kill(convert))
             else:
-                convert = trans_1.translate(tex,dest='en').text
-                return(self.kill(convert))
+                tryagain = True
         else:
             return('')
-        
 
+        if tryagain:
+            print('. . . . . . . . .ta',end='\r')
+            convert = trans_1.translate(tex,dest='en').text
+            return(self.kill(convert))
+        
     def ratio(self,A,B):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
         return round(SequenceMatcher(None,A,B).ratio(),4)
@@ -715,8 +725,16 @@ class nts:
         Y2 = ' '.join(h2-h1).strip()
         return(self._ratio(X2,Y2))
 
+    def retoken(self,x,y):
+        h1 = set("".join(dict.fromkeys(x)).split(' '))
+        h2 = set("".join(dict.fromkeys(y)).split(' '))
+        X2 = ' '.join(h1-h2).strip()
+        Y2 = ' '.join(h2-h1).strip()
+        return(self._ratio(X2,Y2))
+
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
+        # debug = True # TEST
         debug = False # TEST
 
         k1,t1 = self.tbool(a)           # O AUTHOR
@@ -753,6 +771,9 @@ class nts:
                 R1 = self.token(X1,Y1)
                 if R1 == 0:
                     R1 = self._ratio(X1,Y1)
+        
+        if round(R1,1) == 0.6:
+            R1 = self.retoken(X1,Y1)
 
         if not debug:
             return(R1)
