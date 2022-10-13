@@ -24,10 +24,12 @@ nts = script.nts()
 #     if sday in day:
 #         shows += [i]
 
-shows = ['shanticeleste','well-street-records','thea-hd','uline-catalog','sun-cut','tom-boogizm','panorama-yerevan','physical-therapy','red-laser-records','relax-w-reni','stephen-omalley','test-pressing','okonkole-y-trompa','radio-ghibli','british-library-sound-archive','guitar-world','timeisaway','space-afrika','early-bird-show-jack-rollo','early-bird-show-maria-somerville','early-bird-show-spirit-blue','malibu','claire-rousay','the-trilogy-tapes','tommasi','great-southern-lands','suki-sou','claire-milbrath','athens-of-the-north','perfume-advert','mafalda','john-carroll-kirby','jamie-xx','sun-cut','macca','yaeji','carla-dal-forno','soup-to-nuts-lupini','the-breakfast-show-flo','donna-leake','jen-monroe','kaitlyn-aurelia-smith','floating-points','music-4-lovers','fifth-world','rhythmconnection']
+# shows = ['shanticeleste','well-street-records','thea-hd','uline-catalog','sun-cut','tom-boogizm','panorama-yerevan','physical-therapy','red-laser-records','relax-w-reni','stephen-omalley','test-pressing','okonkole-y-trompa','radio-ghibli','british-library-sound-archive','guitar-world','timeisaway','space-afrika','early-bird-show-jack-rollo','early-bird-show-maria-somerville','early-bird-show-spirit-blue','malibu','claire-rousay','the-trilogy-tapes','tommasi','great-southern-lands','suki-sou','claire-milbrath','athens-of-the-north','perfume-advert','mafalda','john-carroll-kirby','jamie-xx','sun-cut','macca','yaeji','carla-dal-forno','soup-to-nuts-lupini','the-breakfast-show-flo','donna-leake','jen-monroe','kaitlyn-aurelia-smith','floating-points','music-4-lovers','fifth-world','rhythmconnection']
 # shows = list(nts._j2d('./yid').keys())[::-1]
 
-nts.runscript(shows) #[show]
+shows = nts.showlist
+for i in shows:
+    nts.runscript([i]) #[show]
 
 # for show in shows[::-1]:
 # for show in nts.showlist:

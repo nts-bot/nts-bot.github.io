@@ -713,7 +713,7 @@ class nts:
         h2 = set(y.replace('s','').split(' '))
         X2 = ' '.join(h1-h2).strip()
         Y2 = ' '.join(h2-h1).strip()
-        return(self.ratio(X2,Y2))
+        return(self._ratio(X2,Y2))
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
@@ -752,12 +752,16 @@ class nts:
                 Y1 = f'{[k4,k3][it]}'
                 R1 = self.token(X1,Y1)
                 if R1 == 0:
-                    R1 = self.ratio(X1,Y1)
+                    R1 = self._ratio(X1,Y1)
 
         if not debug:
             return(R1)
         else:
             am = 200
+            h1 = set(X1.replace('s','').split(' '))
+            h2 = set(Y1.replace('s','').split(' '))
+            X2 = ' '.join(h1-h2).strip()
+            Y2 = ' '.join(h2-h1).strip()
             return({'R':[R1,self.ratio(X1,Y1)],'T':[X1[:am],Y1[:am],X2[:am],Y2[:am]]}) # TEST
         
     def test(self,search,queryartist,querytitle):
