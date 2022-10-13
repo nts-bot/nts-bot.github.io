@@ -691,7 +691,7 @@ class nts:
 
     def kill(self,text):
         ''' ELIMINATE DUPLICATES & UNNECESSARY CHARACTERS WITHIN STRING '''
-        cv = text.replace('°',' ').replace('・',' ').replace('+',' ').replace('}',' ').replace('{',' ').replace('|',' ').replace('/',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('=',' ').replace('>',' ').replace('<',' ').replace('@',' ').replace('$',' ').replace('&',' ').replace('_',' ').replace('?',' ').replace('/',' ').replace(';',' ').replace(':',' ').replace('.',' ').replace(',',' ').replace('  ',' ').split(' ')
+        cv = text.replace('°',' ').replace('・',' ').replace('+',' ').replace('}',' ').replace('{',' ').replace('|',' ').replace('/',' ').replace(']',' ').replace('[',' ').replace(')',' ').replace('(',' ').replace('\'',' ').replace('\"',' ').replace('-',' ').replace('!',' ').replace('=',' ').replace('>',' ').replace('<',' ').replace('@',' ').replace('^',' ').replace('~',' ').replace('*',' ').replace('%',' ').replace('#',' ').replace('$',' ').replace('&',' ').replace('_',' ').replace('?',' ').replace('/',' ').replace(';',' ').replace(':',' ').replace('.',' ').replace(',',' ').replace('  ',' ').split(' ')
         return(self.refine(" ".join(dict.fromkeys(cv)).lower()).strip())
 
     def refine(self,text):
@@ -1283,17 +1283,17 @@ class nts:
 
                     if round(eval(f'r{dx}'),1) >= 0.9:
                         lag = 9
-                    elif round(eval(f'r{dx}'),1) >= 0.8:
+                    elif round(eval(f'r{dx}'),1) == 0.8:
                         lag = 8
-                    elif round(eval(f'r{dx}'),1) >= 0.7:
+                    elif round(eval(f'r{dx}'),1) == 0.7:
                         lag = 7
-                    elif round(eval(f'r{dx}'),1) >= 0.6:
+                    elif round(eval(f'r{dx}'),1) == 0.6:
                         lag = 6
-                    elif round(eval(f'r{dx}'),1) >= 0.5:
+                    elif round(eval(f'r{dx}'),1) == 0.5:
                         lag = 5
-                    elif round(eval(f'r{dx}'),1) >= 0.4:
+                    elif round(eval(f'r{dx}'),1) == 0.4:
                         lag = 4
-                    elif round(eval(f'r{dx}'),1) >= 0.3:
+                    elif round(eval(f'r{dx}'),1) == 0.3:
                         lag = 3
                     else:
                         lag = 0
