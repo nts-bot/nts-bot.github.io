@@ -710,7 +710,7 @@ class nts:
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        debug = True # TEST
+        debug = False # TEST
 
         k1,t1 = self.tbool(a)           # O AUTHOR
         k2,t2 = self.tbool(b)           # O TITLE
