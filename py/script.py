@@ -672,14 +672,17 @@ class nts:
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
-        ln = self.model.predict(tex)[0][0].split('__label__')[1]
-        trans_2 = ttt(to_lang="en",from_lang=ln)
-        convert = trans_2.translate(tex)
-        if convert != tex:
-            return(self.kill(convert))
+        if tex:
+            ln = self.model.predict(tex)[0][0].split('__label__')[1]
+            trans_2 = ttt(to_lang="en",from_lang=ln)
+            convert = trans_2.translate(tex)
+            if convert != tex:
+                return(self.kill(convert))
+            else:
+                convert = trans_1.translate(tex,dest='en').text
+                return(self.kill(convert))
         else:
-            convert = trans_1.translate(tex,dest='en').text
-            return(self.kill(convert))
+            return('')
         
 
     def ratio(self,A,B):
@@ -693,9 +696,9 @@ class nts:
 
     def refine(self,text):
         ''' ELIMINATE UNNECCESARY WORDS WITHIN STRING '''
-        for i in list(range(1990,2022)):
+        for i in list(range(1900,2022)):
             text = text.replace(str(i),'')
-        return text.replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('untitled','').replace('film','').replace('movie','').replace('originally','').replace('from','').replace('theme','').replace('motion picture','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat','').replace('comp','').replace('vocal','').replace('instrumental','').replace('&','and').replace('zero','0').replace('one','1').replace('two','2').replace('three','3').replace('unsure','4').replace('almost','5').replace('six','6').replace('seven','7').replace('eight','8').replace('nine','9').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','').replace('y','i').replace('  ',' ')
+        return text.replace('yellow magic orchestra','ymo').replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('untitled','').replace('film','').replace('movie','').replace('originally','').replace('from','').replace('theme','').replace('motion picture','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat','').replace('comp','').replace('vocal','').replace('instrumental','').replace('&','and').replace('0','zero').replace('1','one').replace('2','two').replace('3','three').replace('4','four').replace('5','five').replace('6','six').replace('7','seven').replace('8','eight').replace('9','nine').replace('excerpt','').replace('single','').replace('album','').replace('anonymous','').replace('unknown','').replace('traditional','').replace('  ',' ')
 
     def _ratio(self,x,y,z=''):
         ''' RETURN MAX RATIO FROM TEXT COMPARISON '''
@@ -709,49 +712,45 @@ class nts:
         ''' COMPARISON FUNCTION '''
         debug = False # TEST
 
-        k1,t1 = self.tbool(a) # O AUTHOR
-        k2,t2 = self.tbool(b) # O TITLE
-        k3,t3 = self.tbool(c) # S AUTHOR
-        k4,t4 = self.tbool(d) # S TITLE
+        k1,t1 = self.tbool(a)           # O AUTHOR
+        k2,t2 = self.tbool(b)           # O TITLE
+        k3,t3 = self.tbool(c)           # S AUTHOR
+        k4,t4 = self.tbool(d)           # S TITLE
 
-        r = self._ratio(k1,k3,k4) # AUTHOR
-        
+        if t1:                          # TRANSLATE
+            k1 = self.trnslate(a)
+        if t2:
+            k2 = self.trnslate(b)
+        if t3:
+            k3 = self.trnslate(c)
+        if t4:
+            k4 = self.trnslate(d)
+
         try:
-            it = r.index(max(r)) # INDEX (in case AUTHOR switched w/ TITLE)
+            r = self._ratio(k1,k3,k4)
+            it = r.index(max(r))        # INDEX (in case AUTHOR switched w/ TITLE)
         except:
             it = 0
 
-        if not any([t1,t2,t3,t4]):
-            X1 = f'{[k1,k2][it]} {[k2,k1][it]}'
-            Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'
-            R1 = self.ratio(X1,Y1) # RESULT 1
-            if (R1 >= 0.9) and not debug:
-                return(R1)
-        else:
-            X1 = self.kill(f'{[a,b][it]} {[b,a][it]}')
-            Y1 = self.kill(f'{[c,d][it]} {[d,c][it]}')
+        X1 = f'{[k1,k2][it]} {[k2,k1][it]}'
+        Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'
 
-        h1 = set(X1.split(' ')) # TOKENIZATION
-        h2 = set(Y1.split(' ')) # TOKENIZATION
+        h1 = set(X1.split(' '))         # TOKENIZATION
+        h2 = set(Y1.split(' '))         # TOKENIZATION
 
         X2 = ' '.join(h1-h2).strip()
         Y2 = ' '.join(h2-h1).strip()
+        
+        R1 = self.ratio(X2,Y2)          # RESULT
 
-        if any([t1,t2,t3,t4]):
-            R1 = self.ratio(self.trnslate(X2),self.trnslate(Y2)) # RESULT 1
-            R2 = 0 # RESULT 2
-        else:
-            R2 = self.ratio(X2,Y2) # RESULT 2
-
-        if R2 == 0:
-            R3 = R1 # RESULT 3
-        else:
-            R3 = round((R1 + R2)/2,4) # RESULT 3
+        if R1 == 0:
+            R1 = self.ratio(X1,Y1)      # RESULT
 
         if not debug:
-            return(R3)
+            return(R1)
         else:
-            return({'O':[X1,Y1],'TK':[X2,Y2],'R':[R1,R2,R3]}) # TEST
+            am = 20
+            return({'R':R1,'T':[X1[:am],Y1[:am],X2[:am],Y2[:am]]}) # TEST
         
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
