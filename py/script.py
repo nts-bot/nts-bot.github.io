@@ -723,19 +723,12 @@ class nts:
         h2 = set(y.replace('s','').split(' '))
         X2 = ' '.join(h1-h2).strip()
         Y2 = ' '.join(h2-h1).strip()
-        return(self._ratio(X2,Y2))
-
-    def retoken(self,x,y):
-        h1 = set("".join(dict.fromkeys(x)).split(' '))
-        h2 = set("".join(dict.fromkeys(y)).split(' '))
-        X2 = ' '.join(h1-h2).strip()
-        Y2 = ' '.join(h2-h1).strip()
-        return(self._ratio(X2,Y2))
+        return([X2,Y2])
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        # debug = True # TEST
-        debug = False # TEST
+        debug = True # TEST
+        # debug = False # TEST
 
         k1,t1 = self.tbool(a)           # O AUTHOR
         k2,t2 = self.tbool(b)           # O TITLE
@@ -759,31 +752,48 @@ class nts:
 
         X1 = f'{[k1,k2][it]} {[k2,k1][it]}'
         Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'
-        R1 = self.token(X1,Y1)
 
-        if R1 == 0:
-            X1 = f'{[k1,k2][it]}'
-            Y1 = f'{[k3,k4][it]}'
-            R1 = self.token(X1,Y1)
+        R0 = self._ratio(X1,Y1)
+        if R0 < 0.9:
+            R1 = self._ratio(*self.token(X1,Y1))
+            R2,R3 = 0,0
+
             if R1 == 0:
-                X1 = f'{[k2,k1][it]}'
-                Y1 = f'{[k4,k3][it]}'
-                R1 = self.token(X1,Y1)
-                if R1 == 0:
-                    R1 = self._ratio(X1,Y1)
-        
-        if round(R1,1) == 0.6:
-            R1 = self.retoken(X1,Y1)
+                X2 = f'{[k1,k2][it]}'
+                Y2 = f'{[k3,k4][it]}'
+                R2 = self._ratio(*self.token(X2,Y2))
+                if R2 == 0:
+                    X3 = f'{[k2,k1][it]}'
+                    Y3 = f'{[k4,k3][it]}'
+                    R3 = self._ratio(*self.token(X3,Y3))
+                    if R1 == 0:
+                        R = R0
+                    else:
+                        R = R3
+                else:
+                    R = R2
+            else:
+                R = R1
+            
+            if round(R,1) == 0.6:
+                m = [i for i in [R2,R3] if i != 0]
+                if m:
+                    if min(m) < 0.7:
+                        R = 0.5
+                elif R0 < 0.7:
+                    R = 0.5
+        else:
+            R = R0
 
         if not debug:
-            return(R1)
+            return(R)
         else:
             am = 200
             h1 = set(X1.replace('s','').split(' '))
             h2 = set(Y1.replace('s','').split(' '))
             X2 = ' '.join(h1-h2).strip()
             Y2 = ' '.join(h2-h1).strip()
-            return({'R':[R1,self.ratio(X1,Y1)],'T':[X1[:am],Y1[:am],X2[:am],Y2[:am]]}) # TEST
+            return({'R':R,'T':[X1[:am],Y1[:am],X2[:am],Y2[:am]]}) # TEST
         
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
