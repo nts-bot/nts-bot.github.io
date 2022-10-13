@@ -708,6 +708,13 @@ class nts:
         else:
             return(max([self.ratio(x,y), self.ratio(y,x)]))
 
+    def token(self,x,y):
+        h1 = set(x.replace('s','').split(' '))
+        h2 = set(y.replace('s','').split(' '))
+        X2 = ' '.join(h1-h2).strip()
+        Y2 = ' '.join(h2-h1).strip()
+        return(self.ratio(X2,Y2))
+
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
         debug = False # TEST
@@ -732,19 +739,20 @@ class nts:
         except:
             it = 0
 
-        X1 = f'{[k1,k2][it]} {[k2,k1][it]}'.replace('s','')
-        Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'.replace('s','')
-
-        h1 = set(X1.split(' '))         # TOKENIZATION
-        h2 = set(Y1.split(' '))         # TOKENIZATION
-
-        X2 = ' '.join(h1-h2).strip()
-        Y2 = ' '.join(h2-h1).strip()
-        
-        R1 = self.ratio(X2,Y2)          # RESULT
+        X1 = f'{[k1,k2][it]} {[k2,k1][it]}'
+        Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'
+        R1 = self.token(X1,Y1)
 
         if R1 == 0:
-            R1 = self.ratio(X1,Y1)      # RESULT
+            X1 = f'{[k1,k2][it]}'
+            Y1 = f'{[k3,k4][it]}'
+            R1 = self.token(X1,Y1)
+            if R1 == 0:
+                X1 = f'{[k2,k1][it]}'
+                Y1 = f'{[k4,k3][it]}'
+                R1 = self.token(X1,Y1)
+                if R1 == 0:
+                    R1 = self.ratio(X1,Y1)
 
         if not debug:
             return(R1)
