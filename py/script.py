@@ -904,11 +904,11 @@ class nts:
             print(f'.tracks appended.', end='\r')
             
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
-        # if almost:
-            # almost = f'{almost} unsure ;'
-        # else:
-        almost = ''
-        duplicates = f' {dups} repeated ;'
+        if almost:
+            almost = f'{almost} mayb ;'
+        else:
+            almost = ''
+        duplicates = f' {dups} reps ;'
 
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
@@ -1021,11 +1021,11 @@ class nts:
         tidup = self.scene(tid[::-1])[::-1]
         dups = len(tid) - len(tidup)
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
-        # if almost:
-        #     almost = f'{almost} unsure ;'
-        # else:
-        almost = ''
-        duplicates = f' {dups} repeated ;'
+        if almost:
+            almost = f'{almost} mayb ;'
+        else:
+            almost = ''
+        duplicates = f' {dups} reps ;'
         
         ''' DESCRIPTION '''
         syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
