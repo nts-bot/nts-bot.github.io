@@ -727,8 +727,8 @@ class nts:
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        debug = True # TEST
-        # debug = False # TEST
+        # debug = True # TEST
+        debug = False # TEST
 
         k1,t1 = self.tbool(a)           # O AUTHOR
         k2,t2 = self.tbool(b)           # O TITLE
@@ -754,7 +754,7 @@ class nts:
         Y1 = f'{[k3,k4][it]} {[k4,k3][it]}'
 
         R0 = self._ratio(X1,Y1)
-        if R0 < 0.9:
+        if R0 < 0.85:
             R1 = self._ratio(*self.token(X1,Y1))
             R2,R3 = 0,0
 
