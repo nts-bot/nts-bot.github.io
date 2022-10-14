@@ -822,6 +822,7 @@ class nts:
 
     @timeout(300.0)
     def spotifyplaylist(self,show,threshold=[6,10],reset=False):
+        self.connect()
         ''' APPEND-FROM/CREATE SPOTIFY PLAYLIST '''
         pid = self.pid(show)
         meta = self.meta[show]
