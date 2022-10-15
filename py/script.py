@@ -181,13 +181,13 @@ class nts:
         try:
             rday = datetime.datetime.fromtimestamp(os.path.getmtime(f"./spotify/{show}.json")).date()
         except:
-            print('.',end='\r')
+            print('!')
             return(True)
         if rday in day:
-            print('$',end='\r')
+            print('.')
             return(True)
         else:
-            print('%',end='\r')
+            print('LONG')
             return(False)
             
     def runner(self,show,path,command):
