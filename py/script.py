@@ -184,10 +184,10 @@ class nts:
             print('!')
             return(True)
         if rday in day:
-            print('.')
+            print('S')
             return(True)
         else:
-            print('LONG')
+            print('L')
             return(False)
             
     def runner(self,show,path,command):
