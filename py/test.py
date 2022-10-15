@@ -14,21 +14,19 @@ do = True
 while do:
     show = input('Input Show\n')
     if show in nts.showlist:
-        nts.runscript([show])
+        nts.runscript([show],short=False)
     else:
         dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
         if dy == 'Y':
-            nts.runscript([show])
+            nts.runscript([show],short=False)
     rd = True
     while rd:
-        redo = input('REDO [Y/N]')
-        if redo == 'Y':
-            rd = False
+        redo = input('REDO [SHOW/N]')
         if redo == 'N':
             do = False
             rd = False
         else:
-            print('WRONG INPUT')
+            rd = False
             
 # import datetime
 # shows = []

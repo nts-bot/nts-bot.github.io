@@ -265,7 +265,7 @@ class nts:
             else:
                 self.runner(show,f"./yploaded",6.5)
 
-    def runscript(self,shows,debug=False):
+    def runscript(self,shows,debug=False,short=True):
         self.backup()
         #
         self.connect()
@@ -278,11 +278,14 @@ class nts:
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
             print(f'{oo[:50]}{i}/{len(shows)}')
             # SCRAPE / PRELIMINARY
-            v = self.review(show)
-            if v:
-                self.scrape(show,True) # short
+            if short:
+                v = self.review(show)
+                if v:
+                    self.scrape(show,True) # short
+                else:
+                    self.scrape(show) # long
             else:
-                self.scrape(show) # long
+                self.scrape(show)
             # TRACKLIST
             self.runner(show,"",1)
 
