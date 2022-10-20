@@ -194,7 +194,7 @@ class nts:
         if path.split('/')[-1] == show:
             rq, do = self.prerun(f"./tracklist/{show}",path)
         else:
-            rq, do = self.prerun(f"./tracklist/{show}",path,show)
+            rq, do = self.prerun(f"./tracklist/{show}",path,show) # (path = "") used for tracklist
         if rq:
             print('!',end='\r')
             if command == 1:
@@ -265,7 +265,22 @@ class nts:
             else:
                 self.runner(show,f"./yploaded",6.5)
 
-    def runscript(self,shows,debug=False,short=True):
+    def retryepisodes(self,show):
+        episodelist = self._j2d(f'./tracklist/{show}')
+        uploaded = self._j2d(f'./uploaded')
+        yploaded = self._j2d(f'./yploaded')
+        for i in episodelist:
+            if episodelist[i] == "":
+                episodelist[i] = dict()
+                if i in uploaded[show]:
+                    del uploaded[show][i]
+                if i in yploaded[show]:
+                    del yploaded[show][i]
+        self._d2j(f'./tracklist/{show}',episodelist)
+        self._d2j(f'./uploaded',uploaded)
+        self._d2j(f'./yploaded',yploaded)
+
+    def runscript(self,shows,debug=False,short=True,retry=False):
         self.backup()
         #
         self.connect()
@@ -273,6 +288,8 @@ class nts:
         print(o)
         for i in range(len(shows)):
             show = shows[i]
+            if retry:
+                self.retryepisodes(show)
             if show not in self._j2d(f"./extra/reset"):
                 self._reset(show)
             oo = show + '. . . . . . . . . . . . . . . . . . . . . . . .'
@@ -297,8 +314,8 @@ class nts:
                     try:
                         self.scripts(show)
                         break
-                    except KeyboardInterrupt:
-                        break
+                    # except KeyboardInterrupt:
+                    #     break
                     except RuntimeError as error:
                         raise RuntimeError(error)
                     except Exception as error:
@@ -1780,7 +1797,7 @@ class mt:
 
 import git
 def _git():
-    repo = git.Repo(os.getcwd()) #os.getenv("directory")
+    repo = git.Repo(os.getenv("directory")) #os.getcwd()
     repo.git.add('.') #update=True
     repo.index.commit("auto-gitpush")
     origin = repo.remote(name='origin')
