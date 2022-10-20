@@ -266,19 +266,22 @@ class nts:
                 self.runner(show,f"./yploaded",6.5)
 
     def retryepisodes(self,show):
-        episodelist = self._j2d(f'./tracklist/{show}')
-        uploaded = self._j2d(f'./uploaded')
-        yploaded = self._j2d(f'./yploaded')
-        for i in episodelist:
-            if episodelist[i] == "":
-                episodelist[i] = dict()
-                if i in uploaded[show]:
-                    del uploaded[show][i]
-                if i in yploaded[show]:
-                    del yploaded[show][i]
-        self._d2j(f'./tracklist/{show}',episodelist)
-        self._d2j(f'./uploaded',uploaded)
-        self._d2j(f'./yploaded',yploaded)
+        try:
+            episodelist = self._j2d(f'./tracklist/{show}')
+            uploaded = self._j2d(f'./uploaded')
+            yploaded = self._j2d(f'./yploaded')
+            for i in episodelist:
+                if episodelist[i] == "":
+                    episodelist[i] = dict()
+                    if i in uploaded[show]:
+                        del uploaded[show][i]
+                    if i in yploaded[show]:
+                        del yploaded[show][i]
+            self._d2j(f'./tracklist/{show}',episodelist)
+            self._d2j(f'./uploaded',uploaded)
+            self._d2j(f'./yploaded',yploaded)
+        except:
+            pass
 
     def runscript(self,shows,debug=False,short=True,retry=False):
         self.backup()
@@ -872,7 +875,7 @@ class nts:
         pup = []
         mis = 0
         almost = 0
-        unsure = 0
+        empty = 0
         f = True
         ff = 0
         upend = False
@@ -920,6 +923,8 @@ class nts:
                         mis += 1
                     if rate[ep][tr]['ratio'] in [6]:
                         almost += 1
+            else:
+                empty += 1
 
         ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./spotify/{show}',rate)
@@ -960,12 +965,16 @@ class nts:
             almost = f'{almost} mayb ;'
         else:
             almost = ''
+        if empty:
+            empty = f'{empty} eps w/o tracklist]'
+        else:
+            empty = ']'
         duplicates = f' {dups} reps ;'
 
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {mis+len(set(pup))-len(set(tid))} missing {almost}{duplicates}{empty}"
         
         reduced_title = desk.split('.')[0]
         if len(reduced_title) < 20:
@@ -1017,6 +1026,7 @@ class nts:
         trackdict = dict()
         pup = []
         mis = 0
+        empty = 0
         almost = 0
         f = True
         ff = 0
@@ -1065,6 +1075,8 @@ class nts:
                         mis += 1
                     if rate[ep][tr]['ratio'] in [4]:
                         almost += 1
+            else:
+                empty += 1
         
         ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./youtube/{show}',rate)
@@ -1077,10 +1089,14 @@ class nts:
             almost = f'{almost} mayb ;'
         else:
             almost = ''
+        if empty:
+            empty = f'{empty} eps w/o tracklist]'
+        else:
+            empty = ']'
         duplicates = f' {dups} reps ;'
         
         ''' DESCRIPTION '''
-        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {almost}{duplicates} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {mis+len(set(pup))-len(set(tid))} missing {almost}{duplicates}{empty}"
         
         ''' RESET CONDITION '''
         if reset:
@@ -1109,7 +1125,11 @@ class nts:
             while doup:
                 try:
                     print(f'.tracks appending.', end='\r')
-                    trackstoadd = [j for i in trackdict for j in trackdict[i]][:number] # 5000 upload limit
+                    trackstoadd = [j for i in trackdict for j in trackdict[i]]
+                    if len(trackstoadd) > 5000:
+                        break
+                    else:
+                        trackstoadd = [j for i in trackdict for j in trackdict[i]][:number]
                     response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                     print(f'.tracks appended.', end='\r')
                     doup = False
@@ -1118,7 +1138,7 @@ class nts:
                     if number > 500:
                         number -= 500
                     else:
-                        number = 0
+                        doup = False
         
         ''' YOUTUBE UPLOADBUG DOUBLECHECK '''
         number = 5000
@@ -1132,16 +1152,20 @@ class nts:
                     try:
                         time.sleep(1.0)
                         print(f'.tracks re-appending.', end='\r')
-                        trackstoadd = [j for i in trackdict for j in trackdict[i]][:number]
+                        trackstoadd = [j for i in trackdict for j in trackdict[i]]
+                        if len(trackstoadd) > 5000:
+                            break
+                        else:
+                            trackstoadd = [j for i in trackdict for j in trackdict[i]][:number]
                         response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
                         print(f'.tracks re-appended.', end='\r')
                         doup = False
-                    except Exception as error:
-                        print(f'. . . . . . . . . . . . .error : {error[:10]} : {len(trackstoadd)}',end='\r')
+                    except:
+                        print(f'. . . . . . . . . . . . .error : {len(trackstoadd)}',end='\r')
                         if number > 500:
                             number -= 500
                         else:
-                            number = 0
+                            doup = False
                 except:
                     print('error')
                     doup=False
