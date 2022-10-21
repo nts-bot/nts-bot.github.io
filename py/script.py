@@ -80,7 +80,7 @@ bd = False
 
 class nts:
 
-    def __init__(self):
+    def __init__(self,youtube=yt,bandcamp=bd):
         os.chdir(os.getenv("directory"))
         self.showlist = [i.split('.')[0] for i in os.listdir('./tracklist/')]
         try:
@@ -93,8 +93,8 @@ class nts:
         # YOUTUBE
         self.you = ytm(auth='./headers_auth.json',user=os.getenv("uid"))
         # BANDCAMP & YOUTUBE BOOLEAN
-        self.bd = bd
-        self.yt = yt
+        self.bd = bandcamp
+        self.yt = youtube
         # LOCK
         self.lock = lock
 
