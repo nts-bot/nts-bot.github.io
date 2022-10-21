@@ -962,19 +962,19 @@ class nts:
             
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
-            almost = f'{almost} mayb ;'
+            almost = f' {almost} mayb ;'
         else:
             almost = ''
         if empty:
-            empty = f'{empty} eps w/o tracklist]'
+            empty = f' {empty} eps w/o tracklist;'
         else:
-            empty = ']'
-        duplicates = f' {dups} reps ;'
+            empty = ''
+        duplicates = f' {dups} reps;'
 
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {mis+len(set(pup))-len(set(tid))} missing {almost}{duplicates}{empty}"
+        syn = f"[Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         reduced_title = desk.split('.')[0]
         if len(reduced_title) < 20:
@@ -1086,17 +1086,17 @@ class nts:
         dups = len(tid) - len(tidup)
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
-            almost = f'{almost} mayb ;'
+            almost = f' {almost} mayb ;'
         else:
             almost = ''
         if empty:
-            empty = f'{empty} eps w/o tracklist]'
+            empty = f' {empty} eps w/o tracklist;'
         else:
-            empty = ']'
-        duplicates = f' {dups} reps ;'
+            empty = ''
+        duplicates = f' {dups} reps;'
         
         ''' DESCRIPTION '''
-        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}. {mis+len(set(pup))-len(set(tid))} missing {almost}{duplicates}{empty}"
+        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
