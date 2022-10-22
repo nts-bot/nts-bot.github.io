@@ -4,14 +4,14 @@
             "s0": "",
             "s1": [
                 {
-                    "artist": "Cesária Evora",
-                    "title": "Petit pays",
-                    "uri": "3TPr2Em1i454nDS8UJbaFW"
-                },
-                {
                     "artist": "Monde des Titounis",
                     "title": "Les petits poissons dans l'eau",
                     "uri": "0NpdlpZcRW1xsZejLccRw6"
+                },
+                {
+                    "artist": "Les Blérots de R.A.V.E.L.",
+                    "title": "Les p'tits plaisirs",
+                    "uri": "215xowAMaWJgaBLVWMFBUS"
                 },
                 {
                     "artist": "Comptines TV",
@@ -24,6 +24,11 @@
             "s0": "",
             "s1": [
                 {
+                    "artist": "Manu Chao",
+                    "title": "Les petites planètes",
+                    "uri": "6QBVELNnyfYvBa53lk3ggR"
+                },
+                {
                     "artist": "M. Pokora",
                     "title": "Les planètes",
                     "uri": "5MYDvUdIBOCX3a42L85kM3"
@@ -32,11 +37,6 @@
                     "artist": "M. Pokora",
                     "title": "Les planètes",
                     "uri": "3xXlMmaDZ24dhwm0NINtBK"
-                },
-                {
-                    "artist": "Manu Chao",
-                    "title": "Les petites planètes",
-                    "uri": "6QBVELNnyfYvBa53lk3ggR"
                 }
             ]
         },
@@ -71,8 +71,8 @@
                 },
                 {
                     "artist": "Flying Lotus",
-                    "title": "Massage Situation",
-                    "uri": "6OHWgUuDDedHRVhcg8vlaf"
+                    "title": "FF4",
+                    "uri": "4yHLejQxBnufgbFPALQkK3"
                 }
             ]
         },
@@ -86,8 +86,8 @@
                 },
                 {
                     "artist": "Francisco López",
-                    "title": "Untitled #357",
-                    "uri": "1m4WvY6lrZen7EJkwnXMT3"
+                    "title": "untitled #373",
+                    "uri": "2TysLEibilLS3mqXkvIj0V"
                 },
                 {
                     "artist": "Francisco López",
@@ -137,13 +137,6 @@
             ]
         }
     },
-    "edge-of-the-forest-11th-april-2018": {},
-    "edge-of-the-forest-15th-january-2016": {},
-    "edge-of-the-forest-21st-february-2020": {},
-    "edge-of-the-forest-27th-november-2020": {},
-    "edge-of-the-forest-7th-may-2021": {},
-    "edge-of-the-forest-planktonic-conversations-8th-april-2022": {},
-    "edge-of-the-forest-the-ear-of-the-bat-27th-october-2016": {},
     "the-edge-of-my-nature-4th-may-2016": {
         "00": {
             "s0": [
@@ -166,13 +159,10 @@
                 },
                 {
                     "artist": "Chassol",
-                    "title": "Pipornithology, Pt. 2",
-                    "uri": "56Pfq80dC5jh7AGLrjVGKN"
+                    "title": "Birds, Pt. II",
+                    "uri": "5YsYfuZ2xrnTmAIrchqqf6"
                 }
             ]
         }
-    },
-    "the-edge-of-the-forest-17th-august-2015": {},
-    "the-edge-of-the-forest-26th-february-2019": {},
-    "the-edge-of-the-forest-alaska-1st-september-2017": {}
+    }
 }

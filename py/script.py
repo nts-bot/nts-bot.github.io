@@ -565,7 +565,7 @@ class nts:
     def conexcp(self):
         ''' CLEAR CACHE IF CONNECTION ERROR/TIMEOUT & TRY AGAIN '''
         time.sleep(3.0)
-        index = ['a','b','c','d','e','f','g','h','i','j','k','l']
+        index = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o']
         try:
             print('. . . . . . . . Unsuccessful',end='\r')
             dr = os.listdir()
