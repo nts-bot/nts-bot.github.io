@@ -31,8 +31,6 @@ import queue
 from threading import Thread, Lock
 ## TIMEOUT FUNCTION PACKAGES
 import functools
-## LOCK
-lock = Lock()
 # ENVIRONMENT VARIABLES
 from dotenv import load_dotenv
 load_dotenv()
@@ -78,6 +76,9 @@ except Exception as error:
 # BANDCAMP
 bd = False
 
+# LOCK
+lock = Lock()
+
 class nts:
 
     def __init__(self,youtube=yt,bandcamp=bd):
@@ -95,8 +96,6 @@ class nts:
         # BANDCAMP & YOUTUBE BOOLEAN
         self.bd = bandcamp
         self.yt = youtube
-        # LOCK
-        self.lock = lock
 
     # LOCAL DATABASE
 
@@ -551,14 +550,14 @@ class nts:
     def connect(self):
         ''' CONNECTION HANDLER ; VIA https://developer.spotify.com/dashboard/applications '''
         index = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o']
-        self.lock.acquire()
+        lock.acquire()
         try:
             with open('./extra/spotipywebapi.pickle', 'rb') as handle:
                 pick = pickle.load(handle)
             print(index[pick],end=' ')
             self.subconnect(index,pick)
             time.sleep(1.0)
-            self.lock.release()
+            lock.release()
         except Exception:
             self.conexcp()
 
@@ -585,7 +584,7 @@ class nts:
 
             self.subconnect(index,pick)
             time.sleep(1.0)
-            self.lock.release()
+            lock.release()
 
         except Exception:
             self.conexcp()
