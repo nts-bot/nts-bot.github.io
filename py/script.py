@@ -961,7 +961,7 @@ class nts:
             
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
-            almost = f' {almost} mayb ;'
+            almost = f' {almost} mayb;'
         else:
             almost = ''
         if empty:
@@ -973,7 +973,7 @@ class nts:
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[Archive orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         reduced_title = desk.split('.')[0]
         if len(reduced_title) < 20:
@@ -981,7 +981,7 @@ class nts:
         
         ''' UPDATE SPOTIFY PLAYLIST DETAILS '''
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
-        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{reduced_title}. {syn}")
+        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"[nts.live/shows/{show}] {reduced_title} {syn}")
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./uploaded',uploaded)
@@ -1085,7 +1085,7 @@ class nts:
         dups = len(tid) - len(tidup)
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
-            almost = f' {almost} mayb ;'
+            almost = f' {almost} mayb;'
         else:
             almost = ''
         if empty:
@@ -1095,7 +1095,7 @@ class nts:
         duplicates = f' {dups} reps;'
         
         ''' DESCRIPTION '''
-        syn = f"{desk} [Archive of (www.nts.live/shows/{show}) : Orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[nts.live/shows/{show}] {desk} [Archive orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
@@ -1227,10 +1227,10 @@ class nts:
             
 
             del creds[str(usr)]
-            u = []
-            for i in creds:
-                u += [creds[i]['user']]
-            spot.user_follow_users(u)
+            # u = []
+            # for i in creds:
+            #     u += [creds[i]['user']]
+            # spot.user_follow_users(u)
 
     # SPOTIFY API SEARCH FUNCTIONS
 
