@@ -180,13 +180,13 @@ class nts:
         try:
             rday = datetime.datetime.fromtimestamp(os.path.getmtime(f"./spotify/{show}.json")).date()
         except:
-            print('!')
+            # print('!')
             return(True)
         if rday in day:
-            print('S')
+            # print('S')
             return(True)
         else:
-            print('L')
+            # print('L')
             return(False)
             
     def runner(self,show,path,command):
@@ -968,7 +968,10 @@ class nts:
             empty = f' {empty} eps w/o tracklist;'
         else:
             empty = ''
-        duplicates = f' {dups} reps;'
+        if dups:
+            duplicates = f' {dups} reps;'
+        else:
+            duplicates = ''
 
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
@@ -1092,7 +1095,10 @@ class nts:
             empty = f' {empty} eps w/o tracklist;'
         else:
             empty = ''
-        duplicates = f' {dups} reps;'
+        if dups:
+            duplicates = f' {dups} reps;'
+        else:
+            duplicates = ''
         
         ''' DESCRIPTION '''
         syn = f"[nts.live/shows/{show}] {desk} [Archive orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
