@@ -453,7 +453,7 @@ class nts:
         self._d2j('./extra/descriptions',desklist)
         self._d2j(f'./tracklist/{show}',episodelist)
         
-    @timeout(10.0)
+    @timeout(50.0)
     def req(self,url):
         try:
             res = requests.get(url)
@@ -1695,7 +1695,7 @@ class mt:
                     taskid = selbst.queue.get_nowait()
                     if not taskid:
                         break
-                    start = time.time()
+                    # start = time.time()
                     # TASK START
                     try:
                         if selbst.t.fast and selbst.t.kind != 'spotify':
@@ -1706,8 +1706,8 @@ class mt:
                         # print(f'MT : {error}')
                         selbst.t.double += [taskid]
                     # TASK END
-                    end = time.time()
-                    print(f"|{selbst.t.count}/{len(selbst.t.keys)}/{round(end - start,2)}|",end='\r')
+                    # end = time.time()
+                    print(f"{len(selbst.t.keys)-selbst.t.count}.",end='\r') #/{round(end - start,2)}
                     selbst.queue.task_done()
             @timeout(5.0)        
             def task5(selbst,taskid):
