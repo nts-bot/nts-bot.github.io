@@ -8,31 +8,31 @@ import os
 dr = os.getenv("directory")
 os.chdir(f"{dr}/py")
 import script
-# nts = script.nts()
+nts = script.nts()
 
-# do = True
-# while do:
-#     show = input('Input Show\n')
-#     if show in nts.showlist:
-#         nts.runscript([show],short=False,retry=True)
-#     else:
-#         dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
-#         if dy == 'Y':
-#             nts.runscript([show],short=False,retry=True)
-#     rd = True
-#     while rd:
-#         redo = input('\nREDO [SHOW/N]')
-#         if redo == 'N':
-#             do = False
-#             rd = False
-#         else:
-#             show = redo
-#             if show in nts.showlist:
-#                 nts.runscript([show],short=False,retry=True)
-#             else:
-#                 dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
-#                 if dy == 'Y':
-#                     nts.runscript([show],short=False,retry=True)
+do = True
+while do:
+    show = input('Input Show\n')
+    if show in nts.showlist:
+        nts.runscript([show],short=False,retry=True)
+    else:
+        dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
+        if dy == 'Y':
+            nts.runscript([show],short=False,retry=True)
+    rd = True
+    while rd:
+        redo = input('\nREDO [SHOW/N]')
+        if redo == 'N':
+            do = False
+            rd = False
+        else:
+            show = redo
+            if show in nts.showlist:
+                nts.runscript([show],short=False,retry=True)
+            else:
+                dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
+                if dy == 'Y':
+                    nts.runscript([show],short=False,retry=True)
         
             
 # import datetime
@@ -60,14 +60,14 @@ import script
 # for show in nts.showlist:
 #     nts.runner(show,f"./spotify/{show}",3)
 
-nts = script.nts(youtube=False)
-# shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
-for i in nts.showlist[887:]:
-    print(i)
-    while True:
-        try:
-            nts.spotifyplaylist(i)
-            break
-        except:
-            nts.runscript([i])
-            pass
+# nts = script.nts(youtube=False)
+# # shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
+# for i in nts.showlist[887:]:
+#     print(i)
+#     while True:
+#         try:
+#             nts.spotifyplaylist(i)
+#             break
+#         except:
+#             nts.runscript([i])
+#             pass
