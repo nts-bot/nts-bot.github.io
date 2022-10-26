@@ -543,6 +543,7 @@ class nts:
         cid = os.getenv(f"{index[pick]}id")
         secret = os.getenv(f"{index[pick]}st")
         self.sp = spotipy.Spotify(auth_manager=spotipy.SpotifyOAuth(client_id=cid,client_secret=secret,redirect_uri=f"{callback}",scope=['ugc-image-upload','playlist-modify-public'],username=self.user), requests_timeout=5, retries=10)
+        # ,'playlist-modify-private','playlist-read-private','playlist-read-collaborative','user-library-modify','user-library-read'
         print('. Testing . ',end='')
         test = self.sp.user(self.user)
         print('Successful',end='\r')
