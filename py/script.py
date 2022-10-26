@@ -978,9 +978,33 @@ class nts:
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
         syn = f"[Archive orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
-        reduced_title = desk.split('.')[0]
-        if len(reduced_title) < 20:
-            reduced_title = '.'.join(desk.split('.')[:1])
+        a = 0
+        reduced_title = ''
+        while len(reduced_title) < 60:
+            a += 1
+            _title = '.'.join(desk.split('.')[:a])
+            if len(reduced_title) == len(_title):
+                break
+            elif len(_title) > 100:
+                reduced_title = '.'.join(desk.split('.')[:a-1])
+                break
+            else:
+                reduced_title = _title
+
+        if not reduced_title:
+            a = 0
+            while len(reduced_title) < 80:
+                a += 1
+                _title = ' '.join(desk.split(' ')[:a]) + '...'
+                if len(reduced_title) == len(_title):
+                    break
+                elif len(_title) > 100:
+                    reduced_title = ' '.join(desk.split(' ')[:a-1]) + '...'
+                    break
+                else:
+                    reduced_title = _title
+
+        # print(reduced_title)
         
         ''' UPDATE SPOTIFY PLAYLIST DETAILS '''
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
