@@ -61,5 +61,5 @@ import script
 #     nts.runner(show,f"./spotify/{show}",3)
 
 nts = script.nts(youtube=False)
-shows = [i for i in nts.showlist if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
-nts.runscript(shows[753:],short=False)
+shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
+nts.runscript(shows[818:],short=False)

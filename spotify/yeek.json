@@ -1,4 +1,480 @@
 {
+    "the-yeek-show-17th-december-2019": {
+        "00": {
+            "artist": "Roddy Ricch",
+            "ratio": 9,
+            "title": "High Fashion",
+            "trackid": "6OyAuVfforAGbNqQfbPu4O"
+        },
+        "01": {
+            "artist": "Goldie",
+            "ratio": 7,
+            "title": "Terminator",
+            "trackid": "3FuuPyLf9DNNEcUIIStfQ6"
+        },
+        "02": {
+            "artist": "Race Banyon",
+            "ratio": 9,
+            "title": "Brighter Skies",
+            "trackid": "5eUET7vscuzT2lJ6KEyqYd"
+        }
+    },
+    "the-yeek-show-18th-noveember-2019": {
+        "00": {
+            "artist": "Jakob",
+            "ratio": 8,
+            "title": "You and I",
+            "trackid": "2RjsAYVbdZPISqnsWd3Hup"
+        },
+        "01": {
+            "artist": "The Clash",
+            "ratio": 9,
+            "title": "The Guns of Brixton",
+            "trackid": "1d0RJmZXAncCnTYHFlhaj4"
+        },
+        "02": {
+            "artist": "Soda Stereo",
+            "ratio": 9,
+            "title": "En la Ciudad de la Furia",
+            "trackid": "5wjiZSbxaLyLpGimpwqh1H"
+        },
+        "03": {
+            "artist": "Glassjaw",
+            "ratio": 9,
+            "title": "Ape Dos Mil",
+            "trackid": "1IqKlSMBlwWF0kxY2fBstA"
+        },
+        "04": {
+            "artist": "Dizzy Fae",
+            "ratio": 9,
+            "title": "Gut Talk",
+            "trackid": "667VXJUI3CeWaw4ayIvu6U"
+        },
+        "05": {
+            "artist": "Roy Davis Jr.",
+            "ratio": 9,
+            "title": "I Wana See Your Body Move",
+            "trackid": "1sKf4CI2KV4EtgtDJHYk7U"
+        },
+        "06": {
+            "artist": "Thomas Bangalter",
+            "ratio": 9,
+            "title": "What to Do",
+            "trackid": "2Wpv4EF9clriwKtUuvB8XP"
+        },
+        "07": {
+            "artist": "Sheff G",
+            "ratio": 7,
+            "title": "Flows",
+            "trackid": "7k4fn2FDvkXyEpZeXHYYWV"
+        },
+        "08": {
+            "artist": "Puma Blue",
+            "ratio": 9,
+            "title": "Lil Lude (Dark Embrace)",
+            "trackid": "7JZ0lUmu8bYRNzSQqbHu52"
+        },
+        "09": {
+            "artist": "The Rolling Stones",
+            "ratio": 9,
+            "title": "Cry To Me - Remastered 2002",
+            "trackid": "73PU7Mr8JSuiX0PTYTLQuP"
+        },
+        "10": {
+            "artist": "Etta James",
+            "ratio": 9,
+            "title": "I'd Rather Go Blind",
+            "trackid": "1kPBT8S2wJFNAyBMnGVZgL"
+        },
+        "11": {
+            "artist": "Yeek",
+            "ratio": 9,
+            "title": "Only in the West",
+            "trackid": "3OGMxwVIhhekvyncyXybe6"
+        },
+        "12": {
+            "artist": "Mark Hawkins",
+            "ratio": 4,
+            "title": "Don't U",
+            "trackid": "075KDzYE3kbGzyudFIpceO"
+        }
+    },
+    "the-yeek-show-21st-october-2019": {
+        "00": {
+            "artist": "Little Beaver",
+            "ratio": 9,
+            "title": "Party Down - Pt. 1",
+            "trackid": "2VxBaSKDmZlUoOg0lnpt2f"
+        },
+        "01": {
+            "artist": "The Beatles",
+            "ratio": 9,
+            "title": "I'm Only Sleeping - Remastered 2009",
+            "trackid": "2ylCrFiBu98SC0vFfaCent"
+        },
+        "02": {
+            "artist": "Shintaro Sakamoto",
+            "ratio": 9,
+            "title": "Let's Dance Raw",
+            "trackid": "1uSO1bB5sJdu3x4eefKDpb"
+        },
+        "03": {
+            "artist": "SiR",
+            "ratio": 9,
+            "title": "New Sky (feat. Kadhja Bonet)",
+            "trackid": "3J5fFQ0PxfKQU5putEvUoM"
+        },
+        "04": {
+            "artist": "Thom Yorke",
+            "ratio": 9,
+            "title": "The Eraser",
+            "trackid": "6VRU4oTgt7cIKhx7G8jGb7"
+        },
+        "05": {
+            "artist": "Frits Wentink",
+            "ratio": 9,
+            "title": "Filthboi69",
+            "trackid": "0Xt2RCwR7Ylt9U3fQ08S88"
+        },
+        "06": {
+            "artist": "Dotha",
+            "ratio": 9,
+            "title": "Heal Freestyle",
+            "trackid": "7DTzzMUcF55dSdvdKAKfYl"
+        },
+        "07": {
+            "artist": "Kleenex",
+            "ratio": 9,
+            "title": "Ain't you",
+            "trackid": "4KoKnH1WEOb5I47dD8GMqM"
+        },
+        "08": {
+            "artist": "Daniel Johnston",
+            "ratio": 9,
+            "title": "Walking the Cow",
+            "trackid": "353Zs9hjU0MoyCBQ09btdt"
+        },
+        "09": {
+            "artist": "The Beatles",
+            "ratio": 9,
+            "title": "Only A Northern Song",
+            "trackid": "2upaZFZApLrvmkBzBFFS9m"
+        },
+        "10": {
+            "artist": "Ben E. King",
+            "ratio": 9,
+            "title": "Get in a Hurry",
+            "trackid": "3WA2pwixIQFdwaaFZQtTKW"
+        },
+        "11": {
+            "artist": "Little Ann",
+            "ratio": 9,
+            "title": "Deep Shadows",
+            "trackid": "1AefndGARdj7ub6SqWxOOu"
+        },
+        "12": {
+            "artist": "Untitled",
+            "ratio": 9,
+            "title": "Untitled",
+            "trackid": "7lYYIcsfn5vJkFiThhroib"
+        },
+        "13": {
+            "artist": "V.I.N",
+            "ratio": 0,
+            "title": "Bands",
+            "trackid": "60jtpOKhZrmBXUk1vqZXTc"
+        },
+        "14": {
+            "artist": "H.E.R.",
+            "ratio": 9,
+            "title": "Slide",
+            "trackid": "2rTnVB1bvwxHtaIl4uVu7f"
+        },
+        "15": {
+            "artist": "Mila",
+            "ratio": 9,
+            "title": "Mutual",
+            "trackid": "7518swA4xSqew3tc63SYRp"
+        },
+        "16": {
+            "artist": "Arthur Russell",
+            "ratio": 9,
+            "title": "That's Us/Wild Combination",
+            "trackid": "4Kh2MJAy65AfHFdGqBg1Jw"
+        }
+    },
+    "the-yeek-show-23rd-november-2018": {
+        "00": {
+            "artist": "Michael Jackson",
+            "ratio": 9,
+            "title": "Baby Be Mine",
+            "trackid": "6XYbMGvtl6tlPoGWaiH7EY"
+        },
+        "01": {
+            "artist": "Gwen Guthrie",
+            "ratio": 9,
+            "title": "It Should Have Been You",
+            "trackid": "3e0BAk5D4PVhmU6vCW9ma5"
+        },
+        "02": {
+            "artist": "Joe Bataan",
+            "ratio": 9,
+            "title": "Mujer Mia",
+            "trackid": "6uiqzXiQCvAvoeDcjbRbRC"
+        },
+        "03": {
+            "artist": "Yellow Days",
+            "ratio": 9,
+            "title": "How Can I Love You?",
+            "trackid": "4XNPZFA6HMhkIkbJBDo70X"
+        },
+        "04": {
+            "artist": "Loma",
+            "ratio": 9,
+            "title": "Black Willow",
+            "trackid": "0RuXrsmx1077S5Hx1IKZxn"
+        },
+        "05": {
+            "artist": "Ariana Grande",
+            "ratio": 9,
+            "title": "thank u, next",
+            "trackid": "3e9HZxeyfWwjeyPAMmWSSQ"
+        }
+    },
+    "the-yeek-show-27th-september-2018": {
+        "00": {
+            "artist": "Arthur Russell",
+            "ratio": 9,
+            "title": "Answers Me",
+            "trackid": "48zUFsio0IV0KQxnpqAaEm"
+        },
+        "01": {
+            "artist": "Rexy",
+            "ratio": 9,
+            "title": "In The Force",
+            "trackid": "4yXEmU6jHTa700kON5gsSh"
+        },
+        "02": {
+            "artist": "Hüsker Dü",
+            "ratio": 9,
+            "title": "Don't Want to Know If You Are Lonely",
+            "trackid": "4tPFEWRuNQhibDQSGB2PVE"
+        },
+        "03": {
+            "artist": "Yves Tumor",
+            "ratio": 9,
+            "title": "Lifetime",
+            "trackid": "6z1TKEurXotxsMGB0Kuuka"
+        },
+        "04": {
+            "artist": "Dean Blunt",
+            "ratio": 9,
+            "title": "100",
+            "trackid": "784VjdNkpXhFV0RHquzsi2"
+        },
+        "05": {
+            "artist": "Aphex Twin",
+            "ratio": 9,
+            "title": "Flim",
+            "trackid": "4q650OiSDQIwccxDFpuuBm"
+        }
+    },
+    "the-yeek-show-2nd-august-2018": {
+        "00": {
+            "artist": "Dungen",
+            "ratio": 9,
+            "title": "Målerås finest",
+            "trackid": "4vtwmB9WXg45bjzXMzDnhs"
+        },
+        "01": {
+            "artist": "Gregory Isaacs",
+            "ratio": 0,
+            "title": "My Number One",
+            "trackid": "1odb0NWR1dHvKi34bvgCKM"
+        },
+        "02": {
+            "artist": "Cinderella",
+            "ratio": 9,
+            "title": "Ang Boyfriend Kong Baduy",
+            "trackid": "3PiN3Lg40QeR3cbUi9oJz6"
+        },
+        "03": {
+            "artist": "YELLOW MAGIC ORCHESTRA",
+            "ratio": 9,
+            "title": "TECHNOPOLIS",
+            "trackid": "025rboHEX5F2T0jRBMjuxI"
+        },
+        "04": {
+            "artist": "MGMT",
+            "ratio": 9,
+            "title": "When You Die",
+            "trackid": "3td69vL9Py7Ai9wfXYnvji"
+        },
+        "05": {
+            "artist": "Radiohead",
+            "ratio": 9,
+            "title": "Jigsaw Falling Into Place",
+            "trackid": "0YJ9FWWHn9EfnN0lHwbzvV"
+        },
+        "06": {
+            "artist": "Dean Blunt",
+            "ratio": 9,
+            "title": "100",
+            "trackid": "784VjdNkpXhFV0RHquzsi2"
+        },
+        "07": {
+            "artist": "The Ritchie Family",
+            "ratio": 4,
+            "title": "All Right On the Night",
+            "trackid": "742OPHAP7h02PaiTZ7r2mI"
+        },
+        "08": {
+            "artist": "Patrice Rushen",
+            "ratio": 9,
+            "title": "Feels So Real (Won't Let Go)",
+            "trackid": "4JfoTiMXW5QtQ8mejM4X7k"
+        },
+        "09": {
+            "artist": "Sports",
+            "ratio": 9,
+            "title": "Shiggy",
+            "trackid": "0Ed6Nry1j8FA1Ob4l7c2Wb"
+        },
+        "10": {
+            "artist": "Avelino",
+            "ratio": 9,
+            "title": "Boasy",
+            "trackid": "68YYKjdbD8VfGHPhXZaPsB"
+        },
+        "11": {
+            "artist": "StarBoy",
+            "ratio": 9,
+            "title": "Soco (feat. Wizkid, Ceeza Milli, Spotless & Terri)",
+            "trackid": "1KpBtWSI9dlv0RjtzvF1BD"
+        },
+        "12": {
+            "artist": "Kamaiyah",
+            "ratio": 9,
+            "title": "Addicted To Ballin' (feat. ScHoolboy Q)",
+            "trackid": "27Lpp9GctfJnMlMf9hNhme"
+        },
+        "13": {
+            "artist": "Zae France",
+            "ratio": 3,
+            "title": "Comfort Zone",
+            "trackid": "2Wmjopl15bswuPcuwIk6NF"
+        },
+        "14": {
+            "artist": "Love Mansuy",
+            "ratio": 9,
+            "title": "We Don't Follow Rules",
+            "trackid": "0ux89LFPC0pLIXeVoeFQed"
+        },
+        "15": {
+            "artist": "Yeek",
+            "ratio": 9,
+            "title": "Bed",
+            "trackid": "4JU7pej1uG2i3oFo57DUgV"
+        },
+        "16": {
+            "artist": "Bakar",
+            "ratio": 9,
+            "title": "4am",
+            "trackid": "5VuYmN7vAB2i2agvLyLYOd"
+        }
+    },
+    "the-yeek-show-30th-august-2018": {
+        "00": {
+            "artist": "Sugar Candy Mountain",
+            "ratio": 9,
+            "title": "666",
+            "trackid": "5CEbRjaftulXlgG6xeAytj"
+        },
+        "01": {
+            "artist": "Sports",
+            "ratio": 9,
+            "title": "Rob Las Vegas",
+            "trackid": "5v31AeaIyrJuJkqQwlAMMy"
+        },
+        "02": {
+            "artist": "Judy Blank",
+            "ratio": 3,
+            "title": "Tangled up in You",
+            "trackid": "5zF4vfTDGZtH1mm2MqQscO"
+        },
+        "03": {
+            "artist": "Third Wave",
+            "ratio": 9,
+            "title": "Love Train",
+            "trackid": "3WpLQWyViAAkb8ic1r6U4o"
+        },
+        "04": {
+            "artist": "Yeek",
+            "ratio": 3,
+            "title": "Long Time No See",
+            "trackid": "0Tm7G3FNuVfUgeJ4SzPIAQ"
+        },
+        "05": {
+            "artist": "Blood Orange",
+            "ratio": 9,
+            "title": "Charcoal Baby",
+            "trackid": "3bBmpVl9rQKJsFFGLFilIS"
+        },
+        "06": {
+            "artist": "Liss",
+            "ratio": 9,
+            "title": "Try",
+            "trackid": "6V9ZUWYyx5ENnTQOq3amoG"
+        },
+        "07": {
+            "artist": "Crumb",
+            "ratio": 9,
+            "title": "Locket",
+            "trackid": "2vfPsGhqMbqmhjMGQ52dYf"
+        },
+        "08": {
+            "artist": "CANDY",
+            "ratio": 9,
+            "title": "Bigger Than Yours",
+            "trackid": "7mpoqXX3Qful5kIemOxBOV"
+        },
+        "09": {
+            "artist": "",
+            "ratio": -1,
+            "title": "",
+            "trackid": ""
+        },
+        "10": {
+            "artist": "Marco McKinnis",
+            "ratio": 9,
+            "title": "Silence",
+            "trackid": "7CFxO2nX0rV1L94i55PNRO"
+        },
+        "11": {
+            "artist": "070 Shake",
+            "ratio": 9,
+            "title": "Accusations",
+            "trackid": "4uexcsJVOIsqiEZgshqKUy"
+        },
+        "12": {
+            "artist": "Yeek",
+            "ratio": 9,
+            "title": "Solstice",
+            "trackid": "7pD6yTkQDBdd9ke0MkaoI3"
+        },
+        "13": {
+            "artist": "DIIV",
+            "ratio": 9,
+            "title": "Healthy Moon",
+            "trackid": "4hhMQ3Z9fPQjGaIhcss3eL"
+        },
+        "14": {
+            "artist": "Cro-Mags",
+            "ratio": 9,
+            "title": "We Gotta Know",
+            "trackid": "7l2DMJS7sdl5na5yDKrm1x"
+        }
+    },
     "the-yeek-show-6th-april-2020": {
         "00": {
             "artist": "Amy Winehouse",
