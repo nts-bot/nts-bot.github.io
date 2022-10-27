@@ -1075,7 +1075,7 @@ class nts:
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
         
         ''' LOOP : GET (NEW) TRACKS TO UPLOAD (ACCORDING TO THRESHOLD) '''
-        for mt in sortmeta[::-1]:
+        for mt in sortmeta:#[::-1]
             ep = mt[1]
             trackdict[ep] = []
             if ep not in uploaded[show]:
@@ -1126,7 +1126,7 @@ class nts:
             duplicates = ''
         
         ''' DESCRIPTION '''
-        syn = f"[nts.live/shows/{show}] {desk} [Archive orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[nts.live/shows/{show}] {desk} [Archive {firstep}-{lastep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
