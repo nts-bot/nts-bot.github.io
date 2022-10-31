@@ -1679,7 +1679,7 @@ class nts:
                     you = ''
 
                 if any([bnd,spo,you]):
-                    colon = ':'
+                    colon = '→'
                 else:
                     colon = ''
 
