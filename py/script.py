@@ -74,7 +74,7 @@ except Exception as error:
     yt = False
 
 # BANDCAMP
-bd = False
+bd = True # LETS GOOOO
 
 # LOCK
 lock = Lock()
@@ -1622,6 +1622,7 @@ class nts:
         episodes = self._j2d(f'./tracklist/{show}')
         spotify = self._j2d(f'./spotify/{show}')
         bandcamp = self._j2d(f'./bandcamp/{show}')
+        youtube = self._j2d(f'./youtube/{show}')
         meta = self._j2d(f'./meta')[show]
         sortmeta = sorted(['.'.join(value['date'].split('.')[::-1]),key] for (key,value) in meta.items())
 
@@ -1654,10 +1655,10 @@ class nts:
                     bnd = ''
                 
                 try:
-                    if spotify[i][j]['ratio'] >= 3:
+                    if spotify[i][j]['ratio'] >= 4:
                         spo = f"""
-                        <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/{spotify[i][j]['trackid']}?utm_source=generator')">
-                        <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+                        <button class="goto" onClick="embedplay('https://www.youtube.com/embed/{youtube[i][j]['trackid']}')">
+                        <img class="picon" src="../assets/youtube.png"/>
                         </button>  
                         """
                     else:
@@ -1665,12 +1666,24 @@ class nts:
                 except:
                     spo = ''
 
-                if any([bnd,spo]):
+                try:
+                    if youtube[i][j]['ratio'] >= 3:
+                        you = f"""
+                        <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/{spotify[i][j]['trackid']}?utm_source=generator')">
+                        <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+                        </button>  
+                        """
+                    else:
+                        you = ''
+                except:
+                    you = ''
+
+                if any([bnd,spo,you]):
                     colon = ':'
                 else:
                     colon = ''
 
-                doc += f"""<li>{tart} - {ttit}   {colon}   <span class="data">{spo}{bnd}</span></li>""" #{tub}
+                doc += f"""<li>{tart} - {ttit}   {colon}   <span class="data">{you}{spo}{bnd}</span></li>""" #{tub}
 
             doc += '</ol></details>'
 
