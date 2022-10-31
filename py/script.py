@@ -1670,7 +1670,7 @@ class nts:
                     if youtube[i][j]['ratio'] >= 3:
                         you = f"""
                         <button class="goto" onClick="embedplay('https://www.youtube.com/embed/{youtube[i][j]['trackid']}')">
-                        <img class="picon" src="../assets/youtube.png"/>
+                        <img class="yicon" src="../assets/youtube.png"/>
                         </button>  
                         """
                     else:
