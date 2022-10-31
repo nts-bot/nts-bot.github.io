@@ -1657,8 +1657,8 @@ class nts:
                 try:
                     if spotify[i][j]['ratio'] >= 4:
                         spo = f"""
-                        <button class="goto" onClick="embedplay('https://www.youtube.com/embed/{youtube[i][j]['trackid']}')">
-                        <img class="picon" src="../assets/youtube.png"/>
+                        <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/{spotify[i][j]['trackid']}?utm_source=generator')">
+                        <img class="picon" src="../assets/Spotify_icon.svg.png"/>
                         </button>  
                         """
                     else:
@@ -1669,8 +1669,8 @@ class nts:
                 try:
                     if youtube[i][j]['ratio'] >= 3:
                         you = f"""
-                        <button class="goto" onClick="embedplay('https://open.spotify.com/embed/track/{spotify[i][j]['trackid']}?utm_source=generator')">
-                        <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+                        <button class="goto" onClick="embedplay('https://www.youtube.com/embed/{youtube[i][j]['trackid']}')">
+                        <img class="picon" src="../assets/youtube.png"/>
                         </button>  
                         """
                     else:
