@@ -1129,10 +1129,10 @@ class nts:
         if reset:
             print(f'. . . . . .rr.', end='\r')
             while True:
-                ply = self.you.get_playlist(shelf, 100)
-                if ply:
+                try:
+                    ply = self.you.get_playlist(shelf, 100)
                     response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply['tracks']])
-                else:
+                except:
                     break
             print(f'. . . . . .RR.', end='\r')
 
@@ -1147,20 +1147,21 @@ class nts:
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./yploaded',uploaded)
 
-    def yup(self,shelf,td):
-        trackdict = dict(td)
+    def yup(self,shelf,trackdict):
+        td = dict(trackdict)
         print(f'. . . . . .ta.', end='\r')
         while True:
-            try:
-                response = self.you.get_playlist(shelf, 10)
-                for ep in trackdict:
-                    print(f'.{ep[:5]}.', end='\r')
-                    response = self.you.add_playlist_items(shelf,trackdict[ep],duplicates=True)
-                    del trackdict[ep]
-                print(f'. . . . . .TA.', end='\r')
-                break
-            except:
-                print('error')
+            # try:
+            k = list(td.keys())
+            for ep in k:
+                if td[ep]:
+                    print(f'{ep[-10:]}', end='\r')
+                    response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
+                del td[ep]
+            print(f'. . . . . .TA.', end='\r')
+            break
+            # except:
+            #     print('error')
 
     def follow(self,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
