@@ -1829,7 +1829,10 @@ class mt:
             result = self.nts.you.search(self.taskcopy[taskid],filter='videos') #f'{track["artist"]} : {track["title"]}'
             if result:
                 takeaway = []
-                for i in range(4):
+                rl = len(result)
+                if rl > 4:
+                    rl = 4
+                for i in range(rl):
                     try:
                         art = result[i]['artists'][0]['name'].replace('\n','')
                         tit = result[i]['title'].replace('\n','')
