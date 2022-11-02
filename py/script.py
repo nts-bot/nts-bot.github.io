@@ -74,7 +74,7 @@ except Exception as error:
     yt = False
 
 # BANDCAMP
-bd = True # LETS GOOOO
+bd = False # WIP : fix requesting issues
 
 # LOCK
 lock = Lock()
@@ -1015,7 +1015,10 @@ class nts:
         self._d2j(f'./uploaded',uploaded)
 
     def youtubeplaylist(self,show,threshold=[4,10],reset=False):
-        ''' APPEND-FROM/CREATE YOUTUBE PLAYLIST '''
+        ''' APPEND-FROM/CREATE YOUTUBE PLAYLIST 
+        # WIP : duplicates
+        # WIP : order ?
+        '''
         yid = self._j2d('./yid')
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
 
@@ -1613,7 +1616,7 @@ class nts:
         # <a href="https://open.spotify.com/playlist/{pid}"><img class="picon" src="../assets/Spotify_icon.svg.png"/></a>
         # </div>
         doc += f"""
-        <div>
+        <div style="z-index: -1">
         <h2><a href="https://nts.live/shows/{show}">{title[show]}</a></h2><br>
         <iframe id="embed" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{pid}?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" seamless>
         </iframe>
