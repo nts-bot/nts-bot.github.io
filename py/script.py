@@ -720,10 +720,7 @@ class nts:
         
     def ratio(self,A,B):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
-        if '¾' in A or B:
-            return 0
-        else:
-            return round(SequenceMatcher(None,A,B).ratio(),4)
+        return round(SequenceMatcher(None,A,B).ratio(),4)
 
     def kill(self,text):
         ''' ELIMINATE DUPLICATES & UNNECESSARY CHARACTERS WITHIN STRING '''
@@ -732,8 +729,6 @@ class nts:
 
     def refine(self,text):
         ''' ELIMINATE UNNECCESARY WORDS WITHIN STRING '''
-        if 'full album' in text:
-            return '¾'
         for i in list(range(1900,2022)):
             text = text.replace(str(i),'')
         return text.replace('yellow magic orchestra','ymo').replace('selections','').replace('with ','').replace('medley','').replace('vocal','').replace('previously unreleased','').replace('remastering','').replace('remastered','').replace('various artists','').replace('vinyl','').replace('untitled','').replace('film','').replace('movie','').replace('originally','').replace('from','').replace('theme','').replace('motion picture','').replace('soundtrack','').replace('full length','').replace('original','').replace(' mix ',' mix mix mix ').replace('remix','remix remix remix').replace('edit','edit edit edit').replace('live','live live live').replace('cover','cover cover cover').replace('acoustic','acoustic acoustic').replace('demo','demo demo demo').replace('version','').replace('ver','').replace('feat','').replace('comp','').replace('vocal','').replace('instrumental','').replace('&','and').replace('0','zero').replace('1','one').replace('2','two').replace('3','three').replace('4','four').replace('5','five').replace('6','six').replace('7','seven').replace('8','eight').replace('9','nine').replace('excerpt','').replace('single','').replace('album','').replace('intro','').replace('anonymous','').replace('unknown','').replace('traditional','').replace('  ',' ')
@@ -1100,8 +1095,9 @@ class nts:
                         rate[ep][tr]["ratio"] = -1
                         rate[ep][tr]["uri"] = ''
                     #
+                    t = rate[ep][tr]['trackid']
+                    #
                     if threshold[0] <= rate[ep][tr]['ratio'] <= threshold[1]:
-                        t = rate[ep][tr]['trackid']
                         if up and (t not in tid):
                             upend = True
                             trackdict[ep] += [t]
@@ -1833,24 +1829,23 @@ class mt:
             result = self.nts.you.search(self.taskcopy[taskid],filter='videos') #f'{track["artist"]} : {track["title"]}'
             if result:
                 takeaway = []
-                # takeaway = [{'artist':j['artists'][0]['name'],
-                #     'title':j['title'],
-                #     'uri':j['videoId']}
-                #     for j in result[:3]]
-                for i in range(2):
+                for i in range(4):
                     try:
                         art = result[i]['artists'][0]['name'].replace('\n','')
                         tit = result[i]['title'].replace('\n','')
-                        if self.nts.ratio(art,self.taskcopy[taskid].split(' - ')[0]) <= 0.5:
-                            tit = tit.replace('~','-').replace('–','-').replace(':','-').replace('_','-').replace('•','-')
-                            art = tit.split('-')[0].strip()
-                            tit = '-'.join(tit.split('-')[1:]).strip()
-                            if not tit:
-                                tit = str(art)
-                                art = result[i]['artists'][0]['name']
-                        takeaway += [{'artist':art,
-                        'title':tit,
-                        'uri':result[i]['videoId']}]
+                        if 'full album' in art or tit:
+                            pass
+                        else:
+                            if self.nts.ratio(art,self.taskcopy[taskid].split(' - ')[0]) <= 0.5:
+                                tit = tit.replace('~','-').replace('–','-').replace(':','-').replace('_','-').replace('•','-')
+                                art = tit.split('-')[0].strip()
+                                tit = '-'.join(tit.split('-')[1:]).strip()
+                                if not tit:
+                                    tit = str(art)
+                                    art = result[i]['artists'][0]['name']
+                            takeaway += [{'artist':art,
+                            'title':tit,
+                            'uri':result[i]['videoId']}]
                     except:
                         pass
             else:
