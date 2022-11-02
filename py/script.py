@@ -1127,12 +1127,19 @@ class nts:
         ''' RESET CONDITION '''
         if reset:
             print(f'. . . . . .rr.', end='\r')
+            c = 0
             while True:
                 try:
                     ply = self.you.get_playlist(shelf, 100)
+                    c += 1
                     response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply['tracks']])
-                except:
-                    break
+                    print(f'.{c}.', end='\r')
+                except Exception as e:
+                    if "precondition" in str(e).lower(): # Maximum playlist size exceeded
+                        print(f'.{c}.pcf', end='\r')
+                    else:
+                        print(f'.{c}.{e}', end='\r')
+                        break
             print(f'. . . . . .RR.', end='\r')
 
         time.sleep(2.0)
