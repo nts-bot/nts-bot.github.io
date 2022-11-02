@@ -11,14 +11,19 @@ import script
 nts = script.nts()
 
 do = True
+sh = False
+_ = input("Short? [Y]")
+if _ == 'Y':
+    sh = True
+
 while do:
     show = input('Input Show\n')
     if show in nts.showlist:
-        nts.runscript([show],short=False,retry=True)
+        nts.runscript([show],short=sh,retry=True)
     else:
         dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
         if dy == 'Y':
-            nts.runscript([show],short=False,retry=True)
+            nts.runscript([show],short=sh,retry=True)
     rd = True
     while rd:
         redo = input('\nREDO [SHOW/N]')
@@ -28,11 +33,11 @@ while do:
         else:
             show = redo
             if show in nts.showlist:
-                nts.runscript([show],short=False,retry=True)
+                nts.runscript([show],short=sh,retry=True)
             else:
                 dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
                 if dy == 'Y':
-                    nts.runscript([show],short=False,retry=True)
+                    nts.runscript([show],short=sh,retry=True)
         
             
 # import datetime
