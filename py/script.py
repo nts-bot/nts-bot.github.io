@@ -1060,7 +1060,6 @@ class nts:
         almost = 0
         f = True
         ff = 0
-        upend = False
 
         ''' LOAD DATA '''
         showlist = self._j2d(f'./tracklist/{show}')
@@ -1152,13 +1151,14 @@ class nts:
                 print(f'. . . . . .TA.', end='\r')
                 break
             except Exception as e:
-                print(f'ERROR : {e}') # HTTP 400 -> max playlist size exceeded
-                if """Maximum playlist size exceeded""" in str(e):
+                print(f'\nERROR : {e}') # HTTP 400 -> max playlist size exceeded
+                if "maximum" in str(e).lower(): # Maximum playlist size exceeded
                     lp = sortmeta[ep][0].split('.')
                     lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
                     fails = self._j2d(f'./yfail')
                     fails[show] = [sortmeta[i][1] for i in td]
                     self._d2j(f'./yfail',fails)
+                    print(f'. . . . . .TA.', end='\r')
                     break
         
         ''' DESCRIPTION '''
