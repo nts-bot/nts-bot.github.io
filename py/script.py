@@ -1136,9 +1136,9 @@ class nts:
                     print(f'.{c}.', end='\r')
                 except Exception as e:
                     if "precondition" in str(e).lower(): # Maximum playlist size exceeded
-                        print(f'.{c}.pcf', end='\r')
+                        print(f'¡', end='\r')
                     else:
-                        print(f'.{c}.{e}', end='\r')
+                        print(f'...{e}', end='\r')
                         break
             print(f'. . . . . .RR.', end='\r')
 
