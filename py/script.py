@@ -1139,15 +1139,16 @@ class nts:
 
         ''' UPLOAD '''
         td = dict(trackdict)
+        dt = []
         print(f'. . . . . .ta.', end='\r')
         while True:
             try:
-                k = list(td.keys())
+                k = list(set(list(td.keys()))-set(dt))
                 for ep in k:
                     if td[ep]:
                         print(f'.{sortmeta[ep][1][-9:]}.', end='\r')
                         response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
-                    del td[ep]
+                    dt += [ep]
                 print(f'. . . . . .TA.', end='\r')
                 break
             except Exception as e:
@@ -1156,7 +1157,7 @@ class nts:
                     lp = sortmeta[ep][0].split('.')
                     lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
                     fails = self._j2d(f'./yfail')
-                    fails[show] = [sortmeta[i][1] for i in td]
+                    fails[show] = [sortmeta[i][1] for i in td if i not in dt]
                     self._d2j(f'./yfail',fails)
                     print(f'. . . . . .TA.', end='\r')
                     break
