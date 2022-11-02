@@ -896,9 +896,11 @@ class nts:
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
 
         ''' LOOP : GET (NEW) TRACKS TO UPLOAD (ACCORDING TO THRESHOLD) '''
+        idx = -1
         for mt in sortmeta[::-1]:
+            idx += 1
             ep = mt[1]
-            trackdict[ep] = []
+            trackdict[idx] = []
             if ep not in uploaded[show]:
                 uploaded[show][ep] = 1
                 up = True
@@ -917,7 +919,7 @@ class nts:
                         tid += [rate[ep][tr]['trackid']]
                         if up:
                             upend = True
-                            trackdict[ep] += [rate[ep][tr]['trackid']]
+                            trackdict[idx] += [rate[ep][tr]['trackid']]
                     pup += [rate[ep][tr]['trackid']]
                     if not rate[ep][tr]['trackid']:
                         mis += 1
@@ -1076,9 +1078,11 @@ class nts:
         lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
         
         ''' LOOP : GET (NEW) TRACKS TO UPLOAD (ACCORDING TO THRESHOLD) '''
+        idx = -1
         for mt in sortmeta:#[::-1]
+            idx += 1
             ep = mt[1]
-            trackdict[ep] = []
+            trackdict[idx] = []
             if ep not in uploaded[show]:
                 uploaded[show][ep] = 1
                 up = True
@@ -1098,7 +1102,7 @@ class nts:
                     if threshold[0] <= rate[ep][tr]['ratio'] <= threshold[1]:
                         if up and (t not in tid):
                             upend = True
-                            trackdict[ep] += [t]
+                            trackdict[idx] += [t]
                         tid += [t]
                     pup += [t]
                     if not t:
@@ -1142,7 +1146,7 @@ class nts:
                 k = list(td.keys())
                 for ep in k:
                     if td[ep]:
-                        print(f'.{ep[-9:]}.', end='\r')
+                        print(f'.{sortmeta[ep][1][-9:]}.', end='\r')
                         response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
                     del td[ep]
                 print(f'. . . . . .TA.', end='\r')
@@ -1150,10 +1154,10 @@ class nts:
             except Exception as e:
                 print(f'ERROR : {e}') # HTTP 400 -> max playlist size exceeded
                 if """Maximum playlist size exceeded""" in str(e):
-                    lp = sortmeta[k.index(ep)][0].split('.')
+                    lp = sortmeta[ep][0].split('.')
                     lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
                     fails = self._j2d(f'./yfail')
-                    fails[show] = [i for i in td]
+                    fails[show] = [sortmeta[i][1] for i in td]
                     self._d2j(f'./yfail',fails)
                     break
         
