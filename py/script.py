@@ -1153,7 +1153,7 @@ class nts:
                     lp = sortmeta[k.index(ep)][0].split('.')
                     lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
                     fails = self._j2d(f'./yfail')
-                    fails[show] = td
+                    fails[show] = [i for i in td]
                     self._d2j(f'./yfail',fails)
                     break
         
