@@ -1836,7 +1836,7 @@ class mt:
                     try:
                         art = result[i]['artists'][0]['name'].replace('\n','')
                         tit = result[i]['title'].replace('\n','')
-                        if 'full album' in art or tit:
+                        if 'full album' in (art.lower() or tit.lower()):
                             pass
                         else:
                             if self.nts.ratio(art,self.taskcopy[taskid].split(' - ')[0]) <= 0.5:
