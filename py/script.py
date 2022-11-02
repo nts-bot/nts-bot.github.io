@@ -1096,12 +1096,13 @@ class nts:
                         rate[ep][tr]["uri"] = ''
                     #
                     if threshold[0] <= rate[ep][tr]['ratio'] <= threshold[1]:
-                        tid += [rate[ep][tr]['trackid']]
-                        if up:
+                        t = rate[ep][tr]['trackid']
+                        if up and (t not in tid):
                             upend = True
-                            trackdict[ep] += [rate[ep][tr]['trackid']]
-                    pup += [rate[ep][tr]['trackid']]
-                    if not rate[ep][tr]['trackid']:
+                            trackdict[ep] += [t]
+                        tid += [t]
+                    pup += [t]
+                    if not t:
                         mis += 1
                     if rate[ep][tr]['ratio'] in [4]:
                         almost += 1
