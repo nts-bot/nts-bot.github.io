@@ -1015,8 +1015,7 @@ class nts:
         self._d2j(f'./uploaded',uploaded)
 
     def youtubeplaylist(self,show,threshold=[4,10],reset=False):
-        ''' APPEND-FROM/CREATE YOUTUBE PLAYLIST 
-        # WIP : duplicates
+        ''' APPEND-FROM/CREATE YOUTUBE PLAYLIST
         # WIP : order ?
         '''
         yid = self._j2d('./yid')
@@ -1113,9 +1112,6 @@ class nts:
         ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./youtube/{show}',rate)
 
-        ''' GET NUMBER OF DUPLICATE TRACKS '''
-        tidup = self.scene(tid[::-1])[::-1]
-        dups = len(tid) - len(tidup)
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
             almost = f' {almost} mayb;'
@@ -1125,91 +1121,46 @@ class nts:
             empty = f' {empty} eps w/o tracklist;'
         else:
             empty = ''
-        if dups:
-            duplicates = f' {dups} reps;'
-        else:
-            duplicates = ''
-        
+
         ''' DESCRIPTION '''
-        syn = f"[nts.live/shows/{show}] {desk} [Archive {firstep}-{lastep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[nts.live/shows/{show}] {desk} [Archive {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
-            print(f'.resetting.', end='\r')
-            pt = True
-            while pt:
-                try:
-                    ply = self.you.get_playlist(shelf, 100)['tracks']
-                    if ply:
-                        response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply])
-                    else:
-                        pt = False
-                except KeyError:
-                    pt = False
-                except:
-                    print('error')
-                    pt = False
-            print(f'.complete.', end='\r')
+            print(f'. . . . . .rr.', end='\r')
+            while True:
+                ply = self.you.get_playlist(shelf, 100)
+                if ply:
+                    response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply['tracks']])
+                else:
+                    break
+            print(f'. . . . . .RR.', end='\r')
 
         time.sleep(2.0)
 
         ''' UPLOAD '''
-        number = 5000
-        doup = True
-        if upend:
-            while doup:
-                try:
-                    print(f'.tracks appending.', end='\r')
-                    trackstoadd = [j for i in trackdict for j in trackdict[i]]
-                    if len(trackstoadd) > 5000:
-                        break
-                    else:
-                        trackstoadd = [j for i in trackdict for j in trackdict[i]][:number]
-                    response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
-                    print(f'.tracks appended.', end='\r')
-                    doup = False
-                except:
-                    print(f'. . . . . . . . .error : {len(trackstoadd)}',end='\r')
-                    if number > 500:
-                        number -= 500
-                    else:
-                        doup = False
-        
-        ''' YOUTUBE UPLOADBUG DOUBLECHECK '''
-        number = 5000
-        doup = True
-        if reset:
-            while doup:
-                try:
-                    ply = self.you.get_playlist(shelf, 10)['tracks']
-                    doup = False
-                except KeyError:
-                    try:
-                        time.sleep(1.0)
-                        print(f'.tracks re-appending.', end='\r')
-                        trackstoadd = [j for i in trackdict for j in trackdict[i]]
-                        if len(trackstoadd) > 5000:
-                            break
-                        else:
-                            trackstoadd = [j for i in trackdict for j in trackdict[i]][:number]
-                        response = self.you.add_playlist_items(shelf,trackstoadd,duplicates=True)
-                        print(f'.tracks re-appended.', end='\r')
-                        doup = False
-                    except:
-                        print(f'. . . . . . . . . . . . .error : {len(trackstoadd)}',end='\r')
-                        if number > 500:
-                            number -= 500
-                        else:
-                            doup = False
-                except:
-                    print('error')
-                    doup=False
+        self.yup(shelf,trackdict)
         
         ''' YOUTUBE UPLOADBUG FINALCHECK '''
         self.you.edit_playlist(shelf,f"{title} - NTS",syn)
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./yploaded',uploaded)
+
+    def yup(self,shelf,td):
+        trackdict = dict(td)
+        print(f'. . . . . .ta.', end='\r')
+        while True:
+            try:
+                response = self.you.get_playlist(shelf, 10)
+                for ep in trackdict:
+                    print(f'.{ep[:5]}.', end='\r')
+                    response = self.you.add_playlist_items(shelf,trackdict[ep],duplicates=True)
+                    del trackdict[ep]
+                print(f'. . . . . .TA.', end='\r')
+                break
+            except:
+                print('error')
 
     def follow(self,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
