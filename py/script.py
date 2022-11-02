@@ -1014,7 +1014,7 @@ class nts:
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./uploaded',uploaded)
 
-    def youtubeplaylist(self,show,threshold=[4,10],reset=False):
+    def youtubeplaylist(self,show,threshold=[5,10],reset=False):
         ''' APPEND-FROM/CREATE YOUTUBE PLAYLIST
         # WIP : order ?
         '''
@@ -1104,7 +1104,7 @@ class nts:
                     pup += [t]
                     if not t:
                         mis += 1
-                    if rate[ep][tr]['ratio'] in [4]:
+                    if rate[ep][tr]['ratio'] in [5]:
                         almost += 1
             else:
                 empty += 1
@@ -1123,7 +1123,7 @@ class nts:
             empty = ''
 
         ''' DESCRIPTION '''
-        syn = f"[nts.live/shows/{show}] {desk} [Archive {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
@@ -1151,17 +1151,17 @@ class nts:
         td = dict(trackdict)
         print(f'. . . . . .ta.', end='\r')
         while True:
-            # try:
-            k = list(td.keys())
-            for ep in k:
-                if td[ep]:
-                    print(f'{ep[-10:]}', end='\r')
-                    response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
-                del td[ep]
-            print(f'. . . . . .TA.', end='\r')
-            break
-            # except:
-            #     print('error')
+            try:
+                k = list(td.keys())
+                for ep in k:
+                    if td[ep]:
+                        print(f'{ep[-10:]}', end='\r')
+                        response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
+                    del td[ep]
+                print(f'. . . . . .TA.', end='\r')
+                break
+            except:
+                print('¡error!')
 
     def follow(self,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
