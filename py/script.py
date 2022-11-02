@@ -1016,7 +1016,6 @@ class nts:
 
     def youtubeplaylist(self,show,threshold=[5,10],reset=False):
         ''' APPEND-FROM/CREATE YOUTUBE PLAYLIST
-        # WIP : order ?
         '''
         yid = self._j2d('./yid')
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
@@ -1121,9 +1120,6 @@ class nts:
             empty = f' {empty} eps w/o tracklist;'
         else:
             empty = ''
-
-        ''' DESCRIPTION '''
-        syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
         
         ''' RESET CONDITION '''
         if reset:
@@ -1139,15 +1135,6 @@ class nts:
         time.sleep(2.0)
 
         ''' UPLOAD '''
-        self.yup(shelf,trackdict)
-        
-        ''' YOUTUBE UPLOADBUG FINALCHECK '''
-        self.you.edit_playlist(shelf,f"{title} - NTS",syn)
-
-        ''' UPDATE UPLOADED EPISODES METADATA '''
-        self._d2j(f'./yploaded',uploaded)
-
-    def yup(self,shelf,trackdict):
         td = dict(trackdict)
         print(f'. . . . . .ta.', end='\r')
         while True:
@@ -1155,13 +1142,29 @@ class nts:
                 k = list(td.keys())
                 for ep in k:
                     if td[ep]:
-                        print(f'{ep[-10:]}', end='\r')
+                        print(f'.{ep[-9:]}.', end='\r')
                         response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
                     del td[ep]
                 print(f'. . . . . .TA.', end='\r')
                 break
-            except:
-                print('¡error!')
+            except Exception as e:
+                print(f'ERROR : {e}') # HTTP 400 -> max playlist size exceeded
+                if """Maximum playlist size exceeded""" in str(e):
+                    lp = sortmeta[k.index(ep)][0].split('.')
+                    lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
+                    fails = self._j2d(f'./yfail')
+                    fails[show] = td
+                    self._d2j(f'./yfail',uploaded)
+                    break
+        
+        ''' DESCRIPTION '''
+        syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+        
+        ''' YOUTUBE UPLOADBUG FINALCHECK '''
+        self.you.edit_playlist(shelf,f"{title} - NTS",syn)
+
+        ''' UPDATE UPLOADED EPISODES METADATA '''
+        self._d2j(f'./yploaded',uploaded)
 
     def follow(self,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
