@@ -1154,7 +1154,7 @@ class nts:
                     lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
                     fails = self._j2d(f'./yfail')
                     fails[show] = td
-                    self._d2j(f'./yfail',uploaded)
+                    self._d2j(f'./yfail',fails)
                     break
         
         ''' DESCRIPTION '''
