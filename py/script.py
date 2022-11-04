@@ -909,11 +909,22 @@ class nts:
             if showlist[ep]:
                 for tr in rate[ep]:
                     #
+                    ua = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['artist']).split()).lower().strip()
+                    ut = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['title']).split()).lower().strip()
+                    if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
+                        if rate[ep][tr]["ratio"] != -1:
+                            reset = True
+                        else:
+                            rate[ep][tr]["ratio"] = -1
+                            rate[ep][tr]["uri"] = ''
                     ua = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['artist']).split()).lower().strip()
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
-                        rate[ep][tr]["ratio"] = -1
-                        rate[ep][tr]["uri"] = ''
+                        if rate[ep][tr]["ratio"] != -1:
+                            reset = True
+                        else:
+                            rate[ep][tr]["ratio"] = -1
+                            rate[ep][tr]["uri"] = ''
                     #
                     if threshold[0] <= rate[ep][tr]['ratio'] <= threshold[1]:
                         tid += [rate[ep][tr]['trackid']]
@@ -1090,11 +1101,22 @@ class nts:
             if showlist[ep]:
                 for tr in rate[ep]:
                     #
-                    ua = ' '.join(re.sub( r"([A-Z\d])", r" \1", showlist[ep][tr]['artist']).split()).lower()
-                    ut = ' '.join(re.sub( r"([A-Z\d])", r" \1", showlist[ep][tr]['title']).split()).lower()
-                    if ('unknown artist' in ua) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
-                        rate[ep][tr]["ratio"] = -1
-                        rate[ep][tr]["uri"] = ''
+                    ua = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['artist']).split()).lower().strip()
+                    ut = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['title']).split()).lower().strip()
+                    if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
+                        if rate[ep][tr]["ratio"] != -1:
+                            reset = True
+                        else:
+                            rate[ep][tr]["ratio"] = -1
+                            rate[ep][tr]["uri"] = ''
+                    ua = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['artist']).split()).lower().strip()
+                    ut = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['title']).split()).lower().strip()
+                    if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
+                        if rate[ep][tr]["ratio"] != -1:
+                            reset = True
+                        else:
+                            rate[ep][tr]["ratio"] = -1
+                            rate[ep][tr]["uri"] = ''
                     #
                     t = rate[ep][tr]['trackid']
                     #
