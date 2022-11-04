@@ -259,8 +259,6 @@ class nts:
             if show not in self._j2d('./yploaded'):
                 print('Y-Playlist')
                 self.youtubeplaylist(show)
-                time.sleep(1.0)
-                self.youtubeplaylist(show)
             else:
                 self.runner(show,f"./yploaded",6.5)
 
