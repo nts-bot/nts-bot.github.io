@@ -1159,9 +1159,12 @@ class nts:
                 except Exception as e:
                     if "precondition" in str(e).lower(): # precondition check failed
                         print(f'¡', end='\r')
-                    else:
-                        print(f'...{e}', end='\r')
+                    elif "content" in str(e).lower():
                         break
+                    elif "do you own this playlist?" in str(e).lower():
+                        break
+                    else:
+                        print(e)
             print(f'. . . . . .RR.', end='\r')
 
         time.sleep(2.0)
@@ -1170,6 +1173,8 @@ class nts:
         td = dict(trackdict)
         dt = []
         print(f'. . . . . .ta.', end='\r')
+        f1 = True
+
         while True:
             k = list(set(list(td.keys()))-set(dt))
             for ep in k:
@@ -1177,6 +1182,13 @@ class nts:
                     print(f'.{sortmeta[ep][1][-9:]}.', end='\r')
                     try:
                         response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
+                        while f1: # CHECK THAT IT IS ACUTALLY UPLOADING !!!!
+                            try:
+                                ply = self.you.get_playlist(shelf, len(td[ep]))
+                                f1 = False
+                            except Exception as e:
+                                print(e)
+                                response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
                     except Exception as e:
                         print(f'\nERROR : {e}') # HTTP 400 -> max playlist size exceeded
                         if "maximum" in str(e).lower(): # Maximum playlist size exceeded
