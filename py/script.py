@@ -1199,12 +1199,9 @@ class nts:
                 dt += [ep]
             time.sleep(1.0)
             ''' DESCRIPTION '''
-            syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
-            idx = show[0].upper()
-            if idx.isnumeric():
-                idx = "#"
+            syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]\n[{self.youid(show)}]"
             ''' YOUTUBE UPLOADBUG FINALCHECK '''
-            self.you.edit_playlist(shelf,f"{title} - NTS : {idx}",syn)
+            self.you.edit_playlist(shelf,f"{title} - NTS",syn)
             try: # CHECK
                 ply = self.you.get_playlist(shelf, 100)
                 print(f'. . . . . .TA.', end='\r')
@@ -1216,6 +1213,15 @@ class nts:
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./yploaded',uploaded)
+
+    def youid(self,show):
+        l1 = ['#','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+        l2 = ['#','α','β','γ','δ','ε','ζ','η','θ','ι','κ','λ','μ','ж','ξ','и','π','ρ','σ','τ','υ','φ','χ','ψ','ω','ю','я']
+        idx = show[0].lower()
+        if idx.isnumeric():
+            idx = "#"
+        return l2[l1.index(idx)]
+        
 
     def follow(self,kind='cre'):
         ''' SECONDARY SPOTIFY USERS WHO MAINTAIN ALPHABETICALLY ORGANIZED PLAYLISTS BELOW SPOTIFY (VISIBLE) PUBLIC PLAYLIST LIMIT (200) '''
