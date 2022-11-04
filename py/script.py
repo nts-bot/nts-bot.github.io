@@ -1171,9 +1171,13 @@ class nts:
         
         ''' DESCRIPTION '''
         syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+
+        idx = show[0].upper()
+        if idx.isnumeric():
+            idx = "#"
         
         ''' YOUTUBE UPLOADBUG FINALCHECK '''
-        self.you.edit_playlist(shelf,f"{title} - NTS",syn)
+        self.you.edit_playlist(shelf,f"{title} - NTS : {idx}",syn)
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./yploaded',uploaded)
