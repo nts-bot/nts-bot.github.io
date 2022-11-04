@@ -1173,8 +1173,7 @@ class nts:
         td = dict(trackdict)
         dt = []
         print(f'. . . . . .ta.', end='\r')
-        f1 = True
-
+        
         while True:
             k = list(set(list(td.keys()))-set(dt))
             for ep in k:
@@ -1182,13 +1181,6 @@ class nts:
                     print(f'.{sortmeta[ep][1][-9:]}.', end='\r')
                     try:
                         response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
-                        while f1: # CHECK THAT IT IS ACUTALLY UPLOADING !!!!
-                            try:
-                                ply = self.you.get_playlist(shelf, len(td[ep]))
-                                f1 = False
-                            except Exception as e:
-                                print(e)
-                                response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
                     except Exception as e:
                         print(f'\nERROR : {e}') # HTTP 400 -> max playlist size exceeded
                         if "maximum" in str(e).lower(): # Maximum playlist size exceeded
@@ -1198,7 +1190,7 @@ class nts:
                             fails[show] = [sortmeta[i][1] for i in td if i not in dt]
                             self._d2j(f'./yfail',fails)
                             print(f'. . . . . .TA.', end='\r')
-                            break
+                            break # BREAK FOR LOOP
                         elif "precondition" in str(e).lower(): # precondition check failed
                             print(f'¡', end='\r')
                             fails = self._j2d(f'./yfail')
@@ -1207,18 +1199,22 @@ class nts:
                             fails[show] += [sortmeta[ep][1]]
                             self._d2j(f'./yfail',fails)
                 dt += [ep]
-            print(f'. . . . . .TA.', end='\r')
-            break
-        
-        ''' DESCRIPTION '''
-        syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
-
-        idx = show[0].upper()
-        if idx.isnumeric():
-            idx = "#"
-        
-        ''' YOUTUBE UPLOADBUG FINALCHECK '''
-        self.you.edit_playlist(shelf,f"{title} - NTS : {idx}",syn)
+            time.sleep(1.0)
+            ''' DESCRIPTION '''
+            syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+            idx = show[0].upper()
+            if idx.isnumeric():
+                idx = "#"
+            ''' YOUTUBE UPLOADBUG FINALCHECK '''
+            self.you.edit_playlist(shelf,f"{title} - NTS : {idx}",syn)
+            try: # CHECK
+                ply = self.you.get_playlist(shelf, 100)
+                print(f'. . . . . .TA.', end='\r')
+                break
+            except Exception as e:
+                print(e,'\n')
+                td = dict(trackdict)
+                dt = []
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./yploaded',uploaded)
