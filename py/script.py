@@ -1135,7 +1135,7 @@ class nts:
                     response = self.you.remove_playlist_items(shelf,[{'videoId':i['videoId'],'setVideoId':i['setVideoId']} for i in ply['tracks']])
                     print(f'.{c}.', end='\r')
                 except Exception as e:
-                    if "precondition" in str(e).lower(): # Maximum playlist size exceeded
+                    if "precondition" in str(e).lower(): # precondition check failed
                         print(f'¡', end='\r')
                     else:
                         print(f'...{e}', end='\r')
@@ -1149,25 +1149,32 @@ class nts:
         dt = []
         print(f'. . . . . .ta.', end='\r')
         while True:
-            try:
-                k = list(set(list(td.keys()))-set(dt))
-                for ep in k:
-                    if td[ep]:
-                        print(f'.{sortmeta[ep][1][-9:]}.', end='\r')
+            k = list(set(list(td.keys()))-set(dt))
+            for ep in k:
+                if td[ep]:
+                    print(f'.{sortmeta[ep][1][-9:]}.', end='\r')
+                    try:
                         response = self.you.add_playlist_items(shelf,td[ep],duplicates=True)
-                    dt += [ep]
-                print(f'. . . . . .TA.', end='\r')
-                break
-            except Exception as e:
-                print(f'\nERROR : {e}') # HTTP 400 -> max playlist size exceeded
-                if "maximum" in str(e).lower(): # Maximum playlist size exceeded
-                    lp = sortmeta[ep][0].split('.')
-                    lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
-                    fails = self._j2d(f'./yfail')
-                    fails[show] = [sortmeta[i][1] for i in td if i not in dt]
-                    self._d2j(f'./yfail',fails)
-                    print(f'. . . . . .TA.', end='\r')
-                    break
+                    except Exception as e:
+                        print(f'\nERROR : {e}') # HTTP 400 -> max playlist size exceeded
+                        if "maximum" in str(e).lower(): # Maximum playlist size exceeded
+                            lp = sortmeta[ep][0].split('.')
+                            lastep = f"{lp[2]}.{lp[1]}.{lp[0]}"
+                            fails = self._j2d(f'./yfail')
+                            fails[show] = [sortmeta[i][1] for i in td if i not in dt]
+                            self._d2j(f'./yfail',fails)
+                            print(f'. . . . . .TA.', end='\r')
+                            break
+                        elif "precondition" in str(e).lower(): # precondition check failed
+                            print(f'¡', end='\r')
+                            fails = self._j2d(f'./yfail')
+                            if show not in fails:
+                                fails[show] = []
+                            fails[show] += [sortmeta[ep][1]]
+                            self._d2j(f'./yfail',fails)
+                dt += [ep]
+            print(f'. . . . . .TA.', end='\r')
+            break
         
         ''' DESCRIPTION '''
         syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
