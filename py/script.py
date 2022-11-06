@@ -912,8 +912,6 @@ class nts:
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            if idx != 0:
-                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
 
@@ -921,8 +919,6 @@ class nts:
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            if idx != 0:
-                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
                     #
@@ -941,9 +937,6 @@ class nts:
 
         ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./spotify/{show}',rate)
-        if kill:
-            uploaded[show] = dict() # reset upload
-            raise Exception('KILL')
 
         ''' GET NUMBER OF DUPLICATE TRACKS '''
         tidup = self.scene(tid[::-1])[::-1]
@@ -1109,16 +1102,12 @@ class nts:
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            if idx != len(sortmeta) - 1:
-                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
                     ua = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['artist']).split()).lower().strip()
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            if idx != len(sortmeta) - 1:
-                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
                     #
@@ -1138,9 +1127,6 @@ class nts:
         
         ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./youtube/{show}',rate)
-        if kill:
-            uploaded[show] = dict() # reset upload
-            raise Exception('KILL')
 
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
