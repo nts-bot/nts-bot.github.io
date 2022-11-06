@@ -874,6 +874,7 @@ class nts:
         mis = 0
         almost = 0
         empty = 0
+        kill = False
         f = True
         ff = 0
         upend = False
@@ -911,16 +912,17 @@ class nts:
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            reset = True
-                        else:
+                            if idx != 0:
+                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
+
                     ua = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['artist']).split()).lower().strip()
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            reset = True
-                        else:
+                            if idx != 0:
+                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
                     #
@@ -939,6 +941,9 @@ class nts:
 
         ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./spotify/{show}',rate)
+        if kill:
+            uploaded[show] = dict() # reset upload
+            raise Exception('KILL')
 
         ''' GET NUMBER OF DUPLICATE TRACKS '''
         tidup = self.scene(tid[::-1])[::-1]
@@ -1068,6 +1073,7 @@ class nts:
         empty = 0
         almost = 0
         f = True
+        kill = False
         ff = 0
 
         ''' LOAD DATA '''
@@ -1103,16 +1109,16 @@ class nts:
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", rate[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            reset = True
-                        else:
+                            if idx != len(sortmeta) - 1:
+                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
                     ua = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['artist']).split()).lower().strip()
                     ut = ' '.join(re.sub( r"([A-Z])", r" \1", showlist[ep][tr]['title']).split()).lower().strip()
                     if ('unknown artist' in ua) or ('unknown track' in ua) or ('unknown track' in ut) or (ua == 'unknown') or (ut == 'unknown') or ("".join(set(ua)) == '?'):
                         if rate[ep][tr]["ratio"] != -1:
-                            reset = True
-                        else:
+                            if idx != len(sortmeta) - 1:
+                                kill = True
                             rate[ep][tr]["ratio"] = -1
                             rate[ep][tr]["uri"] = ''
                     #
@@ -1120,7 +1126,6 @@ class nts:
                     #
                     if threshold[0] <= rate[ep][tr]['ratio'] <= threshold[1]:
                         if up and (t not in tid):
-                            upend = True
                             trackdict[idx] += [t]
                         tid += [t]
                     pup += [t]
@@ -1133,6 +1138,9 @@ class nts:
         
         ''' STORE UPDATED RATE INFO (REMOVING UNKNOWN ARTIST) '''
         self._d2j(f'./youtube/{show}',rate)
+        if kill:
+            uploaded[show] = dict() # reset upload
+            raise Exception('KILL')
 
         ''' STRING OF UNSURE/DUPLICATE RESULTS '''
         if almost:
@@ -1199,9 +1207,9 @@ class nts:
                 dt += [ep]
             time.sleep(1.0)
             ''' DESCRIPTION '''
-            syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]\n[{self.youid(show)}]"
+            syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]" #\n[{self.youid(show)}]
             ''' YOUTUBE UPLOADBUG FINALCHECK '''
-            self.you.edit_playlist(shelf,f"{title} - NTS",syn)
+            self.you.edit_playlist(shelf,f"{title} - NTS : {self.youid(show)}",syn)
             try: # CHECK
                 ply = self.you.get_playlist(shelf, 100)
                 print(f'. . . . . .TA.', end='\r')
@@ -1216,7 +1224,7 @@ class nts:
 
     def youid(self,show):
         l1 = ['#','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-        l2 = ['#','α','β','γ','δ','ε','ζ','η','θ','ι','κ','λ','μ','ж','ξ','и','π','ρ','σ','τ','υ','φ','χ','ψ','ω','ю','я']
+        l2 = ['#','α','β','ж','δ','ε','φ','γ','π','ι','η','κ','λ','μ','и','θ','ρ','ю','я','σ','τ','υ','ψ','ω','χ','ζ','ξ']
         idx = show[0].lower()
         if idx.isnumeric():
             idx = "#"
