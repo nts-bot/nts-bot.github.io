@@ -10,35 +10,47 @@ os.chdir(f"{dr}/py")
 import script
 nts = script.nts()
 
-do = True
-sh = False
-_ = input("Short? [Y]")
-if _ == 'Y':
-    sh = True
+# do = True
+# sh = False
+# _ = input("Short? [Y]")
+# if _ == 'Y':
+#     sh = True
 
-while do:
-    show = input('Input Show\n')
-    if show in nts.showlist:
-        nts.runscript([show],short=sh,retry=True)
-    else:
-        dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
-        if dy == 'Y':
-            nts.runscript([show],short=sh,retry=True)
-    rd = True
-    while rd:
-        redo = input('\nREDO [SHOW/N]')
-        if redo == 'N':
-            do = False
-            rd = False
-        else:
-            show = redo
-            if show in nts.showlist:
-                nts.runscript([show],short=sh,retry=True)
-            else:
-                dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
-                if dy == 'Y':
-                    nts.runscript([show],short=sh,retry=True)
-        
+# while do:
+#     show = input('Input Show\n')
+#     if show in nts.showlist:
+#         nts.runscript([show],short=sh,retry=True)
+#     else:
+#         dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
+#         if dy == 'Y':
+#             nts.runscript([show],short=sh,retry=True)
+#     rd = True
+#     while rd:
+#         redo = input('\nREDO [SHOW/N]')
+#         if redo == 'N':
+#             do = False
+#             rd = False
+#         else:
+#             show = redo
+#             if show in nts.showlist:
+#                 nts.runscript([show],short=sh,retry=True)
+#             else:
+#                 dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
+#                 if dy == 'Y':
+#                     nts.runscript([show],short=sh,retry=True)
+
+y = nts._j2d('./yid')
+for i in y:
+    if i[0].lower() == 'b':
+    # if i[0].isnumeric():
+        print(i)
+        try:
+            nts.runner(i,f"./youtube_search_results/{i}",2.5)
+            nts.runner(i,f"./youtube/{i}",3.5)
+            nts.youtubeplaylist(i)
+        except Exception as e:
+            print(e)
+            nts.youtubeplaylist(i)
             
 # import datetime
 # shows = []
