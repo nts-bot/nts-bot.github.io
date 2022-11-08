@@ -1756,7 +1756,9 @@ class mt:
                         selbst.t.double += [taskid]
                     # TASK END
                     # end = time.time()
-                    print(f"{len(selbst.t.keys)-selbst.t.count}.",end='\r') #/{round(end - start,2)}
+                    c = len(selbst.t.keys)-selbst.t.count
+                    if (c % 10 == 0) or (c < 50):
+                        print(f"{c}.",end='\r') #/{round(end - start,2)}
                     selbst.queue.task_done()
             @timeout(5.0)        
             def task5(selbst,taskid):
