@@ -296,11 +296,11 @@ class nts:
             print(f'{oo[:50]}{i}/{len(shows)}')
             # SCRAPE / PRELIMINARY
             if short:
-                v = self.review(show)
-                if v:
-                    self.scrape(show,True) # short
-                else:
-                    self.scrape(show) # long
+                # v = self.review(show) # Not necessary anymore
+                # if v:
+                self.scrape(show,True) # short
+                # else:
+                #     self.scrape(show) # long
             else:
                 self.scrape(show)
             # TRACKLIST

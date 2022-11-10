@@ -41,7 +41,7 @@ nts = script.nts()
 
 y = nts._j2d('./yid')
 for i in y:
-    if i[0].lower() in ['f','g','h']:
+    if i[0].lower() in ['i','j','k']:
     # if i[0].isnumeric():
         print(i)
         try:
