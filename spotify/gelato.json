@@ -1,4 +1,156 @@
 {
+    "gelato-11th-november-2022": {
+        "00": {
+            "artist": "Lovarran",
+            "ratio": 9,
+            "title": "TCQB",
+            "trackid": "5BSJMgyPwHo40uOfdiKh7E"
+        },
+        "01": {
+            "artist": "Khali",
+            "ratio": 9,
+            "title": "LE MONDE EST À TOI",
+            "trackid": "2PsR2Qn2LqD6bd8ZTQdotz"
+        },
+        "02": {
+            "artist": "S.Téban",
+            "ratio": 9,
+            "title": "GIGI (feat. JMK$ & La Fève)",
+            "trackid": "60qEgtpbkvNFXtWE5JKouN"
+        },
+        "03": {
+            "artist": "Lucio101",
+            "ratio": 9,
+            "title": "Tränen",
+            "trackid": "3cWzy2XDyZP5OT5MygdxHt"
+        },
+        "04": {
+            "artist": "Gucci Mane",
+            "ratio": 9,
+            "title": "Gucci Flow",
+            "trackid": "1oqXQ2ghTORGDAkeLwkIDD"
+        },
+        "05": {
+            "artist": "Alexander Borodin",
+            "ratio": 3,
+            "title": "Polovetsian Dances from Prince Igor: Introduzione",
+            "trackid": "1KeJxSvW6pLU1ieRfQOMca"
+        },
+        "06": {
+            "artist": "Lil Double 0",
+            "ratio": 0,
+            "title": "Fight That Switch (Walk) [with EST Gee]",
+            "trackid": "28yy6AId4shZVCSjTRdCa9"
+        },
+        "07": {
+            "artist": "Luther",
+            "ratio": 9,
+            "title": "ALAKAZAM",
+            "trackid": "3bvAmJOfhcfoAsUYFcqe2c"
+        },
+        "08": {
+            "artist": "Meel B",
+            "ratio": 9,
+            "title": "M2",
+            "trackid": "3X76gyDwpb0bEy7es5eyVa"
+        },
+        "09": {
+            "artist": "Irko",
+            "ratio": 9,
+            "title": "Carbon",
+            "trackid": "7but49SDWYIEsnYRstzUff"
+        },
+        "10": {
+            "artist": "H.LA DROGUE",
+            "ratio": 5,
+            "title": "Plug",
+            "trackid": "1SDVa8lpWMhmKQ0qmPtyxn"
+        },
+        "11": {
+            "artist": "AbzSav WorkRate",
+            "ratio": 8,
+            "title": "HB Freestyle",
+            "trackid": "2xzFy35CPn7nkXPnwcYwgR"
+        },
+        "12": {
+            "artist": "GRINCHN'4$",
+            "ratio": 9,
+            "title": "MATT HARDY HIT ELI",
+            "trackid": "7KSz5P4yLd0pyALfFh4zEA"
+        },
+        "13": {
+            "artist": "TS Lagga",
+            "ratio": 9,
+            "title": "Uno",
+            "trackid": "21BsOe3hr2y89sRYvOLxiK"
+        },
+        "14": {
+            "artist": "CEO Trayle",
+            "ratio": 9,
+            "title": "Alter Ego 2",
+            "trackid": "2jsa4vmcnHSwEolEtPGiCO"
+        },
+        "15": {
+            "artist": "SleazyWorld Go",
+            "ratio": 8,
+            "title": "Glitches (feat. G Herbo)",
+            "trackid": "41NdzKqZKg6i629P4UxUaO"
+        },
+        "16": {
+            "artist": "Big Yaya",
+            "ratio": 9,
+            "title": "Water",
+            "trackid": "1tZiRIIHkluyISl3SLTnwS"
+        },
+        "17": {
+            "artist": "Jwles",
+            "ratio": 9,
+            "title": "Audrey Tautou",
+            "trackid": "0N4ETYavqM5JEM0h2nBN6t"
+        },
+        "18": {
+            "artist": "MAPESS",
+            "ratio": 9,
+            "title": "TKT PAS",
+            "trackid": "10Ifrpo86arBfaPFfS8ypf"
+        },
+        "19": {
+            "artist": "BEN.C",
+            "ratio": 9,
+            "title": "LES GARS",
+            "trackid": "7rStxkhQvYzgrKY3vcTKD6"
+        },
+        "20": {
+            "artist": "Leto",
+            "ratio": 9,
+            "title": "Ghetto",
+            "trackid": "78Sc7I8jm5u0hrnCMeP7tj"
+        },
+        "21": {
+            "artist": "TIF",
+            "ratio": 9,
+            "title": "Hinata",
+            "trackid": "5lugweLS17EVHmhXuNZOrC"
+        },
+        "22": {
+            "artist": "Leto",
+            "ratio": 9,
+            "title": "Trap House",
+            "trackid": "2QnQGykdU6NwerXJGTB2i7"
+        },
+        "23": {
+            "artist": "Strandz",
+            "ratio": 9,
+            "title": "Us Against The World",
+            "trackid": "3LRR8OAP798uKqHjx5sQB6"
+        },
+        "24": {
+            "artist": "Lord Apex",
+            "ratio": 9,
+            "title": "Ronaldinho",
+            "trackid": "35JqNzZFpwrODnieizyUm0"
+        }
+    },
     "gelato-14th-october-2022": {
         "00": {
             "artist": "Zaaki",
@@ -1744,9 +1896,10 @@
         },
         "06": {
             "artist": "JMK$",
-            "ratio": 9,
+            "ratio": -1,
             "title": "Unknown",
-            "trackid": "5eX2gAn9bnCgMdi6aB4kOR"
+            "trackid": "5eX2gAn9bnCgMdi6aB4kOR",
+            "uri": ""
         },
         "07": {
             "artist": "Gazo",
