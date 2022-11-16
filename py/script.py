@@ -748,8 +748,8 @@ class nts:
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        # debug = True # TEST
-        debug = False # TEST
+        # debug = True # FOR TESTING
+        debug = False
 
         k1,t1 = self.tbool(a)           # O AUTHOR
         k2,t2 = self.tbool(b)           # O TITLE
@@ -779,15 +779,15 @@ class nts:
             R1 = self._ratio(*self.token(X1,Y1))
             R2,R3 = 0,0
 
-            if R1 == 0:
+            if (R1 == 0) and ('' in self.token(X1,Y1)):
                 X2 = f'{[k1,k2][it]}'
                 Y2 = f'{[k3,k4][it]}'
                 R2 = self._ratio(*self.token(X2,Y2))
-                if R2 == 0:
+                if (R2 == 0) and ('' in self.token(X2,Y2)):
                     X3 = f'{[k2,k1][it]}'
                     Y3 = f'{[k4,k3][it]}'
                     R3 = self._ratio(*self.token(X3,Y3))
-                    if R1 == 0:
+                    if (R3 == 0) and ('' in self.token(X3,Y3)):
                         R = R0
                     else:
                         R = R3
@@ -810,11 +810,7 @@ class nts:
             return(R)
         else:
             am = 200
-            h1 = set(X1.replace('s','').split(' '))
-            h2 = set(Y1.replace('s','').split(' '))
-            X2 = ' '.join(h1-h2).strip()
-            Y2 = ' '.join(h2-h1).strip()
-            return({'R':R,'T':[X1[:am],Y1[:am],X2[:am],Y2[:am]]}) # TEST
+            return({'R':[R0],'T':[X1[:am],Y1[:am]]}) # TEST
         
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
@@ -986,7 +982,7 @@ class nts:
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[Archive orderd {lastep}-{firstep}.{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} missing]"
+        syn = f"[{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} tracks missing]"
         
         a = 0
         reduced_title = ''
@@ -1018,7 +1014,7 @@ class nts:
         
         ''' UPDATE SPOTIFY PLAYLIST DETAILS '''
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
-        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"[nts.live/shows/{show}] {reduced_title} {syn}")
+        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"nts.live/shows/{show} {lastep}→{firstep}. {reduced_title} {syn}")
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./uploaded',uploaded)
@@ -1193,7 +1189,7 @@ class nts:
                 dt += [ep]
             time.sleep(1.0)
             ''' DESCRIPTION '''
-            syn = f"[nts.live/shows/{show}]\n{desk}\n[Archive ordrd {firstep}-{lastep}.{almost}{empty} {mis+len(set(pup))-len(set(tid))} missing]" #\n[{self.youid(show)}]
+            syn = f"nts.live/shows/{show} {lastep}→{firstep}.\n{desk}\n[{almost}{empty} {mis+len(set(pup))-len(set(tid))} tracks missing]" #\n[{self.youid(show)}]
             ''' YOUTUBE UPLOADBUG FINALCHECK '''
             self.you.edit_playlist(shelf,f"{title} - NTS : {self.youid(show)}",syn)
             try: # CHECK

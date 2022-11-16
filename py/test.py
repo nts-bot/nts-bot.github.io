@@ -39,18 +39,18 @@ nts = script.nts()
 #                 if dy == 'Y':
 #                     nts.runscript([show],short=sh,retry=True)
 
-y = nts._j2d('./yid')
-for i in y:
-    if i[0].lower() in ['i','j','k']:
-    # if i[0].isnumeric():
-        print(i)
-        try:
-            nts.runner(i,f"./youtube_search_results/{i}",2.5)
-            nts.runner(i,f"./youtube/{i}",3.5)
-            nts.youtubeplaylist(i)
-        except Exception as e:
-            print(e)
-            nts.youtubeplaylist(i)
+# y = nts._j2d('./yid')
+# for i in y:
+#     if i[0].lower() in ['i','j','k']:
+#     # if i[0].isnumeric():
+#         print(i)
+#         try:
+#             nts.runner(i,f"./youtube_search_results/{i}",2.5)
+#             nts.runner(i,f"./youtube/{i}",3.5)
+#             nts.youtubeplaylist(i)
+#         except Exception as e:
+#             print(e)
+#             nts.youtubeplaylist(i)
             
 # import datetime
 # shows = []
@@ -79,12 +79,12 @@ for i in y:
 
 # nts = script.nts(youtube=False)
 # # shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
-# for i in nts.showlist[887:]:
-#     print(i)
-#     while True:
-#         try:
-#             nts.spotifyplaylist(i)
-#             break
-#         except:
-#             nts.runscript([i])
-#             pass
+for i in nts.showlist[:]:
+    print(i,nts.showlist.index(i))
+    while True:
+        try:
+            nts.spotifyplaylist(i)
+            break
+        except:
+            nts.runscript([i])
+            pass
