@@ -1014,7 +1014,7 @@ class nts:
         
         ''' UPDATE SPOTIFY PLAYLIST DETAILS '''
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
-        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"\"{show}\" {lastep}→{firstep} : {reduced_title} [{syn}]")
+        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"\"{show}\" {lastep}→{firstep} {reduced_title} [{syn}]")
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./uploaded',uploaded)
