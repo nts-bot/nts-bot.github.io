@@ -982,7 +982,7 @@ class nts:
         ''' DESCRIPTION / TITLES '''
         title, desk = self._j2d('./extra/titles')[show], self._j2d('./extra/descriptions')[show]
         desk = desk.replace('\n',' ').replace('\\','').replace('\"','').replace('\'','').strip()
-        syn = f"[{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} tracks missing]"
+        syn = f"{almost}{duplicates}{empty} {mis+len(set(pup))-len(set(tid))} tracks missing".strip()
         
         a = 0
         reduced_title = ''
@@ -1014,7 +1014,7 @@ class nts:
         
         ''' UPDATE SPOTIFY PLAYLIST DETAILS '''
         x_test = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"{syn}")
-        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"nts.live/shows/{show} {lastep}→{firstep}. {reduced_title} {syn}")
+        x_real = self.sp.user_playlist_change_details(self.user,pid,name=f"{title} - NTS",description=f"\"{show}\" {lastep}→{firstep} : {reduced_title} [{syn}]")
 
         ''' UPDATE UPLOADED EPISODES METADATA '''
         self._d2j(f'./uploaded',uploaded)
@@ -1189,7 +1189,8 @@ class nts:
                 dt += [ep]
             time.sleep(1.0)
             ''' DESCRIPTION '''
-            syn = f"nts.live/shows/{show} {lastep}→{firstep}.\n{desk}\n[{almost}{empty} {mis+len(set(pup))-len(set(tid))} tracks missing]" #\n[{self.youid(show)}]
+            syna = f"{almost}{empty} {mis+len(set(pup))-len(set(tid))} tracks missing".strip()
+            syn = f"nts.live/shows/{show} {lastep}→{firstep}.\n{desk}\n[{syna}]" #\n[{self.youid(show)}]
             ''' YOUTUBE UPLOADBUG FINALCHECK '''
             self.you.edit_playlist(shelf,f"{title} - NTS : {self.youid(show)}",syn)
             try: # CHECK

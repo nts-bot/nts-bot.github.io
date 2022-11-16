@@ -77,14 +77,15 @@ nts = script.nts()
 # for show in nts.showlist:
 #     nts.runner(show,f"./spotify/{show}",3)
 
-# nts = script.nts(youtube=False)
-# # shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
-for i in nts.showlist[:]:
-    print(i,nts.showlist.index(i))
-    while True:
-        try:
-            nts.spotifyplaylist(i)
-            break
-        except:
-            nts.runscript([i])
-            pass
+nts = script.nts(youtube=False)
+# shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
+nts.runscript(nts.showlist[:100])
+# for i in nts.showlist[:]:
+#     print(i,nts.showlist.index(i),'\n')
+#     while True:
+#         try:
+#             nts.spotifyplaylist(i)
+#             break
+#         except:
+#             nts.runscript([i])
+#             pass
