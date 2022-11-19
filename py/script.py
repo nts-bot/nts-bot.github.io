@@ -776,23 +776,28 @@ class nts:
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
 
-        k1,t1 = self.tbool(a)           # O AUTHOR
-        k2,t2 = self.tbool(b)           # O TITLE
-        k3,t3 = self.tbool(c)           # S AUTHOR
-        k4,t4 = self.tbool(d)           # S TITLE
+        try:
 
-        R = self.subcomp(k1,k2,k3,k4)
+            k1,t1 = self.tbool(a)           # O AUTHOR
+            k2,t2 = self.tbool(b)           # O TITLE
+            k3,t3 = self.tbool(c)           # S AUTHOR
+            k4,t4 = self.tbool(d)           # S TITLE
 
-        if (R < 0.6) and any([t1,t2,t3,t4]): 
-            if t1:                      # TRANSLATE
-                k1 = self.trnslate(a)
-            if t2:
-                k2 = self.trnslate(b)
-            if t3:
-                k3 = self.trnslate(c)
-            if t4:
-                k4 = self.trnslate(d)
             R = self.subcomp(k1,k2,k3,k4)
+
+            if (R < 0.6) and any([t1,t2,t3,t4]): 
+                if t1:                      # TRANSLATE
+                    k1 = self.trnslate(a)
+                if t2:
+                    k2 = self.trnslate(b)
+                if t3:
+                    k3 = self.trnslate(c)
+                if t4:
+                    k4 = self.trnslate(d)
+                R = self.subcomp(k1,k2,k3,k4)
+
+        except AttributeError:
+            R = 0
         
         return R
         
