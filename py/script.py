@@ -17,10 +17,7 @@ from ytmusicapi import YTMusic as ytm
 import cv2, base64
 from PIL import Image
 # TRANSLATORS
-from googletrans import Translator as ggt
-trans_1 = ggt()
-trans_1.raise_Exception = True
-from translate import Translator as ttt
+from deep_translator import GoogleTranslator
 from unidecode import unidecode
 ## PARSING NONLATIN SCRIPT & MACHINE LEARNING LANGUAGE IDENTIFICATION MODEL
 import unihandecode, fasttext
@@ -693,28 +690,8 @@ class nts:
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
-        
-        convert = ''
-        tryagain = False
-
-        if tex:
-            ln = self.model.predict(tex)[0][0].split('__label__')[1]
-            try:
-                trans_2 = ttt(to_lang="en",from_lang=ln)
-                convert = trans_2.translate(tex)
-            except:
-                tryagain = True
-            if convert != tex:
-                return(self.kill(convert))
-            else:
-                tryagain = True
-        else:
-            return('')
-
-        if tryagain:
-            print('. . . . . . . . .ta',end='\r')
-            convert = trans_1.translate(tex,dest='en').text
-            return(self.kill(convert))
+        ln = self.model.predict(tex)[0][0].split('__label__')[1]
+        return(self.kill(GoogleTranslator(source=ln, target='en').translate(tex)))
         
     def ratio(self,A,B):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
