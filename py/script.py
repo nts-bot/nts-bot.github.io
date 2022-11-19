@@ -686,12 +686,17 @@ class nts:
             d = unihandecode.Unidecoder(lang=ln)
             convert = d.decode(tex)
             trans = True
+        elif ln in ['th','uk','ru','sw','ar','et','id','yi']:
+            trans = True
         return(self.kill(convert),trans)
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
-        ln = self.model.predict(tex)[0][0].split('__label__')[1]
-        return(self.kill(GoogleTranslator(source=ln, target='en').translate(tex)))
+        # try:
+        #     ln = self.model.predict(tex)[0][0].split('__label__')[1]
+        #     return(self.kill(GoogleTranslator(source=ln, target='en').translate(tex)))
+        # except:
+        return(self.kill(GoogleTranslator(source='auto', target='en').translate(tex)))
         
     def ratio(self,A,B):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
@@ -723,25 +728,8 @@ class nts:
         Y2 = ' '.join(h2-h1).strip()
         return([X2,Y2])
 
-    def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
-        ''' COMPARISON FUNCTION '''
-        # debug = True # FOR TESTING
-        debug = False
-
-        k1,t1 = self.tbool(a)           # O AUTHOR
-        k2,t2 = self.tbool(b)           # O TITLE
-        k3,t3 = self.tbool(c)           # S AUTHOR
-        k4,t4 = self.tbool(d)           # S TITLE
-
-        if t1:                          # TRANSLATE
-            k1 = self.trnslate(a)
-        if t2:
-            k2 = self.trnslate(b)
-        if t3:
-            k3 = self.trnslate(c)
-        if t4:
-            k4 = self.trnslate(d)
-
+    def subcomp(self,k1,k2,k3,k4):
+        
         try:
             r = self._ratio(k1,k3,k4)
             it = r.index(max(r))        # INDEX (in case AUTHOR switched w/ TITLE)
@@ -788,6 +776,26 @@ class nts:
         else:
             am = 200
             return({'R':[R0],'T':[X1[:am],Y1[:am]]}) # TEST
+
+
+    def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
+        ''' COMPARISON FUNCTION '''
+        # debug = True # FOR TESTING
+        debug = False
+
+        k1,t1 = self.tbool(a)           # O AUTHOR
+        k2,t2 = self.tbool(b)           # O TITLE
+        k3,t3 = self.tbool(c)           # S AUTHOR
+        k4,t4 = self.tbool(d)           # S TITLE
+
+        if t1:                          # TRANSLATE
+            k1 = self.trnslate(a)
+        if t2:
+            k2 = self.trnslate(b)
+        if t3:
+            k3 = self.trnslate(c)
+        if t4:
+            k4 = self.trnslate(d)
         
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
