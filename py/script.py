@@ -1031,17 +1031,17 @@ class nts:
             uploaded[show] = dict()
             print(f'.reset.',end='\r')
             reset = True
-        elif (sortmeta) and (uploaded[show]):
-            metacopy = [i[1] for i in sortmeta]
-            met0 = list(uploaded[show].keys())
-            for i in met0[:-1]:
-                metacopy.remove(i)
-            metaind = metacopy.index(met0[-1])
-            met1 = metacopy[:metaind] # old shows
-            if met1:
-                uploaded[show] = dict() # reset upload
-                print(f'.reset.',end='\r')
-                reset = True
+        # elif (sortmeta) and (uploaded[show]): # NOT WORTH IT :(
+        #     metacopy = [i[1] for i in sortmeta]
+        #     met0 = list(uploaded[show].keys())
+        #     for i in met0[:-1]:
+        #         metacopy.remove(i)
+        #     metaind = metacopy.index(met0[-1])
+        #     met1 = metacopy[:metaind] # old shows
+        #     if met1:
+        #         uploaded[show] = dict() # reset upload
+        #         print(f'.reset.',end='\r')
+        #         reset = True
         
         ''' EMPTY PARAMETERS TO FILL '''
         tid = []
