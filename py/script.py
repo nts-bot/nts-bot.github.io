@@ -771,31 +771,30 @@ class nts:
         else:
             R = R0
 
-        if not debug:
-            return(R)
-        else:
-            am = 200
-            return({'R':[R0],'T':[X1[:am],Y1[:am]]}) # TEST
-
+        return R
 
     def comp(self,a,b,c,d): #OA, #OT, #SA, #ST
         ''' COMPARISON FUNCTION '''
-        # debug = True # FOR TESTING
-        debug = False
 
         k1,t1 = self.tbool(a)           # O AUTHOR
         k2,t2 = self.tbool(b)           # O TITLE
         k3,t3 = self.tbool(c)           # S AUTHOR
         k4,t4 = self.tbool(d)           # S TITLE
 
-        if t1:                          # TRANSLATE
-            k1 = self.trnslate(a)
-        if t2:
-            k2 = self.trnslate(b)
-        if t3:
-            k3 = self.trnslate(c)
-        if t4:
-            k4 = self.trnslate(d)
+        R = self.subcomp(k1,k2,k3,k4)
+
+        if (R < 0.6) and any([t1,t2,t3,t4]): 
+            if t1:                      # TRANSLATE
+                k1 = self.trnslate(a)
+            if t2:
+                k2 = self.trnslate(b)
+            if t3:
+                k3 = self.trnslate(c)
+            if t4:
+                k4 = self.trnslate(d)
+            R = self.subcomp(k1,k2,k3,k4)
+        
+        return R
         
     def test(self,search,queryartist,querytitle):
         ''' TESTING EACH SEARCH RESULT SYSTEMATICALLY, AND RETURNING THE BEST RESULT '''
