@@ -696,7 +696,11 @@ class nts:
         #     ln = self.model.predict(tex)[0][0].split('__label__')[1]
         #     return(self.kill(GoogleTranslator(source=ln, target='en').translate(tex)))
         # except:
-        return(self.kill(GoogleTranslator(source='auto', target='en').translate(tex)))
+        try:
+            return(self.kill(GoogleTranslator(source='auto', target='en').translate(tex[:500])))
+        except error as e:
+            print(e)
+            return ''
         
     def ratio(self,A,B):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
