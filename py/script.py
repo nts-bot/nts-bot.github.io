@@ -17,7 +17,7 @@ from ytmusicapi import YTMusic as ytm
 import cv2, base64
 from PIL import Image
 # TRANSLATORS
-from deep_translator import GoogleTranslator
+from deep_translator import GoogleTranslator, DeeplTranslator
 from unidecode import unidecode
 ## PARSING NONLATIN SCRIPT & MACHINE LEARNING LANGUAGE IDENTIFICATION MODEL
 import unihandecode, fasttext
@@ -93,6 +93,8 @@ class nts:
         # BANDCAMP & YOUTUBE BOOLEAN
         self.bd = bandcamp
         self.yt = youtube
+        # DEEPL API
+        self.deepl = os.getenv("api")
 
     # LOCAL DATABASE
 
@@ -692,15 +694,16 @@ class nts:
 
     def trnslate(self,tex):
         ''' TRANSLATE RESULT IF TEXT IS NOT IN LATIN SCRIPT '''
-        # try:
-        #     ln = self.model.predict(tex)[0][0].split('__label__')[1]
-        #     return(self.kill(GoogleTranslator(source=ln, target='en').translate(tex)))
-        # except:
         try:
             return(self.kill(GoogleTranslator(source='auto', target='en').translate(tex[:500])))
-        except error as e:
-            print(e)
-            return ''
+        except Exception as error:
+            print(error)
+            try:
+                ln = self.model.predict(tex)[0][0].split('__label__')[1]
+                return DeeplTranslator(api_key=self.deepl, source=ln, target='en', use_free_api=True).translate(tex[:500]) 
+            except Exception as error:
+                print(error)
+                return ''
         
     def ratio(self,A,B):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
