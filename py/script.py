@@ -322,10 +322,10 @@ class nts:
             else:
                 self.scripts(show)
             # HTML
-            if bd:
-                self.showhtml(show)
-        if bd:
-            self.home()
+            # if bd:
+            self.showhtml(show)
+        # if bd:
+        self.home()
         _git()
 
     # WEBSCRAPING
@@ -697,13 +697,12 @@ class nts:
         try:
             return(self.kill(GoogleTranslator(source='auto', target='en').translate(tex[:500])))
         except Exception as error:
-            print(error)
-            try:
+            print(f'{error}\r')
+            if 'server' in error.lower():
                 ln = self.model.predict(tex)[0][0].split('__label__')[1]
                 return DeeplTranslator(api_key=self.deepl, source=ln, target='en', use_free_api=True).translate(tex[:500]) 
-            except Exception as error:
-                print(error)
-                return ''
+            else:
+                return tex
         
     def ratio(self,A,B):
         ''' GET SIMILARITY RATIO BETWEEN TWO STRINGS '''
