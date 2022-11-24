@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/2XZc2CIbcuZY8uW1EYHJjK">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/10-years-of-principe">
      10 Years of Príncipe
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/2XZc2CIbcuZY8uW1EYHJjK?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -62,23 +65,41 @@
    </summary>
    <ol>
     <li>
-     "(RSPROD ) Farucox - Guerdo
+     "(RSPROD ) Farucox - Guerdo   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/c_oFxBc6qgk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/03yyIEvJhSlK3X2J79IYbj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     (RSPROD) Dj Narciso - Bacalhau Com Natas
+     (RSPROD) Dj Narciso - Bacalhau Com Natas   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Fz8ynRv6mTw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3omDZvIpVAgCrh1pC2m0rR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     (RSPROD) Farucox - 7 Vozes In My Mind
+     (RSPROD) Farucox - 7 Vozes In My Mind   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/qSs1bZ8M4zs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     (RSPROD) Dj Narciso - Euromilhões
+     (RSPROD) Dj Narciso - Euromilhões   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5lsWr-POjzo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -87,13 +108,22 @@
      </span>
     </li>
     <li>
-     (RSPROD) Dj Narciso - Mágoas
+     (RSPROD) Dj Narciso - Mágoas   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KE3unmf2OXQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5HNRSfTakqvrjlXXM3deV9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     (RSPROD) Farucox - Pai Banana
+     (RSPROD) Farucox - Pai Banana   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-HvAurK73JE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -102,8 +132,11 @@
      </span>
     </li>
     <li>
-     (RSPROD) Nuno Beats - Yee
+     (RSPROD) Nuno Beats - Yee   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2h0eJ5UO8KE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -112,16 +145,22 @@
      </span>
     </li>
     <li>
-     (RSPROD) Dj Narciso - Inspirado
+     (RSPROD) Dj Narciso - Inspirado   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5XOiy673Umcat3Zo1Y6GtL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Rs Produções - Reflexão (Reprise)   :
+     Rs Produções - Reflexão (Reprise)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2A2TGLqNIOEo3f85lD9LqA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/uTIslM50UZA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2A2TGLqNIOEo3f85lD9LqA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -130,8 +169,11 @@
      </span>
     </li>
     <li>
-     (RSPROD) Farucox - Farucox No Mundo
+     (RSPROD) Farucox - Farucox No Mundo   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/yoRlW_pepjA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -140,18 +182,30 @@
      </span>
     </li>
     <li>
-     (RSPROD) Nuno Beats - Coluna Rompeu
+     (RSPROD) Nuno Beats - Coluna Rompeu   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FrZe683raYk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kinek - Tipo Porco ( Acapella)
+     Kinek - Tipo Porco ( Acapella)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BrC-Th1k8TI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6wFks2075I3eHfs4lglETl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     (RSPROD) Nuno Beats - Boyka Instrumental"
+     (RSPROD) Nuno Beats - Boyka Instrumental"   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/sFmBpvNGER0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>

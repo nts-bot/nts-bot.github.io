@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,20 +24,40 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/1XYLkLteNJ3AryyxsDESMz">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/beau-beaumont">
      Beau Beaumont
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/1XYLkLteNJ3AryyxsDESMz?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
+  <details>
+   <summary>
+    <h3>
+     <div class="title">
+      Beau Beaumont w/ Luce Mawdsley - 12.11.22
+     </div>
+     <span class="data">
+      <a href="https://nts.live/shows/beau-beaumont/episodes/beau-beaumont-12th-november-2022">
+       <img class="icon" src="../assets/nts-icon.jpg"/>
+      </a>
+     </span>
+    </h3>
+   </summary>
+   <ol>
+    <li>
+     Beau Beaumont &amp; Luce Mawdsley - LIVE Foley &amp; Drone Set   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/18QHvKoP8RZDE6kWYWwd04?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+   </ol>
+  </details>
   <details>
    <summary>
     <h3>
@@ -46,16 +73,22 @@
    </summary>
    <ol>
     <li>
-     Félicia Atkinson - Les Dunes   :
+     Félicia Atkinson - Les Dunes   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0D8LB9xo9pGvqSXzUcQrQD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DgEHRJ2ksqY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0D8LB9xo9pGvqSXzUcQrQD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Oliviaway - Something To Believe In
+     Oliviaway - Something To Believe In   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ljLWLwlyF_I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -64,11 +97,14 @@
      </span>
     </li>
     <li>
-     Félicia Atkinson - The Lake Is Speaking   :
+     Félicia Atkinson - The Lake Is Speaking   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/15tLwUGIi7mqeuE2teSPqH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DgEHRJ2ksqY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/15tLwUGIi7mqeuE2teSPqH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -77,8 +113,11 @@
      </span>
     </li>
     <li>
-     Oliviaway - The Glasshouse With Butterfly
+     Oliviaway - The Glasshouse With Butterfly   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5zasVQkx1S1yI0sHUa0Egd?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -87,37 +126,52 @@
      </span>
     </li>
     <li>
-     Anthéne - Silver Birch   :
+     Anthéne - Silver Birch   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2gFPpnwpIRv86T3rwuUOIb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Ridqb8ZLCrw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Herne - Language Of Birds
+     Herne - Language Of Birds   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/knc4QwQtwZk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0VgShzVytwtF8Z2ShFIdbv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ouvala - Spatial Distributions   :
+     Ouvala - Spatial Distributions   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5vi8igyybyJ4CvOipjedH5">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/pC9bCYiizmA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5vi8igyybyJ4CvOipjedH5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Herne - Emotional Axes
+     Herne - Emotional Axes   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/H7bzyggFYSE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     r beny - The Stars Are Veiled   :
+     r beny - The Stars Are Veiled   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4QGnO6K91pjyujB0DdDTxI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FD5obUv52xQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4QGnO6K91pjyujB0DdDTxI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -126,11 +180,14 @@
      </span>
     </li>
     <li>
-     KMRU,  - Rebirth   :
+     KMRU,  - Rebirth   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6z1wZ7JgDRZn97SHrb7z1X">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/fuQ7LiGnpWI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6z1wZ7JgDRZn97SHrb7z1X?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -150,53 +207,74 @@
    </summary>
    <ol>
     <li>
-     Félicia Atkinson - Becoming A Stone   :
+     Félicia Atkinson - Becoming A Stone   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3LlLW4ZXFdU8eO7tQ6JI0I">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DgEHRJ2ksqY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3LlLW4ZXFdU8eO7tQ6JI0I?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Aho Ssan,  - Part 1   :
+     Aho Ssan,  - Part 1   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7KLC4jMv2Jq2hww0ulpOml">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UfMdNWbQBCw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6KFKYqcn9U9kjWUj9XVkWL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Anthéne - Cedar Point II
+     Anthéne - Cedar Point II   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/aoBug2KiJGA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Part Timer - Myr   :
+     Part Timer - Myr   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6eYzEkBuMsJmx8bksWuM65">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tDJhDfg2jCQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6eYzEkBuMsJmx8bksWuM65?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Stijn Hüwels - Veselka   :
+     Stijn Hüwels - Veselka   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7vYaGGbwybG3sQas7HDUCV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-cxj4EtT4zY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7vYaGGbwybG3sQas7HDUCV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Oliviaway - The Glasshouse With Butterfly
+     Oliviaway - The Glasshouse With Butterfly   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5zasVQkx1S1yI0sHUa0Egd?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Steve Pacheco - As The Light Moves Through The Air   :
+     Steve Pacheco - As The Light Moves Through The Air   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5VsmaP9250U0mQS8r1K9KU">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/sXgcFvveXxM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5VsmaP9250U0mQS8r1K9KU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -205,56 +283,71 @@
      </span>
     </li>
     <li>
-     Félicia Atkinson,  - And All The Spirals Of The World   :
+     Félicia Atkinson,  - And All The Spirals Of The World   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1ki2FaOFSS26sS8jDuXrJz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7OWTjTy_guU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1ki2FaOFSS26sS8jDuXrJz?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tom Leclerc - Ker Diary #5
+     Tom Leclerc - Ker Diary #5   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tYNb46cApJE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Félicia Atkinson,  - Quelque Chose   :
+     Félicia Atkinson,  - Quelque Chose   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4klj5s5IrqcaIvpknGsES9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4klj5s5IrqcaIvpknGsES9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Daryl Groetsch - Living In The Clouds   :
+     Daryl Groetsch - Living In The Clouds   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5u6qbCCmsrVwCtYIHqTOX6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/r7_rJG5DlGU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5u6qbCCmsrVwCtYIHqTOX6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Andarctica - Warm Light On The Spire   :
+     Andarctica - Warm Light On The Spire   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7m7MQiOA8K5jP1Z8mzwQxJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/rl_7BkODCpU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7m7MQiOA8K5jP1Z8mzwQxJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Perila - Room Cave   :
+     Perila - Room Cave   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2nL7PY2oT8TQFgmADUXSwu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/a9v14Jeaodk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     KMRU,  - Ruined Abstractions   :
+     KMRU,  - Ruined Abstractions   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1mBJkguxraZ72VnG7dUvFM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XgZogZ6Au3M')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1mBJkguxraZ72VnG7dUvFM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -274,18 +367,33 @@
    </summary>
    <ol>
     <li>
-     Beau Beaumont - Trahere II
+     Beau Beaumont - Trahere II   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/YPgG40LoT9o')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6lVlGZ1MhetE0cvO7fJSsV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Alex Zethson - Untitled
+     Alex Zethson - Untitled   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7Ebep4aJdTs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0xsWoUGThGgTdfiFdhn4Dt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Eliott Blaise-Lassire - Untitled
+     Eliott Blaise-Lassire - Untitled   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PxaBdtaZFvg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -310,21 +418,30 @@
    </summary>
    <ol>
     <li>
-     Ambienti Coassiali - 1stOper Variations
+     Ambienti Coassiali - 1stOper Variations   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tm05cPBM0dc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1esLWQKZtQmm2wIgItkDRV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kevin Drumm - C
+     Kevin Drumm - C   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/JecQUepIKBs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kali Malone - 1113   :
+     Kali Malone - 1113   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/62SMTFdXWQ4g8UMcgk0WLz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/E9NkP1Le7zk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -333,86 +450,128 @@
      </span>
     </li>
     <li>
-     Claire Rousay - 17 Roles (All Mapped Out)
+     Claire Rousay - 17 Roles (All Mapped Out)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/GLSbvnNHma4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4jAJccKX9C7z94RDodFMNw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Moral Fibre - Cardules   :
+     Moral Fibre - Cardules   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5LKAv8CC0VzrvVDyca24QG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4b3Msj1T0M35blX1Lup1HJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kali Malone - In Light Of Marwa
+     Kali Malone - In Light Of Marwa   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/10sa8ez5NRQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4ZpSr9KWLaWsmIEoAyNsKh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jake Muir - Nilas   :
+     Jake Muir - Nilas   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6egTgDXqNZUt6ICZ04y5tc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/uuORD4in0vA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6egTgDXqNZUt6ICZ04y5tc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     David Granström - Sapphire Visions   :
+     David Granström - Sapphire Visions   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6IHZ7diaaPp08fgMX9cZQ1">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6IHZ7diaaPp08fgMX9cZQ1?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Petteril - Cobwebs, Rain   :
+     Petteril - Cobwebs, Rain   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5OKkNqDwep6T6c0Eiil3oX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5OKkNqDwep6T6c0Eiil3oX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     David Granström - Occultations   :
+     David Granström - Occultations   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0sqoYem9ls1Uj2aKuPQTGL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/z-Zfujp7Ft4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0sqoYem9ls1Uj2aKuPQTGL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jake Muir - Gleam
+     Jake Muir - Gleam   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TAPhBOswFKE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/25BeAJZoap085PALbqINak?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jake Muir - Smoke And Mirrors   :
+     Jake Muir - Smoke And Mirrors   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1JKh2bRSYxx04pBEmFM6Bt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/a9lZaBLvVfM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Suzanne Ciani - Fish Music
+     Suzanne Ciani - Fish Music   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ZSKVH4EcgTc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     KMRU - Terminal Taut V1
+     KMRU - Terminal Taut V1   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/W5N8Sz7fmFc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6D1rcabQkvAXp2wp2W8VXF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tom Whiston - A Darkness Hangs In The Heart Of The Home
+     Tom Whiston - A Darkness Hangs In The Heart Of The Home   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/QlgFvYQMEBY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4NY4jpaYCoFjbBiEVkBlZl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nicolas Sàvva - The Tower
+     Nicolas Sàvva - The Tower   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gsG-9k_IjzI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
