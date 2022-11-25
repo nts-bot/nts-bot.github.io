@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/257kCICP3BkVUm7VoVFDNo">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/china-social-club">
      China Social Club
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/257kCICP3BkVUm7VoVFDNo?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -46,50 +49,74 @@
    </summary>
    <ol>
     <li>
-     Brainscapes - Platypus Rock   :
+     Brainscapes - Platypus Rock   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3jpKVJihylaej24FJNfuHA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/nN-542IYoE0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3jpKVJihylaej24FJNfuHA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Misa Negra - Spiritual Vibes (Original Reprise)
+     Misa Negra - Spiritual Vibes (Original Reprise)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vG8R56ewH-I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Francisco Aguabella - Dejomey Blue (Catalyst Remix)   :
+     Francisco Aguabella - Dejomey Blue (Catalyst Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0Gab1nO25PdyzEp0y5YKEC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FxXsexcnAb0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0Gab1nO25PdyzEp0y5YKEC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Dancing Fantasy - Voodoo Jammin' (Kinski Ambient House Mix)   :
+     Dancing Fantasy - Voodoo Jammin' (Kinski Ambient House Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5pZi5kfM7dz9dtNNerA16K">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/IMFsVHLx-v8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5pZi5kfM7dz9dtNNerA16K?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Green Baize - Tramp Heart   :
+     Green Baize - Tramp Heart   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0YkoToE7lyt7JcxxLhMBTb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2Y--IMOT1eI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0YkoToE7lyt7JcxxLhMBTb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Korsakow - Line Vision
+     Korsakow - Line Vision   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/uyU1QKnRbn0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4WUPRnZnADQ697k2YeM6CI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Phil Stroud - The Forest
+     Phil Stroud - The Forest   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/po0Nmtaex08')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -109,104 +136,170 @@
    </summary>
    <ol>
     <li>
-     Orlando Johnson &amp; Trance - Turn The Music On   :
+     Orlando Johnson &amp; Trance - Turn The Music On   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6NNByPLkZQqTOaYOAVjvdf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gGRGH1K8x2c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6NNByPLkZQqTOaYOAVjvdf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     邝美云 - 爱得疯了
+     邝美云 - 爱得疯了   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mBTY06Ylpp8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3R9V0CyOtfeV7q36nw7Xpe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     叶德娴 - 好东西
+     叶德娴 - 好东西   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gNAYdfWlcrw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/33vglJ7p1KvYdij6l4oYCP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     慕潔溪 - 夜间巡航
+     慕潔溪 - 夜间巡航   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Ja8KZtrMMHGuFQQpGmrur?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     刘美君 - 点解
+     刘美君 - 点解   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Ao78ViRXVFc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Empire - Zombie
+     Empire - Zombie   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3RTIXUzCr2M')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0tU7BmSWPm2ppwmR3ZldUY?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bo Boss - Hao Hao Ha Tequila (Original 1982)   :
+     Bo Boss - Hao Hao Ha Tequila (Original 1982)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4F0AKhM5NlvwIUGqne3IiK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_OVSH3hw9lU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5CewjjFg7NcnXKah58PZyg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kazumi Watanabe - つるかめひなタンゴ (Tsuru-Kame Hinatango)
+     Kazumi Watanabe - つるかめひなタンゴ (Tsuru-Kame Hinatango)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/dKqDcz1-axg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Eleventeen Eston - Where There Is Rain   :
+     Eleventeen Eston - Where There Is Rain   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4y4cdDtaNCtALvjqaK7KOV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/CmLYyUsy-m4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4y4cdDtaNCtALvjqaK7KOV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Doc Scott - Far Away @33   :
+     Doc Scott - Far Away @33   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5EeOV1WzoRtoWN1y7ekTy0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mbqWCOVXpuo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3YIidpnLz1kERI0gvdCx6j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     梦剧院 - 飘去夏天   :
+     梦剧院 - 飘去夏天   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7zfCAfl85syRJ8uhRHqL71">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ooJBgV2uAoo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7zfCAfl85syRJ8uhRHqL71?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     慕潔溪 - 熱舞
+     慕潔溪 - 熱舞   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eBB00LzimOc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/58yGwGLHUOu9mCi9lMnXE3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Carol Hahn - Do Your Best   :
+     Carol Hahn - Do Your Best   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6w1MSoKJp8FQKzajpjYNmQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/cQre3aOpBpg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6w1MSoKJp8FQKzajpjYNmQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Blowfly - Electronic Pussy Sucker   :
+     Blowfly - Electronic Pussy Sucker   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7KLGO4MFW9MAAVg3D896Jl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/II4C2fL2tqA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7KLGO4MFW9MAAVg3D896Jl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     林志美 - 爱得糊涂
+     林志美 - 爱得糊涂   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/124ZV-l2ahU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1b8ZybIufxmpDQszin5yPt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Yumi Murata - Private Lesson
+     Yumi Murata - Private Lesson   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/nXPaNceWqG0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7BgNhufmVuEQjRo86YrsJR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -226,96 +319,153 @@
    </summary>
    <ol>
     <li>
-     Francis Inferno Orchestra,  - Cafune
+     Francis Inferno Orchestra,  - Cafune   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/IrE7KlIjKPo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Angelo Ioakimoglu - U220sax2   :
+     Angelo Ioakimoglu - U220sax2   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5FKa4DFmZDg1zIhs1A7w9T">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5ySKMJdAcwI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5FKa4DFmZDg1zIhs1A7w9T?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Eleventeen Eston - I Remember   :
+     Eleventeen Eston - I Remember   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7Jto2eY1vcgt3hibnMePoO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5WPE4H7czNc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7Jto2eY1vcgt3hibnMePoO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     墮落天使 - 完成任務
+     墮落天使 - 完成任務   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/R0tQcVlzRck')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5kO6sBAyYyawUO48t97vkX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     草蜢 - 点解
+     草蜢 - 点解   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/oeufvmhgq6M')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Planet Ha Ha - Home
+     Planet Ha Ha - Home   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OMlBLNqJUuA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1b8pnOzyvGcV2mkTyb7DMg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Carlton - Cool With Nature   :
+     Carlton - Cool With Nature   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2UgeSuq8FUb4NocXq8HvEL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7h9lqbIqagM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2UgeSuq8FUb4NocXq8HvEL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Man Parrish - Boogie Down Bronx (Vocal)   :
+     Man Parrish - Boogie Down Bronx (Vocal)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2CbgPrMwa0UWUdppsOIoTR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WDSoOOwjvSM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2CbgPrMwa0UWUdppsOIoTR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Testpattern - Ryugu
+     Testpattern - Ryugu   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/zDUXXZ05OyU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Sk8QMGPa90xj89HxM1Rhe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Hame DJ - Dog Swamp
+     Hame DJ - Dog Swamp   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ZAFN2biy8_E')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Andy Hart - Neutron Capture
+     Andy Hart - Neutron Capture   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jy6AsBJAtHg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Pink Rhythm - Can't Get Enough Of Your Love (Instrumental)	   :
+     Pink Rhythm - Can't Get Enough Of Your Love (Instrumental)	   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5bDrITTvtMiAml4O1HGi8r">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/yRz0KUAJ9r8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2D76pzepQH1hOITGWI3C4c?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Severed Heads - Heart Of The Party   :
+     Severed Heads - Heart Of The Party   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5u2lYMeIR4rsBWE42686m4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PiDAuguTkQY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5u2lYMeIR4rsBWE42686m4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Sunrise Society - Astral Travel
+     Sunrise Society - Astral Travel   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4guzBM51Wqg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/55X66sKArUevBeGD7buroR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Transcendental Love Machine - When I Wake Up In The Morning, My Head Is Full Of Wires
+     Transcendental Love Machine - When I Wake Up In The Morning, My Head Is Full Of Wires   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/a0opEXxZA44')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -335,68 +485,101 @@
    </summary>
    <ol>
     <li>
-     Doris Day - Shanghai   :
+     Doris Day - Shanghai   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6I8nJczP5z7RmTOIIYT8Wz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Idsd53Y9C1c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/38kOgUnzuvYTK6njzUvzkD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     林忆莲 - 匆匆 (Remix)
+     林忆莲 - 匆匆 (Remix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/kMju5pqdzwI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1b8ZybIufxmpDQszin5yPt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bayete - Open Your Heart (Vula)
+     Bayete - Open Your Heart (Vula)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BwOOAsZ7AOg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Pink Rhythm - Can't Get Enough Of Your Love   :
+     Pink Rhythm - Can't Get Enough Of Your Love   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1WK9Rmo03f2Z4V0QiVjWUW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/YYJ5OzqMaaU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1WK9Rmo03f2Z4V0QiVjWUW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     林忆莲 - 一分钟都市·一分钟恋爱 (六分钟版)
+     林忆莲 - 一分钟都市·一分钟恋爱 (六分钟版)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XCW1B9hYzAk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Thomas Brinkmann - 8 Ba   :
+     Thomas Brinkmann - 8 Ba   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6Bb1mckh88TVYiemU0brys">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TVyMZEySOZg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5OjpNI90SEWwN0i3YwFG6W?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Lone - Temples   :
+     Lone - Temples   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3PNBqhwIvaXmZYbwLTQd2A">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DbHW21d86PA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3PNBqhwIvaXmZYbwLTQd2A?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mystic Bill - U Won't C Me (Original Mix)   :
+     Mystic Bill - U Won't C Me (Original Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/18XQ8eo6c4RJyuEBAg6Ru9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1M0pS7ZkptY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5rnD7Zb0eMmC3RWDNKCxYa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mall Grab - B.F.O.D.A.A.S.
+     Mall Grab - B.F.O.D.A.A.S.   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_zP_NN2dOa4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Oblong - Speed Your Rage To Me
+     DJ Oblong - Speed Your Rage To Me   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/lz0SHafEQ_Q')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -421,34 +604,52 @@
    </summary>
    <ol>
     <li>
-     陈明章 - 淡水骑车
+     陈明章 - 淡水骑车   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WFJX3_xji2k')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6e1QWVmSLj3OYcp1YoCTZj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈勋奇 - 善其身
+     陈勋奇 - 善其身   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1tpAKNUS3O9ncXrjZGOASb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈勋奇 - 缘定今生
+     陈勋奇 - 缘定今生   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/bf7eRwOutv8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mader - The Daughter's Heart - 1   :
+     Mader - The Daughter's Heart - 1   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/013rEMkiDwnjEYGGhkUslN">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KRqIkTlGIOE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/013rEMkiDwnjEYGGhkUslN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     David Byrne - Main Title Theme (The Last Emperor)   :
+     David Byrne - Main Title Theme (The Last Emperor)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5kLSgP3aV8KyFXAut1ETD3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/noX8q3ORUmw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/392cd1euczCOcZAs0SvvZS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -457,69 +658,129 @@
      </span>
     </li>
     <li>
-     坂本龍一 - First Coronation   :
+     坂本龍一 - First Coronation   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3rcjLWviChu6qslJRa43pA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/smiCDc3fcVM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3rcjLWviChu6qslJRa43pA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 心魔
+     黄霑 - 心魔   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Rohjltuft6U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/01Lwmdx1L1IERfnnh0dqJ4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     邓白英 - 双双燕
+     邓白英 - 双双燕   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/N6EhHHNHuSk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1HNKUUOS28Brq4XWsgVqor?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     翁玮盈 - Why Couldn't Be Together Everyday?
+     翁玮盈 - Why Couldn't Be Together Everyday?   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/uwNxagxLheM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1PVkuv9402TxIL9rOxMUZZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     大友良英 - Main Title (The Blue Kite)
+     大友良英 - Main Title (The Blue Kite)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2uyFpd9FurI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5OG4Bj3vTUkn8MPNOQuzJQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Alexandre Desplat,  - Streets Of Shanghai
+     Alexandre Desplat,  - Streets Of Shanghai   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_cGvsFR1sz8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6czRN05Lbp5P1ShPfGuPRL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     梅林茂 - Yumeji's Theme (Extented Version)
+     梅林茂 - Yumeji's Theme (Extented Version)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/18uiVbnvcus')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/09RhIEPOx3hk10gZQH8Hzw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     坂本龍一 - The Last Emperor (Theme)   :
+     坂本龍一 - The Last Emperor (Theme)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3cZAssoDRvf05yuyldxXye">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/8TVvJWfzq0s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1C0CPdvd26Fl8IvjTYC3YR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     原声带 - Beijing 1902
+     原声带 - Beijing 1902   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0IHTiLO5qBYhf7Hmn0UDBN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈淑桦 - 流光飞舞
+     陈淑桦 - 流光飞舞   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/E624jjeySEo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/787lbVXxUCdg76pAF1Y1p5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     周迅;金城武 - 十字街头
+     周迅;金城武 - 十字街头   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7AOzIDY7UZE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈勋奇 - 下江南
+     陈勋奇 - 下江南   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Dw-R85AcN_w')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1wKniAToMKEHLT2dVe73NV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -528,48 +789,87 @@
      </span>
     </li>
     <li>
-     川井憲次 - 一代宗师
+     川井憲次 - 一代宗师   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5EUK5jrSAJ4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0DX05i5CBj8rE1yO3xxm6e?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈勋奇 - 杀气
+     陈勋奇 - 杀气   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5mofjzeo6VCtJZJ13cZnCi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     金城武;池珍熙 - 美丽故事
+     金城武;池珍熙 - 美丽故事   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-oW1Fcgiis8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     何国杰 - 为何我在投胎车上
+     何国杰 - 为何我在投胎车上   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4UD5xrQI4nKftCje1y5Te9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黎允文 - 梦中有梦
+     黎允文 - 梦中有梦   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/30eQcWl2Oqg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2sQpw9cOmlgLRWZBO8Xbyt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     原声带 - The Butterfly
+     原声带 - The Butterfly   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/f-f4VpwKZH4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5syk9Yp1Os2AzAItZCZxN0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 降妖
+     黄霑 - 降妖   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/j0K27MndYBk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Kzn2Rravw0HpuXmG8uqnk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     张亚东 - 蓝宇
+     张亚东 - 蓝宇   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4rk548BT8Bwlv6Xuux7g5V?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     窦唯 - 尾声
+     窦唯 - 尾声   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/t1cd_j7Y3Hk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -589,91 +889,133 @@
    </summary>
    <ol>
     <li>
-     Tony Hymas - Pictures Of Departure   :
+     Tony Hymas - Pictures Of Departure   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5tY7QaUXuj3GGfWoG5E912">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Vj5XFeiFewI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5tY7QaUXuj3GGfWoG5E912?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Love International - Airport Of Love   :
+     Love International - Airport Of Love   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/21cNoGj9Wpx7DvMliu5ezK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ZJSb8ASwj3Y')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/21cNoGj9Wpx7DvMliu5ezK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Raidas - 吸烟的女人 (Remix)
+     Raidas - 吸烟的女人 (Remix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2HVKXYi_Ot0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Dina Gad - Crack The Whip (Second Version)
+     Dina Gad - Crack The Whip (Second Version)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xKM2vD_Rgps')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     梅艳芳 - Touch
+     梅艳芳 - Touch   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tFFEW4hC4r0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Fort Romeau - Saku II   :
+     Fort Romeau - Saku II   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2fAa1aEzUUt88rVbYDIcxu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LQPpxTiRq98')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2fAa1aEzUUt88rVbYDIcxu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Optik - Music Harmony And Rhythm   :
+     Optik - Music Harmony And Rhythm   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7g210PWbiWatRk2QQUM5Qp">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Gr-OXeVnK5c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7g210PWbiWatRk2QQUM5Qp?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Language - Breakdown Wo!
+     Language - Breakdown Wo!   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/S6Pb2cAh4Nk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     China White - Theme From The Underground   :
+     China White - Theme From The Underground   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/00DT27Oluer0iu8OUUIXlv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OdKc1L-VXiw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/55vNACAbIhgmhNiVWuNry5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Columba Carina - Ione
+     Columba Carina - Ione   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XtdiNGriFkg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Obscure Desire - Obscure Desire (English Extended Mix)
+     Obscure Desire - Obscure Desire (English Extended Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/stMCilNAU-E')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     The Wamdue Kids - In My Soul (3c Deep Mix)
+     The Wamdue Kids - In My Soul (3c Deep Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2TamrH2Yz4U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tornado Wallace - Today   :
+     Tornado Wallace - Today   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2UMJd15u2RED3NDzoIrfzk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1W9Wn1RSp4c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2UMJd15u2RED3NDzoIrfzk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Infra-Red - Falling From The Light (Trancendant Mix)
+     Infra-Red - Falling From The Light (Trancendant Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1IQWxpueONg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -693,91 +1035,142 @@
    </summary>
    <ol>
     <li>
-     Nengnen - Untitled (Unreleased)
+     Nengnen - Untitled (Unreleased)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eK4JoT3ugtA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Damacha - (╥﹏╥) Feat. Meuko Meuko
+     Damacha - (╥﹏╥) Feat. Meuko Meuko   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/g5ZdFWqegG4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Hidden Spheres - By &amp; Bye   :
+     Hidden Spheres - By &amp; Bye   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7huxPaTEgoKQNmCQn8savN">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/JBKx-MzoX-A')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7huxPaTEgoKQNmCQn8savN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mobilegirl - Yellow (Mechatok Remix)    :
+     Mobilegirl - Yellow (Mechatok Remix)    →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1x74iLuxysZSyHHo0BlN4X">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/m3lm-LLSZys')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0FVQLrgijmZEgGvaZDlQf4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Samo DJ And Tzusing - Hollahback Boi (Tzusing's Vocal Remix Of A Remix Of A Remix Edit)
+     Samo DJ And Tzusing - Hollahback Boi (Tzusing's Vocal Remix Of A Remix Of A Remix Edit)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/8aKipUmw_g8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7oWA4oHP91DohJm7wa3IbT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Random Factor - Disconnect
+     Random Factor - Disconnect   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/znjH9XE_DKA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Slyngshot - New Era
+     DJ Slyngshot - New Era   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/VokF0DH0ObM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3qhW02v4Yo6d5lPhxE6iZb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     B.R.U.T. - Chinafreak
+     B.R.U.T. - Chinafreak   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PkjbM5wbsUY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6M3kMW0oZFsL7Y0wJBcJcY?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Paraíso - Teu Sorriso (Jex Opolis Remix)   :
+     Paraíso - Teu Sorriso (Jex Opolis Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7ts7Z6IW6zSsSPO2UEgnY8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/IRqkY6tSzOM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7ts7Z6IW6zSsSPO2UEgnY8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     あぶない刑事 Original Soundtrack - Want You Back Again
+     あぶない刑事 Original Soundtrack - Want You Back Again   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/yEizoyZQR1A')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Korsakow - Japanese Fastfood   :
+     Korsakow - Japanese Fastfood   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3g0xrxNZD8bdSh6EZiRWUn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5WWSdmSs4t4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3g0xrxNZD8bdSh6EZiRWUn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jellybean - Twilight Dome Pt. 2
+     Jellybean - Twilight Dome Pt. 2   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1eWoRSMJsbY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Luca Lozano &amp; Mr. Ho - U Went 2 Far   :
+     Luca Lozano &amp; Mr. Ho - U Went 2 Far   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1OXlmCEPvygaXJDmjAGI8c">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/y0DdsP0_2RM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1OXlmCEPvygaXJDmjAGI8c?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Gemini - Festival   :
+     Gemini - Festival   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1P7dGMJDedgv1pUtFUiALz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Y4Nsyz7otn4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/72jSraVtLTPSVwyATdKUft?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -797,111 +1190,198 @@
    </summary>
    <ol>
     <li>
-     李玟 - So Crazy
+     李玟 - So Crazy   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FkBQQvfbAdc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2wpCCFekEH0CxhrZG7GdcX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     萧亚轩 - 突然想起你   :
+     萧亚轩 - 突然想起你   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1HPhCmSgdHwB6GSizcomZI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/U7toxyWZSyM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1HPhCmSgdHwB6GSizcomZI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     铁竹堂;温岚 - 能不能
+     铁竹堂;温岚 - 能不能   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/iUCqhOtxh-g')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/65fCmT4Z36xwlBi8PlPL4A?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     李玟;周杰伦 - 刀马旦
+     李玟;周杰伦 - 刀马旦   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TxDDK1R13vo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6v1cPnpgwywfoxU2y8FpUq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     萧亚轩 - 表白
+     萧亚轩 - 表白   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OlimoXVsj0o')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/57ZDs0RUOsowcKeBhamtTp?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     蔡依林 - 美人计
+     蔡依林 - 美人计   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-nwpdLfAmRQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0buvXrW7vND0d9jvrBcdnQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     蔡依林 - 爱情三十六计
+     蔡依林 - 爱情三十六计   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/9cEpgttgjx4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3l8gF5z7ziDNOO6S7aASnJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     温岚 - Can U Feel It   :
+     温岚 - Can U Feel It   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6Pb7ZTY4yBzoN2NVfJZ56B">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/8rAarJAEshc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7m4DlG4lJ48YSFfjwqZlVW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     蔡依林 - 七上八下   :
+     蔡依林 - 七上八下   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7AszkdBcZcTxVvogR285Lx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/c0oqh9XaD04')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/52KUFKlxk0n9CGFwXBjXdJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     顺子 - 没有丑女人
+     顺子 - 没有丑女人   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-qe9O-uU9ig')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7g9hFYPGOpkOxXCVfyU08I?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     蔡依林 - 说爱你
+     蔡依林 - 说爱你   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Aq6KNRyvm-Y')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6EDNDKz2t9hHEqYudvwqUD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     罗志祥 - 恋爱达人
+     罗志祥 - 恋爱达人   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/67Kkjuvpgt8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1qkWVqunRmiA1lIVrhz5O7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     李玟 - 爱我久一点
+     李玟 - 爱我久一点   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ZiUBqol7KXY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6ErG5BCYgdDnwkQ4kISl8e?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     周杰伦 - 可爱女人   :
+     周杰伦 - 可爱女人   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4RbjlqzGc5piUTTr32XMlv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4RbjlqzGc5piUTTr32XMlv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     张韶涵 - 寓言   :
+     张韶涵 - 寓言   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/05IoIEuVNwtubaNjhd33yU">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-4eJy_cpvoo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/05IoIEuVNwtubaNjhd33yU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     苏慧伦 - 黄色月亮   :
+     苏慧伦 - 黄色月亮   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/01ifJaE8Qp5XMgvrnnniWx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/hZas2bXidIM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0M5aFdfQqbp4CpDIEHgDpU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     张惠妹 - 姊妹
+     张惠妹 - 姊妹   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/w3_aBwZ1hU4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2KUpWRrI0MU0gWMiOlVjtP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     顺子;杜德伟 - 真的想你
+     顺子;杜德伟 - 真的想你   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2MYSVpVBXOo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3e1WCipTrdDF6uxfXnh4oy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -921,108 +1401,156 @@
    </summary>
    <ol>
     <li>
-     Veranda Culture - Allydonia (Demo)
+     Veranda Culture - Allydonia (Demo)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/J2vksNyHwpI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Lowfish - Fatblex   :
+     Lowfish - Fatblex   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5ZeMAGRhnFJgu7QWeEvoP3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/aCzJ6_X8Kv8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5ZeMAGRhnFJgu7QWeEvoP3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Skee Mask - Routine
+     Skee Mask - Routine   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/D5LkLmxcgIQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Zsa Zsa La Boum - Tu Veux Ou Tu Veux Pas?   :
+     Zsa Zsa La Boum - Tu Veux Ou Tu Veux Pas?   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/28byU7xF6XIN5omRR0xDkQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7eEldWSS8fU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/28byU7xF6XIN5omRR0xDkQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Fantasy UFO - Fantasy (Club Cut Mix)
+     Fantasy UFO - Fantasy (Club Cut Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eIhwc9hXQLE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Paranoid London,  - Eating Glue   :
+     Paranoid London,  - Eating Glue   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1f6yIgCDhZeMtFDvOzQIVl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/iUQjXUsgZ5E')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1f6yIgCDhZeMtFDvOzQIVl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ultravox - White China (Razormaid Mix)
+     Ultravox - White China (Razormaid Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LJQ2mEzOP0U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 心魔
+     黄霑 - 心魔   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Rohjltuft6U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/01Lwmdx1L1IERfnnh0dqJ4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Gaznevada - Macho's Love On The Rock   :
+     Gaznevada - Macho's Love On The Rock   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/53vd5zw6DWUfGoxzIWwwVD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Rl0DS9m2fbs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/53vd5zw6DWUfGoxzIWwwVD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Grenier,  - Tower Of Joined Hands   :
+     Grenier,  - Tower Of Joined Hands   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0JwLG9lr3Lwcax0UMwUqim">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/YQEE3DqKwCc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0JwLG9lr3Lwcax0UMwUqim?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     D. Tiffany - Get Back To You   :
+     D. Tiffany - Get Back To You   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/748CMVnWaxAfIIcvBudngK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XZwtj_UF8lU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/748CMVnWaxAfIIcvBudngK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Toma Kami - Safe Room   :
+     Toma Kami - Safe Room   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4eWarzPQWhHfRXyXho8xcC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/T8Igm6m9ZiE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4eWarzPQWhHfRXyXho8xcC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Thee J Johanz - Unreleased #9   :
+     Thee J Johanz - Unreleased #9   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0RDln9eHf4KYbhlidbyDpy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TZaznzB7HAA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0RDln9eHf4KYbhlidbyDpy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Errorsmith - Superlative Fatigue   :
+     Errorsmith - Superlative Fatigue   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4xkvAVmSwTIfQaxseZJa7M">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vPqryzyMDIY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4xkvAVmSwTIfQaxseZJa7M?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Prettybwoy - Genetic Dance II   :
+     Prettybwoy - Genetic Dance II   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/08ze9HKsRzYBx36VYvvEKF">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/s295Vxiuh78')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/08ze9HKsRzYBx36VYvvEKF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1042,85 +1570,118 @@
    </summary>
    <ol>
     <li>
-     Eleventeen Eston - C In Sympathy   :
+     Eleventeen Eston - C In Sympathy   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4WVfYb6tvcGXIXztd1Vs8f">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/AHVHLQjcUbE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4WVfYb6tvcGXIXztd1Vs8f?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     тпсб - The Grand Pacific Garbage Patch   :
+     тпсб - The Grand Pacific Garbage Patch   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3bPJ4GO9JnvVz9x1PJNO9y">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3bPJ4GO9JnvVz9x1PJNO9y?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Eleventeen Eston - Where There Is Rain   :
+     Eleventeen Eston - Where There Is Rain   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4y4cdDtaNCtALvjqaK7KOV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/CmLYyUsy-m4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4y4cdDtaNCtALvjqaK7KOV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     тпсб - Walking Distances   :
+     тпсб - Walking Distances   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2ZTIPbbkD1WdA5360ioWkg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NKPB8fkl9KU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2ZTIPbbkD1WdA5360ioWkg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Dawn Again - Burning Jungles   :
+     Dawn Again - Burning Jungles   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0KTJfG1B1Y0LZafdRWue2R">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0TjAjN3ViLI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0KTJfG1B1Y0LZafdRWue2R?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Soho Rezanejad - Greed Wears A Disarming Face   :
+     Soho Rezanejad - Greed Wears A Disarming Face   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3IYiM1uUMZ0eUaNKCEKBxr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/SORd5ECcqqw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3IYiM1uUMZ0eUaNKCEKBxr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ginoli - Cannoli
+     Ginoli - Cannoli   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/6zbdpYLWht0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0w0qIrSxfZhqtbakE39fry?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ginoli - Untitled   :
+     Ginoli - Untitled   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0Y7rIZX6cGmGXcYIqS6g0Y">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/IZ4N3L3i4ns')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0w0qIrSxfZhqtbakE39fry?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Roza Terenzi - Yeh, Higher Places (Jayda G's 'deep in your soul' Mix)
+     Roza Terenzi - Yeh, Higher Places (Jayda G's 'deep in your soul' Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2lpN2hvA-JA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ross From Friends - Donny Blew It   :
+     Ross From Friends - Donny Blew It   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5N8nt25i77rAPxGzRnD4TS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FlrnsrDxDpw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5N8nt25i77rAPxGzRnD4TS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Art Alfie - Greg’s Island   :
+     Art Alfie - Greg’s Island   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5sB49t7NjkAqSc57XjNyna">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WiirrhKOaq4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5sB49t7NjkAqSc57XjNyna?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1140,68 +1701,98 @@
    </summary>
    <ol>
     <li>
-     Drinking Electricity - China
+     Drinking Electricity - China   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/RCgUp86vR1s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Moonshine - China
+     Moonshine - China   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DCZVbL0QRsk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Japan - Visions Of China   :
+     Japan - Visions Of China   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1F1lfm0t9FoH6Kld7Z9oR4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WhC8LnFd2LE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1F1lfm0t9FoH6Kld7Z9oR4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Cul de Sac - China Gate   :
+     Cul de Sac - China Gate   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7Gk7Mk4C19gqxHflY2e1IV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/oSbl2zRVLTM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7Gk7Mk4C19gqxHflY2e1IV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bambou - Made In China
+     Bambou - Made In China   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/L5RKNmZHxpY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Secrets Of China - Chinese Ways
+     Secrets Of China - Chinese Ways   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/L9YhEjHyy9s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Radar - China Darling
+     Radar - China Darling   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vFzk-WErVX8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Margie M. - Chinaboy   :
+     Margie M. - Chinaboy   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5XEHb5ZX5aoWSXZcevUiKw">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/cS07f26Ab2o')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5XEHb5ZX5aoWSXZcevUiKw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Splash Band - Big Trouble In Little China (Disco Version)   :
+     Splash Band - Big Trouble In Little China (Disco Version)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3nWcHVaB9ET6m8Vpfxn71E">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ouNnuBASFOU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3nWcHVaB9ET6m8Vpfxn71E?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Cruisin' Gang - Chinatown   :
+     Cruisin' Gang - Chinatown   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/19Zlmfpzl0aS5ryAr8gn5r">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OpGg3rhUjII')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/19Zlmfpzl0aS5ryAr8gn5r?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1210,42 +1801,66 @@
      </span>
     </li>
     <li>
-     Winston Tong - Theoretical China   :
+     Winston Tong - Theoretical China   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1fEMhZdLug5WWkdsBcvcQW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/32UlbOinJUk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1fEMhZdLug5WWkdsBcvcQW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ago - Chinese Eyes
+     Ago - Chinese Eyes   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jB23cx4UOnA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Vivabeat - Man From China   :
+     Vivabeat - Man From China   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6xF9uyCcJy6BghHqQRKYiB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0BooNPLVk-w')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6xF9uyCcJy6BghHqQRKYiB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Pinco - China
+     Pinco - China   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/e1lggptYKv4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5mllwxoZnRRqx8ynwXwx5Y?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     China Doll - Turkish Delight   :
+     China Doll - Turkish Delight   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6pp3hBuPvnR2XdFKPem5Oa">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jYY_VnuO7Rs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6pp3hBuPvnR2XdFKPem5Oa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ippppu-Do - Chinese Reggae
+     Ippppu-Do - Chinese Reggae   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/a3snjGk5x_o')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3taYjRaF9JJbuNdUDrQuMr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1265,76 +1880,109 @@
    </summary>
    <ol>
     <li>
-     Knopha - Me or the Other Guy   :
+     Knopha - Me or the Other Guy   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Upo0C7deqekM4FwftJcYx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WP7zvgl855s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Upo0C7deqekM4FwftJcYx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     B.W.H. - Livin' Up   :
+     B.W.H. - Livin' Up   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/54Bhw4FfdM303XteW7HQNv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jXXPrRU3T8c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/54Bhw4FfdM303XteW7HQNv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     高中正義 - Jungle Jane
+     高中正義 - Jungle Jane   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NXDVh0zQi6o')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     高中正義 - China
+     高中正義 - China   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1cL-0Spp2T8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Roza Terenzi - Yeh, Higher Places (Jayda G's 'deep in your soul' Mix)
+     Roza Terenzi - Yeh, Higher Places (Jayda G's 'deep in your soul' Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2lpN2hvA-JA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Susumu Yokota - Tanbarin   :
+     Susumu Yokota - Tanbarin   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4IQWc6rhJwpFrRKBLx27X6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LPQhBjnW8Eo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4IQWc6rhJwpFrRKBLx27X6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Susumu Yokota - B
+     Susumu Yokota - B   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3pYoLlJW1kY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Yaeji - Raingurl    :
+     Yaeji - Raingurl    →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4XXfQ8fBHMIgcygY4hV6RC">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_3T8KznhThQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4XXfQ8fBHMIgcygY4hV6RC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Speedy J - Rise   :
+     Speedy J - Rise   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/51dIflTO3AYBlox82UXDuG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jiwm_jZPuoM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/51dIflTO3AYBlox82UXDuG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     China Express - The Ghost Of The Samurai
+     China Express - The Ghost Of The Samurai   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tiWTNm-7iis')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Red Rockers - China   :
+     Red Rockers - China   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2ws33FRyUcuvDnNgz5VfwZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/8eoqz6GfjTM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2ws33FRyUcuvDnNgz5VfwZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1354,48 +2002,66 @@
    </summary>
    <ol>
     <li>
-     Todd Terje,  - Maskindans (Radio Edit)   :
+     Todd Terje,  - Maskindans (Radio Edit)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4ln5gGLJie7NiRwR11RMMc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mXwnQGOcP-E')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Gk5pUinxmDBuVAcjOHaKD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Cappuccino - Hell Dance With Me
+     Cappuccino - Hell Dance With Me   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eEyHgn885KE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jamiroquai - Alright (Tee's In The House Mix)   :
+     Jamiroquai - Alright (Tee's In The House Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5rh0Hg6CiUw4tsXyyKzXVy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/np1MkSu4tqU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5rh0Hg6CiUw4tsXyyKzXVy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     N.O.I.A. - True Love (Sexual Version)   :
+     N.O.I.A. - True Love (Sexual Version)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1lee8GIIzxgugsCrkyMsYt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/grPH4x-OCY0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1lee8GIIzxgugsCrkyMsYt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Charles Manier - Change You   :
+     Charles Manier - Change You   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2uPvtNXQRkGnDmjzegCSjV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7vZtQ5Izcqg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2uPvtNXQRkGnDmjzegCSjV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Zazou Bikaye - Na Kenda (Afro-Acid Mix)   :
+     Zazou Bikaye - Na Kenda (Afro-Acid Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6G4gGnofFhY3ZxrMX79lZo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LOEo1yC9ygQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1uyytsAtj7fg8v7opolYdj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1415,114 +2081,162 @@
    </summary>
    <ol>
     <li>
-     Wilson Tanner - Sun Room   :
+     Wilson Tanner - Sun Room   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4ERpkrp26fCCQFMGZg8oCI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ls2F59qCKmA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4ERpkrp26fCCQFMGZg8oCI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     David Sylvian, Riuichi Sakamoto - Forbidden Colours   :
+     David Sylvian, Riuichi Sakamoto - Forbidden Colours   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2GtFvePJY8T1anGuizjcIk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/sG_Eklk-syk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2GtFvePJY8T1anGuizjcIk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Portable Rock - Kiss The Fish   :
+     Portable Rock - Kiss The Fish   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7fHJnJavR2tOTQc6MfZIl6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WTCnno-3EGE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7fHJnJavR2tOTQc6MfZIl6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     张学友 - 夜深 (国语版)
+     张学友 - 夜深 (国语版)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/f9fVjdbIhA4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2OCs5cErV6PZopz3RVwdnb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Culture Club - Time (Clock Of The Heart)   :
+     Culture Club - Time (Clock Of The Heart)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5Jak77MTrWWypQr85wmXeo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/8tI1_KlO6xI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Jak77MTrWWypQr85wmXeo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     草蜢 - 蜘蛛女之吻   :
+     草蜢 - 蜘蛛女之吻   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2rGpgCebsVurlC9wJVKpJg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/QVWCzV_4oNQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2ng6pGobz0GpdikANSapt0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ramm - Spark The Universe (Dub Mix)   :
+     Ramm - Spark The Universe (Dub Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5jqicUeBmCqLQnkg6ydT7b">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xXgoD3AxCC0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5jqicUeBmCqLQnkg6ydT7b?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bing Ji Ling - Hangin' On A String (Lexx Reconstruction)   :
+     Bing Ji Ling - Hangin' On A String (Lexx Reconstruction)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4kcOGWBGwDa5OxNHYapqo1">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Pa6drajzO3E')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7bVbt9raNBbyJLhK1oaB6i?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Will Powers - Smile   :
+     Will Powers - Smile   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2F23sZeQp5P3nYz0hr1VOc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/g43lzoRamWE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2F23sZeQp5P3nYz0hr1VOc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     "Om" Alec Khaoli - Say You Love Me   :
+     "Om" Alec Khaoli - Say You Love Me   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5FPcty9ljepi64q4oWFn6d">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gfEOg67L-gg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5FPcty9ljepi64q4oWFn6d?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Alaska - Accuse   :
+     Alaska - Accuse   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4GAidgDaWeQpgv98gnc14q">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7lE7dvIXS2U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4GAidgDaWeQpgv98gnc14q?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nick Carr - Swahili   :
+     Nick Carr - Swahili   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1xBIJ5b8OSRL1oVPF8Pol5">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Twfc6pbIBcg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1xBIJ5b8OSRL1oVPF8Pol5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ralph Richards - Rainforest (Vocal Version)
+     Ralph Richards - Rainforest (Vocal Version)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TbBid5dHFes')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Lorelei - Everything's Gone Rain
+     Lorelei - Everything's Gone Rain   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UjbM7x_h7ao')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ann - Ka - Storia   :
+     Ann - Ka - Storia   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Ong1IEqclvLrBKxUsUzQZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/b4npwLnXnLY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5O2vugSFRPRYZarjKmwCvk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1542,26 +2256,44 @@
    </summary>
    <ol>
     <li>
-     Jadecraft - 飞盘 Flying Disc
+     Jadecraft - 飞盘 Flying Disc   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/nQROay4-aP0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Wootacc,  - 伸缩
+     Wootacc,  - 伸缩   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NocBQQQl1mQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5MwfxCtqMFGYp9Nc1BkTrS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mike Gao - Adventura   :
+     Mike Gao - Adventura   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3iKFs7iRnCxmivuQCyo0Gn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/c8RfS9jD5m8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3iKFs7iRnCxmivuQCyo0Gn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Lindberg + Laura Ingalls - Brass To Mouth
+     Lindberg + Laura Ingalls - Brass To Mouth   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/SmTzSD2wfa0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6oTOZf43rCDQQ5RrrK0sGF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1570,58 +2302,76 @@
      </span>
     </li>
     <li>
-     Pod - Northern Lights   :
+     Pod - Northern Lights   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/43IlJpP6BV65PXadzJ3CwM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/qrtkSZAK8lI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Guzz - 喜洋洋   :
+     Guzz - 喜洋洋   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2U8Dqy8nFF88J3cQL8ayLo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4K92KukyLwg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2U8Dqy8nFF88J3cQL8ayLo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Hugo Gerani - Esplore, Liek Music!
+     Hugo Gerani - Esplore, Liek Music!   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/APH97d-K874')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Organ Tapes - Guess Riddim (Ft. Malibu)   :
+     Organ Tapes - Guess Riddim (Ft. Malibu)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/270dSjgVHUryJS8SsrhiBX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4PIv7g6HASs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     伊能静 - 关不住
+     伊能静 - 关不住   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TSkmDNusJ0E')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/75AIKnJaDiLuJHomS6Byv8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Utasia - Stratosphere   :
+     Utasia - Stratosphere   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/00FcJEdd5h2x5h3fWXea5C">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mhUqzMdN9sQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/00FcJEdd5h2x5h3fWXea5C?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DAMACHA - Hiss (Damacha Remix)
+     DAMACHA - Hiss (Damacha Remix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/O6PqLBOWPa0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1gmJEYetZpJs79EFiZONXB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     草蜢 - 喜洋洋   :
+     草蜢 - 喜洋洋
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2FJk7AB8KYKUsJSkdv09PI">
-       🟢
-      </a>
      </span>
     </li>
    </ol>
@@ -1641,16 +2391,22 @@
    </summary>
    <ol>
     <li>
-     陈勋奇 - 杀手生涯
+     陈勋奇 - 杀手生涯   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/A5GVZ3Tb-IQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7MRqvupyU3RBtM4WC5Acus?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     S.E.N.S. - 文清のテーマ   :
+     S.E.N.S. - 文清のテーマ   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6DOzI8YxTRvozsa6VDY73z">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xVMOu5DlPGA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1659,28 +2415,49 @@
      </span>
     </li>
     <li>
-     陈明章 - 雨水
+     陈明章 - 雨水   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3WcrN4ZbV6Y')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7fNF0VbTlllypxBE79BgvU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈明章 - 恋恋风尘
+     陈明章 - 恋恋风尘   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/k96_sSmgJY4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2UyPfYRRgvKCNHQunnJpFA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     赵季平 - 失婴
+     赵季平 - 失婴   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5eOeZ8jyOw9XWdaizUTzTc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     赵季平 - 启幕
+     赵季平 - 启幕   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Qoc4KQpSoFemck9rVErxD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     赵季平 - 赴宴
+     赵季平 - 赴宴   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/i4VLD4cN_OU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1694,44 +2471,74 @@
      </span>
     </li>
     <li>
-     王甫建 - 凤凰山
+     王甫建 - 凤凰山   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/MytaxAkgbB8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3cpG8NdTZkjg2uIgDvbxo9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     王甫建 - 来荒原的红卫兵
+     王甫建 - 来荒原的红卫兵   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/hUoBlOM8SPw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     久石譲 - 再一次
+     久石譲 - 再一次   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/v1UMZIsnaRk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/150yyfycx1dl5RNOp0ntUE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     久石譲 - 黑眼睛的姑娘
+     久石譲 - 黑眼睛的姑娘   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/06nRqyGGSqA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1PNAKxLxzyBIhOjPLwwo1W?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈志远 - 梅花三弄   :
+     陈志远 - 梅花三弄   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1dQ6jvEt7hp1xjl6cvFJEU">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KYEud_m8974')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1dQ6jvEt7hp1xjl6cvFJEU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     许冠杰 - 沧海一声笑   :
+     许冠杰 - 沧海一声笑   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/66hr4Gq5XVUuCNXIUZnBtd">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/pBJ0Z_PqNcA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5cYftinxzlhZ7pTr69cnlx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     林青霞 - 曲谐
+     林青霞 - 曲谐   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7nJEHDnC7uxBNlI3ksrRIr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1740,33 +2547,63 @@
      </span>
     </li>
     <li>
-     黄霑 - 人生如此
+     黄霑 - 人生如此   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0QrJlHT3Adc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Ay14qgVtctvn97nXemMet?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 人间魔域
+     黄霑 - 人间魔域   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TjEmiPMUnWA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Ay14qgVtctvn97nXemMet?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 莫呼洛迦
+     黄霑 - 莫呼洛迦   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ReYG-oW96gk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0XKSm4EpWTylOwnRfpfEsQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 心魔
+     黄霑 - 心魔   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Rohjltuft6U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/01Lwmdx1L1IERfnnh0dqJ4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 思情
+     黄霑 - 思情   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/38lMVVMCiGmIL1mmesBlP9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     黄霑 - 柳树细裙儿荡
+     黄霑 - 柳树细裙儿荡   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tI_qy0oQ610')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1786,40 +2623,58 @@
    </summary>
    <ol>
     <li>
-     Rhead Brothers - Woman Of Soul
+     Rhead Brothers - Woman Of Soul   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mgKIxq5yeOY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6epFXfAG51dRXSSafRLDmm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mai Tai - History   :
+     Mai Tai - History   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2jGcgDSGINOmb1kfo7MH0A">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mO8eB4gFxwU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2jGcgDSGINOmb1kfo7MH0A?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Smash Band - Grand Drum   :
+     Smash Band - Grand Drum   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5fe2ikqnilFE7TlfflegdD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/AHw3zWgpFn4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5fe2ikqnilFE7TlfflegdD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     The Cosmologist - Always Dancing 2012 Edit   :
+     The Cosmologist - Always Dancing 2012 Edit   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6i48E1y9M36Bl4LiyqzgMY">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/9h8R8xYcTuY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6i48E1y9M36Bl4LiyqzgMY?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Advance - Take Me To The Top (Vocal)   :
+     Advance - Take Me To The Top (Vocal)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/72SREq90RwCsuCfRuFg22G">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Tlb-QCD4pVg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0K5ghUBayoXRmFP79heFDF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1839,54 +2694,93 @@
    </summary>
    <ol>
     <li>
-     陈慧娴 - Joe Le Taxi
+     陈慧娴 - Joe Le Taxi   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ipapDfk6UqM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/05BwZLZq6s3CpFqfqfqFVP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     邝美云 - 冰冻的女人
+     邝美云 - 冰冻的女人   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/b0qj86CsjbY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6tWhkzcu9pAOdL8LTJRPpw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     叶德娴 - 好东西
+     叶德娴 - 好东西   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gNAYdfWlcrw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/33vglJ7p1KvYdij6l4oYCP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     高凌风 - 恼人的秋风   :
+     高凌风 - 恼人的秋风   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1aiblSYV6qnKvt4e9ZaMFc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KysEjLk_LDw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1aiblSYV6qnKvt4e9ZaMFc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     甄楚倩 - 怎么启齿   :
+     甄楚倩 - 怎么启齿   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6zCtZDngPTjw5GUtCa4S2K">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/RO5sR1OJje8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6zCtZDngPTjw5GUtCa4S2K?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     林志美 - 摄石人
+     林志美 - 摄石人   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/AiJdeBT7yq0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Pet Shop Boys - Need To Look At The Record
+     Pet Shop Boys - Need To Look At The Record   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/JRYvfph8aGo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     群星 - 地球大追踪 (African Dance Mix)
+     群星 - 地球大追踪 (African Dance Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/IsDgL0Skzjo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     甄楚倩 - 唯有在晚上才能La La La La Li
+     甄楚倩 - 唯有在晚上才能La La La La Li   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Fa3hq5lTWm4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/18c5VHyjA5ZOOS67DUdmks?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1895,47 +2789,74 @@
      </span>
     </li>
     <li>
-     崔健 - 谁、谁、谁   :
+     崔健 - 谁、谁、谁   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1Dpk1MIHp49uK9TafJ1Mpj">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Mml5jJb61no')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     蓝樱 - 莎莉
+     蓝樱 - 莎莉   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/bWvySNZAPbY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5BmF4cSP3wBacPGhTnKSj2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Rita Chao - 划小船 (Proud Mary)
+     Rita Chao - 划小船 (Proud Mary)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KxR1Dhbqfw0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ewnqtZqwXBWqUixqpL0E3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     叶倩文 - 海旁独唱
+     叶倩文 - 海旁独唱   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/A93tvAmTP6Q')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Bb9JUhPCndYoOYpR3fHyM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     关淑怡 - 为何是我们   :
+     关淑怡 - 为何是我们   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1XiPMCTG7VNyCAQ4OaWupn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/nPOThSBNPuw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1XiPMCTG7VNyCAQ4OaWupn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Anita Mui - Careless Whisper
+     Anita Mui - Careless Whisper   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tFIEeQPyrDs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     王菲 - 梦中人   :
+     王菲 - 梦中人   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1SGPQAdXXDbcRX8kGoBiN3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Ujxz7tyU6Js')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1SGPQAdXXDbcRX8kGoBiN3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1955,80 +2876,119 @@
    </summary>
    <ol>
     <li>
-     Mar - Pa - Finale
+     Mar - Pa - Finale   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1EILspsH7GY570hxKYZCzZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bobby Brown - Roni   :
+     Bobby Brown - Roni   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6mdNRnbiVerwM8kGCS1KwD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Gw0LQiynyG0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6mdNRnbiVerwM8kGCS1KwD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Wootacc,  - 伸缩
+     Wootacc,  - 伸缩   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NocBQQQl1mQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5MwfxCtqMFGYp9Nc1BkTrS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     陈慧娴 - 反叛
+     陈慧娴 - 反叛   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/8bS0nIZVcic')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Hugo Gerani - She's Lying (Roe St On The Fone Mix)
+     Hugo Gerani - She's Lying (Roe St On The Fone Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/8naCPp7DoyY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Toshiki Kadomatsu - 52nd Street "Akiko"
+     Toshiki Kadomatsu - 52nd Street "Akiko"   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/YHL_d2ullqY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5bs9cY0K10WazPO8lDw6uZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ntombi &amp; Survival - Tomorrow   :
+     Ntombi &amp; Survival - Tomorrow   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0TvTlguvpXe3h3RCiekArA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Fqj8mSXiTI0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Echo - 深呼吸 (Not Again Remix)
+     Echo - 深呼吸 (Not Again Remix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5qF_qbaWt3Q')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     麦洁文 - 电光霹雳舞士   :
+     麦洁文 - 电光霹雳舞士   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0QyzCAdLWbegcXi9LBVd3W">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/qlTvIzsLn0c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0QyzCAdLWbegcXi9LBVd3W?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Yumi Murata - じゃんぐる
+     Yumi Murata - じゃんぐる   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/bAhLvoYNYTs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     MADPETE - 纸飞机 Paper Plane
+     MADPETE - 纸飞机 Paper Plane   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6CMVSLtplBQ1Lt9Sl4Bofo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     林志美 - 点指星Sing12
+     林志美 - 点指星Sing12   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gY6XZkkmPsk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     叶德娴 - 心肝房客   :
+     叶德娴 - 心肝房客   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7Ml6gkJ0TXySDEa5M0VXg9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/06NcvepKgDbfbbe8S8OsQ8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -2048,94 +3008,154 @@
    </summary>
    <ol>
     <li>
-     Yasmin Alexander - Keep On Moving
+     Yasmin Alexander - Keep On Moving   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tfYFvd6hr0w')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1SmLmtSXRDwnBKE2LPJL8N?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Frida - I See Red   :
+     Frida - I See Red   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/10GkZchWNhG4zgzIl1BZVE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Hf36I26XQPI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/10GkZchWNhG4zgzIl1BZVE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Linda Di Franco - Stay   :
+     Linda Di Franco - Stay   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/64t3k19szbfS0SWEGT4EX9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PM7a-wNfxdo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/64t3k19szbfS0SWEGT4EX9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Magnum Force - Want You So Bad
+     Magnum Force - Want You So Bad   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ukO25mWDlbo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5dbkLOTiTTYonpfpHBOEtm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Roman Tam - Lazerlights   :
+     Roman Tam - Lazerlights   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2XYyXIMTODXxeSac7yFyyz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/zML3TC8YZMA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4cDftN4XsxXpBL3BmWcHKW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Chicken Lips - Do It Proper (Maurice Fulton Remix)   :
+     Chicken Lips - Do It Proper (Maurice Fulton Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4QTxlDuoCb5j4Rq2y8uUdL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/wH_jI5zlZ8I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4QTxlDuoCb5j4Rq2y8uUdL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nocera - Let's Go   :
+     Nocera - Let's Go   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0xVNMNpreDU2RDURcCEM6Y">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/nC9TWF3HyZA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0xVNMNpreDU2RDURcCEM6Y?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Count Zero - Positive Nuisance #1   :
+     Count Zero - Positive Nuisance #1   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4dDLxPLQsF0HxbPnqYAR8X">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Dbbqt7Cm69I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4dDLxPLQsF0HxbPnqYAR8X?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Derek Carr - Cuba
+     Derek Carr - Cuba   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2SDyWSHWD9Y')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ferrari On Safari - Night Safari (All Night Mix)
+     Ferrari On Safari - Night Safari (All Night Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/T1lDTeu84-I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7bYb2YiGly9BaYtMBzY7T6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Forum - Untitled Modus
+     Forum - Untitled Modus   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/amyTF-bRqCY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6rja0o5C5fGzdh19NQP9YB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     D - Mob Feat. Gary Haisman - We Call It Acieed (The Matey Instrumental)
+     D - Mob Feat. Gary Haisman - We Call It Acieed (The Matey Instrumental)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/i1kVqTVdEu4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6AvWG8ZkdcrbK8OyddfNb8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     王菲 - 香奈儿   :
+     王菲 - 香奈儿   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0igjNk6YkvqgDQlF8VKcYq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/qHpZ8W8Sqns')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5TIh9nWCu9feqXBUsejwUC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Dan White - Precognitive Dreams
+     Dan White - Precognitive Dreams     →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/I1MSHfmoiTA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2RyYR1aKsjpVyfD07RTxKO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
