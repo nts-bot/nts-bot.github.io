@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/4binH0ydaO7GOztY5PQodS">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/club-romantico-fm">
      Club Romantico FM
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/4binH0ydaO7GOztY5PQodS?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -46,19 +49,25 @@
    </summary>
    <ol>
     <li>
-     Lizandro Meza - Cumbia Del Amor   :
+     Lizandro Meza - Cumbia Del Amor   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2AEFaj4FbZMUxlBxhHVwXA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/irWolbbFhBU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2AEFaj4FbZMUxlBxhHVwXA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Sangre Nueva - Sola   :
+     Sangre Nueva - Sola   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2dTF9YQQT27wzJMZnaCcYh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/aezpHq0-Kmw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2dTF9YQQT27wzJMZnaCcYh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -67,77 +76,104 @@
      </span>
     </li>
     <li>
-     Nick León - Apretao   :
+     Nick León - Apretao   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2DLczPkq6zt8ZXIcfWkBfh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/CgGV-FbYokg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6pdtl7kB0Z7wmzCnNf1Z0Q?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kunley McCarthy - Cosa Nostra   :
+     Kunley McCarthy - Cosa Nostra   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3ntvY83qjYLTmKgsgUCN6B">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/MmotWfluFA8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3ntvY83qjYLTmKgsgUCN6B?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Viva - Buzz Riddim Remake
+     DJ Viva - Buzz Riddim Remake   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/e3HzuyOhQ8k')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Wisin &amp; Yandel Ft Daddy Yankee - Paleta 2k17   :
+     Wisin &amp; Yandel Ft Daddy Yankee - Paleta 2k17   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1Q5QDlgl9zAQ4a2WeM4gQE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Ssy3DfNMJXc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Q5QDlgl9zAQ4a2WeM4gQE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Sosa RD - Hermose   :
+     DJ Sosa RD - Hermose   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0ytGUjIVcyNBhU58yae7gc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ytGUjIVcyNBhU58yae7gc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mago Hart - Talk X Performance
+     Mago Hart - Talk X Performance   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3-Q3I7FfvUU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Sangre Nueva - Hurt   :
+     Sangre Nueva - Hurt   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7nZfJZknW5vyEU2uWJhmiI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eZ-t95vvxMQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7nZfJZknW5vyEU2uWJhmiI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     El Shick - Prendelo (Florentino Remix)   :
+     El Shick - Prendelo (Florentino Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4K6oJsdr06V604ZmxBVurq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xo0HiSwI6ME')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4K6oJsdr06V604ZmxBVurq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     FS Green - Reckless Riddim   :
+     FS Green - Reckless Riddim   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7s7ChWnJA34HC8xhEBJDOi">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/m5NtS9bzEAk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7s7ChWnJA34HC8xhEBJDOi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Rochy RD - Bandido   :
+     Rochy RD - Bandido   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/300BkPUYc72uQhcL8QhyQb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NipGmrB4xbM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/300BkPUYc72uQhcL8QhyQb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -157,154 +193,235 @@
    </summary>
    <ol>
     <li>
-     Willie Salcedo - El Niche   :
+     Willie Salcedo - El Niche   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/43EX7icBbdSGyVRBDIi3KT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/MzZ-lvLncq4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/43EX7icBbdSGyVRBDIi3KT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     La Perversa,  - Yo No Me Voy Acostar
+     La Perversa,  - Yo No Me Voy Acostar   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5BUmTYFjyR4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/73u8KWnLOQykesSgYic6nD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     N-Fasis Ft Tief El Bellaco - Perreo Intenso
+     N-Fasis Ft Tief El Bellaco - Perreo Intenso   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/YBV5v-zxuA8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nicky Jam - Descontrol   :
+     Nicky Jam - Descontrol   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1HjEsg8WbEm24XoyOOkH9h">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jRIuvZcwTyY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1HjEsg8WbEm24XoyOOkH9h?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Soul Capsule - Lady Science (Florentino Flip)   :
-     <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6cnfseLPZpaPq53XYw6NIv">
-       🟢
-      </a>
-     </span>
-    </li>
-    <li>
-     VFRO X Diego Raposo - Guatauba
-     <span class="data">
-     </span>
-    </li>
-    <li>
-     Lil Silva - Public Enemy
-     <span class="data">
-     </span>
-    </li>
-    <li>
-     Florentino - Nublado
-     <span class="data">
-     </span>
-    </li>
-    <li>
-     MATT OX - Ambition
+     Soul Capsule - Lady Science (Florentino Flip)
      <span class="data">
      </span>
     </li>
     <li>
-     Baby Plug - No Fifties Remix Ft. Lil Keed &amp; Lil Gotit   :
+     VFRO X Diego Raposo - Guatauba   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Aj48moveW72v9ltwY0jHG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BIBVwqgqK7o')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Lil Wop - This Shit Crazy   :
+     Lil Silva - Public Enemy   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1TttcDj3O6Bf23uCsB4mJ2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/AryK7Tu0GL4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Rocklife Zho - Where Do I Start ?   :
+     Florentino - Nublado   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0qzbMd49KO31fQtmlOrMiX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-J43wtaQ_0c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7352ruwL6uRrO55LLUwING?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Slayter - Spit Ft. 41st Narco
+     MATT OX - Ambition   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/HLZqBKAVABk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/65u1dHQyQyE4y4aN2eDmMF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Loudy Luna - Rainbow Diamonds
+     Baby Plug - No Fifties Remix Ft. Lil Keed &amp; Lil Gotit   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/c60xs8GuFgs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Aj48moveW72v9ltwY0jHG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Reddo &amp; Brodinski - It's A Go
+     Lil Wop - This Shit Crazy   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/MVKyKRNqDlg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1TttcDj3O6Bf23uCsB4mJ2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Yak Gotti - Slatt Walk   :
+     Rocklife Zho - Where Do I Start ?   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/04sEmzqnZbvFFhJ8uITNHq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5_8pfiA5Xsc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2sbhOaDAATtoVfqpFa1Mxx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     LPB Poody - Batman   :
+     Slayter - Spit Ft. 41st Narco   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1xMvdOFQaql3EBkHmuh2TK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mfEXPksl2RE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6Ph1ZA5v6scU7zWMGO8bbn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Johnny Cinco - Love   :
+     Loudy Luna - Rainbow Diamonds   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/46tA4ON1Jw078mE2umU9i3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/CvjoVKkSqCk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     RoadRun CMoe - Egg Nog   :
+     Reddo &amp; Brodinski - It's A Go   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2DBHlmi6yPWVU5FzcC2Peb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NiOrMWGUW18')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Old Runt - Chief Keef Ft. Seddy Hendrix
+     Yak Gotti - Slatt Walk   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4BdiAgVrLJA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/04sEmzqnZbvFFhJ8uITNHq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Florentino - Ominous
+     LPB Poody - Batman   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/a5sdCwzqIkE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1xMvdOFQaql3EBkHmuh2TK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ryuchi Sakamoto - Merry Christmas Mr Lawrence   :
+     Johnny Cinco - Love   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2mgWwDiZW6V1y88K9rSCkJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/C9n_WHQSIu0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/46tA4ON1Jw078mE2umU9i3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ryuchi Sakamoto - Merry Christmas Mr. Lawrence   :
+     RoadRun CMoe - Egg Nog   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5VuwAhMCz9EMg3RHL1KUEr">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/P1QRI9DZhQU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2DBHlmi6yPWVU5FzcC2Peb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Old Runt - Chief Keef Ft. Seddy Hendrix   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xwpfs7f121I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/712qa2JvXRDJ5gTmFJVXJ0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Florentino - Ominous   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ElfvXRtkNg0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7352ruwL6uRrO55LLUwING?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Ryuchi Sakamoto - Merry Christmas Mr Lawrence   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LGs_vGt0MY8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5VuwAhMCz9EMg3RHL1KUEr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Ryuchi Sakamoto - Merry Christmas Mr. Lawrence   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LGs_vGt0MY8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5VuwAhMCz9EMg3RHL1KUEr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
