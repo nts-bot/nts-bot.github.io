@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,20 +24,32 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/5MlO4fD7ZYoNrilhiMGTbC">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/eiko-ishibashi">
      EIKO ISHIBASHI
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/5MlO4fD7ZYoNrilhiMGTbC?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
+  <details>
+   <summary>
+    <h3>
+     <div class="title">
+      EIKO ISHIBASHI - 30.09.22
+     </div>
+     <span class="data">
+      <a href="https://nts.live/shows/eiko-ishibashi/episodes/eiko-ishibashi-30th-september-2022">
+       <img class="icon" src="../assets/nts-icon.jpg"/>
+      </a>
+     </span>
+    </h3>
+   </summary>
+   <ol>
+   </ol>
+  </details>
   <details>
    <summary>
     <h3>
@@ -46,26 +65,44 @@
    </summary>
    <ol>
     <li>
-     Hikashu - Flying Insect Feas
+     Hikashu - Flying Insect Feas   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ubgJ3s5kLc0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7pEmPpged33ntFEdKI9jCk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Hikashu - LALA WHAT   :
+     Hikashu - LALA WHAT   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5TiBcVvJSVAFSjJxi94xML">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/sx6l0LOokEQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5TiBcVvJSVAFSjJxi94xML?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Totsuzen Danball - Yakekuso Detarame
+     Totsuzen Danball - Yakekuso Detarame   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/V5dNro0QCRs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/13uCAWcrAijmFNrlRe56R8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Phew - In The Doghouse = 困っています
+     Phew - In The Doghouse = 困っています   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7Kr7gz1IAvQDCgeL5ddgdh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -74,71 +111,104 @@
      </span>
     </li>
     <li>
-     Kumio Kurachi - A Siren At 5 O’Clock   :
+     Kumio Kurachi - A Siren At 5 O’Clock   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7l6BbgFW5lbftA9MDMmnKB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XlulhcHygf4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7l6BbgFW5lbftA9MDMmnKB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     星野源 - Pair Dancer   :
+     星野源 - Pair Dancer   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/507ZggeRc6BvM00VyHG9bD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/TxGuYgztUjg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/507ZggeRc6BvM00VyHG9bD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Merzbow - Takemitsu   :
+     Merzbow - Takemitsu   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/061gxTGL8kEzAXk8ZmShXU">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/061gxTGL8kEzAXk8ZmShXU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Yumbo - Raining Stones 石が降る   :
+     Yumbo - Raining Stones 石が降る   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4VX8BiwzAzEP4AoDCLvmvJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/aCQWpSS0T4s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4VX8BiwzAzEP4AoDCLvmvJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Marty Holoubek - Room   :
+     Marty Holoubek - Room   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5dhZbwSNgrHDlDCI4GvgKI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5dhZbwSNgrHDlDCI4GvgKI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Marty Holoubek - Naruyouninaru   :
+     Marty Holoubek - Naruyouninaru   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6Kxqi9pO7OLEkXHWpbdfCS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ad5qiXpVgFw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6Kxqi9pO7OLEkXHWpbdfCS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Seiichi Yamamoto - Future Soul
+     Seiichi Yamamoto - Future Soul   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/yPx6_KQhRsM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4YgS3ZbZPwMsJnJtXHVwxk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Michinori Toyota - Tobita No Asagohan
+     Michinori Toyota - Tobita No Asagohan   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-YLCV_VtT_A')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5yT5gTAWIoF97BiI5Ed2h3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Michinori Toyota - Yararechatta Ojisan
+     Michinori Toyota - Yararechatta Ojisan   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/V38tYD5dQsE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tatsuhisa Yamamoto - Ashioto I
+     Tatsuhisa Yamamoto - Ashioto I   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jAR95wIw4XY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6seq44vyur2Mt4Oj5PN76V?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -158,11 +228,14 @@
    </summary>
    <ol>
     <li>
-     Autechre - os veix3   :
+     Autechre - os veix3   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6DMqm2q8mW2AfHIGIQoheE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/JQA_ev-B1Wo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6DMqm2q8mW2AfHIGIQoheE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -171,69 +244,99 @@
      </span>
     </li>
     <li>
-     Charles Ives - The Sonaita For Violin And Piano.1   :
+     Charles Ives - The Sonaita For Violin And Piano.1   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4pZW8WJlAPnlXOxnKVrJaQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3scUKP_RF44')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6xRvmkUNIEp4JCvgGK067d?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kei Matsumaru - Rinnu
+     Kei Matsumaru - Rinnu   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Xpkv4zYqsDG0uq24hjebj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kyle Gann - Dark Forces Signify   :
+     Kyle Gann - Dark Forces Signify   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7LNJihsxoonLw62FMCHacK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/hld9UekmjMo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7LNJihsxoonLw62FMCHacK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     David Rosenboom - Musical Intervention 1979 (Excerpt)
+     David Rosenboom - Musical Intervention 1979 (Excerpt)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XU6LD6YkO8k')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/78NgYfe0SSMhM9f8MncQio?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ingram Marshall - Gradual Requiem   :
+     Ingram Marshall - Gradual Requiem   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/49wba91XOvJCnw4L0fq5Rs">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Xz-OGDgTlYM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0zwulHaaC8c0CBF65tj5yu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Roger Doyle - Oizzo No   :
+     Roger Doyle - Oizzo No   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0FpOIr0OcfyiDTbO2yj73f">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/cYL4rdfCZPI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0FpOIr0OcfyiDTbO2yj73f?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     10cc - Headline Hustler   :
+     10cc - Headline Hustler   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6fOZoB9VrPv1jGvURpQKQi">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BBG7yYL4l9Q')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6fOZoB9VrPv1jGvURpQKQi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nuno Canavarro - Untitled   :
+     Nuno Canavarro - Untitled   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/523J7rufgbjDS9Y0WwE72s">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4RHVq98KUJ4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/523J7rufgbjDS9Y0WwE72s?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ingram Marshall - Peaceable Kingdom   :
+     Ingram Marshall - Peaceable Kingdom   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1V8b3RCrZwYFZKOt7MNilD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/9S-RRkA5jsc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1V8b3RCrZwYFZKOt7MNilD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -242,26 +345,41 @@
      </span>
     </li>
     <li>
-     Albert Marceur - Untitled
+     Albert Marceur - Untitled   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PgGDxWP5REQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3BGyOqYcAWJrqUR6OtgEXN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Judge Sill - Lopin’Along Thru The Cosmos
+     Judge Sill - Lopin’Along Thru The Cosmos   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UzrM3eomnAA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ron Geese - Door -O-Plane Gets It Blades
+     Ron Geese - Door -O-Plane Gets It Blades   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DZeu29nOwjw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     David Ackles - Love's Enough     :
+     David Ackles - Love's Enough     →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4iwiVkHe6C34uvhmSINjtZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BMDJMbPvfns')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4iwiVkHe6C34uvhmSINjtZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>

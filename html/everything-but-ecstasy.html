@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/6lbf2vUykk4uUxBNPsvM0S">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/everything-but-ecstasy">
      Everything But Ecstasy w/ Tahl K
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/6lbf2vUykk4uUxBNPsvM0S?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -46,16 +49,25 @@
    </summary>
    <ol>
     <li>
-     Some All None - Flight   :
+     Some All None - Flight   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1LSYIgMxwUSnTEaM5GeQSu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/9Zj0JOHJR-s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1LSYIgMxwUSnTEaM5GeQSu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Joy O - Transition To
+     Joy O - Transition To   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/EaadiuAbXC0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1mqLOuszbdew3RWLDJxo0N?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -64,26 +76,47 @@
      </span>
     </li>
     <li>
-     Rushmore - Rolling O's   :
+     Rushmore - Rolling O's   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2PgCARSpfSPbp0qnMHvgA2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1_xwnb3cymc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4ivokUnwYrJqqOXqgOeIDS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Major North - Annihilate (Original Mix)
+     Major North - Annihilate (Original Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/dmdO5C73Pys')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5YsJtFZMmfwUyQAV5DNwm9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     LSG - Netherworld (7" Edit)
+     LSG - Netherworld (7" Edit)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/VPwZBgAjZ2o')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1kFbbV26dLDgsWoDKvjM3j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Moreilan - Persona Non Grato
+     Moreilan - Persona Non Grato   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/sFH7O9huUYU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5s1ZgkABPG58sbxNMIQEca?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -92,8 +125,14 @@
      </span>
     </li>
     <li>
-     Ske Mask - Via Sub Mids
+     Ske Mask - Via Sub Mids   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/pkK0sMqO6vQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6DzyPoKxzYcT97PLsFS8BU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -102,27 +141,36 @@
      </span>
     </li>
     <li>
-     AIROD - Universe Of 90's Techno Parties   :
+     AIROD - Universe Of 90's Techno Parties   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/19jVovrS1mj0MQ5a3Fpg8C">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eA_A5Xl9_4M')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/19jVovrS1mj0MQ5a3Fpg8C?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Pulsing System - Input Contact   :
+     Pulsing System - Input Contact   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/04ZK9XueT5sDfHoNc3KtDn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/m3BGNxNG9GM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/04ZK9XueT5sDfHoNc3KtDn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Oidis - In The Place I Sit   :
+     Oidis - In The Place I Sit   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3rHA3k8bjCVuesnXVjjLNf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/nD9XFrOEeCY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7j5ywbH3OHVX6w7Iy56YuM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -142,77 +190,107 @@
    </summary>
    <ol>
     <li>
-     Josiah Steinbrick - (Four Synthesizers, Two Bells on Tuned Wood)   :
+     Josiah Steinbrick - (Four Synthesizers, Two Bells on Tuned Wood)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1g08NGeg4TEUXze56qvaui">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/w_R_OU65H0k')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1g08NGeg4TEUXze56qvaui?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Call Super - Arpo Sunk   :
+     Call Super - Arpo Sunk   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/51IL0nM4ZRW5c355GJiN74">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/MpVoDAqoOy0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/51IL0nM4ZRW5c355GJiN74?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Fett Burger - Edging On The Street
+     DJ Fett Burger - Edging On The Street   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ekDEj25wwf8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Avalon Emerson - Finally Some Common Ground   :
+     Avalon Emerson - Finally Some Common Ground   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/79ZB1mfB9b3cncZRjQBhAt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KWzzo5DWIgM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/79ZB1mfB9b3cncZRjQBhAt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     One Child Policy - Red Coast Base Surveillance   :
+     One Child Policy - Red Coast Base Surveillance   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1sATfjyqvpz7e4r1bQQr2j">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/zgxq8mjaYbU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1sATfjyqvpz7e4r1bQQr2j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Savile - Talk Smile Bite   :
+     Savile - Talk Smile Bite   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1ALi3zlheZWsgjywADHVm7">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/93dbsX2IoRw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1ALi3zlheZWsgjywADHVm7?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     L.E. Bass - Strive (Survive Mix)   :
+     L.E. Bass - Strive (Survive Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/68PaQvaX3fZ9T8SrrAvRSD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/lUe4YfNT2pI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/68PaQvaX3fZ9T8SrrAvRSD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Urulu - The Banshee (Garrett David Remix)   :
+     Urulu - The Banshee (Garrett David Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/49vp59ZCIO1yjpoMeJhauV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/QsnqrWch4VA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/49vp59ZCIO1yjpoMeJhauV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Hi Mount,  - Impresionante
+     Hi Mount,  - Impresionante   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gdS4cxPmpWM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Geoffrey Landers - Say You'll Say So   :
+     Geoffrey Landers - Say You'll Say So   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4NQU8K7P0CTLHTmsUprkbV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/IGsr-wCiXqM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0Y1IVdUlDh2gobcNoiZis3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -237,92 +315,140 @@
      </span>
     </li>
     <li>
-     Juju &amp; Jordash - Hanging Pyramid   :
+     Juju &amp; Jordash - Hanging Pyramid   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1cTCsVSoXMRfaJIspFDXdI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XN9uZybk37c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1cTCsVSoXMRfaJIspFDXdI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     One Child Policy - Only Me || 孝
+     One Child Policy - Only Me || 孝   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/696RG1-8Ga0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0TzpeMYULX5ofSyCBVeLsu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Max McFerren - Monk's Mood   :
+     Max McFerren - Monk's Mood   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1PiCetfrtPgpz5pOfYqGRu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/QSUmGaAsnqk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1PiCetfrtPgpz5pOfYqGRu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Skee Mask - Routine
+     Skee Mask - Routine   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/D5LkLmxcgIQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Voiski - Time As A River   :
+     Voiski - Time As A River   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4BwIkA5r9NVdDBDP5CKsMD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/m8cqGvY9Jlo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4BwIkA5r9NVdDBDP5CKsMD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Blondes - KDM (Barker &amp; Baumecker Remix)   :
+     Blondes - KDM (Barker &amp; Baumecker Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1e8MyNRCvCeFrQGCDk3ETA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/diT16FdDCBQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1e8MyNRCvCeFrQGCDk3ETA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     LFO - Simon From Sydney   :
+     LFO - Simon From Sydney   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6sOFtXSNLoM3tXjea2qg1z">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XFhxALavo44')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6sOFtXSNLoM3tXjea2qg1z?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Special Request - Replicant (Nexus 7 VIP)   :
+     Special Request - Replicant (Nexus 7 VIP)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7IJVo2IwIlC1sUoaWtv7zW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FaYmI6FmOeE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7IJVo2IwIlC1sUoaWtv7zW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jason Loveland - Epoxy (Patrick Russell Remix)
+     Jason Loveland - Epoxy (Patrick Russell Remix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Kuv-w_ALOhU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7mg3z0ykHgtOI32TgS0a54?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Lindstrom Ft. Jenny Hval - Bungl (Like A Ghost)   :
+     Lindstrom Ft. Jenny Hval - Bungl (Like A Ghost)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2E8yKakSulxaJ4xrCya9bc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_HrX9rNQRGY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Z0zApAb75EuGrf94ykAaZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     SYMBOL - Post
+     SYMBOL - Post   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/goWa6EzkCh4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     SYMBOL - Sepulchre   :
+     SYMBOL - Sepulchre   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0o3UrWoRBAUi3su7ReCDQ2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/F_6IjeprfEs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1rriJU19bJPPSZTkfnOEsH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     BLACK LODGE - Mix
+     BLACK LODGE - Mix   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BKLRMos9F7g')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1kyQoNUl1fRwvyNr6H6ILV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -331,8 +457,11 @@
      </span>
     </li>
     <li>
-     Mutant Beat Dance - Another World
+     Mutant Beat Dance - Another World   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/HlWJxGmHFos')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -341,76 +470,109 @@
      </span>
     </li>
     <li>
-     DJ Qu - Somethin' Ta Feel   :
+     DJ Qu - Somethin' Ta Feel   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0kDUklmKVQKdcJAxNJXbla">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/c8FV7z_cEtU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0kDUklmKVQKdcJAxNJXbla?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Sneaky Tim - Bad Connection   :
+     Sneaky Tim - Bad Connection   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/67ZqiaMCfguKo2IwScdEVd">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/u-v0dMw5eyU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/67ZqiaMCfguKo2IwScdEVd?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     K. Alexi Shelby - My Medusa
+     K. Alexi Shelby - My Medusa   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ev3Mwv032iY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jasen Loveland - When Memory Fades
+     Jasen Loveland - When Memory Fades   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7cok3w52FiY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/52PNouf6Ql9NATfN2hmykx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mike Dearborn - Nympho Beatz   :
+     Mike Dearborn - Nympho Beatz   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4gBFw4ofwBwXLPcxSt4LRN">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Z7hRcPQywn4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4gBFw4ofwBwXLPcxSt4LRN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     VeXaTioN - Commercial Whore [Dirty Jak DJ Edit]
+     VeXaTioN - Commercial Whore [Dirty Jak DJ Edit]   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/hGlWUhJxmzw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Omar-S - Ready My Black Asz   :
+     Omar-S - Ready My Black Asz   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6XDdcBC0hQkRcQfYovxd4c">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/rSzgLPWg1p8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6XDdcBC0hQkRcQfYovxd4c?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Force Placement - Missing Words
+     Force Placement - Missing Words   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/6qL1v7rQ7Fo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Credit 00 - 909ish   :
+     Credit 00 - 909ish   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1GV0kCQcrokhFapDC4vFK4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1GV0kCQcrokhFapDC4vFK4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mystic Bill - The Struggle   :
+     Mystic Bill - The Struggle   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0n671qUiYAyrHhKkXdq3u8">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vrDOfh2mnlk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0n671qUiYAyrHhKkXdq3u8?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mood II Swing Productions,  - 8 Ways To Knock Down A Wall
+     Mood II Swing Productions,  - 8 Ways To Knock Down A Wall   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Sme_pQGy5Ho')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -430,163 +592,241 @@
    </summary>
    <ol>
     <li>
-     Gigi Masin - Swallows' Tempest   :
+     Gigi Masin - Swallows' Tempest   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7djqsatJBcmWwyiZtBLJxb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/hwSEl3pcs_k')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7djqsatJBcmWwyiZtBLJxb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Galcher Lustwerk - What U Want Me To Do
+     Galcher Lustwerk - What U Want Me To Do   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/swYJe40PbIA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     D Tiffany - Blue Dream   :
+     D Tiffany - Blue Dream   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6gLy3lCA5hCDUI9PYHELvV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/h5CV_4rnhkY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6gLy3lCA5hCDUI9PYHELvV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Project Pablo - Is It Dry?   :
+     Project Pablo - Is It Dry?   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6v6T1d3FNkYUxUUg1ih4kg">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LG8NV2y-Bfg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6v6T1d3FNkYUxUUg1ih4kg?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Sugai Ken - Mukashi   :
+     Sugai Ken - Mukashi   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/13A3RC8lbrWYoovSvET8ZR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Wg-0a-w30mw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/13A3RC8lbrWYoovSvET8ZR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Moses Sumney - Self-Help Tape   :
+     Moses Sumney - Self-Help Tape   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2pVFtLr9Zp9SgC3pq11r4L">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3hZGpWmVYFM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2pVFtLr9Zp9SgC3pq11r4L?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     PLO Man - TX-i
+     PLO Man - TX-i   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4zpG2iZAuTs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Steffi - All Living Things   :
+     Steffi - All Living Things   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2MD5SayH9C6Tao3bK4N7Up">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/zAUVQW7pgLo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4dSCMQZin6WkhndSfYMVqR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Octo Octa - Adrift (Dorisburg Remix)   :
+     Octo Octa - Adrift (Dorisburg Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6RJKgSoGBlmiEwXOaRaZRf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Q-rFIMR10CI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6RJKgSoGBlmiEwXOaRaZRf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Skee Mask - Skreet Lvl Dub   :
+     Skee Mask - Skreet Lvl Dub   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5In7WfVw5AinWB7FgJl75f">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/s8B0quO4WHc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Fp Oner - Light Ytears Feat Minako   :
+     Fp Oner - Light Ytears Feat Minako   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2SjWILealVDpzXjue4DkRR">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/U8zVoj1nXQE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2SjWILealVDpzXjue4DkRR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Salem Jabou - Project A    :
+     Salem Jabou - Project A    →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1hbDh5jEnv8k68qlYImBmH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_IN7mc8V3NM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4BT88hrQGfpQF6cJziSN6j?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Dj Pythpon - Las Palmas   :
+     Dj Pythpon - Las Palmas   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2iyx1X8sbpXZ4u1E6PhBGT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/i8aebe8RJ3k')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5xR2ozurhZc1Pb0qcG6NV3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Central,  - Drive (First Mix)
+     DJ Central,  - Drive (First Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/splsTXd-sSs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7BkNs7DRxzsa09I3tzk2XO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Loop LF - Drive 22   :
+     Loop LF - Drive 22   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/20nUdZlcNnDvELHvAP1G6I">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/bJaqYJfL3gU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/20nUdZlcNnDvELHvAP1G6I?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     JC - Keka (Club Mix)
+     JC - Keka (Club Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KuPn-pf4PWw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1tvtsLncBS1McyMwt2HMXi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Sounds As A Pound Recordings - Vol2
+     Sounds As A Pound Recordings - Vol2   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/rqcsl6J4bMI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Capes - Funkey   :
+     Capes - Funkey   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/09kaiwce3lrqcVQebmgWoo">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/yCTneqFCwrs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/09kaiwce3lrqcVQebmgWoo?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Eliga Mayhew,  - Know Yourself
+     Eliga Mayhew,  - Know Yourself   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/W1z2tczexAI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Rob Paine - Seeing Dub   :
+     Rob Paine - Seeing Dub   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5USXOL4kCJvs4zy2cwxBpu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/e8kExNaDNrk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5USXOL4kCJvs4zy2cwxBpu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mculo - Guateng Chutspah
+     Mculo - Guateng Chutspah   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/g_bxUtVyKQ8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4QOQqfDlJ3g6HeSLh9GspX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     30/70 - Steady Hazin   :
+     30/70 - Steady Hazin   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1uSZqAQ6OdoO3BYjdYkrY2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/SkCpnUyzNZE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1uSZqAQ6OdoO3BYjdYkrY2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Morgan Geist - Taboo
+     Morgan Geist - Taboo   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/N3NG7cQgFQk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5CVOeNkatHhW7Uc7M7zffK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -606,27 +846,36 @@
    </summary>
    <ol>
     <li>
-     Charles Mingus - Myself When I Am Real   :
+     Charles Mingus - Myself When I Am Real   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2jsvrDVFVeoZTJhDEQ3Xud">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/iH-nESXcrok')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2jsvrDVFVeoZTJhDEQ3Xud?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nancy Sinatra - You'Ve Lost That Lovin' Feelin'   :
+     Nancy Sinatra - You'Ve Lost That Lovin' Feelin'   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7yzLtDS1hMURTHtXGdvKi0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Rhweq6UxDz8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7yzLtDS1hMURTHtXGdvKi0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jah Wobble,  - Hold On To Your Dreams   :
+     Jah Wobble,  - Hold On To Your Dreams   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0iH8mLvpW15y7zLtMK6d8F">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/zHW2eV_U9us')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0iH8mLvpW15y7zLtMK6d8F?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -635,119 +884,173 @@
      </span>
     </li>
     <li>
-     Project Pablo - It’s Not The Dream   :
+     Project Pablo - It’s Not The Dream   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2ZIxUABUmyvmAs8kyp3hge">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/QfnvbyAzeLQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2ZIxUABUmyvmAs8kyp3hge?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Beatrice Dillon,  - Fluo   :
+     Beatrice Dillon,  - Fluo   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4WMYjriobgGjisDIdKAfzA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/jdlNSq461Hc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4WMYjriobgGjisDIdKAfzA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Trevor Jackson - RGBPM 3   :
+     Trevor Jackson - RGBPM 3   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3TnjXCqy67Q26jxfIaKfFB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0C8EA-KjBjE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3TnjXCqy67Q26jxfIaKfFB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Blondes - OP Actual   :
+     Blondes - OP Actual   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/39orzHCtzsXbdLkBp3dld0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/RIOEQLnejH0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/39orzHCtzsXbdLkBp3dld0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ministers Of Dance - Tiny's First Journey
+     Ministers Of Dance - Tiny's First Journey   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/CjFznFIHzTg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1BUMIZRUGzYaefA3KKXM4d?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     John Tejada,  - Bim   :
+     John Tejada,  - Bim   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5E3MKmGCxbdtl8kmjfpXhx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/b5yJVwmpT-w')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5E3MKmGCxbdtl8kmjfpXhx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Khidja - Microb (Tolouse Low Trax Version 117)   :
+     Khidja - Microb (Tolouse Low Trax Version 117)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1bRQF5a8ugeOEjqn8oXqVb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/-ACdY6gYULc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1bRQF5a8ugeOEjqn8oXqVb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nummer - Primal Fire   :
+     Nummer - Primal Fire   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5z46WAYlfenbhewagtNVWL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/r8mvMnF7asU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5z46WAYlfenbhewagtNVWL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bjørn Torske - Høst (DJ Sotofett's Støydubb)
+     Bjørn Torske - Høst (DJ Sotofett's Støydubb)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/pV_vGe5ifo4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kaschiel - San Pellegrino   :
+     Kaschiel - San Pellegrino   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/30Mqfip5b5lCDpCLRvsrTq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/GdrjuTGk-q4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/30Mqfip5b5lCDpCLRvsrTq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Anthony Thomas - Tonite I Really Need Someone (Instrumental)   :
+     Anthony Thomas - Tonite I Really Need Someone (Instrumental)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/251v66eWwCLjjTeWj0488a">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/LOW_amJDT1s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/251v66eWwCLjjTeWj0488a?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mutant Beat Dance - PolyfonikDizko
+     Mutant Beat Dance - PolyfonikDizko   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UmRYVsuklSc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7D61RNEFpAnpihFNOM7UeD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ben Buitendjk - Roots   :
+     Ben Buitendjk - Roots   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2hlhL8ucVPnrfyXwI34Sop">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XnNeZ6tXMhE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2hlhL8ucVPnrfyXwI34Sop?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Dorisburg - Mystical Influence
+     Dorisburg - Mystical Influence   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/hyn9tT-k9oo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Waterpark - Nessie’s Revenge    :
+     Waterpark - Nessie’s Revenge    →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4ZMVVJ7LQiymlHHFIy1xfv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4tqedmrxudQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4ZMVVJ7LQiymlHHFIy1xfv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Albrecht L'Brooy - Pavilion   :
+     Albrecht L'Brooy - Pavilion   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0g97f6GG6vmBeI2sVr9P7J">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DOGLGoYVKE4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0g97f6GG6vmBeI2sVr9P7J?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -767,146 +1070,206 @@
    </summary>
    <ol>
     <li>
-     Jonny Nash,  - Photo With Grey Sky, White Clouds   :
+     Jonny Nash,  - Photo With Grey Sky, White Clouds   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3xLBY0NMWZqdLCYbPqcUb6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PKhpWNHKzpE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3xLBY0NMWZqdLCYbPqcUb6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Blondes - Trust   :
+     Blondes - Trust   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1Vjb1zDSoauswBysqJtuZl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/gz-3m2ULEFk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Vjb1zDSoauswBysqJtuZl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Baba Stiltz - Aches   :
+     Baba Stiltz - Aches   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/50KpKFoFaG5YZ5zHU18V57">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Yjb37XX-yss')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/50KpKFoFaG5YZ5zHU18V57?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Lanark Artefax - Touch Absence   :
+     Lanark Artefax - Touch Absence   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0enK5We0ORIgRBHfdMT0Cn">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eo0l0yQ2OsQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0enK5We0ORIgRBHfdMT0Cn?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Plant Texture - Gargantuans   :
+     DJ Plant Texture - Gargantuans   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3kLoNU2vRVCZti13pGjEwG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vKdgfJQ8UC4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3kLoNU2vRVCZti13pGjEwG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Flori - Quality Of Life
+     Flori - Quality Of Life   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/pVPTUEW1PEM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Binh - Chalzedon
+     Binh - Chalzedon   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BXJKchWCKV0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Man Power - Sonic Pressure   :
+     Man Power - Sonic Pressure   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/33bQnGJqJCtKzD4tytYuvB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Sc-AUsUIR6U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/33bQnGJqJCtKzD4tytYuvB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     The/Das - Top Vibes   :
+     The/Das - Top Vibes   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6sIxHCXAs2Llesxmf6rUef">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/zkBL21UsjGM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6sIxHCXAs2Llesxmf6rUef?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Oli Furness - Wanna Lie Down (Parris Mitchell Remix)   :
+     Oli Furness - Wanna Lie Down (Parris Mitchell Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/58v9JbhIKIcduf5yducWEE">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5vKwO3_KJnk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/58v9JbhIKIcduf5yducWEE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     London Modular Alliance - Crosstalk   :
+     London Modular Alliance - Crosstalk   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6E9T6edgj8PnNPWf0qZw9s">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/2aDYXOHvPCU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6E9T6edgj8PnNPWf0qZw9s?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Omar-S - Day   :
+     Omar-S - Day   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4J6zSz1Adgf1eO0ML7yoxI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/wUJ7qErI7ME')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4J6zSz1Adgf1eO0ML7yoxI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Clandestino - Quiet Storm   :
+     Clandestino - Quiet Storm   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4WIvNklgc8XNnqCat23tMi">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NeinUp6KxMU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4WIvNklgc8XNnqCat23tMi?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Nature - Lf (mix 1)
+     DJ Nature - Lf (mix 1)    →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/kmVL8kl5-xE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/21dRjBTLSMHQyYTlOSTgTb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Soul II Soul - Back To Life (Masters At Work House Remix)   :
+     Soul II Soul - Back To Life (Masters At Work House Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7vvRkLPIvfjjmCIqNxBuEZ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UFTPGUr30Gk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7vvRkLPIvfjjmCIqNxBuEZ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Rhythm Faktor - Dream On (Quickie Mix #1)   :
+     Rhythm Faktor - Dream On (Quickie Mix #1)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6vNkxzUhvfk9PFLuwA4cKf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/oB4O6nBGH5Q')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6vNkxzUhvfk9PFLuwA4cKf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Christophe - Key Largo   :
+     Christophe - Key Largo   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4v5amm6NPHrWy2XA8hlZ72">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_nLmM9kcBKs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4v5amm6NPHrWy2XA8hlZ72?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Traffic Signs - The Big Fake   :
+     Traffic Signs - The Big Fake   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/67nOnSiH1QRUiYihmLBmwI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/j1u35-oGlQI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/67nOnSiH1QRUiYihmLBmwI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Boring - 6 Am Mimosa   :
+     DJ Boring - 6 Am Mimosa   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/02uUhbsPgXFvsALSXIo1uH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PwTJlY7REo4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/02uUhbsPgXFvsALSXIo1uH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -926,154 +1289,235 @@
    </summary>
    <ol>
     <li>
-     Refractory Cafe - Jonny Nash &amp; Suzanne Kraft   :
+     Refractory Cafe - Jonny Nash &amp; Suzanne Kraft   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4UaN4zPHFNWgrgsb5FX41W">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PKhpWNHKzpE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Manic Cinq - Morgan Geist   :
+     Manic Cinq - Morgan Geist   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2aEWsQhHnDUTru1up7HWJc">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/eAmK_ELJy6I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2aEWsQhHnDUTru1up7HWJc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     This Way (Instrumental) - Playgroup   :
+     This Way (Instrumental) - Playgroup   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0LfJdvmsJIV4E6aFNnO3rd">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/lCPJhybHBkA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Big Fun (Original 12'' Mix) (Original 12'' Mix) - Inner City   :
+     Big Fun (Original 12'' Mix) (Original 12'' Mix) - Inner City   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5dbJwqmEzubeVZqikU8YgB">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xmd3T6YfU9A')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5dbJwqmEzubeVZqikU8YgB?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Hole Head - Nick Hoppner   :
+     Hole Head - Nick Hoppner   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2n0RNw9UYGO6BEMkLKcNOX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ZgK9Juimk3g')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2n0RNw9UYGO6BEMkLKcNOX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Redrum - Special Request
+     Redrum - Special Request   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OU5hWLIYbOs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2HJSEzQBuEnYqcEhiSZUcL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Make Time - Shanti Celeste   :
+     Make Time - Shanti Celeste   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/55WKq24vogr2aeB0f41K1S">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/EBuTv4gKSrA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/55WKq24vogr2aeB0f41K1S?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Make Time - Shanti Celeste   :
+     Make Time - Shanti Celeste   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/55WKq24vogr2aeB0f41K1S">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/EBuTv4gKSrA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/55WKq24vogr2aeB0f41K1S?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Summer Grooves (Original Mix) - Mirage   :
+     Summer Grooves (Original Mix) - Mirage   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2TsqYsB32aSMCULmDWxOmt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/6EaP8vILSOU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Kt3qsojQaUY0THYxb7bqD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Sapporo Mix - Keith Kemper
+     Sapporo Mix - Keith Kemper   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/cwSvOn_x4R8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1r2YC0orE2MoGb3jggdXZr?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Waterpark - Nessie’s Revenge    :
+     Waterpark - Nessie’s Revenge    →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4ZMVVJ7LQiymlHHFIy1xfv">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4tqedmrxudQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4ZMVVJ7LQiymlHHFIy1xfv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Powder - Heart   :
+     Powder - Heart   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2y7V5tfMXgsGbFGeSmaDNL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/k9YdsNecMkQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2y7V5tfMXgsGbFGeSmaDNL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tatham, Mensah, Lord &amp; Ranks - Cascade
+     Tatham, Mensah, Lord &amp; Ranks - Cascade   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1pL2Z8HJZ3g')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0rgb6huKclBH0kQIJnqHJa?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Ciderman - Summer Groove
+     DJ Ciderman - Summer Groove   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/qAajwtKvonA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Forthcoming Common Edit - Untitled
+     Forthcoming Common Edit - Untitled   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Ndpryp2OlUQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Baby Sam - Vitality Mix
+     Baby Sam - Vitality Mix   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/dPI-mRFEIH0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Nick Holder - In Love
+     Nick Holder - In Love   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tzwwccggsK0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Klk7cSCDBik4tCisG7X70?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Keith Kemper - Sapporo Mix   :
+     Keith Kemper - Sapporo Mix   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3zxLOb1JztF1Pzt8vVDGWm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/wN0JCOOkOTg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3zxLOb1JztF1Pzt8vVDGWm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Karen Gwyer - The Workers Are on Strike   :
+     Karen Gwyer - The Workers Are on Strike   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3ABph7X6CeMCQbxGR1kP7c">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KHQ-qEsWXGg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3ABph7X6CeMCQbxGR1kP7c?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Object Blue - In The Station Of The Metro
+     Object Blue - In The Station Of The Metro   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/F9yPpZg7eoU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Russell E.L. Butler - Orr Springs Road
+     Russell E.L. Butler - Orr Springs Road   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/YFTbAt-53ag')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1FdxaYM9hVePlWVGbtsdjD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Copys - 4th Floor
+     Copys - 4th Floor   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/A1vdKfXlB_g')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5reGVecdkyqt2oGHxWqgbT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Peven Everett - Feelin You In And Out (Shelter Mix)
+     Peven Everett - Feelin You In And Out (Shelter Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/4sswKlgJSQU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1093,27 +1537,33 @@
    </summary>
    <ol>
     <li>
-     Paul Horn - Transitions   :
+     Paul Horn - Transitions   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5UNjgCDAfsH7kWdbI20YMK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mWxlouEeXBs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5UNjgCDAfsH7kWdbI20YMK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Haruomi Hosono,  - 最後の楽園   :
+     Haruomi Hosono,  - 最後の楽園   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3Q59MwvTzZveZTNunIQY1x">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/oDMuzZk_sF4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3Q59MwvTzZveZTNunIQY1x?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ryuichi Sakamoto,  - Tokyo Joe   :
+     Ryuichi Sakamoto,  - Tokyo Joe   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5aROj9o4lZHawKEwWKPzYQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5aROj9o4lZHawKEwWKPzYQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1122,116 +1572,173 @@
      </span>
     </li>
     <li>
-     Teruo Nakamura - Manhattan
+     Teruo Nakamura - Manhattan   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UvekGeEW448')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kamæleon - Meget Gerne
+     Kamæleon - Meget Gerne   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/F91Z9RTGTAI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2ejMC63s8PKXL5CqmuLaY6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Guru Guru - It’s Your Turn
+     Guru Guru - It’s Your Turn   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ll9_X8Prolc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Wm00qG43WHh5okdeOlMQS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tatsuo Hayashi - Slow Disco
+     Tatsuo Hayashi - Slow Disco   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/emHgmlwsnrA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Aphex Twin - Wet Tip Hen Ax   :
+     Aphex Twin - Wet Tip Hen Ax   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0BHE7cwodOlQ8ctYFK8NzO">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3kCNLOhg2_c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0BHE7cwodOlQ8ctYFK8NzO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Carl Craig - At Les (Christian Smith's Hypnotica Remix)   :
+     Carl Craig - At Les (Christian Smith's Hypnotica Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2tYKnmwiOrpbgtMNelF4vA">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/wWI4O0ocBBw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2tYKnmwiOrpbgtMNelF4vA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Patrice Bäumel - Glutes   :
+     Patrice Bäumel - Glutes   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6n85CqZrqbMjwQImS02tQx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Abjbg2HYz14')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6n85CqZrqbMjwQImS02tQx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Serge Devant - This Moment   :
+     Serge Devant - This Moment   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0r9htssdmgmKJYjp34PXBm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/GKHwauM03zY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/36XhJ6pixCKb49rG0tG6fF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Holtoug - Stay In Love (Acid Pauli's Bone Drone Remix)   :
+     Holtoug - Stay In Love (Acid Pauli's Bone Drone Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4dzN8SjpGc6hzSl24KltNM">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OQFSTf2MB6w')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4dzN8SjpGc6hzSl24KltNM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Daniel Avery - Sensation   :
+     Daniel Avery - Sensation   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7mDRq9lRVCoAlUuF13ExYJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0VwksvA1IJw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7mDRq9lRVCoAlUuF13ExYJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Frankey &amp; Sandrino - Acamar   :
+     Frankey &amp; Sandrino - Acamar   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2o9fz1ALwGI65oMzueYMUI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/bjOmvuX77-A')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2o9fz1ALwGI65oMzueYMUI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     G-Man - Quo Vadis   :
+     G-Man - Quo Vadis   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4mtRa5NLE0wIDrrrnnuVfL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/r_M8xiUd9kU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0yeEOjGhRoJzvt8Gr9ZOWw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Pan-Pot - Sleepless (Stephan Bodzin Remix)   :
+     Pan-Pot - Sleepless (Stephan Bodzin Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/50MkrUXSXsS1Q1bn95XQcm">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OlLC6Xwgikc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/50MkrUXSXsS1Q1bn95XQcm?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     John Tejada - Cascade   :
+     John Tejada - Cascade   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0TvKIGUJVvfvCorpIS2qbW">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_74eA_rApP8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0TvKIGUJVvfvCorpIS2qbW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     MU - Paris Hilton   :
+     MU - Paris Hilton   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2KrDnIJq6NYI28BCzGcx5C">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/i_5mhO3PeA0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2KrDnIJq6NYI28BCzGcx5C?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Detroit Grand Puba - Club Sandwiches (Marc Romboy Mix)
+     Detroit Grand Puba - Club Sandwiches (Marc Romboy Mix)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0hV31kPLfGg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/35OSA4mpO0nh2XQgW2HJfF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1251,103 +1758,151 @@
    </summary>
    <ol>
     <li>
-     Awana - Kiyoko’s Vision
+     Awana - Kiyoko’s Vision   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ZaTEMOrQxzg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kurt Vile - Trumpets In Summer   :
+     Kurt Vile - Trumpets In Summer   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5LG6vmAkv5ArDoLBoRZQ7I">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Lyn4C7EaANs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5LG6vmAkv5ArDoLBoRZQ7I?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Slow Rifts - Gong Bath   :
+     Slow Rifts - Gong Bath   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6JjQ14L39RjX9gPNaQOPOH">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/DyEVrpIy9oA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6JjQ14L39RjX9gPNaQOPOH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Suzanne Kraft - The Result   :
+     Suzanne Kraft - The Result   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3fn68l4yE5HtTYPGjcc6hj">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FsDYkdDvih4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3fn68l4yE5HtTYPGjcc6hj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Perfume Genius - Die 4 You   :
+     Perfume Genius - Die 4 You   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2OBY3aeK3P2iiB6tkuanRz">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_-XQkDyEwQo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2OBY3aeK3P2iiB6tkuanRz?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Syrinx - Hollywood Dream Trip   :
+     Syrinx - Hollywood Dream Trip   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4Yz4rj3kcByr4j1f5e6SAt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/9RHzuOE6GQo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4Yz4rj3kcByr4j1f5e6SAt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ryuichi Sakamoto - Zure   :
+     Ryuichi Sakamoto - Zure   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5ZJUC56dfmK9Ef76M7xk5K">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/dHnSH0AO3fM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5ZJUC56dfmK9Ef76M7xk5K?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jan Jelinek - Moiré (Piano &amp; Organ)   :
+     Jan Jelinek - Moiré (Piano &amp; Organ)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0R6sHxjN04nAgEW0jgqLbU">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/QXlwrJ7z1kk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0R6sHxjN04nAgEW0jgqLbU?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Carioca - Branca   :
+     Carioca - Branca   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1Sw57eIwyPo5ie4DlBt4iL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/agH2bBnNUCs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1Sw57eIwyPo5ie4DlBt4iL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Davy Kehoe - Storm Desmond
+     Davy Kehoe - Storm Desmond   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/EouiplFAFVk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4bzs4GvnrOUCmH3G2mJY7p?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     K - She W/ Saki-Chan- Part I
+     K - She W/ Saki-Chan- Part I   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/6Mgqbai3fKo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kim Jung Mi - The Sun   :
+     Kim Jung Mi - The Sun   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0RiwjhzME58w763VqHMFyt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5DtO0QpEfnU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0RiwjhzME58w763VqHMFyt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Brian Eno - 2/2   :
+     Brian Eno - 2/2   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3QpN3dazIcMNqru0L1qLMt">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/CJjskjeZkeo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3QpN3dazIcMNqru0L1qLMt?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Gigi Masin - Maha
+     Gigi Masin - Maha   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/RIIxAYh2MLY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6lUl87Z8nkm6YPFKcX8P4p?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1367,162 +1922,222 @@
    </summary>
    <ol>
     <li>
-     Harvey Sutherland and Bermuda - Spiders   :
+     Harvey Sutherland and Bermuda - Spiders   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7in8AxTDA1paJDbKEGVo8Q">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/5-CXadGGdj4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7in8AxTDA1paJDbKEGVo8Q?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Art Alfie - Greg’s Island   :
+     Art Alfie - Greg’s Island   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5sB49t7NjkAqSc57XjNyna">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WiirrhKOaq4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5sB49t7NjkAqSc57XjNyna?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Octo Octa - Preparation Rituals   :
+     Octo Octa - Preparation Rituals   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4OhKJwK6pqJk453b0pstLV">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/y8X8JUSqwi8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4OhKJwK6pqJk453b0pstLV?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Baba Stilts - Are You Mad? Cause I’m  Not Mad -   :
+     Baba Stilts - Are You Mad? Cause I’m  Not Mad -   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6vAWETGyYUaMKLhhnGhVSx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/GXTV4pYVk20')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6vAWETGyYUaMKLhhnGhVSx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Shanti Celeste - Dolphin Chant   :
+     Shanti Celeste - Dolphin Chant   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5a8KrIcXsvfUgDdYkDaKVN">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/a5NjkFr0fxc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5a8KrIcXsvfUgDdYkDaKVN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Objekt - Theme From Q   :
+     Objekt - Theme From Q   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7Bzyr2VDVOAIU4o0KpSWnp">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/SDRNdNXBZcQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7Bzyr2VDVOAIU4o0KpSWnp?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Fantastic Man - Trance Sexual   :
+     Fantastic Man - Trance Sexual   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2w9dOw68gd7HyNpBfuuaoY">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vIw4K-R1y7s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2w9dOw68gd7HyNpBfuuaoY?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bawrut - Rumba   :
+     Bawrut - Rumba   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4FEe7mAeqNdhAtlpZ1jo1R">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/IrjxKKwXHKk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4FEe7mAeqNdhAtlpZ1jo1R?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Seinfeld - Flyin Thru Sunrise
+     DJ Seinfeld - Flyin Thru Sunrise   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/rQi4nORpz_c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Warp Dub Sound System - Night Places Darkness Upon The Earth   :
+     Warp Dub Sound System - Night Places Darkness Upon The Earth   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4V4H39MBboBMnYMdjyvs7L">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/nK7VM7rtwzo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4V4H39MBboBMnYMdjyvs7L?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ismistik - Flowcharts Remade   :
+     Ismistik - Flowcharts Remade   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5EZhtvtlPs7u6Wp1fXLDwT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NnZuOxn4WJc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5EZhtvtlPs7u6Wp1fXLDwT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Chocolette - A Little Bit Of Lovin' (U.K. Mix)   :
+     Chocolette - A Little Bit Of Lovin' (U.K. Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/49JmtfmuR7ABlOmyEIJ8eI">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/egUPAEDi8ww')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/49JmtfmuR7ABlOmyEIJ8eI?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     B. Beat Girls - For The Same Man (92 Version)   :
+     B. Beat Girls - For The Same Man (92 Version)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6EA10BfBf5FcyMz47lgy2v">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/n78TVhavW_I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6EA10BfBf5FcyMz47lgy2v?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kinetic Electronix - Roamin’   :
+     Kinetic Electronix - Roamin’   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/00jxCD2OsKROXQjEEhuKT9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NZh71QYIGhY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/00jxCD2OsKROXQjEEhuKT9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Mik Poynter - Elysium Groove
+     Mik Poynter - Elysium Groove   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FdylbRK0FdE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Paradise 3001 - Crystal Valley   :
+     Paradise 3001 - Crystal Valley   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7k4OkHIkTsIXaiaIZF9iHl">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7k4OkHIkTsIXaiaIZF9iHl?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tropical Moon - Jungle House
+     Tropical Moon - Jungle House   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/t88eLNXFv4Q')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5Ss7C8bSDZMm0pt9pXqObC?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Quasar - Isis   :
+     Quasar - Isis   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5NM4frO8ccRVxXKW0kZaAk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/PdnLyy9wPQM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Ability II - Pressure (Luca Lozano Remix)   :
+     Ability II - Pressure (Luca Lozano Remix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2FSSXSHTTlOXT96znopwG4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/KZmxv4cHtWs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2FSSXSHTTlOXT96znopwG4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Urban Hype - Teknologi Part 1 (RJ Flip Mix)   :
+     Urban Hype - Teknologi Part 1 (RJ Flip Mix)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1fH2TycW5gCGIu4VYULiEx">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/x5slV-uHSfc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1fH2TycW5gCGIu4VYULiEx?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     FP-Oner - Reap Love   :
+     FP-Oner - Reap Love   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0tBvZaYaUnHVD59HZr10sL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/EQyjhl7bNxE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0tBvZaYaUnHVD59HZr10sL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1558,42 +2173,63 @@
    </summary>
    <ol>
     <li>
-     Talaboman - Safe Changes   :
+     Talaboman - Safe Changes   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1GyyDYEbB0QxwDJuCTArGL">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/r64Vanudzu8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1GyyDYEbB0QxwDJuCTArGL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Daniel Terndrup - Celsius
+     Daniel Terndrup - Celsius   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/daslx_qBei4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/25m6nAPsPAHBxoAcgDTIhq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     DJ Central - Basil (Version Intégrale Club)
+     DJ Central - Basil (Version Intégrale Club)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/l6Wky4ttuHI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Denis Sulta - Nein Fortiate   :
+     Denis Sulta - Nein Fortiate   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2hqimz1lrGM7MaC9KqOgg6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XBv1Qb20xtE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2hqimz1lrGM7MaC9KqOgg6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Bwana - Generation Nostalgia
+     Bwana - Generation Nostalgia   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3bt_jm4WzdA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Juju &amp; Jordash - Monday Mellow      :
+     Juju &amp; Jordash - Monday Mellow      →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6yUCXPA33mDfxvKx5rY59h">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ih4wWCSPxOc')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6yUCXPA33mDfxvKx5rY59h?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -1602,13 +2238,22 @@
      </span>
     </li>
     <li>
-     Varg - Heroine II (Cry For You)
+     Varg - Heroine II (Cry For You)    →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UniE6NXdNzo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1RcysvvdsGSACBadLtNu5P?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Traumprinz - Where Is Home
+     Traumprinz - Where Is Home   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/RBuZf4Rz3hs')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -1643,6 +2288,127 @@
     </h3>
    </summary>
    <ol>
+    <li>
+     Cherushii - Queen Of Cups   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vCTOwCnLmu8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2OYEnajBpiuP9uUIrJjnPS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     DJ Koze - Driven   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/tH02HupIa_s')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2fZWKiat43dkRluAF4oczR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Robert Hood - Lockers   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/NvWVdXglGRg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1yTZAe3F0X7BUpxbj8iMwH?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Cazion - All The Way Thru   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/i1cN41bVVpI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2EOmhJI4hIrnqJ2iLjqmWc?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Byron The Aquarius - Aquarian Voyage   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WHwy0Gs1f7I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1g549dbJOaSymWO4uXoXX6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Project Pablo - Warm Priority    →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xepi2LFX31U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7BKiJ7xesRpNzMceQtYUtb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Harvey Sutherland and Bermuda - Bravado   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/JphdGGrXMsE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/75E1W4ygE2wNnqWFeuXRPk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Lauer - ESC (Prins Thomas Diskomiks)   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/1Aehjm5DfMk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0Nnv57B7AP8ljNP5QUxN8K?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Justin Cudmore - Crystal (Servito's 730 Reshape)   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3tGsa7X463k')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4MzwXO6in5xP5l7DCUCTnP?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Suzanne Kraft - Burn Me Down   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/SZQpVX8RIZY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3cAwTdWCYTZJAF2sLcXGqN?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Huerco S. - A Sea Of Love   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mq3GsIQLwoI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7feFMZxaNV6km5QZAXYyv0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
    </ol>
   </details>
   <details>
@@ -1659,6 +2425,222 @@
     </h3>
    </summary>
    <ol>
+    <li>
+     Telephones - 147 Stars   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ZyVAot_JVkY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1BYyVTVyjxwUZn5cPRKbGX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Olin - Conne   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XCr8V6IM3vE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     SAGE CASWELL &amp; NAUTILUSS - PALMS ON FIRE   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/7IpDmFBKDUg')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3w6v7bsuE91ELBH0MVlTdQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     RRoxymore - Organ Smith   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/XNmXNMFvms0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0B6UhFhchntnHjzHWyr1Qs?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Savile - 3 Hours In The Meat Sink   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/AKSxC89BhLk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Elad Magdasi - No Ego   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Cg5j0anQ0TI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/29DdIsgqcZiEj2pqEkccDG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Urulu - Koji Ma Oshi   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/pDjbH2qdFaQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3c2fsE0H57nzTEiWSPlOWK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     ONDO FUDD - IM STILL DIZZY   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mw6JbPT8WJY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Aschof Mal - Palais   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/JFmErPZlTH8')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2pwWxC8tr0fBj3s3CRofQF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     TRAUMPRINZ - GOOD VIBRATIONS (KASHA’S INSTRUMENTAL MIX)   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/zfQLVp7KbLY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6YO5EyGp0udLuLklEMnYKF?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Boot &amp; Tax - Maranzano   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/N9IbhDJwYWo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4v1nc49NNUwc3folUBoeEL?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     STRIDER 88 - LISTEN TO THE BAND   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/cudUvfrqqkM')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3SHFSgxQmjuoFji0WPCwaf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     GOLDEN HANDS - TAKE ME BACK   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/MAokEfQ-6ws')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/65NPCgLdUS0cb0w6ZiEt8d?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Headman,  - DECHAINEE (Borusiade Version)   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/aSElJZWwB88')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4akWhreZ9u4Z8CEsxSLIpd?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Severed Heads - Now An Explosive New Movie   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0fZDHSLA73I')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6U3B14Ov7jsKWT0RmMqG7z?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     PEDER MANNERFELT - BAHUTO CHANT AND DANCES 2   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/fCPaE0LHjVQ')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0MEb21H8olNdtZA192jJ28?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Wrong Steps - INFN   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Kb8n3s8OmjA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     John Cravache - Le Desir De Rester Petit   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/6ZEnMpIUAFY')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4RBMMYHR0G6GYnm4v0m8FA?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Timothy J. Fairplay - Deep Coast Customs   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3gij3ofaaekQwZZJGwfydw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     Junto Club - Shiviana (Khidja Remix)   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/CBru8Js3lGA')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Go9LBAUU5iNh22rbYmEQO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
+    <li>
+     TULOUSE LOW TRAX - MAKE FRIENDS   →
+     <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/9T2gp96M2CI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7zpjP9ZoUetf4pSmc3aV9L?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
+     </span>
+    </li>
    </ol>
   </details>
   <br/>

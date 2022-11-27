@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/2U0zrR6ns5iOhihPv22b2p">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/edge-of-a-forest">
      Edge Of The Forest
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/2U0zrR6ns5iOhihPv22b2p?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -174,11 +177,14 @@
    </summary>
    <ol>
     <li>
-     Chassol - Pipornithology, Pt. II   :
+     Chassol - Pipornithology, Pt. II   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6qvtt0jcMyigC9ufk46C4t">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WdpMJEQ4rII')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6qvtt0jcMyigC9ufk46C4t?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -230,42 +236,54 @@
    </summary>
    <ol>
     <li>
-     Petites Planètes - Canción Para La Selva
+     Petites Planètes - Canción Para La Selva   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/44yQKjSWIWeeP3aROIlzgM?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Petites Planètes - Andar ◊ Selva
+     Petites Planètes - Andar ◊ Selva   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6QBVELNnyfYvBa53lk3ggR?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Flying Lotus - Turtles   :
+     Flying Lotus - Turtles   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/08ydxMk5DKWYaTkKW82vXh">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/vkGmPu389Y0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/08ydxMk5DKWYaTkKW82vXh?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Francisco Lopez - Untitled #264   :
+     Francisco Lopez - Untitled #264   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7agnocSTflkP3hX5da3Vem">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/ET7vxQ85pWk')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Of Montreal - Binaural Live At Botanique
+     Of Montreal - Binaural Live At Botanique   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/H01qhHcSqhw')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Flute Duet - Mbuti Pygmies Of The Ituri Rainforest   :
+     Flute Duet - Mbuti Pygmies Of The Ituri Rainforest   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0SDGtedWxs1Z0pi2hcacnd">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/UJr886lHWec')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
      </span>
     </li>
    </ol>

@@ -16,28 +16,28 @@ do = True
 # if _ == 'Y':
 sh = True
 
-while do:
-    show = input('Input Show\n')
-    if show in nts.showlist:
-        nts.runscript([show],short=sh,retry=True)
-    else:
-        dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
-        if dy == 'Y':
-            nts.runscript([show],short=sh,retry=True)
-    rd = True
-    while rd:
-        redo = input('\nREDO [SHOW/N]')
-        if redo == 'N':
-            do = False
-            rd = False
-        else:
-            show = redo
-            if show in nts.showlist:
-                nts.runscript([show],short=sh,retry=True)
-            else:
-                dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
-                if dy == 'Y':
-                    nts.runscript([show],short=sh,retry=True)
+# while do:
+#     show = input('Input Show\n')
+#     if show in nts.showlist:
+#         nts.runscript([show],short=sh,retry=True)
+#     else:
+#         dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
+#         if dy == 'Y':
+#             nts.runscript([show],short=sh,retry=True)
+#     rd = True
+#     while rd:
+#         redo = input('\nREDO [SHOW/N]')
+#         if redo == 'N':
+#             do = False
+#             rd = False
+#         else:
+#             show = redo
+#             if show in nts.showlist:
+#                 nts.runscript([show],short=sh,retry=True)
+#             else:
+#                 dy = input('NOT IN SHOWLIST, DO ANYWAY? [Y/N]')
+#                 if dy == 'Y':
+#                     nts.runscript([show],short=sh,retry=True)
 
 # y = nts._j2d('./yid')
 # for i in y:
@@ -84,7 +84,7 @@ while do:
 
 # nts = script.nts(youtube=False)
 # shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
-# nts.runscript(nts.showlist[200:300])
+nts.runscript(nts.showlist[250:300])
 # for i in nts.showlist[:]:
 #     print(i,nts.showlist.index(i),'\n')
 #     while True:

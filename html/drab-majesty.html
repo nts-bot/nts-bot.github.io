@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/7rT0LajcUzGfPwmdxxZkBr">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/drab-majesty">
      Channel 39 w/ Deb Demure
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/7rT0LajcUzGfPwmdxxZkBr?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -46,59 +49,80 @@
    </summary>
    <ol>
     <li>
-     Imaginary Softwoods - Aura Show   :
+     Imaginary Softwoods - Aura Show   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/709Tz6gMwBFkAxzMlcwYbj">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/FYZnnuSCU5A')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/709Tz6gMwBFkAxzMlcwYbj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Huerco S. - A Sea Of Love   :
+     Huerco S. - A Sea Of Love   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7feFMZxaNV6km5QZAXYyv0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/mq3GsIQLwoI')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7feFMZxaNV6km5QZAXYyv0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Chihei Hatakeyama - Starlight Reflecting On The Surface Of The River   :
+     Chihei Hatakeyama - Starlight Reflecting On The Surface Of The River   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1L5LOTUpgRrT2odtAZwWo2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/xlOrC8K887U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1L5LOTUpgRrT2odtAZwWo2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Prince Rama - Om Namo Shivaya   :
+     Prince Rama - Om Namo Shivaya   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5hifIvMOMw3sHT3S5t9iA6">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/0blAAu9y_Y4')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5hifIvMOMw3sHT3S5t9iA6?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tim Hecker - Dungeoneering   :
+     Tim Hecker - Dungeoneering   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2rRrV0syrGGaVbVDHXESs3">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/RhYxzgqiXCo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2rRrV0syrGGaVbVDHXESs3?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Grouper - She Loves Me That Way   :
+     Grouper - She Loves Me That Way   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6SAtmwkARP0M3BF11EsVqy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/BpLgiIMyOQ0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6SAtmwkARP0M3BF11EsVqy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     APHEX TWIN - #3   :
+     APHEX TWIN - #3   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2Bc4llhjJBW77I552RgA3L">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/_AWIqXzvX-U')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2Bc4llhjJBW77I552RgA3L?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -118,75 +142,96 @@
    </summary>
    <ol>
     <li>
-     (INTRO AND INTERLUDES) IASOS - JAVANESE DREAM BELLS   :
+     (INTRO AND INTERLUDES) IASOS - JAVANESE DREAM BELLS
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0uyv5XLSupU5zc4Qq8rGfj">
-       🟢
-      </a>
      </span>
     </li>
     <li>
-     STEVEN HALPERN - SLEEPSCAPE DELTA 3HZ (PART 1)   :
+     STEVEN HALPERN - SLEEPSCAPE DELTA 3HZ (PART 1)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0CuRIor5yowKeweOTtB4HS">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/Uugv1nPfBks')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0CuRIor5yowKeweOTtB4HS?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Joanna Brouk - The Creative   :
+     Joanna Brouk - The Creative   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/37vKHdiZysIiDaE7XmXCPJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/v-MzwcvBQZE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/37vKHdiZysIiDaE7XmXCPJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Steve Hauschildt - Time We Have   :
+     Steve Hauschildt - Time We Have   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4kbkpb1zuLXpZV4t9hCN3U">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/cXik8XocAPo')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4kbkpb1zuLXpZV4t9hCN3U?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     IASOS - THE ROYAL COURT OF THE GODDESS VISTA   :
+     IASOS - THE ROYAL COURT OF THE GODDESS VISTA   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1SUa474HUdVBmsHAmG3f1y">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/bjD3K2nfa_c')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0ixElg2yu4oKv8H9pHAqsv?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Laurie Spiegel - Old Wave   :
+     Laurie Spiegel - Old Wave   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0KBRR5awpziELPG5H7dOTK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/OhpjHB4076g')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0KBRR5awpziELPG5H7dOTK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     KEITH FULLERTON WHITMAN - TRACK3A   :
+     KEITH FULLERTON WHITMAN - TRACK3A   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0jV5pkyZByn7pV12Rzbtuu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/3pzeuKv-ttE')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0jV5pkyZByn7pV12Rzbtuu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Peter Davison - Glide V   :
+     Peter Davison - Glide V   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2PTipaUDUMHMfUDDcvu1gD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/bDEHjS9IUE0')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2PTipaUDUMHMfUDDcvu1gD?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Constance Demby - Om Mani Padme Hum   :
+     Constance Demby - Om Mani Padme Hum   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6S7QB6lkpJz25glAK3gTC0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://www.youtube.com/embed/WnaQubdRlSU')">
+       <img class="yicon" src="../assets/youtube.png"/>
+      </button>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6S7QB6lkpJz25glAK3gTC0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
