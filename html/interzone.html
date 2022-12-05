@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/1XOftmQGz7laiAM1kn9GzA">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/interzone">
      INTERZONE
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/1XOftmQGz7laiAM1kn9GzA?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>
@@ -46,64 +49,67 @@
    </summary>
    <ol>
     <li>
-     Solid Space - Please Don't Fade Away   :
+     Solid Space - Please Don't Fade Away   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0JTkATDIFUpQIxtgzuFWFX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0JTkATDIFUpQIxtgzuFWFX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     The Monkees - Dandruff?   :
+     The Monkees - Dandruff?   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7BWCN0Vok0lBdValDDGBJk">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7BWCN0Vok0lBdValDDGBJk?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Yello - Assistant's Cry   :
+     Yello - Assistant's Cry   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/60PrIXB3MCJR7jA28dR6sw">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/60PrIXB3MCJR7jA28dR6sw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Alexander Robotnick - La Folie   :
+     Alexander Robotnick - La Folie   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/29y0fVyyTjaeQt4Vnb50kT">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/29y0fVyyTjaeQt4Vnb50kT?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Greater Than One - Black Magic   :
+     Greater Than One - Black Magic   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2yzkTiEKew4wlJyGJyrCvK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2yzkTiEKew4wlJyGJyrCvK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Amin-Peck - Coda
+     Amin-Peck - Coda   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0kbCKy7Zz3KU3gBn3CTNsE?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Propaganda - Frozen Faces   :
+     Propaganda - Frozen Faces   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5DFaG2ip4hIkJNOxZ3ZuJ4">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5DFaG2ip4hIkJNOxZ3ZuJ4?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Severed Heads - Dollarex (Live 2017)   :
+     Severed Heads - Dollarex (Live 2017)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/33DVt1k49u0oof7YSNtiGQ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/33DVt1k49u0oof7YSNtiGQ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -117,24 +123,27 @@
      </span>
     </li>
     <li>
-     Depeche Mode - Leave In Silence (Quieter)   :
+     Depeche Mode - Leave In Silence (Quieter)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3RIUmHb2rsk8dWW8rtONZw">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3RIUmHb2rsk8dWW8rtONZw?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     A.I.M. - So Evil (Close To The Edge) (Vox)   :
+     A.I.M. - So Evil (Close To The Edge) (Vox)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/31Nd4ob1CXiGUBlpvl0aoD">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6hwrk3R1cBhufoEZ2kZILe?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     The Empty Quarter - Bullshit
+     The Empty Quarter - Bullshit   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4nyHd9XQQR5M2Sov6aUC78?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -143,16 +152,19 @@
      </span>
     </li>
     <li>
-     Phantom Band - Latest News   :
+     Phantom Band - Latest News   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/0HScAlk9GgmTwdCXXOXfM9">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/0HScAlk9GgmTwdCXXOXfM9?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     400 Blows - Perspective 2
+     400 Blows - Perspective 2   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7oMhsZbEo17nDpVLHM43sJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -188,35 +200,35 @@
    </summary>
    <ol>
     <li>
-     Demdike Stare - Erosion Of Mediocrity   :
+     Demdike Stare - Erosion Of Mediocrity   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5F4d8TEIN7a8s6BfwZU6sf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5F4d8TEIN7a8s6BfwZU6sf?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Tuxedomoon - Litebulb Overkill   :
+     Tuxedomoon - Litebulb Overkill   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5QYJFDuHHR5VmGyM3v86l2">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5QYJFDuHHR5VmGyM3v86l2?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Zaliva-D - Forsaken   :
+     Zaliva-D - Forsaken   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1456nPyjZ4FGehQaYW6uC0">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1456nPyjZ4FGehQaYW6uC0?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Dis Fig - The Hermit   :
+     Dis Fig - The Hermit   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4MUzdk04tvKSNcv2UxRhEK">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4MUzdk04tvKSNcv2UxRhEK?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -236,77 +248,83 @@
    </summary>
    <ol>
     <li>
-     Kontravoid - So It Seems (Version 2)   :
+     Kontravoid - So It Seems (Version 2)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5VSvXgNd0vvFBBWUKvKqnf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7nAokF1ez72lrtr7sag9ib?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Boris Barksdale - 7.0.8.   :
+     Boris Barksdale - 7.0.8.   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5KSYnQWNGQCN8Awyz2nzcp">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5KSYnQWNGQCN8Awyz2nzcp?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     5713 - Skere Nachtmerrie
+     5713 - Skere Nachtmerrie   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3so82irgsEhwTlxuy3NxTy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Job Sifre - Zino Dicho   :
+     Job Sifre - Zino Dicho   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/3JnvLyswTQEREu5mk3JBgq">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/3JnvLyswTQEREu5mk3JBgq?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Umwelt - Faceless Power   :
+     Umwelt - Faceless Power   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/1pnwJB9Dxgw6Cz66m9KqZb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1pnwJB9Dxgw6Cz66m9KqZb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kontravoid - Cost Of Life   :
+     Kontravoid - Cost Of Life   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/54cf2pb0WCID9PvJthS2HG">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/54cf2pb0WCID9PvJthS2HG?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kris Baha - Revolting   :
+     Kris Baha - Revolting   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4MAFY50He8L7lj6GSSy5yb">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4MAFY50He8L7lj6GSSy5yb?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Boy Harsher - Send Me A Vision   :
+     Boy Harsher - Send Me A Vision   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4wP5tHzyju2VCXaAFnndwy">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4wP5tHzyju2VCXaAFnndwy?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     D. Carbon &amp; Umwelt - Tremblement
+     D. Carbon &amp; Umwelt - Tremblement   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7eNEUmMavK9uyeNoAxvLUW?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Kontravoid - Too Deep   :
+     Kontravoid - Too Deep   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4zvqwaG4RBM6H8Fgf6Ym8L">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4zvqwaG4RBM6H8Fgf6Ym8L?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
    </ol>
@@ -326,45 +344,51 @@
    </summary>
    <ol>
     <li>
-     Onas Broberg - Untitled  (Buchla + EMS Synthi A)   :
+     Onas Broberg - Untitled  (Buchla + EMS Synthi A)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/5kq1bQRjgV89n9eSNkpe7O">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5kq1bQRjgV89n9eSNkpe7O?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     SSPS - Cliffs Of Canun
+     SSPS - Cliffs Of Canun   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/5qm0KiVKMXW1kq6VrnIhz5?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Jaz - Let Me Treble
+     Jaz - Let Me Treble   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7rD9lNZQOxIfu3ElfoTcay?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     U-202 - Whistler (edit X)   :
+     U-202 - Whistler (edit X)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2ybFdhCtuxklIHymF0eder">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2ybFdhCtuxklIHymF0eder?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     J-Zbel - Bertrand Au Mont D'Or   :
+     J-Zbel - Bertrand Au Mont D'Or   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/6uwOoZlffKV8pMgB9iTuGu">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/6uwOoZlffKV8pMgB9iTuGu?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     Robert Valera - BEX2   :
+     Robert Valera - BEX2   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/7Iizqv7sAGsC2oxe1waXWX">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/7Iizqv7sAGsC2oxe1waXWX?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
@@ -373,34 +397,43 @@
      </span>
     </li>
     <li>
-     Robert Valera - Clara Xfers
+     Robert Valera - Clara Xfers   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2PEAh0Yz9I72m1Lz2Z7uFj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     J-Zbel - Le Riddim Du Bardouin   :
+     J-Zbel - Le Riddim Du Bardouin   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/4R1h9oulCCmYQIVRRm0VRf">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/4yhDvyNcPOuk28hpwZ5u27?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     SSPS - Paradise Lozt
+     SSPS - Paradise Lozt   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/1PVluFXbdOTv29475JS2Mj?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     The Soundstealers - Stealin' And Dealin'  (J.A.Z. Edit)   :
+     The Soundstealers - Stealin' And Dealin'  (J.A.Z. Edit)   →
      <span class="data">
-      <a class="goto" href="https://open.spotify.com/track/2u4POB9bCVHLQfl2b80NzJ">
-       🟢
-      </a>
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/2u4POB9bCVHLQfl2b80NzJ?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
-     J.A.Z. - Friday Night  (J.A.Z. Edit)
+     J.A.Z. - Friday Night  (J.A.Z. Edit)   →
      <span class="data">
+      <button class="goto" onclick="embedplay('https://open.spotify.com/embed/track/57ziKzGaTTbGoyoZoY3rkO?utm_source=generator')">
+       <img class="picon" src="../assets/Spotify_icon.svg.png"/>
+      </button>
      </span>
     </li>
     <li>
