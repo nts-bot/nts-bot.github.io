@@ -10,6 +10,13 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="../assets/stylesheet.css" rel="stylesheet"/>
   <link href="../assets/Nts-radio.jpg" rel="icon"/>
+  <script>
+   function embedplay(link) 
+                    {
+                        document.getElementById("embed").setAttribute('src', link)
+                        document.querySelector('[title="Play"]').click()
+                    }
+  </script>
  </head>
  <body>
   <h1>
@@ -17,19 +24,15 @@
     GitHub
    </a>
   </h1>
-  <div>
-   <br/>
-   <a href="https://open.spotify.com/playlist/1tcJTMP3aEFh2rdpKsuSOU">
-    <img class="picon" src="../assets/Spotify_icon.svg.png"/>
-   </a>
-  </div>
-  <div>
+  <div style="z-index: -1">
    <h2>
     <a href="https://nts.live/shows/kuduro-eddie-george">
      Kuduro: Electronic Music of Angola
     </a>
    </h2>
    <br/>
+   <iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" id="embed" loading="lazy" seamless="" src="https://open.spotify.com/embed/playlist/1tcJTMP3aEFh2rdpKsuSOU?utm_source=generator" style="border-radius:12px">
+   </iframe>
   </div>
   <details>
    <summary>

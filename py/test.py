@@ -84,7 +84,7 @@ sh = True
 
 # nts = script.nts(youtube=False)
 # shows = [i for i in nts.showlist]# if i not in ['guests','the-nts-guide-to','in-focus','archive-nights-cafe-oto']]
-nts.runscript(nts.showlist[400:500],False)
+nts.runscript(nts.showlist[500:700],False)
 # for i in nts.showlist[:]:
 #     print(i,nts.showlist.index(i),'\n')
 #     while True:
