@@ -853,10 +853,10 @@ class nts:
                 metacopy.remove(i)
             metaind = metacopy.index(met0[-1])
             met1 = metacopy[:metaind] # old shows
-            if met1:
-                uploaded[show] = dict() # reset upload
-                print(f'.reset.',end='\r')
-                reset = True
+            # if met1: # not working the way I would like it to ...
+            #     uploaded[show] = dict() # reset upload
+            #     print(f'.reset.',end='\r')
+            #     reset = True
 
         ''' EMPTY PARAMETERS TO FILL '''        
         tid = []
